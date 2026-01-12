@@ -1,16 +1,115 @@
 <?xml version="1.0"?>
-<rdf:RDF 
-     xml:base="https://w3id.org/pmd/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns="https://w3id.org/pmd/cryo/components/cryo-qualities.owl/"
+     xml:base="https://w3id.org/pmd/cryo/components/cryo-qualities.owl/"
+     xmlns:co="https://w3id.org/pmd/co/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/components/cryo-qualities.owl">
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/components/cryo-shared.owl"/>
     </owl:Ontology>
+    
 
-    <!-- This is a placeholder, it will be regenerated when makefile is first executed -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000002 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:label xml:lang="en">lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">Lattice parameter is a quality of a unit cell which describes the length of (three) dimensions along of thwe unit cell&apos;s x-, y-, and z-directions.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000003 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000003">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000002"/>
+        <rdfs:label xml:lang="en">a lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">A length of a unit cell along its x-axis</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000004 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000004">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000002"/>
+        <rdfs:label xml:lang="en">b lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">A length of a unit cell along its y-axis</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000005 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000005">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000002"/>
+        <rdfs:label xml:lang="en">c lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">A length of a unit cell along its z-axis</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000006 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:comment>TODO check the naming conventions</rdfs:comment>
+        <rdfs:label xml:lang="en">angular lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">Angular lattice parameter is a relational quality between two axes in a unit cell</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000007 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000007">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000006"/>
+        <rdfs:label xml:lang="en">α lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">α lattice parameter is an anlge between y- and z-directions in a unit cell</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000008 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000008">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000006"/>
+        <rdfs:label xml:lang="en">β lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">β lattice parameter is an anlge between x- and z-directions in a unit cell</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000009 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000009">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000006"/>
+        <rdfs:label xml:lang="en">γ lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">γ lattice parameter is an anlge between x- and z-directions in a unit cell</skos:definition>
+    </owl:Class>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
