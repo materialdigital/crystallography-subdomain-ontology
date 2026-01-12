@@ -5618,6 +5618,134 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000000 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:label xml:lang="en">unit cell</rdfs:label>
+        <skos:definition xml:lang="en">Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, where the lattice can be constructed by translational displacements. Thus, unit cell is characterized by the length of its sides and their angular relations.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000001 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TODO: 
+1. check if located in is meant to be used this way
+2. Is there a better alternative to has part?</rdfs:comment>
+        <rdfs:label xml:lang="en">lattice</rdfs:label>
+        <skos:definition xml:lang="en">Lattice is a site that is formed by a two- or three-dimensional periodic array of points in space, which describes the arrangement of atoms or molecules in a crystal.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000002 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000002">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">Lattice parameter is a quality of a unit cell which describes the length of (three) dimensions along of thwe unit cell&apos;s x-, y-, and z-directions.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000003 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000003">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000002"/>
+        <rdfs:label xml:lang="en">a lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">A length of a unit cell along its x-axis</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000004 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000004">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000002"/>
+        <rdfs:label xml:lang="en">b lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">A length of a unit cell along its y-axis</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000005 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000005">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000002"/>
+        <rdfs:label xml:lang="en">c lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">A length of a unit cell along its z-axis</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000006 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>TODO check the naming conventions</rdfs:comment>
+        <rdfs:label xml:lang="en">angular lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">Angular lattice parameter is a relational quality between two axes in a unit cell</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000007 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000007">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000006"/>
+        <rdfs:label xml:lang="en">α lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">α lattice parameter is an anlge between y- and z-directions in a unit cell</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000008 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000008">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000006"/>
+        <rdfs:label xml:lang="en">β lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">β lattice parameter is an anlge between x- and z-directions in a unit cell</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000009 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000009">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000006"/>
+        <rdfs:label xml:lang="en">γ lattice parameter</rdfs:label>
+        <skos:definition xml:lang="en">γ lattice parameter is an anlge between x- and z-directions in a unit cell</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

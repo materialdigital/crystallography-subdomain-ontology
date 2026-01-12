@@ -297,6 +297,16 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0050051>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050155>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050156>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050157>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000000>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000001>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000002>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000003>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000004>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000005>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000006>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000007>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000008>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000009>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
@@ -3179,6 +3189,74 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0050157> "Beispiele sind Formen wie Würfel, Kugeln und Pyramiden."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0050157> "Examples include shapes like cubes, spheres, and pyramids."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0050157> <https://w3id.org/pmd/co/PMD_0050156>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000000> (unit cell)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000000> "unit cell"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000000> "Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, where the lattice can be constructed by translational displacements. Thus, unit cell is characterized by the length of its sides and their angular relations."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000000> <http://purl.obolibrary.org/obo/BFO_0000029>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000001> (lattice)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000001> "TODO: 
+1. check if located in is meant to be used this way
+2. Is there a better alternative to has part?"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000001> "lattice"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000001> "Lattice is a site that is formed by a two- or three-dimensional periodic array of points in space, which describes the arrangement of atoms or molecules in a crystal."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000001> <http://purl.obolibrary.org/obo/BFO_0000029>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/pmd/cryo/CRYO_0000000>))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001025> <https://w3id.org/pmd/co/PMD_0020003>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000002> (lattice parameter)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000002> "lattice parameter"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000002> "Lattice parameter is a quality of a unit cell which describes the length of (three) dimensions along of thwe unit cell's x-, y-, and z-directions."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000002> <https://w3id.org/pmd/co/PMD_0040001>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000002> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000000>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000003> (a lattice parameter)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000003> "a lattice parameter"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000003> "A length of a unit cell along its x-axis"@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000003> <https://w3id.org/pmd/cryo/CRYO_0000002>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000004> (b lattice parameter)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000004> "b lattice parameter"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000004> "A length of a unit cell along its y-axis"@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000004> <https://w3id.org/pmd/cryo/CRYO_0000002>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000005> (c lattice parameter)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000005> "c lattice parameter"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000005> "A length of a unit cell along its z-axis"@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000005> <https://w3id.org/pmd/cryo/CRYO_0000002>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000006> (angular lattice parameter)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000006> "TODO check the naming conventions")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000006> "angular lattice parameter"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000006> "Angular lattice parameter is a relational quality between two axes in a unit cell"@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000006> <http://purl.obolibrary.org/obo/BFO_0000145>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000006> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000000>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000007> (α lattice parameter)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000007> "α lattice parameter"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000007> "α lattice parameter is an anlge between y- and z-directions in a unit cell"@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000007> <https://w3id.org/pmd/cryo/CRYO_0000006>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000008> (β lattice parameter)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000008> "β lattice parameter"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000008> "β lattice parameter is an anlge between x- and z-directions in a unit cell"@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000008> <https://w3id.org/pmd/cryo/CRYO_0000006>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000009> (γ lattice parameter)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000009> "γ lattice parameter"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000009> "γ lattice parameter is an anlge between x- and z-directions in a unit cell"@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000009> <https://w3id.org/pmd/cryo/CRYO_0000006>)
 
 
 ############################

@@ -123,6 +123,14 @@ obo:RO_0000056 rdf:type owl:ObjectProperty .
 obo:RO_0000058 rdf:type owl:ObjectProperty .
 
 
+###  http://purl.obolibrary.org/obo/RO_0000080
+obo:RO_0000080 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0001025
+obo:RO_0001025 rdf:type owl:ObjectProperty .
+
+
 ###  http://purl.obolibrary.org/obo/RO_0009006
 obo:RO_0009006 rdf:type owl:ObjectProperty .
 
@@ -280,6 +288,10 @@ obo:BFO_0000024 rdf:type owl:Class .
 
 ###  http://purl.obolibrary.org/obo/BFO_0000027
 obo:BFO_0000027 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000029
+obo:BFO_0000029 rdf:type owl:Class .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000030
@@ -2751,6 +2763,96 @@ co:PMD_0050157 rdf:type owl:Class ;
                                "Eine 3D Geometrie ist eine geometrische Form, die in drei Dimensionen existiert, mit Länge, Breite und Höhe, und die durch ihre räumlichen Eigenschaften wie Volumen und Oberfläche definiert werden kann."@de ;
                skos:example "Beispiele sind Formen wie Würfel, Kugeln und Pyramiden."@de ,
                             "Examples include shapes like cubes, spheres, and pyramids."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000000
+<https://w3id.org/pmd/cryo/CRYO_0000000> rdf:type owl:Class ;
+                                         rdfs:subClassOf obo:BFO_0000029 ;
+                                         rdfs:label "unit cell"@en ;
+                                         skos:definition "Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, where the lattice can be constructed by translational displacements. Thus, unit cell is characterized by the length of its sides and their angular relations."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000001
+<https://w3id.org/pmd/cryo/CRYO_0000001> rdf:type owl:Class ;
+                                         rdfs:subClassOf obo:BFO_0000029 ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:BFO_0000051 ;
+                                                           owl:someValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000000>
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0001025 ;
+                                                           owl:someValuesFrom co:PMD_0020003
+                                                         ] ;
+                                         rdfs:comment """TODO: 
+1. check if located in is meant to be used this way
+2. Is there a better alternative to has part?"""@en ;
+                                         rdfs:label "lattice"@en ;
+                                         skos:definition "Lattice is a site that is formed by a two- or three-dimensional periodic array of points in space, which describes the arrangement of atoms or molecules in a crystal."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000002
+<https://w3id.org/pmd/cryo/CRYO_0000002> rdf:type owl:Class ;
+                                         rdfs:subClassOf co:PMD_0040001 ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0000080 ;
+                                                           owl:allValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000000>
+                                                         ] ;
+                                         rdfs:label "lattice parameter"@en ;
+                                         skos:definition "Lattice parameter is a quality of a unit cell which describes the length of (three) dimensions along of thwe unit cell's x-, y-, and z-directions."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000003
+<https://w3id.org/pmd/cryo/CRYO_0000003> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000002> ;
+                                         rdfs:label "a lattice parameter"@en ;
+                                         skos:definition "A length of a unit cell along its x-axis"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000004
+<https://w3id.org/pmd/cryo/CRYO_0000004> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000002> ;
+                                         rdfs:label "b lattice parameter"@en ;
+                                         skos:definition "A length of a unit cell along its y-axis"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000005
+<https://w3id.org/pmd/cryo/CRYO_0000005> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000002> ;
+                                         rdfs:label "c lattice parameter"@en ;
+                                         skos:definition "A length of a unit cell along its z-axis"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000006
+<https://w3id.org/pmd/cryo/CRYO_0000006> rdf:type owl:Class ;
+                                         rdfs:subClassOf obo:BFO_0000145 ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0000080 ;
+                                                           owl:allValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000000>
+                                                         ] ;
+                                         rdfs:comment "TODO check the naming conventions" ;
+                                         rdfs:label "angular lattice parameter"@en ;
+                                         skos:definition "Angular lattice parameter is a relational quality between two axes in a unit cell"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000007
+<https://w3id.org/pmd/cryo/CRYO_0000007> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000006> ;
+                                         rdfs:label "α lattice parameter"@en ;
+                                         skos:definition "α lattice parameter is an anlge between y- and z-directions in a unit cell"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000008
+<https://w3id.org/pmd/cryo/CRYO_0000008> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000006> ;
+                                         rdfs:label "β lattice parameter"@en ;
+                                         skos:definition "β lattice parameter is an anlge between x- and z-directions in a unit cell"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000009
+<https://w3id.org/pmd/cryo/CRYO_0000009> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000006> ;
+                                         rdfs:label "γ lattice parameter"@en ;
+                                         skos:definition "γ lattice parameter is an anlge between x- and z-directions in a unit cell"@en .
 
 
 #################################################################
