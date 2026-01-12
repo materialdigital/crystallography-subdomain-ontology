@@ -64,6 +64,7 @@ https://w3id.org/pmd/co/PMD_0020149  # metastable phase
 https://w3id.org/pmd/co/PMD_0020128  # thermodynamic system
 https://w3id.org/pmd/co/PMD_0000965  # surface
 https://w3id.org/pmd/co/PMD_0000538  # bulk
+http://purl.obolibrary.org/obo/BFO_0000029 # site
 
 
 # OPs
