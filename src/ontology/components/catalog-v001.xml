@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+    <uri name="https://w3id.org/pmd/cryo/imports/pmdco_import.owl" uri="../imports/pmdco_import.owl" />
+
+    <uri name="https://w3id.org/pmd/cryo/components/imports-edit.owl" uri="imports-edit.owl" />
+    <uri name="https://w3id.org/pmd/cryo/components/cryo-axioms-shared.owl" uri="cryo-axioms-shared.owl" />
+    <uri name="https://w3id.org/pmd/cryo/components/cryo-shared.owl" uri="cryo-shared.owl" />
+
+    <uri name="https://w3id.org/pmd/cryo/components/characterization.owl" uri="cryo-entities.owl" />
+    <uri name="https://w3id.org/pmd/cryo/components/manufacturing.owl" uri="cryo-qualities.owl" />
+</group>
+</catalog>
