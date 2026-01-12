@@ -8,5 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/components/imports-edit.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/components/imports-edit.owl">
+        <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/pmdco_import.owl"/>
+    </owl:Ontology>
 </rdf:RDF>

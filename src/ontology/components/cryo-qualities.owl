@@ -8,7 +8,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/components/cryo-qualities.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/components/cryo-qualities.owl">
+        <owl:imports rdf:resource="https://w3id.org/pmd/cryo/components/cryo-shared.owl"/>
+    </owl:Ontology>
 
     <!-- This is a placeholder, it will be regenerated when makefile is first executed -->
 </rdf:RDF>
