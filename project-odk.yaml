@@ -1,0 +1,52 @@
+id: cryo
+title: "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x"
+github_org: cmllezr
+git_main_branch: main
+repo: CRYO-Onto
+uribase: https://w3id.org/pmd
+uribase_suffix: cryo
+preferredPrefix: CRYO
+edit_format: owl
+
+# DISABLE Templates for now
+use_templates: false
+
+# Imports 
+import_group:
+  products:
+    - id: pmdco
+      title: "PMD Core Ontology"
+      mirror_from: https://materialdigital.github.io/core-ontology/ontology.owl
+
+# Components
+components:
+  products:
+    - filename: imports-edit.owl
+    - filename: cryo-axioms-shared.owl
+    - filename: cryo-entities.owl
+    - filename: cryo-qualities.owl
+    - filename: cryo-shared.owl
+
+# Release
+primary_release: full
+release_artefacts:
+  - base
+  - full
+export_formats:
+  - owl
+  - ttl
+
+ci:
+  - github_actions
+
+namespaces:
+  - https://w3id.org/pmd/cryo/
+idranges:
+  - idsfor: cryo
+    idprefix: https://w3id.org/pmd/cryo/CRYO_
+    iddigits: 7
+
+idranges:
+  - idsfor: cryo
+    idprefix: https://w3id.org/pmd/cryo/CRYO_
+    iddigits: 7
