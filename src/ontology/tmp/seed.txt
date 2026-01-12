@@ -1,0 +1,7 @@
+http://purl.org/dc/terms/description
+http://purl.org/dc/terms/license
+http://purl.org/dc/terms/title
+https://creativecommons.org/licenses/unspecified
+https://w3id.org/pmd/CRYO_0000000
+https://w3id.org/pmd/cryo.owl
+term

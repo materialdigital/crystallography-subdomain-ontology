@@ -9,12 +9,6 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<https://w3id.org/pmd/cryo.owl>
-Import(<https://w3id.org/pmd/cryo/components/cryo-axioms-shared.owl>)
-Import(<https://w3id.org/pmd/cryo/components/cryo-entities.owl>)
-Import(<https://w3id.org/pmd/cryo/components/cryo-qualities.owl>)
-Import(<https://w3id.org/pmd/cryo/components/cryo-shared.owl>)
-Import(<https://w3id.org/pmd/cryo/components/imports-edit.owl>)
-Import(<https://w3id.org/pmd/cryo/imports/pmdco_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x")
