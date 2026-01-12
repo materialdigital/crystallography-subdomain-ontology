@@ -1,0 +1,18 @@
+https://w3id.org/pmd/co/PMD_0000519 # 'application of electric field'
+https://w3id.org/pmd/co/PMD_0000520 # 'application of heat flux'
+https://w3id.org/pmd/co/PMD_0000523 # application of substance
+https://w3id.org/pmd/co/PMD_0000629 # emmision of radiation
+https://w3id.org/pmd/co/PMD_0000635 # evolution of damage
+https://w3id.org/pmd/co/PMD_0000802 # irradiation process
+https://w3id.org/pmd/co/PMD_0000869 # 'occurence of chemical reaction'
+https://w3id.org/pmd/co/PMD_0000870 # 'occurence of electic field'
+https://w3id.org/pmd/co/PMD_0000871 # 'occurence of magnetic field'
+https://w3id.org/pmd/co/PMD_0000880 # 'passing of time'
+
+
+
+
+
+
+
+

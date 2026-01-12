@@ -1,0 +1,4 @@
+https://w3id.org/pmd/co/PMD_0000521 # application of magnetic field
+https://w3id.org/pmd/co/PMD_0000549 # change of temperature
+https://w3id.org/pmd/co/PMD_0000596 # deformation
+# https://w3id.org/pmd/co/PMD_0000522  # 'application of mechanical load'

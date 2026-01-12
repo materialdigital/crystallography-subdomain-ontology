@@ -1,0 +1,126 @@
+### GDCs
+https://w3id.org/pmd/co/PMD_0000885  # pole figure
+https://w3id.org/pmd/co/PMD_0000992  # time series
+https://w3id.org/pmd/co/PMD_0000946  # spectrum
+https://w3id.org/pmd/co/PMD_0025002  # chemical composition specification
+https://w3id.org/pmd/co/PMD_0025997  # fraction specification
+http://purl.obolibrary.org/obo/OBI_0001931  # scalar value specification
+https://w3id.org/pmd/co/PMD_0020116  # aggregate state value TODO  import special types
+https://w3id.org/pmd/co/PMD_0020117  # aggregate state solid
+https://w3id.org/pmd/co/PMD_0020119  # aggregate state gasous
+https://w3id.org/pmd/co/PMD_0020118  # aggregate state liquid
+https://w3id.org/pmd/co/PMD_0020099  # bravais lattice
+https://w3id.org/pmd/co/PMD_0020018  # bravais lattice cubic body-centered
+https://w3id.org/pmd/co/PMD_0020019  # bravais lattice cubic face-centered
+http://purl.obolibrary.org/obo/IAO_0000109 # measurement datum
+http://purl.obolibrary.org/obo/UO_0000000 # Unit
+
+### SDCs
+https://w3id.org/pmd/co/PMD_0020142  # Energy
+https://w3id.org/pmd/co/PMD_0050157  # 3d geomerty
+https://w3id.org/pmd/co/PMD_0020133  # mass
+https://w3id.org/pmd/co/PMD_0050051  # diameter
+https://w3id.org/pmd/co/PMD_0000551  # chemical composition
+https://w3id.org/pmd/co/PMD_0000591  # crystal structure
+https://w3id.org/pmd/co/PMD_0000853  # crystollagraphic texture
+https://w3id.org/pmd/co/PMD_0000967  # temperature
+https://w3id.org/pmd/co/PMD_0020104  # volume proportion
+https://w3id.org/pmd/co/PMD_0020207  # amount of substance
+https://w3id.org/pmd/co/PMD_0020102  # mass proportion 
+
+### Occurents
+https://w3id.org/pmd/co/PMD_0000008  # process attribute
+https://w3id.org/pmd/co/PMD_0020143  # process chain
+https://w3id.org/pmd/co/PMD_0000549  # change of temperature
+https://w3id.org/pmd/co/PMD_0020136  # phase transformation
+# https://w3id.org/pmd/co/PMD_0000554  # chemical property analyzing process
+https://w3id.org/pmd/co/PMD_0000552  # chemical composition analyzing process
+https://w3id.org/pmd/co/PMD_0001016  # x-ray diffraction process
+https://w3id.org/pmd/co/PMD_0001019  # x-ray spectroscopy
+https://w3id.org/pmd/co/PMD_0001018  # x-ray microanalysis
+https://w3id.org/pmd/co/PMD_0001017  # x-ray mapping
+https://w3id.org/pmd/co/PMD_0000625  # electron microscopy
+https://w3id.org/pmd/co/PMD_0000933  # simulation process
+
+https://w3id.org/pmd/co/PMD_0000950 # stimulating process
+https://w3id.org/pmd/co/PMD_0025012 # analytical calculation
+https://w3id.org/pmd/co/PMD_0025007 # frequency
+http://purl.obolibrary.org/obo/BFO_0000202 # temporal interval
+http://purl.obolibrary.org/obo/BFO_0000203 # temporal instance
+
+### ICs
+https://w3id.org/pmd/co/PMD_0000857  # microstructure
+https://w3id.org/pmd/co/PMD_0020140  # portion of pure chemical element
+https://w3id.org/pmd/co/PMD_0000602  # device
+https://w3id.org/pmd/co/PMD_0000625  # electron microscope
+https://w3id.org/pmd/co/PMD_0000922  # scanning electron microscope
+https://w3id.org/pmd/co/PMD_0025008  # transmission electron microscope
+https://w3id.org/pmd/co/PMD_0000874  # electron microscope
+https://w3id.org/pmd/co/PMD_0001020  # x-ray diffractometer
+https://w3id.org/pmd/co/PMD_0000663  # crystal grain
+https://w3id.org/pmd/co/PMD_0020106  # polycrystal
+https://w3id.org/pmd/co/PMD_0020137  # stable phase
+https://w3id.org/pmd/co/PMD_0020149  # metastable phase
+https://w3id.org/pmd/co/PMD_0020128  # thermodynamic system
+https://w3id.org/pmd/co/PMD_0000965  # surface
+https://w3id.org/pmd/co/PMD_0000538  # bulk
+
+
+# OPs
+https://w3id.org/pmd/co/PMD_0000009  # has process attribute
+https://w3id.org/pmd/co/PMD_0025006  # process attribute of
+https://w3id.org/pmd/co/PMD_0025998  # has relational quality
+https://w3id.org/pmd/co/PMD_0000069  # has state
+https://w3id.org/pmd/co/PMD_0000070  # is state of
+https://w3id.org/pmd/co/PMD_0000004  # is subject of
+https://w3id.org/pmd/co/PMD_0000077  # specified by value
+http://purl.obolibrary.org/obo/OBI_0001927 # 'specifies value of'
+https://w3id.org/pmd/co/PMD_0020127  # refers to
+https://w3id.org/pmd/co/PMD_0025999  # relational quality of
+http://purl.obolibrary.org/obo/IAO_0000221 # 'is quality measurement of'
+http://purl.obolibrary.org/obo/IAO_0000417 # 'is quality measured as'
+http://purl.obolibrary.org/obo/IAO_0000418 # 'is quality specification of'
+http://purl.obolibrary.org/obo/IAO_0000419 # 'quality is specified as'
+http://purl.obolibrary.org/obo/IAO_0000039 # has measurement unit label
+
+
+
+# OPs from RO
+http://purl.obolibrary.org/obo/RO_0001000 # derives from
+http://purl.obolibrary.org/obo/RO_0001001 # derives into
+http://purl.obolibrary.org/obo/RO_0001015 # location of
+http://purl.obolibrary.org/obo/RO_0001025 # located in
+http://purl.obolibrary.org/obo/RO_0002082 # simultaneous with
+http://purl.obolibrary.org/obo/RO_0002223 # starts
+http://purl.obolibrary.org/obo/RO_0002224 # starts with
+http://purl.obolibrary.org/obo/RO_0002229 # ends 
+http://purl.obolibrary.org/obo/RO_0002230 # ends with
+http://purl.obolibrary.org/obo/RO_0002233 # has input
+http://purl.obolibrary.org/obo/RO_0002234 # has output
+http://purl.obolibrary.org/obo/RO_0002352 # input of
+http://purl.obolibrary.org/obo/RO_0002353 # output of
+http://purl.obolibrary.org/obo/IAO_0000219 # denotes
+http://purl.obolibrary.org/obo/IAO_0000235 # denoted by
+http://purl.obolibrary.org/obo/RO_0009006 # assay measures characteristic
+http://purl.obolibrary.org/obo/RO_0009007 # characteristic measured by assay
+http://purl.obolibrary.org/obo/IAO_0000039 # has measurement unit label
+http://purl.obolibrary.org/obo/BFO_0000138 # proper occurent part of
+
+# From BFO 
+http://purl.obolibrary.org/obo/BFO_0000006 # spacial region
+http://purl.obolibrary.org/obo/BFO_0000016 # disposition
+http://purl.obolibrary.org/obo/BFO_0000018 # zero-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000009 # two-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000028 # three-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000026 # one-dimensional spatial region
+
+# Data properties
+http://purl.obolibrary.org/obo/OBI_0001937 # 'has specified numeric value'
+https://w3id.org/pmd/co/PMD_0000006  # has value
+http://purl.obolibrary.org/obo/OBI_0002135 # has specified value
+
+# UO from pmdco 
+http://purl.obolibrary.org/obo/UO_1000163 # mass percentage
+http://purl.obolibrary.org/obo/UO_0000164 # mass volume percentage
+http://purl.obolibrary.org/obo/UO_0000076 # volume fraction
+
