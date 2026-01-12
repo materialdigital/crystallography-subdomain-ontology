@@ -30,12 +30,14 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000024>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000145>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000148>))
@@ -1186,6 +1188,13 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000028> "A cube-shaped region of space; a sphere-shaped region of space; the region of space occupied by all and only the planets in the solar system at some point in time"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000028> <http://purl.obolibrary.org/obo/BFO_0000006>)
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000029> (site)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000029> "site"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000029> "(Elucidation) A site is a three-dimensional immaterial entity whose boundaries either (partially or wholly) coincide with the boundaries of one or more material entities or have locations determined in relation to some material entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000029> "A hole in a portion of cheese; a rabbit hole; the Grand Canyon; the Piazza San Marco; the kangaroo-joey-containing hole of a kangaroo pouch; your left nostril (a fiat part - the opening - of your left nasal cavity); the lumen of your gut; the hold of a ship; the interior of the trunk of your car; hole in an engineered floor joist"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
 # Class: <http://purl.obolibrary.org/obo/BFO_0000030> (object)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000030> "object"@en)
@@ -1232,6 +1241,13 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000040> "A human being; the undetached arm of a human being; an aggregate of human beings"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000140> (continuant fiat boundary)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000140> "continuant fiat boundary"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000140> "(Elucidation) A continuant fiat boundary b is an immaterial entity that is of zero, one or two dimensions & such that there is no time t when b has a spatial region as continuant part & whose location is determined in relation to some material entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000140> "As for fiat point, fiat line, fiat surface"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000140> <http://purl.obolibrary.org/obo/BFO_0000141>)
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000141> (immaterial entity)
 
@@ -3307,6 +3323,7 @@ AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/
 
 
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000140>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000011> <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000035>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000009> <http://purl.obolibrary.org/obo/BFO_0000018> <http://purl.obolibrary.org/obo/BFO_0000026> <http://purl.obolibrary.org/obo/BFO_0000028>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000503> <https://w3id.org/pmd/co/PMD_0000512> <https://w3id.org/pmd/co/PMD_0000591> <https://w3id.org/pmd/co/PMD_0000595> <https://w3id.org/pmd/co/PMD_0000597> <https://w3id.org/pmd/co/PMD_0000853> <https://w3id.org/pmd/co/PMD_0000896> <https://w3id.org/pmd/co/PMD_0000942> <https://w3id.org/pmd/co/PMD_0000967> <https://w3id.org/pmd/co/PMD_0020005> <https://w3id.org/pmd/co/PMD_0020112> <https://w3id.org/pmd/co/PMD_0025001> <https://w3id.org/pmd/co/PMD_0025003>)

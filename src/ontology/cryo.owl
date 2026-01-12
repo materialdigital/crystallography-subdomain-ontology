@@ -1435,6 +1435,17 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:label xml:lang="en">site</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A site is a three-dimensional immaterial entity whose boundaries either (partially or wholly) coincide with the boundaries of one or more material entities or have locations determined in relation to some material entity</skos:definition>
+        <skos:example xml:lang="en">A hole in a portion of cheese; a rabbit hole; the Grand Canyon; the Piazza San Marco; the kangaroo-joey-containing hole of a kangaroo pouch; your left nostril (a fiat part - the opening - of your left nasal cavity); the lumen of your gut; the hold of a ship; the interior of the trunk of your car; hole in an engineered floor joist</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030">
@@ -1524,6 +1535,17 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
         <rdfs:label xml:lang="en">material entity</rdfs:label>
         <skos:definition xml:lang="en">(Elucidation) A material entity is an independent continuant has some portion of matter as continuant part</skos:definition>
         <skos:example xml:lang="en">A human being; the undetached arm of a human being; an aggregate of human beings</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:label xml:lang="en">continuant fiat boundary</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A continuant fiat boundary b is an immaterial entity that is of zero, one or two dimensions &amp; such that there is no time t when b has a spatial region as continuant part &amp; whose location is determined in relation to some material entity</skos:definition>
+        <skos:example xml:lang="en">As for fiat point, fiat line, fiat surface</skos:example>
     </owl:Class>
     
 
@@ -5935,6 +5957,14 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000006"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

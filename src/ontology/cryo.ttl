@@ -1059,6 +1059,14 @@ obo:BFO_0000028 rdf:type owl:Class ;
                 skos:example "A cube-shaped region of space; a sphere-shaped region of space; the region of space occupied by all and only the planets in the solar system at some point in time"@en .
 
 
+###  http://purl.obolibrary.org/obo/BFO_0000029
+obo:BFO_0000029 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000141 ;
+                rdfs:label "site"@en ;
+                skos:definition "(Elucidation) A site is a three-dimensional immaterial entity whose boundaries either (partially or wholly) coincide with the boundaries of one or more material entities or have locations determined in relation to some material entity"@en ;
+                skos:example "A hole in a portion of cheese; a rabbit hole; the Grand Canyon; the Piazza San Marco; the kangaroo-joey-containing hole of a kangaroo pouch; your left nostril (a fiat part - the opening - of your left nasal cavity); the lumen of your gut; the hold of a ship; the interior of the trunk of your car; hole in an engineered floor joist"@en .
+
+
 ###  http://purl.obolibrary.org/obo/BFO_0000030
 obo:BFO_0000030 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000040 ;
@@ -1123,6 +1131,14 @@ obo:BFO_0000040 rdf:type owl:Class ;
                 rdfs:label "material entity"@en ;
                 skos:definition "(Elucidation) A material entity is an independent continuant has some portion of matter as continuant part"@en ;
                 skos:example "A human being; the undetached arm of a human being; an aggregate of human beings"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000140
+obo:BFO_0000140 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000141 ;
+                rdfs:label "continuant fiat boundary"@en ;
+                skos:definition "(Elucidation) A continuant fiat boundary b is an immaterial entity that is of zero, one or two dimensions & such that there is no time t when b has a spatial region as continuant part & whose location is determined in relation to some material entity"@en ;
+                skos:example "As for fiat point, fiat line, fiat surface"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000141
@@ -4293,6 +4309,14 @@ obo:UO_0000164 oboInOwl:hasExactSynonym "(w/v)" ,
   owl:members ( obo:BFO_0000004
                 obo:BFO_0000020
                 obo:BFO_0000031
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( obo:BFO_0000006
+                obo:BFO_0000029
+                obo:BFO_0000140
               )
 ] .
 
