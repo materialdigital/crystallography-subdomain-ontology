@@ -7,7 +7,7 @@
     <uri name="https://w3id.org/pmd/cryo/components/cryo-axioms-shared.owl" uri="cryo-axioms-shared.owl" />
     <uri name="https://w3id.org/pmd/cryo/components/cryo-shared.owl" uri="cryo-shared.owl" />
 
-    <uri name="https://w3id.org/pmd/cryo/components/entities.owl" uri="cryo-entities.owl" />
-    <uri name="https://w3id.org/pmd/cryo/components/qualities.owl" uri="cryo-qualities.owl" />
+    <uri name="https://w3id.org/pmd/cryo/components/cryo-entities.owl" uri="cryo-entities.owl" />
+    <uri name="https://w3id.org/pmd/cryo/components/cryo-qualities.owl" uri="cryo-qualities.owl" />
 </group>
 </catalog>
