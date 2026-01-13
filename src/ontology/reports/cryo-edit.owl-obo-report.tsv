@@ -10,3 +10,17 @@ WARN	missing_definition	α lattice parameter	IAO:0000115
 WARN	missing_definition	β lattice parameter	IAO:0000115	
 WARN	missing_definition	γ lattice parameter	IAO:0000115	
 WARN	missing_definition	basis	IAO:0000115	
+WARN	missing_definition	crystallographic plane	IAO:0000115	
+WARN	missing_definition	crystallographic direction	IAO:0000115	
+WARN	missing_definition	interplanar spacing	IAO:0000115	
+WARN	missing_definition	Miller indices	IAO:0000115	
+WARN	missing_definition	lattice point	IAO:0000115	
+WARN	missing_definition	has Miller index	IAO:0000115	
+WARN	missing_definition	has h	IAO:0000115	
+WARN	missing_definition	has k	IAO:0000115	
+WARN	missing_definition	has l	IAO:0000115	
+WARN	missing_definition	direction Miller indices	IAO:0000115	
+WARN	missing_definition	family of directions Miller indices	IAO:0000115	
+WARN	missing_definition	plane Miller indices	IAO:0000115	
+WARN	missing_definition	family of planes Miller indices	IAO:0000115	
+WARN	missing_definition	point Miller indices	IAO:0000115	

@@ -312,6 +312,16 @@ Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000007>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000008>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000009>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000010>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000011>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000012>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000013>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000014>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000015>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000020>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000021>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000022>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000023>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000024>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
@@ -378,6 +388,10 @@ Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025999>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0002135>))
 Declaration(DataProperty(<https://w3id.org/pmd/co/PMD_0000006>))
+Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000016>))
+Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000017>))
+Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000018>))
+Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000019>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000076>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000164>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020006>))
@@ -1064,6 +1078,30 @@ DataPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0002135> <http://purl.obo
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000006> "has value"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000006> "data property that relates an information content entity to a literal"@en)
 DataPropertyDomain(<https://w3id.org/pmd/co/PMD_0000006> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Data Property: <https://w3id.org/pmd/cryo/CRYO_0000016> (has Miller index)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000016> "has Miller index"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000016> "has Miller index is a top-level annotation property to specify Miller indices of crystallographic plane, direction, or lattice point."@en)
+DataPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000016> xsd:integer)
+
+# Data Property: <https://w3id.org/pmd/cryo/CRYO_0000017> (has h)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000017> "has h"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000017> "has h specifies an integer of a h Miller index in a hkl set"@en)
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000016>)
+
+# Data Property: <https://w3id.org/pmd/cryo/CRYO_0000018> (has k)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000018> "has k"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000018> "has k specifies an integer of a k Miller index in a hkl set"@en)
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000016>)
+
+# Data Property: <https://w3id.org/pmd/cryo/CRYO_0000019> (has l)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000019> "has l"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000019> "has l specifies an integer of a l Miller index in a hkl set"@en)
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000016>)
 
 
 
@@ -3296,6 +3334,87 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000010> "basis"@
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000010> "Basis is a object aggregate which has one or more atoms or molecules as parts. It defines the minimal number of atoms or molecules to form a unit cell."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000010> <http://purl.obolibrary.org/obo/BFO_0000027>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000010> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0001025> <https://w3id.org/pmd/cryo/CRYO_0000000>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000011> (crystallographic plane)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000011> "crystallographic plane"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000011> "Crystallographic plane is a fiat surface which is part of a crystal lattice and which is denoted by Miller indices of a plane."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000011> <http://purl.obolibrary.org/obo/BFO_0000146>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/cryo/CRYO_0000001>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000012> (crystallographic direction)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000012> "crystallographic direction"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000012> "Crystallographic direction is a fiat line which is part of a crystal lattice and which is denoted by Miller indices of a direction."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000012> <http://purl.obolibrary.org/obo/BFO_0000142>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/cryo/CRYO_0000001>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000013> (interplanar spacing)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000013> "TODO add symbol annotation property")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000013> "interplanar spacing"@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000013> <http://purl.obolibrary.org/obo/BFO_0000145>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000013> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025999> <https://w3id.org/pmd/cryo/CRYO_0000011>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000014> (Miller indices)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000014> "TODO 
+1. think if its actually 1D..
+2. Review the definitions of sublcasses"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000014> "Miller indices"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000014> "Miller indices is an information content entity which denotes crystallographic direction, crystallographic plane, or lattice point, i.e., defines their position in respect to the coordinate system of a crystal lattice, and has exactly 3 interger literals, namely h, k. and l."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000014> <https://w3id.org/pmd/co/PMD_0000501>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000219> ObjectUnionOf(<https://w3id.org/pmd/cryo/CRYO_0000011> <https://w3id.org/pmd/cryo/CRYO_0000012> <https://w3id.org/pmd/cryo/CRYO_0000015>)))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000014> DataExactCardinality(1 <https://w3id.org/pmd/cryo/CRYO_0000017>))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000014> DataExactCardinality(1 <https://w3id.org/pmd/cryo/CRYO_0000018>))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000014> DataExactCardinality(1 <https://w3id.org/pmd/cryo/CRYO_0000019>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000015> (lattice point)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000015> "TODO: 
+1. is it relevant for molecules
+2. With SHACL it is possible to say that it is the same instance of a atom from the axiom"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000015> "lattice point"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000015> "Lattice point is a fiat point which is a part of a lattice and is a location of atoms (or molecules) of a crystal, which is located in the lattice."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000015> <http://purl.obolibrary.org/obo/BFO_0000147>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000015> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001015> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_33250>))))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001015> <http://purl.obolibrary.org/obo/CHEBI_33250>)))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000020> (direction Miller indices)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000020> "direction Miller indices"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000020> "Direction Miller indices define the components of a sinlge vector in the given direction in a crystal's unit cell. Usually, direction Miller indices are reduced to the lowest set of integers. Direction Miller indices must be written in square brackets, e.g., [hkl]."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/cryo/CRYO_0000020> "[111]")
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000014>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000021> (family of directions Miller indices)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000021> "family of directions Miller indices"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000021> "<111>")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000021> "Set of directions Miller indices define the components of symmetrically equivalent directions in a crystal lattice. Set of directions Miller indices must be written as <hkl>."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000021> <https://w3id.org/pmd/cryo/CRYO_0000014>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000022> (plane Miller indices)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000022> "plane Miller indices"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000022> "Plane Miller indices define the reciprocals of the fractional intercepts the plane makes with the crystallographic axes, reduced to the lowest set of integers. 
+For example, if a plane crosses [100] axis at 1/h, [010 ] axis at 1/k, and [001] axis at 1/l, then such plane is denoted as (hkl) plane. If a plane is parallel to one of the axes, then the corresponding Miller index is 0.
+Plane Miller indices must be written in round brackets, e.g., (hkl)."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/cryo/CRYO_0000022> "(hkl)")
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000014>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000023> (family of planes Miller indices)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000023> "family of planes Miller indices"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000023> "Set of planes Miller indices define set of symmetrically equivalent planes. Set of planes must be written in curly brackets, e.g., {hkl}."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/cryo/CRYO_0000023> "{111}")
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000023> <https://w3id.org/pmd/cryo/CRYO_0000014>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000024> (point Miller indices)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000024> "point Miller indices"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000024> "Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l)."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/cryo/CRYO_0000024> "(1,1,1)")
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000024> <https://w3id.org/pmd/cryo/CRYO_0000014>)
 
 
 ############################
