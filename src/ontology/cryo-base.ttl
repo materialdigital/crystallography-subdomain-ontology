@@ -12,12 +12,12 @@
 @base <https://w3id.org/pmd/cryo/cryo-base.ttl> .
 
 <https://w3id.org/pmd/cryo/cryo-base.ttl> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-01-12/cryo-base.ttl> ;
+                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-01-13/cryo-base.ttl> ;
                                            dce:type obo:IAO_8000001 ;
                                            dcterms:description "None" ;
                                            dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                            dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x" ;
-                                           owl:versionInfo "2026-01-12" .
+                                           owl:versionInfo "2026-01-13" .
 
 #################################################################
 #    Annotation properties
@@ -125,6 +125,10 @@ obo:RO_0000058 rdf:type owl:ObjectProperty .
 
 ###  http://purl.obolibrary.org/obo/RO_0000080
 obo:RO_0000080 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0001015
+obo:RO_0001015 rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0001025
@@ -304,6 +308,10 @@ obo:BFO_0000040 rdf:type owl:Class .
 
 ###  http://purl.obolibrary.org/obo/BFO_0000145
 obo:BFO_0000145 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000146
+obo:BFO_0000146 rdf:type owl:Class .
 
 
 ###  http://purl.obolibrary.org/obo/CHEBI_18248
@@ -2614,6 +2622,13 @@ co:PMD_0020161 rdf:type owl:Class ;
                skos:definition "Activity (a_X) is a relational property between a chemical species X and a non-ideal solution. a_X is a measure of the effective concentration of a chemical species X in the non-ideal solution, accounting for interactions between particles. It is defined as the product of the concentration and an activity coefficient, where the activity coefficient corrects for non-ideal behavior."@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0020201
+co:PMD_0020201 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000146 ;
+               rdfs:label "section"@en ;
+               skos:definition "Section is a planar fiat surface cutting across the object"@en .
+
+
 ###  https://w3id.org/pmd/co/PMD_0020207
 co:PMD_0020207 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020103 ;
@@ -2769,7 +2784,7 @@ co:PMD_0050157 rdf:type owl:Class ;
 <https://w3id.org/pmd/cryo/CRYO_0000000> rdf:type owl:Class ;
                                          rdfs:subClassOf obo:BFO_0000029 ;
                                          rdfs:label "unit cell"@en ;
-                                         skos:definition "Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, where the lattice can be constructed by translational displacements. Thus, unit cell is characterized by the length of its sides and their angular relations."@en .
+                                         skos:definition "Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, from which the lattice can be constructed by translational displacements. Unit cell is characterized by the length of its sides and their angular relations."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000001
@@ -2780,14 +2795,14 @@ co:PMD_0050157 rdf:type owl:Class ;
                                                            owl:someValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000000>
                                                          ] ,
                                                          [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:RO_0001025 ;
+                                                           owl:onProperty obo:RO_0001015 ;
                                                            owl:someValuesFrom co:PMD_0020003
                                                          ] ;
                                          rdfs:comment """TODO: 
 1. check if located in is meant to be used this way
 2. Is there a better alternative to has part?"""@en ;
-                                         rdfs:label "lattice"@en ;
-                                         skos:definition "Lattice is a site that is formed by a two- or three-dimensional periodic array of points in space, which describes the arrangement of atoms or molecules in a crystal."@en .
+                                         rdfs:label "crystal lattice"@en ;
+                                         skos:definition "Crystal lattice is a site which has unit cell as part and is location of a crystal. It represents a periodic array of points in space, which describe the arrangement of atoms or molecules in a crystal."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000002
@@ -2853,6 +2868,17 @@ co:PMD_0050157 rdf:type owl:Class ;
                                          rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000006> ;
                                          rdfs:label "γ lattice parameter"@en ;
                                          skos:definition "γ lattice parameter is an anlge between x- and z-directions in a unit cell"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000010
+<https://w3id.org/pmd/cryo/CRYO_0000010> rdf:type owl:Class ;
+                                         rdfs:subClassOf obo:BFO_0000027 ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0001025 ;
+                                                           owl:allValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000000>
+                                                         ] ;
+                                         rdfs:label "basis"@en ;
+                                         skos:definition "Basis is a object aggregate which has one or more atoms or molecules as parts. It defines the minimal number of atoms or molecules to form a unit cell."@en .
 
 
 #################################################################

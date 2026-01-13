@@ -1,6 +1,6 @@
 Level	Rule Name	Subject	Property	Value
 WARN	missing_definition	unit cell	IAO:0000115	
-WARN	missing_definition	lattice	IAO:0000115	
+WARN	missing_definition	crystal lattice	IAO:0000115	
 WARN	missing_definition	lattice parameter	IAO:0000115	
 WARN	missing_definition	a lattice parameter	IAO:0000115	
 WARN	missing_definition	b lattice parameter	IAO:0000115	
@@ -9,3 +9,4 @@ WARN	missing_definition	angular lattice parameter	IAO:0000115
 WARN	missing_definition	α lattice parameter	IAO:0000115	
 WARN	missing_definition	β lattice parameter	IAO:0000115	
 WARN	missing_definition	γ lattice parameter	IAO:0000115	
+WARN	missing_definition	basis	IAO:0000115	

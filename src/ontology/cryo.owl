@@ -15,11 +15,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-01-12/cryo.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-01-13/cryo.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x</dcterms:title>
-        <owl:versionInfo>2026-01-12</owl:versionInfo>
+        <owl:versionInfo>2026-01-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1561,6 +1561,17 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
+        <rdfs:label xml:lang="en">fiat line</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A fiat line is a one-dimensional continuant fiat boundary that is continuous</skos:definition>
+        <skos:example xml:lang="en">The Equator; all geopolitical boundaries; all lines of latitude and longitude; the median sulcus of your tongue; the line separating the outer surface of the mucosa of the lower lip from the outer surface of the skin of the chin</skos:example>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000145 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000145">
@@ -1568,6 +1579,28 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
         <rdfs:label xml:lang="en">relational quality</rdfs:label>
         <skos:definition xml:lang="en">b is a relational quality =Def b is a quality &amp; there exists c and d such that c and d are not identical &amp; b specifically depends on c &amp; b specifically depends on d</skos:definition>
         <skos:example xml:lang="en">A marriage bond; an instance of love; an obligation between one person and another</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000146">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
+        <rdfs:label xml:lang="en">fiat surface</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A fiat surface is a two-dimensional continuant fiat boundary that is self-connected</skos:definition>
+        <skos:example xml:lang="en">The surface of the Earth; the plane separating the smoking from the non-smoking zone in a restaurant</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
+        <rdfs:label xml:lang="en">fiat point</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A fiat point is a zero-dimensional continuant fiat boundary that consists of a single point</skos:definition>
+        <skos:example xml:lang="en">The geographic North Pole; the quadripoint where the boundaries of Colorado, Utah, New Mexico and Arizona meet; the point of origin of some spatial coordinate system</skos:example>
     </owl:Class>
     
 
@@ -5413,6 +5446,16 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0020201 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020201">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
+        <rdfs:label xml:lang="en">section</rdfs:label>
+        <skos:definition xml:lang="en">Section is a planar fiat surface cutting across the object</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0020207 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020207">
@@ -5623,7 +5666,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <rdfs:label xml:lang="en">unit cell</rdfs:label>
-        <skos:definition xml:lang="en">Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, where the lattice can be constructed by translational displacements. Thus, unit cell is characterized by the length of its sides and their angular relations.</skos:definition>
+        <skos:definition xml:lang="en">Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, from which the lattice can be constructed by translational displacements. Unit cell is characterized by the length of its sides and their angular relations.</skos:definition>
     </owl:Class>
     
 
@@ -5640,15 +5683,15 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">TODO: 
 1. check if located in is meant to be used this way
 2. Is there a better alternative to has part?</rdfs:comment>
-        <rdfs:label xml:lang="en">lattice</rdfs:label>
-        <skos:definition xml:lang="en">Lattice is a site that is formed by a two- or three-dimensional periodic array of points in space, which describes the arrangement of atoms or molecules in a crystal.</skos:definition>
+        <rdfs:label xml:lang="en">crystal lattice</rdfs:label>
+        <skos:definition xml:lang="en">Crystal lattice is a site which has unit cell as part and is location of a crystal. It represents a periodic array of points in space, which describe the arrangement of atoms or molecules in a crystal.</skos:definition>
     </owl:Class>
     
 
@@ -5742,6 +5785,22 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000006"/>
         <rdfs:label xml:lang="en">γ lattice parameter</rdfs:label>
         <skos:definition xml:lang="en">γ lattice parameter is an anlge between x- and z-directions in a unit cell</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000010 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">basis</rdfs:label>
+        <skos:definition xml:lang="en">Basis is a object aggregate which has one or more atoms or molecules as parts. It defines the minimal number of atoms or molecules to form a unit cell.</skos:definition>
     </owl:Class>
     
 
@@ -6111,6 +6170,14 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000018"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000026"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000142"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000146"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000147"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

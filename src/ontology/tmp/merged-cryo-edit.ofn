@@ -41,7 +41,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000142>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000145>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000146>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000147>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000148>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000202>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000203>))
@@ -284,6 +287,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020143>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020148>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020149>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020161>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020201>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020207>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025002>))
@@ -307,6 +311,7 @@ Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000006>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000007>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000008>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000009>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
@@ -1285,12 +1290,33 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000141> "As for fiat point, fiat line, fiat surface, site"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000141> <http://purl.obolibrary.org/obo/BFO_0000004>)
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000142> (fiat line)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000142> "fiat line"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000142> "(Elucidation) A fiat line is a one-dimensional continuant fiat boundary that is continuous"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000142> "The Equator; all geopolitical boundaries; all lines of latitude and longitude; the median sulcus of your tongue; the line separating the outer surface of the mucosa of the lower lip from the outer surface of the skin of the chin"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000142> <http://purl.obolibrary.org/obo/BFO_0000140>)
+
 # Class: <http://purl.obolibrary.org/obo/BFO_0000145> (relational quality)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000145> "relational quality"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000145> "b is a relational quality =Def b is a quality & there exists c and d such that c and d are not identical & b specifically depends on c & b specifically depends on d"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000145> "A marriage bond; an instance of love; an obligation between one person and another"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000145> <http://purl.obolibrary.org/obo/BFO_0000019>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000146> (fiat surface)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000146> "fiat surface"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000146> "(Elucidation) A fiat surface is a two-dimensional continuant fiat boundary that is self-connected"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000146> "The surface of the Earth; the plane separating the smoking from the non-smoking zone in a restaurant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000146> <http://purl.obolibrary.org/obo/BFO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000147> (fiat point)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000147> "fiat point"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000147> "(Elucidation) A fiat point is a zero-dimensional continuant fiat boundary that consists of a single point"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000147> "The geographic North Pole; the quadripoint where the boundaries of Colorado, Utah, New Mexico and Arizona meet; the point of origin of some spatial coordinate system"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000147> <http://purl.obolibrary.org/obo/BFO_0000140>)
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000148> (zero-dimensional temporal region)
 
@@ -3083,6 +3109,12 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020161> "activity (
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020161> "Activity (a_X) is a relational property between a chemical species X and a non-ideal solution. a_X is a measure of the effective concentration of a chemical species X in the non-ideal solution, accounting for interactions between particles. It is defined as the product of the concentration and an activity coefficient, where the activity coefficient corrects for non-ideal behavior."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020161> <http://purl.obolibrary.org/obo/BFO_0000145>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0020201> (section)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020201> "section"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020201> "Section is a planar fiat surface cutting across the object"@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020201> <http://purl.obolibrary.org/obo/BFO_0000146>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0020207> (amount of substance)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020207> "amount of substance"@en)
@@ -3193,19 +3225,19 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0050157> <https://w3id.org/pmd/co/PMD_00
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000000> (unit cell)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000000> "unit cell"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000000> "Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, where the lattice can be constructed by translational displacements. Thus, unit cell is characterized by the length of its sides and their angular relations."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000000> "Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, from which the lattice can be constructed by translational displacements. Unit cell is characterized by the length of its sides and their angular relations."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000000> <http://purl.obolibrary.org/obo/BFO_0000029>)
 
-# Class: <https://w3id.org/pmd/cryo/CRYO_0000001> (lattice)
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000001> (crystal lattice)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000001> "TODO: 
 1. check if located in is meant to be used this way
 2. Is there a better alternative to has part?"@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000001> "lattice"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000001> "Lattice is a site that is formed by a two- or three-dimensional periodic array of points in space, which describes the arrangement of atoms or molecules in a crystal."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000001> "crystal lattice"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000001> "Crystal lattice is a site which has unit cell as part and is location of a crystal. It represents a periodic array of points in space, which describe the arrangement of atoms or molecules in a crystal."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000001> <http://purl.obolibrary.org/obo/BFO_0000029>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/pmd/cryo/CRYO_0000000>))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001025> <https://w3id.org/pmd/co/PMD_0020003>))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001015> <https://w3id.org/pmd/co/PMD_0020003>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000002> (lattice parameter)
 
@@ -3257,6 +3289,13 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000008> <https://w3id.org/pmd/cryo/C
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000009> "γ lattice parameter"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000009> "γ lattice parameter is an anlge between x- and z-directions in a unit cell"@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000009> <https://w3id.org/pmd/cryo/CRYO_0000006>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000010> (basis)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000010> "basis"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000010> "Basis is a object aggregate which has one or more atoms or molecules as parts. It defines the minimal number of atoms or molecules to form a unit cell."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000010> <http://purl.obolibrary.org/obo/BFO_0000027>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000010> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0001025> <https://w3id.org/pmd/cryo/CRYO_0000000>))
 
 
 ############################
@@ -3427,6 +3466,7 @@ DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolib
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000140>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000011> <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000035>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000009> <http://purl.obolibrary.org/obo/BFO_0000018> <http://purl.obolibrary.org/obo/BFO_0000026> <http://purl.obolibrary.org/obo/BFO_0000028>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000142> <http://purl.obolibrary.org/obo/BFO_0000146> <http://purl.obolibrary.org/obo/BFO_0000147>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000503> <https://w3id.org/pmd/co/PMD_0000512> <https://w3id.org/pmd/co/PMD_0000591> <https://w3id.org/pmd/co/PMD_0000595> <https://w3id.org/pmd/co/PMD_0000597> <https://w3id.org/pmd/co/PMD_0000853> <https://w3id.org/pmd/co/PMD_0000896> <https://w3id.org/pmd/co/PMD_0000942> <https://w3id.org/pmd/co/PMD_0000967> <https://w3id.org/pmd/co/PMD_0020005> <https://w3id.org/pmd/co/PMD_0020112> <https://w3id.org/pmd/co/PMD_0025001> <https://w3id.org/pmd/co/PMD_0025003>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000553> <https://w3id.org/pmd/co/PMD_0000619> <https://w3id.org/pmd/co/PMD_0020132> <https://w3id.org/pmd/co/PMD_0020133> <https://w3id.org/pmd/co/PMD_0020142> <https://w3id.org/pmd/co/PMD_0020161> <https://w3id.org/pmd/co/PMD_0050155>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0020102> <https://w3id.org/pmd/co/PMD_0020103> <https://w3id.org/pmd/co/PMD_0020104>)
