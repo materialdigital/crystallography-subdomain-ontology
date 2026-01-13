@@ -107,6 +107,16 @@
         <rdfs:label xml:lang="en">γ lattice parameter</rdfs:label>
         <skos:definition xml:lang="en">γ lattice parameter is an anlge between x- and z-directions in a unit cell</skos:definition>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000013 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:comment>TODO add symbol annotation property</rdfs:comment>
+        <rdfs:label xml:lang="en">interplanar spacing</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 

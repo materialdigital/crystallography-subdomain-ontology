@@ -8,6 +8,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cryo="https://w3id.org/pmd/cryo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -15,6 +16,57 @@
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/components/cryo-entities.owl">
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/components/cryo-shared.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000016 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000016">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">has Miller index</rdfs:label>
+        <skos:definition xml:lang="en">has Miller index is a top-level annotation property to specify Miller indices of crystallographic plane, direction, or lattice point.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000017 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000017">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
+        <rdfs:label xml:lang="en">has h</rdfs:label>
+        <skos:definition xml:lang="en">has h specifies an integer of a h Miller index in a hkl set</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000018 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000018">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
+        <rdfs:label xml:lang="en">has k</rdfs:label>
+        <skos:definition xml:lang="en">has k specifies an integer of a k Miller index in a hkl set</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000019 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000019">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
+        <rdfs:label xml:lang="en">has l</rdfs:label>
+        <skos:definition xml:lang="en">has l specifies an integer of a l Miller index in a hkl set</skos:definition>
+    </owl:DatatypeProperty>
     
 
 
@@ -76,6 +128,187 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">basis</rdfs:label>
         <skos:definition xml:lang="en">Basis is a object aggregate which has one or more atoms or molecules as parts. It defines the minimal number of atoms or molecules to form a unit cell.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000011 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">crystallographic plane</rdfs:label>
+        <skos:definition xml:lang="en">Crystallographic plane is a fiat surface which is part of a crystal lattice and which is denoted by Miller indices of a plane.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000012 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000142"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">crystallographic direction</rdfs:label>
+        <skos:definition xml:lang="en">Crystallographic direction is a fiat line which is part of a crystal lattice and which is denoted by Miller indices of a direction.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000014 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000014">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000501"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000011"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000012"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000015"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000017"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000018"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000019"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TODO 
+1. think if its actually 1D..
+2. Review the definitions of sublcasses</rdfs:comment>
+        <rdfs:label xml:lang="en">Miller indices</rdfs:label>
+        <skos:definition xml:lang="en">Miller indices is an information content entity which denotes crystallographic direction, crystallographic plane, or lattice point, i.e., defines their position in respect to the coordinate system of a crystal lattice, and has exactly 3 interger literals, namely h, k. and l.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000015 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000147"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020003"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TODO: 
+1. is it relevant for molecules
+2. With SHACL it is possible to say that it is the same instance of a atom from the axiom</rdfs:comment>
+        <rdfs:label xml:lang="en">lattice point</rdfs:label>
+        <skos:definition xml:lang="en">Lattice point is a fiat point which is a part of a lattice and is a location of atoms (or molecules) of a crystal, which is located in the lattice.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000020 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000020">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:label xml:lang="en">direction Miller indices</rdfs:label>
+        <skos:definition xml:lang="en">Direction Miller indices define the components of a sinlge vector in the given direction in a crystal&apos;s unit cell. Usually, direction Miller indices are reduced to the lowest set of integers. Direction Miller indices must be written in square brackets, e.g., [hkl].</skos:definition>
+        <skos:example>[111]</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000021 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:label xml:lang="en">family of directions Miller indices</rdfs:label>
+        <skos:definition xml:lang="en">Set of directions Miller indices define the components of symmetrically equivalent directions in a crystal lattice. Set of directions Miller indices must be written as &lt;hkl&gt;.</skos:definition>
+        <skos:definition>&lt;111&gt;</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000022 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000022">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:label xml:lang="en">plane Miller indices</rdfs:label>
+        <skos:definition xml:lang="en">Plane Miller indices define the reciprocals of the fractional intercepts the plane makes with the crystallographic axes, reduced to the lowest set of integers. 
+For example, if a plane crosses [100] axis at 1/h, [010 ] axis at 1/k, and [001] axis at 1/l, then such plane is denoted as (hkl) plane. If a plane is parallel to one of the axes, then the corresponding Miller index is 0.
+Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:definition>
+        <skos:example>(hkl)</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000023 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000023">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:label xml:lang="en">family of planes Miller indices</rdfs:label>
+        <skos:definition xml:lang="en">Set of planes Miller indices define set of symmetrically equivalent planes. Set of planes must be written in curly brackets, e.g., {hkl}.</skos:definition>
+        <skos:example>{111}</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000024 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000024">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:label xml:lang="en">point Miller indices</rdfs:label>
+        <skos:definition xml:lang="en">Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l).</skos:definition>
+        <skos:example>(1,1,1)</skos:example>
     </owl:Class>
 </rdf:RDF>
 
