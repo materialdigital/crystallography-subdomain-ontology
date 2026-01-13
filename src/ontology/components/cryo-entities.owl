@@ -34,7 +34,7 @@
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <rdfs:label xml:lang="en">unit cell</rdfs:label>
-        <skos:definition xml:lang="en">Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, where the lattice can be constructed by translational displacements. Thus, unit cell is characterized by the length of its sides and their angular relations.</skos:definition>
+        <skos:definition xml:lang="en">Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, from which the lattice can be constructed by translational displacements. Unit cell is characterized by the length of its sides and their angular relations.</skos:definition>
     </owl:Class>
     
 
@@ -51,15 +51,31 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">TODO: 
 1. check if located in is meant to be used this way
 2. Is there a better alternative to has part?</rdfs:comment>
-        <rdfs:label xml:lang="en">lattice</rdfs:label>
-        <skos:definition xml:lang="en">Lattice is a site that is formed by a two- or three-dimensional periodic array of points in space, which describes the arrangement of atoms or molecules in a crystal.</skos:definition>
+        <rdfs:label xml:lang="en">crystal lattice</rdfs:label>
+        <skos:definition xml:lang="en">Crystal lattice is a site which has unit cell as part and is location of a crystal. It represents a periodic array of points in space, which describe the arrangement of atoms or molecules in a crystal.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000010 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">basis</rdfs:label>
+        <skos:definition xml:lang="en">Basis is a object aggregate which has one or more atoms or molecules as parts. It defines the minimal number of atoms or molecules to form a unit cell.</skos:definition>
     </owl:Class>
 </rdf:RDF>
 

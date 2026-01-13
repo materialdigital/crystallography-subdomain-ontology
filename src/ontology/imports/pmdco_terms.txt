@@ -65,6 +65,10 @@ https://w3id.org/pmd/co/PMD_0020128  # thermodynamic system
 https://w3id.org/pmd/co/PMD_0000965  # surface
 https://w3id.org/pmd/co/PMD_0000538  # bulk
 http://purl.obolibrary.org/obo/BFO_0000029 # site
+http://purl.obolibrary.org/obo/BFO_0000142 # fiat line
+http://purl.obolibrary.org/obo/BFO_0000147 # fiat point
+http://purl.obolibrary.org/obo/BFO_0000146 # fiat surface
+https://w3id.org/pmd/co/PMD_0020201 # section
 
 
 # OPs
