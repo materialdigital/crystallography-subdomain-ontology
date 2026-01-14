@@ -61,8 +61,8 @@ CITATION=cryo: Crystallography Subdomain Ontology. Version $(VERSION), https://w
 ALL_ANNOTATIONS=--ontology-iri https://w3id.org/pmd/cryo/ -V https://w3id.org/pmd/cryo/$(VERSION) \
 	--annotation http://purl.org/dc/terms/created "$(TODAY)" \
 	--annotation owl:versionInfo "$(VERSION)" \
-	--annotation http://purl.org/dc/terms/bibliographicCitation "$(CITATION)"  \
-	--link-annotation owl:priorVersion https://w3id.org/pmd/cryo/$(PRIOR_VERSION) \
+	--annotation http://purl.org/dc/terms/bibliographicCitation "$(CITATION)" \
+	--link-annotation owl:priorVersion https://w3id.org/pmd/cryo/$(PRIOR_VERSION)
 
 update-ontology-annotations: 
 	$(ROBOT) annotate --input cryo.owl $(ALL_ANNOTATIONS) --output ../../cryo.owl
@@ -71,6 +71,7 @@ update-ontology-annotations:
 	$(ROBOT) annotate --input cryo-full.ttl $(ALL_ANNOTATIONS) --output ../../cryo-full.ttl
 	$(ROBOT) annotate --input cryo-base.owl $(ALL_ANNOTATIONS) --output ../../cryo-base.owl
 	$(ROBOT) annotate --input cryo-base.ttl $(ALL_ANNOTATIONS) --output ../../cryo-base.ttl
+	@if [ -f cryo-simple.owl ]; then $(ROBOT) annotate --input cryo-simple.owl $(ALL_ANNOTATIONS) --output ../../cryo-simple.owl; fi
 
 all_assets: update-ontology-annotations
 	
