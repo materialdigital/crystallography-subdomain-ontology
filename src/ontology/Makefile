@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                28d8d187904c4a0b58d9a362de515ee861f1c7c6b76f3b8c40531f408addb3dc
+CONFIG_HASH=                54c6482c80817a932ad25de60bd7c97c1e03b4d6c9b968f53de51f93adf89ffb
 
 
 # ----------------------------------------
@@ -379,7 +379,7 @@ $(IMPORTSEED): $(PRESEED) | $(TMPDIR)
 
 T_IMPORTSEED = --term-file $(IMPORTSEED)
 
-ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 OMO:0002000 
+ANNOTATION_PROPERTIES=rdfs:label IAO:0000119 IAO:0000115 IAO:0000116 IAO:0000112 skos:definition skos:example skos:comment skos:altLabel 
 
 # ----------------------------------------
 # Import modules
@@ -408,6 +408,12 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 		 $(ANNOTATE_CONVERT_FILE)
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
+
+## Module for ontology: pmdco (custom)
+$(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl
+	@echo "ERROR: You have configured pmdco as a custom module;"
+	@echo "       This rule needs to be overwritten in cryo.Makefile!"
+	@false
 
 endif # IMP=true
 
@@ -492,7 +498,7 @@ ifeq ($(MIR),true)
 .PHONY: mirror-pmdco
 .PRECIOUS: $(MIRRORDIR)/pmdco.owl
 mirror-pmdco: | $(TMPDIR)
-	$(ROBOT) convert -I https://materialdigital.github.io/core-ontology/ontology.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I https://raw.githubusercontent.com/materialdigital/core-ontology/refs/heads/main/src/ontology/pmdco.ttl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

@@ -15,7 +15,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/pmdco.ttl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/co/releases/2026-01-12/pmdco.ttl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/co/releases/2026-01-14/pmdco.ttl"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-6772-1943"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-1058-3102"/>
@@ -41,7 +41,7 @@ PMDco at GitHub: https://github.com/materialdigital/core-ontology
 Documentation: https://materialdigital.github.io/core-ontology/docs/</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>PMD Core Ontology</dcterms:title>
-        <owl:versionInfo>2026-01-12</owl:versionInfo>
+        <owl:versionInfo>2026-01-14</owl:versionInfo>
     </owl:Ontology>
     
 

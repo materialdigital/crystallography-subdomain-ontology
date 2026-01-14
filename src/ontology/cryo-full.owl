@@ -15,11 +15,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/cryo-full.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-01-13/cryo-full.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-01-14/cryo-full.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x</dcterms:title>
-        <owl:versionInfo>2026-01-13</owl:versionInfo>
+        <owl:versionInfo>2026-01-14</owl:versionInfo>
     </owl:Ontology>
     
 
