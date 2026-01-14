@@ -64,7 +64,6 @@ ALL_ANNOTATIONS=--ontology-iri https://w3id.org/pmd/cryo/ -V https://w3id.org/pm
 	--annotation http://purl.org/dc/terms/bibliographicCitation "$(CITATION)" \
 	--link-annotation owl:priorVersion https://w3id.org/pmd/cryo/$(PRIOR_VERSION)
 
-.PHONY: update-ontology-annotations
 update-ontology-annotations:
 	@echo "Publishing CryO assets to root directory..."
 	$(ROBOT) annotate --input cryo.owl $(ALL_ANNOTATIONS) --output ../../cryo.owl
@@ -73,3 +72,5 @@ update-ontology-annotations:
 	$(ROBOT) annotate --input cryo-full.ttl $(ALL_ANNOTATIONS) --output ../../cryo-full.ttl
 	$(ROBOT) annotate --input cryo-base.owl $(ALL_ANNOTATIONS) --output ../../cryo-base.owl
 	$(ROBOT) annotate --input cryo-base.ttl $(ALL_ANNOTATIONS) --output ../../cryo-base.ttl
+
+all_assets: update-ontology-annotations
