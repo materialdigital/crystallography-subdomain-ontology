@@ -72,5 +72,5 @@ update-ontology-annotations:
 	$(ROBOT) annotate --input cryo-base.owl $(ALL_ANNOTATIONS) --output ../../cryo-base.owl
 	$(ROBOT) annotate --input cryo-base.ttl $(ALL_ANNOTATIONS) --output ../../cryo-base.ttl
 
-all_assets:: update-ontology-annotations
+all_assets: update-ontology-annotations
 	
