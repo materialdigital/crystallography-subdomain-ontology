@@ -38,5 +38,5 @@ jobs:
         with:
           message: "updated ontology"
           cwd: "." 
-          add: "*.owl src/**/* --force" 
+          add: "*.owl *.ttl src/**/* --force" 
           default_author: github_actions
