@@ -56,10 +56,7 @@ $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 
-CITATION="'cryo: Crystallography Subdomain Ontology. Version $(VERSION), https://w3id.org/pmd/cryo/'"
-
-
-#ALL_ANNOTATIONS=--annotate-defined-by true \
+CITATION=cryo: Crystallography Subdomain Ontology. Version $(VERSION), https://w3id.org/pmd/cryo/
 
 ALL_ANNOTATIONS=--ontology-iri https://w3id.org/pmd/cryo/ -V https://w3id.org/pmd/cryo/$(VERSION) \
 	--annotation http://purl.org/dc/terms/created "$(TODAY)" \
@@ -68,10 +65,12 @@ ALL_ANNOTATIONS=--ontology-iri https://w3id.org/pmd/cryo/ -V https://w3id.org/pm
 	--link-annotation owl:priorVersion https://w3id.org/pmd/cryo/$(PRIOR_VERSION) \
 
 update-ontology-annotations: 
-	$(ROBOT) annotate --input ../../cryo.owl $(ALL_ANNOTATIONS) --output ../../cryo.owl && \
-	$(ROBOT) annotate --input ../../cryo.ttl $(ALL_ANNOTATIONS) --output ../../cryo.ttl && \
-	$(ROBOT) annotate --input ../../cryo-full.owl $(ALL_ANNOTATIONS) --output ../../cryo-full.owl && \
-	$(ROBOT) annotate --input ../../cryo-full.ttl $(ALL_ANNOTATIONS) --output ../../cryo-full.ttl && \
-	$(ROBOT) annotate --input ../../cryo-base.owl $(ALL_ANNOTATIONS) --output ../../cryo-base.owl && \
-	$(ROBOT) annotate --input ../../cryo-base.ttl $(ALL_ANNOTATIONS) --output ../../cryo-base.ttl && \
+	$(ROBOT) annotate --input cryo.owl $(ALL_ANNOTATIONS) --output ../../cryo.owl && \
+	$(ROBOT) annotate --input cryo.ttl $(ALL_ANNOTATIONS) --output ../../cryo.ttl && \
+	$(ROBOT) annotate --input cryo-full.owl $(ALL_ANNOTATIONS) --output ../../cryo-full.owl && \
+	$(ROBOT) annotate --input cryo-full.ttl $(ALL_ANNOTATIONS) --output ../../cryo-full.ttl && \
+	$(ROBOT) annotate --input cryo-base.owl $(ALL_ANNOTATIONS) --output ../../cryo-base.owl && \
+	$(ROBOT) annotate --input cryo-base.ttl $(ALL_ANNOTATIONS) --output ../../cryo-base.ttl && \
+
+all_assets: update-ontology-annotations
 	
