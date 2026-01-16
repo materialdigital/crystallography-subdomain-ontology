@@ -4517,16 +4517,8 @@ cryo:CRYO_0000014 rdf:type owl:Class ;
                                                        ]
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty cryo:CRYO_0000017 ;
-                                    owl:cardinality "1"^^xsd:nonNegativeInteger
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty cryo:CRYO_0000018 ;
-                                    owl:cardinality "1"^^xsd:nonNegativeInteger
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty cryo:CRYO_0000019 ;
-                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                    owl:onProperty cryo:CRYO_0000016 ;
+                                    owl:cardinality "3"^^xsd:nonNegativeInteger
                                   ] ;
                   rdfs:comment """TODO 
 1. think if its actually 1D..
@@ -4625,6 +4617,48 @@ cryo:CRYO_0000025 rdf:type owl:Class ;
                                   ] ;
                   rdfs:label "atomic plane"@en ;
                   skos:definition "Atomic plane is a 2D fiat object part which has atoms as it parts and is located in some crystallogphic plane, i.e., the positions of atoms relative to each other are defined via the characterisitics of the crystallogphic plane."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000042
+cryo:CRYO_0000042 rdf:type owl:Class ;
+                  rdfs:subClassOf co:PMD_0020148 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0000080 ;
+                                    owl:allValuesFrom co:PMD_0000663
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty co:PMD_0000004 ;
+                                    owl:allValuesFrom cryo:CRYO_0000075
+                                  ] ;
+                  rdfs:label "grain orientation"@en ;
+                  skos:definition """Grain orientation is an intensive quality of grains in material's microstructure, which describes the crystallographic orientation in respect to the external (sample's) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grsins with similar crystallographic orientations.
+Grain orientation can be specified by either texture fibers or texture components. When several grains exhibit similar orientations, then the material exhibits a specific crystallographic texture."""@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000075
+cryo:CRYO_0000075 rdf:type owl:Class ;
+                  rdfs:subClassOf co:PMD_0000501 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:IAO_0000418 ;
+                                    owl:allValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000042
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty obo:RO_0000080 ;
+                                                                               owl:allValuesFrom co:PMD_0000663
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ]
+                                  ] ;
+                  rdfs:label "Euler angles"@en ;
+                  skos:definition "In crystallography Euler angles are three angles which describe orientation of a sinlge crystal in respect to the sample's coordinate system. By aligning coordinate system of every crystal in the sample to the sample's coordinate system, anisotropy of material's properties can be investigated."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000079
+cryo:CRYO_0000079 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000075 ;
+                  rdfs:label "Bunge Euler angles"@en ;
+                  rdfs:seeAlso "https://mtex-toolbox.github.io/RotationDefinition.html" ;
+                  skos:definition "Bunge Euler angles define the Euler angles according to the Bunge notations, which define the three subsequent rotations about fixed axes, namely ZXZ, i.e., the first rotation is around the z axis, second around the x axis and third again around the z."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000124
@@ -5034,8 +5068,8 @@ cryo:CRYO_0000039 rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/pmd/cryo/CRYO_0000040
 cryo:CRYO_0000040 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000023 ;
-                  cryo:CRYO_0000018 0 ,
-                                    1 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
                   cryo:CRYO_0000019 0 ;
                   rdfs:label "{100}"@en .
 
@@ -5242,8 +5276,8 @@ cryo:CRYO_0000112 rdf:type owl:NamedIndividual ,
 cryo:CRYO_0000113 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000021 ;
                   cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 0 ,
-                                    1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "<001>"@en .
 
 

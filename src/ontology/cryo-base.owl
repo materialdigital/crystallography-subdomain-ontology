@@ -165,6 +165,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000418 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000418"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -4381,20 +4387,8 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000017"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000018"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000019"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">TODO 
@@ -4528,6 +4522,66 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">atomic plane</rdfs:label>
         <skos:definition xml:lang="en">Atomic plane is a 2D fiat object part which has atoms as it parts and is located in some crystallogphic plane, i.e., the positions of atoms relative to each other are defined via the characterisitics of the crystallogphic plane.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000042 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000042">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000663"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">grain orientation</rdfs:label>
+        <skos:definition xml:lang="en">Grain orientation is an intensive quality of grains in material&apos;s microstructure, which describes the crystallographic orientation in respect to the external (sample&apos;s) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grsins with similar crystallographic orientations.
+Grain orientation can be specified by either texture fibers or texture components. When several grains exhibit similar orientations, then the material exhibits a specific crystallographic texture.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000075 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000075">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000501"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000418"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000042"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000663"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Euler angles</rdfs:label>
+        <skos:definition xml:lang="en">In crystallography Euler angles are three angles which describe orientation of a sinlge crystal in respect to the sample&apos;s coordinate system. By aligning coordinate system of every crystal in the sample to the sample&apos;s coordinate system, anisotropy of material&apos;s properties can be investigated.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000079 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000079">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000075"/>
+        <rdfs:label xml:lang="en">Bunge Euler angles</rdfs:label>
+        <rdfs:seeAlso>https://mtex-toolbox.github.io/RotationDefinition.html</rdfs:seeAlso>
+        <skos:definition xml:lang="en">Bunge Euler angles define the Euler angles according to the Bunge notations, which define the three subsequent rotations about fixed axes, namely ZXZ, i.e., the first rotation is around the z axis, second around the x axis and third again around the z.</skos:definition>
     </owl:Class>
     
 
@@ -5056,8 +5110,8 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000040">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
-        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
         <rdfs:label xml:lang="en">{100}</rdfs:label>
     </owl:NamedIndividual>
@@ -5328,7 +5382,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000021"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
-        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
         <rdfs:label xml:lang="en">&lt;001&gt;</rdfs:label>
     </owl:NamedIndividual>
     

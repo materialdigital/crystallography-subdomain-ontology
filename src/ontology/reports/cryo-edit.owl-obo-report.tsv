@@ -26,9 +26,12 @@ WARN	missing_definition	plane Miller indices	IAO:0000115
 WARN	missing_definition	family of planes Miller indices	IAO:0000115	
 WARN	missing_definition	point Miller indices	IAO:0000115	
 WARN	missing_definition	atomic plane	IAO:0000115	
+WARN	missing_definition	grain orientation	IAO:0000115	
 WARN	missing_definition	geometrically related	IAO:0000115	
 WARN	missing_definition	parallel to	IAO:0000115	
 WARN	missing_definition	normal to	IAO:0000115	
+WARN	missing_definition	Euler angles	IAO:0000115	
+WARN	missing_definition	Bunge Euler angles	IAO:0000115	
 WARN	missing_definition	symmetry equivalency assertion	IAO:0000115	
 WARN	missing_definition	cubic equivalency assertion	IAO:0000115	
 WARN	missing_definition	has Miller indices family	IAO:0000115	
