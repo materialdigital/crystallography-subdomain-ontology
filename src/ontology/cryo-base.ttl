@@ -256,33 +256,6 @@ RO's 'quality of' is functional i.e., a->b, a->c => b=c. The functionality is re
                skos:example "mass proportion m is relational qualitiy of material, and the same mass proportion m is relational qualitiy of portion of iron"@en .
 
 
-###  https://w3id.org/pmd/cryo/CRYO_0000066
-cryo:CRYO_0000066 rdf:type owl:ObjectProperty ;
-                  rdfs:domain obo:BFO_0000006 ;
-                  rdfs:range obo:BFO_0000006 ;
-                  rdfs:comment "This object property is not intended to be used between intances."@en ;
-                  rdfs:label "geometrically related"@en ;
-                  skos:definition "Geometrically related is a top-level object property to describe geometrical relations between different spatial regions"@en .
-
-
-###  https://w3id.org/pmd/cryo/CRYO_0000067
-cryo:CRYO_0000067 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf cryo:CRYO_0000066 ;
-                  rdf:type owl:SymmetricProperty ,
-                           owl:TransitiveProperty ;
-                  rdfs:comment "Parallel to is an object property which connect two or  more spatial regions that are parallel to each other"@en ;
-                  rdfs:label "parallel to"@en ;
-                  skos:example "<111> family of directions in crystals are parellel to normal direction (ND) of a sample in γ-fiber texture component"@en .
-
-
-###  https://w3id.org/pmd/cryo/CRYO_0000068
-cryo:CRYO_0000068 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf cryo:CRYO_0000066 ;
-                  rdf:type owl:SymmetricProperty ;
-                  rdfs:label "normal to"@en ;
-                  skos:example "Normal to is a object property which describes geometric relation between two spatial regions which are normal to each other"@en .
-
-
 ###  https://w3id.org/pmd/cryo/CRYO_0000152
 cryo:CRYO_0000152 rdf:type owl:ObjectProperty ;
                   owl:inverseOf cryo:CRYO_0000157 ;
@@ -435,10 +408,6 @@ obo:BFO_0000003 rdf:type owl:Class .
 
 ###  http://purl.obolibrary.org/obo/BFO_0000004
 obo:BFO_0000004 rdf:type owl:Class .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000006
-obo:BFO_0000006 rdf:type owl:Class .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000008
