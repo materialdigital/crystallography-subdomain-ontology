@@ -9,6 +9,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:cryo="https://w3id.org/pmd/cryo/"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -16,6 +17,244 @@
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/components/cryo-entities.owl">
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/components/cryo-shared.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000066 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000066">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:comment xml:lang="en">This object property is not intended to be used between intances.</rdfs:comment>
+        <rdfs:label xml:lang="en">geometrically related</rdfs:label>
+        <skos:definition xml:lang="en">Geometrically related is a top-level object property to describe geometrical relations between different spatial regions</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000067 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000067">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000066"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment xml:lang="en">Parallel to is an object property which connect two or  more spatial regions that are parallel to each other</rdfs:comment>
+        <rdfs:label xml:lang="en">parallel to</rdfs:label>
+        <skos:example xml:lang="en">&lt;111&gt; family of directions in crystals are parellel to normal direction (ND) of a sample in γ-fiber texture component</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000068 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000068">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000066"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label xml:lang="en">normal to</rdfs:label>
+        <skos:example xml:lang="en">Normal to is a object property which describes geometric relation between two spatial regions which are normal to each other</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000152 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000152">
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000157"/>
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">has Miller indices family</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000157 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000157">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">Miller indices family of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000158 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000158">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/co/PMD_0020099"/>
+        <rdfs:label xml:lang="en">under symmetry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000162 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000162">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000143"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000124"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020019"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000152"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label xml:lang="en">has Miller indices family under cubic symmetry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000164 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000164">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">denoted by family</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000167 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000167">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:label xml:lang="en">member of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000168 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000168">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000167"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000162"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label xml:lang="en">denoted by family under cubic symmetry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000170 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000124"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
+                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020019"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:label xml:lang="en">is_cubic_context</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000016 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000016">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">has Miller index</rdfs:label>
+        <skos:definition xml:lang="en">has Miller index is a top-level annotation property to specify Miller indices of crystallographic plane, direction, or lattice point.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000017 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000017">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
+        <rdfs:label xml:lang="en">has h</rdfs:label>
+        <skos:definition xml:lang="en">has h specifies an integer of a h Miller index in a hkl set</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000018 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000018">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
+        <rdfs:label xml:lang="en">has k</rdfs:label>
+        <skos:definition xml:lang="en">has k specifies an integer of a k Miller index in a hkl set</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000019 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000019">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
+        <rdfs:label xml:lang="en">has l</rdfs:label>
+        <skos:definition xml:lang="en">has l specifies an integer of a l Miller index in a hkl set</skos:definition>
+    </owl:DatatypeProperty>
+    
 
 
     <!-- 
@@ -26,6 +265,307 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000042 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000042">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000663"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">grain orientation</rdfs:label>
+        <skos:definition xml:lang="en">Grain orientation is an intensive quality of grains in material&apos;s microstructure, which describes the crystallographic orientation in respect to the external (sample&apos;s) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grsins with similar crystallographic orientations.
+Grain orientation can be specified by either texture fibers or texture components. When several grains exhibit similar orientations, then the material exhibits a specific crystallographic texture.</skos:definition>
+    </owl:Class>
+
+
+    
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000075 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000075">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000501"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000418"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000042"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000663"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Euler angles</rdfs:label>
+        <skos:definition xml:lang="en">In crystallography Euler angles are three angles which describe orientation of a sinlge crystal in respect to the sample&apos;s coordinate system. By aligning coordinate system of every crystal in the sample to the sample&apos;s coordinate system, anisotropy of material&apos;s properties can be investigated.</skos:definition>
+    </owl:Class>
+
+
+        <!-- https://w3id.org/pmd/cryo/CRYO_0000079 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000079">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000075"/>
+        <rdfs:label xml:lang="en">Bunge Euler angles</rdfs:label>
+        <rdfs:seeAlso>https://mtex-toolbox.github.io/RotationDefinition.html</rdfs:seeAlso>
+        <skos:definition xml:lang="en">Bunge Euler angles define the Euler angles according to the Bunge notations, which define the three subsequent rotations about fixed axes, namely ZXZ, i.e., the first rotation is around the z axis, second around the x axis and third again around the z.</skos:definition>
+    </owl:Class>
+
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000000 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:label xml:lang="en">unit cell</rdfs:label>
+        <skos:definition xml:lang="en">Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, from which the lattice can be constructed by translational displacements. Unit cell is characterized by the length of its sides and their angular relations.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000001 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TODO: 
+1. check if located in is meant to be used this way
+2. Is there a better alternative to has part?</rdfs:comment>
+        <rdfs:label xml:lang="en">crystal lattice</rdfs:label>
+        <skos:definition xml:lang="en">Crystal lattice is a site which has unit cell as part and is location of a crystal. It represents a periodic array of points in space, which describe the arrangement of atoms or molecules in a crystal.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000010 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">basis</rdfs:label>
+        <skos:definition xml:lang="en">Basis is a object aggregate which has one or more atoms or molecules as parts. It defines the minimal number of atoms or molecules to form a unit cell.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000011 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">crystallographic plane</rdfs:label>
+        <skos:definition xml:lang="en">Crystallographic plane is a fiat surface which is part of a crystal lattice and which is denoted by Miller indices of a plane.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000012 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000142"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">crystallographic direction</rdfs:label>
+        <skos:definition xml:lang="en">Crystallographic direction is a fiat line which is part of a crystal lattice and which is denoted by Miller indices of a direction.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000014 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000014">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000501"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000011"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000012"/>
+                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000015"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TODO 
+1. think if its actually 1D..
+2. Review the definitions of sublcasses</rdfs:comment>
+        <rdfs:label xml:lang="en">Miller indices</rdfs:label>
+        <skos:definition xml:lang="en">Miller indices is an information content entity which denotes crystallographic direction, crystallographic plane, or lattice point, i.e., defines their position in respect to the coordinate system of a crystal lattice, and has exactly 3 interger literals, namely h, k. and l.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000015 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000147"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020003"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TODO: 
+1. is it relevant for molecules
+2. With SHACL it is possible to say that it is the same instance of a atom from the axiom</rdfs:comment>
+        <rdfs:label xml:lang="en">lattice point</rdfs:label>
+        <skos:definition xml:lang="en">Lattice point is a fiat point which is a part of a lattice and is a location of atoms (or molecules) of a crystal, which is located in the lattice.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000020 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000020">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:label xml:lang="en">direction Miller indices</rdfs:label>
+        <skos:definition xml:lang="en">Direction Miller indices define the components of a sinlge vector in the given direction in a crystal&apos;s unit cell. Usually, direction Miller indices are reduced to the lowest set of integers. Direction Miller indices must be written in square brackets, e.g., [hkl].</skos:definition>
+        <skos:example>[111]</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000021 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000021">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:label xml:lang="en">family of directions Miller indices</rdfs:label>
+        <skos:definition>&lt;111&gt;</skos:definition>
+        <skos:definition xml:lang="en">Set of directions Miller indices define the components of symmetrically equivalent directions in a crystal lattice. Set of directions Miller indices must be written as &lt;hkl&gt;.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000022 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000022">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:label xml:lang="en">plane Miller indices</rdfs:label>
+        <skos:definition xml:lang="en">Plane Miller indices define the reciprocals of the fractional intercepts the plane makes with the crystallographic axes, reduced to the lowest set of integers. 
+For example, if a plane crosses [100] axis at 1/h, [010 ] axis at 1/k, and [001] axis at 1/l, then such plane is denoted as (hkl) plane. If a plane is parallel to one of the axes, then the corresponding Miller index is 0.
+Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:definition>
+        <skos:example>(hkl)</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000023 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000023">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:label xml:lang="en">family of planes Miller indices</rdfs:label>
+        <skos:definition xml:lang="en">Set of planes Miller indices define set of symmetrically equivalent planes. Set of planes must be written in curly brackets, e.g., {hkl}.</skos:definition>
+        <skos:example>{111}</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000024 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000024">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:label xml:lang="en">point Miller indices</rdfs:label>
+        <skos:definition xml:lang="en">Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l).</skos:definition>
+        <skos:example>(1,1,1)</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000025 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">atomic plane</rdfs:label>
+        <skos:definition xml:lang="en">Atomic plane is a 2D fiat object part which has atoms as it parts and is located in some crystallogphic plane, i.e., the positions of atoms relative to each other are defined via the characterisitics of the crystallogphic plane.</skos:definition>
+    </owl:Class>
+    
 
 
     <!-- https://w3id.org/pmd/cryo/CRYO_0000124 -->
@@ -220,194 +760,12 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
 In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families of crystallographic directions, as well as {100}, {110}, {111} families of crystallographic planes</skos:definition>
     </owl:Class>
     
-    
+
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000066 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000066">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-        <rdfs:comment xml:lang="en">This object property is not intended to be used between intances.</rdfs:comment>
-        <rdfs:label xml:lang="en">geometrically related</rdfs:label>
-        <skos:definition xml:lang="en">Geometrically related is a top-level object property to describe geometrical relations between different spatial regions</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000067 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000067">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000066"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:comment xml:lang="en">Parallel to is an object property which connect two or  more spatial regions that are parallel to each other</rdfs:comment>
-        <rdfs:label xml:lang="en">parallel to</rdfs:label>
-        <skos:example xml:lang="en">&lt;111&gt; family of directions in crystals are parellel to normal direction (ND) of a sample in γ-fiber texture component</skos:example>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000068 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000068">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000066"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:label xml:lang="en">normal to</rdfs:label>
-        <skos:example xml:lang="en">Normal to is a object property which describes geometric relation between two spatial regions which are normal to each other</skos:example>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000152 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000152">
-        <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000157"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000023"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000021"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">has Miller indices family</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000157 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000157">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:label xml:lang="en">Miller indices family of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000158 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000158">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
-        <rdfs:range rdf:resource="https://w3id.org/pmd/co/PMD_0020099"/>
-        <rdfs:label xml:lang="en">under symmetry</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000162 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000162">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000143"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000124"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020019"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000152"/>
-        </owl:propertyChainAxiom>
-        <rdfs:label xml:lang="en">has Miller indices family under cubic symmetry</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000164 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000164">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000023"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000021"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">denoted by family</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000167 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000167">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <rdfs:label xml:lang="en">member of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000168 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000168">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000167"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000162"/>
-        </owl:propertyChainAxiom>
-        <rdfs:label xml:lang="en">denoted by family under cubic symmetry</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000170 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000124"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020019"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:label xml:lang="en">is_cubic_context</rdfs:label>
-    </owl:ObjectProperty>
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
+    // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -415,308 +773,177 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000016 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000037 -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000016">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label xml:lang="en">has Miller index</rdfs:label>
-        <skos:definition xml:lang="en">has Miller index is a top-level annotation property to specify Miller indices of crystallographic plane, direction, or lattice point.</skos:definition>
-    </owl:DatatypeProperty>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000017 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000038 -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000017">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
-        <rdfs:label xml:lang="en">has h</rdfs:label>
-        <skos:definition xml:lang="en">has h specifies an integer of a h Miller index in a hkl set</skos:definition>
-    </owl:DatatypeProperty>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000038"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000018 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000039 -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000018">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
-        <rdfs:label xml:lang="en">has k</rdfs:label>
-        <skos:definition xml:lang="en">has k specifies an integer of a k Miller index in a hkl set</skos:definition>
-    </owl:DatatypeProperty>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000039"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000019 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000089 -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000019">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
-        <rdfs:label xml:lang="en">has l</rdfs:label>
-        <skos:definition xml:lang="en">has l specifies an integer of a l Miller index in a hkl set</skos:definition>
-    </owl:DatatypeProperty>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000089"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000095 -->
 
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000095"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000000 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000096 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
-        <rdfs:label xml:lang="en">unit cell</rdfs:label>
-        <skos:definition xml:lang="en">Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, from which the lattice can be constructed by translational displacements. Unit cell is characterized by the length of its sides and their angular relations.</skos:definition>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000096"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000001 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000097 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">TODO: 
-1. check if located in is meant to be used this way
-2. Is there a better alternative to has part?</rdfs:comment>
-        <rdfs:label xml:lang="en">crystal lattice</rdfs:label>
-        <skos:definition xml:lang="en">Crystal lattice is a site which has unit cell as part and is location of a crystal. It represents a periodic array of points in space, which describe the arrangement of atoms or molecules in a crystal.</skos:definition>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000097"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000010 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000098 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">basis</rdfs:label>
-        <skos:definition xml:lang="en">Basis is a object aggregate which has one or more atoms or molecules as parts. It defines the minimal number of atoms or molecules to form a unit cell.</skos:definition>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000098"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000011 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000099 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">crystallographic plane</rdfs:label>
-        <skos:definition xml:lang="en">Crystallographic plane is a fiat surface which is part of a crystal lattice and which is denoted by Miller indices of a plane.</skos:definition>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000099"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000012 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000101 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000142"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">crystallographic direction</rdfs:label>
-        <skos:definition xml:lang="en">Crystallographic direction is a fiat line which is part of a crystal lattice and which is denoted by Miller indices of a direction.</skos:definition>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000101"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000014 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000102 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000014">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000501"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000011"/>
-                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000012"/>
-                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000015"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000017"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000018"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000019"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">TODO 
-1. think if its actually 1D..
-2. Review the definitions of sublcasses</rdfs:comment>
-        <rdfs:label xml:lang="en">Miller indices</rdfs:label>
-        <skos:definition xml:lang="en">Miller indices is an information content entity which denotes crystallographic direction, crystallographic plane, or lattice point, i.e., defines their position in respect to the coordinate system of a crystal lattice, and has exactly 3 interger literals, namely h, k. and l.</skos:definition>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000102"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000015 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000103 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000147"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020003"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">TODO: 
-1. is it relevant for molecules
-2. With SHACL it is possible to say that it is the same instance of a atom from the axiom</rdfs:comment>
-        <rdfs:label xml:lang="en">lattice point</rdfs:label>
-        <skos:definition xml:lang="en">Lattice point is a fiat point which is a part of a lattice and is a location of atoms (or molecules) of a crystal, which is located in the lattice.</skos:definition>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000103"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000020 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000104 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000020">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
-        <rdfs:label xml:lang="en">direction Miller indices</rdfs:label>
-        <skos:definition xml:lang="en">Direction Miller indices define the components of a sinlge vector in the given direction in a crystal&apos;s unit cell. Usually, direction Miller indices are reduced to the lowest set of integers. Direction Miller indices must be written in square brackets, e.g., [hkl].</skos:definition>
-        <skos:example>[111]</skos:example>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000104"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000021 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000105 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000021">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
-        <rdfs:label xml:lang="en">family of directions Miller indices</rdfs:label>
-        <skos:definition>&lt;111&gt;</skos:definition>
-        <skos:definition xml:lang="en">Set of directions Miller indices define the components of symmetrically equivalent directions in a crystal lattice. Set of directions Miller indices must be written as &lt;hkl&gt;.</skos:definition>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000105"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000022 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000106 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000022">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
-        <rdfs:label xml:lang="en">plane Miller indices</rdfs:label>
-        <skos:definition xml:lang="en">Plane Miller indices define the reciprocals of the fractional intercepts the plane makes with the crystallographic axes, reduced to the lowest set of integers. 
-For example, if a plane crosses [100] axis at 1/h, [010 ] axis at 1/k, and [001] axis at 1/l, then such plane is denoted as (hkl) plane. If a plane is parallel to one of the axes, then the corresponding Miller index is 0.
-Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:definition>
-        <skos:example>(hkl)</skos:example>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000106"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000023 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000107 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000023">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
-        <rdfs:label xml:lang="en">family of planes Miller indices</rdfs:label>
-        <skos:definition xml:lang="en">Set of planes Miller indices define set of symmetrically equivalent planes. Set of planes must be written in curly brackets, e.g., {hkl}.</skos:definition>
-        <skos:example>{111}</skos:example>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000107"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000024 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000108 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000024">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
-        <rdfs:label xml:lang="en">point Miller indices</rdfs:label>
-        <skos:definition xml:lang="en">Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l).</skos:definition>
-        <skos:example>(1,1,1)</skos:example>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000108"/>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000025 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000109 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000011"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">atomic plane</rdfs:label>
-        <skos:definition xml:lang="en">Atomic plane is a 2D fiat object part which has atoms as it parts and is located in some crystallogphic plane, i.e., the positions of atoms relative to each other are defined via the characterisitics of the crystallogphic plane.</skos:definition>
-    </owl:Class>
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000109"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000110 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000110"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000111 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000111"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000112 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000112"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000114 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000114"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000115 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000115"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000116 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000116"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000117 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000117"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000118 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000118"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000119 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000119"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000120 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000120"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000121 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000121"/>
 </rdf:RDF>
 
 

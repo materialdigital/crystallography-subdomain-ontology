@@ -1,20 +1,116 @@
 <?xml version="1.0"?>
-<rdf:RDF 
-     xml:base="https://w3id.org/pmd/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns="https://w3id.org/pmd/cryo/components/cryo-individuals.owl/"
+     xml:base="https://w3id.org/pmd/cryo/components/cryo-individuals.owl/"
+     xmlns:co="https://w3id.org/pmd/co/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:cryo="https://w3id.org/pmd/cryo/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cryo="https://w3id.org/pmd/cryo/"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/components/cryo-individuals.owl">
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/components/cryo-shared.owl"/>
     </owl:Ontology>
+    
 
-    <!-- This is a placeholder, it will be regenerated when makefile is first executed -->
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000152 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000152"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000158 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000158"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000017 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000017"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000018 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000018"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000019 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000019"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000020 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000021 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000022 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000023 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000124 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000124"/>
+    
 
 
     <!-- 
@@ -24,6 +120,8 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
+    
 
 
     <!-- https://w3id.org/pmd/cryo/CRYO_0000037 -->
@@ -47,6 +145,7 @@
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
         <rdfs:label xml:lang="en">&lt;110&gt;</rdfs:label>
     </owl:NamedIndividual>
+    
 
 
     <!-- https://w3id.org/pmd/cryo/CRYO_0000039 -->
@@ -59,13 +158,21 @@
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
         <rdfs:label xml:lang="en">&lt;100&gt;</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000113 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000113"/>
+    
+
 
     <!-- https://w3id.org/pmd/cryo/CRYO_0000040 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000040">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
-        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
         <rdfs:label xml:lang="en">{100}</rdfs:label>
     </owl:NamedIndividual>
@@ -87,8 +194,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000089 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000089">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
@@ -100,8 +207,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000095 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000095">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
@@ -113,8 +220,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000096 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000096">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
@@ -126,8 +233,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000097 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000097">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
@@ -139,8 +246,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000098 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000098">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
@@ -152,8 +259,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000099 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000099">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
@@ -177,8 +284,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000101 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000101">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
@@ -190,8 +297,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000102 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000102">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
@@ -203,8 +310,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000103 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000103">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
@@ -216,8 +323,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000104 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000104">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
@@ -229,8 +336,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000105 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000105">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
@@ -242,8 +349,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000106 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000106">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
@@ -255,8 +362,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000107 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000107">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
@@ -268,8 +375,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000108 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000108">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
@@ -281,8 +388,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000109 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000109">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
@@ -294,8 +401,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000110 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000110">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
@@ -307,8 +414,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000111 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000111">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
@@ -320,8 +427,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000112 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000112">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
@@ -336,7 +443,7 @@
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000021"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
-        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
         <rdfs:label xml:lang="en">&lt;001&gt;</rdfs:label>
     </owl:NamedIndividual>
     
@@ -345,8 +452,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000114 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000114">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
@@ -358,8 +465,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000115 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000115">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
@@ -371,8 +478,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000116 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000116">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
@@ -384,8 +491,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000117 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000117">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
@@ -397,8 +504,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000118 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000118">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
@@ -410,8 +517,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000119 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000119">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
@@ -423,8 +530,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000120 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000120">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
@@ -436,8 +543,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000121 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000121">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
@@ -755,6 +862,7 @@
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
         <rdfs:label xml:lang="en">(-1-1-1)</rdfs:label>
     </owl:NamedIndividual>
+    
 
 
     <!-- https://w3id.org/pmd/cryo/CRYO_0000169 -->
@@ -872,5 +980,9 @@
         <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
         <rdfs:label xml:lang="en">cubic {111} equivalence</rdfs:label>
     </owl:NamedIndividual>
-
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
