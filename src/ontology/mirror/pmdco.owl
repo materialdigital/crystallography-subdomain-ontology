@@ -16,7 +16,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/pmdco.ttl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/co/releases/2026-01-15/pmdco.ttl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/co/releases/2026-01-16/pmdco.ttl"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-6772-1943"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-1058-3102"/>
@@ -43,7 +43,7 @@ Documentation: https://materialdigital.github.io/core-ontology/docs/</dcterms:de
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>PMD Core Ontology</dcterms:title>
         <doap:repository rdf:resource="https://github.com/materialdigital/core-ontology"/>
-        <owl:versionInfo>2026-01-15</owl:versionInfo>
+        <owl:versionInfo>2026-01-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3696,6 +3696,19 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">AR, (IAO call 2009-09-01): a document as a whole is not typically a textual entity, because it has pictures in it - rather there are parts of it that are textual entities. Examples: The title, paragraph 2 sentence 7, etc.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">MC, 2009-09-14 (following IAO call 2009-09-01): textual entities live at the FRBR (http://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records) manifestation level. Everything is significant: line break, pdf and html versions of same document are different textual entities.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
@@ -4334,6 +4347,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000591"/>
         <rdfs:label xml:lang="en">workflow function</rdfs:label>
         <skos:definition xml:lang="en">A plan specification representing a callable software method that prescribes a specific computational action, including execution instructions and a defined set of input and output specifications.</skos:definition>
+        <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/246</co:PMD_0001032>
     </owl:Class>
     
 
@@ -4365,6 +4379,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">workflow node</rdfs:label>
         <skos:definition xml:lang="en">A computing process that executes a workflow function within a workflow run, consuming input data and producing output data according to the function’s specifications.</skos:definition>
+        <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/246</co:PMD_0001032>
     </owl:Class>
     
 
@@ -4375,6 +4390,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <rdfs:label xml:lang="en">workflow definition</rdfs:label>
         <skos:definition xml:lang="en">A plan specification that prescribes the ordered application of one or more workflow functions, including their interconnections via input and output specifications, in order to achieve a specified computational objective.</skos:definition>
+        <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/246</co:PMD_0001032>
     </owl:Class>
     
 
@@ -4395,6 +4411,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">parameter specification</rdfs:label>
         <skos:definition xml:lang="en">A directive information entity that specifies a parameter required or produced by a workflow function, including its intended role, position, and constraints.</skos:definition>
+        <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/246</co:PMD_0001032>
     </owl:Class>
     
 
@@ -4405,6 +4422,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000013"/>
         <rdfs:label xml:lang="en">input specification</rdfs:label>
         <skos:definition xml:lang="en">A parameter specification that prescribes a data item required as input for the execution of a workflow function.</skos:definition>
+        <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/246</co:PMD_0001032>
     </owl:Class>
     
 
@@ -4415,6 +4433,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000013"/>
         <rdfs:label xml:lang="en">output specification</rdfs:label>
         <skos:definition xml:lang="en">A parameter specification that prescribes a data item intended to be produced as output by the execution of a workflow function.</skos:definition>
+        <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/246</co:PMD_0001032>
     </owl:Class>
     
 
@@ -4435,6 +4454,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">workflow run</rdfs:label>
         <skos:definition xml:lang="en">A computing process that realizes a workflow definition by executing its prescribed workflow nodes in a concrete temporal order, consuming and producing specific data items.</skos:definition>
+        <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/246</co:PMD_0001032>
     </owl:Class>
     
 
@@ -4683,6 +4703,17 @@ https://github.com/pyiron/semantikon/pull/278</co:PMD_0001032>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
         <rdfs:label xml:lang="en">mold device</rdfs:label>
         <skos:definition xml:lang="en">A form used to cast an object of a desired shape.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000123 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:label xml:lang="en">doc string</rdfs:label>
+        <skos:definition xml:lang="en">A docstring is a textual entity that describes an associated section of some source code</skos:definition>
+        <co:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/270</co:PMD_0001032>
     </owl:Class>
     
 

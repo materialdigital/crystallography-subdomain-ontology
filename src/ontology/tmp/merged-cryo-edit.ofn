@@ -326,6 +326,8 @@ Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000022>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000023>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000024>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000025>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000124>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000143>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
@@ -375,6 +377,8 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002229>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002230>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002233>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002234>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002350>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002352>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002353>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0009006>))
@@ -389,6 +393,17 @@ Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0020127>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025006>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025998>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025999>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000066>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000067>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000068>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000152>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000157>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000158>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000162>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000164>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000167>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000168>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000170>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0002135>))
 Declaration(DataProperty(<https://w3id.org/pmd/co/PMD_0000006>))
@@ -428,6 +443,71 @@ Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020122>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020123>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020124>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020125>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000037>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000038>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000039>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000040>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000041>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000089>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000095>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000096>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000097>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000098>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000099>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000100>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000101>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000102>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000103>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000104>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000105>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000106>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000107>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000108>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000109>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000110>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000111>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000112>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000113>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000114>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000115>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000116>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000117>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000118>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000119>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000120>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000121>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000125>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000126>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000127>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000128>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000129>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000130>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000131>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000132>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000133>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000134>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000135>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000136>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000137>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000138>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000139>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000140>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000141>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000142>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000144>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000145>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000146>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000147>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000148>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000149>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000150>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000151>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000169>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000171>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000172>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000173>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000174>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000175>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
@@ -461,6 +541,29 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 # Annotation Property: dcterms:title (title)
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+# Annotation Property: <https://w3id.org/pmd/cryo/CRYO_0000017> (has h)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000017> "has h"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000017> "has h specifies an integer of a h Miller index in a hkl set"@en)
+
+# Annotation Property: <https://w3id.org/pmd/cryo/CRYO_0000018> (has k)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000018> "has k"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000018> "has k specifies an integer of a k Miller index in a hkl set"@en)
+
+# Annotation Property: <https://w3id.org/pmd/cryo/CRYO_0000019> (has l)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000019> "has l"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000019> "has l specifies an integer of a l Miller index in a hkl set"@en)
+
+# Annotation Property: <https://w3id.org/pmd/cryo/CRYO_0000152> (has Miller indices family)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000152> "has Miller indices family"@en)
+
+# Annotation Property: <https://w3id.org/pmd/cryo/CRYO_0000158> (under symmetry)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000158> "under symmetry"@en)
 
 
 ############################
@@ -959,6 +1062,23 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002234> "has 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002234> <http://purl.obolibrary.org/obo/RO_0000057>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002234> <http://purl.obolibrary.org/obo/RO_0002353>)
 
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002350> (member of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0002350> "An organism that is a member of a population of organisms")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002350> "is member of is a mereological relation between a item and a collection.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002350> "SIO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002350> "member of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002350> <http://purl.obolibrary.org/obo/BFO_0000050>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002350> <http://purl.obolibrary.org/obo/RO_0002351>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002351> (has member)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002351> "has member is a mereological relation between a collection and an item.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002351> "SIO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002351> "has member"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/BFO_0000051>)
+IrreflexiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>)
+
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002352> (input of)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002352> "inverse of has input")
@@ -1066,6 +1186,76 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025999> "mass proportion m is relational qualitiy of material, and the same mass proportion m is relational qualitiy of portion of iron"@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/co/PMD_0025999> owl:topObjectProperty)
 
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000066> (geometrically related)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000066> "This object property is not intended to be used between intances."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000066> "geometrically related"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000066> "Geometrically related is a top-level object property to describe geometrical relations between different spatial regions"@en)
+ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000066> <http://purl.obolibrary.org/obo/BFO_0000006>)
+ObjectPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000066> <http://purl.obolibrary.org/obo/BFO_0000006>)
+
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000067> (parallel to)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000067> "Parallel to is an object property which connect two or  more spatial regions that are parallel to each other"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000067> "parallel to"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/cryo/CRYO_0000067> "<111> family of directions in crystals are parellel to normal direction (ND) of a sample in γ-fiber texture component"@en)
+SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000067> <https://w3id.org/pmd/cryo/CRYO_0000066>)
+SymmetricObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000067>)
+TransitiveObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000067>)
+
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000068> (normal to)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000068> "normal to"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/cryo/CRYO_0000068> "Normal to is a object property which describes geometric relation between two spatial regions which are normal to each other"@en)
+SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000068> <https://w3id.org/pmd/cryo/CRYO_0000066>)
+SymmetricObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000068>)
+
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000152> (has Miller indices family)
+
+InverseObjectProperties(<https://w3id.org/pmd/cryo/CRYO_0000152> <https://w3id.org/pmd/cryo/CRYO_0000157>)
+ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000152> <https://w3id.org/pmd/cryo/CRYO_0000124>)
+ObjectPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000152> ObjectUnionOf(<https://w3id.org/pmd/cryo/CRYO_0000021> <https://w3id.org/pmd/cryo/CRYO_0000023>))
+
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000157> (Miller indices family of)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000157> "Miller indices family of"@en)
+SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000157> owl:topObjectProperty)
+
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000158> (under symmetry)
+
+SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000158> owl:topObjectProperty)
+ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/cryo/CRYO_0000124>)
+ObjectPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/co/PMD_0020099>)
+
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000162> (has Miller indices family under cubic symmetry)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000162> "has Miller indices family under cubic symmetry"@en)
+SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000162> owl:topObjectProperty)
+ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000162> <https://w3id.org/pmd/cryo/CRYO_0000143>)
+ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000162> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000124> ObjectUnionOf(ObjectHasValue(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/co/PMD_0020018>) ObjectHasValue(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/co/PMD_0020019>))))
+
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000164> (denoted by family)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000164> "denoted by family"@en)
+SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000164> owl:topObjectProperty)
+ObjectPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000164> ObjectUnionOf(<https://w3id.org/pmd/cryo/CRYO_0000021> <https://w3id.org/pmd/cryo/CRYO_0000023>))
+
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000167> (member of)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000167> "member of"@en)
+SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000167> <http://purl.obolibrary.org/obo/BFO_0000050>)
+
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000168> (denoted by family under cubic symmetry)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000168> "denoted by family under cubic symmetry"@en)
+SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000168> <https://w3id.org/pmd/cryo/CRYO_0000164>)
+
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000170> (is_cubic_context)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000170> "is_cubic_context"@en)
+SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000170> owl:topObjectProperty)
+ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000170> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000124> ObjectUnionOf(ObjectHasValue(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/co/PMD_0020018>) ObjectHasValue(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/co/PMD_0020019>))))
+
 
 ############################
 #   Data Properties
@@ -1102,20 +1292,14 @@ DataPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000016> xsd:integer)
 
 # Data Property: <https://w3id.org/pmd/cryo/CRYO_0000017> (has h)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000017> "has h"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000017> "has h specifies an integer of a h Miller index in a hkl set"@en)
 SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000016>)
 
 # Data Property: <https://w3id.org/pmd/cryo/CRYO_0000018> (has k)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000018> "has k"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000018> "has k specifies an integer of a k Miller index in a hkl set"@en)
 SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000016>)
 
 # Data Property: <https://w3id.org/pmd/cryo/CRYO_0000019> (has l)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000019> "has l"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000019> "has l specifies an integer of a l Miller index in a hkl set"@en)
 SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000016>)
 
 
@@ -2363,7 +2547,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3265,6 +3449,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025997> "2.05 wt.% of carbon in steel, 4 vol.% of nictric acid in a solution"@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025997> <http://purl.obolibrary.org/obo/OBI_0001931>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025997> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001927> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020101> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025999> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000040>))))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025997> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002350> <https://w3id.org/pmd/co/PMD_0020004>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0040001> (length)
 
@@ -3477,6 +3662,24 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000025> <http://purl.obolibrary.org/
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_33250>))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001025> <https://w3id.org/pmd/cryo/CRYO_0000011>))
 
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000124> (symmetry equivalency assertion)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000124> "DO NOT INITIALIZE THIS CLASS OR ANY OF THIS SUBCLASSES
+The symmetry equivalency assertion class is meant to enable assertions of  crystollograhpic equivalence between single crystallographic direction /plane and family of directions/planes if the equivalence applies for the given crystal symmetry. This class is part of the \"inference engine\""@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000124> "symmetry equivalency assertion"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000124> "Symmetry equivalency assertion is an information content entity which is used to infer crystallographic equivalence between single crystallographic direction /plane and family of directions/planes if the equivalence applies for the given crystal symmetry."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000124> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000143> (cubic equivalency assertion)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000143> "cubic equivalency assertion"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000143> "cubic equivalency assertion is a symmetry equivalency assertion which is used to infer crystallographic equivalence between single crystallographic direction /plane and family of directions/planes under the cubic crystal symmetry.
+In particular, it considers <100>, <110>, and <111> families of crystallographic directions, as well as {100}, {110}, {111} families of crystallographic planes"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000143> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000124> ObjectUnionOf(ObjectHasValue(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/co/PMD_0020018>) ObjectHasValue(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/co/PMD_0020019>))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000143> <https://w3id.org/pmd/cryo/CRYO_0000124>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000143> ObjectUnionOf(ObjectIntersectionOf(ObjectUnionOf(ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000089>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000095>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000096>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000097>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000098>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000099>)) ObjectHasValue(<https://w3id.org/pmd/cryo/CRYO_0000152> <https://w3id.org/pmd/cryo/CRYO_0000039>)) ObjectIntersectionOf(ObjectUnionOf(ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000101>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000102>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000103>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000104>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000105>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000106>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000107>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000108>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000109>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000110>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000111>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000112>)) ObjectHasValue(<https://w3id.org/pmd/cryo/CRYO_0000152> <https://w3id.org/pmd/cryo/CRYO_0000038>)) ObjectIntersectionOf(ObjectUnionOf(ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000114>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000115>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000116>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000117>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000118>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000119>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000120>) ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000121>)) ObjectHasValue(<https://w3id.org/pmd/cryo/CRYO_0000152> <https://w3id.org/pmd/cryo/CRYO_0000037>))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000143> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000170>))
+
 
 ############################
 #   Named Individuals
@@ -3641,6 +3844,599 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020125> "aggregate 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020125> "A state that exhibits suprafluid and solid properties."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020125> "true"^^xsd:boolean)
 
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000037> (<111>)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000037> "<111>"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000037> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000037> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000037> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000021> <https://w3id.org/pmd/cryo/CRYO_0000037>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000038> (<110>)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000038> "<110>"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000038> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000038> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000038> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000021> <https://w3id.org/pmd/cryo/CRYO_0000038>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000039> (<100>)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000039> "<100>"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000039> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000039> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000039> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000021> <https://w3id.org/pmd/cryo/CRYO_0000039>)
+SameIndividual(<https://w3id.org/pmd/cryo/CRYO_0000039> <https://w3id.org/pmd/cryo/CRYO_0000113>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000040> ({100})
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000040> "{100}"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000040> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000040> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000040> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000023> <https://w3id.org/pmd/cryo/CRYO_0000040>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000041> ({110})
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000041> "{110}"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000041> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000041> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000041> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000023> <https://w3id.org/pmd/cryo/CRYO_0000041>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000089> ([100])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000089> "[100]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000089> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000089> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000089> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000089>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000089>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000095> ([010])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000095> "[010]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000095> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000095> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000095> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000095>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000095>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000096> ([001])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000096> "[001]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000096> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000096> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000096> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000096>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000096>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000097> ([-100])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000097> "[-100]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000097> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000097> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000097> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000097>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000097>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000098> ([0-10])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000098> "[0-10]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000098> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000098> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000098> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000098>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000098>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000099> ([00-1])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000099> "[00-1]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000099> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000099> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000099> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000099>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000099>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000100> ({111})
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000100> "{111}"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000100> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000100> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000100> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000023> <https://w3id.org/pmd/cryo/CRYO_0000100>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000101> ([110])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000101> "[110]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000101> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000101> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000101> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000101>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000101>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000102> ([101])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000102> "[101]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000102> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000102> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000102> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000102>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000102>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000103> ([011])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000103> "[011]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000103> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000103> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000103> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000103>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000103>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000104> ([-10-1])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000104> "[-10-1]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000104> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000104> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000104> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000104>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000104>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000105> ([-1-10])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000105> "[-1-10]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000105> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000105> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000105> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000105>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000105>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000106> ([0-1-1])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000106> "[0-1-1]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000106> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000106> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000106> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000106>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000106>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000107> ([-110])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000107> "[-110]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000107> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000107> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000107> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000107>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000107>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000108> ([1-10])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000108> "[1-10]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000108> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000108> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000108> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000108>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000108>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000109> ([-101])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000109> "[-101]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000109> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000109> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000109> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000109>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000109>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000110> ([10-1])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000110> "[10-1]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000110> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000110> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000110> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000110>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000110>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000111> ([0-11])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000111> "[0-11]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000111> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000111> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000111> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000111>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000111>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000112> ([01-1])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000112> "[01-1]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000112> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000112> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000112> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000112>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000112>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000113> (<001>)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000113> "<001>"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000113> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000113> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000113> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000021> <https://w3id.org/pmd/cryo/CRYO_0000113>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000114> ([111])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000114> "[111]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000114> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000114> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000114> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000114>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000114>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000115> ([-111])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000115> "[-111]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000115> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000115> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000115> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000115>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000115>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000116> ([1-11])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000116> "[1-11]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000116> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000116> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000116> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000116>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000116>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000117> ([11-1])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000117> "[11-1]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000117> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000117> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000117> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000117>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000117>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000118> ([-1-11])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000118> "[-1-11]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000118> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000118> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000118> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000118>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000118>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000119> ([-11-1])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000119> "[-11-1]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000119> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000119> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000119> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000119>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000119>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000120> ([1-1-1])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000120> "[1-1-1]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000120> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000120> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000120> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000120>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000120>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000121> ([-1-1-1])
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000121> "[-1-1-1]"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000121> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000121> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000121> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000121>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000121>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000125> ((100))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000125> "(100)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000125> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000125> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000125> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000125>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000126> ((010))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000126> "(010)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000126> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000126> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000126> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000126>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000127> ((001))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000127> "(001)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000127> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000127> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000127> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000127>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000128> ((-100))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000128> "(-100)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000128> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000128> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000128> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000128>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000129> ((0-10))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000129> "(0-10)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000129> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000129> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000129> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000129>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000130> ((00-1))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000130> "(00-1)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000130> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000130> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000130> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000130>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000131> ((110))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000131> "(110)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000131> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000131> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000131> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000131>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000132> ((-110))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000132> "(-110)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000132> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000132> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000132> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000132>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000133> ((1-10))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000133> "(1-10)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000133> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000133> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000133> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000133>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000134> ((-1-10))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000134> "(-1-10)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000134> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000134> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000134> "0"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000134>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000135> ((101))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000135> "(101)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000135> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000135> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000135> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000135>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000136> ((-101))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000136> "(-101)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000136> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000136> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000136> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000136>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000137> ((10-1))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000137> "(10-1)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000137> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000137> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000137> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000137>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000138> ((-10-1))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000138> "(-10-1)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000138> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000138> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000138> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000138>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000139> ((011))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000139> "(011)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000139> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000139> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000139> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000139>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000140> ((0-11))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000140> "(0-11)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000140> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000140> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000140> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000140>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000141> ((01-1))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000141> "(01-1)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000141> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000141> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000141> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000141>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000142> ((0-1-1))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000142> "(0-1-1)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000142> "0"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000142> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000142> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000142>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000144> ((111))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000144> "(111)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000144> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000144> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000144> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000144>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000145> ((-111))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000145> "(-111)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000145> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000145> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000145> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000145>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000146> ((1-11))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000146> "(1-11)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000146> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000146> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000146> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000146>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000147> ((11-1))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000147> "(11-1)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000147> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000147> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000147> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000147>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000148> ((-1-11))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000148> "(-1-11)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000148> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000148> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000148> "1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000148>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000149> ((-11-1))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000149> "(-11-1)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000149> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000149> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000149> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000149>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000150> ((1-1-1))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000150> "(1-1-1)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000150> "1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000150> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000150> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000150>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000151> ((-1-1-1))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000151> "(-1-1-1)"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000151> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000151> "-1"^^xsd:decimal)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000151> "-1"^^xsd:decimal)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000151>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000169> (cubic <100> equivalence)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000169> "cubic <100> equivalence"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000152> <https://w3id.org/pmd/cryo/CRYO_0000169> <https://w3id.org/pmd/cryo/CRYO_0000039>)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/cryo/CRYO_0000169> <https://w3id.org/pmd/co/PMD_0020018>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000124> <https://w3id.org/pmd/cryo/CRYO_0000169>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000169> <https://w3id.org/pmd/cryo/CRYO_0000089>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000169> <https://w3id.org/pmd/cryo/CRYO_0000095>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000169> <https://w3id.org/pmd/cryo/CRYO_0000096>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000169> <https://w3id.org/pmd/cryo/CRYO_0000097>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000169> <https://w3id.org/pmd/cryo/CRYO_0000098>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000169> <https://w3id.org/pmd/cryo/CRYO_0000099>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000171> (cubic <110> equivalence)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000171> "cubic <110> equivalence"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000152> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000038>)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/co/PMD_0020018>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000124> <https://w3id.org/pmd/cryo/CRYO_0000171>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000101>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000102>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000103>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000104>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000105>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000106>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000107>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000108>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000109>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000110>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000111>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000171> <https://w3id.org/pmd/cryo/CRYO_0000112>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000172> (cubic <111> equivalence)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000172> "cubic <111> equivalence"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000152> <https://w3id.org/pmd/cryo/CRYO_0000172> <https://w3id.org/pmd/cryo/CRYO_0000037>)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/cryo/CRYO_0000172> <https://w3id.org/pmd/co/PMD_0020018>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000124> <https://w3id.org/pmd/cryo/CRYO_0000172>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000172> <https://w3id.org/pmd/cryo/CRYO_0000114>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000172> <https://w3id.org/pmd/cryo/CRYO_0000115>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000172> <https://w3id.org/pmd/cryo/CRYO_0000116>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000172> <https://w3id.org/pmd/cryo/CRYO_0000117>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000172> <https://w3id.org/pmd/cryo/CRYO_0000118>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000172> <https://w3id.org/pmd/cryo/CRYO_0000119>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000172> <https://w3id.org/pmd/cryo/CRYO_0000120>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000172> <https://w3id.org/pmd/cryo/CRYO_0000121>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000173> (cubic {100} equivalence)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000173> "cubic {100} equivalence"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000152> <https://w3id.org/pmd/cryo/CRYO_0000173> <https://w3id.org/pmd/cryo/CRYO_0000040>)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/cryo/CRYO_0000173> <https://w3id.org/pmd/co/PMD_0020018>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000124> <https://w3id.org/pmd/cryo/CRYO_0000173>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000173> <https://w3id.org/pmd/cryo/CRYO_0000125>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000173> <https://w3id.org/pmd/cryo/CRYO_0000126>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000173> <https://w3id.org/pmd/cryo/CRYO_0000127>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000173> <https://w3id.org/pmd/cryo/CRYO_0000128>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000173> <https://w3id.org/pmd/cryo/CRYO_0000129>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000173> <https://w3id.org/pmd/cryo/CRYO_0000130>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000174> (cubic {110} equivalence)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000174> "cubic {110} equivalence"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000152> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000041>)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/co/PMD_0020018>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000124> <https://w3id.org/pmd/cryo/CRYO_0000174>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000131>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000132>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000133>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000134>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000135>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000136>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000137>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000138>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000139>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000140>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000141>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000174> <https://w3id.org/pmd/cryo/CRYO_0000142>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000175> (cubic {111} equivalence)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000175> "cubic {111} equivalence"@en)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000152> <https://w3id.org/pmd/cryo/CRYO_0000175> <https://w3id.org/pmd/cryo/CRYO_0000037>)
+AnnotationAssertion(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/cryo/CRYO_0000175> <https://w3id.org/pmd/co/PMD_0020018>)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000124> <https://w3id.org/pmd/cryo/CRYO_0000175>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000175> <https://w3id.org/pmd/cryo/CRYO_0000144>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000175> <https://w3id.org/pmd/cryo/CRYO_0000145>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000175> <https://w3id.org/pmd/cryo/CRYO_0000146>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000175> <https://w3id.org/pmd/cryo/CRYO_0000147>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000175> <https://w3id.org/pmd/cryo/CRYO_0000148>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000175> <https://w3id.org/pmd/cryo/CRYO_0000149>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000175> <https://w3id.org/pmd/cryo/CRYO_0000150>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000175> <https://w3id.org/pmd/cryo/CRYO_0000151>)
+
 
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000140>)
@@ -3655,10 +4451,12 @@ DifferentIndividuals(<https://w3id.org/pmd/co/PMD_0020117> <https://w3id.org/pmd
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RO_0000057>) <http://purl.obolibrary.org/obo/RO_0000057>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/pmd/co/PMD_0025998>) <https://w3id.org/pmd/co/PMD_0025998>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/RO_0000059>) <http://purl.obolibrary.org/obo/STATO_0000102>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/IAO_0000235> <https://w3id.org/pmd/cryo/CRYO_0000167> <https://w3id.org/pmd/cryo/CRYO_0000162>) <https://w3id.org/pmd/cryo/CRYO_0000168>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0001025> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0001025>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002224> <http://purl.obolibrary.org/obo/RO_0002233>) <http://purl.obolibrary.org/obo/RO_0002233>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002230> <http://purl.obolibrary.org/obo/RO_0002234>) <http://purl.obolibrary.org/obo/RO_0002234>)
 SubObjectPropertyOf(ObjectPropertyChain(<https://w3id.org/pmd/co/PMD_0025999> <http://purl.obolibrary.org/obo/BFO_0000050>) <https://w3id.org/pmd/co/PMD_0025999>)
+SubObjectPropertyOf(ObjectPropertyChain(<https://w3id.org/pmd/cryo/CRYO_0000170> <https://w3id.org/pmd/cryo/CRYO_0000152>) <https://w3id.org/pmd/cryo/CRYO_0000162>)
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000016> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000091> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000019> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000086> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000023> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000087> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))

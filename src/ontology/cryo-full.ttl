@@ -6,6 +6,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cryo: <https://w3id.org/pmd/cryo/> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -691,6 +692,25 @@ obo:RO_0002234 rdf:type owl:ObjectProperty ;
                rdfs:label "has output"@en .
 
 
+###  http://purl.obolibrary.org/obo/RO_0002350
+obo:RO_0002350 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf obo:BFO_0000050 ;
+               owl:inverseOf obo:RO_0002351 ;
+               obo:IAO_0000112 "An organism that is a member of a population of organisms" ;
+               obo:IAO_0000115 "is member of is a mereological relation between a item and a collection." ;
+               obo:IAO_0000119 "SIO" ;
+               rdfs:label "member of"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002351
+obo:RO_0002351 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf obo:BFO_0000051 ;
+               rdf:type owl:IrreflexiveProperty ;
+               obo:IAO_0000115 "has member is a mereological relation between a collection and an item." ;
+               obo:IAO_0000119 "SIO" ;
+               rdfs:label "has member"@en .
+
+
 ###  http://purl.obolibrary.org/obo/RO_0002352
 obo:RO_0002352 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf obo:RO_0000056 ;
@@ -827,6 +847,132 @@ RO's 'quality of' is functional i.e., a->b, a->c => b=c. The functionality is re
                skos:example "mass proportion m is relational qualitiy of material, and the same mass proportion m is relational qualitiy of portion of iron"@en .
 
 
+###  https://w3id.org/pmd/cryo/CRYO_0000066
+cryo:CRYO_0000066 rdf:type owl:ObjectProperty ;
+                  rdfs:domain obo:BFO_0000006 ;
+                  rdfs:range obo:BFO_0000006 ;
+                  rdfs:comment "This object property is not intended to be used between intances."@en ;
+                  rdfs:label "geometrically related"@en ;
+                  skos:definition "Geometrically related is a top-level object property to describe geometrical relations between different spatial regions"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000067
+cryo:CRYO_0000067 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf cryo:CRYO_0000066 ;
+                  rdf:type owl:SymmetricProperty ,
+                           owl:TransitiveProperty ;
+                  rdfs:comment "Parallel to is an object property which connect two or  more spatial regions that are parallel to each other"@en ;
+                  rdfs:label "parallel to"@en ;
+                  skos:example "<111> family of directions in crystals are parellel to normal direction (ND) of a sample in γ-fiber texture component"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000068
+cryo:CRYO_0000068 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf cryo:CRYO_0000066 ;
+                  rdf:type owl:SymmetricProperty ;
+                  rdfs:label "normal to"@en ;
+                  skos:example "Normal to is a object property which describes geometric relation between two spatial regions which are normal to each other"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000152
+cryo:CRYO_0000152 rdf:type owl:ObjectProperty ;
+                  owl:inverseOf cryo:CRYO_0000157 ;
+                  rdfs:domain cryo:CRYO_0000124 ;
+                  rdfs:range [ rdf:type owl:Class ;
+                               owl:unionOf ( cryo:CRYO_0000021
+                                             cryo:CRYO_0000023
+                                           )
+                             ] ;
+                  rdfs:label "has Miller indices family"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000157
+cryo:CRYO_0000157 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:label "Miller indices family of"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000158
+cryo:CRYO_0000158 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain cryo:CRYO_0000124 ;
+                  rdfs:range co:PMD_0020099 ;
+                  rdfs:label "under symmetry"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000162
+cryo:CRYO_0000162 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain cryo:CRYO_0000143 ,
+                              [ owl:intersectionOf ( cryo:CRYO_0000124
+                                                     [ rdf:type owl:Class ;
+                                                       owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty cryo:CRYO_0000158 ;
+                                                                       owl:hasValue co:PMD_0020018
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty cryo:CRYO_0000158 ;
+                                                                       owl:hasValue co:PMD_0020019
+                                                                     ]
+                                                                   )
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+                  owl:propertyChainAxiom ( cryo:CRYO_0000170
+                                           cryo:CRYO_0000152
+                                         ) ;
+                  rdfs:label "has Miller indices family under cubic symmetry"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000164
+cryo:CRYO_0000164 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:range [ rdf:type owl:Class ;
+                               owl:unionOf ( cryo:CRYO_0000021
+                                             cryo:CRYO_0000023
+                                           )
+                             ] ;
+                  rdfs:label "denoted by family"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000167
+cryo:CRYO_0000167 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf obo:BFO_0000050 ;
+                  rdfs:label "member of"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000168
+cryo:CRYO_0000168 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf cryo:CRYO_0000164 ;
+                  owl:propertyChainAxiom ( obo:IAO_0000235
+                                           cryo:CRYO_0000167
+                                           cryo:CRYO_0000162
+                                         ) ;
+                  rdfs:label "denoted by family under cubic symmetry"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000170
+cryo:CRYO_0000170 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain [ owl:intersectionOf ( cryo:CRYO_0000124
+                                                     [ rdf:type owl:Class ;
+                                                       owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty cryo:CRYO_0000158 ;
+                                                                       owl:hasValue co:PMD_0020018
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty cryo:CRYO_0000158 ;
+                                                                       owl:hasValue co:PMD_0020019
+                                                                     ]
+                                                                   )
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+                  rdfs:label "is_cubic_context"@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -858,31 +1004,31 @@ co:PMD_0000006 rdf:type owl:DatatypeProperty ;
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000016
-<https://w3id.org/pmd/cryo/CRYO_0000016> rdf:type owl:DatatypeProperty ;
-                                         rdfs:range xsd:integer ;
-                                         rdfs:label "has Miller index"@en ;
-                                         skos:definition "has Miller index is a top-level annotation property to specify Miller indices of crystallographic plane, direction, or lattice point."@en .
+cryo:CRYO_0000016 rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:integer ;
+                  rdfs:label "has Miller index"@en ;
+                  skos:definition "has Miller index is a top-level annotation property to specify Miller indices of crystallographic plane, direction, or lattice point."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000017
-<https://w3id.org/pmd/cryo/CRYO_0000017> rdf:type owl:DatatypeProperty ;
-                                         rdfs:subPropertyOf <https://w3id.org/pmd/cryo/CRYO_0000016> ;
-                                         rdfs:label "has h"@en ;
-                                         skos:definition "has h specifies an integer of a h Miller index in a hkl set"@en .
+cryo:CRYO_0000017 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf cryo:CRYO_0000016 ;
+                  rdfs:label "has h"@en ;
+                  skos:definition "has h specifies an integer of a h Miller index in a hkl set"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000018
-<https://w3id.org/pmd/cryo/CRYO_0000018> rdf:type owl:DatatypeProperty ;
-                                         rdfs:subPropertyOf <https://w3id.org/pmd/cryo/CRYO_0000016> ;
-                                         rdfs:label "has k"@en ;
-                                         skos:definition "has k specifies an integer of a k Miller index in a hkl set"@en .
+cryo:CRYO_0000018 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf cryo:CRYO_0000016 ;
+                  rdfs:label "has k"@en ;
+                  skos:definition "has k specifies an integer of a k Miller index in a hkl set"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000019
-<https://w3id.org/pmd/cryo/CRYO_0000019> rdf:type owl:DatatypeProperty ;
-                                         rdfs:subPropertyOf <https://w3id.org/pmd/cryo/CRYO_0000016> ;
-                                         rdfs:label "has l"@en ;
-                                         skos:definition "has l specifies an integer of a l Miller index in a hkl set"@en .
+cryo:CRYO_0000019 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf cryo:CRYO_0000016 ;
+                  rdfs:label "has l"@en ;
+                  skos:definition "has l specifies an integer of a l Miller index in a hkl set"@en .
 
 
 #################################################################
@@ -4162,6 +4308,10 @@ co:PMD_0025997 rdf:type owl:Class ;
                                                                          ) ;
                                                       rdf:type owl:Class
                                                     ]
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:RO_0002350 ;
+                                 owl:allValuesFrom co:PMD_0020004
                                ] ;
                rdfs:label "fraction value specification"@en ;
                skos:definition "Fraction value specification is a value specification that contains information about quantative share of a part relative to a specified whole."@en ;
@@ -4221,260 +4371,433 @@ co:PMD_0050157 rdf:type owl:Class ;
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000000
-<https://w3id.org/pmd/cryo/CRYO_0000000> rdf:type owl:Class ;
-                                         rdfs:subClassOf obo:BFO_0000029 ;
-                                         rdfs:label "unit cell"@en ;
-                                         skos:definition "Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, from which the lattice can be constructed by translational displacements. Unit cell is characterized by the length of its sides and their angular relations."@en .
+cryo:CRYO_0000000 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000029 ;
+                  rdfs:label "unit cell"@en ;
+                  skos:definition "Unit cell is a site which is a part of a crystal lattice and represents the smallest volume, from which the lattice can be constructed by translational displacements. Unit cell is characterized by the length of its sides and their angular relations."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000001
-<https://w3id.org/pmd/cryo/CRYO_0000001> rdf:type owl:Class ;
-                                         rdfs:subClassOf obo:BFO_0000029 ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:BFO_0000051 ;
-                                                           owl:someValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000000>
-                                                         ] ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:RO_0001015 ;
-                                                           owl:someValuesFrom co:PMD_0020003
-                                                         ] ;
-                                         rdfs:comment """TODO: 
+cryo:CRYO_0000001 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000029 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000051 ;
+                                    owl:someValuesFrom cryo:CRYO_0000000
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0001015 ;
+                                    owl:someValuesFrom co:PMD_0020003
+                                  ] ;
+                  rdfs:comment """TODO: 
 1. check if located in is meant to be used this way
 2. Is there a better alternative to has part?"""@en ;
-                                         rdfs:label "crystal lattice"@en ;
-                                         skos:definition "Crystal lattice is a site which has unit cell as part and is location of a crystal. It represents a periodic array of points in space, which describe the arrangement of atoms or molecules in a crystal."@en .
+                  rdfs:label "crystal lattice"@en ;
+                  skos:definition "Crystal lattice is a site which has unit cell as part and is location of a crystal. It represents a periodic array of points in space, which describe the arrangement of atoms or molecules in a crystal."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000002
-<https://w3id.org/pmd/cryo/CRYO_0000002> rdf:type owl:Class ;
-                                         rdfs:subClassOf co:PMD_0040001 ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:RO_0000080 ;
-                                                           owl:allValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000000>
-                                                         ] ;
-                                         rdfs:label "lattice parameter"@en ;
-                                         skos:definition "Lattice parameter is a quality of a unit cell which describes the length of (three) dimensions along of thwe unit cell's x-, y-, and z-directions."@en .
+cryo:CRYO_0000002 rdf:type owl:Class ;
+                  rdfs:subClassOf co:PMD_0040001 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0000080 ;
+                                    owl:allValuesFrom cryo:CRYO_0000000
+                                  ] ;
+                  rdfs:label "lattice parameter"@en ;
+                  skos:definition "Lattice parameter is a quality of a unit cell which describes the length of (three) dimensions along of thwe unit cell's x-, y-, and z-directions."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000003
-<https://w3id.org/pmd/cryo/CRYO_0000003> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000002> ;
-                                         rdfs:label "a lattice parameter"@en ;
-                                         skos:definition "A length of a unit cell along its x-axis"@en .
+cryo:CRYO_0000003 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000002 ;
+                  rdfs:label "a lattice parameter"@en ;
+                  skos:definition "A length of a unit cell along its x-axis"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000004
-<https://w3id.org/pmd/cryo/CRYO_0000004> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000002> ;
-                                         rdfs:label "b lattice parameter"@en ;
-                                         skos:definition "A length of a unit cell along its y-axis"@en .
+cryo:CRYO_0000004 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000002 ;
+                  rdfs:label "b lattice parameter"@en ;
+                  skos:definition "A length of a unit cell along its y-axis"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000005
-<https://w3id.org/pmd/cryo/CRYO_0000005> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000002> ;
-                                         rdfs:label "c lattice parameter"@en ;
-                                         skos:definition "A length of a unit cell along its z-axis"@en .
+cryo:CRYO_0000005 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000002 ;
+                  rdfs:label "c lattice parameter"@en ;
+                  skos:definition "A length of a unit cell along its z-axis"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000006
-<https://w3id.org/pmd/cryo/CRYO_0000006> rdf:type owl:Class ;
-                                         rdfs:subClassOf obo:BFO_0000145 ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:RO_0000080 ;
-                                                           owl:allValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000000>
-                                                         ] ;
-                                         rdfs:comment "TODO check the naming conventions" ;
-                                         rdfs:label "angular lattice parameter"@en ;
-                                         skos:definition "Angular lattice parameter is a relational quality between two axes in a unit cell"@en .
+cryo:CRYO_0000006 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000145 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0000080 ;
+                                    owl:allValuesFrom cryo:CRYO_0000000
+                                  ] ;
+                  rdfs:comment "TODO check the naming conventions" ;
+                  rdfs:label "angular lattice parameter"@en ;
+                  skos:definition "Angular lattice parameter is a relational quality between two axes in a unit cell"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000007
-<https://w3id.org/pmd/cryo/CRYO_0000007> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000006> ;
-                                         rdfs:label "α lattice parameter"@en ;
-                                         skos:definition "α lattice parameter is an anlge between y- and z-directions in a unit cell"@en .
+cryo:CRYO_0000007 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000006 ;
+                  rdfs:label "α lattice parameter"@en ;
+                  skos:definition "α lattice parameter is an anlge between y- and z-directions in a unit cell"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000008
-<https://w3id.org/pmd/cryo/CRYO_0000008> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000006> ;
-                                         rdfs:label "β lattice parameter"@en ;
-                                         skos:definition "β lattice parameter is an anlge between x- and z-directions in a unit cell"@en .
+cryo:CRYO_0000008 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000006 ;
+                  rdfs:label "β lattice parameter"@en ;
+                  skos:definition "β lattice parameter is an anlge between x- and z-directions in a unit cell"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000009
-<https://w3id.org/pmd/cryo/CRYO_0000009> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000006> ;
-                                         rdfs:label "γ lattice parameter"@en ;
-                                         skos:definition "γ lattice parameter is an anlge between x- and z-directions in a unit cell"@en .
+cryo:CRYO_0000009 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000006 ;
+                  rdfs:label "γ lattice parameter"@en ;
+                  skos:definition "γ lattice parameter is an anlge between x- and z-directions in a unit cell"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000010
-<https://w3id.org/pmd/cryo/CRYO_0000010> rdf:type owl:Class ;
-                                         rdfs:subClassOf obo:BFO_0000027 ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:RO_0001025 ;
-                                                           owl:allValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000000>
-                                                         ] ;
-                                         rdfs:label "basis"@en ;
-                                         skos:definition "Basis is a object aggregate which has one or more atoms or molecules as parts. It defines the minimal number of atoms or molecules to form a unit cell."@en .
+cryo:CRYO_0000010 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000027 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0001025 ;
+                                    owl:allValuesFrom cryo:CRYO_0000000
+                                  ] ;
+                  rdfs:label "basis"@en ;
+                  skos:definition "Basis is a object aggregate which has one or more atoms or molecules as parts. It defines the minimal number of atoms or molecules to form a unit cell."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000011
-<https://w3id.org/pmd/cryo/CRYO_0000011> rdf:type owl:Class ;
-                                         rdfs:subClassOf obo:BFO_0000146 ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:BFO_0000050 ;
-                                                           owl:someValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000001>
-                                                         ] ;
-                                         rdfs:label "crystallographic plane"@en ;
-                                         skos:definition "Crystallographic plane is a fiat surface which is part of a crystal lattice and which is denoted by Miller indices of a plane."@en .
+cryo:CRYO_0000011 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000146 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom cryo:CRYO_0000001
+                                  ] ;
+                  rdfs:label "crystallographic plane"@en ;
+                  skos:definition "Crystallographic plane is a fiat surface which is part of a crystal lattice and which is denoted by Miller indices of a plane."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000012
-<https://w3id.org/pmd/cryo/CRYO_0000012> rdf:type owl:Class ;
-                                         rdfs:subClassOf obo:BFO_0000142 ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:BFO_0000050 ;
-                                                           owl:someValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000001>
-                                                         ] ;
-                                         rdfs:label "crystallographic direction"@en ;
-                                         skos:definition "Crystallographic direction is a fiat line which is part of a crystal lattice and which is denoted by Miller indices of a direction."@en .
+cryo:CRYO_0000012 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000142 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom cryo:CRYO_0000001
+                                  ] ;
+                  rdfs:label "crystallographic direction"@en ;
+                  skos:definition "Crystallographic direction is a fiat line which is part of a crystal lattice and which is denoted by Miller indices of a direction."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000013
-<https://w3id.org/pmd/cryo/CRYO_0000013> rdf:type owl:Class ;
-                                         rdfs:subClassOf obo:BFO_0000145 ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty co:PMD_0025999 ;
-                                                           owl:someValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000011>
-                                                         ] ;
-                                         rdfs:comment "TODO add symbol annotation property" ;
-                                         rdfs:label "interplanar spacing"@en .
+cryo:CRYO_0000013 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000145 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty co:PMD_0025999 ;
+                                    owl:someValuesFrom cryo:CRYO_0000011
+                                  ] ;
+                  rdfs:comment "TODO add symbol annotation property" ;
+                  rdfs:label "interplanar spacing"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000014
-<https://w3id.org/pmd/cryo/CRYO_0000014> rdf:type owl:Class ;
-                                         rdfs:subClassOf co:PMD_0000501 ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:IAO_0000219 ;
-                                                           owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                owl:unionOf ( <https://w3id.org/pmd/cryo/CRYO_0000011>
-                                                                                              <https://w3id.org/pmd/cryo/CRYO_0000012>
-                                                                                              <https://w3id.org/pmd/cryo/CRYO_0000015>
-                                                                                            )
-                                                                              ]
-                                                         ] ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <https://w3id.org/pmd/cryo/CRYO_0000017> ;
-                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                         ] ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <https://w3id.org/pmd/cryo/CRYO_0000018> ;
-                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                         ] ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <https://w3id.org/pmd/cryo/CRYO_0000019> ;
-                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                         ] ;
-                                         rdfs:comment """TODO 
+cryo:CRYO_0000014 rdf:type owl:Class ;
+                  rdfs:subClassOf co:PMD_0000501 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:IAO_0000219 ;
+                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                         owl:unionOf ( cryo:CRYO_0000011
+                                                                       cryo:CRYO_0000012
+                                                                       cryo:CRYO_0000015
+                                                                     )
+                                                       ]
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cryo:CRYO_0000017 ;
+                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cryo:CRYO_0000018 ;
+                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cryo:CRYO_0000019 ;
+                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                  ] ;
+                  rdfs:comment """TODO 
 1. think if its actually 1D..
 2. Review the definitions of sublcasses"""@en ;
-                                         rdfs:label "Miller indices"@en ;
-                                         skos:definition "Miller indices is an information content entity which denotes crystallographic direction, crystallographic plane, or lattice point, i.e., defines their position in respect to the coordinate system of a crystal lattice, and has exactly 3 interger literals, namely h, k. and l."@en .
+                  rdfs:label "Miller indices"@en ;
+                  skos:definition "Miller indices is an information content entity which denotes crystallographic direction, crystallographic plane, or lattice point, i.e., defines their position in respect to the coordinate system of a crystal lattice, and has exactly 3 interger literals, namely h, k. and l."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000015
-<https://w3id.org/pmd/cryo/CRYO_0000015> rdf:type owl:Class ;
-                                         rdfs:subClassOf obo:BFO_0000147 ,
-                                                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty obo:BFO_0000050 ;
-                                                                                  owl:someValuesFrom [ owl:intersectionOf ( <https://w3id.org/pmd/cryo/CRYO_0000001>
-                                                                                                                            [ rdf:type owl:Restriction ;
-                                                                                                                              owl:onProperty obo:RO_0001015 ;
-                                                                                                                              owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0020003
-                                                                                                                                                                        [ rdf:type owl:Restriction ;
-                                                                                                                                                                          owl:onProperty obo:BFO_0000051 ;
-                                                                                                                                                                          owl:someValuesFrom obo:CHEBI_33250
-                                                                                                                                                                        ]
-                                                                                                                                                                      ) ;
-                                                                                                                                                   rdf:type owl:Class
+cryo:CRYO_0000015 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000147 ,
+                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:BFO_0000050 ;
+                                                           owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000001
+                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty obo:RO_0001015 ;
+                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0020003
+                                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                                   owl:onProperty obo:BFO_0000051 ;
+                                                                                                                                                   owl:someValuesFrom obo:CHEBI_33250
                                                                                                                                                  ]
-                                                                                                                            ]
-                                                                                                                          ) ;
-                                                                                                       rdf:type owl:Class
+                                                                                                                                               ) ;
+                                                                                                                            rdf:type owl:Class
+                                                                                                                          ]
                                                                                                      ]
-                                                                                ]
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty obo:RO_0001015 ;
-                                                                                  owl:someValuesFrom obo:CHEBI_33250
-                                                                                ]
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ] ;
-                                         rdfs:comment """TODO: 
+                                                                                                   ) ;
+                                                                                rdf:type owl:Class
+                                                                              ]
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0001015 ;
+                                                           owl:someValuesFrom obo:CHEBI_33250
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+                  rdfs:comment """TODO: 
 1. is it relevant for molecules
 2. With SHACL it is possible to say that it is the same instance of a atom from the axiom"""@en ;
-                                         rdfs:label "lattice point"@en ;
-                                         skos:definition "Lattice point is a fiat point which is a part of a lattice and is a location of atoms (or molecules) of a crystal, which is located in the lattice."@en .
+                  rdfs:label "lattice point"@en ;
+                  skos:definition "Lattice point is a fiat point which is a part of a lattice and is a location of atoms (or molecules) of a crystal, which is located in the lattice."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000020
-<https://w3id.org/pmd/cryo/CRYO_0000020> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000014> ;
-                                         rdfs:label "direction Miller indices"@en ;
-                                         skos:definition "Direction Miller indices define the components of a sinlge vector in the given direction in a crystal's unit cell. Usually, direction Miller indices are reduced to the lowest set of integers. Direction Miller indices must be written in square brackets, e.g., [hkl]."@en ;
-                                         skos:example "[111]" .
+cryo:CRYO_0000020 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000014 ;
+                  rdfs:label "direction Miller indices"@en ;
+                  skos:definition "Direction Miller indices define the components of a sinlge vector in the given direction in a crystal's unit cell. Usually, direction Miller indices are reduced to the lowest set of integers. Direction Miller indices must be written in square brackets, e.g., [hkl]."@en ;
+                  skos:example "[111]" .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000021
-<https://w3id.org/pmd/cryo/CRYO_0000021> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000014> ;
-                                         rdfs:label "family of directions Miller indices"@en ;
-                                         skos:definition "<111>" ,
-                                                         "Set of directions Miller indices define the components of symmetrically equivalent directions in a crystal lattice. Set of directions Miller indices must be written as <hkl>."@en .
+cryo:CRYO_0000021 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000014 ;
+                  rdfs:label "family of directions Miller indices"@en ;
+                  skos:definition "<111>" ,
+                                  "Set of directions Miller indices define the components of symmetrically equivalent directions in a crystal lattice. Set of directions Miller indices must be written as <hkl>."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000022
-<https://w3id.org/pmd/cryo/CRYO_0000022> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000014> ;
-                                         rdfs:label "plane Miller indices"@en ;
-                                         skos:definition """Plane Miller indices define the reciprocals of the fractional intercepts the plane makes with the crystallographic axes, reduced to the lowest set of integers. 
+cryo:CRYO_0000022 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000014 ;
+                  rdfs:label "plane Miller indices"@en ;
+                  skos:definition """Plane Miller indices define the reciprocals of the fractional intercepts the plane makes with the crystallographic axes, reduced to the lowest set of integers. 
 For example, if a plane crosses [100] axis at 1/h, [010 ] axis at 1/k, and [001] axis at 1/l, then such plane is denoted as (hkl) plane. If a plane is parallel to one of the axes, then the corresponding Miller index is 0.
 Plane Miller indices must be written in round brackets, e.g., (hkl)."""@en ;
-                                         skos:example "(hkl)" .
+                  skos:example "(hkl)" .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000023
-<https://w3id.org/pmd/cryo/CRYO_0000023> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000014> ;
-                                         rdfs:label "family of planes Miller indices"@en ;
-                                         skos:definition "Set of planes Miller indices define set of symmetrically equivalent planes. Set of planes must be written in curly brackets, e.g., {hkl}."@en ;
-                                         skos:example "{111}" .
+cryo:CRYO_0000023 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000014 ;
+                  rdfs:label "family of planes Miller indices"@en ;
+                  skos:definition "Set of planes Miller indices define set of symmetrically equivalent planes. Set of planes must be written in curly brackets, e.g., {hkl}."@en ;
+                  skos:example "{111}" .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000024
-<https://w3id.org/pmd/cryo/CRYO_0000024> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/pmd/cryo/CRYO_0000014> ;
-                                         rdfs:label "point Miller indices"@en ;
-                                         skos:definition "Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l)."@en ;
-                                         skos:example "(1,1,1)" .
+cryo:CRYO_0000024 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000014 ;
+                  rdfs:label "point Miller indices"@en ;
+                  skos:definition "Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l)."@en ;
+                  skos:example "(1,1,1)" .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000025
-<https://w3id.org/pmd/cryo/CRYO_0000025> rdf:type owl:Class ;
-                                         rdfs:subClassOf obo:BFO_0000024 ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:BFO_0000051 ;
-                                                           owl:someValuesFrom obo:CHEBI_33250
-                                                         ] ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:RO_0001025 ;
-                                                           owl:someValuesFrom <https://w3id.org/pmd/cryo/CRYO_0000011>
-                                                         ] ;
-                                         rdfs:label "atomic plane"@en ;
-                                         skos:definition "Atomic plane is a 2D fiat object part which has atoms as it parts and is located in some crystallogphic plane, i.e., the positions of atoms relative to each other are defined via the characterisitics of the crystallogphic plane."@en .
+cryo:CRYO_0000025 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000024 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000051 ;
+                                    owl:someValuesFrom obo:CHEBI_33250
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0001025 ;
+                                    owl:someValuesFrom cryo:CRYO_0000011
+                                  ] ;
+                  rdfs:label "atomic plane"@en ;
+                  skos:definition "Atomic plane is a 2D fiat object part which has atoms as it parts and is located in some crystallogphic plane, i.e., the positions of atoms relative to each other are defined via the characterisitics of the crystallogphic plane."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000124
+cryo:CRYO_0000124 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:IAO_0000030 ;
+                  rdfs:comment """DO NOT INITIALIZE THIS CLASS OR ANY OF THIS SUBCLASSES
+The symmetry equivalency assertion class is meant to enable assertions of  crystollograhpic equivalence between single crystallographic direction /plane and family of directions/planes if the equivalence applies for the given crystal symmetry. This class is part of the \"inference engine\""""@en ;
+                  rdfs:label "symmetry equivalency assertion"@en ;
+                  skos:definition "Symmetry equivalency assertion is an information content entity which is used to infer crystallographic equivalence between single crystallographic direction /plane and family of directions/planes if the equivalence applies for the given crystal symmetry."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000143
+cryo:CRYO_0000143 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( cryo:CRYO_0000124
+                                                             [ rdf:type owl:Class ;
+                                                               owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty cryo:CRYO_0000158 ;
+                                                                               owl:hasValue co:PMD_0020018
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty cryo:CRYO_0000158 ;
+                                                                               owl:hasValue co:PMD_0020019
+                                                                             ]
+                                                                           )
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf cryo:CRYO_0000124 ,
+                                  [ rdf:type owl:Class ;
+                                    owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                           owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000089
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000095
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000096
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000097
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000098
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000099
+                                                                                         ]
+                                                                                       )
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty cryo:CRYO_0000152 ;
+                                                                           owl:hasValue cryo:CRYO_0000039
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                                                  [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                           owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000101
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000102
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000103
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000104
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000105
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000106
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000107
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000108
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000109
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000110
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000111
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000112
+                                                                                         ]
+                                                                                       )
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty cryo:CRYO_0000152 ;
+                                                                           owl:hasValue cryo:CRYO_0000038
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                                                  [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                           owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000114
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000115
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000116
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000117
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000118
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000119
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000120
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty obo:RO_0002351 ;
+                                                                                           owl:hasValue cryo:CRYO_0000121
+                                                                                         ]
+                                                                                       )
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty cryo:CRYO_0000152 ;
+                                                                           owl:hasValue cryo:CRYO_0000037
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                                                )
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cryo:CRYO_0000170 ;
+                                    owl:hasSelf "true"^^xsd:boolean
+                                  ] ;
+                  rdfs:label "cubic equivalency assertion"@en ;
+                  skos:definition """cubic equivalency assertion is a symmetry equivalency assertion which is used to infer crystallographic equivalence between single crystallographic direction /plane and family of directions/planes under the cubic crystal symmetry.
+In particular, it considers <100>, <110>, and <111> families of crystallographic directions, as well as {100}, {110}, {111} families of crystallographic planes"""@en .
 
 
 #################################################################
@@ -4676,6 +4999,666 @@ co:PMD_0020125 rdf:type owl:NamedIndividual ;
                rdfs:label "aggregate state suprasolid"@en ;
                skos:definition "A state that exhibits suprafluid and solid properties."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000037
+cryo:CRYO_0000037 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000021 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "<111>"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000038
+cryo:CRYO_0000038 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000021 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "<110>"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000039
+cryo:CRYO_0000039 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000021 ;
+                  owl:sameAs cryo:CRYO_0000113 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "<100>"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000113
+
+###  https://w3id.org/pmd/cryo/CRYO_0000040
+cryo:CRYO_0000040 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000023 ;
+                  cryo:CRYO_0000018 0 ,
+                                    1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "{100}"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000041
+cryo:CRYO_0000041 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000023 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "{110}"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000089
+cryo:CRYO_0000089 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "[100]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000095
+cryo:CRYO_0000095 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "[010]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000096
+cryo:CRYO_0000096 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "[001]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000097
+cryo:CRYO_0000097 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "[-100]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000098
+cryo:CRYO_0000098 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "[0-10]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000099
+cryo:CRYO_0000099 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "[00-1]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000100
+cryo:CRYO_0000100 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000023 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "{111}"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000101
+cryo:CRYO_0000101 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "[110]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000102
+cryo:CRYO_0000102 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "[101]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000103
+cryo:CRYO_0000103 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "[011]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000104
+cryo:CRYO_0000104 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "[-10-1]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000105
+cryo:CRYO_0000105 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "[-1-10]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000106
+cryo:CRYO_0000106 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "[0-1-1]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000107
+cryo:CRYO_0000107 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "[-110]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000108
+cryo:CRYO_0000108 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "[1-10]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000109
+cryo:CRYO_0000109 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "[-101]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000110
+cryo:CRYO_0000110 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "[10-1]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000111
+cryo:CRYO_0000111 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "[0-11]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000112
+cryo:CRYO_0000112 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "[01-1]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000113
+cryo:CRYO_0000113 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000021 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 0 ,
+                                    1 ;
+                  rdfs:label "<001>"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000114
+cryo:CRYO_0000114 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "[111]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000115
+cryo:CRYO_0000115 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "[-111]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000116
+cryo:CRYO_0000116 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "[1-11]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000117
+cryo:CRYO_0000117 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "[11-1]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000118
+cryo:CRYO_0000118 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "[-1-11]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000119
+cryo:CRYO_0000119 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "[-11-1]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000120
+cryo:CRYO_0000120 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "[1-1-1]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000121
+cryo:CRYO_0000121 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000020 ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "[-1-1-1]"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000125
+cryo:CRYO_0000125 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "(100)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000126
+cryo:CRYO_0000126 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "(010)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000127
+cryo:CRYO_0000127 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "(001)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000128
+cryo:CRYO_0000128 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "(-100)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000129
+cryo:CRYO_0000129 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "(0-10)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000130
+cryo:CRYO_0000130 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "(00-1)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000131
+cryo:CRYO_0000131 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "(110)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000132
+cryo:CRYO_0000132 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "(-110)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000133
+cryo:CRYO_0000133 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "(1-10)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000134
+cryo:CRYO_0000134 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "(-1-10)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000135
+cryo:CRYO_0000135 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "(101)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000136
+cryo:CRYO_0000136 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "(-101)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000137
+cryo:CRYO_0000137 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "(10-1)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000138
+cryo:CRYO_0000138 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "(-10-1)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000139
+cryo:CRYO_0000139 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "(011)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000140
+cryo:CRYO_0000140 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "(0-11)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000141
+cryo:CRYO_0000141 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "(01-1)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000142
+cryo:CRYO_0000142 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "(0-1-1)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000144
+cryo:CRYO_0000144 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "(111)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000145
+cryo:CRYO_0000145 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "(-111)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000146
+cryo:CRYO_0000146 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "(1-11)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000147
+cryo:CRYO_0000147 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "(11-1)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000148
+cryo:CRYO_0000148 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "(-1-11)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000149
+cryo:CRYO_0000149 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "(-11-1)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000150
+cryo:CRYO_0000150 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "(1-1-1)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000151
+cryo:CRYO_0000151 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 -1 ;
+                  rdfs:label "(-1-1-1)"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000169
+cryo:CRYO_0000169 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000124 ;
+                  obo:RO_0002351 cryo:CRYO_0000089 ,
+                                 cryo:CRYO_0000095 ,
+                                 cryo:CRYO_0000096 ,
+                                 cryo:CRYO_0000097 ,
+                                 cryo:CRYO_0000098 ,
+                                 cryo:CRYO_0000099 ;
+                  cryo:CRYO_0000152 cryo:CRYO_0000039 ;
+                  cryo:CRYO_0000158 co:PMD_0020018 ;
+                  rdfs:label "cubic <100> equivalence"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000171
+cryo:CRYO_0000171 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000124 ;
+                  obo:RO_0002351 cryo:CRYO_0000101 ,
+                                 cryo:CRYO_0000102 ,
+                                 cryo:CRYO_0000103 ,
+                                 cryo:CRYO_0000104 ,
+                                 cryo:CRYO_0000105 ,
+                                 cryo:CRYO_0000106 ,
+                                 cryo:CRYO_0000107 ,
+                                 cryo:CRYO_0000108 ,
+                                 cryo:CRYO_0000109 ,
+                                 cryo:CRYO_0000110 ,
+                                 cryo:CRYO_0000111 ,
+                                 cryo:CRYO_0000112 ;
+                  cryo:CRYO_0000152 cryo:CRYO_0000038 ;
+                  cryo:CRYO_0000158 co:PMD_0020018 ;
+                  rdfs:label "cubic <110> equivalence"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000172
+cryo:CRYO_0000172 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000124 ;
+                  obo:RO_0002351 cryo:CRYO_0000114 ,
+                                 cryo:CRYO_0000115 ,
+                                 cryo:CRYO_0000116 ,
+                                 cryo:CRYO_0000117 ,
+                                 cryo:CRYO_0000118 ,
+                                 cryo:CRYO_0000119 ,
+                                 cryo:CRYO_0000120 ,
+                                 cryo:CRYO_0000121 ;
+                  cryo:CRYO_0000152 cryo:CRYO_0000037 ;
+                  cryo:CRYO_0000158 co:PMD_0020018 ;
+                  rdfs:label "cubic <111> equivalence"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000173
+cryo:CRYO_0000173 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000124 ;
+                  obo:RO_0002351 cryo:CRYO_0000125 ,
+                                 cryo:CRYO_0000126 ,
+                                 cryo:CRYO_0000127 ,
+                                 cryo:CRYO_0000128 ,
+                                 cryo:CRYO_0000129 ,
+                                 cryo:CRYO_0000130 ;
+                  cryo:CRYO_0000152 cryo:CRYO_0000040 ;
+                  cryo:CRYO_0000158 co:PMD_0020018 ;
+                  rdfs:label "cubic {100} equivalence"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000174
+cryo:CRYO_0000174 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000124 ;
+                  obo:RO_0002351 cryo:CRYO_0000131 ,
+                                 cryo:CRYO_0000132 ,
+                                 cryo:CRYO_0000133 ,
+                                 cryo:CRYO_0000134 ,
+                                 cryo:CRYO_0000135 ,
+                                 cryo:CRYO_0000136 ,
+                                 cryo:CRYO_0000137 ,
+                                 cryo:CRYO_0000138 ,
+                                 cryo:CRYO_0000139 ,
+                                 cryo:CRYO_0000140 ,
+                                 cryo:CRYO_0000141 ,
+                                 cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000152 cryo:CRYO_0000041 ;
+                  cryo:CRYO_0000158 co:PMD_0020018 ;
+                  rdfs:label "cubic {110} equivalence"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000175
+cryo:CRYO_0000175 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000124 ;
+                  obo:RO_0002351 cryo:CRYO_0000144 ,
+                                 cryo:CRYO_0000145 ,
+                                 cryo:CRYO_0000146 ,
+                                 cryo:CRYO_0000147 ,
+                                 cryo:CRYO_0000148 ,
+                                 cryo:CRYO_0000149 ,
+                                 cryo:CRYO_0000150 ,
+                                 cryo:CRYO_0000151 ;
+                  cryo:CRYO_0000152 cryo:CRYO_0000037 ;
+                  cryo:CRYO_0000158 co:PMD_0020018 ;
+                  rdfs:label "cubic {111} equivalence"@en .
 
 
 #################################################################
