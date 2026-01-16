@@ -5,6 +5,7 @@
     <uri name="https://w3id.org/pmd/cryo/components/imports-edit.owl" uri="components/imports-edit.owl" />
     <uri name="https://w3id.org/pmd/cryo/components/cryo-axioms-shared.owl" uri="components/cryo-axioms-shared.owl" />
     <uri name="https://w3id.org/pmd/cryo/components/cryo-entities.owl" uri="components/cryo-entities.owl" />
+    <uri name="https://w3id.org/pmd/cryo/components/cryo-individuals.owl" uri="components/cryo-individuals.owl" />
     <uri name="https://w3id.org/pmd/cryo/components/cryo-qualities.owl" uri="components/cryo-qualities.owl" />
     <uri name="https://w3id.org/pmd/cryo/components/cryo-shared.owl" uri="components/cryo-shared.owl" />
   </group>

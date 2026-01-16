@@ -24,3 +24,4 @@ WARN	missing_definition	family of directions Miller indices	IAO:0000115
 WARN	missing_definition	plane Miller indices	IAO:0000115	
 WARN	missing_definition	family of planes Miller indices	IAO:0000115	
 WARN	missing_definition	point Miller indices	IAO:0000115	
+WARN	missing_definition	atomic plane	IAO:0000115	

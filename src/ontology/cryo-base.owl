@@ -12,12 +12,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/cryo-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-01-14/cryo-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-01-16/cryo-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x</dcterms:title>
-        <owl:versionInfo>2026-01-14</owl:versionInfo>
+        <owl:versionInfo>2026-01-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1258,7 +1258,6 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
     <!-- https://w3id.org/pmd/co/PMD_0000583 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000583">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1385,9 +1384,11 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000663">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
-        <rdfs:label xml:lang="de">Korn</rdfs:label>
-        <rdfs:label xml:lang="en">crystal grain</rdfs:label>
-        <skos:definition xml:lang="en">A crystal grain is a crystal that is continuant part of a polycrystal.</skos:definition>
+        <rdfs:label xml:lang="en">crystallite</rdfs:label>
+        <rdfs:label xml:lang="de">kristallit</rdfs:label>
+        <skos:altLabel xml:lang="de">Korn</skos:altLabel>
+        <skos:altLabel xml:lang="en">grain</skos:altLabel>
+        <skos:definition xml:lang="en">A crystal grain is a crystal that is part of a polycrystal.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -1425,7 +1426,6 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1481,6 +1481,12 @@ A manufacturing process is always a transformative process.</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000853">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">crystallographic texture</rdfs:label>
         <skos:definition xml:lang="en">The crystallographic texture is a morphological quality describing the arrangement and orientation of grains in a metallic material, observed through crystallographic analysis.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
@@ -1554,6 +1560,18 @@ A manufacturing process is always a transformative process.</skos:definition>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">pole figure</rdfs:label>
         <skos:definition xml:lang="en">A pole figure is a map depicting a 2D stereographic projection which represents crystallographic orientations of grains in a polycrystalline material in respect to the sample&apos;s reference frame.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000890 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000890">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:label xml:lang="en">connected material entity aggregate</rdfs:label>
+        <skos:definition xml:lang="en">A material entity aggregate that is a mereological sum of separate material entities, which adhere to one another through chemical bonds or physical junctions that go beyond gravity.</skos:definition>
+        <skos:example xml:lang="en">the atoms of a molecule, the molecules forming the membrane of a cell, the epidermis in a human body</skos:example>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -3540,9 +3558,16 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <!-- https://w3id.org/pmd/co/PMD_0020106 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000890"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000663"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">polycrystal</rdfs:label>
-        <skos:definition xml:lang="en">Polycrystal is an object aggregate that has continuant part some crystal grains</skos:definition>
+        <skos:altLabel xml:lang="en">Polycrystalline structure</skos:altLabel>
+        <skos:definition xml:lang="en">Polycrystal is a connected object aggregate that has continuant part some crystal grains</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -4275,6 +4300,28 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
         <rdfs:label xml:lang="en">point Miller indices</rdfs:label>
         <skos:definition xml:lang="en">Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l).</skos:definition>
         <skos:example>(1,1,1)</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000025 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">atomic plane</rdfs:label>
+        <skos:definition xml:lang="en">Atomic plane is a 2D fiat object part which has atoms as it parts and is located in some crystallogphic plane, i.e., the positions of atoms relative to each other are defined via the characterisitics of the crystallogphic plane.</skos:definition>
     </owl:Class>
     
 

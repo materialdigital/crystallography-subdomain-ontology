@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                54c6482c80817a932ad25de60bd7c97c1e03b4d6c9b968f53de51f93adf89ffb
+CONFIG_HASH=                5b9f2744c7ae0b5a1fbd4aa584b9ce2c65312da4835f5182ce05ac8f6c9ea2cf
 
 
 # ----------------------------------------
@@ -57,7 +57,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(COMPONENTSDIR)/imports-edit.owl $(COMPONENTSDIR)/cryo-axioms-shared.owl $(COMPONENTSDIR)/cryo-entities.owl $(COMPONENTSDIR)/cryo-qualities.owl $(COMPONENTSDIR)/cryo-shared.owl 
+OTHER_SRC =                 $(COMPONENTSDIR)/imports-edit.owl $(COMPONENTSDIR)/cryo-axioms-shared.owl $(COMPONENTSDIR)/cryo-entities.owl $(COMPONENTSDIR)/cryo-individuals.owl $(COMPONENTSDIR)/cryo-qualities.owl $(COMPONENTSDIR)/cryo-shared.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
@@ -455,6 +455,7 @@ recreate-components:
 	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-imports-edit.owl \
 		--assume-new=$(TMPDIR)/stamp-component-cryo-axioms-shared.owl \
 		--assume-new=$(TMPDIR)/stamp-component-cryo-entities.owl \
+		--assume-new=$(TMPDIR)/stamp-component-cryo-individuals.owl \
 		--assume-new=$(TMPDIR)/stamp-component-cryo-qualities.owl \
 		--assume-new=$(TMPDIR)/stamp-component-cryo-shared.owl \
 		COMP=true IMP=false MIR=true PAT=true all_components
@@ -464,6 +465,7 @@ no-mirror-recreate-components:
 	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-imports-edit.owl \
 		--assume-new=$(TMPDIR)/stamp-component-cryo-axioms-shared.owl \
 		--assume-new=$(TMPDIR)/stamp-component-cryo-entities.owl \
+		--assume-new=$(TMPDIR)/stamp-component-cryo-individuals.owl \
 		--assume-new=$(TMPDIR)/stamp-component-cryo-qualities.owl \
 		--assume-new=$(TMPDIR)/stamp-component-cryo-shared.owl \
 		COMP=true IMP=false MIR=false PAT=true all_components
