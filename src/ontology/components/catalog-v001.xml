@@ -9,5 +9,6 @@
 
     <uri name="https://w3id.org/pmd/cryo/components/cryo-qualities.owl" uri="cryo-qualities.owl" />
     <uri name="https://w3id.org/pmd/cryo/components/cryo-entities.owl" uri="cryo-entities.owl" />
+    <uri name="https://w3id.org/pmd/cryo/components/cryo-individuals.owl" uri="cryo-individuals.owl"/>
 </group>
 </catalog>
