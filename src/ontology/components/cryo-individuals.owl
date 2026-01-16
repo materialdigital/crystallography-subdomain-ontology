@@ -3,6 +3,7 @@
      xml:base="https://w3id.org/pmd/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:cryo="https://w3id.org/pmd/cryo/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -13,4 +14,863 @@
     </owl:Ontology>
 
     <!-- This is a placeholder, it will be regenerated when makefile is first executed -->
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000037 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">&lt;111&gt;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000038 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000038">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">&lt;110&gt;</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000039 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000039">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+        <owl:sameAs rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000113"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">&lt;100&gt;</rdfs:label>
+    </owl:NamedIndividual>
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000040 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000040">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">{100}</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000041 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000041">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">{110}</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000089 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000089">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[100]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000095 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000095">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[010]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000096 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000096">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[001]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000097 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000097">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[-100]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000098 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000098">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[0-10]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000099 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000099">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[00-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000100 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000100">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">{111}</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000101 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000101">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[110]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000102 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000102">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[101]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000103 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000103">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[011]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000104 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000104">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[-10-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000105 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000105">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[-1-10]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000106 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000106">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[0-1-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000107 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000107">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[-110]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000108 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000108">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[1-10]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000109 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000109">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[-101]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000110 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000110">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[10-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000111 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000111">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[0-11]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000112 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000112">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[01-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000113 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000113">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <rdfs:label xml:lang="en">&lt;001&gt;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000114 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000114">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[111]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000115 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000115">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[-111]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000116 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000116">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[1-11]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000117 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000117">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[11-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000118 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000118">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[-1-11]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000119 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000119">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[-11-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000120 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000120">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[1-1-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000121 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000121">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">[-1-1-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000125 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000125">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(100)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000126 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000126">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(010)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000127 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000127">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(001)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000128 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000128">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(-100)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000129 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000129">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(0-10)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000130 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000130">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(00-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000131 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000131">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(110)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000132 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000132">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(-110)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000133 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000133">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(1-10)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000134 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000134">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(-1-10)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000135 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000135">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(101)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000136 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000136">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(-101)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000137 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000137">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(10-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000138 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000138">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(-10-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000139 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000139">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(011)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000140 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000140">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(0-11)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000141 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000141">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(01-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000142 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000142">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(0-1-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000144 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000144">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(111)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000145 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000145">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(-111)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000146 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000146">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(1-11)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000147 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000147">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(11-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000148 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000148">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(-1-11)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000149 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000149">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(-11-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000150 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000150">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(1-1-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000151 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000151">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="en">(-1-1-1)</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000169 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000169">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000089"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000095"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000096"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000097"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000098"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000099"/>
+        <cryo:CRYO_0000152 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000039"/>
+        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+        <rdfs:label xml:lang="en">cubic &lt;100&gt; equivalence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000171 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000171">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000101"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000102"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000103"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000104"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000105"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000106"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000107"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000108"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000109"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000110"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000111"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000112"/>
+        <cryo:CRYO_0000152 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000038"/>
+        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+        <rdfs:label xml:lang="en">cubic &lt;110&gt; equivalence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000172 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000172">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000114"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000115"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000116"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000117"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000118"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000119"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000120"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000121"/>
+        <cryo:CRYO_0000152 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+        <rdfs:label xml:lang="en">cubic &lt;111&gt; equivalence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000173 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000173">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000125"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000126"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000127"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000128"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000129"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000130"/>
+        <cryo:CRYO_0000152 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000040"/>
+        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+        <rdfs:label xml:lang="en">cubic {100} equivalence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000174 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000174">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000131"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000132"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000133"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000134"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000135"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000136"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000137"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000138"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000139"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000140"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000141"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
+        <cryo:CRYO_0000152 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000041"/>
+        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+        <rdfs:label xml:lang="en">cubic {110} equivalence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000175 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000175">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000144"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000145"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000146"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000147"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000148"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000149"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000150"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000151"/>
+        <cryo:CRYO_0000152 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+        <rdfs:label xml:lang="en">cubic {111} equivalence</rdfs:label>
+    </owl:NamedIndividual>
+
 </rdf:RDF>
