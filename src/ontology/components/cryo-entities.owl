@@ -272,8 +272,8 @@
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000021">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
         <rdfs:label xml:lang="en">family of directions Miller indices</rdfs:label>
-        <skos:definition xml:lang="en">Set of directions Miller indices define the components of symmetrically equivalent directions in a crystal lattice. Set of directions Miller indices must be written as &lt;hkl&gt;.</skos:definition>
         <skos:definition>&lt;111&gt;</skos:definition>
+        <skos:definition xml:lang="en">Set of directions Miller indices define the components of symmetrically equivalent directions in a crystal lattice. Set of directions Miller indices must be written as &lt;hkl&gt;.</skos:definition>
     </owl:Class>
     
 
@@ -309,6 +309,28 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
         <rdfs:label xml:lang="en">point Miller indices</rdfs:label>
         <skos:definition xml:lang="en">Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l).</skos:definition>
         <skos:example>(1,1,1)</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000025 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">atomic plane</rdfs:label>
+        <skos:definition xml:lang="en">Atomic plane is a 2D fiat object part which has atoms as it parts and is located in some crystallogphic plane, i.e., the positions of atoms relative to each other are defined via the characterisitics of the crystallogphic plane.</skos:definition>
     </owl:Class>
 </rdf:RDF>
 

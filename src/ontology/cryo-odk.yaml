@@ -28,6 +28,7 @@ components:
     - filename: imports-edit.owl
     - filename: cryo-axioms-shared.owl
     - filename: cryo-entities.owl
+    - filename: cryo-individuals.owl
     - filename: cryo-qualities.owl
     - filename: cryo-shared.owl
 
