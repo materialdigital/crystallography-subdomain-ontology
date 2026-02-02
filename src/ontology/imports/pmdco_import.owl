@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/cryo/imports/pmdco_import.owl>
-<https://w3id.org/pmd/cryo/releases/2026-01-16/imports/pmdco_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-01-16/pmdco.ttl>)
-Annotation(owl:versionInfo "2026-01-16")
+<https://w3id.org/pmd/cryo/releases/2026-02-02/imports/pmdco_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-01-30/pmdco.ttl>)
+Annotation(owl:versionInfo "2026-02-02")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -102,6 +102,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33310>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33319>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33330>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33331>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33336>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33341>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33342>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33343>))
@@ -124,6 +125,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_49882>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_49957>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_59999>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_60003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000082>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000007>))
@@ -133,9 +136,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000067>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000260>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001930>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001931>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001933>))
@@ -295,6 +298,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0025003>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025007>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025008>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025012>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0025015>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025997>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0040001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050051>))
@@ -411,6 +415,7 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#repository>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
@@ -419,6 +424,7 @@ Declaration(AnnotationProperty(<https://w3id.org/pmd/co/PMD_0000060>))
 Declaration(AnnotationProperty(<https://w3id.org/pmd/co/PMD_0000064>))
 Declaration(AnnotationProperty(<https://w3id.org/pmd/co/PMD_0001032>))
 Declaration(AnnotationProperty(<https://w3id.org/pmd/co/PMD_0050117>))
+Declaration(Datatype(rdfs:Literal))
 
 ############################
 #   Object Properties
@@ -454,9 +460,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000051> "has
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BFO_0000051>)
 TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>)
 
-# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (has realization)
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (realized in)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000054> "has realization"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000054> "realized in"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000054> "b has realization c =Def c realizes b"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000054> "As for realizes"@en)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/BFO_0000055>)
@@ -465,6 +472,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.ob
 
 # Object Property: <http://purl.obolibrary.org/obo/BFO_0000055> (realizes)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000055> "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000055> "realizes"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000055> "(Elucidation) realizes is a relation between a process b and realizable entity c such that c inheres in some d & for all t, if b has participant d then c exists & the type instantiated by b is correlated with the type instantiated by c"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000055> "A balding process realizes a disposition to go bald; a studying process realizes a student role; a process of pumping blood realizes the pumping function of a heart"@en)
@@ -632,36 +640,36 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000419> "qua
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000293> (has specified input)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000293> "see is_input_of example_of_usage"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000293> "The inverse property of is specified input of"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000293> "The inverse property of is specified input of")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000293> "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000293> "has specified input"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/RO_0000057>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000295>)
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000011>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/COB_0000035>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000295> (is specified input of)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000295> "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000295> "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000295> "A relation between a completely executed planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000295> "is specified input of"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/RO_0000056>)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/OBI_0000011>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/COB_0000035>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has specified output)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "The inverse property of is specified output of"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "The inverse property of is specified output of")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has specified output"@en)
 EquivalentObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectInverseOf(<http://purl.obolibrary.org/obo/OBI_0000312>))
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/RO_0000057>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000312>)
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000011>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/COB_0000035>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000312> (is specified output of)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000312> "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000312> "A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000312> "is specified output of"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/RO_0000056>)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000011>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/COB_0000035>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000417> (achieves_planned_objective)
 
@@ -670,7 +678,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000417> "PPPB branch derived")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000417> "achieves_planned_objective")
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000064> <http://purl.obolibrary.org/obo/OBI_0000417> "https://github.com/search?q=repo%3Amaterialdigital%2Fcore-ontology+path%3A%2F%5Epatterns%5C%2F%2F+OBI_0000417&type=code")
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000011>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/COB_0000035>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/IAO_0000005>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0001927> (specifies value of)
@@ -736,6 +744,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000058> "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000058> "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000058> "A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000058> "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000058> "is concretized as"@en)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000058> <http://purl.obolibrary.org/obo/RO_0000059>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0000058> <http://purl.obolibrary.org/obo/BFO_0000031>)
@@ -745,6 +754,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000058> ObjectUnionOf(<h
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000059> "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000059> "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000059> "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000059> "A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000059> "concretizes"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0000059> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000020>))
@@ -1273,6 +1283,8 @@ DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000038> <http://purl.obolib
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000040> "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000040> "Elucidation: An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000040> "(Elucidation) A material entity is an independent continuant has some portion of matter as continuant part"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000040> "A human being; the undetached arm of a human being; an aggregate of human beings"@en)
@@ -1382,7 +1394,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23116> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/CHEBI_23367> (molecular entity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_23367> "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/CHEBI_23367> "We are assuming that every molecular entity has to be completely connected by chemical bonds. This excludes protein complexes, which are comprised of minimally two separate molecular entities. We will follow up with Chebi to ensure this is their understanding as well"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_23367> "molecular entity")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23367> <http://purl.obolibrary.org/obo/CHEBI_24431>)
 
@@ -1597,6 +1608,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30514> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_30682> "ruthenium atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30682> <http://purl.obolibrary.org/obo/CHEBI_33521>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_30682> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BFO_0000040>))
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_30687> (osmium atom)
 
@@ -1639,6 +1651,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33330> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33331> "yttrium atom")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33331> <http://purl.obolibrary.org/obo/CHEBI_33521>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_33336> (lanthanum atom)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33336> "lanthanum atom")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33336> <http://purl.obolibrary.org/obo/CHEBI_33319>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_33341> (titanium atom)
 
@@ -1764,6 +1781,18 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.o
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <http://purl.obolibrary.org/obo/CHEBI_60003> "true"^^xsd:boolean)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_60003> <http://purl.obolibrary.org/obo/CHEBI_59999>)
 
+# Class: <http://purl.obolibrary.org/obo/COB_0000035> (completely executed planned process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000035> "completely executed planned process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000035> <http://purl.obolibrary.org/obo/COB_0000082>)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000082> (planned process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0000082> "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000082> "planned process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000082> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000003> (measurement unit label)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000003> "Examples of measurement unit labels are liters, inches, weight per volume."@en)
@@ -1827,6 +1856,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000030> "Examples of information content entites include journal articles, data, graphical layouts, and graphs."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000030> "A generically dependent continuant that is about some thing."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000030> "2014-03-10: The use of \"thing\" is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000030> "Pier: 'data, information or knowledge'. OR 'representation'"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000030> "information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).
 
 Previous. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity."@en)
@@ -1872,19 +1902,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000109> "mea
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.org/obo/IAO_0000027>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001938> <http://purl.obolibrary.org/obo/OBI_0001933>))
 
-# Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000011> "Injecting mice with a vaccine in order to test its efficacy")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000011> "A process that realizes a plan which is the concretization of a plan specification."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000011> "'Plan' includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn't have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000011> "We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some 
-objectives is a planned process.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000011> "branch derived")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "planned process"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/IAO_0000104>)))
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/BFO_0000015>)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/IAO_0000104>)))
-
 # Class: <http://purl.obolibrary.org/obo/OBI_0000067> (evaluant role)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000067> "When a specimen of blood is assayed for glucose concentration, the blood has the evaluant role. When measuring the mass of a mouse, the evaluant is the mouse. When measuring the time of DNA replication, the evaluant is the DNA. When measuring the intensity of light on a surface, the evaluant is the light source."@en)
@@ -1905,12 +1922,23 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000070> "Discussion on OBI call 2023-05-01 resulted in an agreement to revise the textual definition of 'assay'.  https://github.com/obi-ontology/obi/issues/1683.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000070> "OBI branch derived"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000070> "assay"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> <http://purl.obolibrary.org/obo/OBI_0000011>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> <http://purl.obolibrary.org/obo/COB_0000035>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/BFO_0000040>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000027>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000067>))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000067>))))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000067>))))))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/IAO_0000005>))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009006> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000019> <https://w3id.org/pmd/co/PMD_0000005>)))
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000260> (plan)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000260> "The plan of researcher X to perform an experiment according to a protocol.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000260> "A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a completely executed planned process."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000260> "This class is included to make clear how the plan specification, the plan, and the planned process relate. OBI will however only subclass and work under the 'plan specification', and 'planned process' class, as we want to avoid to get deep into discussions of 'intend' etc.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000260> "branch derived"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000260> "plan"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000260> <http://purl.obolibrary.org/obo/BFO_0000017>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/IAO_0000104>))
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0001930> (categorical value specification)
 
@@ -1923,6 +1951,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0001930> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001931> "A value specification that consists of two parts: a numeral and a unit label"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001931> "scalar value specification")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0001931> <http://purl.obolibrary.org/obo/OBI_0001933>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0001931> DataMinCardinality(1 <http://purl.obolibrary.org/obo/OBI_0001937>))
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0001933> (value specification)
 
@@ -1934,23 +1963,23 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0001933> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000000> (unit)
 
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UO_0000000> "\"A unit of measurement is a standardized quantity of a physical quality.\" [Wikipedia:Wikipedia]")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Wikipedia") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000000> "A unit of measurement is a standardized quantity of a physical quality.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000000> "unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000000> <http://purl.obolibrary.org/obo/IAO_0000003>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000076> (mole fraction)
 
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Wikipedia") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000076> "A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000076> "(x)")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000076> "chi")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UO_0000076> "\"A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution.\" [Wikipedia:Wikipedia]")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000076> "mole fraction")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000076> <http://purl.obolibrary.org/obo/UO_1000076>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000164> (mass volume percentage)
 
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000164> "A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000164> "(w/v)")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000164> "weight-volume percentage")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UO_0000164> "\"A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.\" [UOC:GVG]")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000164> "mass volume percentage")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000164> <http://purl.obolibrary.org/obo/UO_1000164>)
 
@@ -2028,14 +2057,14 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000068> ObjectSomeValuesFrom(<https://w
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000501> "1D"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000501> "1-D is an information content entity representing a one-dimensional structure or model representing a single linear dimension, often used in material science simulations or analysis."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000501> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000501> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000501> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0000502> (2D)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000502> "2D"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000502> "A two-dimensional information content entity is a representation or analysis, commonly applied in studying planar material properties or surface phenomena."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000502> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000502> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000502> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0000503> (ASTM grainsize)
 
@@ -2100,7 +2129,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000583> "Rechenproz
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000583> "computing process"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000583> "A process that involves the systematic use of computational methods and tools to perform simulations, analyses, or data transformations to achieve specific scientific or engineering goals."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000583> "Ein Prozess, der die systematische Verwendung von rechnerischen Methoden und Werkzeugen umfasst, um Simulationen, Analysen oder Datenumwandlungen durchzuführen, um spezifische wissenschaftliche oder technische Ziele zu erreichen."@de)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000583> <http://purl.obolibrary.org/obo/OBI_0000011>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000583> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000583> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/IAO_0000030>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000030>)))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000591> (crystal structure)
@@ -2182,8 +2211,8 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 A manufacturing process is always a transformative process."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000833> "Ein geplannter Prozess, der von der primären Absicht angetrieben wird, Objekte zu transformieren. Ein Herstellungsprozess ist immer ein Transformationsprozess."@de)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000833> "true"^^xsd:boolean)
-EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000833> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000030>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000030>))))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000833> <http://purl.obolibrary.org/obo/OBI_0000011>)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000833> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/COB_0000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000030>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000030>))))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000833> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000833> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000030>)))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000833> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000030>)))
 
@@ -2241,7 +2270,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000874> <https://w3id.org/pmd/co/PMD_00
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000885> "pole figure"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000885> "A pole figure is a map depicting a 2D stereographic projection which represents crystallographic orientations of grains in a polycrystalline material in respect to the sample's reference frame."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000885> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000885> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000834> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> <https://w3id.org/pmd/co/PMD_0000853>)))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0000885> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000834> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/pmd/co/PMD_0000853>)))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000890> (connected material entity aggregate)
 
@@ -2413,13 +2442,15 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020003> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020003> <http://purl.obolibrary.org/obo/BFO_0000030>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0020004> (composition specification)
+# Class: <https://w3id.org/pmd/co/PMD_0020004> (composition data item)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020004> "composition specification"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020004> "Composition specification is an information content entity that is conretized by  composition of a portion of matter and has memebers fraction specifications of portions of other matters (but not chemical elements) of which the whole portion of matter consists of (has parts)."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020004> "composition data item"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0020004> "composition specification"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020004> "Composition data item is an information content entity that is about composition of a portion of matter, and it has memebers fraction specifications of portions of other matters (but not chemical elements), which are parts of the whole portion of matter."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0020004> "Nitric acid solution has quality  composition , which concretizes the composition specification .The composition specification has parts fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications are conretized by relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020004> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020004> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> <https://w3id.org/pmd/co/PMD_0025001>)))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020004> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/pmd/co/PMD_0025001>)))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/co/PMD_0025997>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0020005> (porosity)
 
@@ -3166,13 +3197,14 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0025001> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025001> <https://w3id.org/pmd/co/PMD_0020131>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0025002> (chemical composition specification)
+# Class: <https://w3id.org/pmd/co/PMD_0025002> (chemical composition data item)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025002> "chemical composition specification"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025002> "Chemical composition specification is an information content entity that is conretized by chemical composition of a material and has memebers fraction specifications of portions of chemical elements of which the material consists of (has parts)."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025002> "chemical composition data item"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0025002> "chemical composition specification"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025002> "Chemical composition data item is an information content entity that is about chemical composition of a material and has memebers fraction specifications of portions of chemical elements, which are parts of the material."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025002> "Steel has quality chemical composition , which concretizes the chemical composition specification .The chemical composition specification has parts fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these  fraction specifications are conretized by relational qualities (mass) proportion of iron and (mass) proportion of carbon."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0025002> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0025002> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> <https://w3id.org/pmd/co/PMD_0000551>)))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025002> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/pmd/co/PMD_0000551>)))
 
 # Class: <https://w3id.org/pmd/co/PMD_0025003> (metallic grain structure)
 
@@ -3203,6 +3235,14 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0025008> <https://w3id.org/pmd/co/PMD_00
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025012> "analytical calculation"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025012> "Analytical calculation is a computing process which has value specification or measurement datum as a specified output. It applies a closed-form mathematical expression or formula to a set it specified inputs (value specifications) without requiring stochastic sampling, iterative numerical solving, or data-driven training."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025012> <https://w3id.org/pmd/co/PMD_0000583>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0025015> (portion of lanthanum)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0025015> "'portion of pure chemical element' and 'has part' only CHEBI:33336")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025015> "portion of lanthanum"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025015> "A portion of lanthanum is a portion of pure substance that has parts only chebi:lanthanum atom."@en)
+EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025015> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_33336>)))
+SubClassOf(<https://w3id.org/pmd/co/PMD_0025015> <https://w3id.org/pmd/co/PMD_0020140>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0025997> (fraction value specification)
 
