@@ -5147,7 +5147,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000089">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
@@ -5160,7 +5159,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000095">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
@@ -5173,7 +5171,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000096">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
@@ -5186,7 +5183,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000097">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
@@ -5199,7 +5195,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000098">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
@@ -5212,7 +5207,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000099">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
@@ -5237,7 +5231,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000101">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
@@ -5250,7 +5243,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000102">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
@@ -5263,7 +5255,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000103">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
@@ -5276,7 +5267,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000104">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
@@ -5289,7 +5279,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000105">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
@@ -5302,7 +5291,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000106">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
@@ -5315,7 +5303,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000107">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
@@ -5328,7 +5315,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000108">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
@@ -5341,7 +5327,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000109">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
@@ -5354,7 +5339,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000110">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
@@ -5367,7 +5351,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000111">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
@@ -5380,7 +5363,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000112">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
@@ -5405,7 +5387,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000114">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
@@ -5418,7 +5399,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000115">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
@@ -5431,7 +5411,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000116">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
@@ -5444,7 +5423,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000117">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
@@ -5457,7 +5435,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000118">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
@@ -5470,7 +5447,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000119">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
@@ -5483,7 +5459,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000120">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
@@ -5496,7 +5471,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000121">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>

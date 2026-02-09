@@ -2531,7 +2531,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3910,7 +3910,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000089> "[100]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000089>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000089>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000089> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000089> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000089> "0"^^xsd:decimal)
@@ -3919,7 +3918,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000095> "[010]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000095>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000095>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000095> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000095> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000095> "0"^^xsd:decimal)
@@ -3928,7 +3926,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000096> "[001]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000096>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000096>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000096> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000096> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000096> "1"^^xsd:decimal)
@@ -3937,7 +3934,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000097> "[-100]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000097>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000097>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000097> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000097> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000097> "0"^^xsd:decimal)
@@ -3946,7 +3942,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000098> "[0-10]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000098>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000098>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000098> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000098> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000098> "0"^^xsd:decimal)
@@ -3955,7 +3950,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000099> "[00-1]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000099>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000099>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000099> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000099> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000099> "-1"^^xsd:decimal)
@@ -3972,7 +3966,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000101> "[110]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000101>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000101>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000101> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000101> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000101> "0"^^xsd:decimal)
@@ -3981,7 +3974,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000102> "[101]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000102>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000102>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000102> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000102> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000102> "1"^^xsd:decimal)
@@ -3990,7 +3982,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000103> "[011]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000103>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000103>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000103> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000103> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000103> "1"^^xsd:decimal)
@@ -3999,7 +3990,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000104> "[-10-1]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000104>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000104>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000104> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000104> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000104> "-1"^^xsd:decimal)
@@ -4008,7 +3998,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000105> "[-1-10]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000105>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000105>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000105> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000105> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000105> "0"^^xsd:decimal)
@@ -4017,7 +4006,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000106> "[0-1-1]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000106>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000106>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000106> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000106> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000106> "-1"^^xsd:decimal)
@@ -4026,7 +4014,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000107> "[-110]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000107>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000107>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000107> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000107> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000107> "0"^^xsd:decimal)
@@ -4035,7 +4022,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000108> "[1-10]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000108>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000108>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000108> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000108> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000108> "0"^^xsd:decimal)
@@ -4044,7 +4030,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000109> "[-101]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000109>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000109>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000109> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000109> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000109> "1"^^xsd:decimal)
@@ -4053,7 +4038,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000110> "[10-1]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000110>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000110>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000110> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000110> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000110> "-1"^^xsd:decimal)
@@ -4062,7 +4046,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000111> "[0-11]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000111>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000111>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000111> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000111> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000111> "1"^^xsd:decimal)
@@ -4071,7 +4054,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000112> "[01-1]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000112>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000112>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000112> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000112> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000112> "-1"^^xsd:decimal)
@@ -4088,7 +4070,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000114> "[111]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000114>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000114>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000114> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000114> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000114> "1"^^xsd:decimal)
@@ -4097,7 +4078,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000115> "[-111]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000115>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000115>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000115> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000115> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000115> "1"^^xsd:decimal)
@@ -4106,7 +4086,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000116> "[1-11]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000116>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000116>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000116> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000116> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000116> "1"^^xsd:decimal)
@@ -4115,7 +4094,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000117> "[11-1]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000117>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000117>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000117> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000117> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000117> "-1"^^xsd:decimal)
@@ -4124,7 +4102,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000118> "[-1-11]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000118>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000118>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000118> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000118> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000118> "1"^^xsd:decimal)
@@ -4133,7 +4110,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000119> "[-11-1]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000119>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000119>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000119> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000119> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000119> "-1"^^xsd:decimal)
@@ -4142,7 +4118,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000120> "[1-1-1]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000120>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000120>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000120> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000120> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000120> "-1"^^xsd:decimal)
@@ -4151,7 +4126,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000121> "[-1-1-1]"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000121>)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000121>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000121> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000121> "-1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000121> "-1"^^xsd:decimal)
