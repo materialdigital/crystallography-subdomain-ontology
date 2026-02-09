@@ -405,7 +405,6 @@ Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000157>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000158>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000162>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000164>))
-Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000167>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000168>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000170>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
@@ -1205,11 +1204,6 @@ ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000162> ObjectIntersection
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000164> "denoted by family"@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000164> owl:topObjectProperty)
 ObjectPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000164> ObjectUnionOf(<https://w3id.org/pmd/cryo/CRYO_0000021> <https://w3id.org/pmd/cryo/CRYO_0000023>))
-
-# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000167> (member of)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000167> "member of"@en)
-SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000167> <http://purl.obolibrary.org/obo/BFO_0000050>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000168> (denoted by family under cubic symmetry)
 
@@ -2429,7 +2423,6 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000853> "crystallog
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000853> "The crystallographic texture is a morphological quality describing the arrangement and orientation of grains in a metallic material, observed through crystallographic analysis."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000853> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000853> <https://w3id.org/pmd/co/PMD_0020131>)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000853> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0020106>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000855> (microscope)
 
@@ -2538,7 +2531,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -4479,7 +4472,7 @@ DifferentIndividuals(<https://w3id.org/pmd/co/PMD_0020117> <https://w3id.org/pmd
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RO_0000057>) <http://purl.obolibrary.org/obo/RO_0000057>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/pmd/co/PMD_0025998>) <https://w3id.org/pmd/co/PMD_0025998>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/RO_0000059>) <http://purl.obolibrary.org/obo/STATO_0000102>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/IAO_0000235> <https://w3id.org/pmd/cryo/CRYO_0000167> <https://w3id.org/pmd/cryo/CRYO_0000162>) <https://w3id.org/pmd/cryo/CRYO_0000168>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/IAO_0000235> <http://purl.obolibrary.org/obo/RO_0002350> <https://w3id.org/pmd/cryo/CRYO_0000162>) <https://w3id.org/pmd/cryo/CRYO_0000168>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0001025> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0001025>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002224> <http://purl.obolibrary.org/obo/RO_0002233>) <http://purl.obolibrary.org/obo/RO_0002233>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002230> <http://purl.obolibrary.org/obo/RO_0002234>) <http://purl.obolibrary.org/obo/RO_0002234>)

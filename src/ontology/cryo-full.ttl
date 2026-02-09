@@ -926,17 +926,11 @@ cryo:CRYO_0000164 rdf:type owl:ObjectProperty ;
                   rdfs:label "denoted by family"@en .
 
 
-###  https://w3id.org/pmd/cryo/CRYO_0000167
-cryo:CRYO_0000167 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf obo:BFO_0000050 ;
-                  rdfs:label "member of"@en .
-
-
 ###  https://w3id.org/pmd/cryo/CRYO_0000168
 cryo:CRYO_0000168 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf cryo:CRYO_0000164 ;
                   owl:propertyChainAxiom ( obo:IAO_0000235
-                                           cryo:CRYO_0000167
+                                           obo:RO_0002350
                                            cryo:CRYO_0000162
                                          ) ;
                   rdfs:label "denoted by family under cubic symmetry"@en .
@@ -2576,11 +2570,7 @@ co:PMD_0000834 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000853
 co:PMD_0000853 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020131 ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty obo:RO_0000080 ;
-                                 owl:someValuesFrom co:PMD_0020106
-                               ] ;
+               rdfs:subClassOf co:PMD_0020131 ;
                rdfs:label "crystallographic texture"@en ;
                skos:definition "The crystallographic texture is a morphological quality describing the arrangement and orientation of grains in a metallic material, observed through crystallographic analysis."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .

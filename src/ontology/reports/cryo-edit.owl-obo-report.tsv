@@ -1,5 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_label	member of	rdfs:label	member of@en
 WARN	missing_definition	unit cell	IAO:0000115	
 WARN	missing_definition	crystal lattice	IAO:0000115	
 WARN	missing_definition	lattice parameter	IAO:0000115	
@@ -36,6 +35,5 @@ WARN	missing_definition	Miller indices family of	IAO:0000115
 WARN	missing_definition	under symmetry	IAO:0000115	
 WARN	missing_definition	has Miller indices family under cubic symmetry	IAO:0000115	
 WARN	missing_definition	denoted by family	IAO:0000115	
-WARN	missing_definition	member of	IAO:0000115	
 WARN	missing_definition	denoted by family under cubic symmetry	IAO:0000115	
 WARN	missing_definition	is_cubic_context	IAO:0000115	

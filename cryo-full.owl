@@ -1256,22 +1256,13 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000167 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000167">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <rdfs:label xml:lang="en">member of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/pmd/cryo/CRYO_0000168 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000168">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000167"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
             <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000162"/>
         </owl:propertyChainAxiom>
         <rdfs:label xml:lang="en">denoted by family under cubic symmetry</rdfs:label>
@@ -3582,12 +3573,6 @@ A manufacturing process is always a transformative process.</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000853">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020106"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">crystallographic texture</rdfs:label>
         <skos:definition xml:lang="en">The crystallographic texture is a morphological quality describing the arrangement and orientation of grains in a metallic material, observed through crystallographic analysis.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>

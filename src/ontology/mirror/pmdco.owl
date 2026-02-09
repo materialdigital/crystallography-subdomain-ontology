@@ -16,7 +16,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/pmdco.ttl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/co/releases/2026-02-04/pmdco.ttl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/co/releases/2026-02-09/pmdco.ttl"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-6772-1943"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-1058-3102"/>
@@ -43,7 +43,7 @@ Documentation: https://materialdigital.github.io/core-ontology/docs/</dcterms:de
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>PMD Core Ontology</dcterms:title>
         <doap:repository rdf:resource="https://github.com/materialdigital/core-ontology"/>
-        <owl:versionInfo>2026-02-04</owl:versionInfo>
+        <owl:versionInfo>2026-02-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -8148,12 +8148,6 @@ A manufacturing process is always a transformative process.</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000853">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020106"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">crystallographic texture</rdfs:label>
         <skos:definition xml:lang="en">The crystallographic texture is a morphological quality describing the arrangement and orientation of grains in a metallic material, observed through crystallographic analysis.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
