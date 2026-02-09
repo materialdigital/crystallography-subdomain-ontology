@@ -481,13 +481,7 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000663"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000075"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000663"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">grain orientation</rdfs:label>
@@ -504,17 +498,17 @@ Grain orientation can be specified by either texture fibers or texture component
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000418"/>
-                <owl:allValuesFrom>
+                <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000042"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000663"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000663"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
-                </owl:allValuesFrom>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Euler angles</rdfs:label>
