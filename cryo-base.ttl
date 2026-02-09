@@ -3144,15 +3144,6 @@ cryo:CRYO_0000013 rdf:type owl:Class ;
 cryo:CRYO_0000014 rdf:type owl:Class ;
                   rdfs:subClassOf co:PMD_0000501 ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:IAO_0000219 ;
-                                    owl:someValuesFrom [ rdf:type owl:Class ;
-                                                         owl:unionOf ( cryo:CRYO_0000011
-                                                                       cryo:CRYO_0000012
-                                                                       cryo:CRYO_0000015
-                                                                     )
-                                                       ]
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
                                     owl:onProperty cryo:CRYO_0000016 ;
                                     owl:cardinality "3"^^xsd:nonNegativeInteger
                                   ] ;
@@ -3200,7 +3191,11 @@ cryo:CRYO_0000015 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000020
 cryo:CRYO_0000020 rdf:type owl:Class ;
-                  rdfs:subClassOf cryo:CRYO_0000014 ;
+                  rdfs:subClassOf cryo:CRYO_0000014 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:IAO_0000219 ;
+                                    owl:someValuesFrom cryo:CRYO_0000012
+                                  ] ;
                   rdfs:label "direction Miller indices"@en ;
                   skos:definition "Direction Miller indices define the components of a sinlge vector in the given direction in a crystal's unit cell. Usually, direction Miller indices are reduced to the lowest set of integers. Direction Miller indices must be written in square brackets, e.g., [hkl]."@en ;
                   skos:example "[111]" .
@@ -3208,7 +3203,11 @@ cryo:CRYO_0000020 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000021
 cryo:CRYO_0000021 rdf:type owl:Class ;
-                  rdfs:subClassOf cryo:CRYO_0000014 ;
+                  rdfs:subClassOf cryo:CRYO_0000014 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:IAO_0000219 ;
+                                    owl:someValuesFrom cryo:CRYO_0000012
+                                  ] ;
                   rdfs:label "family of directions Miller indices"@en ;
                   skos:definition "Set of directions Miller indices define the components of symmetrically equivalent directions in a crystal lattice. Set of directions Miller indices must be written as <hkl>."@en ,
                                   "<111>" .
@@ -3216,7 +3215,11 @@ cryo:CRYO_0000021 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000022
 cryo:CRYO_0000022 rdf:type owl:Class ;
-                  rdfs:subClassOf cryo:CRYO_0000014 ;
+                  rdfs:subClassOf cryo:CRYO_0000014 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:IAO_0000219 ;
+                                    owl:someValuesFrom cryo:CRYO_0000011
+                                  ] ;
                   rdfs:label "plane Miller indices"@en ;
                   skos:definition """Plane Miller indices define the reciprocals of the fractional intercepts the plane makes with the crystallographic axes, reduced to the lowest set of integers. 
 For example, if a plane crosses [100] axis at 1/h, [010 ] axis at 1/k, and [001] axis at 1/l, then such plane is denoted as (hkl) plane. If a plane is parallel to one of the axes, then the corresponding Miller index is 0.
@@ -3226,7 +3229,11 @@ Plane Miller indices must be written in round brackets, e.g., (hkl)."""@en ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000023
 cryo:CRYO_0000023 rdf:type owl:Class ;
-                  rdfs:subClassOf cryo:CRYO_0000014 ;
+                  rdfs:subClassOf cryo:CRYO_0000014 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:IAO_0000219 ;
+                                    owl:someValuesFrom cryo:CRYO_0000011
+                                  ] ;
                   rdfs:label "family of planes Miller indices"@en ;
                   skos:definition "Set of planes Miller indices define set of symmetrically equivalent planes. Set of planes must be written in curly brackets, e.g., {hkl}."@en ;
                   skos:example "{111}" .
@@ -3234,7 +3241,11 @@ cryo:CRYO_0000023 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000024
 cryo:CRYO_0000024 rdf:type owl:Class ;
-                  rdfs:subClassOf cryo:CRYO_0000014 ;
+                  rdfs:subClassOf cryo:CRYO_0000014 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:IAO_0000219 ;
+                                    owl:someValuesFrom cryo:CRYO_0000015
+                                  ] ;
                   rdfs:label "point Miller indices"@en ;
                   skos:definition "Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l)."@en ;
                   skos:example "(1,1,1)" .

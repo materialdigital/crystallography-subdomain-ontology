@@ -6300,20 +6300,6 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000501"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000011"/>
-                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000012"/>
-                            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000015"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:cardinality>
             </owl:Restriction>
@@ -6378,6 +6364,12 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000020">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">direction Miller indices</rdfs:label>
         <skos:definition xml:lang="en">Direction Miller indices define the components of a sinlge vector in the given direction in a crystal&apos;s unit cell. Usually, direction Miller indices are reduced to the lowest set of integers. Direction Miller indices must be written in square brackets, e.g., [hkl].</skos:definition>
         <skos:example>[111]</skos:example>
@@ -6389,6 +6381,12 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000021">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">family of directions Miller indices</rdfs:label>
         <skos:definition>&lt;111&gt;</skos:definition>
         <skos:definition xml:lang="en">Set of directions Miller indices define the components of symmetrically equivalent directions in a crystal lattice. Set of directions Miller indices must be written as &lt;hkl&gt;.</skos:definition>
@@ -6400,6 +6398,12 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000022">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">plane Miller indices</rdfs:label>
         <skos:definition xml:lang="en">Plane Miller indices define the reciprocals of the fractional intercepts the plane makes with the crystallographic axes, reduced to the lowest set of integers. 
 For example, if a plane crosses [100] axis at 1/h, [010 ] axis at 1/k, and [001] axis at 1/l, then such plane is denoted as (hkl) plane. If a plane is parallel to one of the axes, then the corresponding Miller index is 0.
@@ -6413,6 +6417,12 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000023">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">family of planes Miller indices</rdfs:label>
         <skos:definition xml:lang="en">Set of planes Miller indices define set of symmetrically equivalent planes. Set of planes must be written in curly brackets, e.g., {hkl}.</skos:definition>
         <skos:example>{111}</skos:example>
@@ -6424,6 +6434,12 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000024">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">point Miller indices</rdfs:label>
         <skos:definition xml:lang="en">Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l).</skos:definition>
         <skos:example>(1,1,1)</skos:example>
