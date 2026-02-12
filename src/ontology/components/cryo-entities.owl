@@ -63,7 +63,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000158">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
-        <rdfs:range rdf:resource="https://w3id.org/pmd/co/PMD_0020099"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
         <rdfs:label xml:lang="en">under symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -78,18 +78,10 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000124"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020019"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
+                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:domain>
@@ -141,22 +133,14 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000124"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020019"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
+                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:label xml:lang="en">is_cubic_context</rdfs:label>
+        <rdfs:label xml:lang="en">is cubic</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -650,18 +634,10 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000124"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020019"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
+                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
