@@ -3354,7 +3354,29 @@ cryo:CRYO_0000079 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000124
 cryo:CRYO_0000124 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:IAO_0000030 ;
+                  rdfs:subClassOf obo:IAO_0000030 ,
+                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0002351 ;
+                                                           owl:someValuesFrom cryo:CRYO_0000020
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty cryo:CRYO_0000152 ;
+                                                           owl:someValuesFrom cryo:CRYO_0000021
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0002351 ;
+                                                           owl:someValuesFrom cryo:CRYO_0000022
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty cryo:CRYO_0000152 ;
+                                                           owl:someValuesFrom cryo:CRYO_0000023
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
                   rdfs:comment """DO NOT INITIALIZE THIS CLASS OR ANY OF THIS SUBCLASSES
 The symmetry equivalency assertion class is meant to enable assertions of  crystollograhpic equivalence between single crystallographic direction /plane and family of directions/planes if the equivalence applies for the given crystal symmetry. This class is part of the \"inference engine\""""@en ;
                   rdfs:label "symmetry equivalency assertion"@en ;
@@ -3372,147 +3394,14 @@ cryo:CRYO_0000143 rdf:type owl:Class ;
                                         rdf:type owl:Class
                                       ] ;
                   rdfs:subClassOf cryo:CRYO_0000124 ,
-                                  [ rdf:type owl:Class ;
-                                    owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Class ;
-                                                                           owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000089
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000095
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000096
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000097
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000098
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000099
-                                                                                         ]
-                                                                                       )
-                                                                         ]
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty cryo:CRYO_0000152 ;
-                                                                           owl:hasValue cryo:CRYO_0000039
-                                                                         ]
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ]
-                                                  [ owl:intersectionOf ( [ rdf:type owl:Class ;
-                                                                           owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000101
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000102
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000103
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000104
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000105
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000106
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000107
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000108
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000109
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000110
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000111
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000112
-                                                                                         ]
-                                                                                       )
-                                                                         ]
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty cryo:CRYO_0000152 ;
-                                                                           owl:hasValue cryo:CRYO_0000038
-                                                                         ]
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ]
-                                                  [ owl:intersectionOf ( [ rdf:type owl:Class ;
-                                                                           owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000114
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000115
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000116
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000117
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000118
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000119
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000120
-                                                                                         ]
-                                                                                         [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty obo:RO_0002351 ;
-                                                                                           owl:hasValue cryo:CRYO_0000121
-                                                                                         ]
-                                                                                       )
-                                                                         ]
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty cryo:CRYO_0000152 ;
-                                                                           owl:hasValue cryo:CRYO_0000037
-                                                                         ]
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ]
-                                                )
-                                  ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty cryo:CRYO_0000170 ;
                                     owl:hasSelf "true"^^xsd:boolean
                                   ] ;
+                  rdfs:comment """((('has member' value CRYO_0000089) or ('has member' value CRYO_0000095) or ('has member' value CRYO_0000096) or ('has member' value CRYO_0000097) or ('has member' value CRYO_0000098) or ('has member' value CRYO_0000099))
+ and ('has Miller indices family' value CRYO_0000039)) or ((('has member' value CRYO_0000101) or ('has member' value CRYO_0000102) or ('has member' value CRYO_0000103) or ('has member' value CRYO_0000104) or ('has member' value CRYO_0000105) or ('has member' value CRYO_0000106) or ('has member' value CRYO_0000107) or ('has member' value CRYO_0000108) or ('has member' value CRYO_0000109) or ('has member' value CRYO_0000110) or ('has member' value CRYO_0000111) or ('has member' value CRYO_0000112))
+ and ('has Miller indices family' value CRYO_0000038)) or ((('has member' value CRYO_0000114) or ('has member' value CRYO_0000115) or ('has member' value CRYO_0000116) or ('has member' value CRYO_0000117) or ('has member' value CRYO_0000118) or ('has member' value CRYO_0000119) or ('has member' value CRYO_0000120) or ('has member' value CRYO_0000121))
+ and ('has Miller indices family' value CRYO_0000037))""" ;
                   rdfs:label "cubic equivalency assertion"@en ;
                   skos:definition """cubic equivalency assertion is a symmetry equivalency assertion which is used to infer crystallographic equivalence between single crystallographic direction /plane and family of directions/planes under the cubic crystal symmetry.
 In particular, it considers <100>, <110>, and <111> families of crystallographic directions, as well as {100}, {110}, {111} families of crystallographic planes"""@en .
