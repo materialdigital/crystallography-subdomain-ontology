@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/cryo/imports/pmdco_import.owl>
-<https://w3id.org/pmd/cryo/releases/2026-02-09/imports/pmdco_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-02-09/pmdco.ttl>)
-Annotation(owl:versionInfo "2026-02-09")
+<https://w3id.org/pmd/cryo/releases/2026-02-12/imports/pmdco_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-02-10/pmdco.ttl>)
+Annotation(owl:versionInfo "2026-02-12")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -2110,7 +2110,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000551> <https://w3id.org/pmd/co/PMD_00
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000552> "Analyseverfahren für die chemische Zusammensetzung"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000552> "chemical composition analyzing process"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000552> "A Structural Property Analyzing Process that determines the chemical composition of a material by identifying and quantifying its constituent elements and compounds."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000552> "A structural property analyzing process that determines the chemical composition of a material by identifying and quantifying its constituent elements and compounds."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000552> "Ein Struktur Eigenschaften Analyseverfahren, das die chemische Zusammensetzung eines Materials bestimmt, indem es dessen Bestandteile und Verbindungen identifiziert und quantifiziert."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> <https://w3id.org/pmd/co/PMD_0000957>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000552> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009006> <https://w3id.org/pmd/co/PMD_0000551>))
@@ -2186,7 +2186,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000624> <https://w3id.org/pmd/co/PMD_00
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000625> "Elektronenmikroskopie"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000625> "electron microscopy"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000625> "A Microscopy Process that uses a beam of electrons to create an image of an object, allowing for high-resolution visualization of the material's surface and internal structures."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000625> "A microscopy process that uses a beam of electrons to create an image of an object, allowing for high-resolution visualization of the material's surface and internal structures."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000625> "Ein Mikroskopieverfahren, das einen Elektronenstrahl verwendet, um ein Bild eines Objekts zu erzeugen, wodurch eine hochauflösende Visualisierung der Oberfläche und der inneren Strukturen des Materials ermöglicht wird."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0000625> "An example of an electron microscopy process is Scanning Electron Microscopy (SEM), which provides detailed images of the surface topography and composition of a material. Another example is Transmission Electron Microscopy (TEM), which can visualize the internal structure of a sample at atomic resolution."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000625> <https://w3id.org/pmd/co/PMD_0000856>)
@@ -2293,7 +2293,7 @@ DisjointClasses(<https://w3id.org/pmd/co/PMD_0000896> <https://w3id.org/pmd/co/P
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000922> "Rasterelektronenmikroskop"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000922> "scanning electron microscope"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000922> "A Scanning Electron Microscope (SEM) is a Measuring Device that produces high-resolution images of a sample surface by scanning it with a focused beam of electrons."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000922> "A scanning electron microscope (SEM) is a measuring device that produces high-resolution images of a sample surface by scanning it with a focused beam of electrons."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000922> "Ein Rasterelektronenmikroskop (REM) ist ein Messgerät, das hochauflösende Bilder einer Probenoberfläche erzeugt, indem es sie mit einem fokussierten Elektronenstrahl abtastet."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000922> <https://w3id.org/pmd/co/PMD_0000624>)
 
@@ -2301,7 +2301,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000922> <https://w3id.org/pmd/co/PMD_00
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000933> "Simulationsprozess"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000933> "simulation process"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000933> "A Computing Process that models the behavior of a system over time using mathematical or computational techniques."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000933> "A computing process that models the behavior of a system over time using mathematical or computational techniques."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000933> "Ein Datenverarbeitungsprozess, der das Verhalten eines Systems im Laufe der Zeit mit mathematischen oder rechnerischen Techniken modelliert"@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000933> <https://w3id.org/pmd/co/PMD_0000583>)
 
@@ -2316,7 +2316,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000942> <https://w3id.org/pmd/co/PMD_00
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000945> "Spektroskopie Verfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000945> "spectroscopy process"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000945> "A Structural Property Analyzing Process that measures the interaction of electromagnetic radiation with matter to determine e.g. the composition, structure, and other properties of materials."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000945> "A structural property analyzing process that measures the interaction of electromagnetic radiation with matter to determine e.g. the composition, structure, and other properties of materials."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000945> "Ein Struktur Eigenschaften Analyseverfahren, das die Wechselwirkung von elektromagnetischer Strahlung mit Materie misst, um die Zusammensetzung, Struktur und physikalischen Eigenschaften von Materialien zu bestimmen."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000945> <https://w3id.org/pmd/co/PMD_0000957>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000945> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0009006> <https://w3id.org/pmd/co/PMD_0025001>))
@@ -2338,7 +2338,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -2375,7 +2375,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0000992> <https://w3id.org/pmd/co/PMD_00
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0001014> "Röntgen Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0001014> "x-ray analyzing process"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001014> "A Structural Property Analyzing Process that uses X-rays to investigate the internal structure, composition, and properties of materials by measuring the interaction of X-rays with the sample."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001014> "A structural property analyzing process that uses X-rays to investigate the internal structure, composition, and properties of materials by measuring the interaction of X-rays with the sample."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001014> "Ein Struktur Eigenschaften Analyseverfahren, das Röntgenstrahlen verwendet, um die innere Struktur, Zusammensetzung und Eigenschaften von Materialien zu untersuchen, indem die Wechselwirkung der Röntgenstrahlen mit der Probe gemessen wird."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0001014> <https://w3id.org/pmd/co/PMD_0000957>)
 
@@ -2383,7 +2383,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0001014> <https://w3id.org/pmd/co/PMD_00
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0001016> "Beugungsprozess"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0001016> "x-ray diffraction process"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001016> "An X-ray Analyzing Process, that involves the interaction of X-rays with the crystalline structure of a material."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001016> "An X-ray analyzing process, that involves the interaction of X-rays with the crystalline structure of a material."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001016> "Ein Röntgenanalyseverfahren, das die Wechselwirkung von Röntgenstrahlen mit der kristallinen Struktur eines Materials umfasst."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0001016> "XRD is used to e.g. determine the crystal structure of newly synthesized compounds to determine the crystal lattice arrangement."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0050117> <https://w3id.org/pmd/co/PMD_0001016> "XRD"@en)
@@ -2395,7 +2395,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0001016> ObjectSomeValuesFrom(<http://pu
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0001017> "Röntgen-Mapping"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0001017> "x-ray mapping"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001017> "An X-ray Analyzing Process that generates a spatial distribution map of the elements within a specimen by scanning the sample with an electron or X-ray beam and detecting the emitted X-rays, providing detailed compositional information across the sample's surface."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001017> "An X-ray analyzing process, that generates a spatial distribution map of the elements within a specimen by scanning the sample with an electron or X-ray beam and detecting the emitted X-rays, providing detailed compositional information across the sample's surface."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001017> "Ein Röntgenanalyseverfahren, das eine räumliche Verteilungskarte der Elemente innerhalb einer Probe erstellt, indem die Probe mit einem Elektronen- oder Röntgenstrahl abgetastet und die emittierten Röntgenstrahlen detektiert werden, wodurch detaillierte Zusammensetzungsinformationen über die Oberfläche der Probe geliefert werden."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0001017> "An example of an X-ray Mapping process is X-ray Absorption Spectroscopy, X-ray Fluorescence, or X-ray Photoelectron Spectroscopy."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0001017> <https://w3id.org/pmd/co/PMD_0001014>)
@@ -2405,7 +2405,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0001017> ObjectSomeValuesFrom(<http://pu
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0001018> "Röntgen-Mikroanalyse"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0001018> "x-ray microanalysis"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001018> "An X-ray Analyzing Process that determines the elemental composition and chemical properties of a specimen by detecting and analyzing the characteristic X-rays emitted from the sample when it is irradiated with a focused electron beam."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001018> "An X-ray analyzing process that determines the elemental composition and chemical properties of a specimen by detecting and analyzing the characteristic X-rays emitted from the sample when it is irradiated with a focused electron beam."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001018> "Ein Röntgenanalyseverfahren, das die elementare Zusammensetzung und chemischen Eigenschaften einer Probe bestimmt, indem die charakteristischen Röntgenstrahlen detektiert und analysiert werden, die von der Probe emittiert werden, wenn sie mit einem fokussierten Elektronenstrahl bestrahlt wird."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0001018> "An example for X-ray Microanalysis process is Energy Dispersive X-ray Spectroscopy."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0001018> <https://w3id.org/pmd/co/PMD_0001014>)
@@ -2415,7 +2415,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0001018> ObjectSomeValuesFrom(<http://pu
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0001019> "Röntgenspektroskopie"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0001019> "x-ray spectroscopy"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001019> "A Spectroscopy Process, that analyzes the interaction of X-rays with matter to determine the material's composition and structure."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001019> "A spectroscopy process, that analyzes the interaction of X-rays with matter to determine the material's composition and structure."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001019> "Ein Spektroskopie Verfahren, das die Wechselwirkung von Röntgenstrahlen mit Materie analysiert, um die Zusammensetzung und Struktur des Materials zu bestimmen."@de)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0001019> "Examples are e.g. X-ray absorption spectroscopy, X-ray emission spectroscopy, and X-ray reflection spectroscopy."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0001019> <https://w3id.org/pmd/co/PMD_0000945>)
@@ -2424,7 +2424,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0001019> <https://w3id.org/pmd/co/PMD_00
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0001020> "Röntgenbeugungsgerät"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0001020> "x-ray diffractometer"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001020> "An X-Ray Diffractometer is a Measuring Device that determines the crystal structure of materials by analyzing the diffraction patterns of X-rays passed through a sample."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001020> "An X-Ray diffractometer is a measuring device that determines the crystal structure of materials by analyzing the diffraction patterns of X-rays passed through a sample."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0001020> "Ein Röntgenbeugungsgerät ist ein Messgerät, das die Kristallstruktur von Materialien durch Analyse der Beugungsmuster von durch eine Probe geleiteten Röntgenstrahlen bestimmt."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0001020> <https://w3id.org/pmd/co/PMD_0000602>)
 
@@ -2634,7 +2634,7 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020047> "A Portio
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020047> "portion of phosphorus"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020047> "A 'Portion Of Phosphorus' is a 'Portion Of Pure Substance' that 'consists of' only chebi:phosphorus atom."@en)
 EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020047> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_28659>)))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020047> <https://w3id.org/pmd/co/PMD_0020140>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020047> <https://w3id.org/pmd/co/PMD_0020094>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020048> (portion of boron)
 
@@ -2746,7 +2746,7 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020061> "A Portio
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020061> "portion of krypton"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020061> "A 'Portion Of Krypton' is a 'Portion Of Pure Substance' that 'consists of' only chebi:krypton atom."@en)
 EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020061> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_49696>)))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020061> <https://w3id.org/pmd/co/PMD_0020140>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020061> <https://w3id.org/pmd/co/PMD_0020037>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020062> (portion of bismuth)
 
@@ -3026,7 +3026,7 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020099> "TODO: po
 
 More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020099> "bravais lattice (3d)"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020099> "The Bravais lattice is a categorical value specification that specifies value of the crystal structure quality. It describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020099> "The bravais lattice is a categorical value specification that specifies value of the crystal structure quality. It describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020099> "true"^^xsd:boolean)
 EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020099> ObjectOneOf(<https://w3id.org/pmd/co/PMD_0020006> <https://w3id.org/pmd/co/PMD_0020007> <https://w3id.org/pmd/co/PMD_0020008> <https://w3id.org/pmd/co/PMD_0020009> <https://w3id.org/pmd/co/PMD_0020010> <https://w3id.org/pmd/co/PMD_0020011> <https://w3id.org/pmd/co/PMD_0020012> <https://w3id.org/pmd/co/PMD_0020013> <https://w3id.org/pmd/co/PMD_0020014> <https://w3id.org/pmd/co/PMD_0020015> <https://w3id.org/pmd/co/PMD_0020016> <https://w3id.org/pmd/co/PMD_0020017> <https://w3id.org/pmd/co/PMD_0020018> <https://w3id.org/pmd/co/PMD_0020019>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020099> <http://purl.obolibrary.org/obo/OBI_0001930>)
@@ -3161,7 +3161,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0020143> <http://purl.obolibrary.org/obo
 # Class: <https://w3id.org/pmd/co/PMD_0020148> (extensive quality)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020148> "extensive quality"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020148> "An extensive quality is a qualty that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020148> "An extensive quality is a quality that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020148> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020148> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
@@ -3188,7 +3188,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0020201> <http://purl.obolibrary.org/obo
 # Class: <https://w3id.org/pmd/co/PMD_0020207> (amount of substance)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020207> "amount of substance"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020207> "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has Avogadro number objects (of same type) as parts (n = N/N_A)."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020207> "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has avogadro number objects (of same type) as parts (n = N/N_A)."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020207> <https://w3id.org/pmd/co/PMD_0020101>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0025001> (composition)
@@ -3220,7 +3220,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0025003> ObjectSomeValuesFrom(<https://w
 # Class: <https://w3id.org/pmd/co/PMD_0025007> (frequency)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025007> "frequency"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025007> "frequency is a process attribute which characterizes the rate per second of oscillation or vibration."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025007> "Frequency is a process attribute which characterizes the rate per second of oscillation or vibration."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025007> "Frequency of electromagnetic wave, Frequency of sound wave."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025007> <https://w3id.org/pmd/co/PMD_0000008>)
 
@@ -3228,7 +3228,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0025007> <https://w3id.org/pmd/co/PMD_00
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025008> "Transmissionselektronenmikroskop"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025008> "transmission electron microscope"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025008> "A Transmission Electron Microscope (SEM) is a Measuring Device that produces high-resolution images of a sample's internal structure by transmitting electrons through the sample."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025008> "A transmission electron microscope (SEM) is a measuring device that produces high-resolution images of a sample's internal structure by transmitting electrons through the sample."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025008> "Ein Transmissionselektronenmikroskop (TEM) ist ein Messgerät, das hochauflösende Bilder der inneren Struktur einer Probe erzeugt, indem es Elektronen durch die Probe strahlt."@de)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025008> <https://w3id.org/pmd/co/PMD_0000624>)
 
