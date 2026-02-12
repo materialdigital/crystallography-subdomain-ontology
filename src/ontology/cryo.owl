@@ -1185,7 +1185,7 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000158">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
-        <rdfs:range rdf:resource="https://w3id.org/pmd/co/PMD_0020099"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
         <rdfs:label xml:lang="en">under symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1200,18 +1200,10 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000124"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020019"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
+                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:domain>
@@ -1263,22 +1255,14 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000124"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020019"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
+                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:label xml:lang="en">is_cubic_context</rdfs:label>
+        <rdfs:label xml:lang="en">is cubic</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -6632,18 +6616,10 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000124"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
-                                <owl:hasValue rdf:resource="https://w3id.org/pmd/co/PMD_0020019"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000158"/>
+                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -7940,7 +7916,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000098"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000099"/>
         <cryo:CRYO_0000152 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000039"/>
-        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
         <rdfs:label xml:lang="en">cubic &lt;100&gt; equivalence</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7963,7 +7939,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000111"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000112"/>
         <cryo:CRYO_0000152 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000038"/>
-        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
         <rdfs:label xml:lang="en">cubic &lt;110&gt; equivalence</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7982,7 +7958,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000120"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000121"/>
         <cryo:CRYO_0000152 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
-        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
         <rdfs:label xml:lang="en">cubic &lt;111&gt; equivalence</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7999,7 +7975,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000129"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000130"/>
         <cryo:CRYO_0000152 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000040"/>
-        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
         <rdfs:label xml:lang="en">cubic {100} equivalence</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8022,7 +7998,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000141"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
         <cryo:CRYO_0000152 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000041"/>
-        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
         <rdfs:label xml:lang="en">cubic {110} equivalence</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8041,7 +8017,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000150"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000151"/>
         <cryo:CRYO_0000152 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
-        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/co/PMD_0020018"/>
+        <cryo:CRYO_0000158 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
         <rdfs:label xml:lang="en">cubic {111} equivalence</rdfs:label>
     </owl:NamedIndividual>
     
