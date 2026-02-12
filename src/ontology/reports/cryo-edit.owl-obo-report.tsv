@@ -40,4 +40,4 @@ WARN	missing_definition	under symmetry	IAO:0000115
 WARN	missing_definition	has Miller indices family under cubic symmetry	IAO:0000115	
 WARN	missing_definition	denoted by family	IAO:0000115	
 WARN	missing_definition	denoted by family under cubic symmetry	IAO:0000115	
-WARN	missing_definition	is_cubic_context	IAO:0000115	
+WARN	missing_definition	is cubic	IAO:0000115	
