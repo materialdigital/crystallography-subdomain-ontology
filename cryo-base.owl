@@ -13,15 +13,15 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/2026-02-09"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/2026-02-12"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <dcterms:bibliographicCitation>cryo: Crystallography Subdomain Ontology. Version 2026-02-09, https://w3id.org/pmd/cryo/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-02-09</dcterms:created>
+        <dcterms:bibliographicCitation>cryo: Crystallography Subdomain Ontology. Version 2026-02-12, https://w3id.org/pmd/cryo/</dcterms:bibliographicCitation>
+        <dcterms:created>2026-02-12</dcterms:created>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x</dcterms:title>
         <owl:priorVersion rdf:resource="https://w3id.org/pmd/cryo/"/>
-        <owl:versionInfo>2026-02-09</owl:versionInfo>
+        <owl:versionInfo>2026-02-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1421,7 +1421,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         </rdfs:subClassOf>
         <rdfs:label xml:lang="de">Analyseverfahren für die chemische Zusammensetzung</rdfs:label>
         <rdfs:label xml:lang="en">chemical composition analyzing process</rdfs:label>
-        <skos:definition xml:lang="en">A Structural Property Analyzing Process that determines the chemical composition of a material by identifying and quantifying its constituent elements and compounds.</skos:definition>
+        <skos:definition xml:lang="en">A structural property analyzing process that determines the chemical composition of a material by identifying and quantifying its constituent elements and compounds.</skos:definition>
         <skos:definition xml:lang="de">Ein Struktur Eigenschaften Analyseverfahren, das die chemische Zusammensetzung eines Materials bestimmt, indem es dessen Bestandteile und Verbindungen identifiziert und quantifiziert.</skos:definition>
     </owl:Class>
     
@@ -1556,7 +1556,7 @@ Specific rates, e.g., tensile rate, cooling rate, etc. should be added as  subcl
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000856"/>
         <rdfs:label xml:lang="de">Elektronenmikroskopie</rdfs:label>
         <rdfs:label xml:lang="en">electron microscopy</rdfs:label>
-        <skos:definition xml:lang="en">A Microscopy Process that uses a beam of electrons to create an image of an object, allowing for high-resolution visualization of the material&apos;s surface and internal structures.</skos:definition>
+        <skos:definition xml:lang="en">A microscopy process that uses a beam of electrons to create an image of an object, allowing for high-resolution visualization of the material&apos;s surface and internal structures.</skos:definition>
         <skos:definition xml:lang="de">Ein Mikroskopieverfahren, das einen Elektronenstrahl verwendet, um ein Bild eines Objekts zu erzeugen, wodurch eine hochauflösende Visualisierung der Oberfläche und der inneren Strukturen des Materials ermöglicht wird.</skos:definition>
         <skos:example xml:lang="en">An example of an electron microscopy process is Scanning Electron Microscopy (SEM), which provides detailed images of the surface topography and composition of a material. Another example is Transmission Electron Microscopy (TEM), which can visualize the internal structure of a sample at atomic resolution.</skos:example>
     </owl:Class>
@@ -1773,7 +1773,7 @@ A manufacturing process is always a transformative process.</skos:definition>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000624"/>
         <rdfs:label xml:lang="de">Rasterelektronenmikroskop</rdfs:label>
         <rdfs:label xml:lang="en">scanning electron microscope</rdfs:label>
-        <skos:definition xml:lang="en">A Scanning Electron Microscope (SEM) is a Measuring Device that produces high-resolution images of a sample surface by scanning it with a focused beam of electrons.</skos:definition>
+        <skos:definition xml:lang="en">A scanning electron microscope (SEM) is a measuring device that produces high-resolution images of a sample surface by scanning it with a focused beam of electrons.</skos:definition>
         <skos:definition xml:lang="de">Ein Rasterelektronenmikroskop (REM) ist ein Messgerät, das hochauflösende Bilder einer Probenoberfläche erzeugt, indem es sie mit einem fokussierten Elektronenstrahl abtastet.</skos:definition>
     </owl:Class>
     
@@ -1785,7 +1785,7 @@ A manufacturing process is always a transformative process.</skos:definition>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000583"/>
         <rdfs:label xml:lang="de">Simulationsprozess</rdfs:label>
         <rdfs:label xml:lang="en">simulation process</rdfs:label>
-        <skos:definition xml:lang="en">A Computing Process that models the behavior of a system over time using mathematical or computational techniques.</skos:definition>
+        <skos:definition xml:lang="en">A computing process that models the behavior of a system over time using mathematical or computational techniques.</skos:definition>
         <skos:definition xml:lang="de">Ein Datenverarbeitungsprozess, der das Verhalten eines Systems im Laufe der Zeit mit mathematischen oder rechnerischen Techniken modelliert</skos:definition>
     </owl:Class>
     
@@ -1814,7 +1814,7 @@ A manufacturing process is always a transformative process.</skos:definition>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="de">Spektroskopie Verfahren</rdfs:label>
         <rdfs:label xml:lang="en">spectroscopy process</rdfs:label>
-        <skos:definition xml:lang="en">A Structural Property Analyzing Process that measures the interaction of electromagnetic radiation with matter to determine e.g. the composition, structure, and other properties of materials.</skos:definition>
+        <skos:definition xml:lang="en">A structural property analyzing process that measures the interaction of electromagnetic radiation with matter to determine e.g. the composition, structure, and other properties of materials.</skos:definition>
         <skos:definition xml:lang="de">Ein Struktur Eigenschaften Analyseverfahren, das die Wechselwirkung von elektromagnetischer Strahlung mit Materie misst, um die Zusammensetzung, Struktur und physikalischen Eigenschaften von Materialien zu bestimmen.</skos:definition>
     </owl:Class>
     
@@ -1957,7 +1957,7 @@ A manufacturing process is always a transformative process.</skos:definition>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000957"/>
         <rdfs:label xml:lang="de">Röntgen Analyseverfahren</rdfs:label>
         <rdfs:label xml:lang="en">x-ray analyzing process</rdfs:label>
-        <skos:definition xml:lang="en">A Structural Property Analyzing Process that uses X-rays to investigate the internal structure, composition, and properties of materials by measuring the interaction of X-rays with the sample.</skos:definition>
+        <skos:definition xml:lang="en">A structural property analyzing process that uses X-rays to investigate the internal structure, composition, and properties of materials by measuring the interaction of X-rays with the sample.</skos:definition>
         <skos:definition xml:lang="de">Ein Struktur Eigenschaften Analyseverfahren, das Röntgenstrahlen verwendet, um die innere Struktur, Zusammensetzung und Eigenschaften von Materialien zu untersuchen, indem die Wechselwirkung der Röntgenstrahlen mit der Probe gemessen wird.</skos:definition>
     </owl:Class>
     
@@ -1981,7 +1981,7 @@ A manufacturing process is always a transformative process.</skos:definition>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="de">Beugungsprozess</rdfs:label>
         <rdfs:label xml:lang="en">x-ray diffraction process</rdfs:label>
-        <skos:definition xml:lang="en">An X-ray Analyzing Process, that involves the interaction of X-rays with the crystalline structure of a material.</skos:definition>
+        <skos:definition xml:lang="en">An X-ray analyzing process, that involves the interaction of X-rays with the crystalline structure of a material.</skos:definition>
         <skos:definition xml:lang="de">Ein Röntgenanalyseverfahren, das die Wechselwirkung von Röntgenstrahlen mit der kristallinen Struktur eines Materials umfasst.</skos:definition>
         <skos:example xml:lang="en">XRD is used to e.g. determine the crystal structure of newly synthesized compounds to determine the crystal lattice arrangement.</skos:example>
         <co:PMD_0050117 xml:lang="en">XRD</co:PMD_0050117>
@@ -2001,7 +2001,7 @@ A manufacturing process is always a transformative process.</skos:definition>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="de">Röntgen-Mapping</rdfs:label>
         <rdfs:label xml:lang="en">x-ray mapping</rdfs:label>
-        <skos:definition xml:lang="en">An X-ray Analyzing Process that generates a spatial distribution map of the elements within a specimen by scanning the sample with an electron or X-ray beam and detecting the emitted X-rays, providing detailed compositional information across the sample&apos;s surface.</skos:definition>
+        <skos:definition xml:lang="en">An X-ray analyzing process, that generates a spatial distribution map of the elements within a specimen by scanning the sample with an electron or X-ray beam and detecting the emitted X-rays, providing detailed compositional information across the sample&apos;s surface.</skos:definition>
         <skos:definition xml:lang="de">Ein Röntgenanalyseverfahren, das eine räumliche Verteilungskarte der Elemente innerhalb einer Probe erstellt, indem die Probe mit einem Elektronen- oder Röntgenstrahl abgetastet und die emittierten Röntgenstrahlen detektiert werden, wodurch detaillierte Zusammensetzungsinformationen über die Oberfläche der Probe geliefert werden.</skos:definition>
         <skos:example xml:lang="en">An example of an X-ray Mapping process is X-ray Absorption Spectroscopy, X-ray Fluorescence, or X-ray Photoelectron Spectroscopy.</skos:example>
     </owl:Class>
@@ -2020,7 +2020,7 @@ A manufacturing process is always a transformative process.</skos:definition>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="de">Röntgen-Mikroanalyse</rdfs:label>
         <rdfs:label xml:lang="en">x-ray microanalysis</rdfs:label>
-        <skos:definition xml:lang="en">An X-ray Analyzing Process that determines the elemental composition and chemical properties of a specimen by detecting and analyzing the characteristic X-rays emitted from the sample when it is irradiated with a focused electron beam.</skos:definition>
+        <skos:definition xml:lang="en">An X-ray analyzing process that determines the elemental composition and chemical properties of a specimen by detecting and analyzing the characteristic X-rays emitted from the sample when it is irradiated with a focused electron beam.</skos:definition>
         <skos:definition xml:lang="de">Ein Röntgenanalyseverfahren, das die elementare Zusammensetzung und chemischen Eigenschaften einer Probe bestimmt, indem die charakteristischen Röntgenstrahlen detektiert und analysiert werden, die von der Probe emittiert werden, wenn sie mit einem fokussierten Elektronenstrahl bestrahlt wird.</skos:definition>
         <skos:example xml:lang="en">An example for X-ray Microanalysis process is Energy Dispersive X-ray Spectroscopy.</skos:example>
     </owl:Class>
@@ -2033,7 +2033,7 @@ A manufacturing process is always a transformative process.</skos:definition>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000945"/>
         <rdfs:label xml:lang="de">Röntgenspektroskopie</rdfs:label>
         <rdfs:label xml:lang="en">x-ray spectroscopy</rdfs:label>
-        <skos:definition xml:lang="en">A Spectroscopy Process, that analyzes the interaction of X-rays with matter to determine the material&apos;s composition and structure.</skos:definition>
+        <skos:definition xml:lang="en">A spectroscopy process, that analyzes the interaction of X-rays with matter to determine the material&apos;s composition and structure.</skos:definition>
         <skos:definition xml:lang="de">Ein Spektroskopie Verfahren, das die Wechselwirkung von Röntgenstrahlen mit Materie analysiert, um die Zusammensetzung und Struktur des Materials zu bestimmen.</skos:definition>
         <skos:example xml:lang="en">Examples are e.g. X-ray absorption spectroscopy, X-ray emission spectroscopy, and X-ray reflection spectroscopy.</skos:example>
     </owl:Class>
@@ -2046,7 +2046,7 @@ A manufacturing process is always a transformative process.</skos:definition>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000602"/>
         <rdfs:label xml:lang="de">Röntgenbeugungsgerät</rdfs:label>
         <rdfs:label xml:lang="en">x-ray diffractometer</rdfs:label>
-        <skos:definition xml:lang="en">An X-Ray Diffractometer is a Measuring Device that determines the crystal structure of materials by analyzing the diffraction patterns of X-rays passed through a sample.</skos:definition>
+        <skos:definition xml:lang="en">An X-Ray diffractometer is a measuring device that determines the crystal structure of materials by analyzing the diffraction patterns of X-rays passed through a sample.</skos:definition>
         <skos:definition xml:lang="de">Ein Röntgenbeugungsgerät ist ein Messgerät, das die Kristallstruktur von Materialien durch Analyse der Beugungsmuster von durch eine Probe geleiteten Röntgenstrahlen bestimmt.</skos:definition>
     </owl:Class>
     
@@ -2593,7 +2593,7 @@ A manufacturing process is always a transformative process.</skos:definition>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020140"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020094"/>
         <rdfs:comment xml:lang="en">A Portion Of Matter that consists of only phosphorus atoms.</rdfs:comment>
         <rdfs:label xml:lang="en">portion of phosphorus</rdfs:label>
         <skos:definition xml:lang="en">A &apos;Portion Of Phosphorus&apos; is a &apos;Portion Of Pure Substance&apos; that &apos;consists of&apos; only chebi:phosphorus atom.</skos:definition>
@@ -2901,7 +2901,7 @@ A manufacturing process is always a transformative process.</skos:definition>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020140"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020037"/>
         <rdfs:comment xml:lang="en">A Portion Of Matter that consists of only krypton atoms.</rdfs:comment>
         <rdfs:label xml:lang="en">portion of krypton</rdfs:label>
         <skos:definition xml:lang="en">A &apos;Portion Of Krypton&apos; is a &apos;Portion Of Pure Substance&apos; that &apos;consists of&apos; only chebi:krypton atom.</skos:definition>
@@ -3685,7 +3685,7 @@ A manufacturing process is always a transformative process.</skos:definition>
 
 More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso</rdfs:comment>
         <rdfs:label xml:lang="en">bravais lattice (3d)</rdfs:label>
-        <skos:definition xml:lang="en">The Bravais lattice is a categorical value specification that specifies value of the crystal structure quality. It describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements.</skos:definition>
+        <skos:definition xml:lang="en">The bravais lattice is a categorical value specification that specifies value of the crystal structure quality. It describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -3906,7 +3906,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020148">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:label xml:lang="en">extensive quality</rdfs:label>
-        <skos:definition xml:lang="en">An extensive quality is a qualty that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size.</skos:definition>
+        <skos:definition xml:lang="en">An extensive quality is a quality that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
     
@@ -3949,7 +3949,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020207">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020101"/>
         <rdfs:label xml:lang="en">amount of substance</rdfs:label>
-        <skos:definition xml:lang="en">Amount of substance n is a molar proportion when the whole is an object aggregate N, which has Avogadro number objects (of same type) as parts (n = N/N_A).</skos:definition>
+        <skos:definition xml:lang="en">Amount of substance n is a molar proportion when the whole is an object aggregate N, which has avogadro number objects (of same type) as parts (n = N/N_A).</skos:definition>
     </owl:Class>
     
 
@@ -4018,7 +4018,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0025007">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000008"/>
         <rdfs:label xml:lang="en">frequency</rdfs:label>
-        <skos:definition xml:lang="en">frequency is a process attribute which characterizes the rate per second of oscillation or vibration.</skos:definition>
+        <skos:definition xml:lang="en">Frequency is a process attribute which characterizes the rate per second of oscillation or vibration.</skos:definition>
         <skos:example xml:lang="en">Frequency of electromagnetic wave, Frequency of sound wave.</skos:example>
     </owl:Class>
     
@@ -4030,7 +4030,7 @@ The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 202
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000624"/>
         <rdfs:label xml:lang="de">Transmissionselektronenmikroskop</rdfs:label>
         <rdfs:label xml:lang="en">transmission electron microscope</rdfs:label>
-        <skos:definition xml:lang="en">A Transmission Electron Microscope (SEM) is a Measuring Device that produces high-resolution images of a sample&apos;s internal structure by transmitting electrons through the sample.</skos:definition>
+        <skos:definition xml:lang="en">A transmission electron microscope (SEM) is a measuring device that produces high-resolution images of a sample&apos;s internal structure by transmitting electrons through the sample.</skos:definition>
         <skos:definition xml:lang="de">Ein Transmissionselektronenmikroskop (TEM) ist ein Messgerät, das hochauflösende Bilder der inneren Struktur einer Probe erzeugt, indem es Elektronen durch die Probe strahlt.</skos:definition>
     </owl:Class>
     
@@ -4541,6 +4541,102 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">atomic plane</rdfs:label>
         <skos:definition xml:lang="en">Atomic plane is a 2D fiat object part which has atoms as it parts and is located in some crystallogphic plane, i.e., the positions of atoms relative to each other are defined via the characterisitics of the crystallogphic plane.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000026 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">defintion from Introduction to Textur Analysis. TODO: add proper annnotation property</rdfs:comment>
+        <rdfs:label xml:lang="en">crystal system</rdfs:label>
+        <skos:altLabel xml:lang="en">lattice type</skos:altLabel>
+        <skos:definition xml:lang="en">Crystal system is a intensive quality of a crystal lattice which describes the arrangement of lattice points in an infinite 3D space in such way that each lattice point has an identical environment to that around every other lattice point. It is specified by one of the 7 crystaa sytem value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000027 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000027">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000036"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lattice centering</rdfs:label>
+        <skos:definition xml:lang="en">Lattice centering is an intensive quality ofa crystal lattice which the geometric arrangement of lattice points in a unit cell. It is specified by one of the 4 lattice centering value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000028 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000028">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000029"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000030"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000031"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000032"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000033"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000034"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:label xml:lang="en">crystal system value</rdfs:label>
+        <skos:definition xml:lang="en">crystal system value is a categorical value specification which describes the grouping of
+crystal structures according to the axial system used to describe their lattice It is a set of three axes in a particular geometrical arrangement: triclinic, monoclinic, orthorhombic, tetragonal, rhombohedral (trigonal), hexagonal, and cubic (isometric).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000036 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000036">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000043"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000044"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000045"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000046"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:label xml:lang="en">lattice centering value</rdfs:label>
+        <skos:definition xml:lang="en">Lattice centering value is a categorical value specification which describes th geometric arrangement of lattice points in a unit cell with one of the values: primitive, body centered, face centered, base centered.</skos:definition>
     </owl:Class>
     
 
@@ -5083,6 +5179,70 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000029 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000029">
+        <rdfs:label xml:lang="en">triclinic</rdfs:label>
+        <skos:definition xml:lang="en">Triclinic crystal system is a crystal system with only translational symmetry.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000030 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000030">
+        <rdfs:label xml:lang="en">monoclinic</rdfs:label>
+        <skos:definition xml:lang="en">Monoclinic crystal system is a crystal system with one twofold rotation axis or one mirror plane.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000031 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000031">
+        <rdfs:label xml:lang="en">orthorhombic</rdfs:label>
+        <skos:definition xml:lang="en">Orthorhombic crystal system is a crystal system with three twofold rotation axes or one twofold rotation axis and two mirror planes</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000032 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000032">
+        <rdfs:label xml:lang="en">tetragonal</rdfs:label>
+        <skos:definition xml:lang="en">Tetragonal crystal system is a crystal system with one fourfold rotation axis.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000033 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000033">
+        <rdfs:label xml:lang="en">rhombohedral</rdfs:label>
+        <skos:altLabel xml:lang="en">trigonal</skos:altLabel>
+        <skos:definition xml:lang="en">Rhombohedral ( trigonal) crystal system is a crystal system with one threefold rotation axis.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000034 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000034">
+        <rdfs:label xml:lang="en">hexagonal</rdfs:label>
+        <skos:definition xml:lang="en">Hexagonal crystal system is a crystal system with one sixfold rotation axis.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000035 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000035">
+        <rdfs:label xml:lang="en">cubic</rdfs:label>
+        <skos:definition xml:lang="en">Cubic crystal system is a crystal system with fourfold rotation axes.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000037 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037">
@@ -5139,6 +5299,47 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="en">{110}</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000043 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000043">
+        <rdfs:label xml:lang="en">primitive</rdfs:label>
+        <skos:altLabel>P</skos:altLabel>
+        <skos:definition xml:lang="en">Primitive centering type is a centering type, where lattice points are located only on the corners of a unit cell, i.e., at coordinates (0,0,0).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000044 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000044">
+        <rdfs:label xml:lang="en">body centered</rdfs:label>
+        <skos:altLabel>I</skos:altLabel>
+        <skos:definition xml:lang="en">Body centered centering type is a centering type, where lattice points are located  on the corners of a unit cell, i.e., at coordinates (0,0,0), and at the center of a unit cell, i.e., at coordinates (1/2,1/2,1/2).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000045 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000045">
+        <rdfs:label xml:lang="en">face centered</rdfs:label>
+        <skos:altLabel>F</skos:altLabel>
+        <skos:definition xml:lang="en">Face centered centering type is a centering type, where lattice points are located  on the corners of a unit cell, i.e., at coordinates (0,0,0), and at the center of each faces of a unit cell, i.e., at coordinates (1/2,1/2,0), (1/2,0,1/2), and (0,1/2,1/2).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000046 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000046">
+        <rdfs:comment>Add symbol annotation property</rdfs:comment>
+        <rdfs:label xml:lang="en">base centered</rdfs:label>
+        <skos:altLabel>C</skos:altLabel>
+        <skos:definition xml:lang="en">Base centered centering type is a centering type, where lattice points are located on the corners of a unit cell, i.e., at coordinates (0,0,0), and one additional lattice point is located at the center of a base of the cell, i.e., at coordinates (1/2,1/2,0).</skos:definition>
     </owl:NamedIndividual>
     
 
