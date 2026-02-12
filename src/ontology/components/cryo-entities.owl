@@ -481,6 +481,102 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000026 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">defintion from Introduction to Textur Analysis. TODO: add proper annnotation property</rdfs:comment>
+        <rdfs:label xml:lang="en">crystal system</rdfs:label>
+        <skos:altLabel xml:lang="en">lattice type</skos:altLabel>
+        <skos:definition xml:lang="en">Crystal system is a intensive quality of a crystal lattice which describes the arrangement of lattice points in an infinite 3D space in such way that each lattice point has an identical environment to that around every other lattice point. It is specified by one of the 7 crystaa sytem value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000027 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000027">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000036"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lattice centering</rdfs:label>
+        <skos:definition xml:lang="en">Lattice centering is an intensive quality ofa crystal lattice which the geometric arrangement of lattice points in a unit cell. It is specified by one of the 4 lattice centering value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000028 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000028">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000029"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000030"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000031"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000032"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000033"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000034"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:label xml:lang="en">crystal system value</rdfs:label>
+        <skos:definition xml:lang="en">crystal system value is a categorical value specification which describes the grouping of
+crystal structures according to the axial system used to describe their lattice It is a set of three axes in a particular geometrical arrangement: triclinic, monoclinic, orthorhombic, tetragonal, rhombohedral (trigonal), hexagonal, and cubic (isometric).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000036 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000036">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000043"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000044"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000045"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000046"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:label xml:lang="en">lattice centering value</rdfs:label>
+        <skos:definition xml:lang="en">Lattice centering value is a categorical value specification which describes th geometric arrangement of lattice points in a unit cell with one of the values: primitive, body centered, face centered, base centered.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000042 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000042">
@@ -740,6 +836,70 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000029 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000029">
+        <rdfs:label xml:lang="en">triclinic</rdfs:label>
+        <skos:definition xml:lang="en">Triclinic crystal system is a crystal system with only translational symmetry.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000030 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000030">
+        <rdfs:label xml:lang="en">monoclinic</rdfs:label>
+        <skos:definition xml:lang="en">Monoclinic crystal system is a crystal system with one twofold rotation axis or one mirror plane.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000031 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000031">
+        <rdfs:label xml:lang="en">orthorhombic</rdfs:label>
+        <skos:definition xml:lang="en">Orthorhombic crystal system is a crystal system with three twofold rotation axes or one twofold rotation axis and two mirror planes</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000032 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000032">
+        <rdfs:label xml:lang="en">tetragonal</rdfs:label>
+        <skos:definition xml:lang="en">Tetragonal crystal system is a crystal system with one fourfold rotation axis.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000033 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000033">
+        <rdfs:label xml:lang="en">rhombohedral</rdfs:label>
+        <skos:altLabel xml:lang="en">trigonal</skos:altLabel>
+        <skos:definition xml:lang="en">Rhombohedral ( trigonal) crystal system is a crystal system with one threefold rotation axis.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000034 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000034">
+        <rdfs:label xml:lang="en">hexagonal</rdfs:label>
+        <skos:definition xml:lang="en">Hexagonal crystal system is a crystal system with one sixfold rotation axis.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000035 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000035">
+        <rdfs:label xml:lang="en">cubic</rdfs:label>
+        <skos:definition xml:lang="en">Cubic crystal system is a crystal system with fourfold rotation axes.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000037 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
@@ -755,6 +915,47 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     <!-- https://w3id.org/pmd/cryo/CRYO_0000039 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000039"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000043 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000043">
+        <rdfs:label xml:lang="en">primitive</rdfs:label>
+        <skos:altLabel>P</skos:altLabel>
+        <skos:definition xml:lang="en">Primitive centering type is a centering type, where lattice points are located only on the corners of a unit cell, i.e., at coordinates (0,0,0).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000044 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000044">
+        <rdfs:label xml:lang="en">body centered</rdfs:label>
+        <skos:altLabel>I</skos:altLabel>
+        <skos:definition xml:lang="en">Body centered centering type is a centering type, where lattice points are located  on the corners of a unit cell, i.e., at coordinates (0,0,0), and at the center of a unit cell, i.e., at coordinates (1/2,1/2,1/2).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000045 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000045">
+        <rdfs:label xml:lang="en">face centered</rdfs:label>
+        <skos:altLabel>F</skos:altLabel>
+        <skos:definition xml:lang="en">Face centered centering type is a centering type, where lattice points are located  on the corners of a unit cell, i.e., at coordinates (0,0,0), and at the center of each faces of a unit cell, i.e., at coordinates (1/2,1/2,0), (1/2,0,1/2), and (0,1/2,1/2).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000046 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000046">
+        <rdfs:comment>Add symbol annotation property</rdfs:comment>
+        <rdfs:label xml:lang="en">base centered</rdfs:label>
+        <skos:altLabel>C</skos:altLabel>
+        <skos:definition xml:lang="en">Base centered centering type is a centering type, where lattice points are located on the corners of a unit cell, i.e., at coordinates (0,0,0), and one additional lattice point is located at the center of a base of the cell, i.e., at coordinates (1/2,1/2,0).</skos:definition>
+    </owl:NamedIndividual>
     
 
 
