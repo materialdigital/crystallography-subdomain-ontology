@@ -8,12 +8,15 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cryo="https://w3id.org/pmd/cryo/"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/components/cryo-axioms-shared.owl">
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/components/cryo-entities.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pmd/cryo/components/cryo-individuals.owl"/>
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/components/cryo-qualities.owl"/>
     </owl:Ontology>
     
@@ -65,6 +68,30 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000040 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000040">
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000125"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000126"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000127"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000128"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000130"/>
+        <cryo:CRYO_0000170 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000040"/>
     </rdf:Description>
 </rdf:RDF>
 
