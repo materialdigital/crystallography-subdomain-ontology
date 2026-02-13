@@ -6965,32 +6965,19 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>(&apos;quality of&apos; some &apos;crystal lattice&apos;) potentially crystal system is a quality of a crystal lattice. But then we need the connection between crystal lattice, grains, etc. and its complicated</rdfs:comment>
         <rdfs:comment xml:lang="en">defintion from Introduction to Textur Analysis. TODO: add proper annnotation property</rdfs:comment>
         <rdfs:label xml:lang="en">crystal system</rdfs:label>
         <skos:altLabel xml:lang="en">lattice type</skos:altLabel>
