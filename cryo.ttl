@@ -281,6 +281,7 @@ r is a portion of reality
 there is some c that is a concretization of g 
 every c that is a concretization of g specifically denotes r"""@en ;
                 obo:IAO_0000119 "Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan"@en ;
+                rdfs:comment ""@en ;
                 rdfs:label "denotes"@en .
 
 
@@ -435,6 +436,7 @@ obo:RO_0000052 rdf:type owl:ObjectProperty ;
                obo:IAO_0000112 "this fragility is a characteristic of this vase"@en ,
                                "this red color is a characteristic of this apple"@en ;
                obo:IAO_0000115 "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence."@en ;
+               rdfs:comment "Note that this relation was previously called \"inheres in\", but was changed to be called \"characteristic of\" because BFO2 uses \"inheres in\" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing." ;
                rdfs:label "characteristic of"@en .
 
 
@@ -515,6 +517,7 @@ obo:RO_0000079 rdf:type owl:ObjectProperty ;
                obo:IAO_0000112 "this catalysis function is a function of this enzyme"@en ;
                obo:IAO_0000115 "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence"@en ;
                obo:IAO_0000116 "A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists."@en ;
+               rdfs:comment "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020." ;
                rdfs:label "function of"@en .
 
 
@@ -532,6 +535,7 @@ obo:RO_0000080 rdf:type owl:ObjectProperty ;
                obo:IAO_0000112 "this red color is a quality of this apple"@en ;
                obo:IAO_0000115 "a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence"@en ;
                obo:IAO_0000116 "A quality inheres in its bearer at all times for which the quality exists."@en ;
+               rdfs:comment "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020." ;
                rdfs:label "quality of"@en .
 
 
@@ -542,6 +546,7 @@ obo:RO_0000081 rdf:type owl:ObjectProperty ;
                obo:IAO_0000112 "this investigator role is a role of this person"@en ;
                obo:IAO_0000115 "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence"@en ;
                obo:IAO_0000116 "A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists."@en ;
+               rdfs:comment "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020." ;
                rdfs:label "role of"@en .
 
 
@@ -591,6 +596,7 @@ obo:RO_0000091 rdf:type owl:ObjectProperty ;
 obo:RO_0000092 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf obo:RO_0000052 ;
                obo:IAO_0000115 "inverse of has disposition" ;
+               rdfs:comment "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020." ;
                rdfs:label "disposition of"@en .
 
 
@@ -659,6 +665,7 @@ obo:RO_0002082 rdf:type owl:ObjectProperty ,
                         owl:SymmetricProperty ,
                         owl:TransitiveProperty ;
                obo:IAO_0000115 "x simultaneous with y iff ω(x) = ω(y) and ω(α ) = ω(α), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point and '=' indicates the same instance in time." ;
+               rdfs:comment "t1 simultaneous_with t2 iff:=  t1 before_or_simultaneous_with t2  and not (t1 before t2)"@en ;
                rdfs:label "simultaneous with"@en .
 
 
@@ -776,6 +783,10 @@ obo:STATO_0000102 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "relationship between a planned process and the plan specification that it carries out; it is defined as equivalent to the composed relationship (realizes o concretizes)"@en ;
                   obo:IAO_0000119 "AGB" ;
                   rdfs:label "executes" .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+skos:broader rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000004
@@ -2163,6 +2174,13 @@ obo:IAO_0000104 rdf:type owl:Class ;
                                 "Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved"@en ;
                 obo:IAO_0000119 "OBI Plan and Planned Process branch"@en ,
                                 "OBI_0000344"@en ;
+                rdfs:comment """2/3/2009 Comment from OBI review.
+
+Action specification not well enough specified.
+Conditional specification not well enough specified.
+Question whether all plan specifications have objective specifications.
+
+Request that IAO either clarify these or change definitions not to use them"""@en ;
                 rdfs:label "plan specification"@en .
 
 
@@ -2179,6 +2197,54 @@ obo:IAO_0000109 rdf:type owl:Class ;
                 obo:IAO_0000119 "OBI_0000305"@en ,
                                 "group:OBI"@en ;
                 rdfs:label "measurement datum"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0020000
+obo:IAO_0020000 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( obo:IAO_0000030
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:IAO_0000219 ;
+                                                             owl:someValuesFrom obo:BFO_0000001
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:OBI_0000312 ;
+                                                             owl:someValuesFrom obo:IAO_0020010
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0000030 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:IAO_0000219 ;
+                                  owl:someValuesFrom obo:BFO_0000001
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:OBI_0000312 ;
+                                  owl:someValuesFrom obo:IAO_0020010
+                                ] ;
+                obo:IAO_0000115 "An information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity."@en ;
+                rdfs:comment "Sep 29, 2016: The current definition has been amended from the previous version: \"A proper name is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.\" to more accuratly reflect the necessary and sufficient condition on the class. (MB)"@en ;
+                rdfs:label "identifier"@en ;
+                co:PMD_0000060 "true"^^xsd:boolean .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0020010
+obo:IAO_0020010 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( obo:COB_0000035
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:OBI_0000299 ;
+                                                             owl:someValuesFrom obo:IAO_0020000
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf obo:COB_0000035 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:OBI_0000299 ;
+                                  owl:someValuesFrom obo:IAO_0020000
+                                ] ;
+                obo:IAO_0000115 "A planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity."@en ;
+                rdfs:label "identifier creating process"@en .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0000067
@@ -2348,6 +2414,158 @@ obo:UO_1000163 rdf:type owl:Class ;
 obo:UO_1000164 rdf:type owl:Class ;
                rdfs:subClassOf obo:UO_0000000 ;
                rdfs:label "mass volume percentage based unit" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102> ,
+                                                                      [ owl:intersectionOf ( obo:BFO_0000030
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty obo:RO_0000087 ;
+                                                                                               owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>
+                                                                                             ]
+                                                                                           ) ;
+                                                                        rdf:type owl:Class
+                                                                      ] ;
+                                                      rdfs:comment "An object that represents a single human individual."@en ;
+                                                      rdfs:label "person"@en ;
+                                                      skos:example "Harald Sack, Tabea Tietz, Sasha Bruns, Etienne Posthumus" .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:IAO_0000030 ;
+                                                      rdfs:comment "An information content entity that specifies the subject area, domain or academic discipline of an entity. An academic discipline, a research field or domain of an entity, e.g. a domain of a data portal or a field of study of a person."@en ;
+                                                      rdfs:label "academic discipline"@en ;
+                                                      skos:example <https://www.wikidata.org/entity/Q12271> ,
+                                                                   "Architecture, Art History, Musicology, Media Studies, Performing Arts"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102> rdf:type owl:Class ;
+                                                      owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000004
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty obo:RO_0000087 ;
+                                                                                                   owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ] ;
+                                                      rdfs:subClassOf obo:BFO_0000004 ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty obo:RO_0000087 ;
+                                                                        owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>
+                                                                      ] ;
+                                                      rdfs:comment "An independent continuant that acts autonomously and is entrusted with the authority to represent, negotiate, or act on behalf of another agent."@en ;
+                                                      rdfs:label "agent"@en ;
+                                                      skos:example "Torsten Schrade, Linnaea Söhn, Academy of Sciences and Literature Mainz"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:BFO_0000015 ;
+                                                      rdfs:comment "An process that represents an organized happening that unfolds in time."@en ;
+                                                      rdfs:label "event"@en ;
+                                                      skos:example "conferences, celebrations, workshops, meetings, or any other specific incident or happening that has been planned somehow."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:IAO_0000033 ,
+                                                                      [ owl:intersectionOf ( obo:IAO_0000033
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty [ owl:inverseOf obo:RO_0002234
+                                                                                                              ] ;
+                                                                                               owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224>
+                                                                                             ]
+                                                                                           ) ;
+                                                                        rdf:type owl:Class
+                                                                      ] ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty [ owl:inverseOf obo:RO_0002234
+                                                                                       ] ;
+                                                                        owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224>
+                                                                      ] ;
+                                                      rdfs:comment "A directive information entity that defines the requirements, characteristics, or standards for the design, implementation, or operation of a system, product, or process.Specification is a set of requirements, guidelines, standards contributed by an organization or a person."@en ;
+                                                      rdfs:label "specification"@en ;
+                                                      skos:example "Guidelines, technical specifications, design specifications"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224> rdf:type owl:Class ;
+                                                      rdfs:subClassOf [ owl:intersectionOf ( obo:BFO_0000015
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty obo:RO_0000057 ;
+                                                                                               owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>
+                                                                                             ]
+                                                                                           ) ;
+                                                                        rdf:type owl:Class
+                                                                      ] ;
+                                                      rdfs:comment "A process that involves generating, developing, and refining original ideas or concepts through exploration, experimentation, and problem-solving, aiming to produce innovative or expressive outcomes in artistic, scientific, or other creative fields."@en ;
+                                                      rdfs:label "creative process"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229> rdf:type owl:Class ;
+                                                      rdfs:subClassOf [ owl:intersectionOf ( obo:BFO_0000023
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty obo:RO_0000081 ;
+                                                                                               owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102>
+                                                                                             ]
+                                                                                           ) ;
+                                                                        rdf:type owl:Class
+                                                                      ] ;
+                                                      rdfs:comment "Role of an independent continuant that is realized through an agent's actions, enabling the agent to perform specific functions or achieve particular outcomes within a system or context."@en ;
+                                                      rdfs:label "agent role"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:IAO_0020000 ;
+                                                      rdfs:comment "An academic title is an identifier that denotes an individual’s academic rank, qualification, or honorary designation within educational and research institutions." ;
+                                                      rdfs:label "academic title"@en ;
+                                                      skos:example "Professor, Associate Professor, Dr., PhD, Dr. Ing." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050> rdf:type owl:Class ;
+                                                      owl:equivalentClass [ owl:intersectionOf ( <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203>
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty obo:IAO_0000219 ;
+                                                                                                   owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ] ;
+                                                      rdfs:subClassOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203> ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty obo:IAO_0000219 ;
+                                                                        owl:someValuesFrom <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131>
+                                                                      ] ;
+                                                      rdfs:comment "An event implementation specification is a type of Directive Information Entity that provides formal guidelines, constraints, and details on how an event should be executed. It specifies the mode of implementation, including logistical, technical, and procedural aspects required to carry out an event successfully." ;
+                                                      rdfs:label "event implementation specification"@en ;
+                                                      skos:example "Specifications for organizing conferences, training workshops, and academic seminars in different formats such as virtual, in-person, or hybrid settings." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203> ;
+                                                      rdfs:comment "A funding specification is a directive information entity that provides structured guidelines, policies, and requirements for securing, managing, and allocating financial resources for various activities, projects, or organizations." ;
+                                                      rdfs:label "funding specification"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203> ;
+                                                      rdfs:comment "An information access specification is a directive information entity that defines the policies, conditions, and mechanisms governing the accessibility of digital or physical information resources for users or organizations." ;
+                                                      rdfs:label "information access specification"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203> ;
+                                                      rdfs:comment "A status specification is a directive information entity that defines the current state, progress, or condition of an entity, process, or project based on predefined criteria and operational guidelines." ;
+                                                      rdfs:label "status specification"@en .
 
 
 ###  https://w3id.org/pmd/CRYO_0000000
@@ -5062,6 +5280,341 @@ obo:UO_0000076 rdf:type owl:NamedIndividual .
 obo:UO_0000164 rdf:type owl:NamedIndividual .
 
 
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000157
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000157> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the study, design, and application of electrical systems and technologies. Electrical engineering involves the development of devices, circuits, and systems for power generation, communication, electronics, and automation." ;
+                                                      rdfs:label "electrical engineering"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000159
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000159> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the design, optimization, and operation of industrial processes to transform raw materials into valuable products. Process engineering applies principles of chemistry, physics, and engineering to improve efficiency, sustainability, and safety in industries such as manufacturing, energy, and pharmaceuticals."@en ;
+                                                      rdfs:label "process engineering"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001063
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001063> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      skos:broader <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017> ;
+                                                      obo:IAO_0000119 "Russell, S., & Norvig, P. (2020). Artificial Intelligence: A Modern Approach. Pearson." ;
+                                                      rdfs:comment "Artificial Intelligence (AI) is a sub-discipline of Computer Science that focuses on creating systems capable of performing tasks that require human-like intelligence, such as learning, reasoning, and problem-solving." ;
+                                                      rdfs:label "artificial intelligence"@en ;
+                                                      skos:example "Deep learning for image recognition, reinforcement learning in robotics, and natural language processing fall under Artificial Intelligence." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001064
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001064> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      skos:broader <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017> ;
+                                                      rdfs:comment "Theoretical Computer Science is a sub-discipline of Computer Science that focuses on mathematical models of computation, computational complexity, and algorithmic problem-solving" ;
+                                                      rdfs:label "theoretical computer science"@en ;
+                                                      skos:example "Studies on Turing machines, complexity classes (P vs NP), and formal languages belong to Theoretical Computer Science." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001065
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001065> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      skos:broader <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017> ;
+                                                      rdfs:comment "Software Engineering is a sub-discipline of Computer Science that applies engineering principles to the design, development, testing, and maintenance of software systems." ;
+                                                      rdfs:label "software engineering"@en ;
+                                                      skos:example "Agile software development, DevOps practices, and software architecture design fall under Software Engineering." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001066
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001066> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      skos:broader <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017> ;
+                                                      obo:IAO_0000119 "Provost, F., & Fawcett, T. (2013). Data Science for Business. O'Reilly Media." ;
+                                                      rdfs:comment "Data Science is a sub-discipline of Computer Science that integrates statistical methods, machine learning, and data processing techniques to extract insights and knowledge from structured and unstructured data." ;
+                                                      rdfs:label "data science"@en ;
+                                                      skos:example "Predictive analytics, big data visualization, and recommendation systems are part of Data Science." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001067
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001067> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      skos:broader <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017> ;
+                                                      obo:IAO_0000119 "Stallings, W. (2020). Network Security Essentials. Pearson." ;
+                                                      rdfs:comment "Cybersecurity is a sub-discipline of Computer Science that focuses on protecting computer systems, networks, and data from cyber threats, vulnerabilities, and unauthorized access." ;
+                                                      rdfs:label "cybersecurity"@en ;
+                                                      skos:example "Encryption techniques, intrusion detection systems, and ethical hacking studies belong to Cybersecurity." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001070
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001070> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> ;
+                                                      rdfs:comment "Active Status is a status specification that indicates an entity, process, or project is currently operational, ongoing, or in execution." ;
+                                                      rdfs:label "active status"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001071
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001071> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> ;
+                                                      rdfs:comment "Cancelled Status is a status specification that indicates an entity, process, or project has been terminated before reaching completion due to internal or external factors." ;
+                                                      rdfs:label "cancelled status"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001072
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001072> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Doctor (PhD or equivalent academic doctorate)" ;
+                                                      rdfs:label "Dr."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001073
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001073> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Doctor of Engineering (German doctorate in engineering)." ;
+                                                      rdfs:label "Dr.-Ing."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001074
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001074> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> ;
+                                                      rdfs:comment "Finished Status is a status specification that indicates an entity, process, or project has successfully reached its intended goal and is considered complete." ;
+                                                      rdfs:label "finished status"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001075
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001075> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050> ;
+                                                      rdfs:comment "Hybrid Implementation is an event implementation specification that defines the organization of an event that integrates both physical (on-site) and virtual (online) participation modes" ;
+                                                      rdfs:label "hybrid implementation"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001076
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001076> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052> ;
+                                                      rdfs:comment "Internal Access is an information access specification that defines policies and mechanisms restricting access to information exclusively within an organization, institution, or research group." ;
+                                                      rdfs:label "internal access"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001077
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001077> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Master of Science (graduate degree in science/engineering)." ;
+                                                      rdfs:label "M.Sc."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001078
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001078> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050> ;
+                                                      rdfs:comment "On-Site Implementation is an event implementation specification that defines the organization of an event that occurs exclusively at a physical location with in-person attendance." ;
+                                                      rdfs:label "on site implementation"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001079
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001079> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050> ;
+                                                      rdfs:comment "Online Implementation is an event implementation specification that defines the organization of an event conducted entirely through virtual platforms, enabling remote participation via digital communication technologies." ;
+                                                      rdfs:label "online implementation"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001080
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001080> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052> ;
+                                                      rdfs:comment "Open Access is an information access specification that defines policies allowing unrestricted public access to information resources, ensuring free availability without subscription or payment barriers." ;
+                                                      rdfs:label "open access"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001081
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001081> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051> ;
+                                                      rdfs:comment "Organizational Funding is a funding specification that defines the financial structures, budgets, and resource allocation strategies for sustaining the operations of an organization or institution." ;
+                                                      rdfs:label "organizational funding"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001082
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001082> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> ;
+                                                      rdfs:comment "Paused Status is a status specification that indicates an entity, process, or project is temporarily halted but may resume at a later stage." ;
+                                                      rdfs:label "paused status"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001083
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001083> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052> ;
+                                                      rdfs:comment "Paywall Access is an information access specification that defines policies requiring users to purchase, subscribe, or obtain institutional licenses to access digital or physical information resources." ;
+                                                      rdfs:label "paywall access"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001084
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001084> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Privatdozent (Dr. with habilitation, qualified to teach at a university)" ;
+                                                      rdfs:label "PD. Dr."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001085
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001085> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Privatdozent with Habilitation (higher academic qualification in Germany)" ;
+                                                      rdfs:label "PD. Dr. habil."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001086
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001086> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> ;
+                                                      rdfs:comment "Planning Status is a status specification that indicates an entity, process, or project is in a preparatory or strategic development phase before execution." ;
+                                                      rdfs:label "planning status"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001087
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001087> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Professor (academic title for a senior faculty member)." ;
+                                                      rdfs:label "Prof."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001088
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001088> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Professor with a doctorate." ;
+                                                      rdfs:label "Prof. Dr."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001089
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001089> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Professor with a doctorate in engineering." ;
+                                                      rdfs:label "Prof. Dr.-Ing."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001090
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001090> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051> ;
+                                                      rdfs:comment "Project Funding is a funding specification that defines the financial mechanisms, grants, and investment strategies used to support specific research, development, or innovation projects." ;
+                                                      rdfs:label "project funding"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001091
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001091> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052> ;
+                                                      rdfs:comment "Restricted Access is an information access specification that defines policies limiting access to specific users, organizations, or groups based on predefined criteria such as confidentiality, security, or legal regulations." ;
+                                                      rdfs:label "restricted access"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001092
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001092> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051> ;
+                                                      rdfs:comment "Self-Funding is a funding specification that defines the use of personal, internal, or independently generated financial resources to support activities, projects, or organizations without relying on external funding sources." ;
+                                                      rdfs:label "self funding"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001093
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001093> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056> ;
+                                                      rdfs:comment "Test Phase Status is a status specification that indicates an entity, process, or project is undergoing testing, evaluation, or validation before finalization." ;
+                                                      rdfs:label "test phase status"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001094
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001094> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040> ;
+                                                      rdfs:comment "Two Doctor degrees (PhD or equivalent academic doctorate)"@en ;
+                                                      rdfs:label "Dr. Dr."@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010001
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010001> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline focused on human culture, thought, and creativity, encompassing disciplines like literature, philosophy, and the arts."@en ;
+                                                      rdfs:label "humanity"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010002
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010002> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that studies society and human behavior through disciplines like sociology, psychology, and economics."@en ;
+                                                      rdfs:label "social science"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010004
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010004> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that studies living organisms, their structures, functions, growth, and interactions with their environment. Biology explores the diversity of life, from microscopic organisms to complex ecosystems, and seeks to understand the underlying processes of life, evolution, and heredity."@en ;
+                                                      rdfs:label "biology"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010005
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010005> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the science and practice of diagnosing, treating, and preventing illnesses and injuries. Medicine involves the study of human health, medical technologies, pharmaceuticals, and patient care to improve well-being and extend life."@en ;
+                                                      rdfs:label "medicine"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010006
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010006> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the science, practice, and business of cultivating plants, raising animals, and producing food, fiber, and other products. Agriculture involves the study of soil management, crop production, livestock care, and sustainable farming practices to ensure food security and environmental sustainability."@en ;
+                                                      rdfs:label "agriculture"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010007
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010007> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that studies the natural world through observation, experimentation, and analysis. Natural science includes fields such as physics, chemistry, biology, and earth sciences, aiming to understand the laws and processes governing the universe and life on Earth." ;
+                                                      rdfs:label "natural science"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010008
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010008> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that studies the composition, structure, properties, and reactions of matter. Chemistry focuses on understanding how substances interact, transform, and combine to form new materials, playing a crucial role in fields such as medicine, energy, and environmental science."@en ;
+                                                      rdfs:label "chemistry"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010010
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010010> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that explores the fundamental principles governing the behavior of matter, energy, and the forces of nature. Physics seeks to understand the laws of the universe, from subatomic particles to cosmic phenomena, through experimentation, observation, and mathematical modeling."@en ;
+                                                      rdfs:label "physics"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010011
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010011> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that involves the study of numbers, quantities, shapes, and patterns, using abstract concepts and logical reasoning. Mathematics is fundamental to various fields, including science, engineering, economics, and technology, providing tools for problem-solving, analysis, and modeling." ;
+                                                      rdfs:label "mathematics"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010012
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010012> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the study of the Earth’s structure, processes, and materials, including the atmosphere, oceans, and landforms. Geoscience encompasses fields such as geology, meteorology, and environmental science to understand Earth’s history, natural resources, and natural hazards."@en ;
+                                                      rdfs:label "geoscience"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010014
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010014> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the design, analysis, manufacturing, and maintenance of mechanical systems. Mechanical engineering applies principles of physics, materials science, and mathematics to develop machines, tools, and devices used in industries such as transportation, energy, and robotics."@en ;
+                                                      rdfs:label "mechanical engineering"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010016
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010016> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that explores the properties, performance, and applications of materials, focusing on the relationship between a material's structure and its characteristics. Materials science and engineering involves the design, development, and testing of materials for use in a wide range of industries, including aerospace, electronics, and manufacturing."@en ;
+                                                      rdfs:label "materials science"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the study of algorithms, data structures, programming, and computational systems. Computer science explores how to design, develop, and analyze software and hardware solutions to solve complex problems and advance technology."@en ;
+                                                      rdfs:label "computer science"@en .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010018
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010018> rdf:type owl:NamedIndividual ,
+                                                               <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> ;
+                                                      rdfs:comment "An academic discipline that focuses on the planning, design, and management of construction projects, including buildings, infrastructure, and other structures. Construction engineering integrates principles of civil engineering, project management, and materials science to ensure safety, efficiency, and sustainability in construction processes."@en ;
+                                                      rdfs:label "construction engineering"@en .
+
+
 ###  https://w3id.org/pmd/co/PMD_0020006
 co:PMD_0020006 rdf:type owl:NamedIndividual ;
                rdfs:label "bravais lattice triclinic primitive"@en ;
@@ -5367,313 +5920,563 @@ cryo:CRYO_0000048 rdf:type owl:NamedIndividual ;
 ###  https://w3id.org/pmd/cryo/CRYO_0000064
 cryo:CRYO_0000064 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000023 ;
+                  obo:RO_0002351 cryo:CRYO_0000069 ,
+                                 cryo:CRYO_0000070 ,
+                                 cryo:CRYO_0000071 ,
+                                 cryo:CRYO_0000072 ,
+                                 cryo:CRYO_0000073 ,
+                                 cryo:CRYO_0000074 ,
+                                 cryo:CRYO_0000076 ,
+                                 cryo:CRYO_0000077 ,
+                                 cryo:CRYO_0000078 ,
+                                 cryo:CRYO_0000080 ,
+                                 cryo:CRYO_0000081 ,
+                                 cryo:CRYO_0000082 ;
                   cryo:CRYO_0000037 cryo:CRYO_0000035 ;
-                  rdfs:label "{110}"@de .
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
+                  rdfs:label "{110}"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000065
 cryo:CRYO_0000065 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000023 ;
-                  rdfs:label "{111}"@de .
+                  obo:RO_0002351 cryo:CRYO_0000095 ,
+                                 cryo:CRYO_0000096 ,
+                                 cryo:CRYO_0000097 ,
+                                 cryo:CRYO_0000098 ,
+                                 cryo:CRYO_0000099 ,
+                                 cryo:CRYO_0000100 ,
+                                 cryo:CRYO_0000101 ,
+                                 cryo:CRYO_0000102 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
+                  rdfs:label "{111}"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000066
 cryo:CRYO_0000066 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000021 ;
+                  obo:RO_0002351 cryo:CRYO_0000112 ,
+                                 cryo:CRYO_0000113 ,
+                                 cryo:CRYO_0000114 ,
+                                 cryo:CRYO_0000115 ,
+                                 cryo:CRYO_0000116 ,
+                                 cryo:CRYO_0000117 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "<100>"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000067
 cryo:CRYO_0000067 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000021 ;
+                  obo:RO_0002351 cryo:CRYO_0000083 ,
+                                 cryo:CRYO_0000084 ,
+                                 cryo:CRYO_0000085 ,
+                                 cryo:CRYO_0000086 ,
+                                 cryo:CRYO_0000087 ,
+                                 cryo:CRYO_0000088 ,
+                                 cryo:CRYO_0000089 ,
+                                 cryo:CRYO_0000090 ,
+                                 cryo:CRYO_0000091 ,
+                                 cryo:CRYO_0000092 ,
+                                 cryo:CRYO_0000093 ,
+                                 cryo:CRYO_0000094 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "<110>"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000068
 cryo:CRYO_0000068 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000021 ;
+                  obo:RO_0002351 cryo:CRYO_0000104 ,
+                                 cryo:CRYO_0000105 ,
+                                 cryo:CRYO_0000106 ,
+                                 cryo:CRYO_0000107 ,
+                                 cryo:CRYO_0000108 ,
+                                 cryo:CRYO_0000109 ,
+                                 cryo:CRYO_0000110 ,
+                                 cryo:CRYO_0000111 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "<111>"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000069
 cryo:CRYO_0000069 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "(110)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000070
 cryo:CRYO_0000070 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "(-110)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000071
 cryo:CRYO_0000071 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "(1-10)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000072
 cryo:CRYO_0000072 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "(-1-10)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000073
 cryo:CRYO_0000073 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "(101)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000074
 cryo:CRYO_0000074 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "(-101)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000076
 cryo:CRYO_0000076 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "(10-1)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000077
 cryo:CRYO_0000077 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "(-10-1)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000078
 cryo:CRYO_0000078 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "(011)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000080
 cryo:CRYO_0000080 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "(0-11)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000081
 cryo:CRYO_0000081 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "(01-1)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000082
 cryo:CRYO_0000082 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "(0-1-1)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000083
 cryo:CRYO_0000083 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "[110]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000084
 cryo:CRYO_0000084 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "[-110]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000085
 cryo:CRYO_0000085 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "[1-10]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000086
 cryo:CRYO_0000086 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "[-1-10]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000087
 cryo:CRYO_0000087 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "[101]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000088
 cryo:CRYO_0000088 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "[-101]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000089
 cryo:CRYO_0000089 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "[10-1]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000090
 cryo:CRYO_0000090 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "[-10-1]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000091
 cryo:CRYO_0000091 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "[011]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000092
 cryo:CRYO_0000092 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "[0-11]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000093
 cryo:CRYO_0000093 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "[01-1]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000094
 cryo:CRYO_0000094 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "[0-1-1]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000095
 cryo:CRYO_0000095 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "(111)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000096
 cryo:CRYO_0000096 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "(-111)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000097
 cryo:CRYO_0000097 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "(1-11)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000098
 cryo:CRYO_0000098 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "(11-1)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000099
 cryo:CRYO_0000099 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "(-1-11)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000100
 cryo:CRYO_0000100 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "(-11-1)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000101
 cryo:CRYO_0000101 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "(1-1-1)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000102
 cryo:CRYO_0000102 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "(-1-1-1)"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000104
 cryo:CRYO_0000104 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "[111]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000105
 cryo:CRYO_0000105 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "[-111]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000106
 cryo:CRYO_0000106 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "[1-11]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000107
 cryo:CRYO_0000107 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "[11-1]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000108
 cryo:CRYO_0000108 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "[-1-11]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000109
 cryo:CRYO_0000109 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "[-11-1]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000110
 cryo:CRYO_0000110 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "[1-1-1]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000111
 cryo:CRYO_0000111 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "[-1-1-1]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000112
 cryo:CRYO_0000112 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "[100]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000113
 cryo:CRYO_0000113 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 -1 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "[-100]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000114
 cryo:CRYO_0000114 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 1 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "[010]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000115
 cryo:CRYO_0000115 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 -1 ;
+                  cryo:CRYO_0000019 0 ;
                   rdfs:label "[0-10]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000116
 cryo:CRYO_0000116 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 1 ;
                   rdfs:label "[001]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000117
 cryo:CRYO_0000117 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
+                  cryo:CRYO_0000017 0 ;
+                  cryo:CRYO_0000018 0 ;
+                  cryo:CRYO_0000019 -1 ;
                   rdfs:label "[00-1]"@de .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000125
 cryo:CRYO_0000125 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
                   cryo:CRYO_0000017 1 ;
                   cryo:CRYO_0000018 0 ;
                   cryo:CRYO_0000019 0 ;
@@ -5683,6 +6486,7 @@ cryo:CRYO_0000125 rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/pmd/cryo/CRYO_0000126
 cryo:CRYO_0000126 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
                   cryo:CRYO_0000017 0 ;
                   cryo:CRYO_0000018 1 ;
                   cryo:CRYO_0000019 0 ;
@@ -5692,6 +6496,7 @@ cryo:CRYO_0000126 rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/pmd/cryo/CRYO_0000127
 cryo:CRYO_0000127 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
                   cryo:CRYO_0000017 0 ;
                   cryo:CRYO_0000018 0 ;
                   cryo:CRYO_0000019 1 ;
@@ -5711,6 +6516,7 @@ cryo:CRYO_0000128 rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/pmd/cryo/CRYO_0000130
 cryo:CRYO_0000130 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
+                  cryo:CRYO_0000037 cryo:CRYO_0000035 ;
                   cryo:CRYO_0000017 0 ;
                   cryo:CRYO_0000018 0 ;
                   cryo:CRYO_0000019 -1 ;
@@ -5720,6 +6526,7 @@ cryo:CRYO_0000130 rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000
 <https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000> rdf:type owl:NamedIndividual ,
                                                                                   cryo:CRYO_0000022 ;
+                                                                         cryo:CRYO_0000037 cryo:CRYO_0000035 ;
                                                                          cryo:CRYO_0000017 0 ;
                                                                          cryo:CRYO_0000018 -1 ;
                                                                          cryo:CRYO_0000019 0 ;

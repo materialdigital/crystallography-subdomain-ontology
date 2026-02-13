@@ -385,6 +385,7 @@ r is a portion of reality
 there is some c that is a concretization of g 
 every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:label xml:lang="en">denotes</rdfs:label>
     </owl:ObjectProperty>
     
@@ -581,6 +582,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000112 xml:lang="en">this fragility is a characteristic of this vase</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this red color is a characteristic of this apple</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.</obo:IAO_0000115>
+        <rdfs:comment>Note that this relation was previously called &quot;inheres in&quot;, but was changed to be called &quot;characteristic of&quot; because BFO2 uses &quot;inheres in&quot; in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.</rdfs:comment>
         <rdfs:label xml:lang="en">characteristic of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -686,6 +688,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000112 xml:lang="en">this catalysis function is a function of this enzyme</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists.</obo:IAO_0000116>
+        <rdfs:comment>This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</rdfs:comment>
         <rdfs:label xml:lang="en">function of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -709,6 +712,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000112 xml:lang="en">this red color is a quality of this apple</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A quality inheres in its bearer at all times for which the quality exists.</obo:IAO_0000116>
+        <rdfs:comment>This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</rdfs:comment>
         <rdfs:label xml:lang="en">quality of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -722,6 +726,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000112 xml:lang="en">this investigator role is a role of this person</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists.</obo:IAO_0000116>
+        <rdfs:comment>This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</rdfs:comment>
         <rdfs:label xml:lang="en">role of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -786,6 +791,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000092">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
         <obo:IAO_0000115>inverse of has disposition</obo:IAO_0000115>
+        <rdfs:comment>This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</rdfs:comment>
         <rdfs:label xml:lang="en">disposition of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -876,6 +882,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>x simultaneous with y iff ω(x) = ω(y) and ω(α ) = ω(α), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point and &apos;=&apos; indicates the same instance in time.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">t1 simultaneous_with t2 iff:=  t1 before_or_simultaneous_with t2  and not (t1 before t2)</rdfs:comment>
         <rdfs:label xml:lang="en">simultaneous with</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1036,6 +1043,12 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000119>AGB</obo:IAO_0000119>
         <rdfs:label>executes</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
     
 
 
@@ -3001,6 +3014,13 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000116 xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000344</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">2/3/2009 Comment from OBI review.
+
+Action specification not well enough specified.
+Conditional specification not well enough specified.
+Question whether all plan specifications have objective specifications.
+
+Request that IAO either clarify these or change definitions not to use them</rdfs:comment>
         <rdfs:label xml:lang="en">plan specification</rdfs:label>
     </owl:Class>
     
@@ -3022,6 +3042,72 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020010"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Sep 29, 2016: The current definition has been amended from the previous version: &quot;A proper name is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.&quot; to more accuratly reflect the necessary and sufficient condition on the class. (MB)</rdfs:comment>
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000035"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">identifier creating process</rdfs:label>
     </owl:Class>
     
 
@@ -3259,6 +3345,224 @@ Previous. An information content entity is a non-realizable information entity t
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000164">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
         <rdfs:label>mass volume percentage based unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An object that represents a single human individual.</rdfs:comment>
+        <rdfs:label xml:lang="en">person</rdfs:label>
+        <skos:example>Harald Sack, Tabea Tietz, Sasha Bruns, Etienne Posthumus</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment xml:lang="en">An information content entity that specifies the subject area, domain or academic discipline of an entity. An academic discipline, a research field or domain of an entity, e.g. a domain of a data portal or a field of study of a person.</rdfs:comment>
+        <rdfs:label xml:lang="en">academic discipline</rdfs:label>
+        <skos:example rdf:resource="https://www.wikidata.org/entity/Q12271"/>
+        <skos:example xml:lang="en">Architecture, Art History, Musicology, Media Studies, Performing Arts</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An independent continuant that acts autonomously and is entrusted with the authority to represent, negotiate, or act on behalf of another agent.</rdfs:comment>
+        <rdfs:label xml:lang="en">agent</rdfs:label>
+        <skos:example xml:lang="en">Torsten Schrade, Linnaea Söhn, Academy of Sciences and Literature Mainz</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:comment xml:lang="en">An process that represents an organized happening that unfolds in time.</rdfs:comment>
+        <rdfs:label xml:lang="en">event</rdfs:label>
+        <skos:example xml:lang="en">conferences, celebrations, workshops, meetings, or any other specific incident or happening that has been planned somehow.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000033"/>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A directive information entity that defines the requirements, characteristics, or standards for the design, implementation, or operation of a system, product, or process.Specification is a set of requirements, guidelines, standards contributed by an organization or a person.</rdfs:comment>
+        <rdfs:label xml:lang="en">specification</rdfs:label>
+        <skos:example xml:lang="en">Guidelines, technical specifications, design specifications</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A process that involves generating, developing, and refining original ideas or concepts through exploration, experimentation, and problem-solving, aiming to produce innovative or expressive outcomes in artistic, scientific, or other creative fields.</rdfs:comment>
+        <rdfs:label xml:lang="en">creative process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Role of an independent continuant that is realized through an agent&apos;s actions, enabling the agent to perform specific functions or achieve particular outcomes within a system or context.</rdfs:comment>
+        <rdfs:label xml:lang="en">agent role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:comment>An academic title is an identifier that denotes an individual’s academic rank, qualification, or honorary designation within educational and research institutions.</rdfs:comment>
+        <rdfs:label xml:lang="en">academic title</rdfs:label>
+        <skos:example>Professor, Associate Professor, Dr., PhD, Dr. Ing.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An event implementation specification is a type of Directive Information Entity that provides formal guidelines, constraints, and details on how an event should be executed. It specifies the mode of implementation, including logistical, technical, and procedural aspects required to carry out an event successfully.</rdfs:comment>
+        <rdfs:label xml:lang="en">event implementation specification</rdfs:label>
+        <skos:example>Specifications for organizing conferences, training workshops, and academic seminars in different formats such as virtual, in-person, or hybrid settings.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203"/>
+        <rdfs:comment>A funding specification is a directive information entity that provides structured guidelines, policies, and requirements for securing, managing, and allocating financial resources for various activities, projects, or organizations.</rdfs:comment>
+        <rdfs:label xml:lang="en">funding specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203"/>
+        <rdfs:comment>An information access specification is a directive information entity that defines the policies, conditions, and mechanisms governing the accessibility of digital or physical information resources for users or organizations.</rdfs:comment>
+        <rdfs:label xml:lang="en">information access specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203"/>
+        <rdfs:comment>A status specification is a directive information entity that defines the current state, progress, or condition of an entity, process, or project based on predefined criteria and operational guidelines.</rdfs:comment>
+        <rdfs:label xml:lang="en">status specification</rdfs:label>
     </owl:Class>
     
 
@@ -6978,6 +7282,479 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     
 
 
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000157 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000157">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment>An academic discipline that focuses on the study, design, and application of electrical systems and technologies. Electrical engineering involves the development of devices, circuits, and systems for power generation, communication, electronics, and automation.</rdfs:comment>
+        <rdfs:label xml:lang="en">electrical engineering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000159 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000159">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline that focuses on the design, optimization, and operation of industrial processes to transform raw materials into valuable products. Process engineering applies principles of chemistry, physics, and engineering to improve efficiency, sustainability, and safety in industries such as manufacturing, energy, and pharmaceuticals.</rdfs:comment>
+        <rdfs:label xml:lang="en">process engineering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001063 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001063">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <skos:broader rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017"/>
+        <obo:IAO_0000119>Russell, S., &amp; Norvig, P. (2020). Artificial Intelligence: A Modern Approach. Pearson.</obo:IAO_0000119>
+        <rdfs:comment>Artificial Intelligence (AI) is a sub-discipline of Computer Science that focuses on creating systems capable of performing tasks that require human-like intelligence, such as learning, reasoning, and problem-solving.</rdfs:comment>
+        <rdfs:label xml:lang="en">artificial intelligence</rdfs:label>
+        <skos:example>Deep learning for image recognition, reinforcement learning in robotics, and natural language processing fall under Artificial Intelligence.</skos:example>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001064 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001064">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <skos:broader rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017"/>
+        <rdfs:comment>Theoretical Computer Science is a sub-discipline of Computer Science that focuses on mathematical models of computation, computational complexity, and algorithmic problem-solving</rdfs:comment>
+        <rdfs:label xml:lang="en">theoretical computer science</rdfs:label>
+        <skos:example>Studies on Turing machines, complexity classes (P vs NP), and formal languages belong to Theoretical Computer Science.</skos:example>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001065 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001065">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <skos:broader rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017"/>
+        <rdfs:comment>Software Engineering is a sub-discipline of Computer Science that applies engineering principles to the design, development, testing, and maintenance of software systems.</rdfs:comment>
+        <rdfs:label xml:lang="en">software engineering</rdfs:label>
+        <skos:example>Agile software development, DevOps practices, and software architecture design fall under Software Engineering.</skos:example>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001066 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001066">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <skos:broader rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017"/>
+        <obo:IAO_0000119>Provost, F., &amp; Fawcett, T. (2013). Data Science for Business. O&apos;Reilly Media.</obo:IAO_0000119>
+        <rdfs:comment>Data Science is a sub-discipline of Computer Science that integrates statistical methods, machine learning, and data processing techniques to extract insights and knowledge from structured and unstructured data.</rdfs:comment>
+        <rdfs:label xml:lang="en">data science</rdfs:label>
+        <skos:example>Predictive analytics, big data visualization, and recommendation systems are part of Data Science.</skos:example>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001067 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001067">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <skos:broader rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017"/>
+        <obo:IAO_0000119>Stallings, W. (2020). Network Security Essentials. Pearson.</obo:IAO_0000119>
+        <rdfs:comment>Cybersecurity is a sub-discipline of Computer Science that focuses on protecting computer systems, networks, and data from cyber threats, vulnerabilities, and unauthorized access.</rdfs:comment>
+        <rdfs:label xml:lang="en">cybersecurity</rdfs:label>
+        <skos:example>Encryption techniques, intrusion detection systems, and ethical hacking studies belong to Cybersecurity.</skos:example>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001070 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001070">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056"/>
+        <rdfs:comment>Active Status is a status specification that indicates an entity, process, or project is currently operational, ongoing, or in execution.</rdfs:comment>
+        <rdfs:label xml:lang="en">active status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001071 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001071">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056"/>
+        <rdfs:comment>Cancelled Status is a status specification that indicates an entity, process, or project has been terminated before reaching completion due to internal or external factors.</rdfs:comment>
+        <rdfs:label xml:lang="en">cancelled status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001072 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001072">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Doctor (PhD or equivalent academic doctorate)</rdfs:comment>
+        <rdfs:label xml:lang="en">Dr.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001073 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001073">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Doctor of Engineering (German doctorate in engineering).</rdfs:comment>
+        <rdfs:label xml:lang="en">Dr.-Ing.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001074 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001074">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056"/>
+        <rdfs:comment>Finished Status is a status specification that indicates an entity, process, or project has successfully reached its intended goal and is considered complete.</rdfs:comment>
+        <rdfs:label xml:lang="en">finished status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001075 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001075">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050"/>
+        <rdfs:comment>Hybrid Implementation is an event implementation specification that defines the organization of an event that integrates both physical (on-site) and virtual (online) participation modes</rdfs:comment>
+        <rdfs:label xml:lang="en">hybrid implementation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001076 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001076">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052"/>
+        <rdfs:comment>Internal Access is an information access specification that defines policies and mechanisms restricting access to information exclusively within an organization, institution, or research group.</rdfs:comment>
+        <rdfs:label xml:lang="en">internal access</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001077 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001077">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Master of Science (graduate degree in science/engineering).</rdfs:comment>
+        <rdfs:label xml:lang="en">M.Sc.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001078 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001078">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050"/>
+        <rdfs:comment>On-Site Implementation is an event implementation specification that defines the organization of an event that occurs exclusively at a physical location with in-person attendance.</rdfs:comment>
+        <rdfs:label xml:lang="en">on site implementation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001079 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001079">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050"/>
+        <rdfs:comment>Online Implementation is an event implementation specification that defines the organization of an event conducted entirely through virtual platforms, enabling remote participation via digital communication technologies.</rdfs:comment>
+        <rdfs:label xml:lang="en">online implementation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001080 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001080">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052"/>
+        <rdfs:comment>Open Access is an information access specification that defines policies allowing unrestricted public access to information resources, ensuring free availability without subscription or payment barriers.</rdfs:comment>
+        <rdfs:label xml:lang="en">open access</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001081 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001081">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051"/>
+        <rdfs:comment>Organizational Funding is a funding specification that defines the financial structures, budgets, and resource allocation strategies for sustaining the operations of an organization or institution.</rdfs:comment>
+        <rdfs:label xml:lang="en">organizational funding</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001082 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001082">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056"/>
+        <rdfs:comment>Paused Status is a status specification that indicates an entity, process, or project is temporarily halted but may resume at a later stage.</rdfs:comment>
+        <rdfs:label xml:lang="en">paused status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001083 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001083">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052"/>
+        <rdfs:comment>Paywall Access is an information access specification that defines policies requiring users to purchase, subscribe, or obtain institutional licenses to access digital or physical information resources.</rdfs:comment>
+        <rdfs:label xml:lang="en">paywall access</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001084 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001084">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Privatdozent (Dr. with habilitation, qualified to teach at a university)</rdfs:comment>
+        <rdfs:label xml:lang="en">PD. Dr.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001085 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001085">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Privatdozent with Habilitation (higher academic qualification in Germany)</rdfs:comment>
+        <rdfs:label xml:lang="en">PD. Dr. habil.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001086 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001086">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056"/>
+        <rdfs:comment>Planning Status is a status specification that indicates an entity, process, or project is in a preparatory or strategic development phase before execution.</rdfs:comment>
+        <rdfs:label xml:lang="en">planning status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001087 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001087">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Professor (academic title for a senior faculty member).</rdfs:comment>
+        <rdfs:label xml:lang="en">Prof.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001088 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001088">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Professor with a doctorate.</rdfs:comment>
+        <rdfs:label xml:lang="en">Prof. Dr.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001089 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001089">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment>Professor with a doctorate in engineering.</rdfs:comment>
+        <rdfs:label xml:lang="en">Prof. Dr.-Ing.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001090 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001090">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051"/>
+        <rdfs:comment>Project Funding is a funding specification that defines the financial mechanisms, grants, and investment strategies used to support specific research, development, or innovation projects.</rdfs:comment>
+        <rdfs:label xml:lang="en">project funding</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001091 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001091">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052"/>
+        <rdfs:comment>Restricted Access is an information access specification that defines policies limiting access to specific users, organizations, or groups based on predefined criteria such as confidentiality, security, or legal regulations.</rdfs:comment>
+        <rdfs:label xml:lang="en">restricted access</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001092 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001092">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001051"/>
+        <rdfs:comment>Self-Funding is a funding specification that defines the use of personal, internal, or independently generated financial resources to support activities, projects, or organizations without relying on external funding sources.</rdfs:comment>
+        <rdfs:label xml:lang="en">self funding</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001093 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001093">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001056"/>
+        <rdfs:comment>Test Phase Status is a status specification that indicates an entity, process, or project is undergoing testing, evaluation, or validation before finalization.</rdfs:comment>
+        <rdfs:label xml:lang="en">test phase status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001094 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001094">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001040"/>
+        <rdfs:comment xml:lang="en">Two Doctor degrees (PhD or equivalent academic doctorate)</rdfs:comment>
+        <rdfs:label xml:lang="en">Dr. Dr.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010001 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010001">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline focused on human culture, thought, and creativity, encompassing disciplines like literature, philosophy, and the arts.</rdfs:comment>
+        <rdfs:label xml:lang="en">humanity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010002 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010002">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline that studies society and human behavior through disciplines like sociology, psychology, and economics.</rdfs:comment>
+        <rdfs:label xml:lang="en">social science</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010004 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010004">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline that studies living organisms, their structures, functions, growth, and interactions with their environment. Biology explores the diversity of life, from microscopic organisms to complex ecosystems, and seeks to understand the underlying processes of life, evolution, and heredity.</rdfs:comment>
+        <rdfs:label xml:lang="en">biology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010005 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010005">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline that focuses on the science and practice of diagnosing, treating, and preventing illnesses and injuries. Medicine involves the study of human health, medical technologies, pharmaceuticals, and patient care to improve well-being and extend life.</rdfs:comment>
+        <rdfs:label xml:lang="en">medicine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010006 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010006">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline that focuses on the science, practice, and business of cultivating plants, raising animals, and producing food, fiber, and other products. Agriculture involves the study of soil management, crop production, livestock care, and sustainable farming practices to ensure food security and environmental sustainability.</rdfs:comment>
+        <rdfs:label xml:lang="en">agriculture</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010007 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010007">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment>An academic discipline that studies the natural world through observation, experimentation, and analysis. Natural science includes fields such as physics, chemistry, biology, and earth sciences, aiming to understand the laws and processes governing the universe and life on Earth.</rdfs:comment>
+        <rdfs:label xml:lang="en">natural science</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010008 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010008">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline that studies the composition, structure, properties, and reactions of matter. Chemistry focuses on understanding how substances interact, transform, and combine to form new materials, playing a crucial role in fields such as medicine, energy, and environmental science.</rdfs:comment>
+        <rdfs:label xml:lang="en">chemistry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010010 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010010">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline that explores the fundamental principles governing the behavior of matter, energy, and the forces of nature. Physics seeks to understand the laws of the universe, from subatomic particles to cosmic phenomena, through experimentation, observation, and mathematical modeling.</rdfs:comment>
+        <rdfs:label xml:lang="en">physics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010011 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010011">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment>An academic discipline that involves the study of numbers, quantities, shapes, and patterns, using abstract concepts and logical reasoning. Mathematics is fundamental to various fields, including science, engineering, economics, and technology, providing tools for problem-solving, analysis, and modeling.</rdfs:comment>
+        <rdfs:label xml:lang="en">mathematics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010012 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010012">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline that focuses on the study of the Earth’s structure, processes, and materials, including the atmosphere, oceans, and landforms. Geoscience encompasses fields such as geology, meteorology, and environmental science to understand Earth’s history, natural resources, and natural hazards.</rdfs:comment>
+        <rdfs:label xml:lang="en">geoscience</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010014 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010014">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline that focuses on the design, analysis, manufacturing, and maintenance of mechanical systems. Mechanical engineering applies principles of physics, materials science, and mathematics to develop machines, tools, and devices used in industries such as transportation, energy, and robotics.</rdfs:comment>
+        <rdfs:label xml:lang="en">mechanical engineering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010016 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010016">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline that explores the properties, performance, and applications of materials, focusing on the relationship between a material&apos;s structure and its characteristics. Materials science and engineering involves the design, development, and testing of materials for use in a wide range of industries, including aerospace, electronics, and manufacturing.</rdfs:comment>
+        <rdfs:label xml:lang="en">materials science</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010017">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline that focuses on the study of algorithms, data structures, programming, and computational systems. Computer science explores how to design, develop, and analyze software and hardware solutions to solve complex problems and advance technology.</rdfs:comment>
+        <rdfs:label xml:lang="en">computer science</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010018 -->
+
+    <owl:NamedIndividual rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010018">
+        <rdf:type rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100"/>
+        <rdfs:comment xml:lang="en">An academic discipline that focuses on the planning, design, and management of construction projects, including buildings, infrastructure, and other structures. Construction engineering integrates principles of civil engineering, project management, and materials science to ensure safety, efficiency, and sustainability in construction processes.</rdfs:comment>
+        <rdfs:label xml:lang="en">construction engineering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0020006 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020006">
@@ -7419,8 +8196,23 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000064">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000069"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000070"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000071"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000072"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000073"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000074"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000076"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000077"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000078"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000080"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000081"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000082"/>
         <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
-        <rdfs:label xml:lang="de">{110}</rdfs:label>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
+        <rdfs:label xml:lang="en">{110}</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7429,7 +8221,19 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000065">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000023"/>
-        <rdfs:label xml:lang="de">{111}</rdfs:label>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000095"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000096"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000097"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000098"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000099"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000100"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000101"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000102"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
+        <rdfs:label xml:lang="en">{111}</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7438,6 +8242,16 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000066">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000112"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000113"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000114"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000115"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000116"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000117"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">&lt;100&gt;</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7447,6 +8261,22 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000067">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000083"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000084"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000085"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000086"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000087"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000088"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000089"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000090"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000091"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000092"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000093"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000094"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">&lt;110&gt;</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7456,6 +8286,18 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000068">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000104"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000105"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000106"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000107"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000108"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000109"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000110"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000111"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">&lt;111&gt;</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7465,6 +8307,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000069">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">(110)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7474,6 +8320,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000070">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">(-110)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7483,6 +8333,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000071">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">(1-10)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7492,6 +8346,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000072">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">(-1-10)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7501,6 +8359,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000073">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">(101)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7510,6 +8372,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000074">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">(-101)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7519,6 +8385,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000076">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">(10-1)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7528,6 +8398,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000077">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">(-10-1)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7537,6 +8411,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000078">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">(011)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7546,6 +8424,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000080">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">(0-11)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7555,6 +8437,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000081">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">(01-1)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7564,6 +8450,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000082">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">(0-1-1)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7573,6 +8463,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000083">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">[110]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7582,6 +8476,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000084">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">[-110]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7591,6 +8489,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000085">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">[1-10]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7600,6 +8502,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000086">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">[-1-10]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7609,6 +8515,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000087">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">[101]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7618,6 +8528,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000088">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">[-101]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7627,6 +8541,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000089">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">[10-1]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7636,6 +8554,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000090">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">[-10-1]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7645,6 +8567,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000091">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">[011]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7654,6 +8580,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000092">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">[0-11]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7663,6 +8593,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000093">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">[01-1]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7672,6 +8606,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000094">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">[0-1-1]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7681,6 +8619,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000095">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">(111)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7690,6 +8632,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000096">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">(-111)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7699,6 +8645,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000097">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">(1-11)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7708,6 +8658,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000098">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">(11-1)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7717,6 +8671,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000099">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">(-1-11)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7726,6 +8684,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000100">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">(-11-1)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7735,6 +8697,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000101">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">(1-1-1)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7744,6 +8710,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000102">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">(-1-1-1)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7753,6 +8723,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000104">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">[111]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7762,6 +8736,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000105">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">[-111]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7771,6 +8749,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000106">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">[1-11]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7780,6 +8762,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000107">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">[11-1]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7789,6 +8775,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000108">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">[-1-11]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7798,6 +8788,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000109">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">[-11-1]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7807,6 +8801,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000110">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">[1-1-1]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7816,6 +8814,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000111">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">[-1-1-1]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7825,6 +8827,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000112">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">[100]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7834,6 +8840,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000113">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">[-100]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7843,6 +8853,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000114">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">[010]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7852,6 +8866,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000115">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
         <rdfs:label xml:lang="de">[0-10]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7861,6 +8879,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000116">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
         <rdfs:label xml:lang="de">[001]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7870,6 +8892,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000117">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
+        <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
+        <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
         <rdfs:label xml:lang="de">[00-1]</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7879,6 +8905,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000125">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
@@ -7891,6 +8918,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000126">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
@@ -7903,6 +8931,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000127">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
@@ -7928,6 +8957,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000130">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
@@ -7940,6 +8970,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
