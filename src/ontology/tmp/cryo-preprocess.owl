@@ -24,6 +24,8 @@ Declaration(Class(<https://w3id.org/pmd/CRYO_0000000>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000038>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000047>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000048>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000103>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000118>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -68,11 +70,24 @@ ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000011> <https://w3id.org/pmd/cr
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000047> "some plane"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000011> <https://w3id.org/pmd/cryo/CRYO_0000047>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/cryo/CRYO_0000047> <https://w3id.org/pmd/cryo/CRYO_0000103>)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000235> <https://w3id.org/pmd/cryo/CRYO_0000047> <https://w3id.org/pmd/cryo/CRYO_0000128>)
 
 # Individual: <https://w3id.org/pmd/cryo/CRYO_0000048> (tetragonal {100} equivalence)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000048> "tetragonal {100} equivalence"@en)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000103> (cubic lattice)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000103> "cubic lattice"@de)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000001> <https://w3id.org/pmd/cryo/CRYO_0000103>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0000086> <https://w3id.org/pmd/cryo/CRYO_0000103> <https://w3id.org/pmd/cryo/CRYO_0000118>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000118> (cubic system)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000118> "cubic system"@de)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000026> <https://w3id.org/pmd/cryo/CRYO_0000118>)
+ObjectPropertyAssertion(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000118> <https://w3id.org/pmd/cryo/CRYO_0000035>)
 
 
 )
