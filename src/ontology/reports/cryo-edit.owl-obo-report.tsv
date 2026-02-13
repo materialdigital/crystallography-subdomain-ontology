@@ -1,4 +1,17 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	e804a6c0-b4f7-46e1-9f41-718b47c30fa1genid609
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	e804a6c0-b4f7-46e1-9f41-718b47c30fa1genid605
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	e804a6c0-b4f7-46e1-9f41-718b47c30fa1genid615
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	e804a6c0-b4f7-46e1-9f41-718b47c30fa1genid632
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	information content entity
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	tetragonal equivalency assertion
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	cubic equivalency assertion
+ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	e804a6c0-b4f7-46e1-9f41-718b47c30fa1genid637
+ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
+ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	e804a6c0-b4f7-46e1-9f41-718b47c30fa1genid633
+ERROR	deprecated_property_reference	symmetry equivalency assertion	under symmetry	blank node
+ERROR	deprecated_property_reference	Miller indices family of	owl:inverseOf	has Miller indices family
 WARN	missing_definition	unit cell	IAO:0000115	
 WARN	missing_definition	crystal lattice	IAO:0000115	
 WARN	missing_definition	lattice parameter	IAO:0000115	
@@ -29,15 +42,31 @@ WARN	missing_definition	crystal system	IAO:0000115
 WARN	missing_definition	lattice centering	IAO:0000115	
 WARN	missing_definition	crystal system value	IAO:0000115	
 WARN	missing_definition	lattice centering value	IAO:0000115	
+WARN	missing_definition	under symmetry	IAO:0000115	
 WARN	missing_definition	grain orientation	IAO:0000115	
+WARN	missing_definition	is tetragonal	IAO:0000115	
+WARN	missing_definition	denoted by family under tetragonal symmetry	IAO:0000115	
+WARN	missing_definition	has symmetry	IAO:0000115	
+WARN	missing_definition	is triclinic	IAO:0000115	
+WARN	missing_definition	is monoclinic	IAO:0000115	
+WARN	missing_definition	is orthorhombic	IAO:0000115	
+WARN	missing_definition	is rhombohedral	IAO:0000115	
+WARN	missing_definition	is hexagonal	IAO:0000115	
+WARN	missing_definition	denoted by family under triclinic symmetry	IAO:0000115	
+WARN	missing_definition	denoted by family under monoclinic symmetry	IAO:0000115	
+WARN	missing_definition	denoted by family under orthorhombic symmetry	IAO:0000115	
+WARN	missing_definition	denoted by family under rhombohedral symmetry	IAO:0000115	
+WARN	missing_definition	denoted by family under hexagonal symmetry	IAO:0000115	
 WARN	missing_definition	Euler angles	IAO:0000115	
 WARN	missing_definition	Bunge Euler angles	IAO:0000115	
-WARN	missing_definition	symmetry equivalency assertion	IAO:0000115	
-WARN	missing_definition	cubic equivalency assertion	IAO:0000115	
-WARN	missing_definition	has Miller indices family	IAO:0000115	
-WARN	missing_definition	Miller indices family of	IAO:0000115	
-WARN	missing_definition	under symmetry	IAO:0000115	
-WARN	missing_definition	has Miller indices family under cubic symmetry	IAO:0000115	
 WARN	missing_definition	denoted by family	IAO:0000115	
 WARN	missing_definition	denoted by family under cubic symmetry	IAO:0000115	
 WARN	missing_definition	is cubic	IAO:0000115	
+WARN	missing_obsolete_label	tetragonal equivalency assertion	rdfs:label	tetragonal equivalency assertion@en
+WARN	missing_obsolete_label	has Miller indices family under tetragonal symmetry	rdfs:label	has Miller indices family under tetragonal symmetry@en
+WARN	missing_obsolete_label	symmetry equivalency assertion	rdfs:label	symmetry equivalency assertion@en
+WARN	missing_obsolete_label	cubic equivalency assertion	rdfs:label	cubic equivalency assertion@en
+WARN	missing_obsolete_label	has Miller indices family	rdfs:label	has Miller indices family@en
+WARN	missing_obsolete_label	Miller indices family of	rdfs:label	Miller indices family of@en
+WARN	missing_obsolete_label	under symmetry	rdfs:label	under symmetry@en
+WARN	missing_obsolete_label	has Miller indices family under cubic symmetry	rdfs:label	has Miller indices family under cubic symmetry@en
