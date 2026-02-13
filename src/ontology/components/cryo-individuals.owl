@@ -130,6 +130,15 @@
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000039 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000039">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(100) tetragonal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000040 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000040">
@@ -137,7 +146,16 @@
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
-        <rdfs:label xml:lang="en">{100}</rdfs:label>
+        <rdfs:label xml:lang="en">{100} cubic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000041 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000041">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+        <rdfs:label xml:lang="de">{100} tetragonal</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -146,10 +164,10 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000125">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
-        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
-        <rdfs:label xml:lang="en">(100)</rdfs:label>
+        <rdfs:label xml:lang="en">(100) cubic</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -161,7 +179,7 @@
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
-        <rdfs:label xml:lang="en">(010)</rdfs:label>
+        <rdfs:label xml:lang="en">(010) cubic</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -173,7 +191,7 @@
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
-        <rdfs:label xml:lang="en">(001)</rdfs:label>
+        <rdfs:label xml:lang="en">(001) cubic</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -185,7 +203,7 @@
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
-        <rdfs:label xml:lang="en">(-100)</rdfs:label>
+        <rdfs:label xml:lang="en">(-100) cubic</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -197,19 +215,19 @@
         <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
         <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
         <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000019>
-        <rdfs:label xml:lang="en">(00-1)</rdfs:label>
+        <rdfs:label xml:lang="en">(00-1) cubic</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000135 -->
+    <!-- https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000135">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
-        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000017>
-        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000018>
-        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</cryo:CRYO_0000019>
-        <rdfs:label xml:lang="en">(101)</rdfs:label>
+        <cryo:CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000017>
+        <cryo:CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</cryo:CRYO_0000018>
+        <cryo:CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</cryo:CRYO_0000019>
+        <rdfs:label xml:lang="de">(0-10) cubic</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

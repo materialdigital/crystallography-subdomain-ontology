@@ -31,13 +31,10 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0025004 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000037 -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0025004">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
-        <rdfs:label xml:lang="en">has symmetry</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037">
+        <rdfs:label xml:lang="de">under  symmetry</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -45,12 +42,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000050 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000050">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0025004"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000050"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
-        </owl:propertyChainAxiom>
-        <rdfs:label xml:lang="en">under tetragonal symmetry</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
+        <rdfs:label xml:lang="en">is tetragonal</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -61,9 +54,13 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
             <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000050"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000050"/>
         </owl:propertyChainAxiom>
         <rdfs:comment>&apos;denoted by&apos; o &apos;member of&apos; o &apos;has Miller indices family under tetragonal symmetry&apos;</rdfs:comment>
         <rdfs:label xml:lang="en">denoted by family under tetragonal symmetry</rdfs:label>
@@ -81,6 +78,106 @@
         </owl:propertyChainAxiom>
         <rdfs:label xml:lang="en">has Miller indices family under tetragonal symmetry</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000053">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
+        <rdfs:label xml:lang="de">has symmetry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000054">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
+        <rdfs:label xml:lang="de">is triclinic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000055">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
+        <rdfs:label xml:lang="de">is monoclinic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000056">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
+        <rdfs:label xml:lang="de">is orthorhombic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000057">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
+        <rdfs:label xml:lang="de">is rhombohedral</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000058 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000058">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
+        <rdfs:label xml:lang="de">is hexagonal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000059 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000059">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <rdfs:label xml:lang="en">denoted by family under triclinic symmetry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000060 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000060">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <rdfs:label xml:lang="de">denoted by family under monoclinic symmetry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000061 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000061">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <rdfs:label xml:lang="de">denoted by family under orthorhombic symmetry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000062 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000062">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <rdfs:label xml:lang="de">denoted by family under rhombohedral symmetry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000063 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000063">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <rdfs:label xml:lang="de">denoted by family under hexagonal symmetry</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -164,6 +261,10 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+        </owl:propertyChainAxiom>
         <rdfs:label xml:lang="en">denoted by family</rdfs:label>
     </owl:ObjectProperty>
     
@@ -175,11 +276,16 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
             <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170"/>
         </owl:propertyChainAxiom>
         <rdfs:comment>&apos;denoted by&apos; o &apos;member of&apos; o &apos;has Miller indices family under cubic symmetry&apos;</rdfs:comment>
+        <rdfs:comment>&apos;denoted by&apos; o &apos;under cubic symmetry&apos; o &apos;member of&apos; o &apos;under cubic symmetry&apos;</rdfs:comment>
         <rdfs:label xml:lang="en">denoted by family under cubic symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -188,12 +294,8 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000170 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0025004"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
-        </owl:propertyChainAxiom>
-        <rdfs:label xml:lang="en">under cubic symmetry</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
+        <rdfs:label xml:lang="en">is cubic</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -349,8 +451,9 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000501"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0025004"/>
-                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -593,6 +696,12 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">crystal system value</rdfs:label>
         <skos:definition xml:lang="en">crystal system value is a categorical value specification which describes the grouping of
 crystal structures according to the axial system used to describe their lattice It is a set of three axes in a particular geometrical arrangement: triclinic, monoclinic, orthorhombic, tetragonal, rhombohedral (trigonal), hexagonal, and cubic (isometric).</skos:definition>
@@ -904,6 +1013,27 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <skos:altLabel>C</skos:altLabel>
         <skos:definition xml:lang="en">Base centered centering type is a centering type, where lattice points are located on the corners of a unit cell, i.e., at coordinates (0,0,0), and one additional lattice point is located at the center of a base of the cell, i.e., at coordinates (1/2,1/2,0).</skos:definition>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000024"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 

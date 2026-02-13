@@ -25,6 +25,26 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000037 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037">
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -83,6 +103,30 @@
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000032 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000032">
+        <cryo:CRYO_0000050 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000032"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000035 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000035">
+        <cryo:CRYO_0000170 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000039 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000039">
+        <cryo:CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000032"/>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000040 -->
 
     <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000040">
@@ -91,7 +135,25 @@
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000127"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000128"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000130"/>
-        <cryo:CRYO_0000170 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000040"/>
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000"/>
+        <cryo:CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000041 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000041">
+        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000039"/>
+        <cryo:CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000032"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000128 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000128">
+        <cryo:CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
     </rdf:Description>
 </rdf:RDF>
 
