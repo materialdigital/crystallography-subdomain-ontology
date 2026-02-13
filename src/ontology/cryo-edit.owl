@@ -63,7 +63,6 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/CRYO_0000000> "root node"@e
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000038> "some other plane"@de)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000011> <https://w3id.org/pmd/cryo/CRYO_0000038>)
-ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000235> <https://w3id.org/pmd/cryo/CRYO_0000038> <https://w3id.org/pmd/cryo/CRYO_0000039>)
 
 # Individual: <https://w3id.org/pmd/cryo/CRYO_0000047> (some plane)
 

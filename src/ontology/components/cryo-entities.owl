@@ -141,6 +141,16 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000059">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000054"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+        </owl:propertyChainAxiom>
         <rdfs:label xml:lang="en">denoted by family under triclinic symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -150,6 +160,16 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000060">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000055"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+        </owl:propertyChainAxiom>
         <rdfs:label xml:lang="de">denoted by family under monoclinic symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -159,6 +179,16 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000061">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000056"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+        </owl:propertyChainAxiom>
         <rdfs:label xml:lang="de">denoted by family under orthorhombic symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -168,6 +198,16 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000062">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000057"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+        </owl:propertyChainAxiom>
         <rdfs:label xml:lang="de">denoted by family under rhombohedral symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -177,6 +217,16 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000063">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000058"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+        </owl:propertyChainAxiom>
         <rdfs:label xml:lang="de">denoted by family under hexagonal symmetry</rdfs:label>
     </owl:ObjectProperty>
     

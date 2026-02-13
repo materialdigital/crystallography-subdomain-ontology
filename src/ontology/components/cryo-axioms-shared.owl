@@ -103,6 +103,30 @@
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000029 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000029">
+        <cryo:CRYO_0000054 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000029"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000030 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000030">
+        <cryo:CRYO_0000055 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000030"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000031 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000031">
+        <cryo:CRYO_0000056 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000031"/>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000032 -->
 
     <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000032">
@@ -111,18 +135,26 @@
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000035 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000033 -->
 
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000035">
-        <cryo:CRYO_0000170 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000033">
+        <cryo:CRYO_0000057 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000033"/>
     </rdf:Description>
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000039 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000034 -->
 
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000039">
-        <cryo:CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000032"/>
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000034">
+        <cryo:CRYO_0000058 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000034"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000035 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000035">
+        <cryo:CRYO_0000170 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
     </rdf:Description>
     
 
@@ -141,11 +173,10 @@
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000041 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000064 -->
 
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000041">
-        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000039"/>
-        <cryo:CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000032"/>
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000064">
+        <cryo:CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
     </rdf:Description>
     
 
