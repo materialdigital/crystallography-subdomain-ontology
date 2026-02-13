@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/cryo/imports/pmdco_import.owl>
-<https://w3id.org/pmd/cryo/releases/2026-02-12/imports/pmdco_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-02-10/pmdco.ttl>)
-Annotation(owl:versionInfo "2026-02-12")
+<https://w3id.org/pmd/cryo/releases/2026-02-13/imports/pmdco_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/releases/2026-02-13/pmdco.ttl>)
+Annotation(owl:versionInfo "2026-02-13")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -993,7 +993,7 @@ ObjectPropertyRange(<https://w3id.org/pmd/co/PMD_0000009> <https://w3id.org/pmd/
 # Object Property: <https://w3id.org/pmd/co/PMD_0000069> (has state)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000069> "has state"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000069> "relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000069> "relates an anchor continuant to a temporally qualified continuant that represents a specific temporal phase of its existence."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0001032> <https://w3id.org/pmd/co/PMD_0000069> "https://github.com/materialdigital/core-ontology/issues/185")
 InverseObjectProperties(<https://w3id.org/pmd/co/PMD_0000069> <https://w3id.org/pmd/co/PMD_0000070>)
 InverseFunctionalObjectProperty(<https://w3id.org/pmd/co/PMD_0000069>)
@@ -1003,7 +1003,7 @@ ObjectPropertyRange(<https://w3id.org/pmd/co/PMD_0000069> <https://w3id.org/pmd/
 # Object Property: <https://w3id.org/pmd/co/PMD_0000070> (is state of)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000070> "is state of"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000070> "relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000070> "relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of"@en)
 FunctionalObjectProperty(<https://w3id.org/pmd/co/PMD_0000070>)
 
 # Object Property: <https://w3id.org/pmd/co/PMD_0000077> (specified by value)
@@ -1037,7 +1037,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025998> "has relational quality"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025998> "a relation between an independent continuant (the bearer) and a relational quality, in which the quality specifically depends on the bearer for its existence"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025998> "material has relational quality mass proportion m, and portion of iron has the same relational quality mass proportion m"@en)
-SubObjectPropertyOf(<https://w3id.org/pmd/co/PMD_0025998> owl:topObjectProperty)
 InverseObjectProperties(<https://w3id.org/pmd/co/PMD_0025998> <https://w3id.org/pmd/co/PMD_0025999>)
 ObjectPropertyDomain(<https://w3id.org/pmd/co/PMD_0025998> <http://purl.obolibrary.org/obo/BFO_0000004>)
 ObjectPropertyRange(<https://w3id.org/pmd/co/PMD_0025998> <http://purl.obolibrary.org/obo/BFO_0000145>)
@@ -1049,7 +1048,6 @@ RO's 'quality of' is functional i.e., a->b, a->c => b=c. The functionality is re
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025999> "relational quality of"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025999> "a relation between a relational quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025999> "mass proportion m is relational qualitiy of material, and the same mass proportion m is relational qualitiy of portion of iron"@en)
-SubObjectPropertyOf(<https://w3id.org/pmd/co/PMD_0025999> owl:topObjectProperty)
 
 
 ############################
@@ -3240,7 +3238,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0025012> <https://w3id.org/pmd/co/PMD_00
 
 # Class: <https://w3id.org/pmd/co/PMD_0025015> (portion of lanthanum)
 
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0025015> "'portion of pure chemical element' and 'has part' only CHEBI:33336")
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0025015> "'portion of pure chemical element' and 'has part' only CHEBI:33336"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025015> "portion of lanthanum"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025015> "A portion of lanthanum is a portion of pure substance that has parts only chebi:lanthanum atom."@en)
 EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025015> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_33336>)))
@@ -3260,7 +3258,7 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0025997> ObjectAllValuesFrom(<http://pur
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0040001> "Length is a size that describes the spatial extent of its bearer in one dimension."@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0040001> "length"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0040001> "dimension"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0040001> "Length is a one dimensional size.")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0040001> "Length is a one dimensional size."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0040001> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0040001> <https://w3id.org/pmd/co/PMD_0020132>)
 
@@ -3307,9 +3305,9 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0050157> <https://w3id.org/pmd/co/PMD_00
 #   Named Individuals
 ############################
 
-# Individual: <https://w3id.org/pmd/co/PMD_0020006> (bravais lattice triclinic primitve)
+# Individual: <https://w3id.org/pmd/co/PMD_0020006> (bravais lattice triclinic primitive)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020006> "bravais lattice triclinic primitve"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020006> "bravais lattice triclinic primitive"@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020006> "true"^^xsd:boolean)
 
 # Individual: <https://w3id.org/pmd/co/PMD_0020007> (bravais lattice monoclinic primitive)

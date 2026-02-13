@@ -21,6 +21,9 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x")
 
 Declaration(Class(<https://w3id.org/pmd/CRYO_0000000>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000038>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000047>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000048>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -42,6 +45,7 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
+
 ############################
 #   Classes
 ############################
@@ -49,6 +53,27 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 # Class: <https://w3id.org/pmd/CRYO_0000000> (root node)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/CRYO_0000000> "root node"@en)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000038> (some other plane)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000038> "some other plane"@de)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000011> <https://w3id.org/pmd/cryo/CRYO_0000038>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000235> <https://w3id.org/pmd/cryo/CRYO_0000038> <https://w3id.org/pmd/cryo/CRYO_0000039>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000047> (some plane)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000047> "some plane"@en)
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000011> <https://w3id.org/pmd/cryo/CRYO_0000047>)
+ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000235> <https://w3id.org/pmd/cryo/CRYO_0000047> <https://w3id.org/pmd/cryo/CRYO_0000128>)
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000048> (tetragonal {100} equivalence)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000048> "tetragonal {100} equivalence"@en)
 
 
 )

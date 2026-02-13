@@ -16,7 +16,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/pmdco.ttl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/co/releases/2026-02-10/pmdco.ttl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/co/releases/2026-02-13/pmdco.ttl"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-6772-1943"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0001-7192-7143"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-1058-3102"/>
@@ -43,7 +43,7 @@ Documentation: https://materialdigital.github.io/core-ontology/docs/</dcterms:de
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>PMD Core Ontology</dcterms:title>
         <doap:repository rdf:resource="https://github.com/materialdigital/core-ontology"/>
-        <owl:versionInfo>2026-02-10</owl:versionInfo>
+        <owl:versionInfo>2026-02-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -273,7 +273,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- https://w3id.org/pmd/co/PMD_0000064 -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0000064">
-        <rdfs:comment>An editor note referring to a pattern which shows the usage of this class or property.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An editor note referring to a pattern which shows the usage of this class or property.</rdfs:comment>
         <rdfs:label xml:lang="en">pattern example</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
     </owl:AnnotationProperty>
@@ -1505,7 +1505,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/pmd/co/PMD_0000068"/>
         <rdfs:label xml:lang="en">has state</rdfs:label>
-        <skos:definition xml:lang="en">relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of</skos:definition>
+        <skos:definition xml:lang="en">relates an anchor continuant to a temporally qualified continuant that represents a specific temporal phase of its existence.</skos:definition>
         <pmd:PMD_0001032>https://github.com/materialdigital/core-ontology/issues/185</pmd:PMD_0001032>
     </owl:ObjectProperty>
     
@@ -1516,7 +1516,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000070">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en">is state of</rdfs:label>
-        <skos:definition>relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of</skos:definition>
+        <skos:definition xml:lang="en">relates a temporally qualified continuant to the unique anchor continuant that it is a temporal phase of</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -1557,10 +1557,9 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- https://w3id.org/pmd/co/PMD_0001029 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0001029">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:label xml:lang="en">responds with</rdfs:label>
-        <skos:definition>The realizable entity must be &quot;stimulated&quot; by some Stimulus in order to respond with the Response. The bearer of the realizable entity must participate in Stimulation as well as in Response.</skos:definition>
+        <skos:definition xml:lang="en">The realizable entity must be &quot;stimulated&quot; by some Stimulus in order to respond with the Response. The bearer of the realizable entity must participate in Stimulation as well as in Response.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -1568,7 +1567,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- https://w3id.org/pmd/co/PMD_0020020 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0020020">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -1642,7 +1640,6 @@ An example of such case can be &quot;Temperature of during the annealing process
     <!-- https://w3id.org/pmd/co/PMD_0025998 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0025998">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/pmd/co/PMD_0025999"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
@@ -1660,7 +1657,6 @@ An example of such case can be &quot;Temperature of during the annealing process
     <!-- https://w3id.org/pmd/co/PMD_0025999 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0025999">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0025999"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5466,7 +5462,7 @@ https://github.com/pyiron/semantikon/pull/278</pmd:PMD_0001032>
         <rdfs:label xml:lang="de">Kalibrierungsgeräterolle</rdfs:label>
         <rdfs:label xml:lang="en">calibration device role</rdfs:label>
         <skos:definition xml:lang="en">Role of a device that is used for calibration of itself or another device, which has the &quot;Subject Of Calibration Role&quot;. The role is realized in a calibration process.</skos:definition>
-        <skos:definition xml:lang="de">Rolle eines Geräts, das zum Kalibirieren sich selbst oder eines anderen Gerätes, das die &quot;Subject Of Calibration Role&quot; inne hat, verwendet wird. Die Rolle wird in einem Kalibrierungsprozess realisiert.</skos:definition>
+        <skos:definition xml:lang="de">Rolle eines Geräts, das zum Kalibrieren sich selbst oder eines anderen Gerätes, das die &quot;Subject Of Calibration Role&quot; inne hat, verwendet wird. Die Rolle wird in einem Kalibrierungsprozess realisiert.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -6602,7 +6598,7 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
         <rdfs:label xml:lang="en">empirical potential molecular dynamics simulation</rdfs:label>
         <skos:definition xml:lang="en">A simulation process that uses empirical potentials derived from experimental data to model the behavior of molecular systems.</skos:definition>
         <skos:definition xml:lang="de">Ein Simulationsprozess, der empirische Potentiale verwendet, die aus experimentellen Daten abgeleitet sind, um das Verhalten molekularer Systeme zu modellieren.</skos:definition>
-        <skos:example>Simulating the diffusion of atoms in a crystal using Lennard-Jones potentials.</skos:example>
+        <skos:example xml:lang="en">Simulating the diffusion of atoms in a crystal using Lennard-Jones potentials.</skos:example>
     </owl:Class>
     
 
@@ -7246,8 +7242,8 @@ Ein Rechenknoten kann virtuell (bspw. ein Container oder eine virtuelle Maschine
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000778">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000833"/>
-        <obo:IAO_0000112>Mixing two fluids. Adding salt into water. Injecting a mouse with PBS.</obo:IAO_0000112>
-        <rdfs:label>material combination</rdfs:label>
+        <obo:IAO_0000112 xml:lang="en">Mixing two fluids. Adding salt into water. Injecting a mouse with PBS.</obo:IAO_0000112>
+        <rdfs:label xml:lang="en">material combination</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <skos:definition xml:lang="en">A material processing with the objective to combine two or more material entities as input into a single material entity as output.</skos:definition>
     </owl:Class>
@@ -8331,7 +8327,7 @@ A manufacturing process is always a transformative process.</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000870">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:label xml:lang="en">occurrence of electic field</rdfs:label>
+        <rdfs:label xml:lang="en">occurrence of electric field</rdfs:label>
         <skos:definition xml:lang="en">The occurrence of (an) electric field is a process describing the presence or generation of an electric field in a material or system.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
@@ -8365,10 +8361,10 @@ A manufacturing process is always a transformative process.</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000875">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000856"/>
-        <rdfs:label xml:lang="de">Ein Mikroskopieverfahren, das sichtbares Licht und Linsen verwendet, um eine Probe zu vergrößern und abzubilden, und weit verbreitet zur Untersuchung der Mikrostruktur und Morphologie von Materialien ist.</rdfs:label>
         <rdfs:label xml:lang="de">Optische Mikroskopie</rdfs:label>
         <rdfs:label xml:lang="en">optical microscopy</rdfs:label>
         <skos:definition xml:lang="en">A microscopy process that uses visible light and lenses to magnify and image a specimen, widely used for examining the microstructure and morphology of materials.</skos:definition>
+        <skos:definition xml:lang="de">Ein Mikroskopieverfahren, das sichtbares Licht und Linsen verwendet, um eine Probe zu vergrößern und abzubilden, und weit verbreitet zur Untersuchung der Mikrostruktur und Morphologie von Materialien ist.</skos:definition>
         <skos:example xml:lang="en">An example is Light Microscopy.</skos:example>
     </owl:Class>
     
@@ -9416,8 +9412,8 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000964">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000821"/>
-        <rdfs:label xml:lang="de">supervised learning</rdfs:label>
-        <rdfs:label>supervised machine learning</rdfs:label>
+        <rdfs:label xml:lang="de">supervised machine learning</rdfs:label>
+        <rdfs:label xml:lang="en">supervised machine learning</rdfs:label>
         <skos:definition xml:lang="en">A machine learning process that learns a function mapping from input data to labeled output data.</skos:definition>
         <skos:definition xml:lang="de">Ein Maschinelles Lernen Prozess, der eine Funktion erlernt, die Eingabedaten auf beschriftete Ausgabedaten abbildet.</skos:definition>
         <skos:example xml:lang="en">Training a model to predict the tensile strength of a material based on its composition and manufacturing process parameters. This involves using a dataset where the tensile strength is already known (labeled data) to train the model.</skos:example>
@@ -9850,7 +9846,7 @@ NOTE: The wording used in EN 10021 was generalized.</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0001003">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000821"/>
-        <rdfs:label xml:lang="de">Unsupervised Learning</rdfs:label>
+        <rdfs:label xml:lang="de">unsupervised machine learning</rdfs:label>
         <rdfs:label xml:lang="en">unsupervised machine learning</rdfs:label>
         <skos:definition xml:lang="en">A machine learning process that identifies patterns and relationships in data without using labeled outcomes.</skos:definition>
         <skos:definition xml:lang="de">Ein Maschinelles Lernen Prozess, der Muster und Zusammenhänge in Daten identifiziert, ohne beschriftete Ergebnisse zu verwenden.</skos:definition>
@@ -13292,7 +13288,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020140"/>
-        <rdfs:comment>&apos;portion of pure chemical element&apos; and &apos;has part&apos; only CHEBI:33336</rdfs:comment>
+        <rdfs:comment xml:lang="en">&apos;portion of pure chemical element&apos; and &apos;has part&apos; only CHEBI:33336</rdfs:comment>
         <rdfs:label xml:lang="en">portion of lanthanum</rdfs:label>
         <skos:definition xml:lang="en">A portion of lanthanum is a portion of pure substance that has parts only chebi:lanthanum atom.</skos:definition>
     </owl:Class>
@@ -13422,7 +13418,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
         <rdfs:comment xml:lang="en">Length is a size that describes the spatial extent of its bearer in one dimension.</rdfs:comment>
         <rdfs:label xml:lang="en">length</rdfs:label>
         <skos:altLabel xml:lang="en">dimension</skos:altLabel>
-        <skos:definition>Length is a one dimensional size.</skos:definition>
+        <skos:definition xml:lang="en">Length is a one dimensional size.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -15232,7 +15228,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0060006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <rdfs:label xml:lang="en">device specification</rdfs:label>
-        <skos:definition>A directive information entity that outlines the technical requirements, features, constraints, and performance criteria of a specific device, guiding its design, manufacturing, operation, or maintenance.</skos:definition>
+        <skos:definition xml:lang="en">A directive information entity that outlines the technical requirements, features, constraints, and performance criteria of a specific device, guiding its design, manufacturing, operation, or maintenance.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -15243,7 +15239,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0060007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <rdfs:label xml:lang="en">material specification</rdfs:label>
-        <skos:definition>A directive information entity that defines the composition, properties, performance criteria, and acceptable standards for a material, guiding its selection, processing, and application in a specific context.</skos:definition>
+        <skos:definition xml:lang="en">A directive information entity that defines the composition, properties, performance criteria, and acceptable standards for a material, guiding its selection, processing, and application in a specific context.</skos:definition>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:Class>
     
@@ -15254,7 +15250,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0060008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <rdfs:label xml:lang="en">recipe</rdfs:label>
-        <skos:definition>A plan specification that outlines the ingredients, proportions, and procedural steps required to prepare a specific product, typically in cooking, manufacturing, or chemical processes.</skos:definition>
+        <skos:definition xml:lang="en">A plan specification that outlines the ingredients, proportions, and procedural steps required to prepare a specific product, typically in cooking, manufacturing, or chemical processes.</skos:definition>
     </owl:Class>
     
 
@@ -15523,7 +15519,7 @@ The phase boundary between Fe3C and Fe of a pearlite lamellae.</skos:example>
     <!-- https://w3id.org/pmd/co/PMD_0020006 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/co/PMD_0020006">
-        <rdfs:label xml:lang="en">bravais lattice triclinic primitve</rdfs:label>
+        <rdfs:label xml:lang="en">bravais lattice triclinic primitive</rdfs:label>
         <pmd:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pmd:PMD_0000060>
     </owl:NamedIndividual>
     
