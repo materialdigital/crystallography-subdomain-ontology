@@ -5037,27 +5037,17 @@ cryo:CRYO_0000025 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/cryo/CRYO_0000026
 cryo:CRYO_0000026 rdf:type owl:Class ;
                   rdfs:subClassOf co:PMD_0020131 ,
-                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:RO_0000080 ;
-                                                           owl:someValuesFrom cryo:CRYO_0000001
-                                                         ]
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty co:PMD_0000077 ;
-                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                           owl:onClass cryo:CRYO_0000028
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:RO_0000080 ;
-                                    owl:someValuesFrom cryo:CRYO_0000001
-                                  ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty co:PMD_0000077 ;
                                     owl:someValuesFrom cryo:CRYO_0000028
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty co:PMD_0000077 ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass cryo:CRYO_0000028
                                   ] ;
-                  rdfs:comment "defintion from Introduction to Textur Analysis. TODO: add proper annnotation property"@en ;
+                  rdfs:comment "('quality of' some 'crystal lattice') potentially crystal system is a quality of a crystal lattice. But then we need the connection between crystal lattice, grains, etc. and its complicated" ,
+                               "defintion from Introduction to Textur Analysis. TODO: add proper annnotation property"@en ;
                   rdfs:label "crystal system"@en ;
                   skos:altLabel "lattice type"@en ;
                   skos:definition "Crystal system is a intensive quality of a crystal lattice which describes the arrangement of lattice points in an infinite 3D space in such way that each lattice point has an identical environment to that around every other lattice point. It is specified by one of the 7 crystaa sytem value."@en .

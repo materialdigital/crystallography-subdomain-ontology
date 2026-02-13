@@ -3954,12 +3954,13 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000025> ObjectSomeValuesFrom(<http:/
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000026> (crystal system)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000026> "('quality of' some 'crystal lattice') potentially crystal system is a quality of a crystal lattice. But then we need the connection between crystal lattice, grains, etc. and its complicated")
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000026> "defintion from Introduction to Textur Analysis. TODO: add proper annnotation property"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000026> "crystal system"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/cryo/CRYO_0000026> "lattice type"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000026> "Crystal system is a intensive quality of a crystal lattice which describes the arrangement of lattice points in an infinite 3D space in such way that each lattice point has an identical environment to that around every other lattice point. It is specified by one of the 7 crystaa sytem value."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> <https://w3id.org/pmd/co/PMD_0020131>)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>) ObjectExactCardinality(1 <https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000028>)))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectExactCardinality(1 <https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000028>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000027> (lattice centering)
 
