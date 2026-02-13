@@ -1278,6 +1278,16 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000059">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000054"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+        </owl:propertyChainAxiom>
         <rdfs:label xml:lang="en">denoted by family under triclinic symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1287,6 +1297,16 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000060">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000055"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+        </owl:propertyChainAxiom>
         <rdfs:label xml:lang="de">denoted by family under monoclinic symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1296,6 +1316,16 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000061">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000056"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+        </owl:propertyChainAxiom>
         <rdfs:label xml:lang="de">denoted by family under orthorhombic symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1305,6 +1335,16 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000062">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000057"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+        </owl:propertyChainAxiom>
         <rdfs:label xml:lang="de">denoted by family under rhombohedral symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1314,6 +1354,16 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000063">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000058"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000037"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
+        </owl:propertyChainAxiom>
         <rdfs:label xml:lang="de">denoted by family under hexagonal symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -7210,6 +7260,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     <!-- https://w3id.org/pmd/cryo/CRYO_0000029 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000029">
+        <CRYO_0000054 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000029"/>
         <rdfs:label xml:lang="en">triclinic</rdfs:label>
         <skos:definition xml:lang="en">Triclinic crystal system is a crystal system with only translational symmetry.</skos:definition>
     </owl:NamedIndividual>
@@ -7219,6 +7270,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     <!-- https://w3id.org/pmd/cryo/CRYO_0000030 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000030">
+        <CRYO_0000055 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000030"/>
         <rdfs:label xml:lang="en">monoclinic</rdfs:label>
         <skos:definition xml:lang="en">Monoclinic crystal system is a crystal system with one twofold rotation axis or one mirror plane.</skos:definition>
     </owl:NamedIndividual>
@@ -7228,6 +7280,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     <!-- https://w3id.org/pmd/cryo/CRYO_0000031 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000031">
+        <CRYO_0000056 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000031"/>
         <rdfs:label xml:lang="en">orthorhombic</rdfs:label>
         <skos:definition xml:lang="en">Orthorhombic crystal system is a crystal system with three twofold rotation axes or one twofold rotation axis and two mirror planes</skos:definition>
     </owl:NamedIndividual>
@@ -7247,6 +7300,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     <!-- https://w3id.org/pmd/cryo/CRYO_0000033 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000033">
+        <CRYO_0000057 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000033"/>
         <rdfs:label xml:lang="en">rhombohedral</rdfs:label>
         <skos:altLabel xml:lang="en">trigonal</skos:altLabel>
         <skos:definition xml:lang="en">Rhombohedral ( trigonal) crystal system is a crystal system with one threefold rotation axis.</skos:definition>
@@ -7257,6 +7311,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     <!-- https://w3id.org/pmd/cryo/CRYO_0000034 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000034">
+        <CRYO_0000058 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000034"/>
         <rdfs:label xml:lang="en">hexagonal</rdfs:label>
         <skos:definition xml:lang="en">Hexagonal crystal system is a crystal system with one sixfold rotation axis.</skos:definition>
     </owl:NamedIndividual>
@@ -7277,18 +7332,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000038">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000011"/>
-        <obo:IAO_0000235 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000039"/>
         <rdfs:label xml:lang="de">some other plane</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000039 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000039">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
-        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000032"/>
-        <rdfs:label xml:lang="de">(100) tetragonal</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7307,18 +7351,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
-        <rdfs:label xml:lang="en">{100} cubic</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000041 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000041">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000023"/>
-        <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000039"/>
-        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000032"/>
-        <rdfs:label xml:lang="de">{100} tetragonal</rdfs:label>
+        <rdfs:label xml:lang="en">{100}</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7382,6 +7415,466 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000064 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000064">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+        <CRYO_0000037 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+        <rdfs:label xml:lang="de">{110}</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000065 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000065">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000023"/>
+        <rdfs:label xml:lang="de">{111}</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000066 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000066">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+        <rdfs:label xml:lang="de">&lt;100&gt;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000067 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000067">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+        <rdfs:label xml:lang="de">&lt;110&gt;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000068 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000068">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000021"/>
+        <rdfs:label xml:lang="de">&lt;111&gt;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000069 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000069">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(110)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000070 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000070">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(-110)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000071 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000071">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(1-10)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000072 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000072">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(-1-10)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000073 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000073">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(101)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000074 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000074">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(-101)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000076 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000076">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(10-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000077 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000077">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(-10-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000078 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000078">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(011)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000080 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000080">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(0-11)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000081 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000081">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(01-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000082 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000082">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(0-1-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000083 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000083">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[110]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000084 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000084">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[-110]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000085 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000085">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[1-10]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000086 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000086">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[-1-10]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000087 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000087">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[101]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000088 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000088">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[-101]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000089 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000089">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[10-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000090 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000090">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[-10-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000091 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000091">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[011]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000092 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000092">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[0-11]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000093 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000093">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[01-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000094 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000094">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[0-1-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000095 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000095">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(111)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000096 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000096">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(-111)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000097 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000097">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(1-11)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000098 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000098">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(11-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000099 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000099">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(-1-11)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000100 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000100">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(-11-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000101 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000101">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(1-1-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000102 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000102">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+        <rdfs:label xml:lang="de">(-1-1-1)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000104 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000104">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[111]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000105 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000105">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[-111]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000106 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000106">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[1-11]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000107 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000107">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[11-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000108 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000108">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[-1-11]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000109 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000109">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[-11-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000110 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000110">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[1-1-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000111 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000111">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[-1-1-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000112 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000112">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[100]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000113 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000113">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[-100]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000114 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000114">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[010]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000115 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000115">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[0-10]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000116 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000116">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[001]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000117 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000117">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+        <rdfs:label xml:lang="de">[00-1]</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000125 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000125">
@@ -7389,7 +7882,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
-        <rdfs:label xml:lang="en">(100) cubic</rdfs:label>
+        <rdfs:label xml:lang="en">(100)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7401,7 +7894,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
-        <rdfs:label xml:lang="en">(010) cubic</rdfs:label>
+        <rdfs:label xml:lang="en">(010)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7413,7 +7906,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</CRYO_0000019>
-        <rdfs:label xml:lang="en">(001) cubic</rdfs:label>
+        <rdfs:label xml:lang="en">(001)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7426,7 +7919,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
-        <rdfs:label xml:lang="en">(-100) cubic</rdfs:label>
+        <rdfs:label xml:lang="en">(-100)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7438,7 +7931,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000019>
-        <rdfs:label xml:lang="en">(00-1) cubic</rdfs:label>
+        <rdfs:label xml:lang="en">(00-1)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7450,7 +7943,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <CRYO_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000017>
         <CRYO_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</CRYO_0000018>
         <CRYO_0000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</CRYO_0000019>
-        <rdfs:label xml:lang="de">(0-10) cubic</rdfs:label>
+        <rdfs:label xml:lang="de">(0-10)</rdfs:label>
     </owl:NamedIndividual>
     
 
