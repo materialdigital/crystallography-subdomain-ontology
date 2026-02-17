@@ -72,6 +72,19 @@
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000041 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000041">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000170"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -92,7 +105,6 @@
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000128"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000130"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000"/>
-        <cryo:CRYO_0000170 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000040"/>
     </rdf:Description>
     
 
@@ -112,7 +124,6 @@
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000080"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000081"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000082"/>
-        <cryo:CRYO_0000170 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000064"/>
     </rdf:Description>
     
 
@@ -128,7 +139,6 @@
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000100"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000101"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000102"/>
-        <cryo:CRYO_0000170 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000065"/>
     </rdf:Description>
     
 
@@ -176,22 +186,6 @@
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000109"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000110"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000111"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000104 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000104">
-        <cryo:CRYO_0000170 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000104"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000128 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000128">
-        <cryo:CRYO_0000170 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000128"/>
     </rdf:Description>
 </rdf:RDF>
 

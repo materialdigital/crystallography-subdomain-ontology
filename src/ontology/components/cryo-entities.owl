@@ -75,7 +75,6 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000053">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
         <rdfs:label xml:lang="de">has symmetry</rdfs:label>
     </owl:ObjectProperty>
     
@@ -296,10 +295,9 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000164"/>
         <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000041"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170"/>
         </owl:propertyChainAxiom>
         <rdfs:comment>&apos;denoted by&apos; o &apos;member of&apos; o &apos;has Miller indices family under cubic symmetry&apos;</rdfs:comment>
         <rdfs:comment>&apos;denoted by&apos; o &apos;under  symmetry&apos; o &apos;is cubic&apos; o  inverse (&apos;under  symmetry&apos;) o &apos;has member&apos; o &apos;member of&apos;</rdfs:comment>
