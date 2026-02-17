@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/cryo.ttl> .
 
 <https://w3id.org/pmd/cryo.ttl> rdf:type owl:Ontology ;
-                                 owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-02-13/cryo.ttl> ;
+                                 owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-02-17/cryo.ttl> ;
                                  dcterms:description "None" ;
                                  dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                  dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x" ;
-                                 owl:versionInfo "2026-02-13" .
+                                 owl:versionInfo "2026-02-17" .
 
 #################################################################
 #    Annotation properties
@@ -911,7 +911,6 @@ cryo:CRYO_0000052 rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/pmd/cryo/CRYO_0000053
 cryo:CRYO_0000053 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
-                  rdfs:domain cryo:CRYO_0000028 ;
                   rdfs:label "has symmetry"@de .
 
 
@@ -1068,10 +1067,9 @@ cryo:CRYO_0000164 rdf:type owl:ObjectProperty ;
 cryo:CRYO_0000168 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf cryo:CRYO_0000164 ;
                   rdfs:domain cryo:CRYO_0000041 ;
-                  owl:propertyChainAxiom ( obo:IAO_0000235
-                                           cryo:CRYO_0000170
+                  owl:propertyChainAxiom ( cryo:CRYO_0000170
+                                           obo:IAO_0000235
                                            obo:RO_0002350
-                                           cryo:CRYO_0000170
                                          ) ;
                   rdfs:comment "'denoted by' o 'member of' o 'has Miller indices family under cubic symmetry'" ,
                                "'denoted by' o 'under  symmetry' o 'is cubic' o  inverse ('under  symmetry') o 'has member' o 'member of'" ,
@@ -2510,7 +2508,7 @@ co:PMD_0000538 rdf:type owl:Class ;
 co:PMD_0000549 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000015 ;
                rdfs:label "change of temperature"@en ;
-               skos:definition "A change of temperature is a process describing the variation in thermal energy within a material or system over time or due to external influences."@en ;
+               skos:definition "change of temperature is a process in which a particpant changes its temperature"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4186,7 +4184,7 @@ co:PMD_0020099 rdf:type owl:Class ;
                rdfs:comment """TODO: possibly extend for 2D (Graphene etc)
 
 More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso"""@en ;
-               rdfs:label "bravais lattice (3d)"@en ;
+               rdfs:label "bravais lattice (3D)"@en ;
                skos:definition "The bravais lattice is a categorical value specification that specifies value of the crystal structure quality. It describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
@@ -4384,6 +4382,52 @@ co:PMD_0020207 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020101 ;
                rdfs:label "amount of substance"@en ;
                skos:definition "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has avogadro number objects (of same type) as parts (n = N/N_A)."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020210
+co:PMD_0020210 rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty obo:RO_0002351 ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass co:PMD_0020140
+                                   ] ;
+               rdfs:subClassOf co:PMD_0020003 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:RO_0002351 ;
+                                 owl:someValuesFrom co:PMD_0020140
+                               ] ;
+               rdfs:label "elemental crystal"@en ;
+               skos:definition "a crystal that consists of exactly one atomic species"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020216
+co:PMD_0020216 rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:oneOf ( co:PMD_0020217
+                                                 co:PMD_0020218
+                                                 co:PMD_0020219
+                                                 co:PMD_0020242
+                                               )
+                                   ] ;
+               rdfs:subClassOf obo:OBI_0001930 ;
+               rdfs:label "order scale value"@en ;
+               skos:definition "possible values of characteristic length over which structural correlations persist in a material"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020220
+co:PMD_0020220 rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty co:PMD_0000077 ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass co:PMD_0020216
+                                   ] ;
+               rdfs:subClassOf co:PMD_0020131 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty co:PMD_0000077 ;
+                                 owl:someValuesFrom co:PMD_0020216
+                               ] ;
+               rdfs:label "order scale"@en ;
+               skos:definition "characteristic length over which structural correlations persist in a material"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0025001
@@ -4688,7 +4732,10 @@ cryo:CRYO_0000013 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/cryo/CRYO_0000014
 cryo:CRYO_0000014 rdf:type owl:Class ;
                   rdfs:subClassOf co:PMD_0000501 ,
-                                  cryo:CRYO_0000028 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cryo:CRYO_0000053 ;
+                                    owl:hasSelf "true"^^xsd:boolean
+                                  ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty cryo:CRYO_0000016 ;
                                     owl:cardinality "3"^^xsd:nonNegativeInteger
@@ -4936,6 +4983,10 @@ cryo:CRYO_0000041 rdf:type owl:Class ;
                                                                             ) ;
                                                          rdf:type owl:Class
                                                        ]
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cryo:CRYO_0000170 ;
+                                    owl:hasSelf "true"^^xsd:boolean
                                   ] ;
                   rdfs:label "crystallographic entity in cubic system"@en .
 
@@ -4962,8 +5013,7 @@ cryo:CRYO_0000049 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000028 ,
-                                  cryo:CRYO_0000124 ,
+                  rdfs:subClassOf cryo:CRYO_0000124 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty cryo:CRYO_0000050 ;
                                     owl:hasSelf "true"^^xsd:boolean
@@ -5331,8 +5381,7 @@ cryo:CRYO_0000143 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000028 ,
-                                  cryo:CRYO_0000124 ,
+                  rdfs:subClassOf cryo:CRYO_0000124 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty cryo:CRYO_0000170 ;
                                     owl:hasSelf "true"^^xsd:boolean
@@ -5548,6 +5597,30 @@ co:PMD_0020125 rdf:type owl:NamedIndividual ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
+###  https://w3id.org/pmd/co/PMD_0020217
+co:PMD_0020217 rdf:type owl:NamedIndividual ;
+               rdfs:label "short range order"@en ;
+               skos:definition "periodic arrangement of structural features up to a few entities"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020218
+co:PMD_0020218 rdf:type owl:NamedIndividual ;
+               rdfs:label "medium range order"@en ;
+               skos:definition "periodic arrangement of structural features of many entities"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020219
+co:PMD_0020219 rdf:type owl:NamedIndividual ;
+               rdfs:label "long range order"@en ;
+               skos:definition "periodic arrangement of structural features of virtually all entities"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020242
+co:PMD_0020242 rdf:type owl:NamedIndividual ;
+               rdfs:label "no range order"@en ;
+               skos:definition "no periodic arrangement of structural features of entites"@en .
+
+
 ###  https://w3id.org/pmd/cryo/CRYO_0000029
 cryo:CRYO_0000029 rdf:type owl:NamedIndividual ;
                   owl:differentFrom cryo:CRYO_0000030 ,
@@ -5627,7 +5700,6 @@ cryo:CRYO_0000040 rdf:type owl:NamedIndividual ,
                                  cryo:CRYO_0000128 ,
                                  cryo:CRYO_0000130 ,
                                  <https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000> ;
-                  cryo:CRYO_0000170 cryo:CRYO_0000040 ;
                   cryo:CRYO_0000017 1 ;
                   cryo:CRYO_0000018 0 ;
                   cryo:CRYO_0000019 0 ;
@@ -5691,7 +5763,6 @@ cryo:CRYO_0000064 rdf:type owl:NamedIndividual ,
                                  cryo:CRYO_0000080 ,
                                  cryo:CRYO_0000081 ,
                                  cryo:CRYO_0000082 ;
-                  cryo:CRYO_0000170 cryo:CRYO_0000064 ;
                   cryo:CRYO_0000017 1 ;
                   cryo:CRYO_0000018 1 ;
                   cryo:CRYO_0000019 0 ;
@@ -5709,7 +5780,6 @@ cryo:CRYO_0000065 rdf:type owl:NamedIndividual ,
                                  cryo:CRYO_0000100 ,
                                  cryo:CRYO_0000101 ,
                                  cryo:CRYO_0000102 ;
-                  cryo:CRYO_0000170 cryo:CRYO_0000065 ;
                   cryo:CRYO_0000017 1 ;
                   cryo:CRYO_0000018 1 ;
                   cryo:CRYO_0000019 1 ;
@@ -6067,7 +6137,6 @@ cryo:CRYO_0000103 rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/pmd/cryo/CRYO_0000104
 cryo:CRYO_0000104 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000170 cryo:CRYO_0000104 ;
                   cryo:CRYO_0000017 1 ;
                   cryo:CRYO_0000018 1 ;
                   cryo:CRYO_0000019 1 ;
@@ -6228,7 +6297,6 @@ cryo:CRYO_0000127 rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/pmd/cryo/CRYO_0000128
 cryo:CRYO_0000128 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000170 cryo:CRYO_0000128 ;
                   cryo:CRYO_0000017 -1 ;
                   cryo:CRYO_0000018 0 ;
                   cryo:CRYO_0000019 0 ;
