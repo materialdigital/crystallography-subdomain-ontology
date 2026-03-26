@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/cryo/cryo-full.ttl> .
 
 <https://w3id.org/pmd/cryo/cryo-full.ttl> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-02-24/cryo-full.ttl> ;
+                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-03-26/cryo-full.ttl> ;
                                            dcterms:description "None" ;
                                            dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                            dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x" ;
-                                           owl:versionInfo "2026-02-24" .
+                                           owl:versionInfo "2026-03-26" .
 
 #################################################################
 #    Annotation properties
@@ -53,6 +53,14 @@ obo:IAO_0000233 rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/elements/1.1/source
 dce:source rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dcterms:bibliographicCitation rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
@@ -1668,13 +1676,6 @@ obo:CHEBI_27568 rdf:type owl:Class ;
                 rdfs:label "selenium atom" .
 
 
-###  http://purl.obolibrary.org/obo/CHEBI_27573
-obo:CHEBI_27573 rdf:type owl:Class ;
-                rdfs:subClassOf obo:CHEBI_137980 ,
-                                obo:CHEBI_25585 ;
-                rdfs:label "silicon atom" .
-
-
 ###  http://purl.obolibrary.org/obo/CHEBI_27594
 obo:CHEBI_27594 rdf:type owl:Class ;
                 rdfs:subClassOf obo:CHEBI_25585 ;
@@ -2381,21 +2382,22 @@ granularity. At these coarser levels, the individual molecules cannot be differe
 
 ###  https://w3id.org/pmd/co/PMD_0000005
 co:PMD_0000005 rdf:type owl:Class ;
-               rdfs:subClassOf obo:BFO_0000017 ,
+               rdfs:subClassOf obo:BFO_0000016 ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty obo:BFO_0000054 ;
                                  owl:someValuesFrom co:PMD_0000950
                                ] ,
                                _:genid138 ;
-               rdfs:comment """Technical materials are complex object aggregates. The properties that are determined for those object aggregates are intrinsically associated with the methodologies employed in the measurement process. This is in contrast to typical 'physical' properties, which like e.g. mass that can be determined to high accuracy independently of the measurement process. 
-As a consequence, the behavoiral material properties in the ontology are differeciated according to their measurement method, e.g. Brinell hardness and Vickers hardness are different types of indentation hardness rather than different measures/quantification (GDC) of the materials property 'indentation hardness'.
- The 'unit idenifieres' of such properties (e.g. \"HV1\", \"HV10\", \"HBW\") are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property."""@en ;
-               rdfs:label "behavioral material property"@en ;
-               skos:definition """A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
-
+               rdfs:comment """A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
 
-We only deal with intensive (system-size independent) material properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules."""@en ;
+Technical materials are complex aggregates. Many properties that are determined for those aggregates are intrinsically associated with the methodologies employed in the measurement process. This is in contrast to typical 'physical' properties, which like e.g. mass that can be determined to high accuracy independently of the measurement process. 
+As a consequence, material properties in the ontology are differeciated according to their measurement method, e.g. Brinell hardness and Vickers hardness are different types of indentation hardness rather than different measures/quantification (GDC) of the materials property 'indentation hardness'.
+ The 'unit idenifieres' of such properties (e.g. \"HV1\", \"HV10\", \"HBW\") are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property.
+
+Extensive properties that depend on the object being tested rather than on the portion of matter are (extensive) object- or system-properties."""@en ;
+               rdfs:label "material property"@en ;
+               skos:definition "a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 _:genid138 rdf:type owl:Restriction ;
@@ -2478,7 +2480,7 @@ co:PMD_0000068 rdf:type owl:Class ;
 co:PMD_0000501 rdf:type owl:Class ;
                rdfs:subClassOf obo:IAO_0000027 ;
                rdfs:label "1D"@en ;
-               skos:definition "1-D is an information content entity representing a one-dimensional structure or model representing a single linear dimension, often used in material science simulations or analysis."@en ;
+               skos:definition "1D is a data item representing a one-dimensional structure or model representing a single linear dimension, often used in material science simulations or analysis."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2486,7 +2488,7 @@ co:PMD_0000501 rdf:type owl:Class ;
 co:PMD_0000502 rdf:type owl:Class ;
                rdfs:subClassOf obo:IAO_0000027 ;
                rdfs:label "2D"@en ;
-               skos:definition "A two-dimensional information content entity is a representation or analysis, commonly applied in studying planar material properties or surface phenomena."@en ;
+               skos:definition "A two-dimensional data item is a representation or analysis, commonly applied in studying planar material properties or surface phenomena."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2561,11 +2563,7 @@ co:PMD_0000549 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000551
 co:PMD_0000551 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0025001 ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty co:PMD_0000004 ;
-                                 owl:someValuesFrom co:PMD_0025002
-                               ] ;
+               rdfs:subClassOf co:PMD_0025001 ;
                rdfs:comment """See the editor note of composition to understand the difference between composition and chemical composition.
 
 See the pattern example of composition to underatand the difference between composition and proportion."""@en ;
@@ -2592,7 +2590,7 @@ co:PMD_0000552 rdf:type owl:Class ;
 co:PMD_0000553 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
                rdfs:label "chemical potential"@en ;
-               skos:definition "The chemical potential is a thermodynamic quality describing the energy change associated with the addition of a small quantity of a substance to a system at constant temperature and pressure."@en ;
+               skos:definition "an intensive quality of a thermodynamic system describing the energy change associated with the addition of a small quantity of a substance to a system at constant temperature and pressure."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2630,8 +2628,9 @@ co:PMD_0000591 rdf:type owl:Class ;
                                  owl:onProperty co:PMD_0000077 ;
                                  owl:someValuesFrom co:PMD_0020099
                                ] ;
+               rdfs:comment "The finite set of periodic geometric arrangements is described e.g. by the 14 possible Bravais Lattices in three-dimensional space."@en ;
                rdfs:label "crystal structure"@en ;
-               skos:definition "The crystal structure is a morphologic quality that describes the periodic geometric arrangement of entities in a crystalline material. The finite set of periodic geometric arrangements is described by the 14 possible Bravais Lattices in three-dimensional space."@en ;
+               skos:definition "an intensive qualtty of a crystal that embodies the periodic geometric arrangement of entities in a crystal lattice."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2656,7 +2655,7 @@ co:PMD_0000602 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000030 ;
                rdfs:label "Gerät"@de ,
                           "device"@en ;
-               skos:definition "A physical or virtual entity used to perform a specific function or task, often involving measurement, manipulation, or analysis of materials."@en ,
+               skos:definition "A device is an object that is designed to perform a specific function or task involving measurement, manipulation, processing, or analysis."@en ,
                                "Ein physisches oder virtuelles Objekt, das verwendet wird, um eine bestimmte Funktion oder Aufgabe auszuführen, häufig im Zusammenhang mit der Messung, Manipulation oder Analyse von Materialien."@de ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
@@ -2665,7 +2664,7 @@ co:PMD_0000602 rdf:type owl:Class ;
 co:PMD_0000619 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020148 ;
                rdfs:label "electric potential"@en ;
-               skos:definition "The electric potential is a thermodynamic quality describing the amount of work needed to move a unit charge from a reference point to a specific location in an electric field."@en ;
+               skos:definition "an extensvie quality describing the amount of work needed to move a unit charge from a reference point to a specific location in an electric field."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2675,7 +2674,7 @@ co:PMD_0000624 rdf:type owl:Class ;
                obo:IAO_0000119 "“Electron microscope.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/electron%20microscope. Accessed 24 Nov. 2022."@en ;
                rdfs:label "Elektronenmikroskop"@de ,
                           "electron microscope"@en ;
-               skos:definition "A device that uses a beam of electrons to create high-resolution images of a sample's surface or structure."@en ,
+               skos:definition "A microscope that uses a beam of electrons to create high-resolution images of a sample's surface or structure."@en ,
                                "An electron-optical instrument in which a beam of electrons is used to produce an enlarged image of a minute object."@en ,
                                "Ein Gerät, das einen Elektronenstrahl verwendet, um hochauflösende Bilder der Oberfläche oder Struktur einer Probe zu erstellen."@de .
 
@@ -2755,7 +2754,7 @@ A manufacturing process is always a transformative process."""@en ,
 co:PMD_0000834 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000502 ;
                rdfs:label "map"@en ;
-               skos:definition "A map is a 2-D information content entity describing a representation of spatial data or relationships, often used in material science for visualizing properties or distributions."@en ;
+               skos:definition "A map is a 2D information content entity describing a representation of spatial data or relationships, often used in material science for visualizing properties or distributions."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2779,7 +2778,7 @@ co:PMD_0000855 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/co/PMD_0000856
 co:PMD_0000856 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0000957 ;
+               rdfs:subClassOf obo:OBI_0000070 ;
                rdfs:label "Mikroskopie Verfahren"@de ,
                           "microscopy process"@en ;
                skos:definition "Ein Struktur Eigenschaften Analyseverfahren, das verschiedene Arten von Mikroskopietechniken verwendet, um die Mikrostruktur und Morphologie von Materialien auf verschiedenen Ebenen zu visualisieren und zu analysieren."@de ,
@@ -2793,7 +2792,7 @@ co:PMD_0000857 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000001 ;
                rdfs:comment "The focus of interest when looking at an object through the microstructure perspective is often its morphology."@en ;
                rdfs:label "microstructure"@en ;
-               skos:definition "The microstructure represents the small-scale structure of a material, including grains, phases, and defects, visible under a microscope."@en ;
+               skos:definition "A microstructure is a portion of matter that represents the small-scale structure of a material, including grains, phases, and defects, visible under a microscope."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2825,7 +2824,7 @@ co:PMD_0000885 rdf:type owl:Class ;
 co:PMD_0000890 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000027 ;
                rdfs:label "connected material entity aggregate"@en ;
-               skos:definition "A material entity aggregate that is a mereological sum of separate material entities, which adhere to one another through chemical bonds or physical junctions that go beyond gravity."@en ;
+               skos:definition "An object aggregate that is a mereological sum of separate material entities, which adhere to one another through chemical bonds or physical junctions that go beyond gravity."@en ;
                skos:example "the atoms of a molecule, the molecules forming the membrane of a cell, the epidermis in a human body"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
@@ -2836,7 +2835,7 @@ co:PMD_0000896 rdf:type owl:Class ;
                owl:disjointWith co:PMD_0000967 ;
                rdfs:comment "The pressure is commonly measured in Pascals."@en ;
                rdfs:label "pressure"@en ;
-               skos:definition "The pressure is a thermodynamic quality describing the force exerted per unit area on a material."@en ;
+               skos:definition "an intensive quality describing the force exerted per unit area in or on a material."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2862,7 +2861,7 @@ co:PMD_0000933 rdf:type owl:Class ;
 co:PMD_0000942 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
                rdfs:label "specific surface area"@en ;
-               skos:definition "The specific surface area is a morphologic quality describing the total surface area of a material per unit of mass or volume."@en ;
+               skos:definition "an intensive quality embodying the total surface area of a material per unit of mass or volume."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -3062,7 +3061,7 @@ co:PMD_0010020 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only rhodium atoms."@en ;
                rdfs:label "portion of rhodium"@en ;
-               skos:definition "A 'Portion Of Rhodium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:rhodium atom."@en .
+               skos:definition "A 'portion of rhodium' is a 'portion of pure chemical element' that 'consists of' only chebi:rhodium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0010021
@@ -3078,14 +3077,14 @@ co:PMD_0010021 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only tellurium atoms."@en ;
                rdfs:label "portion of tellurium"@en ;
-               skos:definition "A 'Portion Of Tellurium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:tellurium atom."@en .
+               skos:definition "A 'portion of tellurium' is a 'portion of pure chemical element' that 'consists of' only chebi:tellurium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020000
 co:PMD_0020000 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000040 ;
                rdfs:label "phase (thermodynamic)"@en ;
-               skos:definition "A thermodynamic phase is portion of matter that is part of a thermodynamic system and has homogeneus thermodynamic properties."@en ;
+               skos:definition "A thermodynamic phase is a material entity that forms a homogeneous portion of matter within a thermodynamic system and is characterized by uniform thermodynamic properties."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -3130,7 +3129,7 @@ To understand the difference between the composition and the composition data it
 co:PMD_0020005 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020131 ;
                rdfs:label "porosity"@en ;
-               skos:definition "The porosity is a quality describing the fraction of the materials (enclosing) spatial region occupied by pores."@en ;
+               skos:definition "itensive quality embodiying the fraction of the materials (enclosing) spatial region occupied by pores."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -3165,7 +3164,7 @@ co:PMD_0020026 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only Iron atoms."@en ;
                rdfs:label "portion of iron"@en ;
-               skos:definition "A 'Portion Of Iron' is a 'Poriton Of Pure Substance' that 'consists of' only chebi:iron atom."@en .
+               skos:definition "A 'portion of iron' is a 'Poriton Of Pure Substance' that 'consists of' only chebi:iron atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020028
@@ -3181,7 +3180,7 @@ co:PMD_0020028 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only indium atoms."@en ;
                rdfs:label "portion of indium"@en ;
-               skos:definition "A 'Portion Of Indium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:indium atom."@en .
+               skos:definition "A 'portion of indium' is a 'portion of pure chemical element' that 'consists of' only chebi:indium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020029
@@ -3197,7 +3196,7 @@ co:PMD_0020029 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only chromium atoms."@en ;
                rdfs:label "portion of chromium"@en ;
-               skos:definition "A 'Portion Of Chromium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:chromium atom."@en .
+               skos:definition "A 'portion of chromium' is a 'portion of pure chemical element' that 'consists of' only chebi:chromium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020030
@@ -3213,7 +3212,7 @@ co:PMD_0020030 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only carbon atoms."@en ;
                rdfs:label "portion of carbon"@en ;
-               skos:definition "A 'Portion Of Carbon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:carbon atom."@en .
+               skos:definition "A 'portion of carbon' is a 'portion of pure chemical element' that 'consists of' only chebi:carbon atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020031
@@ -3229,7 +3228,7 @@ co:PMD_0020031 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only germanium atoms."@en ;
                rdfs:label "portion of germanium"@en ;
-               skos:definition "A 'Portion Of Germanium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:germanium atom."@en .
+               skos:definition "A 'portion of germanium' is a 'portion of pure chemical element' that 'consists of' only chebi:germanium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020032
@@ -3245,7 +3244,7 @@ co:PMD_0020032 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only tungsten atoms."@en ;
                rdfs:label "portion of tungsten"@en ;
-               skos:definition "A 'Portion Of Tungsten' is a 'Portion Of Pure Substance' that 'consists of' only chebi:tungsten."@en .
+               skos:definition "A 'portion of tungsten' is a 'portion of pure chemical element' that 'consists of' only chebi:tungsten."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020033
@@ -3261,7 +3260,7 @@ co:PMD_0020033 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only erbium atoms."@en ;
                rdfs:label "portion of erbium"@en ;
-               skos:definition "A 'Portion Of Erbium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:erbium."@en .
+               skos:definition "A 'portion of erbium' is a 'portion of pure chemical element' that 'consists of' only chebi:erbium."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020034
@@ -3277,7 +3276,7 @@ co:PMD_0020034 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only molybdenum atoms."@en ;
                rdfs:label "portion of molybdenum"@en ;
-               skos:definition "A 'Portion Of Molybdenum' is a 'Portion Of Pure Substance' that 'consists of' only chebi:molybdenum atom."@en .
+               skos:definition "A 'portion of molybdenum' is a 'portion of pure chemical element' that 'consists of' only chebi:molybdenum atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020035
@@ -3293,7 +3292,7 @@ co:PMD_0020035 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only niobium atoms."@en ;
                rdfs:label "portion of niobium"@en ;
-               skos:definition "A 'Portion Of Niobium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:niobium atom."@en .
+               skos:definition "A 'portion of niobium' is a 'portion of pure chemical element' that 'consists of' only chebi:niobium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020036
@@ -3309,7 +3308,7 @@ co:PMD_0020036 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only rhenium atoms."@en ;
                rdfs:label "portion of rhenium"@en ;
-               skos:definition "A 'Portion Of Rhenium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:rhenium atom."@en .
+               skos:definition "A 'portion of rhenium' is a 'portion of pure chemical element' that 'consists of' only chebi:rhenium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020037
@@ -3325,7 +3324,7 @@ co:PMD_0020037 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only lithium atoms."@en ;
                rdfs:label "portion of lithium"@en ;
-               skos:definition "A 'Portion Of Lithium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:lithium atom."@en .
+               skos:definition "A 'portion of lithium' is a 'portion of pure chemical element' that 'consists of' only chebi:lithium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020038
@@ -3341,7 +3340,7 @@ co:PMD_0020038 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only nitrogen atoms."@en ;
                rdfs:label "portion of nitrogen"@en ;
-               skos:definition "A 'Portion Of Nitrogen' is a 'Portion Of Pure Substance' that 'consists of' only chebi:nitrogen atom."@en .
+               skos:definition "A 'portion of nitrogen' is a 'portion of pure chemical element' that 'consists of' only chebi:nitrogen atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020039
@@ -3357,7 +3356,7 @@ co:PMD_0020039 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only cobalt atoms."@en ;
                rdfs:label "portion of cobalt"@en ;
-               skos:definition "A 'Portion Of Cobalt' is a 'Portion Of Pure Substance' that 'consists of' only chebi:cobalt atom."@en .
+               skos:definition "A 'portion of cobalt' is a 'portion of pure chemical element' that 'consists of' only chebi:cobalt atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020040
@@ -3373,7 +3372,7 @@ co:PMD_0020040 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only gold atoms."@en ;
                rdfs:label "portion of gold"@en ;
-               skos:definition "A 'Portion Of Gold' is a 'Portion Of Pure Substance' that 'consists of' only chebi:gold atom."@en .
+               skos:definition "A 'portion of gold' is a 'portion of pure chemical element' that 'consists of' only chebi:gold atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020041
@@ -3389,7 +3388,7 @@ co:PMD_0020041 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only argon atoms."@en ;
                rdfs:label "portion of argon"@en ;
-               skos:definition "A 'Portion Of Argon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:argon atom."@en .
+               skos:definition "A 'portion of argon' is a 'portion of pure chemical element' that 'consists of' only chebi:argon atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020042
@@ -3405,7 +3404,7 @@ co:PMD_0020042 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only cadmium atoms."@en ;
                rdfs:label "portion of cadmium"@en ;
-               skos:definition "A 'Portion Of Cadmium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:cadmium atom."@en .
+               skos:definition "A 'portion of cadmium' is a 'portion of pure chemical element' that 'consists of' only chebi:cadmium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020043
@@ -3421,7 +3420,7 @@ co:PMD_0020043 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only barium atoms."@en ;
                rdfs:label "portion of barium"@en ;
-               skos:definition "A 'Portion Of Barium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:barium atom."@en .
+               skos:definition "A 'portion of barium' is a 'portion of pure chemical element' that 'consists of' only chebi:barium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020044
@@ -3437,7 +3436,7 @@ co:PMD_0020044 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only tantalum atoms."@en ;
                rdfs:label "portion of tantalum"@en ;
-               skos:definition "A 'Portion Of Tantalum' is a 'Portion Of Pure Substance' that 'consists of' only chebi:tantalum atom."@en .
+               skos:definition "A 'portion of tantalum' is a 'portion of pure chemical element' that 'consists of' only chebi:tantalum atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020045
@@ -3453,7 +3452,7 @@ co:PMD_0020045 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only antimony atoms."@en ;
                rdfs:label "portion of antimony"@en ;
-               skos:definition "A 'Portion Of Antimony' is a 'Portion Of Pure Substance' that 'consists of' only chebi:antimony atom."@en .
+               skos:definition "A 'portion of antimony' is a 'portion of pure chemical element' that 'consists of' only chebi:antimony atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020046
@@ -3469,7 +3468,7 @@ co:PMD_0020046 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only potassium atoms."@en ;
                rdfs:label "portion of potassium"@en ;
-               skos:definition "A 'Portion Of Potassium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:potassium atom."@en .
+               skos:definition "A 'portion of potassium' is a 'portion of pure chemical element' that 'consists of' only chebi:potassium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020047
@@ -3485,7 +3484,7 @@ co:PMD_0020047 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only phosphorus atoms."@en ;
                rdfs:label "portion of phosphorus"@en ;
-               skos:definition "A 'Portion Of Phosphorus' is a 'Portion Of Pure Substance' that 'consists of' only chebi:phosphorus atom."@en .
+               skos:definition "A 'portion of phosphorus' is a 'portion of pure chemical element' that 'consists of' only chebi:phosphorus atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020048
@@ -3501,7 +3500,7 @@ co:PMD_0020048 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only boron atoms."@en ;
                rdfs:label "portion of boron"@en ;
-               skos:definition "A 'Portion Of Boron' is a 'Portion Of Pure Substance' that 'consists of' only chebi:boron atom."@en .
+               skos:definition "A 'portion of boron' is a 'portion of pure chemical element' that 'consists of' only chebi:boron atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020049
@@ -3517,23 +3516,7 @@ co:PMD_0020049 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only helium atoms."@en ;
                rdfs:label "portion of helium"@en ;
-               skos:definition "A 'Portion Of Helium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:helium atom."@en .
-
-
-###  https://w3id.org/pmd/co/PMD_0020050
-co:PMD_0020050 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( co:PMD_0020140
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty obo:BFO_0000051 ;
-                                                            owl:allValuesFrom obo:CHEBI_27573
-                                                          ]
-                                                        ) ;
-                                     rdf:type owl:Class
-                                   ] ;
-               rdfs:subClassOf co:PMD_0020140 ;
-               rdfs:comment "A Portion Of Matter that consists of only silicon atoms."@en ;
-               rdfs:label "portion of silicon"@en ;
-               skos:definition "A 'Portion Of Silicon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:silicon atom."@en .
+               skos:definition "A 'portion of helium' is a 'portion of pure chemical element' that 'consists of' only chebi:helium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020051
@@ -3549,7 +3532,7 @@ co:PMD_0020051 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only nickel atoms."@en ;
                rdfs:label "portion of nickel"@en ;
-               skos:definition "A 'Portion Of Nickel' is a 'Portion Of Pure Substance' that 'consists of' only chebi:nickel atom."@en .
+               skos:definition "A 'portion of nickel' is a 'portion of pure chemical element' that 'consists of' only chebi:nickel atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020052
@@ -3565,7 +3548,7 @@ co:PMD_0020052 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only yttrium atoms."@en ;
                rdfs:label "portion of yttrium"@en ;
-               skos:definition "A 'Portion Of Yttrium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:yttrium atom."@en .
+               skos:definition "A 'portion of yttrium' is a 'portion of pure chemical element' that 'consists of' only chebi:yttrium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020053
@@ -3581,7 +3564,7 @@ co:PMD_0020053 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only zirconium atoms."@en ;
                rdfs:label "portion of zirconium"@en ;
-               skos:definition "A 'Portion Of Zirconium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:zirconium atom."@en .
+               skos:definition "A 'portion of zirconium' is a 'portion of pure chemical element' that 'consists of' only chebi:zirconium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020054
@@ -3597,7 +3580,7 @@ co:PMD_0020054 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only copper atoms."@en ;
                rdfs:label "portion of copper"@en ;
-               skos:definition "A 'Portion Of Copper' is a 'Portion Of Pure Substance' that 'consists of' only chebi:copper atom."@en .
+               skos:definition "A 'portion of copper' is a 'portion of pure chemical element' that 'consists of' only chebi:copper atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020055
@@ -3613,7 +3596,7 @@ co:PMD_0020055 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only bohrium atoms."@en ;
                rdfs:label "portion of bohrium"@en ;
-               skos:definition "A 'Portion Of Bohrium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:bohrium atom."@en .
+               skos:definition "A 'portion of bohrium' is a 'portion of pure chemical element' that 'consists of' only chebi:bohrium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020056
@@ -3629,7 +3612,7 @@ co:PMD_0020056 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only fluorine atoms."@en ;
                rdfs:label "portion of fluorine"@en ;
-               skos:definition "A 'Portion Of Fluorine' is a 'Portion Of Pure Substance' that 'consists of' only chebi:fluorine atom."@en .
+               skos:definition "A 'portion of fluorine' is a 'portion of pure chemical element' that 'consists of' only chebi:fluorine atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020057
@@ -3645,7 +3628,7 @@ co:PMD_0020057 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only platinum atoms."@en ;
                rdfs:label "portion of platinum"@en ;
-               skos:definition "A 'Portion Of Platinum' is a 'Portion Of Pure Substance' that 'consists of' only chebi:platinum."@en .
+               skos:definition "A 'portion of platinum' is a 'portion of pure chemical element' that 'consists of' only chebi:platinum."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020058
@@ -3661,7 +3644,7 @@ co:PMD_0020058 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only cerium atoms."@en ;
                rdfs:label "portion of cerium"@en ;
-               skos:definition "A 'Portion Of Cerium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:cerium."@en .
+               skos:definition "A 'portion of cerium' is a 'portion of pure chemical element' that 'consists of' only chebi:cerium."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020059
@@ -3677,7 +3660,7 @@ co:PMD_0020059 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only sulfur atoms."@en ;
                rdfs:label "portion of sulfur"@en ;
-               skos:definition "A 'Portion Of Sulfur' is a 'Portion Of Pure Substance' that 'consists of' only chebi:sulfur atom."@en .
+               skos:definition "A 'portion of sulfur' is a 'portion of pure chemical element' that 'consists of' only chebi:sulfur atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020060
@@ -3693,7 +3676,7 @@ co:PMD_0020060 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only lead atoms."@en ;
                rdfs:label "portion of lead"@en ;
-               skos:definition "A 'Portion Of Lead' is a 'Portion Of Pure Substance' that 'consists of' only chebi:lead atom."@en .
+               skos:definition "A 'portion of lead' is a 'portion of pure chemical element' that 'consists of' only chebi:lead atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020061
@@ -3709,7 +3692,7 @@ co:PMD_0020061 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only krypton atoms."@en ;
                rdfs:label "portion of krypton"@en ;
-               skos:definition "A 'Portion Of Krypton' is a 'Portion Of Pure Substance' that 'consists of' only chebi:krypton atom."@en .
+               skos:definition "A 'portion of krypton' is a 'portion of pure chemical element' that 'consists of' only chebi:krypton atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020062
@@ -3725,7 +3708,7 @@ co:PMD_0020062 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only bismuth atoms."@en ;
                rdfs:label "portion of bismuth"@en ;
-               skos:definition "A 'Portion Of Bismuth' is a 'Portion Of Pure Substance' that 'consists of' only chebi:bismuth atom."@en .
+               skos:definition "A 'portion of bismuth' is a 'portion of pure chemical element' that 'consists of' only chebi:bismuth atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020063
@@ -3741,7 +3724,7 @@ co:PMD_0020063 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only neon atoms."@en ;
                rdfs:label "portion of neon"@en ;
-               skos:definition "A 'Portion Of Neon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:neon atom."@en .
+               skos:definition "A 'portion of neon' is a 'portion of pure chemical element' that 'consists of' only chebi:neon atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020064
@@ -3757,7 +3740,7 @@ co:PMD_0020064 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only thallium atoms."@en ;
                rdfs:label "portion of thallium"@en ;
-               skos:definition "A 'Portion Of Thallium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:thallium."@en .
+               skos:definition "A 'portion of thallium' is a 'portion of pure chemical element' that 'consists of' only chebi:thallium."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020065
@@ -3773,7 +3756,7 @@ co:PMD_0020065 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only selenium atoms."@en ;
                rdfs:label "portion of selenium"@en ;
-               skos:definition "A 'Portion Of Selenium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:selenium atom."@en .
+               skos:definition "A 'portion of selenium' is a 'portion of pure chemical element' that 'consists of' only chebi:selenium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020066
@@ -3789,7 +3772,7 @@ co:PMD_0020066 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only ruthenium atoms."@en ;
                rdfs:label "portion of ruthenium"@en ;
-               skos:definition "A 'Portion Of Ruthenium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:ruthenium atom."@en .
+               skos:definition "A 'portion of ruthenium' is a 'portion of pure chemical element' that 'consists of' only chebi:ruthenium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020067
@@ -3805,7 +3788,7 @@ co:PMD_0020067 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only magnesium atoms."@en ;
                rdfs:label "portion of magnesium"@en ;
-               skos:definition "A 'Portion Of Magnesium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:magnesium atom."@en .
+               skos:definition "A 'portion of magnesium' is a 'portion of pure chemical element' that 'consists of' only chebi:magnesium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020068
@@ -3821,7 +3804,7 @@ co:PMD_0020068 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only zinc atoms."@en ;
                rdfs:label "portion of zinc"@en ;
-               skos:definition "A 'Portion Of Zinc' is a 'Portion Of Pure Substance' that 'consists of' only chebi:zinc atom."@en .
+               skos:definition "A 'portion of zinc' is a 'portion of pure chemical element' that 'consists of' only chebi:zinc atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020069
@@ -3837,7 +3820,7 @@ co:PMD_0020069 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only mercury atoms."@en ;
                rdfs:label "portion of mercury"@en ;
-               skos:definition "A 'Portion Of Mercury' is a 'Portion Of Pure Substance' that 'consists of' only chebi:mercury atom."@en .
+               skos:definition "A 'portion of mercury' is a 'portion of pure chemical element' that 'consists of' only chebi:mercury atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020070
@@ -3853,7 +3836,7 @@ co:PMD_0020070 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only xenon atoms."@en ;
                rdfs:label "portion of xenon"@en ;
-               skos:definition "A 'Portion Of Xenon' is a 'Portion Of Pure Substance' that 'consists of' only chebi:xenon atom."@en .
+               skos:definition "A 'portion of xenon' is a 'portion of pure chemical element' that 'consists of' only chebi:xenon atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020071
@@ -3869,7 +3852,7 @@ co:PMD_0020071 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only aluminium atoms."@en ;
                rdfs:label "portion of aluminium"@en ;
-               skos:definition "A 'Portion Of Aluminium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:aluminium atom."@en .
+               skos:definition "A 'portion of aluminium' is a 'portion of pure chemical element' that 'consists of' only chebi:aluminium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020072
@@ -3885,7 +3868,7 @@ co:PMD_0020072 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only sodium atoms."@en ;
                rdfs:label "portion of sodium"@en ;
-               skos:definition "A 'Portion Of Sodium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:sodium atom."@en .
+               skos:definition "A 'portion of sodium' is a 'portion of pure chemical element' that 'consists of' only chebi:sodium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020073
@@ -3901,7 +3884,7 @@ co:PMD_0020073 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only iodine atoms."@en ;
                rdfs:label "portion of iodine"@en ;
-               skos:definition "A 'Portion Of Iodine' is a 'Portion Of Pure Substance' that 'consists of' only chebi:iodine atom."@en .
+               skos:definition "A 'portion of iodine' is a 'portion of pure chemical element' that 'consists of' only chebi:iodine atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020074
@@ -3917,7 +3900,7 @@ co:PMD_0020074 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only caesium atoms."@en ;
                rdfs:label "portion of caesium"@en ;
-               skos:definition "A 'Portion Of Caesium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:caesium atom."@en .
+               skos:definition "A 'portion of caesium' is a 'portion of pure chemical element' that 'consists of' only chebi:caesium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020075
@@ -3933,7 +3916,7 @@ co:PMD_0020075 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only chlorine atoms."@en ;
                rdfs:label "portion of chlorine"@en ;
-               skos:definition "A 'Portion Of Chlorine' is a 'Portion Of Pure Substance' that 'consists of' only chebi:chlorine atom."@en .
+               skos:definition "A 'portion of chlorine' is a 'portion of pure chemical element' that 'consists of' only chebi:chlorine atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020076
@@ -3949,7 +3932,7 @@ co:PMD_0020076 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only silver atoms."@en ;
                rdfs:label "portion of silver"@en ;
-               skos:definition "A 'Portion Of Silver' is a 'Portion Of Pure Substance' that 'consists of' only chebi:silver atom."@en .
+               skos:definition "A 'portion of silver' is a 'portion of pure chemical element' that 'consists of' only chebi:silver atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020077
@@ -3965,7 +3948,7 @@ co:PMD_0020077 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only samarium atoms."@en ;
                rdfs:label "portion of samarium"@en ;
-               skos:definition "A 'Portion Of Samarium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:samarium atom."@en .
+               skos:definition "A 'portion of samarium' is a 'portion of pure chemical element' that 'consists of' only chebi:samarium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020078
@@ -3981,7 +3964,7 @@ co:PMD_0020078 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only manganese atoms."@en ;
                rdfs:label "portion of manganese"@en ;
-               skos:definition "A 'Portion Of Manganese' is a 'Portion Of Pure Substance' that 'consists of' only chebi:manganese atom."@en .
+               skos:definition "A 'portion of manganese' is a 'portion of pure chemical element' that 'consists of' only chebi:manganese atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020079
@@ -3997,7 +3980,7 @@ co:PMD_0020079 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only arsenic atoms."@en ;
                rdfs:label "portion of arsenic"@en ;
-               skos:definition "A 'Portion Of Arsenic' is a 'Portion Of Pure Substance' that 'consists of' only chebi:arsenic atom."@en .
+               skos:definition "A 'portion of arsenic' is a 'portion of pure chemical element' that 'consists of' only chebi:arsenic atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020080
@@ -4013,7 +3996,7 @@ co:PMD_0020080 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only beryllium atoms."@en ;
                rdfs:label "portion of beryllium"@en ;
-               skos:definition "A 'Portion Of Beryllium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:beryllium atom."@en .
+               skos:definition "A 'portion of beryllium' is a 'portion of pure chemical element' that 'consists of' only chebi:beryllium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020081
@@ -4029,7 +4012,7 @@ co:PMD_0020081 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only calcium atoms."@en ;
                rdfs:label "portion of calcium"@en ;
-               skos:definition "A 'Portion Of Calcium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:calcium atom."@en .
+               skos:definition "A 'portion of calcium' is a 'portion of pure chemical element' that 'consists of' only chebi:calcium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020082
@@ -4045,7 +4028,7 @@ co:PMD_0020082 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only neodymium atoms."@en ;
                rdfs:label "portion of neodymium"@en ;
-               skos:definition "A 'Portion Of Neodymium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:neodymium atom."@en .
+               skos:definition "A 'portion of neodymium' is a 'portion of pure chemical element' that 'consists of' only chebi:neodymium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020083
@@ -4061,7 +4044,7 @@ co:PMD_0020083 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only hydrogen atoms."@en ;
                rdfs:label "portion of hydrogen"@en ;
-               skos:definition "A 'Portion Of Hydrogen' is a 'Portion Of Pure Substance' that 'consists of' only chebi:hydrogen atom."@en .
+               skos:definition "A 'portion of hydrogen' is a 'portion of pure chemical element' that 'consists of' only chebi:hydrogen atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020084
@@ -4077,7 +4060,7 @@ co:PMD_0020084 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only osmium atoms."@en ;
                rdfs:label "portion of osmium"@en ;
-               skos:definition "A 'Portion Of Osmium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:osmium atom."@en .
+               skos:definition "A 'portion of osmium' is a 'portion of pure chemical element' that 'consists of' only chebi:osmium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020085
@@ -4093,7 +4076,7 @@ co:PMD_0020085 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only iridium atoms."@en ;
                rdfs:label "portion of iridium"@en ;
-               skos:definition "A 'Portion Of Iridium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:iridium atom."@en .
+               skos:definition "A 'portion of iridium' is a 'portion of pure chemical element' that 'consists of' only chebi:iridium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020086
@@ -4109,7 +4092,7 @@ co:PMD_0020086 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only gallium atoms."@en ;
                rdfs:label "portion of gallium"@en ;
-               skos:definition "A 'Portion Of Gallium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:gallium atom."@en .
+               skos:definition "A 'portion of gallium' is a 'portion of pure chemical element' that 'consists of' only chebi:gallium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020087
@@ -4125,7 +4108,7 @@ co:PMD_0020087 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only bromine atoms."@en ;
                rdfs:label "portion of bromine"@en ;
-               skos:definition "A 'Portion Of Bromine' is a 'Portion Of Pure Substance' that 'consists of' only chebi:bromine atom."@en .
+               skos:definition "A 'portion of bromine' is a 'portion of pure chemical element' that 'consists of' only chebi:bromine atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020088
@@ -4141,7 +4124,7 @@ co:PMD_0020088 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only tin atoms."@en ;
                rdfs:label "portion of tin"@en ;
-               skos:definition "A 'Portion Of Tin' is a 'Portion Of Pure Substance' that 'consists of' only chebi:tin atom."@en .
+               skos:definition "A 'portion of tin' is a 'portion of pure chemical element' that 'consists of' only chebi:tin atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020089
@@ -4157,7 +4140,7 @@ co:PMD_0020089 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only hafnium atoms."@en ;
                rdfs:label "portion of hafnium"@en ;
-               skos:definition "A 'Portion Of Hafnium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:hafnium atom."@en .
+               skos:definition "A 'portion of hafnium' is a 'portion of pure chemical element' that 'consists of' only chebi:hafnium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020090
@@ -4173,7 +4156,7 @@ co:PMD_0020090 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only uranium atoms."@en ;
                rdfs:label "portion of uranium"@en ;
-               skos:definition "A 'Portion Of Uranium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:uranium atom."@en .
+               skos:definition "A 'portion of uranium' is a 'portion of pure chemical element' that 'consists of' only chebi:uranium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020091
@@ -4189,7 +4172,7 @@ co:PMD_0020091 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only oxygen atoms."@en ;
                rdfs:label "portion of oxygen"@en ;
-               skos:definition "A 'Portion Of Oxygen' is a 'Portion Of Pure Substance' that 'consists of' only chebi:oxygen atom."@en .
+               skos:definition "A 'portion of oxygen' is a 'portion of pure chemical element' that 'consists of' only chebi:oxygen atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020092
@@ -4205,7 +4188,7 @@ co:PMD_0020092 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only palladium atoms."@en ;
                rdfs:label "portion of palladium"@en ;
-               skos:definition "A 'Portion Of Palladium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:palladium."@en .
+               skos:definition "A 'portion of palladium' is a 'portion of pure chemical element' that 'consists of' only chebi:palladium."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020093
@@ -4221,7 +4204,7 @@ co:PMD_0020093 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only vanadium atoms."@en ;
                rdfs:label "portion of vanadium"@en ;
-               skos:definition "A 'Portion Of Vanadium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:vanadium atom."@en .
+               skos:definition "A 'portion of vanadium' is a 'portion of pure chemical element' that 'consists of' only chebi:vanadium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020094
@@ -4237,7 +4220,7 @@ co:PMD_0020094 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only scandium atoms."@en ;
                rdfs:label "portion of scandium"@en ;
-               skos:definition "A 'Portion Of Scandium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:scandium atom."@en .
+               skos:definition "A 'portion of scandium' is a 'portion of pure chemical element' that 'consists of' only chebi:scandium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020095
@@ -4253,7 +4236,7 @@ co:PMD_0020095 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020140 ;
                rdfs:comment "A Portion Of Matter that consists of only titanium atoms."@en ;
                rdfs:label "portion of titanium"@en ;
-               skos:definition "A 'Portion Of Titanium' is a 'Portion Of Pure Substance' that 'consists of' only chebi:titanium atom."@en .
+               skos:definition "A 'portion of titanium' is a 'portion of pure chemical element' that 'consists of' only chebi:titanium atom."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020099
@@ -4330,7 +4313,7 @@ co:PMD_0020106 rdf:type owl:Class ;
                                ] ;
                rdfs:label "polycrystal"@en ;
                skos:altLabel "Polycrystalline structure"@en ;
-               skos:definition "Polycrystal is a connected object aggregate that has continuant part some crystal grains"@en ;
+               skos:definition "A polycrystal is a connected material entity aggregate that consists of multiple crystal grains joined through crystallographic interfaces."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4373,21 +4356,21 @@ co:PMD_0020128 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020131
 co:PMD_0020131 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000019 ,
-                               _:genid560 ;
+                               _:genid555 ;
                owl:disjointWith co:PMD_0020148 ;
                rdfs:label "intensive quality"@en ;
                skos:altLabel "Point property"@en ;
                skos:definition "An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid560 rdf:type owl:Restriction ;
+_:genid555 rdf:type owl:Restriction ;
             owl:onProperty obo:RO_0000080 ;
             owl:someValuesFrom co:PMD_0000001 .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0020131 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid560 ;
+   owl:annotatedTarget _:genid555 ;
    rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en
  ] .
 
@@ -4396,7 +4379,7 @@ _:genid560 rdf:type owl:Restriction ;
 co:PMD_0020132 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020148 ;
                rdfs:label "size"@en ;
-               skos:definition "Size is the quality of a material entity that describes its spatial extend."@en ;
+               skos:definition "an extensive quality of a material entity that describes its spatial extend."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4441,7 +4424,7 @@ co:PMD_0020142 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020148 ;
                obo:IAO_0000119 <http://openenergy-platform.org/ontology/oeo/OEO_00000150> ;
                rdfs:label "energy"@en ;
-               skos:definition "Energy is a quality of material entities which manifests as a capacity to perform work (such as causing motion or the interaction of molecules)"@en ;
+               skos:definition "an extensive quality of material entities which manifests as a capacity to perform work (such as causing motion or the interaction of molecules)"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4472,8 +4455,10 @@ co:PMD_0020149 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0020161
 co:PMD_0020161 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000145 ;
+               obo:IAO_0000119 """old defintion: 
+Activity (a_X) is a relational property between a chemical species X and a non-ideal solution. a_X is a measure of the effective concentration of a chemical species X in the non-ideal solution, accounting for interactions between particles. It is defined as the product of the concentration and an activity coefficient, where the activity coefficient corrects for non-ideal behavior.""" ;
                rdfs:label "activity (thermodynamic)"@en ;
-               skos:definition "Activity (a_X) is a relational property between a chemical species X and a non-ideal solution. a_X is a measure of the effective concentration of a chemical species X in the non-ideal solution, accounting for interactions between particles. It is defined as the product of the concentration and an activity coefficient, where the activity coefficient corrects for non-ideal behavior."@en .
+               skos:definition "Thermodynamic activity is a relational quality that inheres between a chemical species and a non-ideal solution and represents the effective concentration of the species accounting for particle interactions."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020201
@@ -4545,16 +4530,12 @@ co:PMD_0020243 rdf:type owl:Class ;
                                ] ;
                obo:IAO_0000116 "size values of indiviudal grains are properties of the respective objects"@en ;
                rdfs:label "grain size"@en ;
-               skos:definition "an average size of the grains of a polycrystal"@en .
+               skos:definition "an intensive quality epitomizing the average size of the grains of a polycrystal"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0025001
 co:PMD_0025001 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020131 ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty co:PMD_0000004 ;
-                                 owl:someValuesFrom co:PMD_0020004
-                               ] ;
+               rdfs:subClassOf co:PMD_0020131 ;
                obo:IAO_0000116 "There's a dfference between composition and chemical compositon for the following reason: chemical compositon is relevant when the mass/volume/mole proportions of chemical elements(!) are identified, whlist composition includes proportions of molecules, other pure chemical substances, or even proptions of objects (in an object aggregate)."@en ;
                rdfs:label "composition"@en ;
                skos:definition "Composition is an intensive quality which defines types and proportions of compounds present in a material entity and is subject of some composition data item."@en ;
@@ -4592,8 +4573,9 @@ co:PMD_0025003 rdf:type owl:Class ;
                                  owl:onProperty co:PMD_0000077 ;
                                  owl:someValuesFrom co:PMD_0020023
                                ] ;
+               rdfs:comment "ferrite, austenite, martensite, etc."@en ;
                rdfs:label "metallic grain structure"@en ;
-               skos:definition "metallic grain structure characterizes the distinct phases in the microscopic structure of a metallic material. It concretizes ferrite, austenite, martensite, etc."@en ;
+               skos:definition "intensive quality epitomizing the distinct phases in the microscopic structure of a metallic material."@en ;
                co:PMD_0000060 "false"^^xsd:boolean .
 
 
@@ -4610,8 +4592,9 @@ co:PMD_0025008 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000624 ;
                rdfs:label "Transmissionselektronenmikroskop"@de ,
                           "transmission electron microscope"@en ;
-               skos:definition "A transmission electron microscope (SEM) is a measuring device that produces high-resolution images of a sample's internal structure by transmitting electrons through the sample."@en ,
-                               "Ein Transmissionselektronenmikroskop (TEM) ist ein Messgerät, das hochauflösende Bilder der inneren Struktur einer Probe erzeugt, indem es Elektronen durch die Probe strahlt."@de .
+               skos:definition "An electron microscope that produces high-resolution images of a sample's internal structure by transmitting electrons through the sample."@en ,
+                               "Ein Elektronenmikroskop, das hochauflösende Bilder der inneren Struktur einer Probe erzeugt, indem es Elektronen durch die Probe strahlt."@de ;
+               co:PMD_0050117 "TEM" .
 
 
 ###  https://w3id.org/pmd/co/PMD_0025012
@@ -4695,7 +4678,7 @@ co:PMD_0050155 rdf:type owl:Class ;
                rdfs:label "Form"@de ,
                           "shape"@en ;
                skos:definition "Das sichtbare Ausstattungsmerkmal (räumliche Form oder Kontur) eines bestimmten Objektes oder einer Art von Objekt."@de ,
-                               "The visible makeup characteristic (spatial form or contour) of a particular item or kind of item.a"@en .
+                               "Extemsive quality, the visible makeup characteristic (spatial form or contour) of a particular item or kind of item."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0050156
