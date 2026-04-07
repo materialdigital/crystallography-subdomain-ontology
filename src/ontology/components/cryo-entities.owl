@@ -645,7 +645,7 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
     <!-- https://w3id.org/pmd/cryo/CRYO_0000026 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
@@ -665,7 +665,7 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
     <!-- https://w3id.org/pmd/cryo/CRYO_0000027 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000027">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
