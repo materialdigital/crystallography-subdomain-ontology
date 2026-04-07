@@ -17,11 +17,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-03-26/cryo.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-04-07/cryo.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x</dcterms:title>
-        <owl:versionInfo>2026-03-26</owl:versionInfo>
+        <owl:versionInfo>2026-04-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6830,7 +6830,7 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
     <!-- https://w3id.org/pmd/cryo/CRYO_0000026 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
@@ -6856,7 +6856,7 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
     <!-- https://w3id.org/pmd/cryo/CRYO_0000027 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000027">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">

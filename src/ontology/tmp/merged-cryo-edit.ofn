@@ -2702,7 +2702,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3890,14 +3890,14 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000026> "defin
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000026> "crystal system"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/cryo/CRYO_0000026> "lattice type"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000026> "Crystal system is a intensive quality of a crystal lattice which describes the arrangement of lattice points in an infinite 3D space in such way that each lattice point has an identical environment to that around every other lattice point. It is specified by one of the 7 crystaa sytem value."@en)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> <https://w3id.org/pmd/co/PMD_0020131>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> <http://purl.obolibrary.org/obo/BFO_0000019>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectExactCardinality(1 <https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000028>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000027> (lattice centering)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000027> "lattice centering"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000027> "Lattice centering is an intensive quality ofa crystal lattice which the geometric arrangement of lattice points in a unit cell. It is specified by one of the 4 lattice centering value."@en)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000027> <https://w3id.org/pmd/co/PMD_0020131>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000027> <http://purl.obolibrary.org/obo/BFO_0000019>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>) ObjectExactCardinality(1 <https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000036>)))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000028> (crystal system value)

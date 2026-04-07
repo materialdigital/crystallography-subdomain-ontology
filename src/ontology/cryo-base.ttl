@@ -13,12 +13,12 @@
 @base <https://w3id.org/pmd/cryo/cryo-base.ttl> .
 
 <https://w3id.org/pmd/cryo/cryo-base.ttl> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-03-26/cryo-base.ttl> ;
+                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-04-07/cryo-base.ttl> ;
                                            dce:type obo:IAO_8000001 ;
                                            dcterms:description "None" ;
                                            dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                            dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x" ;
-                                           owl:versionInfo "2026-03-26" .
+                                           owl:versionInfo "2026-04-07" .
 
 #################################################################
 #    Annotation properties
@@ -3520,7 +3520,7 @@ cryo:CRYO_0000025 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000026
 cryo:CRYO_0000026 rdf:type owl:Class ;
-                  rdfs:subClassOf co:PMD_0020131 ,
+                  rdfs:subClassOf obo:BFO_0000019 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty co:PMD_0000077 ;
                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -3535,7 +3535,7 @@ cryo:CRYO_0000026 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000027
 cryo:CRYO_0000027 rdf:type owl:Class ;
-                  rdfs:subClassOf co:PMD_0020131 ,
+                  rdfs:subClassOf obo:BFO_0000019 ,
                                   [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                            owl:onProperty obo:RO_0000080 ;
                                                            owl:someValuesFrom cryo:CRYO_0000001
