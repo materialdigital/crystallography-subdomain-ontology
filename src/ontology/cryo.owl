@@ -6119,6 +6119,18 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020197">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000147"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">lattice point</rdfs:label>
         <skos:definition xml:lang="en">A lattice point is a fiat point that represents a position in a crystal lattice at which structural entities are regularly arranged.</skos:definition>
     </owl:Class>
@@ -6673,31 +6685,6 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000015 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000147"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">TODO: 
-1. is it relevant for molecules
-2. With SHACL it is possible to say that it is the same instance of a atom from the axiom</rdfs:comment>
-        <rdfs:label xml:lang="en">lattice point</rdfs:label>
-        <skos:definition xml:lang="en">Lattice point is a fiat point which is a part of a lattice and is a location of atoms (or molecules) of a crystal, which is located in the lattice.</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/cryo/CRYO_0000020 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000020">
@@ -6775,7 +6762,7 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000015"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020197"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">point Miller indices</rdfs:label>

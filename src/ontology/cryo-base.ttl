@@ -3010,7 +3010,15 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
 
 ###  https://w3id.org/pmd/co/PMD_0020197
 co:PMD_0020197 rdf:type owl:Class ;
-               rdfs:subClassOf obo:BFO_0000147 ;
+               rdfs:subClassOf obo:BFO_0000147 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000050 ;
+                                 owl:someValuesFrom cryo:CRYO_0000001
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:RO_0001015 ;
+                                 owl:someValuesFrom obo:CHEBI_33250
+                               ] ;
                rdfs:label "lattice point"@en ;
                skos:definition "A lattice point is a fiat point that represents a position in a crystal lattice at which structural entities are regularly arranged."@en .
 
@@ -3408,24 +3416,6 @@ cryo:CRYO_0000014 rdf:type owl:Class ;
                   skos:definition "Miller indices is an information content entity which denotes crystallographic direction, crystallographic plane, or lattice point, i.e., defines their position in respect to the coordinate system of a crystal lattice, and has exactly 3 interger literals, namely h, k. and l."@en .
 
 
-###  https://w3id.org/pmd/cryo/CRYO_0000015
-cryo:CRYO_0000015 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:BFO_0000147 ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:BFO_0000050 ;
-                                    owl:someValuesFrom cryo:CRYO_0000001
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:RO_0001015 ;
-                                    owl:someValuesFrom obo:CHEBI_33250
-                                  ] ;
-                  rdfs:comment """TODO: 
-1. is it relevant for molecules
-2. With SHACL it is possible to say that it is the same instance of a atom from the axiom"""@en ;
-                  rdfs:label "lattice point"@en ;
-                  skos:definition "Lattice point is a fiat point which is a part of a lattice and is a location of atoms (or molecules) of a crystal, which is located in the lattice."@en .
-
-
 ###  https://w3id.org/pmd/cryo/CRYO_0000020
 cryo:CRYO_0000020 rdf:type owl:Class ;
                   rdfs:subClassOf cryo:CRYO_0000014 ,
@@ -3481,7 +3471,7 @@ cryo:CRYO_0000024 rdf:type owl:Class ;
                   rdfs:subClassOf cryo:CRYO_0000014 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:IAO_0000219 ;
-                                    owl:someValuesFrom cryo:CRYO_0000015
+                                    owl:someValuesFrom co:PMD_0020197
                                   ] ;
                   rdfs:label "point Miller indices"@en ;
                   skos:definition "Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l)."@en ;
