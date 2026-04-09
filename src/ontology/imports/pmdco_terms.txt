@@ -1,14 +1,7 @@
 ### GDCs
 https://w3id.org/pmd/co/PMD_0000885  # pole figure
-https://w3id.org/pmd/co/PMD_0000992  # time series
 https://w3id.org/pmd/co/PMD_0000946  # spectrum
-https://w3id.org/pmd/co/PMD_0025002  # chemical composition specification
-https://w3id.org/pmd/co/PMD_0025997  # fraction specification
 http://purl.obolibrary.org/obo/OBI_0001931  # scalar value specification
-https://w3id.org/pmd/co/PMD_0020116  # aggregate state value TODO  import special types
-https://w3id.org/pmd/co/PMD_0020117  # aggregate state solid
-https://w3id.org/pmd/co/PMD_0020119  # aggregate state gasous
-https://w3id.org/pmd/co/PMD_0020118  # aggregate state liquid
 https://w3id.org/pmd/co/PMD_0020099  # bravais lattice
 https://w3id.org/pmd/co/PMD_0020018  # bravais lattice cubic body-centered
 https://w3id.org/pmd/co/PMD_0020019  # bravais lattice cubic face-centered
@@ -20,19 +13,13 @@ https://w3id.org/pmd/co/PMD_0020142  # Energy
 https://w3id.org/pmd/co/PMD_0050157  # 3d geomerty
 https://w3id.org/pmd/co/PMD_0020133  # mass
 https://w3id.org/pmd/co/PMD_0050051  # diameter
-https://w3id.org/pmd/co/PMD_0000551  # chemical composition
 https://w3id.org/pmd/co/PMD_0000591  # crystal structure
 https://w3id.org/pmd/co/PMD_0000853  # crystollagraphic texture
-https://w3id.org/pmd/co/PMD_0000967  # temperature
 https://w3id.org/pmd/co/PMD_0020104  # volume proportion
-https://w3id.org/pmd/co/PMD_0020207  # amount of substance
-https://w3id.org/pmd/co/PMD_0020102  # mass proportion 
 
 ### Occurents
 https://w3id.org/pmd/co/PMD_0000008  # process attribute
 https://w3id.org/pmd/co/PMD_0020143  # process chain
-https://w3id.org/pmd/co/PMD_0000549  # change of temperature
-https://w3id.org/pmd/co/PMD_0020136  # phase transformation
 # https://w3id.org/pmd/co/PMD_0000554  # chemical property analyzing process
 https://w3id.org/pmd/co/PMD_0000552  # chemical composition analyzing process
 https://w3id.org/pmd/co/PMD_0001016  # x-ray diffraction process
@@ -60,9 +47,6 @@ https://w3id.org/pmd/co/PMD_0000874  # electron microscope
 https://w3id.org/pmd/co/PMD_0001020  # x-ray diffractometer
 https://w3id.org/pmd/co/PMD_0000663  # crystal grain
 https://w3id.org/pmd/co/PMD_0020106  # polycrystal
-https://w3id.org/pmd/co/PMD_0020137  # stable phase
-https://w3id.org/pmd/co/PMD_0020149  # metastable phase
-https://w3id.org/pmd/co/PMD_0020128  # thermodynamic system
 https://w3id.org/pmd/co/PMD_0000965  # surface
 https://w3id.org/pmd/co/PMD_0000538  # bulk
 http://purl.obolibrary.org/obo/BFO_0000029 # site
@@ -114,12 +98,8 @@ http://purl.obolibrary.org/obo/IAO_0000039 # has measurement unit label
 http://purl.obolibrary.org/obo/BFO_0000138 # proper occurent part of
 
 # From BFO 
-http://purl.obolibrary.org/obo/BFO_0000006 # spacial region
 http://purl.obolibrary.org/obo/BFO_0000016 # disposition
-http://purl.obolibrary.org/obo/BFO_0000018 # zero-dimensional spatial region
-http://purl.obolibrary.org/obo/BFO_0000009 # two-dimensional spatial region
-http://purl.obolibrary.org/obo/BFO_0000028 # three-dimensional spatial region
-http://purl.obolibrary.org/obo/BFO_0000026 # one-dimensional spatial region
+
 
 # Data properties
 http://purl.obolibrary.org/obo/OBI_0001937 # 'has specified numeric value'
@@ -127,7 +107,5 @@ https://w3id.org/pmd/co/PMD_0000006  # has value
 http://purl.obolibrary.org/obo/OBI_0002135 # has specified value
 
 # UO from pmdco 
-http://purl.obolibrary.org/obo/UO_1000163 # mass percentage
-http://purl.obolibrary.org/obo/UO_0000164 # mass volume percentage
 http://purl.obolibrary.org/obo/UO_0000076 # volume fraction
 

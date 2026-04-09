@@ -72,19 +72,6 @@
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000041 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000041">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000170"/>
-                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
