@@ -13,12 +13,12 @@
 @base <https://w3id.org/pmd/cryo/cryo-base.ttl> .
 
 <https://w3id.org/pmd/cryo/cryo-base.ttl> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-04-07/cryo-base.ttl> ;
+                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-04-09/cryo-base.ttl> ;
                                            dce:type obo:IAO_8000001 ;
                                            dcterms:description "None" ;
                                            dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                            dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x" ;
-                                           owl:versionInfo "2026-04-07" .
+                                           owl:versionInfo "2026-04-09" .
 
 #################################################################
 #    Annotation properties
@@ -912,11 +912,6 @@ obo:OBI_0001930 rdf:type owl:Class .
 
 ###  http://purl.obolibrary.org/obo/OBI_0001931
 obo:OBI_0001931 rdf:type owl:Class .
-
-
-###  https://w3id.org/pmd/CRYO_0000000
-<https://w3id.org/pmd/CRYO_0000000> rdf:type owl:Class ;
-                                    rdfs:label "root node"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000001
@@ -3013,6 +3008,13 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
                skos:definition "Thermodynamic activity is a relational quality that inheres between a chemical species and a non-ideal solution and represents the effective concentration of the species accounting for particle interactions."@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0020197
+co:PMD_0020197 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000147 ;
+               rdfs:label "lattice point"@en ;
+               skos:definition "A lattice point is a fiat point that represents a position in a crystal lattice at which structural entities are regularly arranged."@en .
+
+
 ###  https://w3id.org/pmd/co/PMD_0020201
 co:PMD_0020201 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000146 ;
@@ -3409,30 +3411,13 @@ cryo:CRYO_0000014 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/cryo/CRYO_0000015
 cryo:CRYO_0000015 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000147 ,
-                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:BFO_0000050 ;
-                                                           owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000001
-                                                                                                     [ rdf:type owl:Restriction ;
-                                                                                                       owl:onProperty obo:RO_0001015 ;
-                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0020003
-                                                                                                                                                 [ rdf:type owl:Restriction ;
-                                                                                                                                                   owl:onProperty obo:BFO_0000051 ;
-                                                                                                                                                   owl:someValuesFrom obo:CHEBI_33250
-                                                                                                                                                 ]
-                                                                                                                                               ) ;
-                                                                                                                            rdf:type owl:Class
-                                                                                                                          ]
-                                                                                                     ]
-                                                                                                   ) ;
-                                                                                rdf:type owl:Class
-                                                                              ]
-                                                         ]
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:RO_0001015 ;
-                                                           owl:someValuesFrom obo:CHEBI_33250
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom cryo:CRYO_0000001
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0001015 ;
+                                    owl:someValuesFrom obo:CHEBI_33250
                                   ] ;
                   rdfs:comment """TODO: 
 1. is it relevant for molecules

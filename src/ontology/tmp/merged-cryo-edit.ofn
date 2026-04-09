@@ -152,7 +152,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000164>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000076>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000163>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000164>))
-Declaration(Class(<https://w3id.org/pmd/CRYO_0000000>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000005>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000008>))
@@ -296,6 +295,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020143>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020148>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020149>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020161>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020197>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020201>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020207>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020210>))
@@ -2349,10 +2349,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_1000163> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000164> "mass volume percentage based unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_1000164> <http://purl.obolibrary.org/obo/UO_0000000>)
 
-# Class: <https://w3id.org/pmd/CRYO_0000000> (root node)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/CRYO_0000000> "root node"@en)
-
 # Class: <https://w3id.org/pmd/co/PMD_0000001> (portion of matter)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0000001> "It is also representing a distinct physical or conceptual part of a material or substance.
@@ -2702,7 +2698,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3558,6 +3554,12 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020161> "activity (
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020161> "Thermodynamic activity is a relational quality that inheres between a chemical species and a non-ideal solution and represents the effective concentration of the species accounting for particle interactions."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020161> <http://purl.obolibrary.org/obo/BFO_0000145>)
 
+# Class: <https://w3id.org/pmd/co/PMD_0020197> (lattice point)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020197> "lattice point"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020197> "A lattice point is a fiat point that represents a position in a crystal lattice at which structural entities are regularly arranged."@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020197> <http://purl.obolibrary.org/obo/BFO_0000147>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0020201> (section)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020201> "section"@en)
@@ -3831,7 +3833,8 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000015> "TODO:
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000015> "lattice point"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000015> "Lattice point is a fiat point which is a part of a lattice and is a location of atoms (or molecules) of a crystal, which is located in the lattice."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000015> <http://purl.obolibrary.org/obo/BFO_0000147>)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000015> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001015> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_33250>))))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001015> <http://purl.obolibrary.org/obo/CHEBI_33250>)))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/cryo/CRYO_0000001>))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001015> <http://purl.obolibrary.org/obo/CHEBI_33250>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000020> (direction Miller indices)
 

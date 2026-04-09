@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/cryo/imports/pmdco_import.owl>
-<https://w3id.org/pmd/cryo/releases/2026-04-07/imports/pmdco_import.owl>
+<https://w3id.org/pmd/cryo/releases/2026-04-09/imports/pmdco_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://w3id.org/pmd/co/3.0.0>)
-Annotation(owl:versionInfo "2026-04-07")
+Annotation(owl:versionInfo "2026-04-09")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -293,6 +293,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020143>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020148>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020149>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020161>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020197>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020201>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020207>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020210>))
@@ -2394,7 +2395,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3249,6 +3250,12 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020161> "activity (thermodynamic)"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020161> "Thermodynamic activity is a relational quality that inheres between a chemical species and a non-ideal solution and represents the effective concentration of the species accounting for particle interactions."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020161> <http://purl.obolibrary.org/obo/BFO_0000145>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0020197> (lattice point)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020197> "lattice point"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020197> "A lattice point is a fiat point that represents a position in a crystal lattice at which structural entities are regularly arranged."@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020197> <http://purl.obolibrary.org/obo/BFO_0000147>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020201> (section)
 
