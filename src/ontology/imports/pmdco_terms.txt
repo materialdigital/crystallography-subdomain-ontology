@@ -49,6 +49,7 @@ http://purl.obolibrary.org/obo/BFO_0000202 # temporal interval
 http://purl.obolibrary.org/obo/BFO_0000203 # temporal instance
 
 ### ICs
+https://w3id.org/pmd/co/PMD_0020197  # lattice point
 https://w3id.org/pmd/co/PMD_0000857  # microstructure
 https://w3id.org/pmd/co/PMD_0020140  # portion of pure chemical element
 https://w3id.org/pmd/co/PMD_0000602  # device
