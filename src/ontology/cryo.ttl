@@ -1227,14 +1227,6 @@ obo:BFO_0000008 rdf:type owl:Class ;
                 skos:example "As for zero-dimensional temporal region and one-dimensional temporal region"@en .
 
 
-###  http://purl.obolibrary.org/obo/BFO_0000009
-obo:BFO_0000009 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000006 ;
-                rdfs:label "two-dimensional spatial region"@en ;
-                skos:definition "(Elucidation) A two-dimensional spatial region is a spatial region that is a whole consisting of a surface together with zero or more surfaces which may have spatial regions of lower dimension as parts"@en ;
-                skos:example "The surface of a sphere-shaped part of space; an infinitely thin plane in space"@en .
-
-
 ###  http://purl.obolibrary.org/obo/BFO_0000011
 obo:BFO_0000011 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000003 ,
@@ -1289,14 +1281,6 @@ obo:BFO_0000017 rdf:type owl:Class ;
                 skos:example "The role of being a doctor; the role of this boundary to delineate where Utah and Colorado meet; the function of your reproductive organs; the disposition of your blood to coagulate; the disposition of this piece of metal to conduct electricity"@en .
 
 
-###  http://purl.obolibrary.org/obo/BFO_0000018
-obo:BFO_0000018 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000006 ;
-                rdfs:label "zero-dimensional spatial region"@en ;
-                skos:definition "(Elucidation) A zero-dimensional spatial region is one or a collection of more than one spatially disjoint points in space"@en ;
-                skos:example "The spatial region occupied at some time instant by the North Pole"@en .
-
-
 ###  http://purl.obolibrary.org/obo/BFO_0000019
 obo:BFO_0000019 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000020 ,
@@ -1339,28 +1323,12 @@ obo:BFO_0000024 rdf:type owl:Class ;
                 skos:example "The upper and lower lobes of the left lung; the dorsal and ventral surfaces of the body; the Western hemisphere of the Earth; the FMA:regional parts of an intact human body"@en .
 
 
-###  http://purl.obolibrary.org/obo/BFO_0000026
-obo:BFO_0000026 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000006 ;
-                rdfs:label "one-dimensional spatial region"@en ;
-                skos:definition "(Elucidation) A one-dimensional spatial region is a whole consisting of a line together with zero or more lines which may have points as parts"@en ;
-                skos:example "An edge of a cube-shaped portion of space; a line connecting two points; two parallel lines extended in space"@en .
-
-
 ###  http://purl.obolibrary.org/obo/BFO_0000027
 obo:BFO_0000027 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000040 ;
                 rdfs:label "object aggregate"@en ;
                 skos:definition "(Elucidation) An object aggregate is a material entity consisting exactly of a plurality (≥1) of objects as member parts which together form a unit"@en ;
                 skos:example "The aggregate of the musicians in a symphony orchestra and their instruments; the aggregate of bearings in a constant velocity axle joint; the nitrogen atoms in the atmosphere; a collection of cells in a blood biobank"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000028
-obo:BFO_0000028 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000006 ;
-                rdfs:label "three-dimensional spatial region"@en ;
-                skos:definition "(Elucidation) A three-dimensional spatial region is a whole consisting of a spatial volume together with zero or more spatial volumes which may have spatial regions of lower dimension as parts"@en ;
-                skos:example "A cube-shaped region of space; a sphere-shaped region of space; the region of space occupied by all and only the planets in the solar system at some point in time"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000029
@@ -2339,27 +2307,10 @@ obo:UO_0000076 rdf:type owl:Class ;
                rdfs:subClassOf obo:UO_1000076 .
 
 
-###  http://purl.obolibrary.org/obo/UO_0000164
-obo:UO_0000164 rdf:type owl:Class ;
-               rdfs:subClassOf obo:UO_1000164 .
-
-
 ###  http://purl.obolibrary.org/obo/UO_1000076
 obo:UO_1000076 rdf:type owl:Class ;
                rdfs:subClassOf obo:UO_0000000 ;
                rdfs:label "mole fraction based unit" .
-
-
-###  http://purl.obolibrary.org/obo/UO_1000163
-obo:UO_1000163 rdf:type owl:Class ;
-               rdfs:subClassOf obo:UO_0000000 ;
-               rdfs:label "mass percentage based unit" .
-
-
-###  http://purl.obolibrary.org/obo/UO_1000164
-obo:UO_1000164 rdf:type owl:Class ;
-               rdfs:subClassOf obo:UO_0000000 ;
-               rdfs:label "mass volume percentage based unit" .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000001
@@ -2545,14 +2496,6 @@ co:PMD_0000538 rdf:type owl:Class ;
                owl:disjointWith co:PMD_0000965 ;
                rdfs:label "bulk"@en ;
                skos:definition "The bulk is a fiat object part that describes the volume or mass of material considered as a whole, often in contrast to surface or interface phenomena."@en ;
-               co:PMD_0000060 "true"^^xsd:boolean .
-
-
-###  https://w3id.org/pmd/co/PMD_0000549
-co:PMD_0000549 rdf:type owl:Class ;
-               rdfs:subClassOf obo:BFO_0000015 ;
-               rdfs:label "change of temperature"@en ;
-               skos:definition "change of temperature is a process in which a particpant changes its temperature"@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -2876,7 +2819,6 @@ co:PMD_0000945 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/co/PMD_0000946
 co:PMD_0000946 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0000501 ;
-               owl:disjointWith co:PMD_0000992 ;
                rdfs:label "spectrum"@en ;
                skos:definition "A spectrum is a 1-D information content entity that describes the range of wavelengths or frequencies of a physical property, often used in reference to light, sound, or electromagnetic radiation."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
@@ -2957,14 +2899,6 @@ co:PMD_0000967 rdf:type owl:Class ;
                             "To express that an object has a temperature, the property 'intensive bearer of' can be used. It implies a chain of: object consists of some portion of matter and portion of matter bearer of some temperature."@en ;
                rdfs:label "temperature"@en ;
                skos:definition "The temperature is a fundamental intensive quality representing the average atomic or molcular movement or vibration of a portion of matter."@en ;
-               co:PMD_0000060 "true"^^xsd:boolean .
-
-
-###  https://w3id.org/pmd/co/PMD_0000992
-co:PMD_0000992 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0000501 ;
-               rdfs:label "time series"@en ;
-               skos:definition "A time series is a 1-D information content entity defined by a sequence of data points collected or recorded at successive time intervals, used for analyzing temporal properties or trends."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -3075,14 +3009,6 @@ co:PMD_0010021 rdf:type owl:Class ;
                skos:definition "A 'portion of tellurium' is a 'portion of pure chemical element' that 'consists of' only chebi:tellurium atom."@en .
 
 
-###  https://w3id.org/pmd/co/PMD_0020000
-co:PMD_0020000 rdf:type owl:Class ;
-               rdfs:subClassOf obo:BFO_0000040 ;
-               rdfs:label "phase (thermodynamic)"@en ;
-               skos:definition "A thermodynamic phase is a material entity that forms a homogeneous portion of matter within a thermodynamic system and is characterized by uniform thermodynamic properties."@en ;
-               co:PMD_0000060 "true"^^xsd:boolean .
-
-
 ###  https://w3id.org/pmd/co/PMD_0020003
 co:PMD_0020003 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000030 ,
@@ -3092,31 +3018,6 @@ co:PMD_0020003 rdf:type owl:Class ;
                                ] ;
                rdfs:label "crystal"@en ;
                skos:definition "A crystal is an object that has a quality \"crystal structure\"."@en ;
-               co:PMD_0000060 "true"^^xsd:boolean .
-
-
-###  https://w3id.org/pmd/co/PMD_0020004
-co:PMD_0020004 rdf:type owl:Class ;
-               rdfs:subClassOf [ owl:intersectionOf ( obo:IAO_0000027
-                                                      [ rdf:type owl:Restriction ;
-                                                        owl:onProperty obo:IAO_0000136 ;
-                                                        owl:someValuesFrom co:PMD_0025001
-                                                      ]
-                                                    ) ;
-                                 rdf:type owl:Class
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty obo:RO_0002351 ;
-                                 owl:someValuesFrom co:PMD_0025997
-                               ] ;
-               obo:IAO_0000116 """See editior note of composition to underatand the difference between composition and chemical composition data items.
-
-To understand the difference between the composition and the composition data item, one has to understand the difference between SDCs and GDCs in BFO. A triple \"material entity has quality compsition\", conveys the fact such quality exists without telling us what are fractions of compounds in this material entity. A triple \"compostion is subject of composition data item\" conveys that there's an information about values of these fractions. Think of comosition data item as a pdf where the composition is documented."""@en ;
-               rdfs:comment "These portions of other matters do not have to be portions of specific chemical elements, i.e., atomic composition, but rather portions of other substances, such as nitric acid and water."@en ;
-               rdfs:label "composition data item"@en ;
-               skos:altLabel "composition specification"@en ;
-               skos:definition "Composition data item is an information content entity that is about composition of a material enity. It has members fraction value specifications which specifiy values of propotions of compounds, which are parts of the material enity."@en ;
-               skos:example "Nitric acid solution has quality  composition, and  the composition data item is about this composition.The composition data item has members fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications specify values of relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4272,25 +4173,6 @@ co:PMD_0020101 rdf:type owl:Class ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
-###  https://w3id.org/pmd/co/PMD_0020102
-co:PMD_0020102 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020101 ;
-               rdfs:label "mass proportion"@en ;
-               skos:definition "Mass proportion is a proportion which quantifies the mass of the part relative to the mass of the whole."@en ;
-               co:PMD_0000060 "true"^^xsd:boolean .
-
-
-###  https://w3id.org/pmd/co/PMD_0020103
-co:PMD_0020103 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020101 ;
-               rdfs:label "molar proportion"@en ;
-               skos:altLabel "Molar Ratio"@en ;
-               skos:definition "Molar proportion is the proportion which quantifies the entities count of the part in relation to the entities count of the whole."@en ;
-               skos:example """The molar ratio of hydrogen gas H2 molecules to water H2O molecules is 1/1 in the oxyhydrogen reaction. The molar ratio of oxygen molecules O2 to water molecules is 2/1.
-The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 2022 AD."""@en ;
-               co:PMD_0000060 "true"^^xsd:boolean .
-
-
 ###  https://w3id.org/pmd/co/PMD_0020104
 co:PMD_0020104 rdf:type owl:Class ;
                rdfs:subClassOf co:PMD_0020101 ;
@@ -4340,32 +4222,24 @@ co:PMD_0020116 rdf:type owl:Class ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
-###  https://w3id.org/pmd/co/PMD_0020128
-co:PMD_0020128 rdf:type owl:Class ;
-               rdfs:subClassOf obo:BFO_0000027 ;
-               rdfs:label "thermodynamic system"@en ;
-               skos:definition "A thermodynamic system is an object aggregate whose objects are bearer of  thermodynamic properties. A thermodynamic system environs a thermodynamic process by which the thermodynamic properties of the objects of the thermodynamic system change over time."@en ;
-               co:PMD_0000060 "true"^^xsd:boolean .
-
-
 ###  https://w3id.org/pmd/co/PMD_0020131
 co:PMD_0020131 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000019 ,
-                               _:genid555 ;
+                               _:genid550 ;
                owl:disjointWith co:PMD_0020148 ;
                rdfs:label "intensive quality"@en ;
                skos:altLabel "Point property"@en ;
                skos:definition "An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
-_:genid555 rdf:type owl:Restriction ;
+_:genid550 rdf:type owl:Restriction ;
             owl:onProperty obo:RO_0000080 ;
             owl:someValuesFrom co:PMD_0000001 .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource co:PMD_0020131 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid555 ;
+   owl:annotatedTarget _:genid550 ;
    rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en
  ] .
 
@@ -4384,26 +4258,6 @@ co:PMD_0020133 rdf:type owl:Class ;
                rdfs:comment "Mass is relevant in such processes as gravitation, acceleration, etc."@en ;
                rdfs:label "mass"@en ;
                skos:definition "Mass is fundamental extensive quality."@en ;
-               co:PMD_0000060 "true"^^xsd:boolean .
-
-
-###  https://w3id.org/pmd/co/PMD_0020136
-co:PMD_0020136 rdf:type owl:Class ;
-               rdfs:subClassOf obo:BFO_0000015 ;
-               rdfs:comment "The number of phases involved can vary as well as the mechanisms involved can be different."@en ;
-               rdfs:label "phase transformation"@en ;
-               skos:definition "A thermodynamic phase transformation is a process in/of a thermodynamic system, that involves the transformation of phases of the system to other phases."@en ;
-               co:PMD_0000060 "true"^^xsd:boolean .
-
-
-###  https://w3id.org/pmd/co/PMD_0020137
-co:PMD_0020137 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020000 ;
-               owl:disjointWith co:PMD_0020149 ;
-               rdfs:comment "See metastable phase"@en ;
-               rdfs:label "stable phase"@en ;
-               skos:definition "A stable phase is a phase that does not have a \"pmd:disposition of a phase to transform\" in the \"pmd:phase transformation\" it participates."@en ;
-               skos:example "A phase that participates in a phase transformation pt and pt that is not a metastable phase."@en ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
@@ -4438,15 +4292,6 @@ co:PMD_0020148 rdf:type owl:Class ;
                co:PMD_0000060 "true"^^xsd:boolean .
 
 
-###  https://w3id.org/pmd/co/PMD_0020149
-co:PMD_0020149 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020000 ;
-               rdfs:comment "The stability of a phase can only be evaluated in the context of a (possibly unknown) phase transformation process."@en ;
-               rdfs:label "metastable phase"@en ;
-               skos:definition "A metastable phase phase_trans is a phase that has a \"pmd:disposition of a phase to transform\" disp_trans and disp_trans is realized in a \"pmd:phase transformation\" proc_trans and proc_trans has participant sys_trans and sys_trans has part phase_trans."@en ;
-               co:PMD_0000060 "true"^^xsd:boolean .
-
-
 ###  https://w3id.org/pmd/co/PMD_0020161
 co:PMD_0020161 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000145 ;
@@ -4476,13 +4321,6 @@ co:PMD_0020201 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000146 ;
                rdfs:label "section"@en ;
                skos:definition "Section is a planar fiat surface cutting across the object"@en .
-
-
-###  https://w3id.org/pmd/co/PMD_0020207
-co:PMD_0020207 rdf:type owl:Class ;
-               rdfs:subClassOf co:PMD_0020103 ;
-               rdfs:label "amount of substance"@en ;
-               skos:definition "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has avogadro number objects (of same type) as parts (n = N/N_A)."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020210
@@ -4554,23 +4392,6 @@ co:PMD_0025001 rdf:type owl:Class ;
                co:PMD_0000064 "Composition is a collective property of a portion of matter, i.e., the triple portion of matter has quality composition holds. As \"has quality\" is an inverse  functional property, only one instance of portion of matter can have this specific composition. However, proportions describe the relation between the prortion of matter (the whole) and some compound (the part). Thus, the following triples hold: portion of matter has relational quality proportion; portion of matter has part some substance (or whatever is your part); substance has relational quality proportion. \"Has relational quality\" is not inverse functional, i.e., it can point to a single object from 2 distinct subjects."@en .
 
 
-###  https://w3id.org/pmd/co/PMD_0025002
-co:PMD_0025002 rdf:type owl:Class ;
-               rdfs:subClassOf [ owl:intersectionOf ( co:PMD_0020004
-                                                      [ rdf:type owl:Restriction ;
-                                                        owl:onProperty obo:IAO_0000136 ;
-                                                        owl:someValuesFrom co:PMD_0000551
-                                                      ]
-                                                    ) ;
-                                 rdf:type owl:Class
-                               ] ;
-               rdfs:label "chemical composition data item"@en ;
-               skos:altLabel "chemical composition specification"@en ;
-               skos:definition "Chemical composition data item is an information content entity that is about composition of a portion of matter. It has members fraction value specifications which specifiy values of propotions of portions of (pure) chemical elements, which are parts of the portion of matter."@en ;
-               skos:example "Steel has quality chemical composition , and the chemical composition data item is about the chemical composition .The chemical composition data item has members fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these fraction specifications specify  values of relational qualities (mass) proportion of iron and (mass) proportion of carbon."@en ;
-               co:PMD_0000060 "true"^^xsd:boolean .
-
-
 ###  https://w3id.org/pmd/co/PMD_0025003
 co:PMD_0025003 rdf:type owl:Class ;
                owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -4628,36 +4449,6 @@ co:PMD_0025015 rdf:type owl:Class ;
                rdfs:comment "'portion of pure chemical element' and 'has part' only CHEBI:33336"@en ;
                rdfs:label "portion of lanthanum"@en ;
                skos:definition "A portion of lanthanum is a portion of pure substance that has parts only chebi:lanthanum atom."@en .
-
-
-###  https://w3id.org/pmd/co/PMD_0025997
-co:PMD_0025997 rdf:type owl:Class ;
-               rdfs:subClassOf obo:OBI_0001931 ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty obo:OBI_0001927 ;
-                                 owl:someValuesFrom [ owl:intersectionOf ( co:PMD_0020101
-                                                                           [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty co:PMD_0025999 ;
-                                                                             owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
-                                                                                                                       [ rdf:type owl:Restriction ;
-                                                                                                                         owl:onProperty obo:BFO_0000050 ;
-                                                                                                                         owl:someValuesFrom obo:BFO_0000040
-                                                                                                                       ]
-                                                                                                                     ) ;
-                                                                                                  rdf:type owl:Class
-                                                                                                ]
-                                                                           ]
-                                                                         ) ;
-                                                      rdf:type owl:Class
-                                                    ]
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty obo:RO_0002350 ;
-                                 owl:allValuesFrom co:PMD_0020004
-                               ] ;
-               rdfs:label "fraction value specification"@en ;
-               skos:definition "Fraction value specification is a value specification that contains information about quantitative share of a part relative to a specified whole."@en ;
-               skos:example "2.05 wt.% of carbon in steel, 4 vol.% of nitric acid in a solution"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0040001
@@ -5047,10 +4838,6 @@ cryo:CRYO_0000041 rdf:type owl:Class ;
                                                                             ) ;
                                                          rdf:type owl:Class
                                                        ]
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty cryo:CRYO_0000170 ;
-                                    owl:hasSelf "true"^^xsd:boolean
                                   ] ;
                   rdfs:comment """'immaterial entity' and ('part of' some 
 ('crystal lattice' and ('has quality' some 
@@ -5091,17 +4878,11 @@ cryo:CRYO_0000049 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000075
 cryo:CRYO_0000075 rdf:type owl:Class ;
-                  rdfs:subClassOf co:PMD_0000501 ,
+                  rdfs:subClassOf obo:OBI_0001933 ,
+                                  co:PMD_0000501 ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:IAO_0000418 ;
-                                    owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000042
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty obo:RO_0000080 ;
-                                                                                owl:someValuesFrom co:PMD_0000663
-                                                                              ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ]
+                                    owl:onProperty obo:OBI_0001927 ;
+                                    owl:someValuesFrom cryo:CRYO_0000042
                                   ] ;
                   rdfs:label "Euler angles"@en ;
                   skos:definition "In crystallography Euler angles are three angles which describe orientation of a sinlge crystal in respect to the sample's coordinate system. By aligning coordinate system of every crystal in the sample to the sample's coordinate system, anisotropy of material's properties can be investigated."@en .
@@ -5385,10 +5166,6 @@ In particular, it considers <100>, <110>, and <111> families of crystallographic
 
 ###  http://purl.obolibrary.org/obo/UO_0000076
 obo:UO_0000076 rdf:type owl:NamedIndividual .
-
-
-###  http://purl.obolibrary.org/obo/UO_0000164
-obo:UO_0000164 rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020006
@@ -6288,19 +6065,6 @@ obo:UO_0000076 obo:IAO_0000115 "A concentration unit which denotes the number of
  ] .
 
 
-obo:UO_0000164 obo:IAO_0000115 "A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture." ;
-               oboInOwl:hasExactSynonym "(w/v)" ,
-                                        "weight-volume percentage" ;
-               rdfs:label "mass volume percentage" .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:UO_0000164 ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture." ;
-   oboInOwl:hasDbXref "UOC:GVG"
- ] .
-
-
 #################################################################
 #    General axioms
 #################################################################
@@ -6326,15 +6090,6 @@ obo:UO_0000164 obo:IAO_0000115 "A dimensionless concentration unit which denotes
                 obo:BFO_0000011
                 obo:BFO_0000015
                 obo:BFO_0000035
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( obo:BFO_0000009
-                obo:BFO_0000018
-                obo:BFO_0000026
-                obo:BFO_0000028
               )
 ] .
 
@@ -6373,14 +6128,6 @@ obo:UO_0000164 obo:IAO_0000115 "A dimensionless concentration unit which denotes
                 co:PMD_0020142
                 co:PMD_0020161
                 co:PMD_0050155
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( co:PMD_0020102
-                co:PMD_0020103
-                co:PMD_0020104
               )
 ] .
 

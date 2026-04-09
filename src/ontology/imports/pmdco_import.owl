@@ -17,19 +17,15 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000008>))
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000017>))
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000024>))
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
@@ -146,10 +142,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001931>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001933>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000076>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000164>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000076>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000163>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000164>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000005>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000008>))
@@ -159,7 +152,6 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000502>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000503>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000512>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000538>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0000549>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000551>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000552>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000553>))
@@ -191,7 +183,6 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0000950>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000957>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000965>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000967>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0000992>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0001014>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0001016>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0001017>))
@@ -200,9 +191,7 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0001019>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0001020>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0010020>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0010021>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0020000>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020003>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0020004>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020005>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020023>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020026>))
@@ -275,39 +264,30 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020094>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020095>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020099>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020101>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0020102>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0020103>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020104>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020106>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020112>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020116>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0020128>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020131>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020132>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020133>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0020136>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0020137>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020140>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020142>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020143>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020148>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0020149>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020161>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020197>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020201>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0020207>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020210>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020216>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020220>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020243>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025001>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0025002>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025003>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025007>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025008>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025012>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025015>))
-Declaration(Class(<https://w3id.org/pmd/co/PMD_0025997>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0040001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050051>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0050155>))
@@ -382,7 +362,6 @@ Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0002135>))
 Declaration(DataProperty(<https://w3id.org/pmd/co/PMD_0000006>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000076>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000164>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020006>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020007>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020008>))
@@ -530,7 +509,6 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000132> "occurrent part of"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000132> "(Elucidation) occurrent part of is a relation between occurrents b and c when b is part of c"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000132> "Mary's 5th birthday is an occurrent part of Mary's life; the first set of the tennis match is an occurrent part of the tennis match"@en)
-SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000132> <http://purl.obolibrary.org/obo/BFO_0000050>)
 SubObjectPropertyOf(Annotation(rdfs:comment "\"occurrent part of\" is not a BFO2020 temporalized relation. It just restricts the domain and range to \"occurrent\". That's why is should be OK to make it sub property of RO \"part of\"") <http://purl.obolibrary.org/obo/BFO_0000132> <http://purl.obolibrary.org/obo/BFO_0000050>)
 TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000132>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000132> <http://purl.obolibrary.org/obo/BFO_0000003>)
@@ -1158,13 +1136,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.o
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000008> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000132> <http://purl.obolibrary.org/obo/BFO_0000008>))
 
-# Class: <http://purl.obolibrary.org/obo/BFO_0000009> (two-dimensional spatial region)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000009> "two-dimensional spatial region"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000009> "(Elucidation) A two-dimensional spatial region is a spatial region that is a whole consisting of a surface together with zero or more surfaces which may have spatial regions of lower dimension as parts"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000009> "The surface of a sphere-shaped part of space; an infinitely thin plane in space"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000009> <http://purl.obolibrary.org/obo/BFO_0000006>)
-
 # Class: <http://purl.obolibrary.org/obo/BFO_0000011> (spatiotemporal region)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000011> "spatiotemporal region"@en)
@@ -1199,13 +1170,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000017> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000017>))
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
-# Class: <http://purl.obolibrary.org/obo/BFO_0000018> (zero-dimensional spatial region)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000018> "zero-dimensional spatial region"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000018> "(Elucidation) A zero-dimensional spatial region is one or a collection of more than one spatially disjoint points in space"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000018> "The spatial region occupied at some time instant by the North Pole"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000018> <http://purl.obolibrary.org/obo/BFO_0000006>)
-
 # Class: <http://purl.obolibrary.org/obo/BFO_0000019> (quality)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000019> "quality"@en)
@@ -1238,26 +1202,12 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000024> "The upper and lower lobes of the left lung; the dorsal and ventral surfaces of the body; the Western hemisphere of the Earth; the FMA:regional parts of an intact human body"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000024> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
-# Class: <http://purl.obolibrary.org/obo/BFO_0000026> (one-dimensional spatial region)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000026> "one-dimensional spatial region"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000026> "(Elucidation) A one-dimensional spatial region is a whole consisting of a line together with zero or more lines which may have points as parts"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000026> "An edge of a cube-shaped portion of space; a line connecting two points; two parallel lines extended in space"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000026> <http://purl.obolibrary.org/obo/BFO_0000006>)
-
 # Class: <http://purl.obolibrary.org/obo/BFO_0000027> (object aggregate)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000027> "object aggregate"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000027> "(Elucidation) An object aggregate is a material entity consisting exactly of a plurality (≥1) of objects as member parts which together form a unit"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000027> "The aggregate of the musicians in a symphony orchestra and their instruments; the aggregate of bearings in a constant velocity axle joint; the nitrogen atoms in the atmosphere; a collection of cells in a blood biobank"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000040>)
-
-# Class: <http://purl.obolibrary.org/obo/BFO_0000028> (three-dimensional spatial region)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000028> "three-dimensional spatial region"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/BFO_0000028> "(Elucidation) A three-dimensional spatial region is a whole consisting of a spatial volume together with zero or more spatial volumes which may have spatial regions of lower dimension as parts"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://purl.obolibrary.org/obo/BFO_0000028> "A cube-shaped region of space; a sphere-shaped region of space; the region of space occupied by all and only the planets in the solar system at some point in time"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000028> <http://purl.obolibrary.org/obo/BFO_0000006>)
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000029> (site)
 
@@ -2023,28 +1973,10 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000076> "mole fraction")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000076> <http://purl.obolibrary.org/obo/UO_1000076>)
 
-# Class: <http://purl.obolibrary.org/obo/UO_0000164> (mass volume percentage)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000164> "A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000164> "(w/v)")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000164> "weight-volume percentage")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000164> "mass volume percentage")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_0000164> <http://purl.obolibrary.org/obo/UO_1000164>)
-
 # Class: <http://purl.obolibrary.org/obo/UO_1000076> (mole fraction based unit)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000076> "mole fraction based unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_1000076> <http://purl.obolibrary.org/obo/UO_0000000>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_1000163> (mass percentage based unit)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000163> "mass percentage based unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000163> <http://purl.obolibrary.org/obo/UO_0000000>)
-
-# Class: <http://purl.obolibrary.org/obo/UO_1000164> (mass volume percentage based unit)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000164> "mass volume percentage based unit")
-SubClassOf(<http://purl.obolibrary.org/obo/UO_1000164> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0000001> (portion of matter)
 
@@ -2073,7 +2005,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000005> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> <http://purl.obolibrary.org/obo/BFO_0000016>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <https://w3id.org/pmd/co/PMD_0000950>))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>))))
 SubClassOf(Annotation(rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en) <https://w3id.org/pmd/co/PMD_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>))))
 
 # Class: <https://w3id.org/pmd/co/PMD_0000008> (process attribute)
@@ -2142,13 +2073,6 @@ AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000538> <http://purl.obolibrary.org/obo/BFO_0000024>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000538> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000030>)))
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000538> <https://w3id.org/pmd/co/PMD_0000965>)
-
-# Class: <https://w3id.org/pmd/co/PMD_0000549> (change of temperature)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000549> "change of temperature"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000549> "change of temperature is a process in which a particpant changes its temperature"@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000549> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000549> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0000551> (chemical composition)
 
@@ -2384,7 +2308,6 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000946> "spectrum"@
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000946> "A spectrum is a 1-D information content entity that describes the range of wavelengths or frequencies of a physical property, often used in reference to light, sound, or electromagnetic radiation."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000946> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000946> <https://w3id.org/pmd/co/PMD_0000501>)
-DisjointClasses(<https://w3id.org/pmd/co/PMD_0000946> <https://w3id.org/pmd/co/PMD_0000992>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0000950> (stimulating process)
 
@@ -2420,13 +2343,6 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000967> "temperatur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000967> "The temperature is a fundamental intensive quality representing the average atomic or molcular movement or vibration of a portion of matter."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000967> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000967> <https://w3id.org/pmd/co/PMD_0020131>)
-
-# Class: <https://w3id.org/pmd/co/PMD_0000992> (time series)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000992> "time series"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000992> "A time series is a 1-D information content entity defined by a sequence of data points collected or recorded at successive time intervals, used for analyzing temporal properties or trends."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000992> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000992> <https://w3id.org/pmd/co/PMD_0000501>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0001014> (x-ray analyzing process)
 
@@ -2501,13 +2417,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 EquivalentClasses(<https://w3id.org/pmd/co/PMD_0010021> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_30452>)))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0010021> <https://w3id.org/pmd/co/PMD_0020140>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0020000> (phase (thermodynamic))
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020000> "phase (thermodynamic)"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020000> "A thermodynamic phase is a material entity that forms a homogeneous portion of matter within a thermodynamic system and is characterized by uniform thermodynamic properties."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020000> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020000> <http://purl.obolibrary.org/obo/BFO_0000040>)
-
 # Class: <https://w3id.org/pmd/co/PMD_0020003> (crystal)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020003> "crystal"@en)
@@ -2515,20 +2424,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020003> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020003> <http://purl.obolibrary.org/obo/BFO_0000030>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <https://w3id.org/pmd/co/PMD_0000591>))
-
-# Class: <https://w3id.org/pmd/co/PMD_0020004> (composition data item)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0020004> "See editior note of composition to underatand the difference between composition and chemical composition data items.
-
-To understand the difference between the composition and the composition data item, one has to understand the difference between SDCs and GDCs in BFO. A triple \"material entity has quality compsition\", conveys the fact such quality exists without telling us what are fractions of compounds in this material entity. A triple \"compostion is subject of composition data item\" conveys that there's an information about values of these fractions. Think of comosition data item as a pdf where the composition is documented."@en)
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020004> "These portions of other matters do not have to be portions of specific chemical elements, i.e., atomic composition, but rather portions of other substances, such as nitric acid and water."@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020004> "composition data item"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0020004> "composition specification"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020004> "Composition data item is an information content entity that is about composition of a material enity. It has members fraction value specifications which specifiy values of propotions of compounds, which are parts of the material enity."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0020004> "Nitric acid solution has quality  composition, and  the composition data item is about this composition.The composition data item has members fraction specifications of nitric acid, e.g., 4 vol.%, and distilled water. These fraction specifications specify value of pure substances of nitric acid and distilled water, respectively. Furthermore, these fraction specifications specify values of relational qualities (volume) proportion of nitric acid and (volume) proportion of distilled water."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020004> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020004> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/pmd/co/PMD_0025001>)))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/co/PMD_0025997>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0020005> (porosity)
 
@@ -3109,23 +3004,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020101> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020101> <http://purl.obolibrary.org/obo/BFO_0000145>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0020102> (mass proportion)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020102> "mass proportion"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020102> "Mass proportion is a proportion which quantifies the mass of the part relative to the mass of the whole."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020102> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020102> <https://w3id.org/pmd/co/PMD_0020101>)
-
-# Class: <https://w3id.org/pmd/co/PMD_0020103> (molar proportion)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020103> "molar proportion"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0020103> "Molar Ratio"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020103> "Molar proportion is the proportion which quantifies the entities count of the part in relation to the entities count of the whole."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0020103> "The molar ratio of hydrogen gas H2 molecules to water H2O molecules is 1/1 in the oxyhydrogen reaction. The molar ratio of oxygen molecules O2 to water molecules is 2/1.
-The molar ratio of carbon dioxide to average atmosphere air is 420 ppm as of 2022 AD."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020103> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020103> <https://w3id.org/pmd/co/PMD_0020101>)
-
 # Class: <https://w3id.org/pmd/co/PMD_0020104> (volume proportion)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020104> "volume proportion"@en)
@@ -3157,13 +3035,6 @@ AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/
 EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020116> ObjectOneOf(<https://w3id.org/pmd/co/PMD_0020117> <https://w3id.org/pmd/co/PMD_0020118> <https://w3id.org/pmd/co/PMD_0020119> <https://w3id.org/pmd/co/PMD_0020120> <https://w3id.org/pmd/co/PMD_0020121> <https://w3id.org/pmd/co/PMD_0020122> <https://w3id.org/pmd/co/PMD_0020123> <https://w3id.org/pmd/co/PMD_0020124> <https://w3id.org/pmd/co/PMD_0020125>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020116> <http://purl.obolibrary.org/obo/OBI_0001930>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0020128> (thermodynamic system)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020128> "thermodynamic system"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020128> "A thermodynamic system is an object aggregate whose objects are bearer of  thermodynamic properties. A thermodynamic system environs a thermodynamic process by which the thermodynamic properties of the objects of the thermodynamic system change over time."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020128> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020128> <http://purl.obolibrary.org/obo/BFO_0000027>)
-
 # Class: <https://w3id.org/pmd/co/PMD_0020131> (intensive quality)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020131> "intensive quality"@en)
@@ -3171,7 +3042,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020131> "An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020131> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020131> <http://purl.obolibrary.org/obo/BFO_0000019>)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020131> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0000001>))
 SubClassOf(Annotation(rdfs:comment "Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom."@en) <https://w3id.org/pmd/co/PMD_0020131> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0000001>))
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0020131> <https://w3id.org/pmd/co/PMD_0020148>)
 
@@ -3189,24 +3059,6 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020133> "mass"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020133> "Mass is fundamental extensive quality."@en)
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020133> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020133> <https://w3id.org/pmd/co/PMD_0020148>)
-
-# Class: <https://w3id.org/pmd/co/PMD_0020136> (phase transformation)
-
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020136> "The number of phases involved can vary as well as the mechanisms involved can be different."@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020136> "phase transformation"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020136> "A thermodynamic phase transformation is a process in/of a thermodynamic system, that involves the transformation of phases of the system to other phases."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020136> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020136> <http://purl.obolibrary.org/obo/BFO_0000015>)
-
-# Class: <https://w3id.org/pmd/co/PMD_0020137> (stable phase)
-
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020137> "See metastable phase"@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020137> "stable phase"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020137> "A stable phase is a phase that does not have a \"pmd:disposition of a phase to transform\" in the \"pmd:phase transformation\" it participates."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0020137> "A phase that participates in a phase transformation pt and pt that is not a metastable phase."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020137> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020137> <https://w3id.org/pmd/co/PMD_0020000>)
-DisjointClasses(<https://w3id.org/pmd/co/PMD_0020137> <https://w3id.org/pmd/co/PMD_0020149>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020140> (portion of pure chemical element)
 
@@ -3235,14 +3087,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020148> "true"^^xsd:boolean)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020148> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0020149> (metastable phase)
-
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0020149> "The stability of a phase can only be evaluated in the context of a (possibly unknown) phase transformation process."@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020149> "metastable phase"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020149> "A metastable phase phase_trans is a phase that has a \"pmd:disposition of a phase to transform\" disp_trans and disp_trans is realized in a \"pmd:phase transformation\" proc_trans and proc_trans has participant sys_trans and sys_trans has part phase_trans."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020149> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020149> <https://w3id.org/pmd/co/PMD_0020000>)
-
 # Class: <https://w3id.org/pmd/co/PMD_0020161> (activity (thermodynamic))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <https://w3id.org/pmd/co/PMD_0020161> "old defintion: 
@@ -3262,12 +3106,6 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0020197> <http://purl.obolibrary.org/obo
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020201> "section"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020201> "Section is a planar fiat surface cutting across the object"@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020201> <http://purl.obolibrary.org/obo/BFO_0000146>)
-
-# Class: <https://w3id.org/pmd/co/PMD_0020207> (amount of substance)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020207> "amount of substance"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020207> "Amount of substance n is a molar proportion when the whole is an object aggregate N, which has avogadro number objects (of same type) as parts (n = N/N_A)."@en)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020207> <https://w3id.org/pmd/co/PMD_0020103>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020210> (elemental crystal)
 
@@ -3310,15 +3148,6 @@ AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/
 AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000064> <https://w3id.org/pmd/co/PMD_0025001> "Composition is a collective property of a portion of matter, i.e., the triple portion of matter has quality composition holds. As \"has quality\" is an inverse  functional property, only one instance of portion of matter can have this specific composition. However, proportions describe the relation between the prortion of matter (the whole) and some compound (the part). Thus, the following triples hold: portion of matter has relational quality proportion; portion of matter has part some substance (or whatever is your part); substance has relational quality proportion. \"Has relational quality\" is not inverse functional, i.e., it can point to a single object from 2 distinct subjects."@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025001> <https://w3id.org/pmd/co/PMD_0020131>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0025002> (chemical composition data item)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025002> "chemical composition data item"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0025002> "chemical composition specification"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025002> "Chemical composition data item is an information content entity that is about composition of a portion of matter. It has members fraction value specifications which specifiy values of propotions of portions of (pure) chemical elements, which are parts of the portion of matter."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025002> "Steel has quality chemical composition , and the chemical composition data item is about the chemical composition .The chemical composition data item has members fraction specifications of iron and carbon. These fraction specifications specify value of portion of iron and portion of carbon respectively. Furthermore, these fraction specifications specify  values of relational qualities (mass) proportion of iron and (mass) proportion of carbon."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0025002> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0025002> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/pmd/co/PMD_0000551>)))
-
 # Class: <https://w3id.org/pmd/co/PMD_0025003> (metallic grain structure)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/co/PMD_0025003> "ferrite, austenite, martensite, etc."@en)
@@ -3358,15 +3187,6 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025015> "portion of
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025015> "A portion of lanthanum is a portion of pure substance that has parts only chebi:lanthanum atom."@en)
 EquivalentClasses(<https://w3id.org/pmd/co/PMD_0025015> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_33336>)))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0025015> <https://w3id.org/pmd/co/PMD_0020140>)
-
-# Class: <https://w3id.org/pmd/co/PMD_0025997> (fraction value specification)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0025997> "fraction value specification"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0025997> "Fraction value specification is a value specification that contains information about quantitative share of a part relative to a specified whole."@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/co/PMD_0025997> "2.05 wt.% of carbon in steel, 4 vol.% of nitric acid in a solution"@en)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0025997> <http://purl.obolibrary.org/obo/OBI_0001931>)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0025997> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001927> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0020101> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0025999> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000040>))))))
-SubClassOf(<https://w3id.org/pmd/co/PMD_0025997> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002350> <https://w3id.org/pmd/co/PMD_0020004>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0040001> (length)
 
@@ -3603,11 +3423,9 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000140>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000011> <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000035>)
-DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000009> <http://purl.obolibrary.org/obo/BFO_0000018> <http://purl.obolibrary.org/obo/BFO_0000026> <http://purl.obolibrary.org/obo/BFO_0000028>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000142> <http://purl.obolibrary.org/obo/BFO_0000146> <http://purl.obolibrary.org/obo/BFO_0000147>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000503> <https://w3id.org/pmd/co/PMD_0000512> <https://w3id.org/pmd/co/PMD_0000591> <https://w3id.org/pmd/co/PMD_0000595> <https://w3id.org/pmd/co/PMD_0000597> <https://w3id.org/pmd/co/PMD_0000853> <https://w3id.org/pmd/co/PMD_0000896> <https://w3id.org/pmd/co/PMD_0000942> <https://w3id.org/pmd/co/PMD_0000967> <https://w3id.org/pmd/co/PMD_0020005> <https://w3id.org/pmd/co/PMD_0020112> <https://w3id.org/pmd/co/PMD_0025001> <https://w3id.org/pmd/co/PMD_0025003>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000553> <https://w3id.org/pmd/co/PMD_0000619> <https://w3id.org/pmd/co/PMD_0020132> <https://w3id.org/pmd/co/PMD_0020133> <https://w3id.org/pmd/co/PMD_0020142> <https://w3id.org/pmd/co/PMD_0020161> <https://w3id.org/pmd/co/PMD_0050155>)
-DisjointClasses(<https://w3id.org/pmd/co/PMD_0020102> <https://w3id.org/pmd/co/PMD_0020103> <https://w3id.org/pmd/co/PMD_0020104>)
 DifferentIndividuals(<https://w3id.org/pmd/co/PMD_0020006> <https://w3id.org/pmd/co/PMD_0020007> <https://w3id.org/pmd/co/PMD_0020008> <https://w3id.org/pmd/co/PMD_0020009> <https://w3id.org/pmd/co/PMD_0020010> <https://w3id.org/pmd/co/PMD_0020011> <https://w3id.org/pmd/co/PMD_0020012> <https://w3id.org/pmd/co/PMD_0020013> <https://w3id.org/pmd/co/PMD_0020014> <https://w3id.org/pmd/co/PMD_0020015> <https://w3id.org/pmd/co/PMD_0020016> <https://w3id.org/pmd/co/PMD_0020017> <https://w3id.org/pmd/co/PMD_0020018> <https://w3id.org/pmd/co/PMD_0020019>)
 DifferentIndividuals(<https://w3id.org/pmd/co/PMD_0020117> <https://w3id.org/pmd/co/PMD_0020118> <https://w3id.org/pmd/co/PMD_0020119> <https://w3id.org/pmd/co/PMD_0020120> <https://w3id.org/pmd/co/PMD_0020121> <https://w3id.org/pmd/co/PMD_0020122> <https://w3id.org/pmd/co/PMD_0020123> <https://w3id.org/pmd/co/PMD_0020124> <https://w3id.org/pmd/co/PMD_0020125>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RO_0000057>) <http://purl.obolibrary.org/obo/RO_0000057>)
