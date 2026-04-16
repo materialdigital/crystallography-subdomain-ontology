@@ -2620,7 +2620,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)

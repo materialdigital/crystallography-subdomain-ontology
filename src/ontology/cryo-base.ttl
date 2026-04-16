@@ -13,12 +13,12 @@
 @base <https://w3id.org/pmd/cryo/cryo-base.ttl> .
 
 <https://w3id.org/pmd/cryo/cryo-base.ttl> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-04-09/cryo-base.ttl> ;
+                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-04-16/cryo-base.ttl> ;
                                            dce:type obo:IAO_8000001 ;
                                            dcterms:description "None" ;
                                            dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                            dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x" ;
-                                           owl:versionInfo "2026-04-09" .
+                                           owl:versionInfo "2026-04-16" .
 
 #################################################################
 #    Annotation properties
