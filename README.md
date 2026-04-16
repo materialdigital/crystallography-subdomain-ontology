@@ -1,10 +1,26 @@
 
 ![Build Status](https://github.com/cmllezr/crystallography-subdomain-ontology/actions/workflows/qc.yml/badge.svg)
-# CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x
+# CryO: Crystallography ontology  - extension to Platform Material Digital Core Ontology 3.x.
 
-Description: None
+Description: CryO is an subdomain-level ontology in Material Science and Engineering domain focusing on semantic modeling of crystallography. CryO is based on the third version of the [Platform Material Digital Core Ontology (PMDco)](https://github.com/materialdigital/core-ontology).
 
-More information can be found at http://obofoundry.org/ontology/cryo
+## File Structure
+
+This folder provides the modular implementation of CryO, developed and maintained using the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
+
+### Directories
+* **src/:** Main development folder generated and managed through ODK.
+  * **ontology/components/:** – Modular ontology components.
+  * **ontology/cryo-edit.owl:** – Primary editable ontology file used during development (ontology editors' version).
+
+### Ontology versions
+* **cryo-full.owl/ttl:** Complete ontology with all imports and full axiomatization.
+* **cryo-base.owl/ttl:** Core entities without extended imports.
+* **cryo-simple.owl/ttl:** Simplified version with basic subclass and existential axioms.
+* **cryo.owl/ttl:** Main ontology file contains the full version.
+
+### Other files
+* README.md, LICENSE.txt, CONTRIBUTING.md – Project overview, license, and contribution guidelines.
 
 ## Versions
 
