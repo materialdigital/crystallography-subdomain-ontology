@@ -728,6 +728,12 @@ crystal structures according to the axial system used to describe their lattice 
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000170"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>&apos;immaterial entity&apos; and (&apos;part of&apos; some 
 (&apos;crystal lattice&apos; and (&apos;has quality&apos; some 
 (&apos;crystal system&apos; and (&apos;specified by value&apos; value cubic)))))</rdfs:comment>
