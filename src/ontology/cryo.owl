@@ -17,11 +17,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-04-16/cryo.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-04-28/cryo.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x</dcterms:title>
-        <owl:versionInfo>2026-04-16</owl:versionInfo>
+        <owl:versionInfo>2026-04-28</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6653,6 +6653,12 @@ crystal structures according to the axial system used to describe their lattice 
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000170"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>&apos;immaterial entity&apos; and (&apos;part of&apos; some 

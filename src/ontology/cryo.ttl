@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/cryo.ttl> .
 
 <https://w3id.org/pmd/cryo.ttl> rdf:type owl:Ontology ;
-                                 owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-04-16/cryo.ttl> ;
+                                 owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-04-28/cryo.ttl> ;
                                  dcterms:description "None" ;
                                  dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                  dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x" ;
-                                 owl:versionInfo "2026-04-16" .
+                                 owl:versionInfo "2026-04-28" .
 
 #################################################################
 #    Annotation properties
@@ -4838,6 +4838,10 @@ cryo:CRYO_0000041 rdf:type owl:Class ;
                                                                             ) ;
                                                          rdf:type owl:Class
                                                        ]
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cryo:CRYO_0000170 ;
+                                    owl:hasSelf "true"^^xsd:boolean
                                   ] ;
                   rdfs:comment """'immaterial entity' and ('part of' some 
 ('crystal lattice' and ('has quality' some 

@@ -2620,7 +2620,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3736,6 +3736,7 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000041> "'imma
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000041> "crystallographic entity in cubic system"@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000041> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000035>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000041> <http://purl.obolibrary.org/obo/BFO_0000141>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000041> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000170>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000042> (grain orientation)
 
