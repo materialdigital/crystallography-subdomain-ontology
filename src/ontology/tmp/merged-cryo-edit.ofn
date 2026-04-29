@@ -3773,30 +3773,35 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000079> <https://w3id.org/pmd/cryo/C
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000119> "crystallographic entity in triclinic system"@de)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000119> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000029>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000119> <http://purl.obolibrary.org/obo/BFO_0000141>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000119> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000054>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000120> (crystallographic entity in monoclinic system)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000120> "crystallographic entity in monoclinic system"@de)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000120> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000030>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000120> <http://purl.obolibrary.org/obo/BFO_0000141>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000120> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000055>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000121> (crystallographic entity in orthorhombic system)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000121> "crystallographic entity in orthorhombic system"@de)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000121> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000031>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000121> <http://purl.obolibrary.org/obo/BFO_0000141>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000121> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000056>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000122> (crystallographic entity in tetragonal system)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000122> "crystallographic entity in tetragonal system"@de)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000032>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000122> <http://purl.obolibrary.org/obo/BFO_0000141>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000122> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000050>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000123> (crystallographic entity in rhombohedral system)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000123> "crystallographic entity in rhombohedral system"@de)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000123> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000033>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000123> <http://purl.obolibrary.org/obo/BFO_0000141>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000123> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000057>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000124> (symmetry equivalency assertion)
 
@@ -3814,6 +3819,7 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000124> ObjectSomeValuesFrom(<https:
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000129> "crystallographic entity in hexagonal system"@de)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000129> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000034>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000129> <http://purl.obolibrary.org/obo/BFO_0000141>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000129> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000058>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000143> (cubic equivalency assertion)
 
