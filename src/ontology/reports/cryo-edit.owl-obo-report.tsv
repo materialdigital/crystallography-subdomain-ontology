@@ -1,17 +1,28 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	5f6cb55d-d023-46a3-adf0-a77565dd47c7genid620
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	c94274e8-6c2d-494e-9458-40708e3efb02genid650
 ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	5f6cb55d-d023-46a3-adf0-a77565dd47c7genid616
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	5f6cb55d-d023-46a3-adf0-a77565dd47c7genid667
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	5f6cb55d-d023-46a3-adf0-a77565dd47c7genid684
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	c94274e8-6c2d-494e-9458-40708e3efb02genid646
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	c94274e8-6c2d-494e-9458-40708e3efb02genid725
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	c94274e8-6c2d-494e-9458-40708e3efb02genid742
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	information content entity
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	tetragonal equivalency assertion
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	cubic equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	5f6cb55d-d023-46a3-adf0-a77565dd47c7genid698
+ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	c94274e8-6c2d-494e-9458-40708e3efb02genid896
 ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	5f6cb55d-d023-46a3-adf0-a77565dd47c7genid694
+ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	c94274e8-6c2d-494e-9458-40708e3efb02genid892
 ERROR	deprecated_property_reference	symmetry equivalency assertion	under symmetry	blank node
 ERROR	deprecated_property_reference	Miller indices family of	owl:inverseOf	has Miller indices family
+ERROR	duplicate_label	bravais lattice triclinic primitive	rdfs:label	bravais lattice triclinic primitive@en
+ERROR	duplicate_label	bravais lattice tetragonal primitive	rdfs:label	bravais lattice tetragonal primitive@en
+ERROR	duplicate_label	bravais lattice tetragonal body-centered	rdfs:label	bravais lattice tetragonal body-centered@en
+ERROR	duplicate_label	bravais lattice orthorhombic face-centered	rdfs:label	bravais lattice orthorhombic face-centered@en
+ERROR	duplicate_label	bravais lattice orthorhombic body-centered	rdfs:label	bravais lattice orthorhombic body-centered@en
+ERROR	duplicate_label	bravais lattice orthorhombic base-centered	rdfs:label	bravais lattice orthorhombic base-centered@en
+ERROR	duplicate_label	bravais lattice monoclinic primitive	rdfs:label	bravais lattice monoclinic primitive@en
+ERROR	duplicate_label	bravais lattice monoclinic base-centered	rdfs:label	bravais lattice monoclinic base-centered@en
+ERROR	duplicate_label	bravais lattice cubic primitive	rdfs:label	bravais lattice cubic primitive@en
+ERROR	duplicate_label	bravais lattice cubic face-centered	rdfs:label	bravais lattice cubic face-centered@en
+ERROR	duplicate_label	bravais lattice cubic body-centered	rdfs:label	bravais lattice cubic body-centered@en
 WARN	missing_definition	unit cell	IAO:0000115	
 WARN	missing_definition	crystal lattice	IAO:0000115	
 WARN	missing_definition	lattice parameter	IAO:0000115	
@@ -27,6 +38,7 @@ WARN	missing_definition	crystallographic plane	IAO:0000115
 WARN	missing_definition	crystallographic direction	IAO:0000115	
 WARN	missing_definition	interplanar spacing	IAO:0000115	
 WARN	missing_definition	Miller indices	IAO:0000115	
+WARN	missing_definition	lattice angle	IAO:0000115	
 WARN	missing_definition	has Miller index	IAO:0000115	
 WARN	missing_definition	has h	IAO:0000115	
 WARN	missing_definition	has k	IAO:0000115	
@@ -41,8 +53,13 @@ WARN	missing_definition	crystal system	IAO:0000115
 WARN	missing_definition	lattice centering	IAO:0000115	
 WARN	missing_definition	crystal system value	IAO:0000115	
 WARN	missing_definition	lattice centering value	IAO:0000115	
+WARN	missing_definition	α anlge	IAO:0000115	
+WARN	missing_definition	β anlge	IAO:0000115	
+WARN	missing_definition	γ angle	IAO:0000115	
 WARN	missing_definition	crystallographic entity in cubic system	IAO:0000115	
 WARN	missing_definition	grain orientation	IAO:0000115	
+WARN	missing_definition	bravais lattice triclinic primitive	IAO:0000115	
+WARN	missing_definition	bravais lattice monoclinic primitive	IAO:0000115	
 WARN	missing_definition	is tetragonal	IAO:0000115	
 WARN	missing_definition	denoted by family under tetragonal symmetry	IAO:0000115	
 WARN	missing_definition	has symmetry	IAO:0000115	
@@ -58,12 +75,24 @@ WARN	missing_definition	denoted by family under rhombohedral symmetry	IAO:000011
 WARN	missing_definition	denoted by family under hexagonal symmetry	IAO:0000115	
 WARN	missing_definition	Euler angles	IAO:0000115	
 WARN	missing_definition	Bunge Euler angles	IAO:0000115	
+WARN	missing_definition	bravais lattice monoclinic base-centered	IAO:0000115	
+WARN	missing_definition	bravais lattice orthorhombic base-centered	IAO:0000115	
 WARN	missing_definition	crystallographic entity in triclinic system	IAO:0000115	
 WARN	missing_definition	crystallographic entity in monoclinic system	IAO:0000115	
 WARN	missing_definition	crystallographic entity in orthorhombic system	IAO:0000115	
 WARN	missing_definition	crystallographic entity in tetragonal system	IAO:0000115	
 WARN	missing_definition	crystallographic entity in rhombohedral system	IAO:0000115	
 WARN	missing_definition	crystallographic entity in hexagonal system	IAO:0000115	
+WARN	missing_definition	bravais lattice orthorhombic primitive	IAO:0000115	
+WARN	missing_definition	bravais lattice orthorhombic body-centered	IAO:0000115	
+WARN	missing_definition	bravais lattice orthorhombic face-centered	IAO:0000115	
+WARN	missing_definition	bravais lattice cubic face-centered	IAO:0000115	
+WARN	missing_definition	bravais lattice cubic body-centered	IAO:0000115	
+WARN	missing_definition	bravais lattice cubic primitive	IAO:0000115	
+WARN	missing_definition	bravais lattice hexagonal primitive	IAO:0000115	
+WARN	missing_definition	bravais lattice trigonal primitive	IAO:0000115	
+WARN	missing_definition	bravais lattice tetragonal primitive	IAO:0000115	
+WARN	missing_definition	bravais lattice tetragonal body-centered	IAO:0000115	
 WARN	missing_definition	denoted by family	IAO:0000115	
 WARN	missing_definition	denoted by family under cubic symmetry	IAO:0000115	
 WARN	missing_definition	is cubic	IAO:0000115	

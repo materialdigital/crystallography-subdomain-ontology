@@ -310,6 +310,7 @@ Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000011>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000012>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000013>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000014>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000015>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000020>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000021>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000022>))
@@ -320,11 +321,18 @@ Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000026>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000027>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000028>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000036>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000037>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000038>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000039>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000041>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000042>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000047>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000048>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000049>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000075>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000079>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000103>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000118>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000119>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000120>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000121>))
@@ -332,6 +340,16 @@ Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000122>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000123>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000124>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000129>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000131>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000132>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000133>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000134>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000135>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000136>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000137>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000138>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000139>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000140>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000143>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
@@ -3559,7 +3577,7 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http:/
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000002> (lattice parameter)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000002> "lattice parameter"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000002> "Lattice parameter is a quality of a unit cell which describes the length of (three) dimensions along of thwe unit cell's x-, y-, and z-directions."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000002> "Lattice parameter is a quality of a unit cell which describes the length of (three) dimensions along of the unit cell's x-, y-, and z-directions."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000002> <https://w3id.org/pmd/co/PMD_0040001>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000002> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000000>))
 
@@ -3645,6 +3663,13 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000014> <https://w3id.org/pmd/co/PMD_0000501>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000014> DataExactCardinality(3 <https://w3id.org/pmd/cryo/CRYO_0000016>))
 
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000015> (lattice angle)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000015> "lattice angle"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000015> "Lattice angle is a quality of a unit cell which describes the angle between three axes in a unit cell."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000015> <http://purl.obolibrary.org/obo/BFO_0000019>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000000>))
+
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000020> (direction Miller indices)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000020> "direction Miller indices"@en)
@@ -3703,6 +3728,7 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000026> "crystal
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/cryo/CRYO_0000026> "lattice type"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000026> "Crystal system is a intensive quality of a crystal lattice which describes the arrangement of lattice points in an infinite 3D space in such way that each lattice point has an identical environment to that around every other lattice point. It is specified by one of the 7 crystaa sytem value."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> <http://purl.obolibrary.org/obo/BFO_0000019>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectExactCardinality(1 <https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000028>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000027> (lattice centering)
@@ -3728,6 +3754,24 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000036> ObjectOneOf(<https://w3id.org/pmd/cryo/CRYO_0000043> <https://w3id.org/pmd/cryo/CRYO_0000044> <https://w3id.org/pmd/cryo/CRYO_0000045> <https://w3id.org/pmd/cryo/CRYO_0000046>))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000036> <http://purl.obolibrary.org/obo/OBI_0001930>)
 
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000037> (α anlge)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000037> "α anlge"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000037> "α anlge is an angle in a unit cell between y- and z-axes."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000037> <https://w3id.org/pmd/cryo/CRYO_0000015>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000038> (β anlge)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000038> "β anlge"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000038> "β anlge is an angle in a unit cell between x- and z-axes."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000038> <https://w3id.org/pmd/cryo/CRYO_0000015>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000039> (γ angle)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000039> "γ angle"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000039> "γ anlge is an angle in a unit cell between x- and y-axes.")
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000039> <https://w3id.org/pmd/cryo/CRYO_0000015>)
+
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000041> (crystallographic entity in cubic system)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000041> "'immaterial entity' and ('part of' some 
@@ -3745,6 +3789,18 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 Grain orientation can be specified by either texture fibers or texture components. When several grains exhibit similar orientations, then the material exhibits a specific crystallographic texture."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000042> <https://w3id.org/pmd/co/PMD_0020148>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0000663>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000047> (bravais lattice triclinic primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000047> "bravais lattice triclinic primitive"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000047> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000029>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000047> <https://w3id.org/pmd/cryo/CRYO_0000001>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000048> (bravais lattice monoclinic primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000048> "bravais lattice monoclinic primitive"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000048> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000030>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000048> <https://w3id.org/pmd/cryo/CRYO_0000001>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000049> (tetragonal equivalency assertion)
 
@@ -3767,6 +3823,18 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000079> "Bunge E
 AnnotationAssertion(rdfs:seeAlso <https://w3id.org/pmd/cryo/CRYO_0000079> "https://mtex-toolbox.github.io/RotationDefinition.html")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000079> "Bunge Euler angles define the Euler angles according to the Bunge notations, which define the three subsequent rotations about fixed axes, namely ZXZ, i.e., the first rotation is around the z axis, second around the x axis and third again around the z."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000079> <https://w3id.org/pmd/cryo/CRYO_0000075>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000103> (bravais lattice monoclinic base-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000103> "bravais lattice monoclinic base-centered"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000103> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000030>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000046>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000103> <https://w3id.org/pmd/cryo/CRYO_0000001>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000118> (bravais lattice orthorhombic base-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000118> "bravais lattice orthorhombic base-centered"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000118> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000031>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000046>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000118> <https://w3id.org/pmd/cryo/CRYO_0000001>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000119> (crystallographic entity in triclinic system)
 
@@ -3820,6 +3888,66 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000129> "crystal
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000129> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000034>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000129> <http://purl.obolibrary.org/obo/BFO_0000141>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000129> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000058>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000131> (bravais lattice orthorhombic primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000131> "bravais lattice orthorhombic primitive"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000131> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000031>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000131> <https://w3id.org/pmd/cryo/CRYO_0000001>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000132> (bravais lattice orthorhombic body-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000132> "bravais lattice orthorhombic body-centered"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000132> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000031>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000044>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000132> <https://w3id.org/pmd/cryo/CRYO_0000001>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000133> (bravais lattice orthorhombic face-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000133> "bravais lattice orthorhombic face-centered"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000133> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000031>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000045>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000133> <https://w3id.org/pmd/cryo/CRYO_0000001>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000134> (bravais lattice cubic face-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000134> "bravais lattice cubic face-centered"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000134> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000035>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000045>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000134> <https://w3id.org/pmd/cryo/CRYO_0000001>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000135> (bravais lattice cubic body-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000135> "bravais lattice cubic body-centered"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000135> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000035>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000044>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000135> <https://w3id.org/pmd/cryo/CRYO_0000001>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000136> (bravais lattice cubic primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000136> "bravais lattice cubic primitive"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000136> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000035>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000136> <https://w3id.org/pmd/cryo/CRYO_0000001>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000137> (bravais lattice hexagonal primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000137> "bravais lattice hexagonal primitive"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000137> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000034>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000137> <https://w3id.org/pmd/cryo/CRYO_0000001>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000138> (bravais lattice trigonal primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000138> "bravais lattice trigonal primitive"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000138> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000033>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000138> <https://w3id.org/pmd/cryo/CRYO_0000001>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000139> (bravais lattice tetragonal primitive)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000139> "bravais lattice tetragonal primitive"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000139> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000032>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000139> <https://w3id.org/pmd/cryo/CRYO_0000001>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000140> (bravais lattice tetragonal body-centered)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000140> "bravais lattice tetragonal body-centered"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000140> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000032>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000044>)))))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000140> <https://w3id.org/pmd/cryo/CRYO_0000001>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000143> (cubic equivalency assertion)
 
