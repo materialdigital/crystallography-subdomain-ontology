@@ -759,6 +759,15 @@ Grain orientation can be specified by either texture fibers or texture component
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000047 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000047">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:label xml:lang="en">bravais lattice triclinic primitive</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000049 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000049">

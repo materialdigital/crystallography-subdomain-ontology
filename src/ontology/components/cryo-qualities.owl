@@ -8,6 +8,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -34,7 +35,7 @@
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000002">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0040001"/>
         <rdfs:label xml:lang="en">lattice parameter</rdfs:label>
-        <skos:definition xml:lang="en">Lattice parameter is a quality of a unit cell which describes the length of (three) dimensions along of thwe unit cell&apos;s x-, y-, and z-directions.</skos:definition>
+        <skos:definition xml:lang="en">Lattice parameter is a quality of a unit cell which describes the length of (three) dimensions along of the unit cell&apos;s x-, y-, and z-directions.</skos:definition>
     </owl:Class>
     
 
@@ -116,6 +117,46 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
         <rdfs:comment>TODO add symbol annotation property</rdfs:comment>
         <rdfs:label xml:lang="en">interplanar spacing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000015 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">lattice angle</rdfs:label>
+        <skos:definition xml:lang="en">Lattice angle is a quality of a unit cell which describes the angle between three axes in a unit cell.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000037 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000015"/>
+        <rdfs:label xml:lang="en">α anlge</rdfs:label>
+        <skos:definition xml:lang="en">α anlge is an angle in a unit cell between y- and z-axes.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000038 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000038">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000015"/>
+        <rdfs:label xml:lang="en">β anlge</rdfs:label>
+        <skos:definition xml:lang="en">β anlge is an angle in a unit cell between x- and z-axes.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000039 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000039">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000015"/>
+        <rdfs:label xml:lang="en">γ angle</rdfs:label>
+        <skos:definition>γ anlge is an angle in a unit cell between x- and y-axes.</skos:definition>
     </owl:Class>
 </rdf:RDF>
 

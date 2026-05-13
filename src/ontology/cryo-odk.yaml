@@ -60,3 +60,8 @@ idranges:
   - idsfor: cryo
     idprefix: https://w3id.org/pmd/cryo/CRYO_
     iddigits: 7
+
+idranges:
+  - idsfor: cryo
+    idprefix: https://w3id.org/pmd/cryo/CRYO_
+    iddigits: 7

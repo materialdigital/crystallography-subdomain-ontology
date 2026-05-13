@@ -2,9 +2,6 @@
 https://w3id.org/pmd/co/PMD_0000885  # pole figure
 https://w3id.org/pmd/co/PMD_0000946  # spectrum
 http://purl.obolibrary.org/obo/OBI_0001931  # scalar value specification
-https://w3id.org/pmd/co/PMD_0020099  # bravais lattice
-https://w3id.org/pmd/co/PMD_0020018  # bravais lattice cubic body-centered
-https://w3id.org/pmd/co/PMD_0020019  # bravais lattice cubic face-centered
 http://purl.obolibrary.org/obo/IAO_0000109 # measurement datum
 http://purl.obolibrary.org/obo/UO_0000000 # Unit
 
@@ -13,7 +10,6 @@ https://w3id.org/pmd/co/PMD_0020142  # Energy
 https://w3id.org/pmd/co/PMD_0050157  # 3d geomerty
 https://w3id.org/pmd/co/PMD_0020133  # mass
 https://w3id.org/pmd/co/PMD_0050051  # diameter
-https://w3id.org/pmd/co/PMD_0000591  # crystal structure
 https://w3id.org/pmd/co/PMD_0000853  # crystollagraphic texture
 https://w3id.org/pmd/co/PMD_0020104  # volume proportion
 

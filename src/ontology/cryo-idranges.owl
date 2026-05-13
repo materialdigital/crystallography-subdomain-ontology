@@ -54,6 +54,14 @@ Datatype: idrange:2
     
     EquivalentTo: 
         xsd:integer[>= 20000 , <= 29999]
+
+Datatype: idrange:2
+
+    Annotations: 
+        allocatedto: "abril"
+    
+    EquivalentTo: 
+        xsd:integer[>= 30000 , <= 39999]
     
     
 Datatype: xsd:integer
