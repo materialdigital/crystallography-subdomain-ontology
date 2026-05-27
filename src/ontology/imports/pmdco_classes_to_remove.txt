@@ -8,6 +8,7 @@ https://w3id.org/pmd/co/PMD_0000869 # 'occurence of chemical reaction'
 https://w3id.org/pmd/co/PMD_0000870 # 'occurence of electic field'
 https://w3id.org/pmd/co/PMD_0000871 # 'occurence of magnetic field'
 https://w3id.org/pmd/co/PMD_0000880 # 'passing of time'
+https://w3id.org/pmd/co/PMD_0020099 # braviis lattice
 
 
 
