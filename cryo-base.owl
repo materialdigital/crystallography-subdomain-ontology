@@ -13,15 +13,15 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/2026-05-13"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/2026-05-27"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <dcterms:bibliographicCitation>cryo: Crystallography Subdomain Ontology. Version 2026-05-13, https://w3id.org/pmd/cryo/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-05-13</dcterms:created>
+        <dcterms:bibliographicCitation>cryo: Crystallography Subdomain Ontology. Version 2026-05-27, https://w3id.org/pmd/cryo/</dcterms:bibliographicCitation>
+        <dcterms:created>2026-05-27</dcterms:created>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x</dcterms:title>
         <owl:priorVersion rdf:resource="https://w3id.org/pmd/cryo/"/>
-        <owl:versionInfo>2026-05-13</owl:versionInfo>
+        <owl:versionInfo>2026-05-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1676,20 +1676,7 @@ See the pattern example of composition to underatand the difference between comp
     <!-- https://w3id.org/pmd/co/PMD_0000591 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000591">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/pmd/co/PMD_0020099"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020099"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The finite set of periodic geometric arrangements is described e.g. by the 14 possible Bravais Lattices in three-dimensional space.</rdfs:comment>
         <rdfs:label xml:lang="en">crystal structure</rdfs:label>
         <skos:definition xml:lang="en">an intensive qualtty of a crystal that embodies the periodic geometric arrangement of entities in a crystal lattice.</skos:definition>
@@ -3841,40 +3828,6 @@ A manufacturing process is always a transformative process.</skos:definition>
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0020099 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020099">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020006"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020007"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020008"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020009"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020010"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020011"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020012"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020013"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020014"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020015"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020016"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020017"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020018"/>
-                    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020019"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
-        <rdfs:comment xml:lang="en">TODO: possibly extend for 2D (Graphene etc)
-
-More elaborate crystal descriptions may be found in http://emmo.info/domain-crystallography/crystallography or https://purls.helmholtz-metadaten.de/disos/cso</rdfs:comment>
-        <rdfs:label xml:lang="en">bravais lattice (3D)</rdfs:label>
-        <skos:definition xml:lang="en">The bravais lattice is a categorical value specification that specifies value of the crystal structure quality. It describes the possible geometric arrangement of lattice points in a crystal. The present descriptor is limited to the 14 possible three-dimensional arrangements.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0020101 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020101">
@@ -3958,21 +3911,21 @@ More elaborate crystal descriptions may be found in http://emmo.info/domain-crys
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf rdf:nodeID="genid463"/>
+        <rdfs:subClassOf rdf:nodeID="genid446"/>
         <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
         <rdfs:label xml:lang="en">intensive quality</rdfs:label>
         <skos:altLabel xml:lang="en">Point property</skos:altLabel>
         <skos:definition xml:lang="en">An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid463">
+    <owl:Restriction rdf:nodeID="genid446">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
         <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid463"/>
+        <owl:annotatedTarget rdf:nodeID="genid446"/>
         <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
     </owl:Axiom>
     
