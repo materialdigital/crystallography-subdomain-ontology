@@ -9,7 +9,20 @@ https://w3id.org/pmd/co/PMD_0000870 # 'occurence of electic field'
 https://w3id.org/pmd/co/PMD_0000871 # 'occurence of magnetic field'
 https://w3id.org/pmd/co/PMD_0000880 # 'passing of time'
 https://w3id.org/pmd/co/PMD_0020099 # braviis lattice
-
+https://w3id.org/pmd/co/PMD_0020018
+https://w3id.org/pmd/co/PMD_0020019
+https://w3id.org/pmd/co/PMD_0020017
+https://w3id.org/pmd/co/PMD_0020016
+https://w3id.org/pmd/co/PMD_0020015
+https://w3id.org/pmd/co/PMD_0020008
+https://w3id.org/pmd/co/PMD_0020007
+https://w3id.org/pmd/co/PMD_0020010
+https://w3id.org/pmd/co/PMD_0020011
+https://w3id.org/pmd/co/PMD_0020012
+https://w3id.org/pmd/co/PMD_0020009
+https://w3id.org/pmd/co/PMD_0020014
+https://w3id.org/pmd/co/PMD_0020013
+https://w3id.org/pmd/co/PMD_0020006
 
 
 
