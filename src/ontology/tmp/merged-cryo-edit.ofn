@@ -359,6 +359,7 @@ Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000382>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000383>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000384>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000385>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000386>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
@@ -4306,6 +4307,12 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000384> <https://w3id.org/pmd/cryo/C
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000385> "hexagonal crystal lattice"@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000385> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000034>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000385> <https://w3id.org/pmd/cryo/CRYO_0000001>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000386> (unit cell volume)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000386> "unit cell volume"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000386> "The volume of a unit cell is the 3D space occupied by the repeating structural unit in a crystal lattice."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000386> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
 
 ############################
