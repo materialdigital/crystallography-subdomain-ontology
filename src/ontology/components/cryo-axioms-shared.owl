@@ -712,6 +712,40 @@
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000141 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000141">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000142 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000142">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001927"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000141"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001927"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000141"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

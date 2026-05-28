@@ -22,6 +22,65 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000144 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000144">
+        <rdfs:label xml:lang="en">has space group notation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000145 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000145">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000144"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">has international space group number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000146 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000146">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000144"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">has Hermann-Mauguin symbol</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000147 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000147">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000144"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">has Hall symbol</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000148 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000148">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000144"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">has Schoenflies symbol</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -157,6 +216,26 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000015"/>
         <rdfs:label xml:lang="en">γ angle</rdfs:label>
         <skos:definition>γ anlge is an angle in a unit cell between x- and y-axes.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000141 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">space group</rdfs:label>
+        <skos:definition xml:lang="en">space group is a quality of some crystal lattice that defines the symmetry of a repeating pattern of the lattice in space.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000142 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:label xml:lang="en">space group type</rdfs:label>
+        <skos:definition xml:lang="en">Space group type is a categorical value specification of a space group. It includes all the 230 3D space groups.</skos:definition>
     </owl:Class>
 </rdf:RDF>
 
