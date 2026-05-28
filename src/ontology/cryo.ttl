@@ -17,11 +17,11 @@
 @base <https://w3id.org/pmd/cryo.ttl> .
 
 <https://w3id.org/pmd/cryo.ttl> rdf:type owl:Ontology ;
-                                 owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-05-27/cryo.ttl> ;
+                                 owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-05-28/cryo.ttl> ;
                                  dcterms:description "None" ;
                                  dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                  dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x" ;
-                                 owl:versionInfo "2026-05-27" .
+                                 owl:versionInfo "2026-05-28" .
 
 #################################################################
 #    Annotation properties
@@ -1020,25 +1020,19 @@ cryo:CRYO_0000152 rdf:type owl:ObjectProperty ;
                                owl:unionOf ( cryo:CRYO_0000021
                                              cryo:CRYO_0000023
                                            )
-                             ] ;
-                  rdfs:label "has Miller indices family"@en ;
-                  owl:deprecated "true"^^xsd:boolean .
+                             ] .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000157
 cryo:CRYO_0000157 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf owl:topObjectProperty ;
-                  rdfs:label "Miller indices family of"@en ;
-                  owl:deprecated "true"^^xsd:boolean .
+                  rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000158
 cryo:CRYO_0000158 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
                   rdfs:domain cryo:CRYO_0000124 ;
-                  rdfs:range cryo:CRYO_0000028 ;
-                  rdfs:label "under symmetry"@en ;
-                  owl:deprecated "true"^^xsd:boolean .
+                  rdfs:range cryo:CRYO_0000028 .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000162
@@ -1055,9 +1049,7 @@ cryo:CRYO_0000162 rdf:type owl:ObjectProperty ;
                               ] ;
                   owl:propertyChainAxiom ( cryo:CRYO_0000170
                                            cryo:CRYO_0000152
-                                         ) ;
-                  rdfs:label "has Miller indices family under cubic symmetry"@en ;
-                  owl:deprecated "true"^^xsd:boolean .
+                                         ) .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000164
@@ -1067,8 +1059,7 @@ cryo:CRYO_0000164 rdf:type owl:ObjectProperty ;
                                owl:unionOf ( cryo:CRYO_0000021
                                              cryo:CRYO_0000023
                                            )
-                             ] ;
-                  rdfs:label "denoted by family"@en .
+                             ] .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000168
@@ -1078,17 +1069,12 @@ cryo:CRYO_0000168 rdf:type owl:ObjectProperty ;
                   owl:propertyChainAxiom ( cryo:CRYO_0000170
                                            obo:IAO_0000235
                                            obo:RO_0002350
-                                         ) ;
-                  rdfs:comment "'denoted by' o 'member of' o 'has Miller indices family under cubic symmetry'" ,
-                               "'denoted by' o 'under  symmetry' o 'is cubic' o  inverse ('under  symmetry') o 'has member' o 'member of'" ,
-                               "'denoted by' o 'under cubic symmetry' o 'member of' o 'under cubic symmetry'" ;
-                  rdfs:label "denoted by family under cubic symmetry"@en .
+                                         ) .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000170
 cryo:CRYO_0000170 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf cryo:CRYO_0000053 ;
-                  rdfs:label "is cubic"@en .
+                  rdfs:subPropertyOf cryo:CRYO_0000053 .
 
 
 #################################################################
@@ -1147,6 +1133,39 @@ cryo:CRYO_0000019 rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf cryo:CRYO_0000016 ;
                   rdfs:label "has l"@en ;
                   skos:definition "has l specifies an integer of a l Miller index in a hkl set"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000144
+cryo:CRYO_0000144 rdf:type owl:DatatypeProperty ;
+                  rdfs:label "has space group notation"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000145
+cryo:CRYO_0000145 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf cryo:CRYO_0000144 ;
+                  rdfs:range xsd:integer ;
+                  rdfs:label "has international space group number"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000146
+cryo:CRYO_0000146 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf cryo:CRYO_0000144 ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "has Hermann-Mauguin symbol"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000147
+cryo:CRYO_0000147 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf cryo:CRYO_0000144 ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "has Hall symbol"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000148
+cryo:CRYO_0000148 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf cryo:CRYO_0000144 ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "has Schoenflies symbol"@en .
 
 
 #################################################################
@@ -5778,6 +5797,39 @@ cryo:CRYO_0000140 rdf:type owl:Class ;
                   rdfs:label "bravais lattice tetragonal body-centered"@en .
 
 
+###  https://w3id.org/pmd/cryo/CRYO_0000141
+cryo:CRYO_0000141 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000019 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0000080 ;
+                                    owl:someValuesFrom cryo:CRYO_0000001
+                                  ] ;
+                  rdfs:label "space group"@en ;
+                  skos:definition "space group is a quality of some crystal lattice that defines the symmetry of a repeating pattern of the lattice in space."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000142
+cryo:CRYO_0000142 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:OBI_0001930 ,
+                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:OBI_0001927 ;
+                                                           owl:someValuesFrom cryo:CRYO_0000141
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:OBI_0001927 ;
+                                                           owl:allValuesFrom cryo:CRYO_0000141
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:OBI_0001927 ;
+                                    owl:someValuesFrom cryo:CRYO_0000141
+                                  ] ;
+                  rdfs:label "space group type"@en ;
+                  skos:definition "Space group type is a categorical value specification of a space group. It includes all the 230 3D space groups."@en .
+
+
 ###  https://w3id.org/pmd/cryo/CRYO_0000143
 cryo:CRYO_0000143 rdf:type owl:Class ;
                   owl:equivalentClass [ owl:intersectionOf ( cryo:CRYO_0000124
@@ -6598,6 +6650,2069 @@ cryo:CRYO_0000130 rdf:type owl:NamedIndividual ,
                   rdfs:label "(00-1)"@en .
 
 
+###  https://w3id.org/pmd/cryo/CRYO_0000149
+cryo:CRYO_0000149 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 1 ;
+                  cryo:CRYO_0000146 "P 1" ;
+                  cryo:CRYO_0000147 "P 1" ;
+                  rdfs:label "P 1 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000150
+cryo:CRYO_0000150 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 2 ;
+                  cryo:CRYO_0000146 "P -1" ;
+                  cryo:CRYO_0000147 "-P 1" ;
+                  rdfs:label "-P 1 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000151
+cryo:CRYO_0000151 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 3 ;
+                  cryo:CRYO_0000146 "P 1 2 1" ;
+                  cryo:CRYO_0000147 "P 2y" ;
+                  rdfs:label "P 2y space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000152
+cryo:CRYO_0000152 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 4 ;
+                  cryo:CRYO_0000146 "P 1 21 1" ;
+                  cryo:CRYO_0000147 "P 2yb" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000153
+cryo:CRYO_0000153 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 5 ;
+                  cryo:CRYO_0000146 "C 1 2 1" ;
+                  cryo:CRYO_0000147 "C 2y" ;
+                  rdfs:label "C 2y space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000154
+cryo:CRYO_0000154 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 6 ;
+                  cryo:CRYO_0000146 "P 1 m 1" ;
+                  cryo:CRYO_0000147 "P -2y" ;
+                  rdfs:label "P -2y space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000155
+cryo:CRYO_0000155 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 7 ;
+                  cryo:CRYO_0000146 "P 1 c 1" ;
+                  cryo:CRYO_0000147 "P -2yc" ;
+                  rdfs:label "P -2yc space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000156
+cryo:CRYO_0000156 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 8 ;
+                  cryo:CRYO_0000146 "C 1 m 1" ;
+                  cryo:CRYO_0000147 "C -2y" ;
+                  rdfs:label "C -2y space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000157
+cryo:CRYO_0000157 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 9 ;
+                  cryo:CRYO_0000146 "C 1 c 1" ;
+                  cryo:CRYO_0000147 "C -2yc" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000158
+cryo:CRYO_0000158 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 10 ;
+                  cryo:CRYO_0000146 "P 1 2/m 1" ;
+                  cryo:CRYO_0000147 "-P 2y" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000159
+cryo:CRYO_0000159 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 11 ;
+                  cryo:CRYO_0000146 "P 1 21/m 1" ;
+                  cryo:CRYO_0000147 "-P 2yb" ;
+                  rdfs:label "-P 2yb space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000160
+cryo:CRYO_0000160 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 12 ;
+                  cryo:CRYO_0000146 "C 1 2/m 1" ;
+                  cryo:CRYO_0000147 "-C 2y" ;
+                  rdfs:label "-C 2y space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000161
+cryo:CRYO_0000161 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 13 ;
+                  cryo:CRYO_0000146 "P 1 2/c 1" ;
+                  cryo:CRYO_0000147 "-P 2yc" ;
+                  rdfs:label "-P 2yc space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000162
+cryo:CRYO_0000162 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 14 ;
+                  cryo:CRYO_0000146 "P 1 21/c 1" ;
+                  cryo:CRYO_0000147 "-P 2ybc" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000163
+cryo:CRYO_0000163 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 15 ;
+                  cryo:CRYO_0000146 "C 1 2/c 1" ;
+                  cryo:CRYO_0000147 "-C 2yc" ;
+                  rdfs:label "-C 2yc space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000164
+cryo:CRYO_0000164 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 16 ;
+                  cryo:CRYO_0000146 "P 2 2 2" ;
+                  cryo:CRYO_0000147 "P 2 2" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000165
+cryo:CRYO_0000165 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 17 ;
+                  cryo:CRYO_0000146 "P 2 2 21" ;
+                  cryo:CRYO_0000147 "P 2c 2" ;
+                  rdfs:label "P 2c 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000166
+cryo:CRYO_0000166 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 18 ;
+                  cryo:CRYO_0000146 "P 21 21 2" ;
+                  cryo:CRYO_0000147 "P 2 2ab" ;
+                  rdfs:label "P 2 2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000167
+cryo:CRYO_0000167 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 19 ;
+                  cryo:CRYO_0000146 "P 21 21 21" ;
+                  cryo:CRYO_0000147 "P 2ac 2ab" ;
+                  rdfs:label "P 2ac 2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000168
+cryo:CRYO_0000168 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 20 ;
+                  cryo:CRYO_0000146 "C 2 2 21" ;
+                  cryo:CRYO_0000147 "C 2c 2" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000169
+cryo:CRYO_0000169 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 21 ;
+                  cryo:CRYO_0000146 "C 2 2 2" ;
+                  cryo:CRYO_0000147 "C 2 2" ;
+                  rdfs:label "C 2 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000170
+cryo:CRYO_0000170 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 22 ;
+                  cryo:CRYO_0000146 "F 2 2 2" ;
+                  cryo:CRYO_0000147 "F 2 2" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000171
+cryo:CRYO_0000171 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 23 ;
+                  cryo:CRYO_0000146 "I 2 2 2" ;
+                  cryo:CRYO_0000147 "I 2 2" ;
+                  rdfs:label "I 2 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000172
+cryo:CRYO_0000172 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 24 ;
+                  cryo:CRYO_0000146 "I 21 21 21" ;
+                  cryo:CRYO_0000147 "I 2b 2c" ;
+                  rdfs:label "I 2b 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000173
+cryo:CRYO_0000173 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 25 ;
+                  cryo:CRYO_0000146 "P m m 2" ;
+                  cryo:CRYO_0000147 "P 2 -2" ;
+                  rdfs:label "P 2 -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000174
+cryo:CRYO_0000174 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 26 ;
+                  cryo:CRYO_0000146 "P m c 21" ;
+                  cryo:CRYO_0000147 "P 2c -2" ;
+                  rdfs:label "P 2c -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000175
+cryo:CRYO_0000175 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 27 ;
+                  cryo:CRYO_0000146 "P c c 2" ;
+                  cryo:CRYO_0000147 "P 2 -2c" ;
+                  rdfs:label "P 2 -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000176
+cryo:CRYO_0000176 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 28 ;
+                  cryo:CRYO_0000146 "P m a 2" ;
+                  cryo:CRYO_0000147 "P 2 -2a" ;
+                  rdfs:label "P 2 -2a space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000177
+cryo:CRYO_0000177 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 29 ;
+                  cryo:CRYO_0000146 "P c a 21" ;
+                  cryo:CRYO_0000147 "P 2c -2ac" ;
+                  rdfs:label "P 2c -2ac space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000178
+cryo:CRYO_0000178 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 30 ;
+                  cryo:CRYO_0000146 "P n c 2" ;
+                  cryo:CRYO_0000147 "P 2 -2bc" ;
+                  rdfs:label "P 2 -2bc space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000179
+cryo:CRYO_0000179 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 31 ;
+                  cryo:CRYO_0000146 "P m n 21" ;
+                  cryo:CRYO_0000147 "P 2ac -2" ;
+                  rdfs:label "P 2ac -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000180
+cryo:CRYO_0000180 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 32 ;
+                  cryo:CRYO_0000146 "P b a 2" ;
+                  cryo:CRYO_0000147 "P 2 -2ab" ;
+                  rdfs:label "P 2 -2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000181
+cryo:CRYO_0000181 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 33 ;
+                  cryo:CRYO_0000146 "P n a 21" ;
+                  cryo:CRYO_0000147 "P 2c -2n" ;
+                  rdfs:label "P 2c -2n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000182
+cryo:CRYO_0000182 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 34 ;
+                  cryo:CRYO_0000146 "P n n 2" ;
+                  cryo:CRYO_0000147 "P 2 -2n" ;
+                  rdfs:label "P 2 -2n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000183
+cryo:CRYO_0000183 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 35 ;
+                  cryo:CRYO_0000146 "C m m 2" ;
+                  cryo:CRYO_0000147 "C 2 -2" ;
+                  rdfs:label "C 2 -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000184
+cryo:CRYO_0000184 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 36 ;
+                  cryo:CRYO_0000146 "C m c 21" ;
+                  cryo:CRYO_0000147 "C 2c -2" ;
+                  rdfs:label "C 2c -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000185
+cryo:CRYO_0000185 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 37 ;
+                  cryo:CRYO_0000146 "C c c 2" ;
+                  cryo:CRYO_0000147 "C 2 -2c" ;
+                  rdfs:label "C 2 -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000186
+cryo:CRYO_0000186 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 38 ;
+                  cryo:CRYO_0000146 "A m m 2" ;
+                  cryo:CRYO_0000147 "A 2 -2" ;
+                  rdfs:label "A 2 -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000187
+cryo:CRYO_0000187 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 39 ;
+                  cryo:CRYO_0000146 "A b m 2" ;
+                  cryo:CRYO_0000147 "A 2 -2b" ;
+                  rdfs:label "A 2 -2b space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000188
+cryo:CRYO_0000188 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 40 ;
+                  cryo:CRYO_0000146 "A m a 2" ;
+                  cryo:CRYO_0000147 "A 2 -2a" ;
+                  rdfs:label "A 2 -2a space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000189
+cryo:CRYO_0000189 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 41 ;
+                  cryo:CRYO_0000146 "A b a 2" ;
+                  cryo:CRYO_0000147 "A 2 -2ab" ;
+                  rdfs:label "A 2 -2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000190
+cryo:CRYO_0000190 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 42 ;
+                  cryo:CRYO_0000146 "F m m 2" ;
+                  cryo:CRYO_0000147 "F 2 -2" ;
+                  rdfs:label "F 2 -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000191
+cryo:CRYO_0000191 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 43 ;
+                  cryo:CRYO_0000146 "F d d 2" ;
+                  cryo:CRYO_0000147 "F 2 -2d" ;
+                  rdfs:label "F 2 -2d space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000192
+cryo:CRYO_0000192 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 44 ;
+                  cryo:CRYO_0000146 "I m m 2" ;
+                  cryo:CRYO_0000147 "I 2 -2" ;
+                  rdfs:label "I 2 -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000193
+cryo:CRYO_0000193 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 45 ;
+                  cryo:CRYO_0000146 "I b a 2" ;
+                  cryo:CRYO_0000147 "I 2 -2c" ;
+                  rdfs:label "I 2 -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000194
+cryo:CRYO_0000194 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 46 ;
+                  cryo:CRYO_0000146 "I m a 2" ;
+                  cryo:CRYO_0000147 "I 2 -2a" ;
+                  rdfs:label "I 2 -2a space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000195
+cryo:CRYO_0000195 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 47 ;
+                  cryo:CRYO_0000146 "P m m m" ;
+                  cryo:CRYO_0000147 "-P 2 2" ;
+                  rdfs:label "-P 2 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000196
+cryo:CRYO_0000196 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 48 ;
+                  cryo:CRYO_0000146 "P n n n" ;
+                  cryo:CRYO_0000147 "P 2 2 -1n" ;
+                  rdfs:label "P 2 2 -1n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000197
+cryo:CRYO_0000197 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 49 ;
+                  cryo:CRYO_0000146 "P c c m" ;
+                  cryo:CRYO_0000147 "-P 2 2c" ;
+                  rdfs:label "-P 2 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000198
+cryo:CRYO_0000198 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 50 ;
+                  cryo:CRYO_0000146 "P b a n" ;
+                  cryo:CRYO_0000147 "P 2 2 -1ab" ;
+                  rdfs:label "P 2 2 -1ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000199
+cryo:CRYO_0000199 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 51 ;
+                  cryo:CRYO_0000146 "P m m a" ;
+                  cryo:CRYO_0000147 "-P 2a 2a" ;
+                  rdfs:label "-P 2a 2a space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000200
+cryo:CRYO_0000200 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 52 ;
+                  cryo:CRYO_0000146 "P n n a" ;
+                  cryo:CRYO_0000147 "-P 2a 2bc" ;
+                  rdfs:label "-P 2a 2bc space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000201
+cryo:CRYO_0000201 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 53 ;
+                  cryo:CRYO_0000146 "P m n a" ;
+                  cryo:CRYO_0000147 "-P 2ac 2" ;
+                  rdfs:label "-P 2ac 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000202
+cryo:CRYO_0000202 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 54 ;
+                  cryo:CRYO_0000146 "P c c a" ;
+                  cryo:CRYO_0000147 "-P 2a 2ac" ;
+                  rdfs:label "-P 2a 2ac space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000203
+cryo:CRYO_0000203 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 55 ;
+                  cryo:CRYO_0000146 "P b a m" ;
+                  cryo:CRYO_0000147 "-P 2 2ab" ;
+                  rdfs:label "-P 2 2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000204
+cryo:CRYO_0000204 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 56 ;
+                  cryo:CRYO_0000146 "P c c n" ;
+                  cryo:CRYO_0000147 "-P 2ab 2ac" ;
+                  rdfs:label "-P 2ab 2ac space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000205
+cryo:CRYO_0000205 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 57 ;
+                  cryo:CRYO_0000146 "P b c m" ;
+                  cryo:CRYO_0000147 "-P 2c 2b" ;
+                  rdfs:label "-P 2c 2b space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000206
+cryo:CRYO_0000206 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 58 ;
+                  cryo:CRYO_0000146 "P n n m" ;
+                  cryo:CRYO_0000147 "-P 2 2n" ;
+                  rdfs:label "-P 2 2n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000207
+cryo:CRYO_0000207 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 59 ;
+                  cryo:CRYO_0000146 "P m m n" ;
+                  cryo:CRYO_0000147 "P 2 2ab -1ab" ;
+                  rdfs:label "P 2 2ab -1ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000208
+cryo:CRYO_0000208 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 60 ;
+                  cryo:CRYO_0000146 "P b c n" ;
+                  cryo:CRYO_0000147 "-P 2n 2ab" ;
+                  rdfs:label "-P 2n 2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000209
+cryo:CRYO_0000209 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 61 ;
+                  cryo:CRYO_0000146 "P b c a" ;
+                  cryo:CRYO_0000147 "-P 2ac 2ab" ;
+                  rdfs:label "-P 2ac 2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000210
+cryo:CRYO_0000210 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 62 ;
+                  cryo:CRYO_0000146 "P n m a" ;
+                  cryo:CRYO_0000147 "-P 2ac 2n" ;
+                  rdfs:label "-P 2ac 2n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000211
+cryo:CRYO_0000211 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 63 ;
+                  cryo:CRYO_0000146 "C m c m" ;
+                  cryo:CRYO_0000147 "-C 2c 2" ;
+                  rdfs:label "-C 2c 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000212
+cryo:CRYO_0000212 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 64 ;
+                  cryo:CRYO_0000146 "C m c a" ;
+                  cryo:CRYO_0000147 "-C 2ac 2" ;
+                  rdfs:label "-C 2ac 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000213
+cryo:CRYO_0000213 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 65 ;
+                  cryo:CRYO_0000146 "C m m m" ;
+                  cryo:CRYO_0000147 "-C 2 2" ;
+                  rdfs:label "-C 2 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000214
+cryo:CRYO_0000214 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 66 ;
+                  cryo:CRYO_0000146 "C c c m" ;
+                  cryo:CRYO_0000147 "-C 2 2c" ;
+                  rdfs:label "-C 2 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000215
+cryo:CRYO_0000215 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 67 ;
+                  cryo:CRYO_0000146 "C m m a" ;
+                  cryo:CRYO_0000147 "-C 2a 2" ;
+                  rdfs:label "-C 2a 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000216
+cryo:CRYO_0000216 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 68 ;
+                  cryo:CRYO_0000146 "C c c a" ;
+                  cryo:CRYO_0000147 "C 2 2 -1ac" ;
+                  rdfs:label "C 2 2 -1ac space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000217
+cryo:CRYO_0000217 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 69 ;
+                  cryo:CRYO_0000146 "F m m m" ;
+                  cryo:CRYO_0000147 "-F 2 2" ;
+                  rdfs:label "-F 2 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000218
+cryo:CRYO_0000218 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 70 ;
+                  cryo:CRYO_0000146 "F d d d" ;
+                  cryo:CRYO_0000147 "F 2 2 -1d" ;
+                  rdfs:label "F 2 2 -1d space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000219
+cryo:CRYO_0000219 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 71 ;
+                  cryo:CRYO_0000146 "I m m m" ;
+                  cryo:CRYO_0000147 "-I 2 2" ;
+                  rdfs:label "-I 2 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000220
+cryo:CRYO_0000220 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 72 ;
+                  cryo:CRYO_0000146 "I b a m" ;
+                  cryo:CRYO_0000147 "-I 2 2c" ;
+                  rdfs:label "-I 2 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000221
+cryo:CRYO_0000221 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 73 ;
+                  cryo:CRYO_0000146 "I b c a" ;
+                  cryo:CRYO_0000147 "-I 2b 2c" ;
+                  rdfs:label "-I 2b 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000222
+cryo:CRYO_0000222 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 74 ;
+                  cryo:CRYO_0000146 "I m m a" ;
+                  cryo:CRYO_0000147 "-I 2b 2" ;
+                  rdfs:label "-I 2b 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000223
+cryo:CRYO_0000223 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 75 ;
+                  cryo:CRYO_0000146 "P 4" ;
+                  cryo:CRYO_0000147 "P 4" ;
+                  rdfs:label "P 4 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000224
+cryo:CRYO_0000224 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 76 ;
+                  cryo:CRYO_0000146 "P 41" ;
+                  cryo:CRYO_0000147 "P 4w" ;
+                  rdfs:label "P 4w space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000225
+cryo:CRYO_0000225 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 77 ;
+                  cryo:CRYO_0000146 "P 42" ;
+                  cryo:CRYO_0000147 "P 4c" ;
+                  rdfs:label "P 4c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000226
+cryo:CRYO_0000226 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 78 ;
+                  cryo:CRYO_0000146 "P 43" ;
+                  cryo:CRYO_0000147 "P 4cw" ;
+                  rdfs:label "P 4cw space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000227
+cryo:CRYO_0000227 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 79 ;
+                  cryo:CRYO_0000146 "I 4" ;
+                  cryo:CRYO_0000147 "I 4" ;
+                  rdfs:label "I 4 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000228
+cryo:CRYO_0000228 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 80 ;
+                  cryo:CRYO_0000146 "I 41" ;
+                  cryo:CRYO_0000147 "I 4bw" ;
+                  rdfs:label "I 4bw space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000229
+cryo:CRYO_0000229 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 81 ;
+                  cryo:CRYO_0000146 "P -4" ;
+                  cryo:CRYO_0000147 "P -4" ;
+                  rdfs:label "P -4 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000230
+cryo:CRYO_0000230 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 82 ;
+                  cryo:CRYO_0000146 "I -4" ;
+                  cryo:CRYO_0000147 "I -4" ;
+                  rdfs:label "I -4 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000231
+cryo:CRYO_0000231 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 83 ;
+                  cryo:CRYO_0000146 "P 4/m" ;
+                  cryo:CRYO_0000147 "-P 4" ;
+                  rdfs:label "-P 4 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000232
+cryo:CRYO_0000232 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 84 ;
+                  cryo:CRYO_0000146 "P 42/m" ;
+                  cryo:CRYO_0000147 "-P 4c" ;
+                  rdfs:label "-P 4c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000233
+cryo:CRYO_0000233 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 85 ;
+                  cryo:CRYO_0000146 "P 4/n" ;
+                  cryo:CRYO_0000147 "P 4ab -1ab" ;
+                  rdfs:label "P 4ab -1ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000234
+cryo:CRYO_0000234 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 86 ;
+                  cryo:CRYO_0000146 "P 42/n" ;
+                  cryo:CRYO_0000147 "P 4n -1n" ;
+                  rdfs:label "P 4n -1n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000235
+cryo:CRYO_0000235 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 87 ;
+                  cryo:CRYO_0000146 "I 4/m" ;
+                  cryo:CRYO_0000147 "-I 4" ;
+                  rdfs:label "-I 4 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000236
+cryo:CRYO_0000236 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 88 ;
+                  cryo:CRYO_0000146 "I 41/a" ;
+                  cryo:CRYO_0000147 "I 4bw -1bw" ;
+                  rdfs:label "I 4bw -1bw space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000237
+cryo:CRYO_0000237 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 89 ;
+                  cryo:CRYO_0000146 "P 4 2 2" ;
+                  cryo:CRYO_0000147 "P 4 2" ;
+                  rdfs:label "P 4 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000238
+cryo:CRYO_0000238 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 90 ;
+                  cryo:CRYO_0000146 "P 4 21 2" ;
+                  cryo:CRYO_0000147 "P 4ab 2ab" ;
+                  rdfs:label "P 4ab 2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000239
+cryo:CRYO_0000239 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 91 ;
+                  cryo:CRYO_0000146 "P 41 2 2" ;
+                  cryo:CRYO_0000147 "P 4w 2c" ;
+                  rdfs:label "P 4w 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000240
+cryo:CRYO_0000240 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 92 ;
+                  cryo:CRYO_0000146 "P 41 21 2" ;
+                  cryo:CRYO_0000147 "P 4abw 2nw" ;
+                  rdfs:label "P 4abw 2nw space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000241
+cryo:CRYO_0000241 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 93 ;
+                  cryo:CRYO_0000146 "P 42 2 2" ;
+                  cryo:CRYO_0000147 "P 4c 2" ;
+                  rdfs:label "P 4c 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000242
+cryo:CRYO_0000242 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 94 ;
+                  cryo:CRYO_0000146 "P 42 21 2" ;
+                  cryo:CRYO_0000147 "P 4n 2n" ;
+                  rdfs:label "P 4n 2n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000243
+cryo:CRYO_0000243 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 95 ;
+                  cryo:CRYO_0000146 "P 43 2 2" ;
+                  cryo:CRYO_0000147 "P 4cw 2c" ;
+                  rdfs:label "P 4cw 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000244
+cryo:CRYO_0000244 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 96 ;
+                  cryo:CRYO_0000146 "P 43 21 2" ;
+                  cryo:CRYO_0000147 "P 4nw 2abw" ;
+                  rdfs:label "P 4nw 2abw space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000245
+cryo:CRYO_0000245 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 97 ;
+                  cryo:CRYO_0000146 "I 4 2 2" ;
+                  cryo:CRYO_0000147 "I 4 2" ;
+                  rdfs:label "I 4 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000246
+cryo:CRYO_0000246 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 98 ;
+                  cryo:CRYO_0000146 "I 41 2 2" ;
+                  cryo:CRYO_0000147 "I 4bw 2bw" ;
+                  rdfs:label "I 4bw 2bw space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000247
+cryo:CRYO_0000247 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 99 ;
+                  cryo:CRYO_0000146 "P 4 m m" ;
+                  cryo:CRYO_0000147 "P 4 -2" ;
+                  rdfs:label "P 4 -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000248
+cryo:CRYO_0000248 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 100 ;
+                  cryo:CRYO_0000146 "P 4 b m" ;
+                  cryo:CRYO_0000147 "P 4 -2ab" ;
+                  rdfs:label "P 4 -2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000249
+cryo:CRYO_0000249 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 101 ;
+                  cryo:CRYO_0000146 "P 42 c m" ;
+                  cryo:CRYO_0000147 "P 4c -2c" ;
+                  rdfs:label "P 4c -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000250
+cryo:CRYO_0000250 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 102 ;
+                  cryo:CRYO_0000146 "P 42 n m" ;
+                  cryo:CRYO_0000147 "P 4n -2n" ;
+                  rdfs:label "P 4n -2n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000251
+cryo:CRYO_0000251 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 103 ;
+                  cryo:CRYO_0000146 "P 4 c c" ;
+                  cryo:CRYO_0000147 "P 4 -2c" ;
+                  rdfs:label "P 4 -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000252
+cryo:CRYO_0000252 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 104 ;
+                  cryo:CRYO_0000146 "P 4 n c" ;
+                  cryo:CRYO_0000147 "P 4 -2n" ;
+                  rdfs:label "P 4 -2n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000253
+cryo:CRYO_0000253 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 105 ;
+                  cryo:CRYO_0000146 "P 42 m c" ;
+                  cryo:CRYO_0000147 "P 4c -2" ;
+                  rdfs:label "P 4c -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000254
+cryo:CRYO_0000254 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 106 ;
+                  cryo:CRYO_0000146 "P 42 b c" ;
+                  cryo:CRYO_0000147 "P 4c -2ab" ;
+                  rdfs:label "P 4c -2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000255
+cryo:CRYO_0000255 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 107 ;
+                  cryo:CRYO_0000146 "I 4 m m" ;
+                  cryo:CRYO_0000147 "I 4 -2" ;
+                  rdfs:label "I 4 -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000256
+cryo:CRYO_0000256 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 108 ;
+                  cryo:CRYO_0000146 "I 4 c m" ;
+                  cryo:CRYO_0000147 "I 4 -2c" ;
+                  rdfs:label "I 4 -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000257
+cryo:CRYO_0000257 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 109 ;
+                  cryo:CRYO_0000146 "I 41 m d" ;
+                  cryo:CRYO_0000147 "I 4bw -2" ;
+                  rdfs:label "I 4bw -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000258
+cryo:CRYO_0000258 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 110 ;
+                  cryo:CRYO_0000146 "I 41 c d" ;
+                  cryo:CRYO_0000147 "I 4bw -2c" ;
+                  rdfs:label "I 4bw -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000259
+cryo:CRYO_0000259 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 111 ;
+                  cryo:CRYO_0000146 "P -4 2 m" ;
+                  cryo:CRYO_0000147 "P -4 2" ;
+                  rdfs:label "P -4 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000260
+cryo:CRYO_0000260 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 112 ;
+                  cryo:CRYO_0000146 "P -4 2 c" ;
+                  cryo:CRYO_0000147 "P -4 2c" ;
+                  rdfs:label "P -4 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000261
+cryo:CRYO_0000261 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 113 ;
+                  cryo:CRYO_0000146 "P -4 21 m" ;
+                  cryo:CRYO_0000147 "P -4 2ab" ;
+                  rdfs:label "P -4 2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000262
+cryo:CRYO_0000262 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 114 ;
+                  cryo:CRYO_0000146 "P -4 21 c" ;
+                  cryo:CRYO_0000147 "P -4 2n" ;
+                  rdfs:label "P -4 2n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000263
+cryo:CRYO_0000263 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 115 ;
+                  cryo:CRYO_0000146 "P -4 m 2" ;
+                  cryo:CRYO_0000147 "P -4 -2" ;
+                  rdfs:label "P -4 -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000264
+cryo:CRYO_0000264 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 116 ;
+                  cryo:CRYO_0000146 "P -4 c 2" ;
+                  cryo:CRYO_0000147 "P -4 -2c" ;
+                  rdfs:label "P -4 -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000265
+cryo:CRYO_0000265 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 117 ;
+                  cryo:CRYO_0000146 "P -4 b 2" ;
+                  cryo:CRYO_0000147 "P -4 -2ab" ;
+                  rdfs:label "P -4 -2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000266
+cryo:CRYO_0000266 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 118 ;
+                  cryo:CRYO_0000146 "P -4 n 2" ;
+                  cryo:CRYO_0000147 "P -4 -2n" ;
+                  rdfs:label "P -4 -2n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000267
+cryo:CRYO_0000267 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 119 ;
+                  cryo:CRYO_0000146 "I -4 m 2" ;
+                  cryo:CRYO_0000147 "I -4 -2" ;
+                  rdfs:label "I -4 -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000268
+cryo:CRYO_0000268 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 120 ;
+                  cryo:CRYO_0000146 "I -4 c 2" ;
+                  cryo:CRYO_0000147 "I -4 -2c" ;
+                  rdfs:label "I -4 -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000269
+cryo:CRYO_0000269 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 121 ;
+                  cryo:CRYO_0000146 "I -4 2 m" ;
+                  cryo:CRYO_0000147 "I -4 2" ;
+                  rdfs:label "I -4 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000270
+cryo:CRYO_0000270 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 122 ;
+                  cryo:CRYO_0000146 "I -4 2 d" ;
+                  cryo:CRYO_0000147 "I -4 2bw" ;
+                  rdfs:label "I -4 2bw space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000271
+cryo:CRYO_0000271 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 123 ;
+                  cryo:CRYO_0000146 "P 4/m m m" ;
+                  cryo:CRYO_0000147 "-P 4 2" ;
+                  rdfs:label "-P 4 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000272
+cryo:CRYO_0000272 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 124 ;
+                  cryo:CRYO_0000146 "P 4/m c c" ;
+                  cryo:CRYO_0000147 "-P 4 2c" ;
+                  rdfs:label "-P 4 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000273
+cryo:CRYO_0000273 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 125 ;
+                  cryo:CRYO_0000146 "P 4/n b m" ;
+                  cryo:CRYO_0000147 "P 4 2 -1ab" ;
+                  rdfs:label "P 4 2 -1ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000274
+cryo:CRYO_0000274 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 126 ;
+                  cryo:CRYO_0000146 "P 4/n n c" ;
+                  cryo:CRYO_0000147 "P 4 2 -1n" ;
+                  rdfs:label "P 4 2 -1n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000275
+cryo:CRYO_0000275 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 127 ;
+                  cryo:CRYO_0000146 "P 4/m b m" ;
+                  cryo:CRYO_0000147 "-P 4 2ab" ;
+                  rdfs:label "-P 4 2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000276
+cryo:CRYO_0000276 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 128 ;
+                  cryo:CRYO_0000146 "P 4/m n c" ;
+                  cryo:CRYO_0000147 "-P 4 2n" ;
+                  rdfs:label "-P 4 2n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000277
+cryo:CRYO_0000277 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 129 ;
+                  cryo:CRYO_0000146 "P 4/n m m" ;
+                  cryo:CRYO_0000147 "P 4ab 2ab -1ab" ;
+                  rdfs:label "P 4ab 2ab -1ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000278
+cryo:CRYO_0000278 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 130 ;
+                  cryo:CRYO_0000146 "P 4/n c c" ;
+                  cryo:CRYO_0000147 "P 4ab 2n -1ab" ;
+                  rdfs:label "P 4ab 2n -1ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000279
+cryo:CRYO_0000279 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 131 ;
+                  cryo:CRYO_0000146 "P 42/m m c" ;
+                  cryo:CRYO_0000147 "-P 4c 2" ;
+                  rdfs:label "-P 4c 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000280
+cryo:CRYO_0000280 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 132 ;
+                  cryo:CRYO_0000146 "P 42/m c m" ;
+                  cryo:CRYO_0000147 "-P 4c 2c" ;
+                  rdfs:label "-P 4c 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000281
+cryo:CRYO_0000281 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 133 ;
+                  cryo:CRYO_0000146 "P 42/n b c" ;
+                  cryo:CRYO_0000147 "P 4n 2c -1n" ;
+                  rdfs:label "P 4n 2c -1n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000282
+cryo:CRYO_0000282 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 134 ;
+                  cryo:CRYO_0000146 "P 42/n n m" ;
+                  cryo:CRYO_0000147 "P 4n 2 -1n" ;
+                  rdfs:label "P 4n 2 -1n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000283
+cryo:CRYO_0000283 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 135 ;
+                  cryo:CRYO_0000146 "P 42/m b c" ;
+                  cryo:CRYO_0000147 "-P 4c 2ab" ;
+                  rdfs:label "-P 4c 2ab space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000284
+cryo:CRYO_0000284 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 136 ;
+                  cryo:CRYO_0000146 "P 42/m n m" ;
+                  cryo:CRYO_0000147 "-P 4n 2n" ;
+                  rdfs:label "-P 4n 2n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000285
+cryo:CRYO_0000285 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 137 ;
+                  cryo:CRYO_0000146 "P 42/n m c" ;
+                  cryo:CRYO_0000147 "P 4n 2n -1n" ;
+                  rdfs:label "P 4n 2n -1n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000286
+cryo:CRYO_0000286 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 138 ;
+                  cryo:CRYO_0000146 "P 42/n c m" ;
+                  cryo:CRYO_0000147 "P 4n 2ab -1n" ;
+                  rdfs:label "P 4n 2ab -1n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000287
+cryo:CRYO_0000287 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 139 ;
+                  cryo:CRYO_0000146 "I 4/m m m" ;
+                  cryo:CRYO_0000147 "-I 4 2" ;
+                  rdfs:label "-I 4 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000288
+cryo:CRYO_0000288 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 140 ;
+                  cryo:CRYO_0000146 "I 4/m c m" ;
+                  cryo:CRYO_0000147 "-I 4 2c" ;
+                  rdfs:label "-I 4 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000289
+cryo:CRYO_0000289 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 141 ;
+                  cryo:CRYO_0000146 "I 41/a m d" ;
+                  cryo:CRYO_0000147 "I 4bw 2bw -1bw" ;
+                  rdfs:label "I 4bw 2bw -1bw space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000290
+cryo:CRYO_0000290 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 142 ;
+                  cryo:CRYO_0000146 "I 41/a c d" ;
+                  cryo:CRYO_0000147 "I 4bw 2aw -1bw" ;
+                  rdfs:label "I 4bw 2aw -1bw space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000291
+cryo:CRYO_0000291 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 143 ;
+                  cryo:CRYO_0000146 "P 3" ;
+                  cryo:CRYO_0000147 "P 3" ;
+                  rdfs:label "P 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000292
+cryo:CRYO_0000292 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 144 ;
+                  cryo:CRYO_0000146 "P 31" ;
+                  cryo:CRYO_0000147 "P 31" ;
+                  rdfs:label "P 31 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000293
+cryo:CRYO_0000293 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 145 ;
+                  cryo:CRYO_0000146 "P 32" ;
+                  cryo:CRYO_0000147 "P 32" ;
+                  rdfs:label "P 32 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000294
+cryo:CRYO_0000294 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 146 ;
+                  cryo:CRYO_0000146 "R 3" ;
+                  cryo:CRYO_0000147 "R 3" ;
+                  rdfs:label "R 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000295
+cryo:CRYO_0000295 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 147 ;
+                  cryo:CRYO_0000146 "P -3" ;
+                  cryo:CRYO_0000147 "-P 3" ;
+                  rdfs:label "-P 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000296
+cryo:CRYO_0000296 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 148 ;
+                  cryo:CRYO_0000146 "R -3" ;
+                  cryo:CRYO_0000147 "-R 3" ;
+                  rdfs:label "-R 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000297
+cryo:CRYO_0000297 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 149 ;
+                  cryo:CRYO_0000146 "P 3 1 2" ;
+                  cryo:CRYO_0000147 "P 3 2" ;
+                  rdfs:label "P 3 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000298
+cryo:CRYO_0000298 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 150 ;
+                  cryo:CRYO_0000146 "P 3 2 1" ;
+                  cryo:CRYO_0000147 "P 3 2\"" ;
+                  rdfs:label "P 3 2\" space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000299
+cryo:CRYO_0000299 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 151 ;
+                  cryo:CRYO_0000146 "P 31 1 2" ;
+                  cryo:CRYO_0000147 "P 31 2 (0 0 4)" ;
+                  rdfs:label "P 31 2 (0 0 4) space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000300
+cryo:CRYO_0000300 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 152 ;
+                  cryo:CRYO_0000146 "P 31 2 1" ;
+                  cryo:CRYO_0000147 "P 31 2\"" ;
+                  rdfs:label "P 31 2\" space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000301
+cryo:CRYO_0000301 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 153 ;
+                  cryo:CRYO_0000146 "P 32 1 2" ;
+                  cryo:CRYO_0000147 "P 32 2 (0 0 2)" ;
+                  rdfs:label "P 32 2 (0 0 2) space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000302
+cryo:CRYO_0000302 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 154 ;
+                  cryo:CRYO_0000146 "P 32 2 1" ;
+                  cryo:CRYO_0000147 "P 32 2\"" ;
+                  rdfs:label "P 32 2\" space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000303
+cryo:CRYO_0000303 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 155 ;
+                  cryo:CRYO_0000146 "R 3 2" ;
+                  cryo:CRYO_0000147 "R 3 2\"" ;
+                  rdfs:label "R 3 2\" space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000304
+cryo:CRYO_0000304 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 156 ;
+                  cryo:CRYO_0000146 "P 3 m 1" ;
+                  cryo:CRYO_0000147 "P 3 -2\"" ;
+                  rdfs:label "P 3 -2\" space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000305
+cryo:CRYO_0000305 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 157 ;
+                  cryo:CRYO_0000146 "P 3 1 m" ;
+                  cryo:CRYO_0000147 "P 3 -2" ;
+                  rdfs:label "P 3 -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000306
+cryo:CRYO_0000306 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 158 ;
+                  cryo:CRYO_0000146 "P 3 c 1" ;
+                  cryo:CRYO_0000147 "P 3 -2\"c" ;
+                  rdfs:label "P 3 -2\"c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000307
+cryo:CRYO_0000307 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 159 ;
+                  cryo:CRYO_0000146 "P 3 1 c" ;
+                  cryo:CRYO_0000147 "P 3 -2c" ;
+                  rdfs:label "P 3 -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000308
+cryo:CRYO_0000308 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 160 ;
+                  cryo:CRYO_0000146 "R 3 m" ;
+                  cryo:CRYO_0000147 "R 3 -2\"" ;
+                  rdfs:label "R 3 -2\" space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000309
+cryo:CRYO_0000309 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 161 ;
+                  cryo:CRYO_0000146 "R 3 c" ;
+                  cryo:CRYO_0000147 "R 3 -2\"c" ;
+                  rdfs:label "R 3 -2\"c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000310
+cryo:CRYO_0000310 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 162 ;
+                  cryo:CRYO_0000146 "P -3 1 m" ;
+                  cryo:CRYO_0000147 "-P 3 2" ;
+                  rdfs:label "-P 3 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000311
+cryo:CRYO_0000311 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 163 ;
+                  cryo:CRYO_0000146 "P -3 1 c" ;
+                  cryo:CRYO_0000147 "-P 3 2c" ;
+                  rdfs:label "-P 3 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000312
+cryo:CRYO_0000312 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 164 ;
+                  cryo:CRYO_0000146 "P -3 m 1" ;
+                  cryo:CRYO_0000147 "-P 3 2\"" ;
+                  rdfs:label "-P 3 2\" space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000313
+cryo:CRYO_0000313 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 165 ;
+                  cryo:CRYO_0000146 "P -3 c 1" ;
+                  cryo:CRYO_0000147 "-P 3 2\"c" ;
+                  rdfs:label "-P 3 2\"c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000314
+cryo:CRYO_0000314 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 166 ;
+                  cryo:CRYO_0000146 "R -3 m" ;
+                  cryo:CRYO_0000147 "-R 3 2\"" ;
+                  rdfs:label "-R 3 2\" space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000315
+cryo:CRYO_0000315 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 167 ;
+                  cryo:CRYO_0000146 "R -3 c" ;
+                  cryo:CRYO_0000147 "-R 3 2\"c" ;
+                  rdfs:label "-R 3 2\"c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000316
+cryo:CRYO_0000316 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 168 ;
+                  cryo:CRYO_0000146 "P 6" ;
+                  cryo:CRYO_0000147 "P 6" ;
+                  rdfs:label "P 6 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000317
+cryo:CRYO_0000317 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 169 ;
+                  cryo:CRYO_0000146 "P 61" ;
+                  cryo:CRYO_0000147 "P 61" ;
+                  rdfs:label "P 61 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000318
+cryo:CRYO_0000318 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 170 ;
+                  cryo:CRYO_0000146 "P 65" ;
+                  cryo:CRYO_0000147 "P 65" ;
+                  rdfs:label "P 65 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000319
+cryo:CRYO_0000319 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 171 ;
+                  cryo:CRYO_0000146 "P 62" ;
+                  cryo:CRYO_0000147 "P 62" ;
+                  rdfs:label "P 62 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000320
+cryo:CRYO_0000320 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 172 ;
+                  cryo:CRYO_0000146 "P 64" ;
+                  cryo:CRYO_0000147 "P 64" ;
+                  rdfs:label "P 64 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000321
+cryo:CRYO_0000321 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 173 ;
+                  cryo:CRYO_0000146 "P 63" ;
+                  cryo:CRYO_0000147 "P 6c" ;
+                  rdfs:label "P 6c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000322
+cryo:CRYO_0000322 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 174 ;
+                  cryo:CRYO_0000146 "P -6" ;
+                  cryo:CRYO_0000147 "P -6" ;
+                  rdfs:label "P -6 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000323
+cryo:CRYO_0000323 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 175 ;
+                  cryo:CRYO_0000146 "P 6/m" ;
+                  cryo:CRYO_0000147 "-P 6" ;
+                  rdfs:label "-P 6 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000324
+cryo:CRYO_0000324 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 176 ;
+                  cryo:CRYO_0000146 "P 63/m" ;
+                  cryo:CRYO_0000147 "-P 6c" ;
+                  rdfs:label "-P 6c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000325
+cryo:CRYO_0000325 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 177 ;
+                  cryo:CRYO_0000146 "P 6 2 2" ;
+                  cryo:CRYO_0000147 "P 6 2" ;
+                  rdfs:label "P 6 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000326
+cryo:CRYO_0000326 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 178 ;
+                  cryo:CRYO_0000146 "P 61 2 2" ;
+                  cryo:CRYO_0000147 "P 61 2 (0 0 5)" ;
+                  rdfs:label "P 61 2 (0 0 5) space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000327
+cryo:CRYO_0000327 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 179 ;
+                  cryo:CRYO_0000146 "P 65 2 2" ;
+                  cryo:CRYO_0000147 "P 65 2 (0 0 1)" ;
+                  rdfs:label "P 65 2 (0 0 1) space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000328
+cryo:CRYO_0000328 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 180 ;
+                  cryo:CRYO_0000146 "P 62 2 2" ;
+                  cryo:CRYO_0000147 "P 62 2 (0 0 4)" ;
+                  rdfs:label "P 62 2 (0 0 4) space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000329
+cryo:CRYO_0000329 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 181 ;
+                  cryo:CRYO_0000146 "P 64 2 2" ;
+                  cryo:CRYO_0000147 "P 64 2 (0 0 2)" ;
+                  rdfs:label "P 64 2 (0 0 2) space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000330
+cryo:CRYO_0000330 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 182 ;
+                  cryo:CRYO_0000146 "P 63 2 2" ;
+                  cryo:CRYO_0000147 "P 6c 2c" ;
+                  rdfs:label "P 6c 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000331
+cryo:CRYO_0000331 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 183 ;
+                  cryo:CRYO_0000146 "P 6 m m" ;
+                  cryo:CRYO_0000147 "P 6 -2" ;
+                  rdfs:label "P 6 -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000332
+cryo:CRYO_0000332 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 184 ;
+                  cryo:CRYO_0000146 "P 6 c c" ;
+                  cryo:CRYO_0000147 "P 6 -2c" ;
+                  rdfs:label "P 6 -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000333
+cryo:CRYO_0000333 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 185 ;
+                  cryo:CRYO_0000146 "P 63 c m" ;
+                  cryo:CRYO_0000147 "P 6c -2" ;
+                  rdfs:label "P 6c -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000334
+cryo:CRYO_0000334 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 186 ;
+                  cryo:CRYO_0000146 "P 63 m c" ;
+                  cryo:CRYO_0000147 "P 6c -2c" ;
+                  rdfs:label "P 6c -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000335
+cryo:CRYO_0000335 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 187 ;
+                  cryo:CRYO_0000146 "P -6 m 2" ;
+                  cryo:CRYO_0000147 "P -6 2" ;
+                  rdfs:label "P -6 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000336
+cryo:CRYO_0000336 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 188 ;
+                  cryo:CRYO_0000146 "P -6 c 2" ;
+                  cryo:CRYO_0000147 "P -6c 2" ;
+                  rdfs:label "P -6c 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000337
+cryo:CRYO_0000337 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 189 ;
+                  cryo:CRYO_0000146 "P -6 2 m" ;
+                  cryo:CRYO_0000147 "P -6 -2" ;
+                  rdfs:label "P -6 -2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000338
+cryo:CRYO_0000338 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 190 ;
+                  cryo:CRYO_0000146 "P -6 2 c" ;
+                  cryo:CRYO_0000147 "P -6c -2c" ;
+                  rdfs:label "P -6c -2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000339
+cryo:CRYO_0000339 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 191 ;
+                  cryo:CRYO_0000146 "P 6/m m m" ;
+                  cryo:CRYO_0000147 "-P 6 2" ;
+                  rdfs:label "-P 6 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000340
+cryo:CRYO_0000340 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 192 ;
+                  cryo:CRYO_0000146 "P 6/m c c" ;
+                  cryo:CRYO_0000147 "-P 6 2c" ;
+                  rdfs:label "-P 6 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000341
+cryo:CRYO_0000341 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 193 ;
+                  cryo:CRYO_0000146 "P 63/m c m" ;
+                  cryo:CRYO_0000147 "-P 6c 2" ;
+                  rdfs:label "-P 6c 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000342
+cryo:CRYO_0000342 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 194 ;
+                  cryo:CRYO_0000146 "P 63/m m c" ;
+                  cryo:CRYO_0000147 "-P 6c 2c" ;
+                  rdfs:label "-P 6c 2c space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000343
+cryo:CRYO_0000343 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 195 ;
+                  cryo:CRYO_0000146 "P 2 3" ;
+                  cryo:CRYO_0000147 "P 2 2 3" ;
+                  rdfs:label "P 2 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000344
+cryo:CRYO_0000344 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 196 ;
+                  cryo:CRYO_0000146 "F 2 3" ;
+                  cryo:CRYO_0000147 "F 2 2 3" ;
+                  rdfs:label "F 2 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000345
+cryo:CRYO_0000345 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 197 ;
+                  cryo:CRYO_0000146 "I 2 3" ;
+                  cryo:CRYO_0000147 "I 2 2 3" ;
+                  rdfs:label "I 2 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000346
+cryo:CRYO_0000346 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 198 ;
+                  cryo:CRYO_0000146 "P 21 3" ;
+                  cryo:CRYO_0000147 "P 2ac 2ab 3" ;
+                  rdfs:label "P 2ac 2ab 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000347
+cryo:CRYO_0000347 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 199 ;
+                  cryo:CRYO_0000146 "I 21 3" ;
+                  cryo:CRYO_0000147 "I 2b 2c 3" ;
+                  rdfs:label "I 2b 2c 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000348
+cryo:CRYO_0000348 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 200 ;
+                  cryo:CRYO_0000146 "P m -3" ;
+                  cryo:CRYO_0000147 "-P 2 2 3" ;
+                  rdfs:label "-P 2 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000349
+cryo:CRYO_0000349 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 201 ;
+                  cryo:CRYO_0000146 "P n -3" ;
+                  cryo:CRYO_0000147 "P 2 2 3 -1n" ;
+                  rdfs:label "P 2 2 3 -1n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000350
+cryo:CRYO_0000350 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 202 ;
+                  cryo:CRYO_0000146 "F m -3" ;
+                  cryo:CRYO_0000147 "-F 2 2 3" ;
+                  rdfs:label "-F 2 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000351
+cryo:CRYO_0000351 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 203 ;
+                  cryo:CRYO_0000146 "F d -3" ;
+                  cryo:CRYO_0000147 "F 2 2 3 -1d" ;
+                  rdfs:label "F 2 2 3 -1d space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000352
+cryo:CRYO_0000352 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 204 ;
+                  cryo:CRYO_0000146 "I m -3" ;
+                  cryo:CRYO_0000147 "-I 2 2 3" ;
+                  rdfs:label "-I 2 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000353
+cryo:CRYO_0000353 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 205 ;
+                  cryo:CRYO_0000146 "P a -3" ;
+                  cryo:CRYO_0000147 "-P 2ac 2ab 3" ;
+                  rdfs:label "-P 2ac 2ab 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000354
+cryo:CRYO_0000354 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 206 ;
+                  cryo:CRYO_0000146 "I a -3" ;
+                  cryo:CRYO_0000147 "-I 2b 2c 3" ;
+                  rdfs:label "-I 2b 2c 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000355
+cryo:CRYO_0000355 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 207 ;
+                  cryo:CRYO_0000146 "P 4 3 2" ;
+                  cryo:CRYO_0000147 "P 4 2 3" ;
+                  rdfs:label "P 4 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000356
+cryo:CRYO_0000356 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 208 ;
+                  cryo:CRYO_0000146 "P 42 3 2" ;
+                  cryo:CRYO_0000147 "P 4n 2 3" ;
+                  rdfs:label "P 4n 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000357
+cryo:CRYO_0000357 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 209 ;
+                  cryo:CRYO_0000146 "F 4 3 2" ;
+                  cryo:CRYO_0000147 "F 4 2 3" ;
+                  rdfs:label "F 4 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000358
+cryo:CRYO_0000358 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 210 ;
+                  cryo:CRYO_0000146 "F 41 3 2" ;
+                  cryo:CRYO_0000147 "F 4d 2 3" ;
+                  rdfs:label "F 4d 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000359
+cryo:CRYO_0000359 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 211 ;
+                  cryo:CRYO_0000146 "I 4 3 2" ;
+                  cryo:CRYO_0000147 "I 4 2 3" ;
+                  rdfs:label "I 4 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000360
+cryo:CRYO_0000360 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 212 ;
+                  cryo:CRYO_0000146 "P 43 3 2" ;
+                  cryo:CRYO_0000147 "P 4acd 2ab 3" ;
+                  rdfs:label "P 4acd 2ab 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000361
+cryo:CRYO_0000361 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 213 ;
+                  cryo:CRYO_0000146 "P 41 3 2" ;
+                  cryo:CRYO_0000147 "P 4bd 2ab 3" ;
+                  rdfs:label "P 4bd 2ab 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000362
+cryo:CRYO_0000362 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 214 ;
+                  cryo:CRYO_0000146 "I 41 3 2" ;
+                  cryo:CRYO_0000147 "I 4bd 2c 3" ;
+                  rdfs:label "I 4bd 2c 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000363
+cryo:CRYO_0000363 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 215 ;
+                  cryo:CRYO_0000146 "P -4 3 m" ;
+                  cryo:CRYO_0000147 "P -4 2 3" ;
+                  rdfs:label "P -4 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000364
+cryo:CRYO_0000364 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 216 ;
+                  cryo:CRYO_0000146 "F -4 3 m" ;
+                  cryo:CRYO_0000147 "F -4 2 3" ;
+                  rdfs:label "F -4 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000365
+cryo:CRYO_0000365 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 217 ;
+                  cryo:CRYO_0000146 "I -4 3 m" ;
+                  cryo:CRYO_0000147 "I -4 2 3" ;
+                  rdfs:label "I -4 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000366
+cryo:CRYO_0000366 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 218 ;
+                  cryo:CRYO_0000146 "P -4 3 n" ;
+                  cryo:CRYO_0000147 "P -4n 2 3" ;
+                  rdfs:label "P -4n 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000367
+cryo:CRYO_0000367 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 219 ;
+                  cryo:CRYO_0000146 "F -4 3 c" ;
+                  cryo:CRYO_0000147 "F -4a 2 3" ;
+                  rdfs:label "F -4a 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000368
+cryo:CRYO_0000368 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 220 ;
+                  cryo:CRYO_0000146 "I -4 3 d" ;
+                  cryo:CRYO_0000147 "I -4bd 2c 3" ;
+                  rdfs:label "I -4bd 2c 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000369
+cryo:CRYO_0000369 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 221 ;
+                  cryo:CRYO_0000146 "P m -3 m" ;
+                  cryo:CRYO_0000147 "-P 4 2 3" ;
+                  rdfs:label "-P 4 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000370
+cryo:CRYO_0000370 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 222 ;
+                  cryo:CRYO_0000146 "P n -3 n" ;
+                  cryo:CRYO_0000147 "P 4 2 3 -1n" ;
+                  rdfs:label "P 4 2 3 -1n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000371
+cryo:CRYO_0000371 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 223 ;
+                  cryo:CRYO_0000146 "P m -3 n" ;
+                  cryo:CRYO_0000147 "-P 4n 2 3" ;
+                  rdfs:label "-P 4n 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000372
+cryo:CRYO_0000372 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 224 ;
+                  cryo:CRYO_0000146 "P n -3 m" ;
+                  cryo:CRYO_0000147 "P 4n 2 3 -1n" ;
+                  rdfs:label "P 4n 2 3 -1n space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000373
+cryo:CRYO_0000373 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 225 ;
+                  cryo:CRYO_0000146 "F m -3 m" ;
+                  cryo:CRYO_0000147 "-F 4 2 3" ;
+                  rdfs:label "-F 4 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000374
+cryo:CRYO_0000374 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 226 ;
+                  cryo:CRYO_0000146 "F m -3 c" ;
+                  cryo:CRYO_0000147 "-F 4a 2 3" ;
+                  rdfs:label "-F 4a 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000375
+cryo:CRYO_0000375 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 227 ;
+                  cryo:CRYO_0000146 "F d -3 m" ;
+                  cryo:CRYO_0000147 "F 4d 2 3 -1d" ;
+                  rdfs:label "F 4d 2 3 -1d space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000376
+cryo:CRYO_0000376 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 228 ;
+                  cryo:CRYO_0000146 "F d -3 c" ;
+                  cryo:CRYO_0000147 "F 4d 2 3 -1ad" ;
+                  rdfs:label "F 4d 2 3 -1ad space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000377
+cryo:CRYO_0000377 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 229 ;
+                  cryo:CRYO_0000146 "I m -3 m" ;
+                  cryo:CRYO_0000147 "-I 4 2 3" ;
+                  rdfs:label "-I 4 2 3 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000378
+cryo:CRYO_0000378 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 230 ;
+                  cryo:CRYO_0000146 "I a -3 d" ;
+                  cryo:CRYO_0000147 "-I 4bd 2c 3" ;
+                  rdfs:label "-I 4bd 2c 3 space group" .
+
+
 ###  https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000
 <https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000> rdf:type owl:NamedIndividual ,
                                                                                   cryo:CRYO_0000022 ;
@@ -6622,6 +8737,41 @@ obo:UO_0000076 obo:IAO_0000115 "A concentration unit which denotes the number of
    owl:annotatedTarget "A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution." ;
    oboInOwl:hasDbXref "Wikipedia:Wikipedia"
  ] .
+
+
+cryo:CRYO_0000152 rdfs:label "P 2yb space group" ,
+                             "has Miller indices family"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
+
+
+cryo:CRYO_0000157 rdfs:label "C -2yc space group" ,
+                             "Miller indices family of"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
+
+
+cryo:CRYO_0000158 rdfs:label "-P 2y space group" ,
+                             "under symmetry"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
+
+
+cryo:CRYO_0000162 rdfs:label "-P 2ybc space group" ,
+                             "has Miller indices family under cubic symmetry"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
+
+
+cryo:CRYO_0000164 rdfs:label "P 2 2 space group" ,
+                             "denoted by family"@en .
+
+
+cryo:CRYO_0000168 rdfs:comment "'denoted by' o 'member of' o 'has Miller indices family under cubic symmetry'" ,
+                               "'denoted by' o 'under  symmetry' o 'is cubic' o  inverse ('under  symmetry') o 'has member' o 'member of'" ,
+                               "'denoted by' o 'under cubic symmetry' o 'member of' o 'under cubic symmetry'" ;
+                  rdfs:label "C 2c 2 space group" ,
+                             "denoted by family under cubic symmetry"@en .
+
+
+cryo:CRYO_0000170 rdfs:label "F 2 2 space group" ,
+                             "is cubic"@en .
 
 
 #################################################################

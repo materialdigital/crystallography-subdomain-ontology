@@ -1,17 +1,23 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	94b34691-f4ee-4318-9962-be0a12a931dagenid633
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	4e220c0b-ec48-4289-a8bf-6971954659d2genid633
 ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	94b34691-f4ee-4318-9962-be0a12a931dagenid629
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	94b34691-f4ee-4318-9962-be0a12a931dagenid708
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	94b34691-f4ee-4318-9962-be0a12a931dagenid725
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	4e220c0b-ec48-4289-a8bf-6971954659d2genid629
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	4e220c0b-ec48-4289-a8bf-6971954659d2genid708
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	4e220c0b-ec48-4289-a8bf-6971954659d2genid725
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	information content entity
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	tetragonal equivalency assertion
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	cubic equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	94b34691-f4ee-4318-9962-be0a12a931dagenid879
+ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	4e220c0b-ec48-4289-a8bf-6971954659d2genid885
 ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	94b34691-f4ee-4318-9962-be0a12a931dagenid875
+ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	4e220c0b-ec48-4289-a8bf-6971954659d2genid881
 ERROR	deprecated_property_reference	symmetry equivalency assertion	under symmetry	blank node
 ERROR	deprecated_property_reference	Miller indices family of	owl:inverseOf	has Miller indices family
+ERROR	multiple_labels	denoted by family	rdfs:label	P 2 2 space group
+ERROR	multiple_labels	denoted by family	rdfs:label	denoted by family@en
+ERROR	multiple_labels	denoted by family under cubic symmetry	rdfs:label	C 2c 2 space group
+ERROR	multiple_labels	denoted by family under cubic symmetry	rdfs:label	denoted by family under cubic symmetry@en
+ERROR	multiple_labels	is cubic	rdfs:label	F 2 2 space group
+ERROR	multiple_labels	is cubic	rdfs:label	is cubic@en
 WARN	missing_definition	unit cell	IAO:0000115	
 WARN	missing_definition	crystal lattice	IAO:0000115	
 WARN	missing_definition	lattice parameter	IAO:0000115	
@@ -82,14 +88,22 @@ WARN	missing_definition	bravais lattice hexagonal primitive	IAO:0000115
 WARN	missing_definition	bravais lattice trigonal primitive	IAO:0000115	
 WARN	missing_definition	bravais lattice tetragonal primitive	IAO:0000115	
 WARN	missing_definition	bravais lattice tetragonal body-centered	IAO:0000115	
-WARN	missing_definition	denoted by family	IAO:0000115	
-WARN	missing_definition	denoted by family under cubic symmetry	IAO:0000115	
-WARN	missing_definition	is cubic	IAO:0000115	
+WARN	missing_definition	space group	IAO:0000115	
+WARN	missing_definition	space group type	IAO:0000115	
+WARN	missing_definition	has space group notation	IAO:0000115	
+WARN	missing_definition	has international space group number	IAO:0000115	
+WARN	missing_definition	has Hermann-Mauguin symbol	IAO:0000115	
+WARN	missing_definition	has Hall symbol	IAO:0000115	
+WARN	missing_definition	has Schoenflies symbol	IAO:0000115	
 WARN	missing_obsolete_label	tetragonal equivalency assertion	rdfs:label	tetragonal equivalency assertion@en
 WARN	missing_obsolete_label	has Miller indices family under tetragonal symmetry	rdfs:label	has Miller indices family under tetragonal symmetry@en
 WARN	missing_obsolete_label	symmetry equivalency assertion	rdfs:label	symmetry equivalency assertion@en
 WARN	missing_obsolete_label	cubic equivalency assertion	rdfs:label	cubic equivalency assertion@en
+WARN	missing_obsolete_label	has Miller indices family	rdfs:label	P 2yb space group
 WARN	missing_obsolete_label	has Miller indices family	rdfs:label	has Miller indices family@en
+WARN	missing_obsolete_label	Miller indices family of	rdfs:label	C -2yc space group
 WARN	missing_obsolete_label	Miller indices family of	rdfs:label	Miller indices family of@en
+WARN	missing_obsolete_label	under symmetry	rdfs:label	-P 2y space group
 WARN	missing_obsolete_label	under symmetry	rdfs:label	under symmetry@en
-WARN	missing_obsolete_label	has Miller indices family under cubic symmetry	rdfs:label	has Miller indices family under cubic symmetry@en
+WARN	missing_obsolete_label	-P 2ybc space group	rdfs:label	-P 2ybc space group
+WARN	missing_obsolete_label	-P 2ybc space group	rdfs:label	has Miller indices family under cubic symmetry@en
