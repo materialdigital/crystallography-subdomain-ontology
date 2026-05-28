@@ -4761,7 +4761,8 @@ crystal structures according to the axial system used to describe their lattice 
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000015"/>
-        <rdfs:label xml:lang="en">α anlge</rdfs:label>
+        <rdfs:label xml:lang="en">alpha angle</rdfs:label>
+        <skos:altLabel xml:lang="en">α anlge</skos:altLabel>
         <skos:definition xml:lang="en">α anlge is an angle in a unit cell between y- and z-axes.</skos:definition>
     </owl:Class>
     
@@ -4771,7 +4772,8 @@ crystal structures according to the axial system used to describe their lattice 
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000038">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000015"/>
-        <rdfs:label xml:lang="en">β anlge</rdfs:label>
+        <rdfs:label xml:lang="en">beta angle</rdfs:label>
+        <skos:altLabel xml:lang="en">β anlge</skos:altLabel>
         <skos:definition xml:lang="en">β anlge is an angle in a unit cell between x- and z-axes.</skos:definition>
     </owl:Class>
     
@@ -4781,7 +4783,8 @@ crystal structures according to the axial system used to describe their lattice 
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000039">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000015"/>
-        <rdfs:label xml:lang="en">γ angle</rdfs:label>
+        <rdfs:label xml:lang="en">gamma angle</rdfs:label>
+        <skos:altLabel xml:lang="en">γ angle</skos:altLabel>
         <skos:definition>γ anlge is an angle in a unit cell between x- and y-axes.</skos:definition>
     </owl:Class>
     
@@ -4897,8 +4900,7 @@ Grain orientation can be specified by either texture fibers or texture component
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000119"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000380"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -4958,8 +4960,7 @@ Grain orientation can be specified by either texture fibers or texture component
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000120"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000381"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -5074,8 +5075,7 @@ Grain orientation can be specified by either texture fibers or texture component
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000120"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000381"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -5135,8 +5135,7 @@ Grain orientation can be specified by either texture fibers or texture component
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000121"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000382"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -5565,8 +5564,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000121"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000382"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -5626,8 +5624,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000121"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000382"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -5687,8 +5684,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000121"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000382"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -5748,8 +5744,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000041"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000379"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -5809,8 +5804,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000041"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000379"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -5870,8 +5864,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000041"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000379"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -5931,8 +5924,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000129"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000385"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -5992,8 +5984,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000123"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000384"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -6053,8 +6044,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000122"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000383"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -6114,8 +6104,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000122"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000383"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -6206,6 +6195,223 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <skos:definition xml:lang="en">cubic equivalency assertion is a symmetry equivalency assertion which is used to infer crystallographic equivalence between single crystallographic direction /plane and family of directions/planes under the cubic crystal symmetry.
 In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families of crystallographic directions, as well as {100}, {110}, {111} families of crystallographic planes</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000379 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000379">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000035"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000041"/>
+        <rdfs:label xml:lang="en">cubic crystal lattice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000380 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000380">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000029"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000119"/>
+        <rdfs:label xml:lang="en">triclinic crystal lattice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000381 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000381">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000030"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000120"/>
+        <rdfs:label xml:lang="en">monoclinic crystal lattice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000382 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000382">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000031"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000121"/>
+        <rdfs:label xml:lang="en">orthomombic crystal lattice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000383 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000383">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000032"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000122"/>
+        <rdfs:label xml:lang="en">tetragonal crystal lattice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000384 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000384">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000033"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000123"/>
+        <rdfs:label xml:lang="en">trigonal crystal lattice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000385 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000385">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                                        <owl:hasValue rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000034"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000129"/>
+        <rdfs:label xml:lang="en">hexagonal crystal lattice</rdfs:label>
     </owl:Class>
     
 

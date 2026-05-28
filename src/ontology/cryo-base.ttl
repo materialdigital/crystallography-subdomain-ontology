@@ -3395,21 +3395,24 @@ cryo:CRYO_0000036 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/cryo/CRYO_0000037
 cryo:CRYO_0000037 rdf:type owl:Class ;
                   rdfs:subClassOf cryo:CRYO_0000015 ;
-                  rdfs:label "α anlge"@en ;
+                  rdfs:label "alpha angle"@en ;
+                  skos:altLabel "α anlge"@en ;
                   skos:definition "α anlge is an angle in a unit cell between y- and z-axes."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000038
 cryo:CRYO_0000038 rdf:type owl:Class ;
                   rdfs:subClassOf cryo:CRYO_0000015 ;
-                  rdfs:label "β anlge"@en ;
+                  rdfs:label "beta angle"@en ;
+                  skos:altLabel "β anlge"@en ;
                   skos:definition "β anlge is an angle in a unit cell between x- and z-axes."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000039
 cryo:CRYO_0000039 rdf:type owl:Class ;
                   rdfs:subClassOf cryo:CRYO_0000015 ;
-                  rdfs:label "γ angle"@en ;
+                  rdfs:label "gamma angle"@en ;
+                  skos:altLabel "γ angle"@en ;
                   skos:definition "γ anlge is an angle in a unit cell between x- and y-axes." .
 
 
@@ -3492,8 +3495,7 @@ cryo:CRYO_0000047 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000119 ,
+                  rdfs:subClassOf cryo:CRYO_0000380 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -3536,8 +3538,7 @@ cryo:CRYO_0000048 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000120 ,
+                  rdfs:subClassOf cryo:CRYO_0000381 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -3619,8 +3620,7 @@ cryo:CRYO_0000103 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000120 ,
+                  rdfs:subClassOf cryo:CRYO_0000381 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -3663,8 +3663,7 @@ cryo:CRYO_0000118 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000121 ,
+                  rdfs:subClassOf cryo:CRYO_0000382 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -3970,8 +3969,7 @@ cryo:CRYO_0000131 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000121 ,
+                  rdfs:subClassOf cryo:CRYO_0000382 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -4014,8 +4012,7 @@ cryo:CRYO_0000132 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000121 ,
+                  rdfs:subClassOf cryo:CRYO_0000382 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -4058,8 +4055,7 @@ cryo:CRYO_0000133 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000121 ,
+                  rdfs:subClassOf cryo:CRYO_0000382 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -4102,8 +4098,7 @@ cryo:CRYO_0000134 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000041 ,
+                  rdfs:subClassOf cryo:CRYO_0000379 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -4146,8 +4141,7 @@ cryo:CRYO_0000135 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000041 ,
+                  rdfs:subClassOf cryo:CRYO_0000379 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -4190,8 +4184,7 @@ cryo:CRYO_0000136 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000041 ,
+                  rdfs:subClassOf cryo:CRYO_0000379 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -4234,8 +4227,7 @@ cryo:CRYO_0000137 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000129 ,
+                  rdfs:subClassOf cryo:CRYO_0000385 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -4278,8 +4270,7 @@ cryo:CRYO_0000138 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000123 ,
+                  rdfs:subClassOf cryo:CRYO_0000384 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -4322,8 +4313,7 @@ cryo:CRYO_0000139 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000122 ,
+                  rdfs:subClassOf cryo:CRYO_0000383 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -4366,8 +4356,7 @@ cryo:CRYO_0000140 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf cryo:CRYO_0000001 ,
-                                  cryo:CRYO_0000122 ,
+                  rdfs:subClassOf cryo:CRYO_0000383 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
@@ -4434,6 +4423,160 @@ cryo:CRYO_0000143 rdf:type owl:Class ;
                   owl:deprecated "true"^^xsd:boolean ;
                   skos:definition """cubic equivalency assertion is a symmetry equivalency assertion which is used to infer crystallographic equivalence between single crystallographic direction /plane and family of directions/planes under the cubic crystal symmetry.
 In particular, it considers <100>, <110>, and <111> families of crystallographic directions, as well as {100}, {110}, {111} families of crystallographic planes"""@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000379
+cryo:CRYO_0000379 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( cryo:CRYO_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000086 ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000026
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
+                                                                                                           owl:hasValue cryo:CRYO_0000035
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf cryo:CRYO_0000001 ,
+                                  cryo:CRYO_0000041 ;
+                  rdfs:label "cubic crystal lattice"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000380
+cryo:CRYO_0000380 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( cryo:CRYO_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000086 ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000026
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
+                                                                                                           owl:hasValue cryo:CRYO_0000029
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf cryo:CRYO_0000001 ,
+                                  cryo:CRYO_0000119 ;
+                  rdfs:label "triclinic crystal lattice"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000381
+cryo:CRYO_0000381 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( cryo:CRYO_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000086 ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000026
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
+                                                                                                           owl:hasValue cryo:CRYO_0000030
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf cryo:CRYO_0000001 ,
+                                  cryo:CRYO_0000120 ;
+                  rdfs:label "monoclinic crystal lattice"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000382
+cryo:CRYO_0000382 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( cryo:CRYO_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000086 ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000026
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
+                                                                                                           owl:hasValue cryo:CRYO_0000031
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf cryo:CRYO_0000001 ,
+                                  cryo:CRYO_0000121 ;
+                  rdfs:label "orthomombic crystal lattice"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000383
+cryo:CRYO_0000383 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( cryo:CRYO_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000086 ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000026
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
+                                                                                                           owl:hasValue cryo:CRYO_0000032
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf cryo:CRYO_0000001 ,
+                                  cryo:CRYO_0000122 ;
+                  rdfs:label "tetragonal crystal lattice"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000384
+cryo:CRYO_0000384 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( cryo:CRYO_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000086 ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000026
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
+                                                                                                           owl:hasValue cryo:CRYO_0000033
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf cryo:CRYO_0000001 ,
+                                  cryo:CRYO_0000123 ;
+                  rdfs:label "trigonal crystal lattice"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000385
+cryo:CRYO_0000385 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( cryo:CRYO_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000086 ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000026
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
+                                                                                                           owl:hasValue cryo:CRYO_0000034
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf cryo:CRYO_0000001 ,
+                                  cryo:CRYO_0000129 ;
+                  rdfs:label "hexagonal crystal lattice"@en .
 
 
 #################################################################
