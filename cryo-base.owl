@@ -6416,6 +6416,16 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000386 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">unit cell volume</rdfs:label>
+        <skos:definition xml:lang="en">The volume of a unit cell is the 3D space occupied by the repeating structural unit in a crystal lattice.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
