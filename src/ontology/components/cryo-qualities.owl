@@ -89,6 +89,12 @@
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000001 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000002 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000002">
@@ -190,6 +196,66 @@
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000026 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">crystal system</rdfs:label>
+        <skos:definition xml:lang="en">Crystal system is a quality of a (real) crystal which defines its symmetry based on the rotational and mirror symmetries of the actual atomic arrangements.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000027 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000036"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lattice centering</rdfs:label>
+        <skos:definition xml:lang="en">Lattice centering is an intensive quality ofa crystal lattice which the geometric arrangement of lattice points in a unit cell. It is specified by one of the 4 lattice centering value.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000028 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000028"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000036 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000036"/>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000037 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000037">
@@ -228,7 +294,7 @@
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:label xml:lang="en">space group</rdfs:label>
-        <skos:definition xml:lang="en">space group is a quality of some crystal lattice that defines the symmetry of a repeating pattern of the lattice in space.</skos:definition>
+        <skos:definition xml:lang="en">space group is a quality of some crystal  that defines the symmetry combining all point group symmetries with all lattice translation symmetries</skos:definition>
     </owl:Class>
     
 
@@ -249,6 +315,39 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:label xml:lang="en">unit cell volume</rdfs:label>
         <skos:definition xml:lang="en">The volume of a unit cell is the 3D space occupied by the repeating structural unit in a crystal lattice.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000387 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000387">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">point group</rdfs:label>
+        <rdfs:seeAlso>https://www.math.ru.nl/~souvi/papers/zkrist09.pdf</rdfs:seeAlso>
+        <skos:definition xml:lang="en">point group is a quality of a crystal that defines its symmetry consisting strictly of rotations, reflections, and inversions around a fixed center</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000388 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000388">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">lattice group</rdfs:label>
+        <skos:definition xml:lang="en">Lattice group is a quality of a crystal lattice that defines its translational symmetry by infinite, periodic array of points in space such that the entire grid coincides exactly with its original position</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000390 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000390">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:comment xml:lang="en">Considers just the lattice points, no atoms</rdfs:comment>
+        <rdfs:label xml:lang="en">lattice system</rdfs:label>
+        <skos:altLabel xml:lang="en">lattice type</skos:altLabel>
+        <skos:definition xml:lang="en">lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks</skos:definition>
     </owl:Class>
 </rdf:RDF>
 
