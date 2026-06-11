@@ -361,7 +361,6 @@ Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000384>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000385>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000386>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000387>))
-Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000388>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000390>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000392>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
@@ -1593,7 +1592,7 @@ SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000162> owl:topObjectProper
 ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000162> <https://w3id.org/pmd/cryo/CRYO_0000143>)
 ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000162> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000124> ObjectHasValue(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/cryo/CRYO_0000035>)))
 
-# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000164> (denoted by family)
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000164> (P 2 2 space group)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000164> "denoted by family"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000164> "P 2 2 space group")
@@ -2939,7 +2938,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -4314,6 +4313,7 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000385> <https://w3id.org/pmd/cryo/C
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000386> "unit cell volume"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000386> "The volume of a unit cell is the 3D space occupied by the repeating structural unit in a crystal lattice."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000386> <http://purl.obolibrary.org/obo/BFO_0000019>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000386> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000000>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000387> (point group)
 
@@ -4323,13 +4323,6 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000387> <http://purl.obolibrary.org/obo/BFO_0000019>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000387> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0020003>))
 
-# Class: <https://w3id.org/pmd/cryo/CRYO_0000388> (lattice group)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000388> "lattice group"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000388> "Lattice group is a quality of a crystal lattice that defines its translational symmetry by infinite, periodic array of points in space such that the entire grid coincides exactly with its original position"@en)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000388> <http://purl.obolibrary.org/obo/BFO_0000019>)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000388> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>)))
-
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000390> (lattice system)
 
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000390> "Considers just the lattice points, no atoms"@en)
@@ -4338,6 +4331,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000390> "lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks"@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000390> <http://purl.obolibrary.org/obo/BFO_0000019>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>)))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectExactCardinality(1 <https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000392>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000392> (lattice system value)
 
@@ -5178,7 +5172,7 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000163> "C 1 2/c 1")
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000163> "-C 2yc")
 
-# Individual: <https://w3id.org/pmd/cryo/CRYO_0000164> (denoted by family)
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000164> (P 2 2 space group)
 
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000164>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000164> "16"^^xsd:integer)

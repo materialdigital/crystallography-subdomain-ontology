@@ -13,15 +13,15 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/2026-06-10"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/2026-06-11"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <dcterms:bibliographicCitation>cryo: Crystallography Subdomain Ontology. Version 2026-06-10, https://w3id.org/pmd/cryo/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-06-10</dcterms:created>
+        <dcterms:bibliographicCitation>cryo: Crystallography Subdomain Ontology. Version 2026-06-11, https://w3id.org/pmd/cryo/</dcterms:bibliographicCitation>
+        <dcterms:created>2026-06-11</dcterms:created>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x</dcterms:title>
         <owl:priorVersion rdf:resource="https://w3id.org/pmd/cryo/"/>
-        <owl:versionInfo>2026-06-10</owl:versionInfo>
+        <owl:versionInfo>2026-06-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6642,6 +6642,12 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000386">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">unit cell volume</rdfs:label>
         <skos:definition xml:lang="en">The volume of a unit cell is the 3D space occupied by the repeating structural unit in a crystal lattice.</skos:definition>
     </owl:Class>
@@ -6665,30 +6671,6 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000388 -->
-
-    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000388">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">lattice group</rdfs:label>
-        <skos:definition xml:lang="en">Lattice group is a quality of a crystal lattice that defines its translational symmetry by infinite, periodic array of points in space such that the entire grid coincides exactly with its original position</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pmd/cryo/CRYO_0000390 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000390">
@@ -6706,6 +6688,13 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000392"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Considers just the lattice points, no atoms</rdfs:comment>
         <rdfs:label xml:lang="en">lattice system</rdfs:label>
