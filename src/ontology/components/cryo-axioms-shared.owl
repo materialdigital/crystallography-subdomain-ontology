@@ -139,6 +139,19 @@
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000386 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000386">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000387 -->
 
     <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000387">
@@ -147,27 +160,6 @@
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000388 -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000388">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
         </rdfs:subClassOf>
     </rdf:Description>
     
@@ -189,6 +181,13 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000392"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
     
