@@ -213,6 +213,8 @@
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000128"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000130"/>
         <obo:RO_0002351 rdf:resource="https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000"/>
+        <cryo:CRYO_0000016>{001}</cryo:CRYO_0000016>
+        <cryo:CRYO_0000016>{100}</cryo:CRYO_0000016>
     </rdf:Description>
     
 
