@@ -550,17 +550,13 @@ Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000130>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000149>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000150>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000151>))
-Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000152>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000153>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000154>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000155>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000156>))
-Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000157>))
-Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000158>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000159>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000160>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000161>))
-Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000162>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000163>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000165>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000166>))
@@ -777,7 +773,11 @@ Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000378>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000388>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000389>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000391>))
-Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO:0000393>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000393>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000394>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000395>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000396>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000397>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -1533,7 +1533,6 @@ ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000063> <https://w3id.org/
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000152> (has Miller indices family)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000152> "P 2yb space group")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000152> "has Miller indices family"@en)
 AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/cryo/CRYO_0000152> "true"^^xsd:boolean)
 InverseObjectProperties(<https://w3id.org/pmd/cryo/CRYO_0000152> <https://w3id.org/pmd/cryo/CRYO_0000157>)
@@ -1542,23 +1541,20 @@ ObjectPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000152> ObjectUnionOf(<http
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000157> (Miller indices family of)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000157> "C -2yc space group")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000157> "Miller indices family of"@en)
 AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/cryo/CRYO_0000157> "true"^^xsd:boolean)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000157> owl:topObjectProperty)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000158> (under symmetry)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000158> "-P 2y space group")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000158> "under symmetry"@en)
 AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/cryo/CRYO_0000158> "true"^^xsd:boolean)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000158> owl:topObjectProperty)
 ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/cryo/CRYO_0000124>)
 ObjectPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/cryo/CRYO_0000028>)
 
-# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000162> (-P 2ybc space group)
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000162> (has Miller indices family under cubic symmetry)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000162> "-P 2ybc space group")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000162> "has Miller indices family under cubic symmetry"@en)
 AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/cryo/CRYO_0000162> "true"^^xsd:boolean)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000162> owl:topObjectProperty)
@@ -2882,7 +2878,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -4879,13 +4875,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000151> "P 1 2 1")
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000151> "P 2y")
 
-# Individual: <https://w3id.org/pmd/cryo/CRYO_0000152> (has Miller indices family)
-
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000152>)
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000152> "4"^^xsd:integer)
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000152> "P 1 21 1")
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000152> "P 2yb")
-
 # Individual: <https://w3id.org/pmd/cryo/CRYO_0000153> (C 2y space group)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000153> "C 2y space group")
@@ -4918,20 +4907,6 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000156> "C 1 m 1")
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000156> "C -2y")
 
-# Individual: <https://w3id.org/pmd/cryo/CRYO_0000157> (Miller indices family of)
-
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000157>)
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000157> "9"^^xsd:integer)
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000157> "C 1 c 1")
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000157> "C -2yc")
-
-# Individual: <https://w3id.org/pmd/cryo/CRYO_0000158> (under symmetry)
-
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000158>)
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000158> "10"^^xsd:integer)
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000158> "P 1 2/m 1")
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000158> "-P 2y")
-
 # Individual: <https://w3id.org/pmd/cryo/CRYO_0000159> (-P 2yb space group)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000159> "-P 2yb space group")
@@ -4955,13 +4930,6 @@ ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cr
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000161> "13"^^xsd:integer)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000161> "P 1 2/c 1")
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000161> "-P 2yc")
-
-# Individual: <https://w3id.org/pmd/cryo/CRYO_0000162> (-P 2ybc space group)
-
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000162>)
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000162> "14"^^xsd:integer)
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000162> "P 1 21/c 1")
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000162> "-P 2ybc")
 
 # Individual: <https://w3id.org/pmd/cryo/CRYO_0000163> (-C 2yc space group)
 
@@ -6667,19 +6635,17 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000378> "I a -3 d")
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000378> "-I 4bd 2c 3")
 
-# Individual: <https://w3id.org/pmd/cryo/CRYO_0000388> (is cubic)
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000388> (F 2 2 space group)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000388> "F 2 2 space group")
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000388> "is cubic"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000388>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000388> "22"^^xsd:integer)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000388> "F 2 2 2")
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000388> "F 2 2")
 
-# Individual: <https://w3id.org/pmd/cryo/CRYO_0000389> (denoted by family)
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000389> (P 2 2 space group)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000389> "P 2 2 space group")
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000389> "denoted by family"@en)
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000389>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000389> "16"^^xsd:integer)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000389> "P 2 2 2")
@@ -6690,21 +6656,45 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000391> "trigonal"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000391> "Triclinic crystal system is a crystal system with one 3-fold rotation axis"@en)
 
-# Individual: <https://w3id.org/pmd/cryo/CRYO:0000393> (lattice system)
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000393> (P 2yb space group)
 
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO:0000393> "'denoted by' o 'member of' o 'has Miller indices family under cubic symmetry'")
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO:0000393> "'denoted by' o 'under  symmetry' o 'is cubic' o  inverse ('under  symmetry') o 'has member' o 'member of'")
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO:0000393> "'denoted by' o 'under cubic symmetry' o 'member of' o 'under cubic symmetry'")
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO:0000393> "Considers just the lattice points, no atoms"@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO:0000393> "C 2c 2 space group")
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO:0000393> "denoted by family under cubic symmetry"@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO:0000393> "lattice system"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/cryo/CRYO:0000393> "lattice type"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO:0000393> "lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks"@en)
-ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO:0000393>)
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO:0000393> "20"^^xsd:integer)
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO:0000393> "C 2 2 21")
-DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO:0000393> "C 2c 2")
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000393> "P 2yb space group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000393>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000393> "4"^^xsd:integer)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000393> "P 1 21 1")
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000393> "P 2yb")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000394> (-P 2ybc space group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000394> "-P 2ybc space group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000394>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000394> "14"^^xsd:integer)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000394> "P 1 21/c 1")
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000394> "-P 2ybc")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000395> (C 2c 2 space group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000395> "C 2c 2 space group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000395>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000395> "20"^^xsd:integer)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000395> "C 2 2 21")
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000395> "C 2c 2")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000396> (C -2yc space group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000396> "C -2yc space group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000396>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000396> "9"^^xsd:integer)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000396> "C 1 c 1")
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000396> "C -2yc")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000397> (-P 2y space group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000397> "-P 2y space group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000397>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000397> "10"^^xsd:integer)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000397> "P 1 2/m 1")
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000397> "-P 2y")
 
 # Individual: <https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000> ((0-10))
 
@@ -6762,4 +6752,8 @@ DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000016> Variable(
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000019> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000086> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000023> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000087> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000034> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000085> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO:0000393> "Considers just the lattice points, no atoms"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO:0000393> "lattice system"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/cryo/CRYO:0000393> "lattice type"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO:0000393> "lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks"@en)
 )

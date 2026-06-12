@@ -1381,6 +1381,8 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">has Miller indices family</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -1389,6 +1391,8 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000157">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">Miller indices family of</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -1399,6 +1403,8 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000124"/>
         <rdfs:range rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
+        <rdfs:label xml:lang="en">under symmetry</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -1423,6 +1429,8 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
             <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170"/>
             <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000152"/>
         </owl:propertyChainAxiom>
+        <rdfs:label xml:lang="en">has Miller indices family under cubic symmetry</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -9587,17 +9595,6 @@ lattice system based on the point group symmetries of their empty translational 
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000152 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000152">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
-        <CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</CRYO_0000145>
-        <CRYO_0000146>P 1 21 1</CRYO_0000146>
-        <CRYO_0000147>P 2yb</CRYO_0000147>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/pmd/cryo/CRYO_0000153 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000153">
@@ -9646,28 +9643,6 @@ lattice system based on the point group symmetries of their empty translational 
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000157 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000157">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
-        <CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</CRYO_0000145>
-        <CRYO_0000146>C 1 c 1</CRYO_0000146>
-        <CRYO_0000147>C -2yc</CRYO_0000147>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000158 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000158">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
-        <CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</CRYO_0000145>
-        <CRYO_0000146>P 1 2/m 1</CRYO_0000146>
-        <CRYO_0000147>-P 2y</CRYO_0000147>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/pmd/cryo/CRYO_0000159 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000159">
@@ -9700,17 +9675,6 @@ lattice system based on the point group symmetries of their empty translational 
         <CRYO_0000146>P 1 2/c 1</CRYO_0000146>
         <CRYO_0000147>-P 2yc</CRYO_0000147>
         <rdfs:label>-P 2yc space group</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000162 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000162">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
-        <CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</CRYO_0000145>
-        <CRYO_0000146>P 1 21/c 1</CRYO_0000146>
-        <CRYO_0000147>-P 2ybc</CRYO_0000147>
     </owl:NamedIndividual>
     
 
@@ -12279,7 +12243,6 @@ lattice system based on the point group symmetries of their empty translational 
         <CRYO_0000146>F 2 2 2</CRYO_0000146>
         <CRYO_0000147>F 2 2</CRYO_0000147>
         <rdfs:label>F 2 2 space group</rdfs:label>
-        <rdfs:label xml:lang="en">is cubic</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -12292,7 +12255,6 @@ lattice system based on the point group symmetries of their empty translational 
         <CRYO_0000146>P 2 2 2</CRYO_0000146>
         <CRYO_0000147>P 2 2</CRYO_0000147>
         <rdfs:label>P 2 2 space group</rdfs:label>
-        <rdfs:label xml:lang="en">denoted by family</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -12306,22 +12268,62 @@ lattice system based on the point group symmetries of their empty translational 
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO:0000393 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000393 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO:0000393">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000393">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
+        <CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</CRYO_0000145>
+        <CRYO_0000146>P 1 21 1</CRYO_0000146>
+        <CRYO_0000147>P 2yb</CRYO_0000147>
+        <rdfs:label>P 2yb space group</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000394 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000394">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
+        <CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</CRYO_0000145>
+        <CRYO_0000146>P 1 21/c 1</CRYO_0000146>
+        <CRYO_0000147>-P 2ybc</CRYO_0000147>
+        <rdfs:label>-P 2ybc space group</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000395 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000395">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
         <CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</CRYO_0000145>
         <CRYO_0000146>C 2 2 21</CRYO_0000146>
         <CRYO_0000147>C 2c 2</CRYO_0000147>
-        <rdfs:comment>&apos;denoted by&apos; o &apos;member of&apos; o &apos;has Miller indices family under cubic symmetry&apos;</rdfs:comment>
-        <rdfs:comment>&apos;denoted by&apos; o &apos;under  symmetry&apos; o &apos;is cubic&apos; o  inverse (&apos;under  symmetry&apos;) o &apos;has member&apos; o &apos;member of&apos;</rdfs:comment>
-        <rdfs:comment>&apos;denoted by&apos; o &apos;under cubic symmetry&apos; o &apos;member of&apos; o &apos;under cubic symmetry&apos;</rdfs:comment>
-        <rdfs:comment xml:lang="en">Considers just the lattice points, no atoms</rdfs:comment>
         <rdfs:label>C 2c 2 space group</rdfs:label>
-        <rdfs:label xml:lang="en">denoted by family under cubic symmetry</rdfs:label>
-        <rdfs:label xml:lang="en">lattice system</rdfs:label>
-        <skos:altLabel xml:lang="en">lattice type</skos:altLabel>
-        <skos:definition xml:lang="en">lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000396 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000396">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
+        <CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</CRYO_0000145>
+        <CRYO_0000146>C 1 c 1</CRYO_0000146>
+        <CRYO_0000147>C -2yc</CRYO_0000147>
+        <rdfs:label>C -2yc space group</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000397 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000397">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
+        <CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</CRYO_0000145>
+        <CRYO_0000146>P 1 2/m 1</CRYO_0000146>
+        <CRYO_0000147>-P 2y</CRYO_0000147>
+        <rdfs:label>-P 2y space group</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -12356,25 +12358,11 @@ lattice system based on the point group symmetries of their empty translational 
         <owl:annotatedTarget>A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Wikipedia:Wikipedia</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000152">
-        <rdfs:label>P 2yb space group</rdfs:label>
-        <rdfs:label xml:lang="en">has Miller indices family</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000157">
-        <rdfs:label>C -2yc space group</rdfs:label>
-        <rdfs:label xml:lang="en">Miller indices family of</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000158">
-        <rdfs:label>-P 2y space group</rdfs:label>
-        <rdfs:label xml:lang="en">under symmetry</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000162">
-        <rdfs:label>-P 2ybc space group</rdfs:label>
-        <rdfs:label xml:lang="en">has Miller indices family under cubic symmetry</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO:0000393">
+        <rdfs:comment xml:lang="en">Considers just the lattice points, no atoms</rdfs:comment>
+        <rdfs:label xml:lang="en">lattice system</rdfs:label>
+        <skos:altLabel xml:lang="en">lattice type</skos:altLabel>
+        <skos:definition xml:lang="en">lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks</skos:definition>
     </rdf:Description>
     
 

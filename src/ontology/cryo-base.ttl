@@ -400,19 +400,25 @@ cryo:CRYO_0000152 rdf:type owl:ObjectProperty ;
                                owl:unionOf ( cryo:CRYO_0000021
                                              cryo:CRYO_0000023
                                            )
-                             ] .
+                             ] ;
+                  rdfs:label "has Miller indices family"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000157
 cryo:CRYO_0000157 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf owl:topObjectProperty .
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:label "Miller indices family of"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000158
 cryo:CRYO_0000158 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
                   rdfs:domain cryo:CRYO_0000124 ;
-                  rdfs:range cryo:CRYO_0000028 .
+                  rdfs:range cryo:CRYO_0000028 ;
+                  rdfs:label "under symmetry"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000162
@@ -429,7 +435,9 @@ cryo:CRYO_0000162 rdf:type owl:ObjectProperty ;
                               ] ;
                   owl:propertyChainAxiom ( cryo:CRYO_0000170
                                            cryo:CRYO_0000152
-                                         ) .
+                                         ) ;
+                  rdfs:label "has Miller indices family under cubic symmetry"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000164
@@ -5480,14 +5488,6 @@ cryo:CRYO_0000151 rdf:type owl:NamedIndividual ,
                   rdfs:label "P 2y space group" .
 
 
-###  https://w3id.org/pmd/cryo/CRYO_0000152
-cryo:CRYO_0000152 rdf:type owl:NamedIndividual ,
-                           cryo:CRYO_0000142 ;
-                  cryo:CRYO_0000145 4 ;
-                  cryo:CRYO_0000146 "P 1 21 1" ;
-                  cryo:CRYO_0000147 "P 2yb" .
-
-
 ###  https://w3id.org/pmd/cryo/CRYO_0000153
 cryo:CRYO_0000153 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000142 ;
@@ -5524,22 +5524,6 @@ cryo:CRYO_0000156 rdf:type owl:NamedIndividual ,
                   rdfs:label "C -2y space group" .
 
 
-###  https://w3id.org/pmd/cryo/CRYO_0000157
-cryo:CRYO_0000157 rdf:type owl:NamedIndividual ,
-                           cryo:CRYO_0000142 ;
-                  cryo:CRYO_0000145 9 ;
-                  cryo:CRYO_0000146 "C 1 c 1" ;
-                  cryo:CRYO_0000147 "C -2yc" .
-
-
-###  https://w3id.org/pmd/cryo/CRYO_0000158
-cryo:CRYO_0000158 rdf:type owl:NamedIndividual ,
-                           cryo:CRYO_0000142 ;
-                  cryo:CRYO_0000145 10 ;
-                  cryo:CRYO_0000146 "P 1 2/m 1" ;
-                  cryo:CRYO_0000147 "-P 2y" .
-
-
 ###  https://w3id.org/pmd/cryo/CRYO_0000159
 cryo:CRYO_0000159 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000142 ;
@@ -5565,14 +5549,6 @@ cryo:CRYO_0000161 rdf:type owl:NamedIndividual ,
                   cryo:CRYO_0000146 "P 1 2/c 1" ;
                   cryo:CRYO_0000147 "-P 2yc" ;
                   rdfs:label "-P 2yc space group" .
-
-
-###  https://w3id.org/pmd/cryo/CRYO_0000162
-cryo:CRYO_0000162 rdf:type owl:NamedIndividual ,
-                           cryo:CRYO_0000142 ;
-                  cryo:CRYO_0000145 14 ;
-                  cryo:CRYO_0000146 "P 1 21/c 1" ;
-                  cryo:CRYO_0000147 "-P 2ybc" .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000163
@@ -7498,8 +7474,7 @@ cryo:CRYO_0000388 rdf:type owl:NamedIndividual ,
                   cryo:CRYO_0000145 22 ;
                   cryo:CRYO_0000146 "F 2 2 2" ;
                   cryo:CRYO_0000147 "F 2 2" ;
-                  rdfs:label "F 2 2 space group" ,
-                             "is cubic"@en .
+                  rdfs:label "F 2 2 space group" .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000389
@@ -7508,8 +7483,7 @@ cryo:CRYO_0000389 rdf:type owl:NamedIndividual ,
                   cryo:CRYO_0000145 16 ;
                   cryo:CRYO_0000146 "P 2 2 2" ;
                   cryo:CRYO_0000147 "P 2 2" ;
-                  rdfs:label "P 2 2 space group" ,
-                             "denoted by family"@en .
+                  rdfs:label "P 2 2 space group" .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000391
@@ -7518,21 +7492,49 @@ cryo:CRYO_0000391 rdf:type owl:NamedIndividual ;
                   skos:definition "Triclinic crystal system is a crystal system with one 3-fold rotation axis"@en .
 
 
-###  https://w3id.org/pmd/cryo/CRYO:0000393
-<https://w3id.org/pmd/cryo/CRYO:0000393> rdf:type owl:NamedIndividual ,
-                                                  cryo:CRYO_0000142 ;
-                                         cryo:CRYO_0000145 20 ;
-                                         cryo:CRYO_0000146 "C 2 2 21" ;
-                                         cryo:CRYO_0000147 "C 2c 2" ;
-                                         rdfs:comment "'denoted by' o 'member of' o 'has Miller indices family under cubic symmetry'" ,
-                                                      "'denoted by' o 'under  symmetry' o 'is cubic' o  inverse ('under  symmetry') o 'has member' o 'member of'" ,
-                                                      "'denoted by' o 'under cubic symmetry' o 'member of' o 'under cubic symmetry'" ,
-                                                      "Considers just the lattice points, no atoms"@en ;
-                                         rdfs:label "C 2c 2 space group" ,
-                                                    "denoted by family under cubic symmetry"@en ,
-                                                    "lattice system"@en ;
-                                         skos:altLabel "lattice type"@en ;
-                                         skos:definition "lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks"@en .
+###  https://w3id.org/pmd/cryo/CRYO_0000393
+cryo:CRYO_0000393 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 4 ;
+                  cryo:CRYO_0000146 "P 1 21 1" ;
+                  cryo:CRYO_0000147 "P 2yb" ;
+                  rdfs:label "P 2yb space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000394
+cryo:CRYO_0000394 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 14 ;
+                  cryo:CRYO_0000146 "P 1 21/c 1" ;
+                  cryo:CRYO_0000147 "-P 2ybc" ;
+                  rdfs:label "-P 2ybc space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000395
+cryo:CRYO_0000395 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 20 ;
+                  cryo:CRYO_0000146 "C 2 2 21" ;
+                  cryo:CRYO_0000147 "C 2c 2" ;
+                  rdfs:label "C 2c 2 space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000396
+cryo:CRYO_0000396 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 9 ;
+                  cryo:CRYO_0000146 "C 1 c 1" ;
+                  cryo:CRYO_0000147 "C -2yc" ;
+                  rdfs:label "C -2yc space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000397
+cryo:CRYO_0000397 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 10 ;
+                  cryo:CRYO_0000146 "P 1 2/m 1" ;
+                  cryo:CRYO_0000147 "-P 2y" ;
+                  rdfs:label "-P 2y space group" .
 
 
 ###  https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000
@@ -7546,24 +7548,10 @@ cryo:CRYO_0000391 rdf:type owl:NamedIndividual ;
 #    Annotations
 #################################################################
 
-cryo:CRYO_0000152 rdfs:label "P 2yb space group" ,
-                             "has Miller indices family"@en ;
-                  owl:deprecated "true"^^xsd:boolean .
-
-
-cryo:CRYO_0000157 rdfs:label "C -2yc space group" ,
-                             "Miller indices family of"@en ;
-                  owl:deprecated "true"^^xsd:boolean .
-
-
-cryo:CRYO_0000158 rdfs:label "-P 2y space group" ,
-                             "under symmetry"@en ;
-                  owl:deprecated "true"^^xsd:boolean .
-
-
-cryo:CRYO_0000162 rdfs:label "-P 2ybc space group" ,
-                             "has Miller indices family under cubic symmetry"@en ;
-                  owl:deprecated "true"^^xsd:boolean .
+<https://w3id.org/pmd/cryo/CRYO:0000393> rdfs:comment "Considers just the lattice points, no atoms"@en ;
+                                         rdfs:label "lattice system"@en ;
+                                         skos:altLabel "lattice type"@en ;
+                                         skos:definition "lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks"@en .
 
 
 #################################################################

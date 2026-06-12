@@ -1,27 +1,19 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	f7ce8d85-cf86-44ff-8337-c7901f05dce7genid647
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	9c8c16ee-f32b-4fdb-83e8-354b76047e34genid647
 ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	f7ce8d85-cf86-44ff-8337-c7901f05dce7genid643
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	f7ce8d85-cf86-44ff-8337-c7901f05dce7genid797
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	f7ce8d85-cf86-44ff-8337-c7901f05dce7genid814
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	9c8c16ee-f32b-4fdb-83e8-354b76047e34genid643
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	9c8c16ee-f32b-4fdb-83e8-354b76047e34genid797
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	9c8c16ee-f32b-4fdb-83e8-354b76047e34genid814
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	information content entity
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	tetragonal equivalency assertion
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	cubic equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	f7ce8d85-cf86-44ff-8337-c7901f05dce7genid989
+ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	9c8c16ee-f32b-4fdb-83e8-354b76047e34genid989
 ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	f7ce8d85-cf86-44ff-8337-c7901f05dce7genid985
+ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	9c8c16ee-f32b-4fdb-83e8-354b76047e34genid985
 ERROR	deprecated_property_reference	symmetry equivalency assertion	under symmetry	blank node
 ERROR	deprecated_property_reference	Miller indices family of	owl:inverseOf	has Miller indices family
-ERROR	duplicate_label	denoted by family	rdfs:label	denoted by family@en
-ERROR	duplicate_label	denoted by family	rdfs:label	denoted by family@en
 ERROR	missing_label	https://w3id.org/pmd/cryo/CRYO_0000390	rdfs:label	
-ERROR	multiple_labels	C 2c 2 space group	rdfs:label	C 2c 2 space group
-ERROR	multiple_labels	C 2c 2 space group	rdfs:label	denoted by family under cubic symmetry@en
-ERROR	multiple_labels	C 2c 2 space group	rdfs:label	lattice system@en
-ERROR	multiple_labels	is cubic	rdfs:label	F 2 2 space group
-ERROR	multiple_labels	is cubic	rdfs:label	is cubic@en
-ERROR	multiple_labels	denoted by family	rdfs:label	P 2 2 space group
-ERROR	multiple_labels	denoted by family	rdfs:label	denoted by family@en
+WARN	missing_definition	lattice system	IAO:0000115	
 WARN	missing_definition	unit cell	IAO:0000115	
 WARN	missing_definition	crystal lattice	IAO:0000115	
 WARN	missing_definition	lattice parameter	IAO:0000115	
@@ -114,11 +106,7 @@ WARN	missing_obsolete_label	tetragonal equivalency assertion	rdfs:label	tetragon
 WARN	missing_obsolete_label	has Miller indices family under tetragonal symmetry	rdfs:label	has Miller indices family under tetragonal symmetry@en
 WARN	missing_obsolete_label	symmetry equivalency assertion	rdfs:label	symmetry equivalency assertion@en
 WARN	missing_obsolete_label	cubic equivalency assertion	rdfs:label	cubic equivalency assertion@en
-WARN	missing_obsolete_label	has Miller indices family	rdfs:label	P 2yb space group
 WARN	missing_obsolete_label	has Miller indices family	rdfs:label	has Miller indices family@en
-WARN	missing_obsolete_label	Miller indices family of	rdfs:label	C -2yc space group
 WARN	missing_obsolete_label	Miller indices family of	rdfs:label	Miller indices family of@en
-WARN	missing_obsolete_label	under symmetry	rdfs:label	-P 2y space group
 WARN	missing_obsolete_label	under symmetry	rdfs:label	under symmetry@en
-WARN	missing_obsolete_label	-P 2ybc space group	rdfs:label	-P 2ybc space group
-WARN	missing_obsolete_label	-P 2ybc space group	rdfs:label	has Miller indices family under cubic symmetry@en
+WARN	missing_obsolete_label	has Miller indices family under cubic symmetry	rdfs:label	has Miller indices family under cubic symmetry@en
