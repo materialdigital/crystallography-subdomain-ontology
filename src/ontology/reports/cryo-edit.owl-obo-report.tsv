@@ -1,23 +1,27 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	9de2126c-7f44-4b2d-9f99-59105220c526genid647
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	d7273b5e-cd08-4b6e-b65d-defa9b44e8c7genid647
 ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	9de2126c-7f44-4b2d-9f99-59105220c526genid643
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	9de2126c-7f44-4b2d-9f99-59105220c526genid797
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	9de2126c-7f44-4b2d-9f99-59105220c526genid814
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	d7273b5e-cd08-4b6e-b65d-defa9b44e8c7genid643
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	d7273b5e-cd08-4b6e-b65d-defa9b44e8c7genid797
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	d7273b5e-cd08-4b6e-b65d-defa9b44e8c7genid814
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	information content entity
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	tetragonal equivalency assertion
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	cubic equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	9de2126c-7f44-4b2d-9f99-59105220c526genid989
+ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	d7273b5e-cd08-4b6e-b65d-defa9b44e8c7genid989
 ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	9de2126c-7f44-4b2d-9f99-59105220c526genid985
+ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	d7273b5e-cd08-4b6e-b65d-defa9b44e8c7genid985
 ERROR	deprecated_property_reference	symmetry equivalency assertion	under symmetry	blank node
 ERROR	deprecated_property_reference	Miller indices family of	owl:inverseOf	has Miller indices family
-ERROR	multiple_labels	denoted by family	rdfs:label	P 2 2 space group
-ERROR	multiple_labels	denoted by family	rdfs:label	denoted by family@en
-ERROR	multiple_labels	denoted by family under cubic symmetry	rdfs:label	C 2c 2 space group
-ERROR	multiple_labels	denoted by family under cubic symmetry	rdfs:label	denoted by family under cubic symmetry@en
+ERROR	duplicate_label	denoted by family	rdfs:label	denoted by family@en
+ERROR	duplicate_label	denoted by family	rdfs:label	denoted by family@en
+ERROR	missing_label	https://w3id.org/pmd/cryo/CRYO_0000390	rdfs:label	
+ERROR	multiple_labels	C 2c 2 space group	rdfs:label	C 2c 2 space group
+ERROR	multiple_labels	C 2c 2 space group	rdfs:label	denoted by family under cubic symmetry@en
+ERROR	multiple_labels	C 2c 2 space group	rdfs:label	lattice system@en
 ERROR	multiple_labels	is cubic	rdfs:label	F 2 2 space group
 ERROR	multiple_labels	is cubic	rdfs:label	is cubic@en
+ERROR	multiple_labels	denoted by family	rdfs:label	P 2 2 space group
+ERROR	multiple_labels	denoted by family	rdfs:label	denoted by family@en
 WARN	missing_definition	unit cell	IAO:0000115	
 WARN	missing_definition	crystal lattice	IAO:0000115	
 WARN	missing_definition	lattice parameter	IAO:0000115	
@@ -34,10 +38,7 @@ WARN	missing_definition	crystallographic direction	IAO:0000115
 WARN	missing_definition	interplanar spacing	IAO:0000115	
 WARN	missing_definition	Miller indices	IAO:0000115	
 WARN	missing_definition	lattice angle	IAO:0000115	
-WARN	missing_definition	has Miller index	IAO:0000115	
-WARN	missing_definition	has h	IAO:0000115	
-WARN	missing_definition	has k	IAO:0000115	
-WARN	missing_definition	has l	IAO:0000115	
+WARN	missing_definition	has Miller indices	IAO:0000115	
 WARN	missing_definition	direction Miller indices	IAO:0000115	
 WARN	missing_definition	family of directions Miller indices	IAO:0000115	
 WARN	missing_definition	plane Miller indices	IAO:0000115	
@@ -95,6 +96,9 @@ WARN	missing_definition	has international space group number	IAO:0000115
 WARN	missing_definition	has Hermann-Mauguin symbol	IAO:0000115	
 WARN	missing_definition	has Hall symbol	IAO:0000115	
 WARN	missing_definition	has Schoenflies symbol	IAO:0000115	
+WARN	missing_definition	denoted by family	IAO:0000115	
+WARN	missing_definition	denoted by family under cubic symmetry	IAO:0000115	
+WARN	missing_definition	is cubic	IAO:0000115	
 WARN	missing_definition	cubic crystal lattice	IAO:0000115	
 WARN	missing_definition	triclinic crystal lattice	IAO:0000115	
 WARN	missing_definition	monoclinic crystal lattice	IAO:0000115	
@@ -104,7 +108,7 @@ WARN	missing_definition	rhombohedral crystal lattice	IAO:0000115
 WARN	missing_definition	hexagonal crystal lattice	IAO:0000115	
 WARN	missing_definition	unit cell volume	IAO:0000115	
 WARN	missing_definition	point group	IAO:0000115	
-WARN	missing_definition	lattice system	IAO:0000115	
+WARN	missing_definition	https://w3id.org/pmd/cryo/CRYO_0000390	IAO:0000115	
 WARN	missing_definition	lattice system value	IAO:0000115	
 WARN	missing_obsolete_label	tetragonal equivalency assertion	rdfs:label	tetragonal equivalency assertion@en
 WARN	missing_obsolete_label	has Miller indices family under tetragonal symmetry	rdfs:label	has Miller indices family under tetragonal symmetry@en

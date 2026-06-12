@@ -439,7 +439,8 @@ cryo:CRYO_0000164 rdf:type owl:ObjectProperty ;
                                owl:unionOf ( cryo:CRYO_0000021
                                              cryo:CRYO_0000023
                                            )
-                             ] .
+                             ] ;
+                  rdfs:label "denoted by family"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000168
@@ -449,12 +450,14 @@ cryo:CRYO_0000168 rdf:type owl:ObjectProperty ;
                   owl:propertyChainAxiom ( cryo:CRYO_0000170
                                            obo:IAO_0000235
                                            obo:RO_0002350
-                                         ) .
+                                         ) ;
+                  rdfs:label "denoted by family under cubic symmetry" .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000170
 cryo:CRYO_0000170 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf cryo:CRYO_0000053 .
+                  rdfs:subPropertyOf cryo:CRYO_0000053 ;
+                  rdfs:label "is cubic" .
 
 
 #################################################################
@@ -470,30 +473,10 @@ co:PMD_0000006 rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000016
 cryo:CRYO_0000016 rdf:type owl:DatatypeProperty ;
-                  rdfs:range xsd:integer ;
-                  rdfs:label "has Miller index"@en ;
-                  skos:definition "has Miller index is a top-level annotation property to specify Miller indices of crystallographic plane, direction, or lattice point."@en .
-
-
-###  https://w3id.org/pmd/cryo/CRYO_0000017
-cryo:CRYO_0000017 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf cryo:CRYO_0000016 ;
-                  rdfs:label "has h"@en ;
-                  skos:definition "has h specifies an integer of a h Miller index in a hkl set"@en .
-
-
-###  https://w3id.org/pmd/cryo/CRYO_0000018
-cryo:CRYO_0000018 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf cryo:CRYO_0000016 ;
-                  rdfs:label "has k"@en ;
-                  skos:definition "has k specifies an integer of a k Miller index in a hkl set"@en .
-
-
-###  https://w3id.org/pmd/cryo/CRYO_0000019
-cryo:CRYO_0000019 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf cryo:CRYO_0000016 ;
-                  rdfs:label "has l"@en ;
-                  skos:definition "has l specifies an integer of a l Miller index in a hkl set"@en .
+                  rdfs:domain cryo:CRYO_0000014 ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "has Miller indices"@en ;
+                  skos:definition "has Miller indices is an annotation property to specify Miller indices of crystallographic plane, direction, or family of equivalent planes or directions"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000144
@@ -4788,11 +4771,7 @@ cryo:CRYO_0000390 rdf:type owl:Class ;
                                     owl:onProperty co:PMD_0000077 ;
                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                     owl:onClass cryo:CRYO_0000392
-                                  ] ;
-                  rdfs:comment "Considers just the lattice points, no atoms"@en ;
-                  rdfs:label "lattice system"@en ;
-                  skos:altLabel "lattice type"@en ;
-                  skos:definition "lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks"@en .
+                                  ] .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000392
@@ -4998,10 +4977,8 @@ cryo:CRYO_0000040 rdf:type owl:NamedIndividual ,
                                  cryo:CRYO_0000130 ,
                                  <https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000> ;
                   cryo:CRYO_0000016 "{001}" ,
+                                    "{010}" ,
                                     "{100}" ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 0 ;
                   rdfs:label "{100}"@en .
 
 
@@ -5049,9 +5026,8 @@ cryo:CRYO_0000064 rdf:type owl:NamedIndividual ,
                                  cryo:CRYO_0000080 ,
                                  cryo:CRYO_0000081 ,
                                  cryo:CRYO_0000082 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "{011}" ,
+                                    "{110}" ;
                   rdfs:label "{110}"@en .
 
 
@@ -5066,9 +5042,7 @@ cryo:CRYO_0000065 rdf:type owl:NamedIndividual ,
                                  cryo:CRYO_0000100 ,
                                  cryo:CRYO_0000101 ,
                                  cryo:CRYO_0000102 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "{111}" ;
                   rdfs:label "{111}"@en .
 
 
@@ -5081,9 +5055,9 @@ cryo:CRYO_0000066 rdf:type owl:NamedIndividual ,
                                  cryo:CRYO_0000115 ,
                                  cryo:CRYO_0000116 ,
                                  cryo:CRYO_0000117 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "<001>" ,
+                                    "<010>" ,
+                                    "<100>" ;
                   rdfs:label "<100>"@en .
 
 
@@ -5102,9 +5076,8 @@ cryo:CRYO_0000067 rdf:type owl:NamedIndividual ,
                                  cryo:CRYO_0000092 ,
                                  cryo:CRYO_0000093 ,
                                  cryo:CRYO_0000094 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "<011>" ,
+                                    "<110>" ;
                   rdfs:label "<110>"@en .
 
 
@@ -5119,468 +5092,364 @@ cryo:CRYO_0000068 rdf:type owl:NamedIndividual ,
                                  cryo:CRYO_0000109 ,
                                  cryo:CRYO_0000110 ,
                                  cryo:CRYO_0000111 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "<111>" ;
                   rdfs:label "<111>"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000069
 cryo:CRYO_0000069 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "(110)" ;
                   rdfs:label "(110)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000070
 cryo:CRYO_0000070 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "(-110)" ;
                   rdfs:label "(-110)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000071
 cryo:CRYO_0000071 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "(1-10)" ;
                   rdfs:label "(1-10)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000072
 cryo:CRYO_0000072 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "(-1-10)" ;
                   rdfs:label "(-1-10)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000073
 cryo:CRYO_0000073 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "(101)" ;
                   rdfs:label "(101)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000074
 cryo:CRYO_0000074 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "(-101)" ;
                   rdfs:label "(-101)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000076
 cryo:CRYO_0000076 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "(10-1)" ;
                   rdfs:label "(10-1)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000077
 cryo:CRYO_0000077 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "(-10-1)" ;
                   rdfs:label "(-10-1)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000078
 cryo:CRYO_0000078 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "(011)" ;
                   rdfs:label "(011)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000080
 cryo:CRYO_0000080 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "(0-11)" ;
                   rdfs:label "(0-11)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000081
 cryo:CRYO_0000081 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "(01-1)" ;
                   rdfs:label "(01-1)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000082
 cryo:CRYO_0000082 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "(0-1-1)" ;
                   rdfs:label "(0-1-1)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000083
 cryo:CRYO_0000083 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "[110]" ;
                   rdfs:label "[110]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000084
 cryo:CRYO_0000084 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "[-110]" ;
                   rdfs:label "[-110]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000085
 cryo:CRYO_0000085 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "[1-10]" ;
                   rdfs:label "[1-10]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000086
 cryo:CRYO_0000086 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "[-1-10]" ;
                   rdfs:label "[-1-10]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000087
 cryo:CRYO_0000087 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "[101]" ;
                   rdfs:label "[101]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000088
 cryo:CRYO_0000088 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "[-101]" ;
                   rdfs:label "[-101]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000089
 cryo:CRYO_0000089 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "[10-1]" ;
                   rdfs:label "[10-1]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000090
 cryo:CRYO_0000090 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "[-10-1]" ;
                   rdfs:label "[-10-1]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000091
 cryo:CRYO_0000091 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "[011]" ;
                   rdfs:label "[011]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000092
 cryo:CRYO_0000092 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "[0-11]" ;
                   rdfs:label "[0-11]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000093
 cryo:CRYO_0000093 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "[01-1]" ;
                   rdfs:label "[01-1]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000094
 cryo:CRYO_0000094 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "[0-1-1]" ;
                   rdfs:label "[0-1-1]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000095
 cryo:CRYO_0000095 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "(111)" ;
                   rdfs:label "(111)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000096
 cryo:CRYO_0000096 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "(-111)" ;
                   rdfs:label "(-111)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000097
 cryo:CRYO_0000097 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "(1-11)" ;
                   rdfs:label "(1-11)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000098
 cryo:CRYO_0000098 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "(11-1)" ;
                   rdfs:label "(11-1)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000099
 cryo:CRYO_0000099 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "(-1-11)" ;
                   rdfs:label "(-1-11)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000100
 cryo:CRYO_0000100 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "(-11-1)" ;
                   rdfs:label "(-11-1)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000101
 cryo:CRYO_0000101 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "(1-1-1)" ;
                   rdfs:label "(1-1-1)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000102
 cryo:CRYO_0000102 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "(-1-1-1)" ;
                   rdfs:label "(-1-1-1)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000104
 cryo:CRYO_0000104 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "[111]" ;
                   rdfs:label "[111]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000105
 cryo:CRYO_0000105 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "[-111]" ;
                   rdfs:label "[-111]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000106
 cryo:CRYO_0000106 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "[1-11]" ;
                   rdfs:label "[1-11]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000107
 cryo:CRYO_0000107 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "[11-1]" ;
                   rdfs:label "[11-1]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000108
 cryo:CRYO_0000108 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "[-1-11]" ;
                   rdfs:label "[-1-11]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000109
 cryo:CRYO_0000109 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "[-11-1]" ;
                   rdfs:label "[-11-1]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000110
 cryo:CRYO_0000110 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "[1-1-1]" ;
                   rdfs:label "[1-1-1]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000111
 cryo:CRYO_0000111 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "[-1-1-1]" ;
                   rdfs:label "[-1-1-1]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000112
 cryo:CRYO_0000112 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "[100]" ;
                   rdfs:label "[100]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000113
 cryo:CRYO_0000113 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "[-100]" ;
                   rdfs:label "[-100]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000114
 cryo:CRYO_0000114 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "[010]" ;
                   rdfs:label "[010]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000115
 cryo:CRYO_0000115 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 -1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "[0-10]" ;
                   rdfs:label "[0-10]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000116
 cryo:CRYO_0000116 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "[001]" ;
                   rdfs:label "[001]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000117
 cryo:CRYO_0000117 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000020 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "[00-1]" ;
                   rdfs:label "[00-1]"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000125
 cryo:CRYO_0000125 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "(100)" ;
                   rdfs:label "(100)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000126
 cryo:CRYO_0000126 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 1 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "(010)" ;
                   rdfs:label "(010)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000127
 cryo:CRYO_0000127 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 1 ;
+                  cryo:CRYO_0000016 "(001)" ;
                   rdfs:label "(001)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000128
 cryo:CRYO_0000128 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 -1 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 0 ;
+                  cryo:CRYO_0000016 "(-100)" ;
                   rdfs:label "(-100)"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000130
 cryo:CRYO_0000130 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000022 ;
-                  cryo:CRYO_0000017 0 ;
-                  cryo:CRYO_0000018 0 ;
-                  cryo:CRYO_0000019 -1 ;
+                  cryo:CRYO_0000016 "(00-1)" ;
                   rdfs:label "(00-1)"@en .
 
 
@@ -5715,14 +5584,6 @@ cryo:CRYO_0000163 rdf:type owl:NamedIndividual ,
                   rdfs:label "-C 2yc space group" .
 
 
-###  https://w3id.org/pmd/cryo/CRYO_0000164
-cryo:CRYO_0000164 rdf:type owl:NamedIndividual ,
-                           cryo:CRYO_0000142 ;
-                  cryo:CRYO_0000145 16 ;
-                  cryo:CRYO_0000146 "P 2 2 2" ;
-                  cryo:CRYO_0000147 "P 2 2" .
-
-
 ###  https://w3id.org/pmd/cryo/CRYO_0000165
 cryo:CRYO_0000165 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000142 ;
@@ -5750,14 +5611,6 @@ cryo:CRYO_0000167 rdf:type owl:NamedIndividual ,
                   rdfs:label "P 2ac 2ab space group" .
 
 
-###  https://w3id.org/pmd/cryo/CRYO_0000168
-cryo:CRYO_0000168 rdf:type owl:NamedIndividual ,
-                           cryo:CRYO_0000142 ;
-                  cryo:CRYO_0000145 20 ;
-                  cryo:CRYO_0000146 "C 2 2 21" ;
-                  cryo:CRYO_0000147 "C 2c 2" .
-
-
 ###  https://w3id.org/pmd/cryo/CRYO_0000169
 cryo:CRYO_0000169 rdf:type owl:NamedIndividual ,
                            cryo:CRYO_0000142 ;
@@ -5765,14 +5618,6 @@ cryo:CRYO_0000169 rdf:type owl:NamedIndividual ,
                   cryo:CRYO_0000146 "C 2 2 2" ;
                   cryo:CRYO_0000147 "C 2 2" ;
                   rdfs:label "C 2 2 space group" .
-
-
-###  https://w3id.org/pmd/cryo/CRYO_0000170
-cryo:CRYO_0000170 rdf:type owl:NamedIndividual ,
-                           cryo:CRYO_0000142 ;
-                  cryo:CRYO_0000145 22 ;
-                  cryo:CRYO_0000146 "F 2 2 2" ;
-                  cryo:CRYO_0000147 "F 2 2" .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000171
@@ -7647,18 +7492,53 @@ cryo:CRYO_0000378 rdf:type owl:NamedIndividual ,
                   rdfs:label "-I 4bd 2c 3 space group" .
 
 
+###  https://w3id.org/pmd/cryo/CRYO_0000388
+cryo:CRYO_0000388 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 22 ;
+                  cryo:CRYO_0000146 "F 2 2 2" ;
+                  cryo:CRYO_0000147 "F 2 2" ;
+                  rdfs:label "F 2 2 space group" ,
+                             "is cubic"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000389
+cryo:CRYO_0000389 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000142 ;
+                  cryo:CRYO_0000145 16 ;
+                  cryo:CRYO_0000146 "P 2 2 2" ;
+                  cryo:CRYO_0000147 "P 2 2" ;
+                  rdfs:label "P 2 2 space group" ,
+                             "denoted by family"@en .
+
+
 ###  https://w3id.org/pmd/cryo/CRYO_0000391
 cryo:CRYO_0000391 rdf:type owl:NamedIndividual ;
                   rdfs:label "trigonal"@en ;
                   skos:definition "Triclinic crystal system is a crystal system with one 3-fold rotation axis"@en .
 
 
+###  https://w3id.org/pmd/cryo/CRYO:0000393
+<https://w3id.org/pmd/cryo/CRYO:0000393> rdf:type owl:NamedIndividual ,
+                                                  cryo:CRYO_0000142 ;
+                                         cryo:CRYO_0000145 20 ;
+                                         cryo:CRYO_0000146 "C 2 2 21" ;
+                                         cryo:CRYO_0000147 "C 2c 2" ;
+                                         rdfs:comment "'denoted by' o 'member of' o 'has Miller indices family under cubic symmetry'" ,
+                                                      "'denoted by' o 'under  symmetry' o 'is cubic' o  inverse ('under  symmetry') o 'has member' o 'member of'" ,
+                                                      "'denoted by' o 'under cubic symmetry' o 'member of' o 'under cubic symmetry'" ,
+                                                      "Considers just the lattice points, no atoms"@en ;
+                                         rdfs:label "C 2c 2 space group" ,
+                                                    "denoted by family under cubic symmetry"@en ,
+                                                    "lattice system"@en ;
+                                         skos:altLabel "lattice type"@en ;
+                                         skos:definition "lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks"@en .
+
+
 ###  https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000
 <https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000> rdf:type owl:NamedIndividual ,
                                                                                   cryo:CRYO_0000022 ;
-                                                                         cryo:CRYO_0000017 0 ;
-                                                                         cryo:CRYO_0000018 -1 ;
-                                                                         cryo:CRYO_0000019 0 ;
+                                                                         cryo:CRYO_0000016 "(0-10)" ;
                                                                          rdfs:label "(0-10)"@en .
 
 
@@ -7684,21 +7564,6 @@ cryo:CRYO_0000158 rdfs:label "-P 2y space group" ,
 cryo:CRYO_0000162 rdfs:label "-P 2ybc space group" ,
                              "has Miller indices family under cubic symmetry"@en ;
                   owl:deprecated "true"^^xsd:boolean .
-
-
-cryo:CRYO_0000164 rdfs:label "P 2 2 space group" ,
-                             "denoted by family"@en .
-
-
-cryo:CRYO_0000168 rdfs:comment "'denoted by' o 'member of' o 'has Miller indices family under cubic symmetry'" ,
-                               "'denoted by' o 'under  symmetry' o 'is cubic' o  inverse ('under  symmetry') o 'has member' o 'member of'" ,
-                               "'denoted by' o 'under cubic symmetry' o 'member of' o 'under cubic symmetry'" ;
-                  rdfs:label "C 2c 2 space group" ,
-                             "denoted by family under cubic symmetry"@en .
-
-
-cryo:CRYO_0000170 rdfs:label "F 2 2 space group" ,
-                             "is cubic"@en .
 
 
 #################################################################
