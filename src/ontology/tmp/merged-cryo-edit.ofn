@@ -1592,7 +1592,7 @@ SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000162> owl:topObjectProper
 ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000162> <https://w3id.org/pmd/cryo/CRYO_0000143>)
 ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000162> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000124> ObjectHasValue(<https://w3id.org/pmd/cryo/CRYO_0000158> <https://w3id.org/pmd/cryo/CRYO_0000035>)))
 
-# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000164> (P 2 2 space group)
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000164> (denoted by family)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000164> "denoted by family"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000164> "P 2 2 space group")
@@ -2938,7 +2938,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -4500,6 +4500,8 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3i
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000040> <https://w3id.org/pmd/cryo/CRYO_0000128>)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000040> <https://w3id.org/pmd/cryo/CRYO_0000130>)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/RO_0002351> <https://w3id.org/pmd/cryo/CRYO_0000040> <https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000016> <https://w3id.org/pmd/cryo/CRYO_0000040> "{001}")
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000016> <https://w3id.org/pmd/cryo/CRYO_0000040> "{100}")
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000040> "1"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000040> "0"^^xsd:decimal)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/cryo/CRYO_0000040> "0"^^xsd:decimal)
@@ -5172,7 +5174,7 @@ DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000163> "C 1 2/c 1")
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000163> "-C 2yc")
 
-# Individual: <https://w3id.org/pmd/cryo/CRYO_0000164> (P 2 2 space group)
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000164> (denoted by family)
 
 ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cryo/CRYO_0000164>)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000164> "16"^^xsd:integer)
