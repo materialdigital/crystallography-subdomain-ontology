@@ -731,9 +731,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000152 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000393 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000152">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000393">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
         <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cryo:CRYO_0000145>
         <cryo:CRYO_0000146>P 1 21 1</cryo:CRYO_0000146>
@@ -791,9 +791,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000157 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000396 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000157">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000396">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
         <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</cryo:CRYO_0000145>
         <cryo:CRYO_0000146>C 1 c 1</cryo:CRYO_0000146>
@@ -803,9 +803,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000158 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000397 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000158">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000397">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
         <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</cryo:CRYO_0000145>
         <cryo:CRYO_0000146>P 1 2/m 1</cryo:CRYO_0000146>
@@ -851,9 +851,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000162 -->
+    <!--https://w3id.org/pmd/cryo/CRYO_0000394 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000162">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000394">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
         <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</cryo:CRYO_0000145>
         <cryo:CRYO_0000146>P 1 21/c 1</cryo:CRYO_0000146>
@@ -3443,9 +3443,9 @@
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO:0000393 -->
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000395 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO:0000393">
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000395">
         <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
         <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</cryo:CRYO_0000145>
         <cryo:CRYO_0000146>C 2 2 21</cryo:CRYO_0000146>

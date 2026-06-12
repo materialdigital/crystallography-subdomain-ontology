@@ -2274,28 +2274,6 @@ lattice system based on the point group symmetries of their empty translational 
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000388">
-        <rdfs:label xml:lang="en">is cubic</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000389">
-        <rdfs:label xml:lang="en">denoted by family</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO:0000393">
-        <rdfs:comment>&apos;denoted by&apos; o &apos;member of&apos; o &apos;has Miller indices family under cubic symmetry&apos;</rdfs:comment>
-        <rdfs:comment>&apos;denoted by&apos; o &apos;under  symmetry&apos; o &apos;is cubic&apos; o  inverse (&apos;under  symmetry&apos;) o &apos;has member&apos; o &apos;member of&apos;</rdfs:comment>
-        <rdfs:comment>&apos;denoted by&apos; o &apos;under cubic symmetry&apos; o &apos;member of&apos; o &apos;under cubic symmetry&apos;</rdfs:comment>
-        <rdfs:label xml:lang="en">denoted by family under cubic symmetry</rdfs:label>
-    </rdf:Description>
-    
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
