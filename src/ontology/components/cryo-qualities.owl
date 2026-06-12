@@ -334,11 +334,24 @@
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000390">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO:0000393">
         <rdfs:comment xml:lang="en">Considers just the lattice points, no atoms</rdfs:comment>
         <rdfs:label xml:lang="en">lattice system</rdfs:label>
         <skos:altLabel xml:lang="en">lattice type</skos:altLabel>
         <skos:definition xml:lang="en">lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks</skos:definition>
-    </owl:Class>
+    </rdf:Description>
 </rdf:RDF>
 
 
