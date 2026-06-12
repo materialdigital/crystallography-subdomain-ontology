@@ -6663,6 +6663,9 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
                 <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000392"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lattice system</rdfs:label>
+        <skos:altLabel xml:lang="en">lattice type</skos:altLabel>
+        <skos:definition xml:lang="en">lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks</skos:definition>
     </owl:Class>
     
 
@@ -10399,23 +10402,6 @@ lattice system based on the point group symmetries of their empty translational 
         <cryo:CRYO_0000016>(0-10)</cryo:CRYO_0000016>
         <rdfs:label xml:lang="en">(0-10)</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO:0000393">
-        <rdfs:comment xml:lang="en">Considers just the lattice points, no atoms</rdfs:comment>
-        <rdfs:label xml:lang="en">lattice system</rdfs:label>
-        <skos:altLabel xml:lang="en">lattice type</skos:altLabel>
-        <skos:definition xml:lang="en">lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks</skos:definition>
-    </rdf:Description>
     
 
 

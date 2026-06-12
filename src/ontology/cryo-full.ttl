@@ -6211,7 +6211,10 @@ cryo:CRYO_0000390 rdf:type owl:Class ;
                                     owl:onProperty co:PMD_0000077 ;
                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                     owl:onClass cryo:CRYO_0000392
-                                  ] .
+                                  ] ;
+                  rdfs:label "lattice system"@en ;
+                  skos:altLabel "lattice type"@en ;
+                  skos:definition "lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000392
@@ -9016,12 +9019,6 @@ obo:UO_0000076 obo:IAO_0000115 "A concentration unit which denotes the number of
    owl:annotatedTarget "A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution." ;
    oboInOwl:hasDbXref "Wikipedia:Wikipedia"
  ] .
-
-
-<https://w3id.org/pmd/cryo/CRYO:0000393> rdfs:comment "Considers just the lattice points, no atoms"@en ;
-                                         rdfs:label "lattice system"@en ;
-                                         skos:altLabel "lattice type"@en ;
-                                         skos:definition "lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks"@en .
 
 
 #################################################################
