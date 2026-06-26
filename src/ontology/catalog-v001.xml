@@ -2,6 +2,8 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
   <group id="odk-managed-catalog" prefer="public">
     <uri name="https://w3id.org/pmd/cryo/imports/pmdco_import.owl" uri="imports/pmdco_import.owl" />
+    <uri name="https://w3id.org/pmd/cryo/imports/qudt_import.owl" uri="imports/qudt_import.owl" />
+    <uri name="https://w3id.org/pmd/cryo/imports/uo_import.owl" uri="imports/uo_import.owl" />
     <uri name="https://w3id.org/pmd/cryo/components/imports-edit.owl" uri="components/imports-edit.owl" />
     <uri name="https://w3id.org/pmd/cryo/components/cryo-axioms-shared.owl" uri="components/cryo-axioms-shared.owl" />
     <uri name="https://w3id.org/pmd/cryo/components/cryo-entities.owl" uri="components/cryo-entities.owl" />

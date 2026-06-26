@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                d79f296da91df5c2b83f77ea7adea04b84f880b61d81f76cfed0fec3636dba4b
+CONFIG_HASH=                4846e79a4cc791c03844659b266cb5d4a6f6af4c694c47a6eca5d68ba1015553
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  pmdco
+IMPORTS =  pmdco qudt uo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -415,6 +415,18 @@ $(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl
 	@echo "       This rule needs to be overwritten in cryo.Makefile!"
 	@false
 
+## Module for ontology: qudt (custom)
+$(IMPORTDIR)/qudt_import.owl: $(MIRRORDIR)/qudt.owl
+	@echo "ERROR: You have configured qudt as a custom module;"
+	@echo "       This rule needs to be overwritten in cryo.Makefile!"
+	@false
+
+## Module for ontology: uo (custom)
+$(IMPORTDIR)/uo_import.owl: $(MIRRORDIR)/uo.owl
+	@echo "ERROR: You have configured uo as a custom module;"
+	@echo "       This rule needs to be overwritten in cryo.Makefile!"
+	@false
+
 endif # IMP=true
 
 .PHONY: refresh-imports
@@ -501,6 +513,20 @@ ifeq ($(MIR),true)
 .PRECIOUS: $(MIRRORDIR)/pmdco.owl
 mirror-pmdco: | $(TMPDIR)
 	$(ROBOT) convert -I https://materialdigital.github.io/core-ontology/ontology.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: qudt
+.PHONY: mirror-qudt
+.PRECIOUS: $(MIRRORDIR)/qudt.owl
+mirror-qudt: | $(TMPDIR)
+	$(ROBOT) convert -I https://qudt.org/qudt-all -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: uo
+.PHONY: mirror-uo
+.PRECIOUS: $(MIRRORDIR)/uo.owl
+mirror-uo: | $(TMPDIR)
+	$(ROBOT) convert -I https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/refs/heads/master/uo-full.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
