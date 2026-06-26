@@ -10,5 +10,7 @@
      xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/components/imports-edit.owl">
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/pmdco_import.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/uo_import.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/qudt_import.owl"/>
     </owl:Ontology>
 </rdf:RDF>
