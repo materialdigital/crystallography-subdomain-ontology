@@ -21,6 +21,12 @@ import_group:
       mirror_from: https://materialdigital.github.io/core-ontology/ontology.owl
       # mirror_from: https://raw.githubusercontent.com/materialdigital/core-ontology/refs/heads/main/src/ontology/pmdco.ttl
       module_type: custom
+    - id: qudt
+      mirror_from: https://qudt.org/qudt-all
+      module_type: custom
+    - id: uo
+      mirror_from: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/refs/heads/master/uo-full.owl
+      module_type: custom
 
 # Components
 components:

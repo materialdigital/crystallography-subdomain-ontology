@@ -1,0 +1,3 @@
+http://purl.obolibrary.org/obo/UO_0000019 # angstrom
+http://purl.obolibrary.org/obo/UO_0000324 # square angstrom
+http://purl.obolibrary.org/obo/UO_0000027 # degree Celsius

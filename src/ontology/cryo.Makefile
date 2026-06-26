@@ -43,6 +43,20 @@ $(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl $(IMPORTDIR)/pmdco_terms.t
 	  $(ANNOTATE_CONVERT_FILE); \
 	fi
 
+$(IMPORTDIR)/uo_import.owl: $(MIRRORDIR)/uo.owl $(IMPORTDIR)/uo_terms.txt
+	$(ROBOT) filter --input $(MIRRORDIR)/uo.owl \
+		--term-file $(IMPORTDIR)/uo_terms.txt \
+		--allow-punning true \
+		--select "annotations self parents" \
+		$(ANNOTATE_CONVERT_FILE)
+
+$(IMPORTDIR)/qudt_import.owl: $(MIRRORDIR)/qudt.owl $(IMPORTDIR)/qudt_terms.txt
+	$(ROBOT) filter --input $(MIRRORDIR)/qudt.owl \
+		--term-file $(IMPORTDIR)/qudt_terms.txt \
+		--allow-punning true \
+		--select "annotations self" \
+		$(ANNOTATE_CONVERT_FILE)
+
 
 $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
