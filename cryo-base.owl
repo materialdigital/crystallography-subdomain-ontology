@@ -4055,12 +4055,42 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0020198 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020198">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:label xml:lang="en">interstitial site</rdfs:label>
+        <skos:definition xml:lang="en">An interstitial site is a site that is located between regular lattice points in a crystal structure.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020199 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020199">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
+        <rdfs:label xml:lang="en">slip plane</rdfs:label>
+        <skos:definition xml:lang="en">A slip plane is a fiat surface that corresponds to a crystallographic plane of a 3D crystal along which dislocations can glide</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/pmd/co/PMD_0020201 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020201">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
         <rdfs:label xml:lang="en">section</rdfs:label>
         <skos:definition xml:lang="en">Section is a planar fiat surface cutting across the object</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020208 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000142"/>
+        <rdfs:label xml:lang="en">slip direction</rdfs:label>
+        <skos:definition xml:lang="en">A slip direction is a fiat line that corresponds to the crystallographic direction along which dislocations glide os a slip plane.</skos:definition>
     </owl:Class>
     
 
@@ -4127,6 +4157,23 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">order scale</rdfs:label>
         <skos:definition xml:lang="en">characteristic length over which structural correlations persist in a material</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020224 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020197"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">TODO: replace topObjectProperty with occupies spatial region</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">vacancy (crystal)</rdfs:label>
+        <skos:definition xml:lang="en">site at lattice point at which the crystal forming entity is missing</skos:definition>
     </owl:Class>
     
 
@@ -4533,6 +4580,33 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">lattice angle</rdfs:label>
         <skos:definition xml:lang="en">Lattice angle is a quality of a unit cell which describes the angle between three axes in a unit cell.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000017 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000017">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/pmd/co/PMD_0020197"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">primitive unit cell</rdfs:label>
+        <skos:definition xml:lang="en">primitive unit cell is a unit cell that contains only single lattice point and has the smallest possible unit cell volume.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000018 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000018">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+        <rdfs:label xml:lang="en">conventional unit cell</rdfs:label>
+        <skos:definition xml:lang="en">conventional unit cell is a unit cell with the full symmetry of the crystal lattice, i.e., it may contain more that one lattice point.</skos:definition>
     </owl:Class>
     
 

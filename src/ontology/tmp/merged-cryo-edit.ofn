@@ -286,10 +286,14 @@ Declaration(Class(<https://w3id.org/pmd/co/PMD_0020143>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020148>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020161>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020197>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020198>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020199>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020201>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020208>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020210>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020216>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020220>))
+Declaration(Class(<https://w3id.org/pmd/co/PMD_0020224>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0020243>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0025003>))
@@ -318,6 +322,8 @@ Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000012>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000013>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000014>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000015>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000017>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000018>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000020>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000021>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000022>))
@@ -2929,7 +2935,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -3704,11 +3710,29 @@ SubClassOf(<https://w3id.org/pmd/co/PMD_0020197> <http://purl.obolibrary.org/obo
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020197> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/cryo/CRYO_0000001>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020197> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001015> <http://purl.obolibrary.org/obo/CHEBI_33250>))
 
+# Class: <https://w3id.org/pmd/co/PMD_0020198> (interstitial site)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020198> "interstitial site"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020198> "An interstitial site is a site that is located between regular lattice points in a crystal structure."@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020198> <http://purl.obolibrary.org/obo/BFO_0000029>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0020199> (slip plane)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020199> "slip plane"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020199> "A slip plane is a fiat surface that corresponds to a crystallographic plane of a 3D crystal along which dislocations can glide"@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020199> <http://purl.obolibrary.org/obo/BFO_0000146>)
+
 # Class: <https://w3id.org/pmd/co/PMD_0020201> (section)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020201> "section"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020201> "Section is a planar fiat surface cutting across the object"@en)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020201> <http://purl.obolibrary.org/obo/BFO_0000146>)
+
+# Class: <https://w3id.org/pmd/co/PMD_0020208> (slip direction)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020208> "slip direction"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020208> "A slip direction is a fiat line that corresponds to the crystallographic direction along which dislocations glide os a slip plane."@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020208> <http://purl.obolibrary.org/obo/BFO_0000142>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0020210> (elemental crystal)
 
@@ -3732,6 +3756,14 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3
 EquivalentClasses(<https://w3id.org/pmd/co/PMD_0020220> ObjectExactCardinality(1 <https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/co/PMD_0020216>))
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020220> <https://w3id.org/pmd/co/PMD_0020131>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0020220> ObjectSomeValuesFrom(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/co/PMD_0020216>))
+
+# Class: <https://w3id.org/pmd/co/PMD_0020224> (vacancy (crystal))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/co/PMD_0020224> "TODO: replace topObjectProperty with occupies spatial region"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020224> "vacancy (crystal)"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020224> "site at lattice point at which the crystal forming entity is missing"@en)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020224> <http://purl.obolibrary.org/obo/BFO_0000029>)
+SubClassOf(<https://w3id.org/pmd/co/PMD_0020224> ObjectSomeValuesFrom(owl:topObjectProperty <https://w3id.org/pmd/co/PMD_0020197>))
 
 # Class: <https://w3id.org/pmd/co/PMD_0020243> (grain size)
 
@@ -3950,6 +3982,19 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000015> "lattice
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000015> "Lattice angle is a quality of a unit cell which describes the angle between three axes in a unit cell."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000015> <http://purl.obolibrary.org/obo/BFO_0000019>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000000>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000017> (primitive unit cell)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000017> "primitive unit cell"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000017> "primitive unit cell is a unit cell that contains only single lattice point and has the smallest possible unit cell volume."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000000>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000017> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/pmd/co/PMD_0020197>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000018> (conventional unit cell)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000018> "conventional unit cell"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000018> "conventional unit cell is a unit cell with the full symmetry of the crystal lattice, i.e., it may contain more that one lattice point."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/CRYO_0000000>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000020> (direction Miller indices)
 

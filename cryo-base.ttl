@@ -2903,11 +2903,32 @@ co:PMD_0020197 rdf:type owl:Class ;
                skos:definition "A lattice point is a fiat point that represents a position in a crystal lattice at which structural entities are regularly arranged."@en .
 
 
+###  https://w3id.org/pmd/co/PMD_0020198
+co:PMD_0020198 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000029 ;
+               rdfs:label "interstitial site"@en ;
+               skos:definition "An interstitial site is a site that is located between regular lattice points in a crystal structure."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020199
+co:PMD_0020199 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000146 ;
+               rdfs:label "slip plane"@en ;
+               skos:definition "A slip plane is a fiat surface that corresponds to a crystallographic plane of a 3D crystal along which dislocations can glide"@en .
+
+
 ###  https://w3id.org/pmd/co/PMD_0020201
 co:PMD_0020201 rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000146 ;
                rdfs:label "section"@en ;
                skos:definition "Section is a planar fiat surface cutting across the object"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020208
+co:PMD_0020208 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000142 ;
+               rdfs:label "slip direction"@en ;
+               skos:definition "A slip direction is a fiat line that corresponds to the crystallographic direction along which dislocations glide os a slip plane."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020210
@@ -2954,6 +2975,18 @@ co:PMD_0020220 rdf:type owl:Class ;
                                ] ;
                rdfs:label "order scale"@en ;
                skos:definition "characteristic length over which structural correlations persist in a material"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0020224
+co:PMD_0020224 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000029 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty owl:topObjectProperty ;
+                                 owl:someValuesFrom co:PMD_0020197
+                               ] ;
+               obo:IAO_0000116 "TODO: replace topObjectProperty with occupies spatial region"@en ;
+               rdfs:label "vacancy (crystal)"@en ;
+               skos:definition "site at lattice point at which the crystal forming entity is missing"@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020243
@@ -3247,6 +3280,25 @@ cryo:CRYO_0000015 rdf:type owl:Class ;
                                   ] ;
                   rdfs:label "lattice angle"@en ;
                   skos:definition "Lattice angle is a quality of a unit cell which describes the angle between three axes in a unit cell."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000017
+cryo:CRYO_0000017 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000000 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000051 ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass co:PMD_0020197
+                                  ] ;
+                  rdfs:label "primitive unit cell"@en ;
+                  skos:definition "primitive unit cell is a unit cell that contains only single lattice point and has the smallest possible unit cell volume."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000018
+cryo:CRYO_0000018 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000000 ;
+                  rdfs:label "conventional unit cell"@en ;
+                  skos:definition "conventional unit cell is a unit cell with the full symmetry of the crystal lattice, i.e., it may contain more that one lattice point."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000020
