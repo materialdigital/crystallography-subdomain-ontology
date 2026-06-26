@@ -145,7 +145,13 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001930>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001931>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001933>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000324>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000076>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000005>))
@@ -460,7 +466,10 @@ Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000145>))
 Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000146>))
 Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000147>))
 Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000148>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000019>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000027>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000076>))
+Declaration(NamedIndividual(<http://qudt.org/vocab/unit/ANGSTROM3>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020027>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020097>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020100>))
@@ -794,10 +803,12 @@ Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
+Declaration(AnnotationProperty(<http://qudt.org/schema/qudt/symbol>))
 Declaration(AnnotationProperty(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled>))
 Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#repository>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#example>))
@@ -805,6 +816,7 @@ Declaration(AnnotationProperty(<https://w3id.org/pmd/co/PMD_0000060>))
 Declaration(AnnotationProperty(<https://w3id.org/pmd/co/PMD_0000064>))
 Declaration(AnnotationProperty(<https://w3id.org/pmd/co/PMD_0001032>))
 Declaration(AnnotationProperty(<https://w3id.org/pmd/co/PMD_0050117>))
+Declaration(Datatype(<http://qudt.org/schema/qudt/LatexString>))
 Declaration(Datatype(rdfs:Literal))
 ############################
 #   Annotation Properties
@@ -2528,6 +2540,25 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000000> "unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000000> <http://purl.obolibrary.org/obo/IAO_0000003>)
 
+# Class: <http://purl.obolibrary.org/obo/UO_0000019> (angstrom)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000019> "A length unit which is equal to 10 [-10] m.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000019> "Å")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000019> "angstrom")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000019> <http://purl.obolibrary.org/obo/UO_1000019>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_0000027> (degree Celsius)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000027> "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000027> "C")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000027> "degree Celsius")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000027> <http://purl.obolibrary.org/obo/UO_1000027>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_0000047> (area unit)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000047> "A unit which is a standard measure of the amount of a 2-dimensional flat surface.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000047> "area unit")
+
 # Class: <http://purl.obolibrary.org/obo/UO_0000076> (mole fraction)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Wikipedia") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000076> "A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution.")
@@ -2535,6 +2566,21 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UO_0000076> "chi")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000076> "mole fraction")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000076> <http://purl.obolibrary.org/obo/UO_1000076>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_0000324> (square angstrom)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000324> "An area unit which is equal to an area enclosed by a square with sides each 1 angstrom long.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/UO_0000324> "A^[2]")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000324> "square angstrom")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000324> <http://purl.obolibrary.org/obo/UO_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_1000019> (angstrom based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000019> "angstrom based unit")
+
+# Class: <http://purl.obolibrary.org/obo/UO_1000027> (degree Celsius based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000027> "degree Celsius based unit")
 
 # Class: <http://purl.obolibrary.org/obo/UO_1000076> (mole fraction based unit)
 
@@ -4286,6 +4332,19 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000392> <http://purl.obolibrary.org/
 ############################
 #   Named Individuals
 ############################
+
+# Individual: <http://qudt.org/vocab/unit/ANGSTROM3> (Cubic Angstrom)
+
+AnnotationAssertion(dcterms:description <http://qudt.org/vocab/unit/ANGSTROM3> "A unit that is a non-SI unit, specifically a CGS unit,  of polarizability known informally as
+    polarizability volume.  The SI defined units for polarizability are C*m^2/V and can be converted to $Angstr\\ddot{o}m$^3 by
+    multiplying the SI value by 4 times pi times the vacuum permittivity and then converting the resulting m^3 to
+    $Angstr\\ddot{o}m$^3 through the SI base 10 conversion (multiplying by 10^-30).
+  "^^<http://qudt.org/schema/qudt/LatexString>)
+AnnotationAssertion(<http://qudt.org/schema/qudt/symbol> <http://qudt.org/vocab/unit/ANGSTROM3> "Å³")
+AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/vocab/unit/ANGSTROM3> <http://qudt.org/vocab/unit>)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/ANGSTROM3> "Cubic Angstrom")
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/ANGSTROM3> "Cubic Angstrom"@en)
+AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/ANGSTROM3> "Cubic Angstrom"@en-us)
 
 # Individual: <https://w3id.org/pmd/co/PMD_0020027> (bainite)
 
