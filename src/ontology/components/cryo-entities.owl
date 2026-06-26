@@ -10,6 +10,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:cryo="https://w3id.org/pmd/cryo/"
      xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -463,6 +464,33 @@
 2. Review the definitions of sublcasses</rdfs:comment>
         <rdfs:label xml:lang="en">Miller indices</rdfs:label>
         <skos:definition xml:lang="en">Miller indices is an information content entity which denotes crystallographic direction, crystallographic plane, or lattice point, i.e., defines their position in respect to the coordinate system of a crystal lattice, and has exactly 3 interger literals, namely h, k. and l.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000017 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000017">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/pmd/co/PMD_0020197"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">primitive unit cell</rdfs:label>
+        <skos:definition xml:lang="en">primitive unit cell is a unit cell that contains only single lattice point and has the smallest possible unit cell volume.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000018 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000018">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+        <rdfs:label xml:lang="en">conventional unit cell</rdfs:label>
+        <skos:definition xml:lang="en">conventional unit cell is a unit cell with the full symmetry of the crystal lattice, i.e., it may contain more that one lattice point.</skos:definition>
     </owl:Class>
     
 
@@ -2272,7 +2300,6 @@ lattice system based on the point group symmetries of their empty translational 
         <skos:definition xml:lang="en">Triclinic crystal system is a crystal system with one 3-fold rotation axis</skos:definition>
     </owl:NamedIndividual>
     
-
 
 
     <!-- 

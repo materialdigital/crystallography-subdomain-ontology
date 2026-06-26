@@ -50,6 +50,10 @@ http://purl.obolibrary.org/obo/BFO_0000142 # fiat line
 http://purl.obolibrary.org/obo/BFO_0000147 # fiat point
 http://purl.obolibrary.org/obo/BFO_0000146 # fiat surface
 https://w3id.org/pmd/co/PMD_0020201 # section
+https://w3id.org/pmd/co/PMD_0020198 # interstitial atom
+https://w3id.org/pmd/co/PMD_0020224 # vacancy
+https://w3id.org/pmd/co/PMD_0020199 # slip plane
+https://w3id.org/pmd/co/PMD_0020208 # slip direction
 
 
 # OPs
