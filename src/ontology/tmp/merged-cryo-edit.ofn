@@ -2558,6 +2558,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_0000027> <http://purl.obolibrary.o
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000047> "A unit which is a standard measure of the amount of a 2-dimensional flat surface.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000047> "area unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000047> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000076> (mole fraction)
 
@@ -2577,10 +2578,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_0000324> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/UO_1000019> (angstrom based unit)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000019> "angstrom based unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000019> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_1000027> (degree Celsius based unit)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000027> "degree Celsius based unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000027> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_1000076> (mole fraction based unit)
 
@@ -2926,7 +2929,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -4345,6 +4348,7 @@ AnnotationAssertion(rdfs:isDefinedBy <http://qudt.org/vocab/unit/ANGSTROM3> <htt
 AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/ANGSTROM3> "Cubic Angstrom")
 AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/ANGSTROM3> "Cubic Angstrom"@en)
 AnnotationAssertion(rdfs:label <http://qudt.org/vocab/unit/ANGSTROM3> "Cubic Angstrom"@en-us)
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000003> <http://qudt.org/vocab/unit/ANGSTROM3>)
 
 # Individual: <https://w3id.org/pmd/co/PMD_0020027> (bainite)
 

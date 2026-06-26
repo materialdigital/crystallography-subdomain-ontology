@@ -2347,6 +2347,7 @@ obo:UO_0000027 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/UO_0000047
 obo:UO_0000047 rdf:type owl:Class ;
+               rdfs:subClassOf obo:UO_0000000 ;
                obo:IAO_0000115 "A unit which is a standard measure of the amount of a 2-dimensional flat surface." ;
                rdfs:label "area unit" .
 
@@ -2380,11 +2381,13 @@ obo:UO_0000324 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/UO_1000019
 obo:UO_1000019 rdf:type owl:Class ;
+               rdfs:subClassOf obo:UO_0000000 ;
                rdfs:label "angstrom based unit" .
 
 
 ###  http://purl.obolibrary.org/obo/UO_1000027
 obo:UO_1000027 rdf:type owl:Class ;
+               rdfs:subClassOf obo:UO_0000000 ;
                rdfs:label "degree Celsius based unit" .
 
 
@@ -6318,7 +6321,8 @@ obo:UO_0000076 rdf:type owl:NamedIndividual .
 
 
 ###  http://qudt.org/vocab/unit/ANGSTROM3
-<http://qudt.org/vocab/unit/ANGSTROM3> rdf:type owl:NamedIndividual ;
+<http://qudt.org/vocab/unit/ANGSTROM3> rdf:type owl:NamedIndividual ,
+                                                obo:IAO_0000003 ;
                                        dcterms:description """A unit that is a non-SI unit, specifically a CGS unit,  of polarizability known informally as
     polarizability volume.  The SI defined units for polarizability are C*m^2/V and can be converted to $Angstr\\ddot{o}m$^3 by
     multiplying the SI value by 4 times pi times the vacuum permittivity and then converting the resulting m^3 to
