@@ -19,13 +19,13 @@
 @base <https://w3id.org/pmd/cryo/cryo-full.ttl> .
 
 <https://w3id.org/pmd/cryo/cryo-full.ttl> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-06-26/cryo-full.ttl> ;
+                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-06-27/cryo-full.ttl> ;
                                            dcterms:creator <https://orcid.org/0000-0003-0744-8855> ,
                                                            <https://orcid.org/0009-0003-1503-4422> ;
                                            dcterms:description "CryO is an subdomain-level ontology based on the PMdco 3.x. It's primary goal to formally describe symmetries of crystal lattices and provide a semantic foundation for the annotation of .cif files." ;
                                            dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                            dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x" ;
-                                           owl:versionInfo "2026-06-26" .
+                                           owl:versionInfo "2026-06-27" .
 
 #################################################################
 #    Annotation properties

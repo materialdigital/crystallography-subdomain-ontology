@@ -1,15 +1,15 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	7c7894bd-805a-462b-a257-ba7d22104577genid651
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	96170168-1932-4078-962d-f88a15804380genid651
 ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	7c7894bd-805a-462b-a257-ba7d22104577genid647
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	7c7894bd-805a-462b-a257-ba7d22104577genid801
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	7c7894bd-805a-462b-a257-ba7d22104577genid818
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	96170168-1932-4078-962d-f88a15804380genid647
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	96170168-1932-4078-962d-f88a15804380genid801
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	96170168-1932-4078-962d-f88a15804380genid818
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	information content entity
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	tetragonal equivalency assertion
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	cubic equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	7c7894bd-805a-462b-a257-ba7d22104577genid993
+ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	96170168-1932-4078-962d-f88a15804380genid993
 ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	7c7894bd-805a-462b-a257-ba7d22104577genid989
+ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	96170168-1932-4078-962d-f88a15804380genid989
 ERROR	deprecated_property_reference	symmetry equivalency assertion	under symmetry	blank node
 ERROR	deprecated_property_reference	Miller indices family of	owl:inverseOf	has Miller indices family
 WARN	missing_definition	unit cell	IAO:0000115	
