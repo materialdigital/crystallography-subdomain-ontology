@@ -56,7 +56,7 @@ https://w3id.org/pmd/co/PMD_0020199 # slip plane
 https://w3id.org/pmd/co/PMD_0020208 # slip direction
 
 
-# OPs
+# OPs 
 https://w3id.org/pmd/co/PMD_0000009  # has process attribute
 https://w3id.org/pmd/co/PMD_0025006  # process attribute of
 https://w3id.org/pmd/co/PMD_0025998  # has relational quality
