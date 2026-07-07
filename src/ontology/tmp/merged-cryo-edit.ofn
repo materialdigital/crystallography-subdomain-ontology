@@ -149,10 +149,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000185>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000324>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000185>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000001>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000005>))
 Declaration(Class(<https://w3id.org/pmd/co/PMD_0000008>))
@@ -475,6 +477,7 @@ Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000148>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000019>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000027>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000076>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000185>))
 Declaration(NamedIndividual(<http://qudt.org/vocab/unit/ANGSTROM3>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020027>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/co/PMD_0020097>))
@@ -2574,6 +2577,12 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000076> "mole fraction")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000076> <http://purl.obolibrary.org/obo/UO_1000076>)
 
+# Class: <http://purl.obolibrary.org/obo/UO_0000185> (degree)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Wikipedia") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000185> "A plane angle unit which is equal to 1/360 of a full rotation or 1.7453310^[-2] rad.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000185> "degree")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000185> <http://purl.obolibrary.org/obo/UO_1000185>)
+
 # Class: <http://purl.obolibrary.org/obo/UO_0000324> (square angstrom)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000324> "An area unit which is equal to an area enclosed by a square with sides each 1 angstrom long.")
@@ -2595,6 +2604,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_1000027> <http://purl.obolibrary.o
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000076> "mole fraction based unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_1000076> <http://purl.obolibrary.org/obo/UO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/UO_1000185> (degree based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000185> "degree based unit")
 
 # Class: <https://w3id.org/pmd/co/PMD_0000001> (portion of matter)
 
@@ -2935,7 +2948,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)

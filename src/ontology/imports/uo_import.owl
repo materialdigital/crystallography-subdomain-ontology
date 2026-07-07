@@ -7,17 +7,20 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/cryo/imports/uo_import.owl>
-<https://w3id.org/pmd/cryo/releases/2026-06-27/imports/uo_import.owl>
-Annotation(owl:versionInfo "2026-06-27")
+<https://w3id.org/pmd/cryo/releases/2026-07-07/imports/uo_import.owl>
+Annotation(owl:versionInfo "2026-07-07")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000185>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000324>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UO_1000185>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000019>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000027>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000185>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
@@ -47,6 +50,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_0000027> <http://purl.obolibrary.o
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000047> "A unit which is a standard measure of the amount of a 2-dimensional flat surface.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000047> "area unit")
 
+# Class: <http://purl.obolibrary.org/obo/UO_0000185> (degree)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Wikipedia") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000185> "A plane angle unit which is equal to 1/360 of a full rotation or 1.7453310^[-2] rad.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000185> "degree")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000185> <http://purl.obolibrary.org/obo/UO_1000185>)
+
 # Class: <http://purl.obolibrary.org/obo/UO_0000324> (square angstrom)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000324> "An area unit which is equal to an area enclosed by a square with sides each 1 angstrom long.")
@@ -61,6 +70,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000019> "angs
 # Class: <http://purl.obolibrary.org/obo/UO_1000027> (degree Celsius based unit)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000027> "degree Celsius based unit")
+
+# Class: <http://purl.obolibrary.org/obo/UO_1000185> (degree based unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000185> "degree based unit")
 
 
 
