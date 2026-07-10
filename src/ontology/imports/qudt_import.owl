@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://w3id.org/pmd/cryo/imports/qudt_import.owl>
-<https://w3id.org/pmd/cryo/releases/2026-07-07/imports/qudt_import.owl>
-Annotation(owl:versionInfo "2026-07-07")
+<https://w3id.org/pmd/cryo/releases/2026-07-10/imports/qudt_import.owl>
+Annotation(owl:versionInfo "2026-07-10")
 
 Declaration(NamedIndividual(<http://qudt.org/vocab/unit/ANGSTROM3>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))

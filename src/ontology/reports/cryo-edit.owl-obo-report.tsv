@@ -1,15 +1,15 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	64556e87-29b8-46c8-9ea9-f50fe098f43fgenid651
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	122850ab-252e-436f-88d0-a94e45735a62genid653
 ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	64556e87-29b8-46c8-9ea9-f50fe098f43fgenid647
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	64556e87-29b8-46c8-9ea9-f50fe098f43fgenid801
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	64556e87-29b8-46c8-9ea9-f50fe098f43fgenid818
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	122850ab-252e-436f-88d0-a94e45735a62genid649
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	122850ab-252e-436f-88d0-a94e45735a62genid803
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	122850ab-252e-436f-88d0-a94e45735a62genid820
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	information content entity
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	tetragonal equivalency assertion
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	cubic equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	64556e87-29b8-46c8-9ea9-f50fe098f43fgenid993
+ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	122850ab-252e-436f-88d0-a94e45735a62genid995
 ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	64556e87-29b8-46c8-9ea9-f50fe098f43fgenid989
+ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	122850ab-252e-436f-88d0-a94e45735a62genid991
 ERROR	deprecated_property_reference	symmetry equivalency assertion	under symmetry	blank node
 ERROR	deprecated_property_reference	Miller indices family of	owl:inverseOf	has Miller indices family
 WARN	missing_definition	unit cell	IAO:0000115	
@@ -31,11 +31,12 @@ WARN	missing_definition	lattice angle	IAO:0000115
 WARN	missing_definition	has Miller indices	IAO:0000115	
 WARN	missing_definition	primitive unit cell	IAO:0000115	
 WARN	missing_definition	conventional unit cell	IAO:0000115	
+WARN	missing_definition	has Miller index	IAO:0000115	
 WARN	missing_definition	direction Miller indices	IAO:0000115	
 WARN	missing_definition	family of directions Miller indices	IAO:0000115	
 WARN	missing_definition	plane Miller indices	IAO:0000115	
 WARN	missing_definition	family of planes Miller indices	IAO:0000115	
-WARN	missing_definition	point Miller indices	IAO:0000115	
+WARN	missing_definition	point coordinate datum	IAO:0000115	
 WARN	missing_definition	atomic plane	IAO:0000115	
 WARN	missing_definition	crystal system	IAO:0000115	
 WARN	missing_definition	lattice centering	IAO:0000115	
@@ -102,6 +103,13 @@ WARN	missing_definition	unit cell volume	IAO:0000115
 WARN	missing_definition	point group	IAO:0000115	
 WARN	missing_definition	lattice system	IAO:0000115	
 WARN	missing_definition	lattice system value	IAO:0000115	
+WARN	missing_definition	has h	IAO:0000115	
+WARN	missing_definition	has l	IAO:0000115	
+WARN	missing_definition	has k	IAO:0000115	
+WARN	missing_definition	has coordinate	IAO:0000115	
+WARN	missing_definition	has x	IAO:0000115	
+WARN	missing_definition	has y	IAO:0000115	
+WARN	missing_definition	has z	IAO:0000115	
 WARN	missing_obsolete_label	tetragonal equivalency assertion	rdfs:label	tetragonal equivalency assertion@en
 WARN	missing_obsolete_label	has Miller indices family under tetragonal symmetry	rdfs:label	has Miller indices family under tetragonal symmetry@en
 WARN	missing_obsolete_label	symmetry equivalency assertion	rdfs:label	symmetry equivalency assertion@en

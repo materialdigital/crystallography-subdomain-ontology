@@ -19,16 +19,16 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/2026-07-07"/>
-        <dcterms:bibliographicCitation>cryo: Crystallography Subdomain Ontology. Version 2026-07-07, https://w3id.org/pmd/cryo/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-07-07</dcterms:created>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/2026-07-10"/>
+        <dcterms:bibliographicCitation>cryo: Crystallography Subdomain Ontology. Version 2026-07-10, https://w3id.org/pmd/cryo/</dcterms:bibliographicCitation>
+        <dcterms:created>2026-07-10</dcterms:created>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0003-0744-8855"/>
         <dcterms:creator rdf:resource="https://orcid.org/0009-0003-1503-4422"/>
         <dcterms:description>CryO is an subdomain-level ontology based on the PMdco 3.x. It&apos;s primary goal to formally describe symmetries of crystal lattices and provide a semantic foundation for the annotation of .cif files.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x</dcterms:title>
         <owl:priorVersion rdf:resource="https://w3id.org/pmd/cryo/"/>
-        <owl:versionInfo>2026-07-07</owl:versionInfo>
+        <owl:versionInfo>2026-07-10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1537,6 +1537,7 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/co/PMD_0000006">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label xml:lang="en">has value</rdfs:label>
         <skos:definition xml:lang="en">data property that relates an information content entity to a literal</skos:definition>
     </owl:DatatypeProperty>
@@ -1550,6 +1551,25 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">has Miller indices</rdfs:label>
         <skos:definition xml:lang="en">has Miller indices is an annotation property to specify Miller indices of crystallographic plane, direction, or family of equivalent planes or directions</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000019 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000019">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0000006"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="en">Top-level data property, do not use directly</rdfs:comment>
+        <rdfs:label xml:lang="en">has Miller index</rdfs:label>
+        <skos:definition xml:lang="en">data property to point only to individual integers in the Miller indices notation only for single planes and directions</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -1598,6 +1618,80 @@ RO&apos;s &apos;quality of&apos; is functional i.e., a-&gt;b, a-&gt;c =&gt; b=c.
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000144"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">has Schoenflies symbol</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000398 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000398">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000019"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">has h</rdfs:label>
+        <skos:definition xml:lang="en">has h is a data property that associates a crystallographic plane with an integer representing its Miller index along the x-axis of the unit cell</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000399 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000399">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000019"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">has l</rdfs:label>
+        <skos:definition xml:lang="en">has l is a data property that associates a crystallographic plane with an integer representing its Miller index along the z-axis of the unit cell</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000400 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000400">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000019"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">has k</rdfs:label>
+        <skos:definition xml:lang="en">has k is a data property that associates a crystallographic plane with an integer representing its Miller index along the y-axis of the unit cell</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000401 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000401">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0000006"/>
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000024"/>
+        <rdfs:label xml:lang="en">has coordinate</rdfs:label>
+        <skos:definition xml:lang="en">has coordinate is a top-level data property to point to values of x-, y-, and z-coordinates in cortesian coordinate system</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000402 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000402">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000401"/>
+        <rdfs:label xml:lang="en">has x</rdfs:label>
+        <skos:definition xml:lang="en">has x is a data property that specifies the position of a point along the x-axis in cartesian coordinate system</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000403 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000403">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000401"/>
+        <rdfs:label xml:lang="en">has y</rdfs:label>
+        <skos:definition>has y is a data property that specifies the position of a point along the y-axis in cartesian coordinate system</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000404 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000404">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000401"/>
+        <rdfs:label xml:lang="en">has z</rdfs:label>
+        <skos:definition>has z is a data property that specifies the position of a point along the z-axis in cartesian coordinate system</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -3327,6 +3421,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/UO_1000185 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
         <rdfs:label>degree based unit</rdfs:label>
     </owl:Class>
     
@@ -3358,7 +3453,7 @@ granularity. At these coarser levels, the individual molecules cannot be differe
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000950"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid140"/>
+        <rdfs:subClassOf rdf:nodeID="genid143"/>
         <rdfs:comment xml:lang="en">A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
 (Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
 
@@ -3371,7 +3466,7 @@ Extensive properties that depend on the object being tested rather than on the p
         <skos:definition xml:lang="en">a disposition of a portion of matter that is realized in a compatible process and whose realization is grounded in the portions intensive qualities</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid140">
+    <owl:Restriction rdf:nodeID="genid143">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
         <owl:someValuesFrom>
             <owl:Class>
@@ -3388,7 +3483,7 @@ Extensive properties that depend on the object being tested rather than on the p
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0000005"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid140"/>
+        <owl:annotatedTarget rdf:nodeID="genid143"/>
         <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
     </owl:Axiom>
     
@@ -5889,21 +5984,21 @@ A manufacturing process is always a transformative process.</skos:definition>
 
     <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf rdf:nodeID="genid535"/>
+        <rdfs:subClassOf rdf:nodeID="genid538"/>
         <owl:disjointWith rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
         <rdfs:label xml:lang="en">intensive quality</rdfs:label>
         <skos:altLabel xml:lang="en">Point property</skos:altLabel>
         <skos:definition xml:lang="en">An intensive quality is a quality that inheres in only portion of matter and thus is independent of the bearers (system-) size.</skos:definition>
         <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid535">
+    <owl:Restriction rdf:nodeID="genid538">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
         <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000001"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://w3id.org/pmd/co/PMD_0020131"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid535"/>
+        <owl:annotatedTarget rdf:nodeID="genid538"/>
         <rdfs:comment xml:lang="en">Due to the duality of object and portion of matter this axiom can not be an equivalent class axiom.</rdfs:comment>
     </owl:Axiom>
     
@@ -6582,7 +6677,7 @@ Activity (a_X) is a relational property between a chemical species X and a non-i
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">direction Miller indices</rdfs:label>
-        <skos:definition xml:lang="en">Direction Miller indices define the components of a sinlge vector in the given direction in a crystal&apos;s unit cell. Usually, direction Miller indices are reduced to the lowest set of integers. Direction Miller indices must be written in square brackets, e.g., [hkl].</skos:definition>
+        <skos:definition xml:lang="en">Direction Miller indices define the components of a sinlge vector in the given direction in a crystal&apos;s conventional unit cell. Usually, direction Miller indices are reduced to the lowest set of integers. Direction Miller indices must be written in square brackets, e.g., [hkl].</skos:definition>
         <skos:example>[111]</skos:example>
     </owl:Class>
     
@@ -6644,15 +6739,10 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
     <!-- https://w3id.org/pmd/cryo/CRYO_0000024 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000024">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000014"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020197"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">point Miller indices</rdfs:label>
-        <skos:definition xml:lang="en">Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l).</skos:definition>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000501"/>
+        <rdfs:comment xml:lang="en">Current decision is not to import &apos;cartesian spatial coordinate datum&apos; (http://purl.obolibrary.org/obo/IAO_0000400) cause it denotes spatial regions, and we model lattice points and atoms in voids as sites.</rdfs:comment>
+        <rdfs:label xml:lang="en">point coordinate datum</rdfs:label>
+        <skos:definition xml:lang="en">Point coordinate datum define the coordinates of a point within a conventional unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (x, y, z).</skos:definition>
         <skos:example>(1,1,1)</skos:example>
     </owl:Class>
     
@@ -12692,16 +12782,6 @@ lattice system based on the point group symmetries of their empty translational 
             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020142"/>
             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020161"/>
             <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0050155"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000020"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000021"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000022"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000023"/>
-            <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000024"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

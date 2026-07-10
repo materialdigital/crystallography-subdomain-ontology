@@ -469,11 +469,19 @@ Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0002135>))
 Declaration(DataProperty(<https://w3id.org/pmd/co/PMD_0000006>))
 Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000016>))
+Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000019>))
 Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000144>))
 Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000145>))
 Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000146>))
 Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000147>))
 Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000148>))
+Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000398>))
+Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000399>))
+Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000400>))
+Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000401>))
+Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000402>))
+Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000403>))
+Declaration(DataProperty(<https://w3id.org/pmd/cryo/CRYO_0000404>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000019>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000027>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/UO_0000076>))
@@ -1628,6 +1636,7 @@ DataPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0002135> <http://purl.obo
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000006> "has value"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000006> "data property that relates an information content entity to a literal"@en)
 DataPropertyDomain(<https://w3id.org/pmd/co/PMD_0000006> <http://purl.obolibrary.org/obo/IAO_0000030>)
+DataPropertyRange(<https://w3id.org/pmd/co/PMD_0000006> xsd:double)
 
 # Data Property: <https://w3id.org/pmd/cryo/CRYO_0000016> (has Miller indices)
 
@@ -1635,6 +1644,14 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000016> "has Mil
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000016> "has Miller indices is an annotation property to specify Miller indices of crystallographic plane, direction, or family of equivalent planes or directions"@en)
 DataPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000016> <https://w3id.org/pmd/cryo/CRYO_0000014>)
 DataPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000016> xsd:string)
+
+# Data Property: <https://w3id.org/pmd/cryo/CRYO_0000019> (has Miller index)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000019> "Top-level data property, do not use directly"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000019> "has Miller index"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000019> "data property to point only to individual integers in the Miller indices notation only for single planes and directions"@en)
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/co/PMD_0000006>)
+DataPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000019> ObjectUnionOf(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000022>))
 
 # Data Property: <https://w3id.org/pmd/cryo/CRYO_0000144> (has space group notation)
 
@@ -1663,6 +1680,52 @@ DataPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000147> xsd:string)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000148> "has Schoenflies symbol"@en)
 SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000148> <https://w3id.org/pmd/cryo/CRYO_0000144>)
 DataPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000148> xsd:string)
+
+# Data Property: <https://w3id.org/pmd/cryo/CRYO_0000398> (has h)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000398> "has h"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000398> "has h is a data property that associates a crystallographic plane with an integer representing its Miller index along the x-axis of the unit cell"@en)
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000398> <https://w3id.org/pmd/cryo/CRYO_0000019>)
+DataPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000398> xsd:integer)
+
+# Data Property: <https://w3id.org/pmd/cryo/CRYO_0000399> (has l)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000399> "has l"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000399> "has l is a data property that associates a crystallographic plane with an integer representing its Miller index along the z-axis of the unit cell"@en)
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000399> <https://w3id.org/pmd/cryo/CRYO_0000019>)
+DataPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000399> xsd:integer)
+
+# Data Property: <https://w3id.org/pmd/cryo/CRYO_0000400> (has k)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000400> "has k"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000400> "has k is a data property that associates a crystallographic plane with an integer representing its Miller index along the y-axis of the unit cell"@en)
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000400> <https://w3id.org/pmd/cryo/CRYO_0000019>)
+DataPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000400> xsd:integer)
+
+# Data Property: <https://w3id.org/pmd/cryo/CRYO_0000401> (has coordinate)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000401> "has coordinate"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000401> "has coordinate is a top-level data property to point to values of x-, y-, and z-coordinates in cortesian coordinate system"@en)
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000401> <https://w3id.org/pmd/co/PMD_0000006>)
+DataPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000401> <https://w3id.org/pmd/cryo/CRYO_0000024>)
+
+# Data Property: <https://w3id.org/pmd/cryo/CRYO_0000402> (has x)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000402> "has x"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000402> "has x is a data property that specifies the position of a point along the x-axis in cartesian coordinate system"@en)
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000402> <https://w3id.org/pmd/cryo/CRYO_0000401>)
+
+# Data Property: <https://w3id.org/pmd/cryo/CRYO_0000403> (has y)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000403> "has y"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000403> "has y is a data property that specifies the position of a point along the y-axis in cartesian coordinate system")
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000403> <https://w3id.org/pmd/cryo/CRYO_0000401>)
+
+# Data Property: <https://w3id.org/pmd/cryo/CRYO_0000404> (has z)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000404> "has z"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000404> "has z is a data property that specifies the position of a point along the z-axis in cartesian coordinate system")
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000404> <https://w3id.org/pmd/cryo/CRYO_0000401>)
 
 
 
@@ -2608,6 +2671,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_1000076> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/UO_1000185> (degree based unit)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000185> "degree based unit")
+SubClassOf(<http://purl.obolibrary.org/obo/UO_1000185> <http://purl.obolibrary.org/obo/UO_0000000>)
 
 # Class: <https://w3id.org/pmd/co/PMD_0000001> (portion of matter)
 
@@ -2948,7 +3012,7 @@ EquivalentClasses(<https://w3id.org/pmd/co/PMD_0000950> ObjectIntersectionOf(<ht
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<https://w3id.org/pmd/co/PMD_0000950> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000016> <https://w3id.org/pmd/co/PMD_0000005>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <https://w3id.org/pmd/co/PMD_0000001>))))
 
-# Class: <https://w3id.org/pmd/co/PMD_0000957> (Struktur Eigenschaften Analyseverfahren)
+# Class: <https://w3id.org/pmd/co/PMD_0000957> (structural property analyzing process)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "Struktur Eigenschaften Analyseverfahren"@de)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000957> "structural property analyzing process"@en)
@@ -4012,7 +4076,7 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000018> <https://w3id.org/pmd/cryo/C
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000020> (direction Miller indices)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000020> "direction Miller indices"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000020> "Direction Miller indices define the components of a sinlge vector in the given direction in a crystal's unit cell. Usually, direction Miller indices are reduced to the lowest set of integers. Direction Miller indices must be written in square brackets, e.g., [hkl]."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000020> "Direction Miller indices define the components of a sinlge vector in the given direction in a crystal's conventional unit cell. Usually, direction Miller indices are reduced to the lowest set of integers. Direction Miller indices must be written in square brackets, e.g., [hkl]."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/cryo/CRYO_0000020> "[111]")
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000014>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000219> <https://w3id.org/pmd/cryo/CRYO_0000012>))
@@ -4043,13 +4107,13 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000023> <https://w3id.org/pmd/cryo/CRYO_0000014>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000219> <https://w3id.org/pmd/cryo/CRYO_0000011>))
 
-# Class: <https://w3id.org/pmd/cryo/CRYO_0000024> (point Miller indices)
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000024> (point coordinate datum)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000024> "point Miller indices"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000024> "Point Miller indices define the coordinates of a point within a unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (h, k, l)."@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000024> "Current decision is not to import 'cartesian spatial coordinate datum' (http://purl.obolibrary.org/obo/IAO_0000400) cause it denotes spatial regions, and we model lattice points and atoms in voids as sites."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000024> "point coordinate datum"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000024> "Point coordinate datum define the coordinates of a point within a conventional unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (x, y, z)."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/cryo/CRYO_0000024> "(1,1,1)")
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000024> <https://w3id.org/pmd/cryo/CRYO_0000014>)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000219> <https://w3id.org/pmd/co/PMD_0020197>))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000024> <https://w3id.org/pmd/co/PMD_0000501>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000025> (atomic plane)
 
@@ -6835,7 +6899,6 @@ DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolib
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000142> <http://purl.obolibrary.org/obo/BFO_0000146> <http://purl.obolibrary.org/obo/BFO_0000147>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000503> <https://w3id.org/pmd/co/PMD_0000512> <https://w3id.org/pmd/co/PMD_0000591> <https://w3id.org/pmd/co/PMD_0000595> <https://w3id.org/pmd/co/PMD_0000597> <https://w3id.org/pmd/co/PMD_0000853> <https://w3id.org/pmd/co/PMD_0000896> <https://w3id.org/pmd/co/PMD_0000942> <https://w3id.org/pmd/co/PMD_0000967> <https://w3id.org/pmd/co/PMD_0020005> <https://w3id.org/pmd/co/PMD_0020112> <https://w3id.org/pmd/co/PMD_0025001> <https://w3id.org/pmd/co/PMD_0025003>)
 DisjointClasses(<https://w3id.org/pmd/co/PMD_0000553> <https://w3id.org/pmd/co/PMD_0000619> <https://w3id.org/pmd/co/PMD_0020132> <https://w3id.org/pmd/co/PMD_0020133> <https://w3id.org/pmd/co/PMD_0020142> <https://w3id.org/pmd/co/PMD_0020161> <https://w3id.org/pmd/co/PMD_0050155>)
-DisjointClasses(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000021> <https://w3id.org/pmd/cryo/CRYO_0000022> <https://w3id.org/pmd/cryo/CRYO_0000023> <https://w3id.org/pmd/cryo/CRYO_0000024>)
 DifferentIndividuals(<https://w3id.org/pmd/co/PMD_0020117> <https://w3id.org/pmd/co/PMD_0020118> <https://w3id.org/pmd/co/PMD_0020119> <https://w3id.org/pmd/co/PMD_0020120> <https://w3id.org/pmd/co/PMD_0020121> <https://w3id.org/pmd/co/PMD_0020122> <https://w3id.org/pmd/co/PMD_0020123> <https://w3id.org/pmd/co/PMD_0020124> <https://w3id.org/pmd/co/PMD_0020125>)
 DifferentIndividuals(<https://w3id.org/pmd/cryo/CRYO_0000029> <https://w3id.org/pmd/cryo/CRYO_0000030>)
 DifferentIndividuals(<https://w3id.org/pmd/cryo/CRYO_0000029> <https://w3id.org/pmd/cryo/CRYO_0000031>)
