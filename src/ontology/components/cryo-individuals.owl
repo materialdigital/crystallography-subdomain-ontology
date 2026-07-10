@@ -10,6 +10,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:cryo="https://w3id.org/pmd/cryo/"
      xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -37,6 +38,25 @@
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000019 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000019">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0000006"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000020"/>
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000022"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="en">Top-level data property, do not use directly</rdfs:comment>
+        <rdfs:label xml:lang="en">has Miller index</rdfs:label>
+        <skos:definition xml:lang="en">data property to point only to individual integers in the Miller indices notation only for single planes and directions</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000145 -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000145"/>
@@ -52,6 +72,79 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000147 -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000147"/>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000398 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000398">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000019"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">has h</rdfs:label>
+        <skos:definition xml:lang="en">has h is a data property that associates a crystallographic plane with an integer representing its Miller index along the x-axis of the unit cell</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000399 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000399">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000019"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">has l</rdfs:label>
+        <skos:definition xml:lang="en">has l is a data property that associates a crystallographic plane with an integer representing its Miller index along the z-axis of the unit cell</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000400 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000400">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000019"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">has k</rdfs:label>
+        <skos:definition xml:lang="en">has k is a data property that associates a crystallographic plane with an integer representing its Miller index along the y-axis of the unit cell</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000401 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000401">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0000006"/>
+        <rdfs:label xml:lang="en">has coordinate</rdfs:label>
+        <skos:definition xml:lang="en">has coordinate is a top-level data property to point to values of x-, y-, and z-coordinates in cortesian coordinate system</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000402 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000402">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000401"/>
+        <rdfs:label xml:lang="en">has x</rdfs:label>
+        <skos:definition xml:lang="en">has x is a data property that specifies the position of a point along the x-axis in cartesian coordinate system</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000403 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000403">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000401"/>
+        <rdfs:label xml:lang="en">has y</rdfs:label>
+        <skos:definition>has y is a data property that specifies the position of a point along the y-axis in cartesian coordinate system</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000404 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000404">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000401"/>
+        <rdfs:label xml:lang="en">has z</rdfs:label>
+        <skos:definition>has z is a data property that specifies the position of a point along the z-axis in cartesian coordinate system</skos:definition>
+    </owl:DatatypeProperty>
     
 
 
@@ -731,18 +824,6 @@
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000393 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000393">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
-        <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cryo:CRYO_0000145>
-        <cryo:CRYO_0000146>P 1 21 1</cryo:CRYO_0000146>
-        <cryo:CRYO_0000147>P 2yb</cryo:CRYO_0000147>
-        <rdfs:label>P 2yb space group</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/pmd/cryo/CRYO_0000153 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000153">
@@ -791,30 +872,6 @@
     
 
 
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000396 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000396">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
-        <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</cryo:CRYO_0000145>
-        <cryo:CRYO_0000146>C 1 c 1</cryo:CRYO_0000146>
-        <cryo:CRYO_0000147>C -2yc</cryo:CRYO_0000147>
-        <rdfs:label>C -2yc space group</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pmd/cryo/CRYO_0000397 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000397">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
-        <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</cryo:CRYO_0000145>
-        <cryo:CRYO_0000146>P 1 2/m 1</cryo:CRYO_0000146>
-        <cryo:CRYO_0000147>-P 2y</cryo:CRYO_0000147>
-        <rdfs:label>-P 2y space group</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/pmd/cryo/CRYO_0000159 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000159">
@@ -847,18 +904,6 @@
         <cryo:CRYO_0000146>P 1 2/c 1</cryo:CRYO_0000146>
         <cryo:CRYO_0000147>-P 2yc</cryo:CRYO_0000147>
         <rdfs:label>-P 2yc space group</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!--https://w3id.org/pmd/cryo/CRYO_0000394 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000394">
-        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
-        <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</cryo:CRYO_0000145>
-        <cryo:CRYO_0000146>P 1 21/c 1</cryo:CRYO_0000146>
-        <cryo:CRYO_0000147>-P 2ybc</cryo:CRYO_0000147>
-        <rdfs:label>-P 2ybc space group</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3443,6 +3488,30 @@
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000393 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000393">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
+        <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cryo:CRYO_0000145>
+        <cryo:CRYO_0000146>P 1 21 1</cryo:CRYO_0000146>
+        <cryo:CRYO_0000147>P 2yb</cryo:CRYO_0000147>
+        <rdfs:label>P 2yb space group</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000394 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000394">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
+        <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</cryo:CRYO_0000145>
+        <cryo:CRYO_0000146>P 1 21/c 1</cryo:CRYO_0000146>
+        <cryo:CRYO_0000147>-P 2ybc</cryo:CRYO_0000147>
+        <rdfs:label>-P 2ybc space group</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000395 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000395">
@@ -3451,6 +3520,30 @@
         <cryo:CRYO_0000146>C 2 2 21</cryo:CRYO_0000146>
         <cryo:CRYO_0000147>C 2c 2</cryo:CRYO_0000147>
         <rdfs:label>C 2c 2 space group</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000396 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000396">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
+        <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</cryo:CRYO_0000145>
+        <cryo:CRYO_0000146>C 1 c 1</cryo:CRYO_0000146>
+        <cryo:CRYO_0000147>C -2yc</cryo:CRYO_0000147>
+        <rdfs:label>C -2yc space group</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000397 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/pmd/cryo/CRYO_0000397">
+        <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000142"/>
+        <cryo:CRYO_0000145 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</cryo:CRYO_0000145>
+        <cryo:CRYO_0000146>P 1 2/m 1</cryo:CRYO_0000146>
+        <cryo:CRYO_0000147>-P 2y</cryo:CRYO_0000147>
+        <rdfs:label>-P 2y space group</rdfs:label>
     </owl:NamedIndividual>
     
 

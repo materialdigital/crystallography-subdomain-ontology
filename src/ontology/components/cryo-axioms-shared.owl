@@ -10,6 +10,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:cryo="https://w3id.org/pmd/cryo/"
      xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
@@ -39,6 +40,33 @@
     <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
 
     <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000006 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0000006">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000401 -->
+
+    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000401">
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000024"/>
+    </rdf:Description>
     
 
 

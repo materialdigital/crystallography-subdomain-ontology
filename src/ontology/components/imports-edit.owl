@@ -57,6 +57,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UO_1000185 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_1000185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
