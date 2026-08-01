@@ -452,7 +452,7 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000014 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000014">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000501"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000016"/>
@@ -568,7 +568,7 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
     <!-- https://w3id.org/pmd/cryo/CRYO_0000024 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000024">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000501"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:comment xml:lang="en">Current decision is not to import &apos;cartesian spatial coordinate datum&apos; (http://purl.obolibrary.org/obo/IAO_0000400) cause it denotes spatial regions, and we model lattice points and atoms in voids as sites.</rdfs:comment>
         <rdfs:label xml:lang="en">point coordinate datum</rdfs:label>
         <skos:definition xml:lang="en">Point coordinate datum define the coordinates of a point within a conventional unit cell of a crystal. Point Miller indices must be given in round brackets separated by commas, e.g., (x, y, z).</skos:definition>
@@ -724,7 +724,7 @@ crystal system  based on the rotational and mirror symmetries of their actual at
     <!-- https://w3id.org/pmd/cryo/CRYO_0000042 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000042">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020148"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
@@ -856,7 +856,7 @@ Grain orientation can be specified by either texture fibers or texture component
     <!-- https://w3id.org/pmd/cryo/CRYO_0000075 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000075">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0000501"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001927"/>

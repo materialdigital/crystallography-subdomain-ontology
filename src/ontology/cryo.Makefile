@@ -17,31 +17,38 @@ $(ONTOLOGYTERMS): $(SRCMERGED)
 	$(ROBOT) query -f csv -i $< --query cryo_terms.sparql $@
 
 
+#$(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl $(IMPORTDIR)/pmdco_terms.txt
+#	@echo "Generating Application Module from pmdco..."
+#	if [ $(IMP) = true ]; then $(ROBOT) \
+#	  query -i $< --update ../sparql/preprocess-module.ru \
+#	  extract --term-file $(IMPORTDIR)/pmdco_terms.txt \
+#	          --force true \
+#	          --copy-ontology-annotations true \
+#	          --intermediates all \
+#	          --method BOT \
+#	  \
+#	  query --update ../sparql/inject-subset-declaration.ru \
+#	        --update ../sparql/inject-synonymtype-declaration.ru \
+#	        --update ../sparql/postprocess-module.ru \
+#	  \
+#	  remove --term http://purl.obolibrary.org/obo/IAO_0000412 \
+ #            --select annotation \
+#	  \
+#	  remove --term-file $(PMDCO_DISJOINTNESS_REMOVAL_TERMS) \
+#			 --axioms DisjointClasses \
+#	  remove --term-file $(PMDCO_CLASSES_TO_REMOVE) \
+#			 --select "individuals classes"\
+#	  remove --term-file $(IAO_TO_REMOVE) \
+#			 --select "individuals classes"\
+#	  $(ANNOTATE_CONVERT_FILE); \
+#	fi
+
 $(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl $(IMPORTDIR)/pmdco_terms.txt
-	@echo "Generating Application Module from pmdco..."
-	if [ $(IMP) = true ]; then $(ROBOT) \
-	  query -i $< --update ../sparql/preprocess-module.ru \
-	  extract --term-file $(IMPORTDIR)/pmdco_terms.txt \
-	          --force true \
-	          --copy-ontology-annotations true \
-	          --intermediates all \
-	          --method BOT \
-	  \
-	  query --update ../sparql/inject-subset-declaration.ru \
-	        --update ../sparql/inject-synonymtype-declaration.ru \
-	        --update ../sparql/postprocess-module.ru \
-	  \
-	  remove --term http://purl.obolibrary.org/obo/IAO_0000412 \
-             --select annotation \
-	  \
-	  remove --term-file $(PMDCO_DISJOINTNESS_REMOVAL_TERMS) \
-			 --axioms DisjointClasses \
-	  remove --term-file $(PMDCO_CLASSES_TO_REMOVE) \
-			 --select "individuals classes"\
-	  remove --term-file $(IAO_TO_REMOVE) \
-			 --select "individuals classes"\
-	  $(ANNOTATE_CONVERT_FILE); \
-	fi
+	$(ROBOT) filter --input $(MIRRORDIR)/pmdco.owl \
+		--term-file $(IMPORTDIR)/pmdco_terms.txt \
+		--allow-punning true \
+		--select "annotations self parents" \
+		$(ANNOTATE_CONVERT_FILE)
 
 $(IMPORTDIR)/uo_import.owl: $(MIRRORDIR)/uo.owl $(IMPORTDIR)/uo_terms.txt
 	$(ROBOT) filter --input $(MIRRORDIR)/uo.owl \
