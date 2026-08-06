@@ -16,9 +16,9 @@ import_group:
   annotation_properties: ['rdfs:label', 'IAO:0000119','IAO:0000115', 'IAO:0000116', 'IAO:0000112', 'skos:definition', 'skos:example', 'skos:comment', 'skos:altLabel' ]
   
   products:
-    #- id: pmdco
-     # title: "PMD Core Ontology"
-     # mirror_from: https://materialdigital.github.io/core-ontology/ontology.owl
+    - id: pmdco
+      title: "PMD Core Ontology"
+      mirror_from: https://materialdigital.github.io/core-ontology/ontology.owl
       # mirror_from: https://raw.githubusercontent.com/materialdigital/core-ontology/refs/heads/main/src/ontology/pmdco.ttl
     - id: bfo
       mirror_from: http://purl.obolibrary.org/obo/bfo/2020/notime/bfo.owl

@@ -43,12 +43,12 @@ $(ONTOLOGYTERMS): $(SRCMERGED)
 #	  $(ANNOTATE_CONVERT_FILE); \
 #	fi
 
-#$(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl $(IMPORTDIR)/pmdco_terms.txt
-#	$(ROBOT) filter --input $(MIRRORDIR)/pmdco.owl \
-#		--term-file $(IMPORTDIR)/pmdco_terms.txt \
-#		--allow-punning true \
-#		--select "annotations self parents" \
-#		$(ANNOTATE_CONVERT_FILE)
+$(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl $(IMPORTDIR)/pmdco_terms.txt
+	$(ROBOT) filter --input $(MIRRORDIR)/pmdco.owl \
+		--term-file $(IMPORTDIR)/pmdco_terms.txt \
+		--allow-punning true \
+		--select "annotations self parents" \
+		$(ANNOTATE_CONVERT_FILE)
 
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt \
 			   $(IMPORTSEED) | all_robot_plugins

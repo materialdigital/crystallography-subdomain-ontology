@@ -15,6 +15,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/components/imports-edit.owl">
+        <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/pmdco_import.owl"/>
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/bfo_import.owl"/>
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/iao_import.owl"/>
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/cob_import.owl"/>
