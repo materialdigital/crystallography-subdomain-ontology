@@ -16,11 +16,41 @@ import_group:
   annotation_properties: ['rdfs:label', 'IAO:0000119','IAO:0000115', 'IAO:0000116', 'IAO:0000112', 'skos:definition', 'skos:example', 'skos:comment', 'skos:altLabel' ]
   
   products:
-    - id: pmdco
-      title: "PMD Core Ontology"
-      mirror_from: https://materialdigital.github.io/core-ontology/ontology.owl
+    #- id: pmdco
+     # title: "PMD Core Ontology"
+     # mirror_from: https://materialdigital.github.io/core-ontology/ontology.owl
       # mirror_from: https://raw.githubusercontent.com/materialdigital/core-ontology/refs/heads/main/src/ontology/pmdco.ttl
+    - id: bfo
+      mirror_from: http://purl.obolibrary.org/obo/bfo/2020/notime/bfo.owl
       module_type: custom
+    - id: ro
+      #mirror_from: http://purl.obolibrary.org/obo/ro.owl
+      mirror_from: http://purl.obolibrary.org/obo/ro/releases/2025-12-17/ro.owl
+      module_type: custom
+    - id: iao
+      mirror_from: http://purl.obolibrary.org/obo/iao/2026-03-30/iao.owl
+      module_type: custom
+    - id: obi
+      mirror_from: http://purl.obolibrary.org/obo/obi/2025-12-18/obi.owl
+      module_type: custom
+    # - id: chebi
+    #   mirror_from: "https://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi_lite.obo"
+    #   module_type: custom
+    #   rebuild_if_source_changes: false
+    # - id: stato
+    #   module_type: custom
+    - id: cob
+      use_base: true
+      module_type: custom
+    # - id: nfdicore
+    #   mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/tags/v3.0.5/nfdicore-base.owl
+    #   module_type: slme
+    #   module_type_slme: SUBSET
+    # - id: time
+    #   mirror_from: https://github.com/w3c/sdw-time/raw/refs/heads/gh-pages/rdf/time.ttl
+    #   module_type: slme
+    #   module_type_slme: SUBSET
+    #   module_type: custom
     - id: qudt
       mirror_from: https://qudt.org/qudt-all
       module_type: custom
