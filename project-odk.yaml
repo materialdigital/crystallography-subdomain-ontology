@@ -14,9 +14,9 @@ use_templates: false
 # Imports 
 import_group:
   products:
-    - id: pmdco
-      title: "PMD Core Ontology"
-      mirror_from: https://materialdigital.github.io/core-ontology/ontology.owl
+    # - id: pmdco
+    #   title: "PMD Core Ontology"
+    #   mirror_from: https://materialdigital.github.io/core-ontology/ontology.owl
 
 # Components
 components:
