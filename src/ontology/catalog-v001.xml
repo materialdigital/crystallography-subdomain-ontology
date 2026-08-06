@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
   <group id="odk-managed-catalog" prefer="public">
+    <uri name="https://w3id.org/pmd/cryo/imports/pmdco_import.owl" uri="imports/pmdco_import.owl" />
     <uri name="https://w3id.org/pmd/cryo/imports/bfo_import.owl" uri="imports/bfo_import.owl" />
-    <uri name="https://w3id.org/pmd/cryo/imports/cob_import.owl" uri="imports/cob_import.owl" />
-    <uri name="https://w3id.org/pmd/cryo/imports/obi_import.owl" uri="imports/obi_import.owl" />
-    <uri name="https://w3id.org/pmd/cryo/imports/iao_import.owl" uri="imports/iao_import.owl" />
     <uri name="https://w3id.org/pmd/cryo/imports/ro_import.owl" uri="imports/ro_import.owl" />
-    <uri name="https://w3id.org/pmd/cryo/imports/ro_import.owl" uri="imports/pmdco_import.owl" />
+    <uri name="https://w3id.org/pmd/cryo/imports/iao_import.owl" uri="imports/iao_import.owl" />
+    <uri name="https://w3id.org/pmd/cryo/imports/obi_import.owl" uri="imports/obi_import.owl" />
+    <uri name="https://w3id.org/pmd/cryo/imports/cob_import.owl" uri="imports/cob_import.owl" />
     <uri name="https://w3id.org/pmd/cryo/imports/qudt_import.owl" uri="imports/qudt_import.owl" />
     <uri name="https://w3id.org/pmd/cryo/imports/uo_import.owl" uri="imports/uo_import.owl" />
     <uri name="https://w3id.org/pmd/cryo/components/imports-edit.owl" uri="components/imports-edit.owl" />

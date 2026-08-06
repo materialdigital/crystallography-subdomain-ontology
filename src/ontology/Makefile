@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                4846e79a4cc791c03844659b266cb5d4a6f6af4c694c47a6eca5d68ba1015553
+CONFIG_HASH=                27c89b82aca960350d326dfb59434fe0c6df75aa3289901cb570bbb1a1304bec
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  pmdco qudt uo
+IMPORTS =  pmdco bfo ro iao obi cob qudt uo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -409,9 +409,33 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
-## Module for ontology: pmdco (custom)
-$(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl
-	@echo "ERROR: You have configured pmdco as a custom module;"
+## Module for ontology: bfo (custom)
+$(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl
+	@echo "ERROR: You have configured bfo as a custom module;"
+	@echo "       This rule needs to be overwritten in cryo.Makefile!"
+	@false
+
+## Module for ontology: ro (custom)
+$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
+	@echo "ERROR: You have configured ro as a custom module;"
+	@echo "       This rule needs to be overwritten in cryo.Makefile!"
+	@false
+
+## Module for ontology: iao (custom)
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
+	@echo "ERROR: You have configured iao as a custom module;"
+	@echo "       This rule needs to be overwritten in cryo.Makefile!"
+	@false
+
+## Module for ontology: obi (custom)
+$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
+	@echo "ERROR: You have configured obi as a custom module;"
+	@echo "       This rule needs to be overwritten in cryo.Makefile!"
+	@false
+
+## Module for ontology: cob (custom)
+$(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl
+	@echo "ERROR: You have configured cob as a custom module;"
 	@echo "       This rule needs to be overwritten in cryo.Makefile!"
 	@false
 
@@ -513,6 +537,42 @@ ifeq ($(MIR),true)
 .PRECIOUS: $(MIRRORDIR)/pmdco.owl
 mirror-pmdco: | $(TMPDIR)
 	$(ROBOT) convert -I https://materialdigital.github.io/core-ontology/ontology.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: bfo
+.PHONY: mirror-bfo
+.PRECIOUS: $(MIRRORDIR)/bfo.owl
+mirror-bfo: | $(TMPDIR)
+	$(ROBOT) convert -I http://purl.obolibrary.org/obo/bfo/2020/notime/bfo.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: ro
+.PHONY: mirror-ro
+.PRECIOUS: $(MIRRORDIR)/ro.owl
+mirror-ro: | $(TMPDIR)
+	$(ROBOT) convert -I http://purl.obolibrary.org/obo/ro/releases/2025-12-17/ro.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: iao
+.PHONY: mirror-iao
+.PRECIOUS: $(MIRRORDIR)/iao.owl
+mirror-iao: | $(TMPDIR)
+	$(ROBOT) convert -I http://purl.obolibrary.org/obo/iao/2026-03-30/iao.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: obi
+.PHONY: mirror-obi
+.PRECIOUS: $(MIRRORDIR)/obi.owl
+mirror-obi: | $(TMPDIR)
+	$(ROBOT) convert -I http://purl.obolibrary.org/obo/obi/2025-12-18/obi.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: cob
+.PHONY: mirror-cob
+.PRECIOUS: $(MIRRORDIR)/cob.owl
+mirror-cob: | $(TMPDIR)
+	curl -L $(OBOBASE)/cob/cob-base.owl --create-dirs -o $(TMPDIR)/cob-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/cob-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: qudt

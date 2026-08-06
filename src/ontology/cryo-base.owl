@@ -12,14 +12,14 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/cryo-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-08-01/cryo-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-08-06/cryo-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0003-0744-8855"/>
         <dcterms:creator rdf:resource="https://orcid.org/0009-0003-1503-4422"/>
         <dcterms:description>CryO is an subdomain-level ontology based on the PMdco 3.x. It&apos;s primary goal to formally describe symmetries of crystal lattices and provide a semantic foundation for the annotation of .cif files.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x</dcterms:title>
-        <owl:versionInfo>2026-08-01</owl:versionInfo>
+        <owl:versionInfo>2026-08-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -665,12 +665,6 @@
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error1 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
@@ -740,6 +734,12 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001930 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001930"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001933 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001933"/>
     
 
 
@@ -1004,8 +1004,14 @@
     <!-- https://w3id.org/pmd/cryo/CRYO_0000017 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000017">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/pmd/co/PMD_0020197"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">primitive unit cell</rdfs:label>
         <skos:definition xml:lang="en">primitive unit cell is a unit cell that contains only single lattice point and has the smallest possible unit cell volume.</skos:definition>
     </owl:Class>
@@ -1491,6 +1497,7 @@ Grain orientation can be specified by either texture fibers or texture component
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000075">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001927"/>
@@ -2803,6 +2810,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -2849,6 +2857,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000119"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -2895,6 +2904,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000120"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -2941,6 +2951,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000121"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -2987,6 +2998,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000122"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -3033,6 +3045,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000123"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -3079,6 +3092,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000129"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
