@@ -33,10 +33,10 @@ import_group:
     - id: obi
       mirror_from: http://purl.obolibrary.org/obo/obi/2025-12-18/obi.owl
       module_type: custom
-    - id: chebi
-      mirror_from: "https://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi_lite.obo"
-      module_type: custom
-      rebuild_if_source_changes: false
+    # - id: chebi
+    #   mirror_from: "https://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi_lite.obo"
+    #   module_type: custom
+    #   rebuild_if_source_changes: false
     # - id: stato
     #   module_type: custom
     - id: cob
