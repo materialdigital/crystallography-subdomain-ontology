@@ -50,12 +50,14 @@ $(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl $(IMPORTDIR)/pmdco_terms.t
 		--select "annotations self parents" \
 		$(ANNOTATE_CONVERT_FILE)
 
-$(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms.txt
-	$(ROBOT) filter --input $(MIRRORDIR)/chebi.owl \
-		--term-file $(IMPORTDIR)/chebi_terms.txt \
-		--allow-punning true \
-		--select "annotations self" \
-		$(ANNOTATE_CONVERT_FILE)
+$(IMPORTDIR)/chebi_import.owl: #$(MIRRORDIR)/chebi.owl
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		filter --term-file $(IMPORTDIR)/chebi_terms.txt --select "self annotations" reduce --reasoner ELK \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+ 		remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+			  --term-file $(IMPORTDIR)/chebi_terms.txt \
+		      --select complement --select annotation-properties \
+		$(ANNOTATE_CONVERT_FILE); fi
 
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt \
 			   $(IMPORTSEED) | all_robot_plugins
