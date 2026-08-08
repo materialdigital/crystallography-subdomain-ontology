@@ -110,4 +110,6 @@
 #http://purl.obolibrary.org/obo/UO_0000076 # volume fraction
 
 https://w3id.org/pmd/co/PMD_0000077 # specified by value
+https://w3id.org/pmd/co/PMD_0020003 # crystal
+https://w3id.org/pmd/co/PMD_0000663 # crystallite
 

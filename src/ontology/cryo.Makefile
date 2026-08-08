@@ -50,6 +50,13 @@ $(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl $(IMPORTDIR)/pmdco_terms.t
 		--select "annotations self parents" \
 		$(ANNOTATE_CONVERT_FILE)
 
+$(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms.txt
+	$(ROBOT) filter --input $(MIRRORDIR)/chebi.owl \
+		--term-file $(IMPORTDIR)/chebi_terms.txt \
+		--allow-punning true \
+		--select "annotations self" \
+		$(ANNOTATE_CONVERT_FILE)
+
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt \
 			   $(IMPORTSEED) | all_robot_plugins
 	$(ROBOT) annotate --input $< --remove-annotations \

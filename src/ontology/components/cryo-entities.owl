@@ -347,22 +347,21 @@
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0020197 -->
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33250 -->
 
-    <rdf:Description rdf:about="https://w3id.org/pmd/co/PMD_0020197">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000663 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000663"/>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0020003 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020003"/>
     
 
 
@@ -476,7 +475,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/pmd/co/PMD_0020197"/>
+                <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000405"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">primitive unit cell</rdfs:label>
@@ -2148,6 +2147,35 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <rdfs:label xml:lang="en">lattice system value</rdfs:label>
         <skos:definition xml:lang="en">lattice system value is a categorical value specification which describes the grouping of
 lattice system based on the point group symmetries of their empty translational frameworks. The specific values are triclinic, monoclinic, orthorhombic, tetragonal, rhombohedral, hexagonal, and cubic.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000405 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000405">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000147"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Add axioms to PMDco (owl:tOP --&gt; location of /located in)
+1. &apos;solid solution&apos; and (&apos;has member&apos; some 
+(&apos;pure substance&apos; and (&apos;has part&apos; some 
+(entity and (owl:topObjectProperty some &apos;lattice point&apos;))) and (&apos;has role&apos; some &apos;solute role&apos;)))
+2. owl:topObjectProperty some &apos;lattice point&apos;</rdfs:comment>
+        <rdfs:label xml:lang="en">lattice point</rdfs:label>
+        <skos:definition xml:lang="en">A lattice point is a fiat point that represents a position in a crystal lattice at which structural entities are regularly arranged.</skos:definition>
     </owl:Class>
     
 
