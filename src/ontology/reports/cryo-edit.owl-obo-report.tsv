@@ -1,120 +1,122 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	41e9726a-7ca9-49b6-b93a-7130e7a96080genid186
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	995145c3-d365-4ccc-a001-99326adee97cgenid245
 ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	41e9726a-7ca9-49b6-b93a-7130e7a96080genid182
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	41e9726a-7ca9-49b6-b93a-7130e7a96080genid336
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	41e9726a-7ca9-49b6-b93a-7130e7a96080genid353
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	IAO:0000030
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	995145c3-d365-4ccc-a001-99326adee97cgenid241
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	995145c3-d365-4ccc-a001-99326adee97cgenid395
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	995145c3-d365-4ccc-a001-99326adee97cgenid412
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	information content entity
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	tetragonal equivalency assertion
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	cubic equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	41e9726a-7ca9-49b6-b93a-7130e7a96080genid528
+ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	995145c3-d365-4ccc-a001-99326adee97cgenid587
 ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	41e9726a-7ca9-49b6-b93a-7130e7a96080genid524
+ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	995145c3-d365-4ccc-a001-99326adee97cgenid583
 ERROR	deprecated_property_reference	symmetry equivalency assertion	under symmetry	blank node
 ERROR	deprecated_property_reference	Miller indices family of	owl:inverseOf	has Miller indices family
-WARN	missing_definition	unit cell	IAO:0000115	
-WARN	missing_definition	crystal lattice	IAO:0000115	
-WARN	missing_definition	lattice parameter	IAO:0000115	
-WARN	missing_definition	a lattice parameter	IAO:0000115	
-WARN	missing_definition	b lattice parameter	IAO:0000115	
-WARN	missing_definition	c lattice parameter	IAO:0000115	
-WARN	missing_definition	angular lattice parameter	IAO:0000115	
-WARN	missing_definition	α lattice parameter	IAO:0000115	
-WARN	missing_definition	β lattice parameter	IAO:0000115	
-WARN	missing_definition	γ lattice parameter	IAO:0000115	
-WARN	missing_definition	basis	IAO:0000115	
-WARN	missing_definition	crystallographic plane	IAO:0000115	
-WARN	missing_definition	crystallographic direction	IAO:0000115	
-WARN	missing_definition	interplanar spacing	IAO:0000115	
-WARN	missing_definition	Miller indices	IAO:0000115	
-WARN	missing_definition	lattice angle	IAO:0000115	
-WARN	missing_definition	has Miller indices	IAO:0000115	
-WARN	missing_definition	primitive unit cell	IAO:0000115	
-WARN	missing_definition	conventional unit cell	IAO:0000115	
-WARN	missing_definition	has Miller index	IAO:0000115	
-WARN	missing_definition	direction Miller indices	IAO:0000115	
-WARN	missing_definition	family of directions Miller indices	IAO:0000115	
-WARN	missing_definition	plane Miller indices	IAO:0000115	
-WARN	missing_definition	family of planes Miller indices	IAO:0000115	
-WARN	missing_definition	point coordinate datum	IAO:0000115	
-WARN	missing_definition	atomic plane	IAO:0000115	
-WARN	missing_definition	crystal system	IAO:0000115	
-WARN	missing_definition	lattice centering	IAO:0000115	
-WARN	missing_definition	crystal system value	IAO:0000115	
-WARN	missing_definition	lattice centering value	IAO:0000115	
-WARN	missing_definition	alpha angle	IAO:0000115	
-WARN	missing_definition	beta angle	IAO:0000115	
-WARN	missing_definition	gamma angle	IAO:0000115	
-WARN	missing_definition	crystallographic entity in cubic system	IAO:0000115	
-WARN	missing_definition	grain orientation	IAO:0000115	
-WARN	missing_definition	bravais lattice triclinic primitive	IAO:0000115	
-WARN	missing_definition	bravais lattice monoclinic primitive	IAO:0000115	
-WARN	missing_definition	is tetragonal	IAO:0000115	
-WARN	missing_definition	denoted by family under tetragonal symmetry	IAO:0000115	
-WARN	missing_definition	has symmetry	IAO:0000115	
-WARN	missing_definition	is triclinic	IAO:0000115	
-WARN	missing_definition	is monoclinic	IAO:0000115	
-WARN	missing_definition	is orthorhombic	IAO:0000115	
-WARN	missing_definition	is rhombohedral	IAO:0000115	
-WARN	missing_definition	is hexagonal	IAO:0000115	
-WARN	missing_definition	denoted by family under triclinic symmetry	IAO:0000115	
-WARN	missing_definition	denoted by family under monoclinic symmetry	IAO:0000115	
-WARN	missing_definition	denoted by family under orthorhombic symmetry	IAO:0000115	
-WARN	missing_definition	denoted by family under rhombohedral symmetry	IAO:0000115	
-WARN	missing_definition	denoted by family under hexagonal symmetry	IAO:0000115	
-WARN	missing_definition	Euler angles	IAO:0000115	
-WARN	missing_definition	Bunge Euler angles	IAO:0000115	
-WARN	missing_definition	bravais lattice monoclinic base-centered	IAO:0000115	
-WARN	missing_definition	bravais lattice orthorhombic base-centered	IAO:0000115	
-WARN	missing_definition	crystallographic entity in triclinic system	IAO:0000115	
-WARN	missing_definition	crystallographic entity in monoclinic system	IAO:0000115	
-WARN	missing_definition	crystallographic entity in orthorhombic system	IAO:0000115	
-WARN	missing_definition	crystallographic entity in tetragonal system	IAO:0000115	
-WARN	missing_definition	crystallographic entity in rhombohedral system	IAO:0000115	
-WARN	missing_definition	crystallographic entity in hexagonal system	IAO:0000115	
-WARN	missing_definition	bravais lattice orthorhombic primitive	IAO:0000115	
-WARN	missing_definition	bravais lattice orthorhombic body-centered	IAO:0000115	
-WARN	missing_definition	bravais lattice orthorhombic face-centered	IAO:0000115	
-WARN	missing_definition	bravais lattice cubic face-centered	IAO:0000115	
-WARN	missing_definition	bravais lattice cubic body-centered	IAO:0000115	
-WARN	missing_definition	bravais lattice cubic primitive	IAO:0000115	
-WARN	missing_definition	bravais lattice hexagonal primitive	IAO:0000115	
-WARN	missing_definition	bravais lattice rhombohedral primitive	IAO:0000115	
-WARN	missing_definition	bravais lattice tetragonal primitive	IAO:0000115	
-WARN	missing_definition	bravais lattice tetragonal body-centered	IAO:0000115	
-WARN	missing_definition	space group	IAO:0000115	
-WARN	missing_definition	space group type	IAO:0000115	
-WARN	missing_definition	has space group notation	IAO:0000115	
-WARN	missing_definition	has international space group number	IAO:0000115	
-WARN	missing_definition	has Hermann-Mauguin symbol	IAO:0000115	
-WARN	missing_definition	has Hall symbol	IAO:0000115	
-WARN	missing_definition	has Schoenflies symbol	IAO:0000115	
-WARN	missing_definition	denoted by family	IAO:0000115	
-WARN	missing_definition	denoted by family under cubic symmetry	IAO:0000115	
-WARN	missing_definition	is cubic	IAO:0000115	
-WARN	missing_definition	cubic crystal lattice	IAO:0000115	
-WARN	missing_definition	triclinic crystal lattice	IAO:0000115	
-WARN	missing_definition	monoclinic crystal lattice	IAO:0000115	
-WARN	missing_definition	orthomombic crystal lattice	IAO:0000115	
-WARN	missing_definition	tetragonal crystal lattice	IAO:0000115	
-WARN	missing_definition	rhombohedral crystal lattice	IAO:0000115	
-WARN	missing_definition	hexagonal crystal lattice	IAO:0000115	
-WARN	missing_definition	unit cell volume	IAO:0000115	
-WARN	missing_definition	point group	IAO:0000115	
-WARN	missing_definition	lattice system	IAO:0000115	
-WARN	missing_definition	lattice system value	IAO:0000115	
-WARN	missing_definition	has h	IAO:0000115	
-WARN	missing_definition	has l	IAO:0000115	
-WARN	missing_definition	has k	IAO:0000115	
-WARN	missing_definition	has coordinate	IAO:0000115	
-WARN	missing_definition	has x	IAO:0000115	
-WARN	missing_definition	has y	IAO:0000115	
-WARN	missing_definition	has z	IAO:0000115	
-WARN	missing_obsolete_label	tetragonal equivalency assertion	rdfs:label	tetragonal equivalency assertion@en
-WARN	missing_obsolete_label	has Miller indices family under tetragonal symmetry	rdfs:label	has Miller indices family under tetragonal symmetry@en
-WARN	missing_obsolete_label	symmetry equivalency assertion	rdfs:label	symmetry equivalency assertion@en
-WARN	missing_obsolete_label	cubic equivalency assertion	rdfs:label	cubic equivalency assertion@en
-WARN	missing_obsolete_label	has Miller indices family	rdfs:label	has Miller indices family@en
-WARN	missing_obsolete_label	Miller indices family of	rdfs:label	Miller indices family of@en
-WARN	missing_obsolete_label	under symmetry	rdfs:label	under symmetry@en
-WARN	missing_obsolete_label	has Miller indices family under cubic symmetry	rdfs:label	has Miller indices family under cubic symmetry@en
+WARN	missing_definition	unit cell	definition	
+WARN	missing_definition	crystal lattice	definition	
+WARN	missing_definition	lattice parameter	definition	
+WARN	missing_definition	a lattice parameter	definition	
+WARN	missing_definition	b lattice parameter	definition	
+WARN	missing_definition	c lattice parameter	definition	
+WARN	missing_definition	angular lattice parameter	definition	
+WARN	missing_definition	α lattice parameter	definition	
+WARN	missing_definition	β lattice parameter	definition	
+WARN	missing_definition	γ lattice parameter	definition	
+WARN	missing_definition	basis	definition	
+WARN	missing_definition	crystallographic plane	definition	
+WARN	missing_definition	crystallographic direction	definition	
+WARN	missing_definition	interplanar spacing	definition	
+WARN	missing_definition	Miller indices	definition	
+WARN	missing_definition	lattice angle	definition	
+WARN	missing_definition	has Miller indices	definition	
+WARN	missing_definition	primitive unit cell	definition	
+WARN	missing_definition	conventional unit cell	definition	
+WARN	missing_definition	has Miller index	definition	
+WARN	missing_definition	direction Miller indices	definition	
+WARN	missing_definition	family of directions Miller indices	definition	
+WARN	missing_definition	plane Miller indices	definition	
+WARN	missing_definition	family of planes Miller indices	definition	
+WARN	missing_definition	point coordinate datum	definition	
+WARN	missing_definition	atomic plane	definition	
+WARN	missing_definition	crystal system	definition	
+WARN	missing_definition	lattice centering	definition	
+WARN	missing_definition	crystal system value	definition	
+WARN	missing_definition	lattice centering value	definition	
+WARN	missing_definition	alpha angle	definition	
+WARN	missing_definition	beta angle	definition	
+WARN	missing_definition	gamma angle	definition	
+WARN	missing_definition	crystallographic entity in cubic system	definition	
+WARN	missing_definition	grain orientation	definition	
+WARN	missing_definition	bravais lattice triclinic primitive	definition	
+WARN	missing_definition	bravais lattice monoclinic primitive	definition	
+WARN	missing_definition	is tetragonal	definition	
+WARN	missing_definition	denoted by family under tetragonal symmetry	definition	
+WARN	missing_definition	has symmetry	definition	
+WARN	missing_definition	is triclinic	definition	
+WARN	missing_definition	is monoclinic	definition	
+WARN	missing_definition	is orthorhombic	definition	
+WARN	missing_definition	is rhombohedral	definition	
+WARN	missing_definition	is hexagonal	definition	
+WARN	missing_definition	denoted by family under triclinic symmetry	definition	
+WARN	missing_definition	denoted by family under monoclinic symmetry	definition	
+WARN	missing_definition	denoted by family under orthorhombic symmetry	definition	
+WARN	missing_definition	denoted by family under rhombohedral symmetry	definition	
+WARN	missing_definition	denoted by family under hexagonal symmetry	definition	
+WARN	missing_definition	Euler angles	definition	
+WARN	missing_definition	Bunge Euler angles	definition	
+WARN	missing_definition	bravais lattice monoclinic base-centered	definition	
+WARN	missing_definition	bravais lattice orthorhombic base-centered	definition	
+WARN	missing_definition	crystallographic entity in triclinic system	definition	
+WARN	missing_definition	crystallographic entity in monoclinic system	definition	
+WARN	missing_definition	crystallographic entity in orthorhombic system	definition	
+WARN	missing_definition	crystallographic entity in tetragonal system	definition	
+WARN	missing_definition	crystallographic entity in rhombohedral system	definition	
+WARN	missing_definition	crystallographic entity in hexagonal system	definition	
+WARN	missing_definition	bravais lattice orthorhombic primitive	definition	
+WARN	missing_definition	bravais lattice orthorhombic body-centered	definition	
+WARN	missing_definition	bravais lattice orthorhombic face-centered	definition	
+WARN	missing_definition	bravais lattice cubic face-centered	definition	
+WARN	missing_definition	bravais lattice cubic body-centered	definition	
+WARN	missing_definition	bravais lattice cubic primitive	definition	
+WARN	missing_definition	bravais lattice hexagonal primitive	definition	
+WARN	missing_definition	bravais lattice rhombohedral primitive	definition	
+WARN	missing_definition	bravais lattice tetragonal primitive	definition	
+WARN	missing_definition	bravais lattice tetragonal body-centered	definition	
+WARN	missing_definition	space group	definition	
+WARN	missing_definition	space group type	definition	
+WARN	missing_definition	has space group notation	definition	
+WARN	missing_definition	has international space group number	definition	
+WARN	missing_definition	has Hermann-Mauguin symbol	definition	
+WARN	missing_definition	has Hall symbol	definition	
+WARN	missing_definition	has Schoenflies symbol	definition	
+WARN	missing_definition	denoted by family	definition	
+WARN	missing_definition	denoted by family under cubic symmetry	definition	
+WARN	missing_definition	is cubic	definition	
+WARN	missing_definition	cubic crystal lattice	definition	
+WARN	missing_definition	triclinic crystal lattice	definition	
+WARN	missing_definition	monoclinic crystal lattice	definition	
+WARN	missing_definition	orthomombic crystal lattice	definition	
+WARN	missing_definition	tetragonal crystal lattice	definition	
+WARN	missing_definition	rhombohedral crystal lattice	definition	
+WARN	missing_definition	hexagonal crystal lattice	definition	
+WARN	missing_definition	unit cell volume	definition	
+WARN	missing_definition	point group	definition	
+WARN	missing_definition	lattice system	definition	
+WARN	missing_definition	lattice system value	definition	
+WARN	missing_definition	has h	definition	
+WARN	missing_definition	has l	definition	
+WARN	missing_definition	has k	definition	
+WARN	missing_definition	has coordinate	definition	
+WARN	missing_definition	has x	definition	
+WARN	missing_definition	has y	definition	
+WARN	missing_definition	has z	definition	
+WARN	missing_definition	lattice point	definition	
+WARN	missing_obsolete_label	tetragonal equivalency assertion	label	tetragonal equivalency assertion@en
+WARN	missing_obsolete_label	has Miller indices family under tetragonal symmetry	label	has Miller indices family under tetragonal symmetry@en
+WARN	missing_obsolete_label	symmetry equivalency assertion	label	symmetry equivalency assertion@en
+WARN	missing_obsolete_label	cubic equivalency assertion	label	cubic equivalency assertion@en
+WARN	missing_obsolete_label	has Miller indices family	label	has Miller indices family@en
+WARN	missing_obsolete_label	Miller indices family of	label	Miller indices family of@en
+WARN	missing_obsolete_label	under symmetry	label	under symmetry@en
+WARN	missing_obsolete_label	has Miller indices family under cubic symmetry	label	has Miller indices family under cubic symmetry@en
+INFO	missing_superclass	lattice point	rdfs:subClassOf	

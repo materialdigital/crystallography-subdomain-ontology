@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/pmd/cryo/cryo-base.owl#"
      xml:base="https://w3id.org/pmd/cryo/cryo-base.owl"
+     xmlns:co="https://w3id.org/pmd/co/"
      xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,14 +13,14 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/cryo-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-08-06/cryo-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/releases/2026-08-08/cryo-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0003-0744-8855"/>
         <dcterms:creator rdf:resource="https://orcid.org/0009-0003-1503-4422"/>
         <dcterms:description>CryO is an subdomain-level ontology based on the PMdco 3.x. It&apos;s primary goal to formally describe symmetries of crystal lattices and provide a semantic foundation for the annotation of .cif files.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x</dcterms:title>
-        <owl:versionInfo>2026-08-06</owl:versionInfo>
+        <owl:versionInfo>2026-08-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -92,6 +93,12 @@
     <!-- http://www.w3.org/2004/02/skos/core#example -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- https://w3id.org/pmd/co/PMD_0000060 -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0000060"/>
     
 
 
@@ -689,6 +696,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141"/>
@@ -710,6 +723,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000146 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000146"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000147"/>
     
 
 
@@ -745,32 +764,34 @@
 
     <!-- https://w3id.org/pmd/co/PMD_0000663 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000663"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000663">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
+        <rdfs:label xml:lang="en">crystallite</rdfs:label>
+        <rdfs:label xml:lang="de">kristallit</rdfs:label>
+        <skos:altLabel xml:lang="de">Korn</skos:altLabel>
+        <skos:altLabel xml:lang="en">grain</skos:altLabel>
+        <skos:definition xml:lang="en">A crystal grain is a crystal that is part of a polycrystal.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
     
 
 
     <!-- https://w3id.org/pmd/co/PMD_0020003 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020003"/>
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">crystal</rdfs:label>
+        <skos:definition xml:lang="en">A crystal is an object that has a quality &quot;crystal structure&quot;.</skos:definition>
+        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
+    </owl:Class>
     
 
 
     <!-- https://w3id.org/pmd/co/PMD_0020197 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020197">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020197"/>
     
 
 
@@ -1009,7 +1030,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/pmd/co/PMD_0020197"/>
+                <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000405"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">primitive unit cell</rdfs:label>
@@ -3203,6 +3224,48 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
         <rdfs:label xml:lang="en">lattice system value</rdfs:label>
         <skos:definition xml:lang="en">lattice system value is a categorical value specification which describes the grouping of
 lattice system based on the point group symmetries of their empty translational frameworks. The specific values are triclinic, monoclinic, orthorhombic, tetragonal, rhombohedral, hexagonal, and cubic.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000405 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000405">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000147"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000147"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Add axioms to PMDco (owl:tOP --&gt; location of /located in)
+1. &apos;solid solution&apos; and (&apos;has member&apos; some 
+(&apos;pure substance&apos; and (&apos;has part&apos; some 
+(entity and (owl:topObjectProperty some &apos;lattice point&apos;))) and (&apos;has role&apos; some &apos;solute role&apos;)))
+2. owl:topObjectProperty some &apos;lattice point&apos;</rdfs:comment>
+        <rdfs:label xml:lang="en">lattice point</rdfs:label>
+        <skos:definition xml:lang="en">A lattice point is a fiat point that represents a position in a crystal lattice at which structural entities are regularly arranged.</skos:definition>
     </owl:Class>
     
 

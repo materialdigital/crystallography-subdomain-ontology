@@ -1,4 +1,5 @@
 @prefix : <https://w3id.org/pmd/cryo/> .
+@prefix co: <https://w3id.org/pmd/co/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -17,16 +18,16 @@
 @base <https://w3id.org/pmd/cryo/> .
 
 <https://w3id.org/pmd/cryo/> rdf:type owl:Ontology ;
-                              owl:versionIRI <https://w3id.org/pmd/cryo/2026-08-06> ;
-                              dcterms:bibliographicCitation "cryo: Crystallography Subdomain Ontology. Version 2026-08-06, https://w3id.org/pmd/cryo/" ;
-                              dcterms:created "2026-08-06" ;
+                              owl:versionIRI <https://w3id.org/pmd/cryo/2026-08-08> ;
+                              dcterms:bibliographicCitation "cryo: Crystallography Subdomain Ontology. Version 2026-08-08, https://w3id.org/pmd/cryo/" ;
+                              dcterms:created "2026-08-08" ;
                               dcterms:creator <https://orcid.org/0000-0003-0744-8855> ,
                                               <https://orcid.org/0009-0003-1503-4422> ;
                               dcterms:description "CryO is an subdomain-level ontology based on the PMdco 3.x. It's primary goal to formally describe symmetries of crystal lattices and provide a semantic foundation for the annotation of .cif files." ;
                               dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                               dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x" ;
                               owl:priorVersion <https://w3id.org/pmd/cryo/> ;
-                              owl:versionInfo "2026-08-06" .
+                              owl:versionInfo "2026-08-08" .
 
 #################################################################
 #    Annotation properties
@@ -113,21 +114,29 @@ obo:IAO_0000119 rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.obolibrary.org/obo/IAO_0000232
 obo:IAO_0000232 rdf:type owl:AnnotationProperty ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
                 obo:IAO_0000115 "An administrative note of use for a curator but of no use for a user"@en ;
+                obo:IAO_0000117 "PERSON:Alan Ruttenberg"@en ;
                 rdfs:label "curator note"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000233
 obo:IAO_0000233 rdf:type owl:AnnotationProperty ;
-                obo:IAO_0000112 "the URL for an ontology term tracker issue, such as https://github.com/monarch-initiative/mondo/issues/7588"@en ;
-                obo:IAO_0000115 "A URL for a request or discussion of an ontology term."@en ;
+                obo:IAO_0000112 "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"@en ,
+                                "the URL for an ontology term tracker issue, such as https://github.com/monarch-initiative/mondo/issues/7588"@en ;
+                obo:IAO_0000114 obo:IAO_0000125 ;
+                obo:IAO_0000115 "A URL for a request or discussion of an ontology term."@en ,
+                                "An IRI or similar locator for a request or discussion of an ontology term."@en ;
+                obo:IAO_0000117 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
                 obo:IAO_0000119 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en ;
                 rdfs:label "term tracker item"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0100001
 obo:IAO_0100001 rdf:type owl:AnnotationProperty ;
+                obo:IAO_0000114 obo:IAO_0000125 ;
                 obo:IAO_0000115 "Use on obsolete terms, relating the term to another term that can be used as a substitute"@en ;
+                obo:IAO_0000117 "Person:Alan Ruttenberg"@en ;
                 obo:IAO_0000119 "Person:Alan Ruttenberg"@en ;
                 rdfs:label "term replaced by"@en .
 
@@ -178,6 +187,7 @@ swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
 oboInOwl:hasDbXref rdf:type owl:AnnotationProperty ;
                    obo:IAO_0000112 "disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) \"NCIT:C41009\"^^xsd:string" ;
                    obo:IAO_0000115 "An annotation property that links an ontology entity or a statement to a prefixed identifier or URI." ;
+                   obo:IAO_0000233 <https://github.com/information-artifact-ontology/ontology-metadata/issues/123> ;
                    rdfs:label "has cross-reference" .
 
 
@@ -185,6 +195,7 @@ oboInOwl:hasDbXref rdf:type owl:AnnotationProperty ;
 oboInOwl:hasExactSynonym rdf:type owl:AnnotationProperty ;
                          obo:IAO_0000115 "An alternative label for a class or property which has the exact same meaning than the preferred name/primary label." ;
                          obo:IAO_0000117 <http://orcid.org/0000-0001-5208-3432> ;
+                         obo:IAO_0000233 "https://github.com/information-artifact-ontology/ontology-metadata/issues/20" ;
                          rdfs:label "has exact synonym"@en .
 
 
@@ -192,11 +203,13 @@ oboInOwl:hasExactSynonym rdf:type owl:AnnotationProperty ;
 oboInOwl:hasRelatedSynonym rdf:type owl:AnnotationProperty ;
                            obo:IAO_0000115 "An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct." ;
                            obo:IAO_0000117 <http://orcid.org/0000-0001-5208-3432> ;
+                           obo:IAO_0000233 "https://github.com/information-artifact-ontology/ontology-metadata/issues/21" ;
                            rdfs:label "has related synonym"@en .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#label
-rdfs:label rdfs:label "label" .
+rdfs:label rdf:type owl:AnnotationProperty ;
+           rdfs:label "label" .
 
 
 ###  http://www.w3.org/2002/07/owl#qualifiedCardinality
@@ -213,6 +226,10 @@ skos:definition rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2004/02/skos/core#example
 skos:example rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/pmd/co/PMD_0000060
+co:PMD_0000060 rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -665,6 +682,7 @@ obo:IAO_0000419 rdf:type owl:ObjectProperty ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0000293
 obo:OBI_0000293 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf obo:RO_0000057 ;
                 owl:inverseOf obo:OBI_0000295 ;
                 rdfs:domain obo:COB_0000035 ;
                 obo:IAO_0000112 "see is_input_of example_of_usage"@en ;
@@ -680,6 +698,7 @@ obo:OBI_0000293 rdf:type owl:ObjectProperty ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0000295
 obo:OBI_0000295 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf obo:RO_0000056 ;
                 rdfs:range obo:COB_0000035 ;
                 obo:IAO_0000112 "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay"@en ;
                 obo:IAO_0000114 obo:IAO_0000122 ;
@@ -728,6 +747,7 @@ obo:OBI_0000312 rdf:type owl:ObjectProperty ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0001927
 obo:OBI_0001927 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf obo:IAO_0000136 ;
                 rdfs:domain obo:OBI_0001933 ;
                 obo:IAO_0000114 obo:IAO_0000123 ;
                 obo:IAO_0000115 "A relation between a value specification and an entity which the specification is about."@en ;
@@ -805,7 +825,8 @@ obo:RO_0000058 rdf:type owl:ObjectProperty ;
                           ] ;
                obo:IAO_0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en ,
                                "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en ;
-               obo:IAO_0000115 "A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes."@en ;
+               obo:IAO_0000115 "A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes."@en ,
+                               "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants."@en ;
                rdfs:label "is concretized as"@en .
 
 
@@ -819,7 +840,8 @@ obo:RO_0000059 rdf:type owl:ObjectProperty ;
                rdfs:range obo:BFO_0000031 ;
                obo:IAO_0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en ,
                                "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en ;
-               obo:IAO_0000115 "A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant."@en ;
+               obo:IAO_0000115 "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant."@en ,
+                               "A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant."@en ;
                rdfs:label "concretizes"@en .
 
 
@@ -1112,24 +1134,24 @@ obo:RO_0009007 rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/pmd/co/PMD_0000004
-<https://w3id.org/pmd/co/PMD_0000004> rdf:type owl:ObjectProperty ;
-                                      obo:IAO_0000114 obo:IAO_0000122 ;
-                                      obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
-                                      rdfs:label "is subject of"@en ;
-                                      skos:definition "Inverse of 'is about'."@en .
+co:PMD_0000004 rdf:type owl:ObjectProperty ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
+               rdfs:label "is subject of"@en ;
+               skos:definition "Inverse of 'is about'."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000077
-<https://w3id.org/pmd/co/PMD_0000077> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf <https://w3id.org/pmd/co/PMD_0000004> ;
-                                      obo:IAO_0000114 obo:IAO_0000122 ;
-                                      obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
-                                      rdfs:label "specified by value"@en ;
-                                      skos:definition "A relation between an entity and a value specification which is about this entity."@en .
+co:PMD_0000077 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf co:PMD_0000004 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Joerg Waitelonis" ;
+               rdfs:label "specified by value"@en ;
+               skos:definition "A relation between an entity and a value specification which is about this entity."@en .
 
 
 ###  https://w3id.org/pmd/co/PMD_0025999
-<https://w3id.org/pmd/co/PMD_0025999> rdf:type owl:ObjectProperty .
+co:PMD_0025999 rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000050
@@ -1360,8 +1382,8 @@ obo:OBI_0002135 rdf:type owl:DatatypeProperty ;
 
 
 ###  https://w3id.org/pmd/co/PMD_0000006
-<https://w3id.org/pmd/co/PMD_0000006> rdf:type owl:DatatypeProperty ;
-                                      rdfs:range xsd:double .
+co:PMD_0000006 rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:double .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000016
@@ -1374,7 +1396,7 @@ cryo:CRYO_0000016 rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000019
 cryo:CRYO_0000019 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf <https://w3id.org/pmd/co/PMD_0000006> ;
+                  rdfs:subPropertyOf co:PMD_0000006 ;
                   rdfs:domain [ rdf:type owl:Class ;
                                 owl:unionOf ( cryo:CRYO_0000020
                                               cryo:CRYO_0000022
@@ -1444,7 +1466,7 @@ cryo:CRYO_0000400 rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000401
 cryo:CRYO_0000401 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf <https://w3id.org/pmd/co/PMD_0000006> ;
+                  rdfs:subPropertyOf co:PMD_0000006 ;
                   rdfs:domain cryo:CRYO_0000024 ;
                   rdfs:label "has coordinate"@en ;
                   skos:definition "has coordinate is a top-level data property to point to values of x-, y-, and z-coordinates in cortesian coordinate system"@en .
@@ -1900,7 +1922,8 @@ obo:COB_0000035 rdf:type owl:Class ;
                                   owl:onProperty obo:BFO_0000055 ;
                                   owl:someValuesFrom obo:OBI_0000260
                                 ] ;
-                owl:disjointWith obo:GO_0008150 ;
+                owl:disjointWith obo:COB_0000083 ,
+                                 obo:GO_0008150 ;
                 rdfs:label "completely executed planned process"@en .
 
 
@@ -2074,7 +2097,8 @@ obo:IAO_0000100 rdf:type owl:Class ;
                 obo:IAO_0000116 "2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn't for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type"@en ,
                                 "2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction." ;
                 obo:IAO_0000119 "group:OBI"@en ;
-                rdfs:label "homogenous data collection"@en .
+                rdfs:label "data set"@en ,
+                           "homogenous data collection"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000104
@@ -2246,12 +2270,19 @@ obo:OBI_0000011 rdf:type owl:Class ;
                                 "We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some objectives is a planned process." ;
                 obo:IAO_0000117 "Bjoern Peters" ;
                 obo:IAO_0000119 "branch derived" ;
+                obo:IAO_0000232 "6/11/9: Edited at workshop. Used to include: is initiated by an agent" ,
+                                "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)" ;
+                obo:IAO_0100001 obo:COB_0000035 ;
                 rdfs:label "obsolete planned process" .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0000067
 obo:OBI_0000067 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000023 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000052 ;
+                                  owl:someValuesFrom obo:BFO_0000040
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty obo:BFO_0000054 ;
                                   owl:allValuesFrom obo:OBI_0000070
@@ -2263,6 +2294,7 @@ obo:OBI_0000067 rdf:type owl:Class ;
                                 "examples of features that could be described in an evaluant: quality.... e.g. \"contains 10 pg/ml IL2\", or \"no glucose detected\")"@en ;
                 obo:IAO_0000117 "GROUP:  Role Branch" ;
                 obo:IAO_0000119 "OBI" ;
+                obo:IAO_0000232 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term." ;
                 rdfs:label "evaluant role"@en .
 
 
@@ -2283,6 +2315,35 @@ obo:OBI_0000070 rdf:type owl:Class ;
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty obo:BFO_0000055 ;
                                   owl:someValuesFrom obo:OBI_0000067
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:OBI_0000293 ;
+                                  owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty obo:RO_0000087 ;
+                                                                              owl:someValuesFrom obo:OBI_0000067
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:OBI_0000299 ;
+                                  owl:someValuesFrom [ owl:intersectionOf ( obo:IAO_0000027
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty obo:IAO_0000136 ;
+                                                                              owl:someValuesFrom [ owl:intersectionOf ( obo:BFO_0000040
+                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                          owl:onProperty obo:RO_0000087 ;
+                                                                                                                          owl:someValuesFrom obo:OBI_0000067
+                                                                                                                        ]
+                                                                                                                      ) ;
+                                                                                                   rdf:type owl:Class
+                                                                                                 ]
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
                                 ] ;
                 obo:IAO_0000112 "Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house." ;
                 obo:IAO_0000114 obo:IAO_0000122 ;
@@ -2304,6 +2365,7 @@ obo:OBI_0000202 rdf:type owl:Class ;
                                 "Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable representing investigations run by robot scientists such as ADAM (King et al, Science, 2009)" ;
                 obo:IAO_0000117 "GROUP:  Role Branch"@en ;
                 obo:IAO_0000119 "OBI"@en ;
+                obo:IAO_0000232 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term." ;
                 rdfs:label "investigation agent role" .
 
 
@@ -2350,7 +2412,11 @@ for now."""@en ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0000260
 obo:OBI_0000260 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000017 ;
+                rdfs:subClassOf obo:BFO_0000017 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000059 ;
+                                  owl:someValuesFrom obo:IAO_0000104
+                                ] ;
                 obo:IAO_0000112 "The plan of researcher X to perform an experiment according to a protocol." ;
                 obo:IAO_0000114 obo:IAO_0000125 ;
                 obo:IAO_0000115 "A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a completely executed planned process."@en ;
@@ -2375,7 +2441,19 @@ obo:OBI_0000379 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0000571
 obo:OBI_0000571 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000023 ;
+                rdfs:subClassOf obo:BFO_0000023 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000052 ;
+                                  owl:someValuesFrom obo:BFO_0000040
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000052 ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( obo:NCBITaxon_9606
+                                                                     obo:OBI_0000245
+                                                                   )
+                                                     ]
+                                ] ;
                 obo:IAO_0000112 "With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role.  With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role.  With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role." ;
                 obo:IAO_0000114 obo:IAO_0000123 ;
                 obo:IAO_0000115 "Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process."@en ;
@@ -2386,7 +2464,23 @@ obo:OBI_0000571 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0000835
 obo:OBI_0000835 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000040 ;
+                owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                             owl:unionOf ( obo:NCBITaxon_9606
+                                                                           obo:OBI_0000245
+                                                                         )
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:RO_0000087 ;
+                                                             owl:someValuesFrom obo:OBI_0000571
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf obo:BFO_0000040 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:OBI_0000571
+                                ] ;
                 obo:IAO_0000114 obo:IAO_0000123 ;
                 obo:IAO_0000115 "A person or organization that has a manufacturer role."@en ;
                 rdfs:label "manufacturer" .
@@ -2519,23 +2613,28 @@ obo:UO_1000185 rdf:type owl:Class ;
 
 
 ###  https://w3id.org/pmd/co/PMD_0000663
-<https://w3id.org/pmd/co/PMD_0000663> rdf:type owl:Class .
+co:PMD_0000663 rdf:type owl:Class ;
+               rdfs:subClassOf co:PMD_0020003 ;
+               rdfs:label "crystallite"@en ,
+                          "kristallit"@de ;
+               skos:altLabel "Korn"@de ,
+                             "grain"@en ;
+               skos:definition "A crystal grain is a crystal that is part of a polycrystal."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020003
-<https://w3id.org/pmd/co/PMD_0020003> rdf:type owl:Class .
+co:PMD_0020003 rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000030 ;
+               obo:IAO_0000114 obo:IAO_0000122 ;
+               obo:IAO_0000117 "PERSON: Philipp von Hartrott" ;
+               rdfs:label "crystal"@en ;
+               skos:definition "A crystal is an object that has a quality \"crystal structure\"."@en ;
+               co:PMD_0000060 "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/co/PMD_0020197
-<https://w3id.org/pmd/co/PMD_0020197> rdf:type owl:Class ;
-                                      rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                        owl:onProperty obo:BFO_0000050 ;
-                                                        owl:someValuesFrom cryo:CRYO_0000001
-                                                      ] ,
-                                                      [ rdf:type owl:Restriction ;
-                                                        owl:onProperty obo:RO_0001015 ;
-                                                        owl:someValuesFrom obo:CHEBI_33250
-                                                      ] .
+co:PMD_0020197 rdf:type owl:Class .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000000
@@ -2554,7 +2653,7 @@ cryo:CRYO_0000001 rdf:type owl:Class ;
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0001015 ;
-                                    owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0020003>
+                                    owl:someValuesFrom co:PMD_0020003
                                   ] ;
                   rdfs:comment """TODO: 
 1. check if located in is meant to be used this way
@@ -2665,7 +2764,7 @@ cryo:CRYO_0000012 rdf:type owl:Class ;
 cryo:CRYO_0000013 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000145 ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty <https://w3id.org/pmd/co/PMD_0025999> ;
+                                    owl:onProperty co:PMD_0025999 ;
                                     owl:someValuesFrom cryo:CRYO_0000011
                                   ] ;
                   rdfs:comment "TODO add symbol annotation property" ;
@@ -2702,12 +2801,12 @@ cryo:CRYO_0000017 rdf:type owl:Class ;
                   rdfs:subClassOf cryo:CRYO_0000000 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
-                                    owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0020197>
+                                    owl:someValuesFrom cryo:CRYO_0000405
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass <https://w3id.org/pmd/co/PMD_0020197>
+                                    owl:onClass cryo:CRYO_0000405
                                   ] ;
                   rdfs:label "primitive unit cell"@en ;
                   skos:definition "primitive unit cell is a unit cell that contains only single lattice point and has the smallest possible unit cell volume."@en .
@@ -2799,14 +2898,14 @@ cryo:CRYO_0000026 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000019 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000080 ;
-                                    owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0020003>
+                                    owl:someValuesFrom co:PMD_0020003
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                    owl:onProperty co:PMD_0000077 ;
                                     owl:someValuesFrom cryo:CRYO_0000028
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                    owl:onProperty co:PMD_0000077 ;
                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                     owl:onClass cryo:CRYO_0000028
                                   ] ;
@@ -2822,7 +2921,7 @@ cryo:CRYO_0000027 rdf:type owl:Class ;
                                                            owl:someValuesFrom cryo:CRYO_0000001
                                                          ]
                                                          [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                           owl:onProperty co:PMD_0000077 ;
                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                            owl:onClass cryo:CRYO_0000036
                                                          ]
@@ -2834,7 +2933,7 @@ cryo:CRYO_0000027 rdf:type owl:Class ;
                                     owl:someValuesFrom cryo:CRYO_0000001
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                    owl:onProperty co:PMD_0000077 ;
                                     owl:someValuesFrom cryo:CRYO_0000036
                                   ] ;
                   rdfs:label "lattice centering"@en ;
@@ -2908,7 +3007,7 @@ cryo:CRYO_0000041 rdf:type owl:Class ;
                                                                                                                            owl:onProperty obo:RO_0000086 ;
                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                                                                      [ rdf:type owl:Restriction ;
-                                                                                                                                                                       owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                                                                       owl:onProperty co:PMD_0000077 ;
                                                                                                                                                                        owl:hasValue cryo:CRYO_0000035
                                                                                                                                                                      ]
                                                                                                                                                                    ) ;
@@ -2927,7 +3026,7 @@ cryo:CRYO_0000041 rdf:type owl:Class ;
                                                                                owl:onProperty obo:RO_0000086 ;
                                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                                            owl:hasValue cryo:CRYO_0000035
                                                                                                                          ]
                                                                                                                        ) ;
@@ -2955,7 +3054,7 @@ cryo:CRYO_0000042 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000019 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000080 ;
-                                    owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0000663>
+                                    owl:someValuesFrom co:PMD_0000663
                                   ] ;
                   rdfs:label "grain orientation"@en ;
                   skos:definition """Grain orientation is an intensive quality of grains in material's microstructure, which describes the crystallographic orientation in respect to the external (sample's) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grsins with similar crystallographic orientations.
@@ -2969,7 +3068,7 @@ cryo:CRYO_0000047 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000043
                                                                                                          ]
                                                                                                        ) ;
@@ -2980,7 +3079,7 @@ cryo:CRYO_0000047 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000029
                                                                                                          ]
                                                                                                        ) ;
@@ -2995,7 +3094,7 @@ cryo:CRYO_0000047 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000043
                                                                               ]
                                                                             ) ;
@@ -3012,7 +3111,7 @@ cryo:CRYO_0000048 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000043
                                                                                                          ]
                                                                                                        ) ;
@@ -3023,7 +3122,7 @@ cryo:CRYO_0000048 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000030
                                                                                                          ]
                                                                                                        ) ;
@@ -3038,7 +3137,7 @@ cryo:CRYO_0000048 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000043
                                                                               ]
                                                                             ) ;
@@ -3094,7 +3193,7 @@ cryo:CRYO_0000103 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000046
                                                                                                          ]
                                                                                                        ) ;
@@ -3105,7 +3204,7 @@ cryo:CRYO_0000103 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000030
                                                                                                          ]
                                                                                                        ) ;
@@ -3120,7 +3219,7 @@ cryo:CRYO_0000103 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000046
                                                                               ]
                                                                             ) ;
@@ -3137,7 +3236,7 @@ cryo:CRYO_0000118 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000046
                                                                                                          ]
                                                                                                        ) ;
@@ -3148,7 +3247,7 @@ cryo:CRYO_0000118 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000031
                                                                                                          ]
                                                                                                        ) ;
@@ -3163,7 +3262,7 @@ cryo:CRYO_0000118 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000046
                                                                               ]
                                                                             ) ;
@@ -3184,7 +3283,7 @@ cryo:CRYO_0000119 rdf:type owl:Class ;
                                                                                                                            owl:onProperty obo:RO_0000086 ;
                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                                                                      [ rdf:type owl:Restriction ;
-                                                                                                                                                                       owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                                                                       owl:onProperty co:PMD_0000077 ;
                                                                                                                                                                        owl:hasValue cryo:CRYO_0000029
                                                                                                                                                                      ]
                                                                                                                                                                    ) ;
@@ -3203,7 +3302,7 @@ cryo:CRYO_0000119 rdf:type owl:Class ;
                                                                                owl:onProperty obo:RO_0000086 ;
                                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                                            owl:hasValue cryo:CRYO_0000029
                                                                                                                          ]
                                                                                                                        ) ;
@@ -3234,7 +3333,7 @@ cryo:CRYO_0000120 rdf:type owl:Class ;
                                                                                                                            owl:onProperty obo:RO_0000086 ;
                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                                                                      [ rdf:type owl:Restriction ;
-                                                                                                                                                                       owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                                                                       owl:onProperty co:PMD_0000077 ;
                                                                                                                                                                        owl:hasValue cryo:CRYO_0000030
                                                                                                                                                                      ]
                                                                                                                                                                    ) ;
@@ -3253,7 +3352,7 @@ cryo:CRYO_0000120 rdf:type owl:Class ;
                                                                                owl:onProperty obo:RO_0000086 ;
                                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                                            owl:hasValue cryo:CRYO_0000030
                                                                                                                          ]
                                                                                                                        ) ;
@@ -3284,7 +3383,7 @@ cryo:CRYO_0000121 rdf:type owl:Class ;
                                                                                                                            owl:onProperty obo:RO_0000086 ;
                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                                                                      [ rdf:type owl:Restriction ;
-                                                                                                                                                                       owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                                                                       owl:onProperty co:PMD_0000077 ;
                                                                                                                                                                        owl:hasValue cryo:CRYO_0000031
                                                                                                                                                                      ]
                                                                                                                                                                    ) ;
@@ -3303,7 +3402,7 @@ cryo:CRYO_0000121 rdf:type owl:Class ;
                                                                                owl:onProperty obo:RO_0000086 ;
                                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                                            owl:hasValue cryo:CRYO_0000031
                                                                                                                          ]
                                                                                                                        ) ;
@@ -3334,7 +3433,7 @@ cryo:CRYO_0000122 rdf:type owl:Class ;
                                                                                                                            owl:onProperty obo:RO_0000086 ;
                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                                                                      [ rdf:type owl:Restriction ;
-                                                                                                                                                                       owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                                                                       owl:onProperty co:PMD_0000077 ;
                                                                                                                                                                        owl:hasValue cryo:CRYO_0000032
                                                                                                                                                                      ]
                                                                                                                                                                    ) ;
@@ -3353,7 +3452,7 @@ cryo:CRYO_0000122 rdf:type owl:Class ;
                                                                                owl:onProperty obo:RO_0000086 ;
                                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                                            owl:hasValue cryo:CRYO_0000032
                                                                                                                          ]
                                                                                                                        ) ;
@@ -3384,7 +3483,7 @@ cryo:CRYO_0000123 rdf:type owl:Class ;
                                                                                                                            owl:onProperty obo:RO_0000086 ;
                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                                                                      [ rdf:type owl:Restriction ;
-                                                                                                                                                                       owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                                                                       owl:onProperty co:PMD_0000077 ;
                                                                                                                                                                        owl:hasValue cryo:CRYO_0000033
                                                                                                                                                                      ]
                                                                                                                                                                    ) ;
@@ -3403,7 +3502,7 @@ cryo:CRYO_0000123 rdf:type owl:Class ;
                                                                                owl:onProperty obo:RO_0000086 ;
                                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                                            owl:hasValue cryo:CRYO_0000033
                                                                                                                          ]
                                                                                                                        ) ;
@@ -3481,7 +3580,7 @@ cryo:CRYO_0000129 rdf:type owl:Class ;
                                                                                                                            owl:onProperty obo:RO_0000086 ;
                                                                                                                            owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                                                                      [ rdf:type owl:Restriction ;
-                                                                                                                                                                       owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                                                                       owl:onProperty co:PMD_0000077 ;
                                                                                                                                                                        owl:hasValue cryo:CRYO_0000034
                                                                                                                                                                      ]
                                                                                                                                                                    ) ;
@@ -3500,7 +3599,7 @@ cryo:CRYO_0000129 rdf:type owl:Class ;
                                                                                owl:onProperty obo:RO_0000086 ;
                                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                                            owl:hasValue cryo:CRYO_0000034
                                                                                                                          ]
                                                                                                                        ) ;
@@ -3527,7 +3626,7 @@ cryo:CRYO_0000131 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000043
                                                                                                          ]
                                                                                                        ) ;
@@ -3538,7 +3637,7 @@ cryo:CRYO_0000131 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000031
                                                                                                          ]
                                                                                                        ) ;
@@ -3553,7 +3652,7 @@ cryo:CRYO_0000131 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000043
                                                                               ]
                                                                             ) ;
@@ -3570,7 +3669,7 @@ cryo:CRYO_0000132 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000044
                                                                                                          ]
                                                                                                        ) ;
@@ -3581,7 +3680,7 @@ cryo:CRYO_0000132 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000031
                                                                                                          ]
                                                                                                        ) ;
@@ -3596,7 +3695,7 @@ cryo:CRYO_0000132 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000044
                                                                               ]
                                                                             ) ;
@@ -3613,7 +3712,7 @@ cryo:CRYO_0000133 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000045
                                                                                                          ]
                                                                                                        ) ;
@@ -3624,7 +3723,7 @@ cryo:CRYO_0000133 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000031
                                                                                                          ]
                                                                                                        ) ;
@@ -3639,7 +3738,7 @@ cryo:CRYO_0000133 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000045
                                                                               ]
                                                                             ) ;
@@ -3656,7 +3755,7 @@ cryo:CRYO_0000134 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000045
                                                                                                          ]
                                                                                                        ) ;
@@ -3667,7 +3766,7 @@ cryo:CRYO_0000134 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000035
                                                                                                          ]
                                                                                                        ) ;
@@ -3682,7 +3781,7 @@ cryo:CRYO_0000134 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000045
                                                                               ]
                                                                             ) ;
@@ -3699,7 +3798,7 @@ cryo:CRYO_0000135 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000044
                                                                                                          ]
                                                                                                        ) ;
@@ -3710,7 +3809,7 @@ cryo:CRYO_0000135 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000035
                                                                                                          ]
                                                                                                        ) ;
@@ -3725,7 +3824,7 @@ cryo:CRYO_0000135 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000044
                                                                               ]
                                                                             ) ;
@@ -3742,7 +3841,7 @@ cryo:CRYO_0000136 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000043
                                                                                                          ]
                                                                                                        ) ;
@@ -3753,7 +3852,7 @@ cryo:CRYO_0000136 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000035
                                                                                                          ]
                                                                                                        ) ;
@@ -3768,7 +3867,7 @@ cryo:CRYO_0000136 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000043
                                                                               ]
                                                                             ) ;
@@ -3785,7 +3884,7 @@ cryo:CRYO_0000137 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000043
                                                                                                          ]
                                                                                                        ) ;
@@ -3796,7 +3895,7 @@ cryo:CRYO_0000137 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000034
                                                                                                          ]
                                                                                                        ) ;
@@ -3811,7 +3910,7 @@ cryo:CRYO_0000137 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000043
                                                                               ]
                                                                             ) ;
@@ -3828,7 +3927,7 @@ cryo:CRYO_0000138 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000043
                                                                                                          ]
                                                                                                        ) ;
@@ -3839,7 +3938,7 @@ cryo:CRYO_0000138 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000033
                                                                                                          ]
                                                                                                        ) ;
@@ -3854,7 +3953,7 @@ cryo:CRYO_0000138 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000043
                                                                               ]
                                                                             ) ;
@@ -3871,7 +3970,7 @@ cryo:CRYO_0000139 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000043
                                                                                                          ]
                                                                                                        ) ;
@@ -3882,7 +3981,7 @@ cryo:CRYO_0000139 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000032
                                                                                                          ]
                                                                                                        ) ;
@@ -3897,7 +3996,7 @@ cryo:CRYO_0000139 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000043
                                                                               ]
                                                                             ) ;
@@ -3914,7 +4013,7 @@ cryo:CRYO_0000140 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000044
                                                                                                          ]
                                                                                                        ) ;
@@ -3925,7 +4024,7 @@ cryo:CRYO_0000140 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000032
                                                                                                          ]
                                                                                                        ) ;
@@ -3940,7 +4039,7 @@ cryo:CRYO_0000140 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000027
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000044
                                                                               ]
                                                                             ) ;
@@ -3955,7 +4054,7 @@ cryo:CRYO_0000141 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000019 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000080 ;
-                                    owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0020003>
+                                    owl:someValuesFrom co:PMD_0020003
                                   ] ;
                   rdfs:label "space group"@en ;
                   skos:definition "space group is a quality of some crystal  that defines the symmetry combining all point group symmetries with all lattice translation symmetries"@en .
@@ -4015,7 +4114,7 @@ cryo:CRYO_0000379 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000035
                                                                                                          ]
                                                                                                        ) ;
@@ -4031,7 +4130,7 @@ cryo:CRYO_0000379 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000035
                                                                               ]
                                                                             ) ;
@@ -4048,7 +4147,7 @@ cryo:CRYO_0000380 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000029
                                                                                                          ]
                                                                                                        ) ;
@@ -4064,7 +4163,7 @@ cryo:CRYO_0000380 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000029
                                                                               ]
                                                                             ) ;
@@ -4081,7 +4180,7 @@ cryo:CRYO_0000381 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000030
                                                                                                          ]
                                                                                                        ) ;
@@ -4097,7 +4196,7 @@ cryo:CRYO_0000381 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000030
                                                                               ]
                                                                             ) ;
@@ -4114,7 +4213,7 @@ cryo:CRYO_0000382 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000031
                                                                                                          ]
                                                                                                        ) ;
@@ -4130,7 +4229,7 @@ cryo:CRYO_0000382 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000031
                                                                               ]
                                                                             ) ;
@@ -4147,7 +4246,7 @@ cryo:CRYO_0000383 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000032
                                                                                                          ]
                                                                                                        ) ;
@@ -4163,7 +4262,7 @@ cryo:CRYO_0000383 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000032
                                                                               ]
                                                                             ) ;
@@ -4180,7 +4279,7 @@ cryo:CRYO_0000384 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000033
                                                                                                          ]
                                                                                                        ) ;
@@ -4196,7 +4295,7 @@ cryo:CRYO_0000384 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000033
                                                                               ]
                                                                             ) ;
@@ -4213,7 +4312,7 @@ cryo:CRYO_0000385 rdf:type owl:Class ;
                                                                owl:onProperty obo:RO_0000086 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                                                          [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                                           owl:onProperty co:PMD_0000077 ;
                                                                                                            owl:hasValue cryo:CRYO_0000034
                                                                                                          ]
                                                                                                        ) ;
@@ -4229,7 +4328,7 @@ cryo:CRYO_0000385 rdf:type owl:Class ;
                                     owl:onProperty obo:RO_0000086 ;
                                     owl:someValuesFrom [ owl:intersectionOf ( cryo:CRYO_0000390
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://w3id.org/pmd/co/PMD_0000077> ;
+                                                                                owl:onProperty co:PMD_0000077 ;
                                                                                 owl:hasValue cryo:CRYO_0000034
                                                                               ]
                                                                             ) ;
@@ -4255,7 +4354,7 @@ cryo:CRYO_0000387 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000019 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000080 ;
-                                    owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0020003>
+                                    owl:someValuesFrom co:PMD_0020003
                                   ] ;
                   rdfs:label "point group"@en ;
                   rdfs:seeAlso "https://www.math.ru.nl/~souvi/papers/zkrist09.pdf" ;
@@ -4312,6 +4411,38 @@ cryo:CRYO_0000392 rdf:type owl:Class ;
                   rdfs:label "lattice system value"@en ;
                   skos:definition """lattice system value is a categorical value specification which describes the grouping of
 lattice system based on the point group symmetries of their empty translational frameworks. The specific values are triclinic, monoclinic, orthorhombic, tetragonal, rhombohedral, hexagonal, and cubic."""@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000405
+cryo:CRYO_0000405 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000147
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:BFO_0000050 ;
+                                                               owl:someValuesFrom cryo:CRYO_0000001
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0001015 ;
+                                                               owl:someValuesFrom obo:CHEBI_33250
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf obo:BFO_0000147 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom cryo:CRYO_0000001
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0001015 ;
+                                    owl:someValuesFrom obo:CHEBI_33250
+                                  ] ;
+                  rdfs:comment """Add axioms to PMDco (owl:tOP --> location of /located in)
+1. 'solid solution' and ('has member' some 
+('pure substance' and ('has part' some 
+(entity and (owl:topObjectProperty some 'lattice point'))) and ('has role' some 'solute role')))
+2. owl:topObjectProperty some 'lattice point'""" ;
+                  rdfs:label "lattice point"@en ;
+                  skos:definition "A lattice point is a fiat point that represents a position in a crystal lattice at which structural entities are regularly arranged."@en .
 
 
 #################################################################
