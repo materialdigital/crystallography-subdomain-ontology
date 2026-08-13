@@ -179,6 +179,7 @@ Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000387>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000390>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000392>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000405>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000406>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
@@ -600,6 +601,38 @@ Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000394>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000395>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000396>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000397>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000407>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000408>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000409>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000410>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000411>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000412>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000413>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000414>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000415>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000416>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000417>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000418>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000419>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000420>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000421>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000422>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000423>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000424>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000425>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000426>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000427>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000428>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000429>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000430>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000431>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000432>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000433>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000434>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000435>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000436>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000437>))
+Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/CRYO_0000438>))
 Declaration(NamedIndividual(<https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
@@ -620,6 +653,7 @@ Declaration(AnnotationProperty(<http://swrl.stanford.edu/ontologies/3.3/swrla.ow
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
+Declaration(AnnotationProperty(rdfs:label))
 Declaration(AnnotationProperty(owl:qualifiedCardinality))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
@@ -707,19 +741,27 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000119> "def
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000232> (curator note)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000232> "An administrative note of use for a curator but of no use for a user"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000232> "PERSON:Alan Ruttenberg"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000232> "curator note"@en)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000233> (term tracker item)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000233> "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000233> "the URL for an ontology term tracker issue, such as https://github.com/monarch-initiative/mondo/issues/7588"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/IAO_0000125>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000233> "A URL for a request or discussion of an ontology term."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000233> "An IRI or similar locator for a request or discussion of an ontology term."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000233> "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000233> "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000233> "term tracker item"@en)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0100001> (term replaced by)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/obo/IAO_0000125>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0100001> "Use on obsolete terms, relating the term to another term that can be used as a substitute"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0100001> "Person:Alan Ruttenberg"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0100001> "Person:Alan Ruttenberg"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0100001> "term replaced by"@en)
 
@@ -745,18 +787,21 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) \"NCIT:C41009\"^^xsd:string")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://github.com/information-artifact-ontology/ontology-metadata/issues/123>)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "has cross-reference")
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (has exact synonym)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://orcid.org/0000-0001-5208-3432>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "https://github.com/information-artifact-ontology/ontology-metadata/issues/20")
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has exact synonym"@en)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> (has related synonym)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://orcid.org/0000-0001-5208-3432>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "https://github.com/information-artifact-ontology/ontology-metadata/issues/21")
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "has related synonym"@en)
 
 # Annotation Property: rdfs:label (label)
@@ -1148,6 +1193,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000293> "PERSON: Larry Hunter")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000293> "PERSON: Melanie Coutot")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000293> "has specified input"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/RO_0000057>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000295>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/COB_0000035>)
 
@@ -1159,6 +1205,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000295> "Alan Ruttenberg"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000295> "PERSON:Bjoern Peters")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000295> "is specified input of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/RO_0000056>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/COB_0000035>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has specified output)
@@ -1200,6 +1247,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0001927> <http://purl.obolibrary.org/obo/IAO_0000123>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001927> "A relation between a value specification and an entity which the specification is about."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001927> "specifies value of")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0001927> <http://purl.obolibrary.org/obo/IAO_0000136>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0001927> <http://purl.obolibrary.org/obo/OBI_0001933>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0001938> (has value specification)
@@ -1259,6 +1307,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000058> "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000058> "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000058> "A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000058> "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000058> "is concretized as"@en)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000058> <http://purl.obolibrary.org/obo/RO_0000059>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0000058> <http://purl.obolibrary.org/obo/BFO_0000031>)
@@ -1268,6 +1317,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000058> ObjectUnionOf(<h
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000059> "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000059> "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000059> "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000059> "A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000059> "concretizes"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0000059> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000020>))
@@ -2070,6 +2120,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000203> <http://purl.obolibrary.
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000035> "completely executed planned process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0000035> <http://purl.obolibrary.org/obo/COB_0000082>)
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000260>))
+DisjointClasses(<http://purl.obolibrary.org/obo/COB_0000035> <http://purl.obolibrary.org/obo/COB_0000083>)
 DisjointClasses(<http://purl.obolibrary.org/obo/COB_0000035> <http://purl.obolibrary.org/obo/GO_0008150>)
 
 # Class: <http://purl.obolibrary.org/obo/COB_0000082> (planned process)
@@ -2103,7 +2154,6 @@ of this, different, term."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000003> "2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000003> "measurement unit label"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000003> <http://purl.obolibrary.org/obo/IAO_0000009>)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000003> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000005> (objective specification)
 
@@ -2143,7 +2193,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000010> "software"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000027> "Data items include counts of things, analyte concentrations, and statistical summaries."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
@@ -2220,7 +2270,9 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000100> "2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn't for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000100> "2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000100> "group:OBI"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000100> "data set"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000100> "homogenous data collection"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000100> <http://purl.obolibrary.org/obo/IAO_0000027>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000100> <http://purl.obolibrary.org/obo/IAO_0001000>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000104> (plan specification)
@@ -2335,6 +2387,9 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000011> "We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some objectives is a planned process.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000011> "Bjoern Peters")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000011> "branch derived")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OBI_0000011> "6/11/9: Edited at workshop. Used to include: is initiated by an agent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OBI_0000011> "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/COB_0000035>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "obsolete planned process")
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000067> (evaluant role)
@@ -2346,8 +2401,10 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000067> "examples of features that could be described in an evaluant: quality.... e.g. \"contains 10 pg/ml IL2\", or \"no glucose detected\")"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000067> "GROUP:  Role Branch")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000067> "OBI")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OBI_0000067> "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000067> "evaluant role"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000067> <http://purl.obolibrary.org/obo/BFO_0000023>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/BFO_0000040>))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000067> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/OBI_0000070>))
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000070> (assay)
@@ -2363,6 +2420,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000070> "ass
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> <http://purl.obolibrary.org/obo/COB_0000035>)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/BFO_0000040>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000027>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OBI_0000067>))
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000067>))))
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000067>))))))
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/BFO_0000040>))
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/IAO_0000027>))
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000202> (investigation agent role)
 
@@ -2373,6 +2434,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000202> "Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable representing investigations run by robot scientists such as ADAM (King et al, Science, 2009)")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000202> "GROUP:  Role Branch"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000202> "OBI"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OBI_0000202> "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000202> "investigation agent role")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000202> <http://purl.obolibrary.org/obo/BFO_0000023>)
 
@@ -2426,6 +2488,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000260> "branch derived"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000260> "plan"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000260> <http://purl.obolibrary.org/obo/BFO_0000017>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/IAO_0000104>))
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000379> (mechanical function)
 
@@ -2448,13 +2511,17 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000571> "OBI")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000571> "manufacturer role")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000571> <http://purl.obolibrary.org/obo/BFO_0000023>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000571> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/BFO_0000040>))
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000571> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>)))
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000835> (manufacturer)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000835> <http://purl.obolibrary.org/obo/IAO_0000123>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000835> "A person or organization that has a manufacturer role."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000835> "manufacturer")
+EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000835> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000571>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000835> <http://purl.obolibrary.org/obo/BFO_0000040>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000835> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000571>))
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0001930> (categorical value specification)
 
@@ -3093,6 +3160,12 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000405> "Add a
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000405> "lattice point"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000405> "A lattice point is a fiat point that represents a position in a crystal lattice at which structural entities are regularly arranged."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000405> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000147> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/cryo/CRYO_0000001>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001015> <http://purl.obolibrary.org/obo/CHEBI_33250>)))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000406> (point group type)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000406> "point group type"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000406> "Point group type is a categorical value specification of a point group. It includes all the 32 point groups."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000406> <http://purl.obolibrary.org/obo/OBI_0001930>)
 
 
 ############################
@@ -5417,6 +5490,198 @@ ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000142> <https://w3id.org/pmd/cr
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000145> <https://w3id.org/pmd/cryo/CRYO_0000397> "10"^^xsd:integer)
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000397> "P 1 2/m 1")
 DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000147> <https://w3id.org/pmd/cryo/CRYO_0000397> "-P 2y")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000407> (-1 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000407> "-1 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000407>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000407> "-1")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000408> (-3 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000408> "-3 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000408>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000408> "-3")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000409> (-3m point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000409> "-3m point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000409>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000409> "-3m")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000410> (-4 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000410> "-4 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000410>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000410> "-4")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000411> (-42m point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000411> "-42m point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000411>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000411> "-42m")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000412> (-43m point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000412> "-43m point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000412>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000412> "-43m")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000413> (-6 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000413> "-6 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000413>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000413> "-6")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000414> (-62m point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000414> "-62m point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000414>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000414> "-62m")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000415> (1 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000415> "1 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000415>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000415> "1")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000416> (2 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000416> "2 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000416>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000416> "2")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000417> (2/m point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000417> "2/m point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000417>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000417> "2/m")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000418> (222 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000418> "222 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000418>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000418> "222")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000419> (23 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000419> "23 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000419>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000419> "23")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000420> (3 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000420> "3 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000420>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000420> "3")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000421> (32 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000421> "32 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000421>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000421> "32")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000422> (3m point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000422> "3m point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000422>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000422> "3m")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000423> (4 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000423> "4 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000423>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000423> "4")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000424> (4/m point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000424> "4/m point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000424>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000424> "4/m")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000425> (4/mmm point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000425> "4/mmm point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000425>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000425> "4/mmm")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000426> (422 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000426> "422 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000426>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000426> "422")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000427> (432 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000427> "432 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000427>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000427> "432")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000428> (4mm point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000428> "4mm point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000428>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000428> "4mm")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000429> (6 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000429> "6 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000429>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000429> "6")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000430> (6/m point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000430> "6/m point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000430>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000430> "6/m")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000431> (6/mmm point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000431> "6/mmm point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000431>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000431> "6/mmm")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000432> (622 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000432> "622 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000432>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000432> "622")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000433> (6mm point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000433> "6mm point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000433>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000433> "6mm")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000434> (m point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000434> "m point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000434>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000434> "m")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000435> (m-3 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000435> "m-3 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000435>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000435> "m-3")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000436> (m-3m point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000436> "m-3m point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000436>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000436> "m-3m")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000437> (mm2 point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000437> "mm2 point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000437>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000437> "mm2")
+
+# Individual: <https://w3id.org/pmd/cryo/CRYO_0000438> (mmm point group)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000438> "mmm point group")
+ClassAssertion(<https://w3id.org/pmd/cryo/CRYO_0000406> <https://w3id.org/pmd/cryo/CRYO_0000438>)
+DataPropertyAssertion(<https://w3id.org/pmd/cryo/CRYO_0000146> <https://w3id.org/pmd/cryo/CRYO_0000438> "mmm")
 
 # Individual: <https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000> ((0-10))
 
