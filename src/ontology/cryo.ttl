@@ -18,13 +18,13 @@
 @base <https://w3id.org/pmd/cryo.ttl> .
 
 <https://w3id.org/pmd/cryo.ttl> rdf:type owl:Ontology ;
-                                 owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-08-08/cryo.ttl> ;
+                                 owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-08-13/cryo.ttl> ;
                                  dcterms:creator <https://orcid.org/0000-0003-0744-8855> ,
                                                  <https://orcid.org/0009-0003-1503-4422> ;
                                  dcterms:description "CryO is an subdomain-level ontology based on the PMdco 3.x. It's primary goal to formally describe symmetries of crystal lattices and provide a semantic foundation for the annotation of .cif files." ;
                                  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                  dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x" ;
-                                 owl:versionInfo "2026-08-08" .
+                                 owl:versionInfo "2026-08-13" .
 
 #################################################################
 #    Annotation properties
@@ -4434,6 +4434,13 @@ cryo:CRYO_0000405 rdf:type owl:Class ;
                   skos:definition "A lattice point is a fiat point that represents a position in a crystal lattice at which structural entities are regularly arranged."@en .
 
 
+###  https://w3id.org/pmd/cryo/CRYO_0000406
+cryo:CRYO_0000406 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:OBI_0001930 ;
+                  rdfs:label "point group type"@en ;
+                  skos:definition "Point group type is a categorical value specification of a point group. It includes all the 32 point groups."@en .
+
+
 #################################################################
 #    Individuals
 #################################################################
@@ -7088,6 +7095,230 @@ cryo:CRYO_0000397 rdf:type owl:NamedIndividual ,
                   cryo:CRYO_0000146 "P 1 2/m 1" ;
                   cryo:CRYO_0000147 "-P 2y" ;
                   rdfs:label "-P 2y space group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000407
+cryo:CRYO_0000407 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "-1" ;
+                  rdfs:label "-1 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000408
+cryo:CRYO_0000408 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "-3" ;
+                  rdfs:label "-3 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000409
+cryo:CRYO_0000409 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "-3m" ;
+                  rdfs:label "-3m point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000410
+cryo:CRYO_0000410 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "-4" ;
+                  rdfs:label "-4 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000411
+cryo:CRYO_0000411 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "-42m" ;
+                  rdfs:label "-42m point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000412
+cryo:CRYO_0000412 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "-43m" ;
+                  rdfs:label "-43m point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000413
+cryo:CRYO_0000413 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "-6" ;
+                  rdfs:label "-6 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000414
+cryo:CRYO_0000414 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "-62m" ;
+                  rdfs:label "-62m point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000415
+cryo:CRYO_0000415 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "1" ;
+                  rdfs:label "1 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000416
+cryo:CRYO_0000416 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "2" ;
+                  rdfs:label "2 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000417
+cryo:CRYO_0000417 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "2/m" ;
+                  rdfs:label "2/m point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000418
+cryo:CRYO_0000418 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "222" ;
+                  rdfs:label "222 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000419
+cryo:CRYO_0000419 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "23" ;
+                  rdfs:label "23 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000420
+cryo:CRYO_0000420 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "3" ;
+                  rdfs:label "3 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000421
+cryo:CRYO_0000421 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "32" ;
+                  rdfs:label "32 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000422
+cryo:CRYO_0000422 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "3m" ;
+                  rdfs:label "3m point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000423
+cryo:CRYO_0000423 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "4" ;
+                  rdfs:label "4 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000424
+cryo:CRYO_0000424 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "4/m" ;
+                  rdfs:label "4/m point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000425
+cryo:CRYO_0000425 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "4/mmm" ;
+                  rdfs:label "4/mmm point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000426
+cryo:CRYO_0000426 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "422" ;
+                  rdfs:label "422 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000427
+cryo:CRYO_0000427 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "432" ;
+                  rdfs:label "432 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000428
+cryo:CRYO_0000428 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "4mm" ;
+                  rdfs:label "4mm point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000429
+cryo:CRYO_0000429 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "6" ;
+                  rdfs:label "6 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000430
+cryo:CRYO_0000430 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "6/m" ;
+                  rdfs:label "6/m point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000431
+cryo:CRYO_0000431 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "6/mmm" ;
+                  rdfs:label "6/mmm point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000432
+cryo:CRYO_0000432 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "622" ;
+                  rdfs:label "622 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000433
+cryo:CRYO_0000433 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "6mm" ;
+                  rdfs:label "6mm point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000434
+cryo:CRYO_0000434 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "m" ;
+                  rdfs:label "m point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000435
+cryo:CRYO_0000435 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "m-3" ;
+                  rdfs:label "m-3 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000436
+cryo:CRYO_0000436 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "m-3m" ;
+                  rdfs:label "m-3m point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000437
+cryo:CRYO_0000437 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "mm2" ;
+                  rdfs:label "mm2 point group" .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000438
+cryo:CRYO_0000438 rdf:type owl:NamedIndividual ,
+                           cryo:CRYO_0000406 ;
+                  cryo:CRYO_0000146 "mmm" ;
+                  rdfs:label "mmm point group" .
 
 
 ###  https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000
