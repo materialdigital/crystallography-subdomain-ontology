@@ -339,6 +339,16 @@
         <skos:altLabel xml:lang="en">lattice type</skos:altLabel>
         <skos:definition xml:lang="en">lattice system is a quality of crystal lattice that defines its symmetry based on the 7 categories originating from its point group symmetries of their empty translational frameworks</skos:definition>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000406 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:label xml:lang="en">point group type</rdfs:label>
+        <skos:definition xml:lang="en">Point group type is a categorical value specification of a point group. It includes all the 32 point groups.</skos:definition>
+    </owl:Class>
 </rdf:RDF>
 
 

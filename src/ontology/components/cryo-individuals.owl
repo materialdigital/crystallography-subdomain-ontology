@@ -3555,6 +3555,201 @@
         <cryo:CRYO_0000016>(0-10)</cryo:CRYO_0000016>
         <rdfs:label xml:lang="en">(0-10)</rdfs:label>
     </owl:NamedIndividual>
+
+
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000422">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3m point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3m</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000423">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000414">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-62m point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-62m</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000413">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-6 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-6</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000438">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmm point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmm</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000408">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-3 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-3</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000427">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">432 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">432</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000418">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">222 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">222</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000429">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000434">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000407">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000416">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000417">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2/m point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2/m</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000419">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000432">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">622 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">622</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000437">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mm2 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mm2</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000428">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4mm point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4mm</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000430">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/m point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/m</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000431">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/mmm point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/mmm</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000410">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-4 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-4</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000415">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000409">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-3m point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-3m</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000436">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m-3m point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m-3m</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000411">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-42m point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-42m</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000421">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000426">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">422 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">422</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000435">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m-3 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m-3</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000425">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4/mmm point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4/mmm</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000424">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4/m point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4/m</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000412">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-43m point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-43m</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000420">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</cryo:CRYO_0000146>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000433">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000406"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6mm point group</rdfs:label>
+    <cryo:CRYO_0000146 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6mm</cryo:CRYO_0000146>
+  </rdf:Description>
+
 </rdf:RDF>
 
 
