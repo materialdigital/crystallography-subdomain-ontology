@@ -1579,12 +1579,13 @@ SubObjectPropertyOf(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000050> (is tetragonal)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000050> "is tetragonal"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000050> "is tetragonal is a object property  for the inference of family of directions/planes Miller indices notation under tetragonal symmetry. The class crystallographic entity in tetragonal system carries a Self restriction \"is tetragonal\""@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000050> <https://w3id.org/pmd/cryo/CRYO_0000053>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000051> (denoted by family under tetragonal symmetry)
 
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000051> "'denoted by' o 'member of' o 'has Miller indices family under tetragonal symmetry'")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000051> "denoted by family under tetragonal symmetry"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000051> "denoted by family under tetragonal symmetry is an object property between a crystallographic entity in tetragonal system, i.e., plane or direction, and the family of Miller indices.")
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000051> <https://w3id.org/pmd/cryo/CRYO_0000164>)
 ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000051> <https://w3id.org/pmd/cryo/CRYO_0000122>)
 
@@ -1596,61 +1597,74 @@ SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000052> owl:topObjectProper
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000053> (has symmetry)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000053> "DO NOT USE DIRECTLY
+For taxonomy purpose only")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000053> "has symmetry"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000053> "has symmetry is a top-level object property which gathers other symmetry/lattice system-specific object properties for the inference of family of directions/planes Miller indices notation"@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000053> owl:topObjectProperty)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000054> (is triclinic)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000054> "is triclinic"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000054> "is triclinic is a object property  for the inference of family of directions/planes Miller indices notation under triclinic symmetry. The class crystallographic entity in triclinic system carries a Self restriction \"is triclinic\""@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000054> <https://w3id.org/pmd/cryo/CRYO_0000053>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000055> (is monoclinic)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000055> "is monoclinic"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000055> "is monoclinic is a object property  for the inference of family of directions/planes Miller indices notation under monoclinic symmetry. The class crystallographic entity in monoclinic system carries a Self restriction \"is monoclinic\""@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000055> <https://w3id.org/pmd/cryo/CRYO_0000053>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000056> (is orthorhombic)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000056> "is orthorhombic"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000056> "is orthorhombic is a object property  for the inference of family of directions/planes Miller indices notation under orthorhombic symmetry. The class crystallographic entity in orthorhombic system carries a Self restriction \"is orthorhombic\""@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000056> <https://w3id.org/pmd/cryo/CRYO_0000053>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000057> (is rhombohedral)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000057> "is rhombohedral"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000057> "is rhombohedral is a object property  for the inference of family of directions/planes Miller indices notation under rhombohedral symmetry. The class crystallographic entity in rhombohedral system carries a Self restriction \"is rhombohedral\""@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000057> <https://w3id.org/pmd/cryo/CRYO_0000053>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000058> (is hexagonal)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000058> "is hexagonal"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000058> "is hexagonal is a object property  for the inference of family of directions/planes Miller indices notation under hexagonal symmetry. The class crystallographic entity in hexagonal system carries a Self restriction \"is hexagonal\""@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000058> <https://w3id.org/pmd/cryo/CRYO_0000053>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000059> (denoted by family under triclinic symmetry)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000059> "denoted by family under triclinic symmetry"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000059> "denoted by family under triclinic symmetry is an object property between a crystallographic entity in triclinic system, i.e., plane or direction, and the family of Miller indices."@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000059> <https://w3id.org/pmd/cryo/CRYO_0000164>)
 ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000059> <https://w3id.org/pmd/cryo/CRYO_0000119>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000060> (denoted by family under monoclinic symmetry)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000060> "denoted by family under monoclinic symmetry"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000060> "denoted by family under monoclinic symmetry is an object property between a crystallographic entity in monoclinic system, i.e., plane or direction, and the family of Miller indices."@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000060> <https://w3id.org/pmd/cryo/CRYO_0000164>)
 ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000060> <https://w3id.org/pmd/cryo/CRYO_0000120>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000061> (denoted by family under orthorhombic symmetry)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000061> "denoted by family under orthorhombic symmetry"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000061> "denoted by family under orthorhombic symmetry is an object property between a crystallographic entity in orthorhombic system, i.e., plane or direction, and the family of Miller indices."@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000061> <https://w3id.org/pmd/cryo/CRYO_0000164>)
 ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000061> <https://w3id.org/pmd/cryo/CRYO_0000121>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000062> (denoted by family under rhombohedral symmetry)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000062> "denoted by family under rhombohedral symmetry"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000062> "denoted by family under rhombohedral symmetry is an object property between a crystallographic entity in rhombohedral system, i.e., plane or direction, and the family of Miller indices."@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000062> <https://w3id.org/pmd/cryo/CRYO_0000164>)
 ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000062> <https://w3id.org/pmd/cryo/CRYO_0000123>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000063> (denoted by family under hexagonal symmetry)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000063> "denoted by family under hexagonal symmetry"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000063> "denoted by family under hexagonal symmetry is an object property between a crystallographic entity in hexagonal system, i.e., plane or direction, and the family of Miller indices."@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000063> <https://w3id.org/pmd/cryo/CRYO_0000164>)
 ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000063> <https://w3id.org/pmd/cryo/CRYO_0000129>)
 
@@ -1686,19 +1700,25 @@ ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000162> ObjectIntersection
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000164> (denoted by family)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000164> "Intentially not a sub-property of \"denoted by\" as this rescticts using \"denoted by\" in property chains of its sub-properties")
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000164> "The sub-properties are inferrable through corresponding property chains")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000164> "denoted by family"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000164> "denoted by family is a top-level object property between a crystallographic entity, i.e., plane or direction, and the family of Miller indices"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/cryo/CRYO_0000164> "Consider a (011) crystallographic plane in cubic lattice, i.e., the instance of the plane is denoted by (011) instance. The instance of the plane is be inferred to be of type \"crystallographic entity in cubic system\" and carries \"is cubic\" reftexive triple. The (011) is a member of {110} family of Miller indices. The property chain \"is cubic + denoted by + member of\" will infer that the plane is denoted by {110} in a cubic lattice."@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000164> owl:topObjectProperty)
 ObjectPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000164> ObjectUnionOf(<https://w3id.org/pmd/cryo/CRYO_0000021> <https://w3id.org/pmd/cryo/CRYO_0000023>))
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000168> (denoted by family under cubic symmetry)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000168> "denoted by family under cubic symmetry")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000168> "denoted by family under cubic symmetry is an object property between a crystallographic entity in cubic system, i.e., plane or direction, and the family of Miller indices."@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000168> <https://w3id.org/pmd/cryo/CRYO_0000164>)
 ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000168> <https://w3id.org/pmd/cryo/CRYO_0000041>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000170> (is cubic)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000170> "is cubic")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000170> "is cubic is a object property  for the inference of family of directions/planes Miller indices notation. The class crystallographic entity in cubic  system carries a Self restriction \"is cubic\""@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000170> <https://w3id.org/pmd/cryo/CRYO_0000053>)
 
 
@@ -2193,7 +2213,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000010> "software"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000027> "Data items include counts of things, analyte concentrations, and statistical summaries."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
@@ -2577,6 +2597,10 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0302911> "validation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0302911> <http://purl.obolibrary.org/obo/COB_0000035>)
 
+# Class: <http://purl.obolibrary.org/obo/UO_0000000> (<http://purl.obolibrary.org/obo/UO_0000000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/UO_0000000> <http://purl.obolibrary.org/obo/IAO_0000003>)
+
 # Class: <http://purl.obolibrary.org/obo/UO_0000019> (angstrom)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIST:NIST") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000019> "A length unit which is equal to 10 [-10] m.")
@@ -2873,10 +2897,9 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000039> <https://w3id.org/pmd/cryo/C
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000041> (crystallographic entity in cubic system)
 
-AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000041> "'immaterial entity' and ('part of' some 
-('crystal lattice' and ('has quality' some 
-('crystal system' and ('specified by value' value cubic)))))")
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000041> "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000041> "crystallographic entity in cubic system"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000041> "Crystallographic entity in cubic system is an immaterial entity that either itself has cubic lattice system or is a part of crystal lattice with cubic lattice system."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000041> ObjectUnionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000035>)))))) ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000035>))))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000041> <http://purl.obolibrary.org/obo/BFO_0000141>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000041> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000170>))
@@ -2884,7 +2907,7 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000041> ObjectHasSelf(<https://w3id.
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000042> (grain orientation)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000042> "grain orientation"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000042> "Grain orientation is an intensive quality of grains in material's microstructure, which describes the crystallographic orientation in respect to the external (sample's) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grsins with similar crystallographic orientations.
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000042> "Grain orientation is an intensive quality of grains in material's microstructure, which describes the crystallographic orientation in respect to the external (sample's) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grains with similar crystallographic orientations.
 Grain orientation can be specified by either texture fibers or texture components. When several grains exhibit similar orientations, then the material exhibits a specific crystallographic texture."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000042> <http://purl.obolibrary.org/obo/BFO_0000019>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0000663>))
@@ -2892,14 +2915,14 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000042> ObjectSomeValuesFrom(<http:/
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000047> (bravais lattice triclinic primitive)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000047> "bravais lattice triclinic primitive"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000047> "Bravais lattice triclinic primitive is a crystal lattice with triclinic lattice system and primitive lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000047> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000029>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000047> <https://w3id.org/pmd/cryo/CRYO_0000380>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000048> (bravais lattice monoclinic primitive)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000048> "bravais lattice monoclinic primitive"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000048> "Bravais lattice monoclinic primitive is a crystal lattice with monoclinic lattice system and primitive lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000048> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000030>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000048> <https://w3id.org/pmd/cryo/CRYO_0000381>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000049> (tetragonal equivalency assertion)
 
@@ -2911,8 +2934,9 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000049> ObjectHasSelf(<https://w3id.
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000075> (Euler angles)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000075> "By aligning coordinate system of every crystal in the sample to the sample's coordinate system, anisotropy of material's properties can be investigated.")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000075> "Euler angles"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000075> "In crystallography Euler angles are three angles which describe orientation of a sinlge crystal in respect to the sample's coordinate system. By aligning coordinate system of every crystal in the sample to the sample's coordinate system, anisotropy of material's properties can be investigated."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000075> "Euler angles are three angles which describe orientation of a sinlge crystal in respect to the sample's coordinate system"@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000075> <http://purl.obolibrary.org/obo/IAO_0000027>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0001927> <https://w3id.org/pmd/cryo/CRYO_0000042>))
 
@@ -2926,46 +2950,56 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000079> <https://w3id.org/pmd/cryo/C
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000103> (bravais lattice monoclinic base-centered)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000103> "bravais lattice monoclinic base-centered"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000103> "Bravais lattice monoclinic base-centered is a crystal lattice with monoclinic lattice system and base-centered lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000103> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000046>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000030>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000103> <https://w3id.org/pmd/cryo/CRYO_0000381>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000118> (bravais lattice orthorhombic base-centered)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000118> "bravais lattice orthorhombic base-centered"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000118> "Bravais lattice orthorhombic base-centered is a crystal lattice with orthorhombic lattice system and base-centered lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000118> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000046>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000031>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000118> <https://w3id.org/pmd/cryo/CRYO_0000382>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000119> (crystallographic entity in triclinic system)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000119> "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000119> "crystallographic entity in triclinic system"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000119> "Crystallographic entity in triclinic system is an immaterial entity that either itself has triclinic lattice system or is a part of crystal lattice with triclinic lattice system."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000119> ObjectUnionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000029>)))))) ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000029>))))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000119> <http://purl.obolibrary.org/obo/BFO_0000141>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000119> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000054>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000120> (crystallographic entity in monoclinic system)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000120> "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000120> "crystallographic entity in monoclinic system"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000120> "Crystallographic entity in monoclinic system is an immaterial entity that either itself has monoclinic lattice system or is a part of crystal lattice with monoclinic lattice system."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000120> ObjectUnionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000030>)))))) ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000030>))))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000120> <http://purl.obolibrary.org/obo/BFO_0000141>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000120> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000055>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000121> (crystallographic entity in orthorhombic system)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000121> "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000121> "crystallographic entity in orthorhombic system"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000121> "Crystallographic entity in orthorhombic system is an immaterial entity that either itself has orthorhombic lattice system or is a part of crystal lattice with orthorhombic lattice system."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000121> ObjectUnionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000031>)))))) ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000031>))))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000121> <http://purl.obolibrary.org/obo/BFO_0000141>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000121> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000056>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000122> (crystallographic entity in tetragonal system)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000122> "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000122> "crystallographic entity in tetragonal system"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000122> "Crystallographic entity in tetragonal system is an immaterial entity that either itself has tetragonal lattice system or is a part of crystal lattice with tetragonal lattice system."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000122> ObjectUnionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000032>)))))) ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000032>))))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000122> <http://purl.obolibrary.org/obo/BFO_0000141>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000122> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000050>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000123> (crystallographic entity in rhombohedral system)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000123> "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000123> "crystallographic entity in rhombohedral system"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000123> "Crystallographic entity in rhombohedral system is an immaterial entity that either itself has rhombohedral lattice system or is a part of crystal lattice with rhombohedral lattice system."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000123> ObjectUnionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000033>)))))) ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000033>))))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000123> <http://purl.obolibrary.org/obo/BFO_0000141>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000123> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000057>))
@@ -2983,7 +3017,9 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000124> ObjectSomeValuesFrom(<https:
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000129> (crystallographic entity in hexagonal system)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000129> "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000129> "crystallographic entity in hexagonal system"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000129> "Crystallographic entity in hexagonal system is an immaterial entity that either itself has hexagonal lattice system or is a part of crystal lattice with hexagonal lattice system."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000129> ObjectUnionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000034>)))))) ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000034>))))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000129> <http://purl.obolibrary.org/obo/BFO_0000141>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000129> ObjectHasSelf(<https://w3id.org/pmd/cryo/CRYO_0000058>))
@@ -2991,62 +3027,63 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000129> ObjectHasSelf(<https://w3id.
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000131> (bravais lattice orthorhombic primitive)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000131> "bravais lattice orthorhombic primitive"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000131> "Bravais lattice orthorhombic primitive is a crystal lattice with orthorhombic lattice system and primitive lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000131> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000031>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000131> <https://w3id.org/pmd/cryo/CRYO_0000382>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000132> (bravais lattice orthorhombic body-centered)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000132> "bravais lattice orthorhombic body-centered"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000132> "Bravais lattice orthorhombic body-centered is a crystal lattice with orthorhombic lattice system and  body-centered lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000132> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000044>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000031>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000132> <https://w3id.org/pmd/cryo/CRYO_0000382>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000133> (bravais lattice orthorhombic face-centered)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000133> "bravais lattice orthorhombic face-centered"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000133> "Bravais lattice orthorhombic face-centered is a crystal lattice with orthorhombic lattice system and face-centered lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000133> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000045>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000031>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000133> <https://w3id.org/pmd/cryo/CRYO_0000382>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000134> (bravais lattice cubic face-centered)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000134> "bravais lattice cubic face-centered"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000134> "Bravais lattice cubic face-centered is a crystal lattice with cubic lattice system and face-centered lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000134> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000045>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000035>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000134> <https://w3id.org/pmd/cryo/CRYO_0000379>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000135> (bravais lattice cubic body-centered)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000135> "TODO maybe elaborate on what it means to be cubic and base-centered (using symmetry)")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000135> "bravais lattice cubic body-centered"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000135> "Bravais lattice cubic body-centered is a crystal lattice with cubic lattice system and body-centered lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000135> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000044>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000035>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000135> <https://w3id.org/pmd/cryo/CRYO_0000379>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000136> (bravais lattice cubic primitive)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000136> "bravais lattice cubic primitive"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000136> "Bravais lattice cubic primitive is a crystal lattice with cubic lattice system and primitive lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000136> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000035>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000136> <https://w3id.org/pmd/cryo/CRYO_0000379>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000137> (bravais lattice hexagonal primitive)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000137> "bravais lattice hexagonal primitive"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000137> "Bravais lattice hexagonal primitive is a crystal lattice with hexagonal lattice system and primitive lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000137> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000034>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000137> <https://w3id.org/pmd/cryo/CRYO_0000385>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000138> (bravais lattice rhombohedral primitive)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000138> "bravais lattice rhombohedral primitive"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000138> "Bravais lattice rhombohedral primitive is a crystal lattice with rhombohedral lattice system and primitive lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000138> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000033>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000138> <https://w3id.org/pmd/cryo/CRYO_0000384>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000139> (bravais lattice tetragonal primitive)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000139> "bravais lattice tetragonal primitive"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000139> "Bravais lattice tetragonal primitive is a crystal lattice with tetragonal lattice system and primitive lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000139> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000043>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000032>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000139> <https://w3id.org/pmd/cryo/CRYO_0000383>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000140> (bravais lattice tetragonal body-centered)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000140> "bravais lattice tetragonal body-centered"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000140> "Bravais lattice  tetragonal body-centered is a crystal lattice with tetragonal lattice system and  body-centered lattice centering."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000140> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000044>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000032>)))))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000140> <https://w3id.org/pmd/cryo/CRYO_0000383>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000141> (space group)
 
@@ -3078,43 +3115,52 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000143> ObjectHasSelf(<https://w3id.
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000379> (cubic crystal lattice)
 
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000379> "TODO think if these classes are really needed???")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000379> "cubic crystal lattice"@en)
+AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/cryo/CRYO_0000379> "true"^^xsd:boolean)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000379> "Cubic crystal lattice is a crystal lattice with cubic lattice system."@en)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000379> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000035>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000379> <https://w3id.org/pmd/cryo/CRYO_0000001>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000380> (triclinic crystal lattice)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000380> "triclinic crystal lattice"@en)
+AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/cryo/CRYO_0000380> "true"^^xsd:boolean)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000380> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000029>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000380> <https://w3id.org/pmd/cryo/CRYO_0000001>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000381> (monoclinic crystal lattice)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000381> "monoclinic crystal lattice"@en)
+AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/cryo/CRYO_0000381> "true"^^xsd:boolean)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000381> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000030>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000381> <https://w3id.org/pmd/cryo/CRYO_0000001>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000382> (orthomombic crystal lattice)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000382> "orthomombic crystal lattice"@en)
+AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/cryo/CRYO_0000382> "true"^^xsd:boolean)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000382> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000031>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000382> <https://w3id.org/pmd/cryo/CRYO_0000001>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000383> (tetragonal crystal lattice)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000383> "tetragonal crystal lattice"@en)
+AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/cryo/CRYO_0000383> "true"^^xsd:boolean)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000383> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000032>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000383> <https://w3id.org/pmd/cryo/CRYO_0000001>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000384> (rhombohedral crystal lattice)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000384> "rhombohedral crystal lattice"@en)
+AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/cryo/CRYO_0000384> "true"^^xsd:boolean)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000384> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000033>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000384> <https://w3id.org/pmd/cryo/CRYO_0000001>)
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000385> (hexagonal crystal lattice)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000385> "hexagonal crystal lattice"@en)
+AnnotationAssertion(owl:deprecated <https://w3id.org/pmd/cryo/CRYO_0000385> "true"^^xsd:boolean)
 EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000385> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000390> ObjectHasValue(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000034>)))))
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000385> <https://w3id.org/pmd/cryo/CRYO_0000001>)
 

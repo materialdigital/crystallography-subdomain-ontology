@@ -1,15 +1,29 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	1a5e4aeb-c56a-4328-a92c-cbd62d949919genid276
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	73630f69-8701-43bb-bdf5-6552284e7695genid276
 ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	1a5e4aeb-c56a-4328-a92c-cbd62d949919genid272
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	1a5e4aeb-c56a-4328-a92c-cbd62d949919genid426
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	1a5e4aeb-c56a-4328-a92c-cbd62d949919genid443
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid272
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	73630f69-8701-43bb-bdf5-6552284e7695genid426
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	73630f69-8701-43bb-bdf5-6552284e7695genid443
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	information content entity
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	tetragonal equivalency assertion
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	cubic equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	1a5e4aeb-c56a-4328-a92c-cbd62d949919genid618
+ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	73630f69-8701-43bb-bdf5-6552284e7695genid618
 ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	1a5e4aeb-c56a-4328-a92c-cbd62d949919genid614
+ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid614
+ERROR	deprecated_class_reference	cubic crystal lattice	rdfs:subClassOf	crystal lattice
+ERROR	deprecated_class_reference	cubic crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid619
+ERROR	deprecated_class_reference	triclinic crystal lattice	rdfs:subClassOf	crystal lattice
+ERROR	deprecated_class_reference	triclinic crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid627
+ERROR	deprecated_class_reference	monoclinic crystal lattice	rdfs:subClassOf	crystal lattice
+ERROR	deprecated_class_reference	monoclinic crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid635
+ERROR	deprecated_class_reference	orthomombic crystal lattice	rdfs:subClassOf	crystal lattice
+ERROR	deprecated_class_reference	orthomombic crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid643
+ERROR	deprecated_class_reference	tetragonal crystal lattice	rdfs:subClassOf	crystal lattice
+ERROR	deprecated_class_reference	tetragonal crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid651
+ERROR	deprecated_class_reference	rhombohedral crystal lattice	rdfs:subClassOf	crystal lattice
+ERROR	deprecated_class_reference	rhombohedral crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid659
+ERROR	deprecated_class_reference	hexagonal crystal lattice	rdfs:subClassOf	crystal lattice
+ERROR	deprecated_class_reference	hexagonal crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid667
 ERROR	deprecated_property_reference	symmetry equivalency assertion	under symmetry	blank node
 ERROR	deprecated_property_reference	Miller indices family of	owl:inverseOf	has Miller indices family
 WARN	missing_definition	unit cell	definition	
@@ -92,13 +106,6 @@ WARN	missing_definition	has Schoenflies symbol	definition
 WARN	missing_definition	denoted by family	definition	
 WARN	missing_definition	denoted by family under cubic symmetry	definition	
 WARN	missing_definition	is cubic	definition	
-WARN	missing_definition	cubic crystal lattice	definition	
-WARN	missing_definition	triclinic crystal lattice	definition	
-WARN	missing_definition	monoclinic crystal lattice	definition	
-WARN	missing_definition	orthomombic crystal lattice	definition	
-WARN	missing_definition	tetragonal crystal lattice	definition	
-WARN	missing_definition	rhombohedral crystal lattice	definition	
-WARN	missing_definition	hexagonal crystal lattice	definition	
 WARN	missing_definition	unit cell volume	definition	
 WARN	missing_definition	point group	definition	
 WARN	missing_definition	lattice system	definition	
@@ -120,4 +127,25 @@ WARN	missing_obsolete_label	has Miller indices family	label	has Miller indices f
 WARN	missing_obsolete_label	Miller indices family of	label	Miller indices family of@en
 WARN	missing_obsolete_label	under symmetry	label	under symmetry@en
 WARN	missing_obsolete_label	has Miller indices family under cubic symmetry	label	has Miller indices family under cubic symmetry@en
+WARN	missing_obsolete_label	cubic crystal lattice	label	cubic crystal lattice@en
+WARN	missing_obsolete_label	triclinic crystal lattice	label	triclinic crystal lattice@en
+WARN	missing_obsolete_label	monoclinic crystal lattice	label	monoclinic crystal lattice@en
+WARN	missing_obsolete_label	orthomombic crystal lattice	label	orthomombic crystal lattice@en
+WARN	missing_obsolete_label	tetragonal crystal lattice	label	tetragonal crystal lattice@en
+WARN	missing_obsolete_label	rhombohedral crystal lattice	label	rhombohedral crystal lattice@en
+WARN	missing_obsolete_label	hexagonal crystal lattice	label	hexagonal crystal lattice@en
+INFO	missing_superclass	bravais lattice triclinic primitive	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice monoclinic primitive	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice monoclinic base-centered	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice orthorhombic base-centered	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice orthorhombic primitive	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice orthorhombic body-centered	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice orthorhombic face-centered	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice cubic face-centered	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice cubic body-centered	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice cubic primitive	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice hexagonal primitive	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice rhombohedral primitive	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice tetragonal primitive	rdfs:subClassOf	
+INFO	missing_superclass	bravais lattice tetragonal body-centered	rdfs:subClassOf	
 INFO	missing_superclass	lattice point	rdfs:subClassOf	

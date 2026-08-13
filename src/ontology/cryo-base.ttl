@@ -142,7 +142,8 @@ co:PMD_0025999 rdf:type owl:ObjectProperty .
 ###  https://w3id.org/pmd/cryo/CRYO_0000050
 cryo:CRYO_0000050 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf cryo:CRYO_0000053 ;
-                  rdfs:label "is tetragonal"@en .
+                  rdfs:label "is tetragonal"@en ;
+                  skos:definition "is tetragonal is a object property  for the inference of family of directions/planes Miller indices notation under tetragonal symmetry. The class crystallographic entity in tetragonal system carries a Self restriction \"is tetragonal\""@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000051
@@ -154,8 +155,8 @@ cryo:CRYO_0000051 rdf:type owl:ObjectProperty ;
                                            obo:RO_0002350
                                            cryo:CRYO_0000050
                                          ) ;
-                  rdfs:comment "'denoted by' o 'member of' o 'has Miller indices family under tetragonal symmetry'" ;
-                  rdfs:label "denoted by family under tetragonal symmetry"@en .
+                  rdfs:label "denoted by family under tetragonal symmetry"@en ;
+                  skos:definition "denoted by family under tetragonal symmetry is an object property between a crystallographic entity in tetragonal system, i.e., plane or direction, and the family of Miller indices." .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000052
@@ -171,37 +172,45 @@ cryo:CRYO_0000052 rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/pmd/cryo/CRYO_0000053
 cryo:CRYO_0000053 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
-                  rdfs:label "has symmetry"@de .
+                  rdfs:comment """DO NOT USE DIRECTLY
+For taxonomy purpose only""" ;
+                  rdfs:label "has symmetry"@de ;
+                  skos:definition "has symmetry is a top-level object property which gathers other symmetry/lattice system-specific object properties for the inference of family of directions/planes Miller indices notation"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000054
 cryo:CRYO_0000054 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf cryo:CRYO_0000053 ;
-                  rdfs:label "is triclinic"@de .
+                  rdfs:label "is triclinic"@de ;
+                  skos:definition "is triclinic is a object property  for the inference of family of directions/planes Miller indices notation under triclinic symmetry. The class crystallographic entity in triclinic system carries a Self restriction \"is triclinic\""@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000055
 cryo:CRYO_0000055 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf cryo:CRYO_0000053 ;
-                  rdfs:label "is monoclinic"@de .
+                  rdfs:label "is monoclinic"@de ;
+                  skos:definition "is monoclinic is a object property  for the inference of family of directions/planes Miller indices notation under monoclinic symmetry. The class crystallographic entity in monoclinic system carries a Self restriction \"is monoclinic\""@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000056
 cryo:CRYO_0000056 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf cryo:CRYO_0000053 ;
-                  rdfs:label "is orthorhombic"@de .
+                  rdfs:label "is orthorhombic"@de ;
+                  skos:definition "is orthorhombic is a object property  for the inference of family of directions/planes Miller indices notation under orthorhombic symmetry. The class crystallographic entity in orthorhombic system carries a Self restriction \"is orthorhombic\""@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000057
 cryo:CRYO_0000057 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf cryo:CRYO_0000053 ;
-                  rdfs:label "is rhombohedral"@de .
+                  rdfs:label "is rhombohedral"@de ;
+                  skos:definition "is rhombohedral is a object property  for the inference of family of directions/planes Miller indices notation under rhombohedral symmetry. The class crystallographic entity in rhombohedral system carries a Self restriction \"is rhombohedral\""@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000058
 cryo:CRYO_0000058 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf cryo:CRYO_0000053 ;
-                  rdfs:label "is hexagonal"@de .
+                  rdfs:label "is hexagonal"@de ;
+                  skos:definition "is hexagonal is a object property  for the inference of family of directions/planes Miller indices notation under hexagonal symmetry. The class crystallographic entity in hexagonal system carries a Self restriction \"is hexagonal\""@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000059
@@ -213,7 +222,8 @@ cryo:CRYO_0000059 rdf:type owl:ObjectProperty ;
                                            obo:RO_0002350
                                            cryo:CRYO_0000054
                                          ) ;
-                  rdfs:label "denoted by family under triclinic symmetry"@en .
+                  rdfs:label "denoted by family under triclinic symmetry"@en ;
+                  skos:definition "denoted by family under triclinic symmetry is an object property between a crystallographic entity in triclinic system, i.e., plane or direction, and the family of Miller indices."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000060
@@ -225,7 +235,8 @@ cryo:CRYO_0000060 rdf:type owl:ObjectProperty ;
                                            obo:RO_0002350
                                            cryo:CRYO_0000055
                                          ) ;
-                  rdfs:label "denoted by family under monoclinic symmetry"@de .
+                  rdfs:label "denoted by family under monoclinic symmetry"@de ;
+                  skos:definition "denoted by family under monoclinic symmetry is an object property between a crystallographic entity in monoclinic system, i.e., plane or direction, and the family of Miller indices."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000061
@@ -237,7 +248,8 @@ cryo:CRYO_0000061 rdf:type owl:ObjectProperty ;
                                            obo:RO_0002350
                                            cryo:CRYO_0000056
                                          ) ;
-                  rdfs:label "denoted by family under orthorhombic symmetry"@de .
+                  rdfs:label "denoted by family under orthorhombic symmetry"@de ;
+                  skos:definition "denoted by family under orthorhombic symmetry is an object property between a crystallographic entity in orthorhombic system, i.e., plane or direction, and the family of Miller indices."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000062
@@ -249,7 +261,8 @@ cryo:CRYO_0000062 rdf:type owl:ObjectProperty ;
                                            obo:RO_0002350
                                            cryo:CRYO_0000057
                                          ) ;
-                  rdfs:label "denoted by family under rhombohedral symmetry"@de .
+                  rdfs:label "denoted by family under rhombohedral symmetry"@de ;
+                  skos:definition "denoted by family under rhombohedral symmetry is an object property between a crystallographic entity in rhombohedral system, i.e., plane or direction, and the family of Miller indices."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000063
@@ -261,7 +274,8 @@ cryo:CRYO_0000063 rdf:type owl:ObjectProperty ;
                                            obo:RO_0002350
                                            cryo:CRYO_0000058
                                          ) ;
-                  rdfs:label "denoted by family under hexagonal symmetry"@de .
+                  rdfs:label "denoted by family under hexagonal symmetry"@de ;
+                  skos:definition "denoted by family under hexagonal symmetry is an object property between a crystallographic entity in hexagonal system, i.e., plane or direction, and the family of Miller indices."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000152
@@ -320,7 +334,11 @@ cryo:CRYO_0000164 rdf:type owl:ObjectProperty ;
                                              cryo:CRYO_0000023
                                            )
                              ] ;
-                  rdfs:label "denoted by family"@en .
+                  rdfs:comment "Intentially not a sub-property of \"denoted by\" as this rescticts using \"denoted by\" in property chains of its sub-properties" ,
+                               "The sub-properties are inferrable through corresponding property chains" ;
+                  rdfs:label "denoted by family"@en ;
+                  skos:definition "denoted by family is a top-level object property between a crystallographic entity, i.e., plane or direction, and the family of Miller indices"@en ;
+                  skos:example "Consider a (011) crystallographic plane in cubic lattice, i.e., the instance of the plane is denoted by (011) instance. The instance of the plane is be inferred to be of type \"crystallographic entity in cubic system\" and carries \"is cubic\" reftexive triple. The (011) is a member of {110} family of Miller indices. The property chain \"is cubic + denoted by + member of\" will infer that the plane is denoted by {110} in a cubic lattice."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000168
@@ -331,13 +349,15 @@ cryo:CRYO_0000168 rdf:type owl:ObjectProperty ;
                                            obo:IAO_0000235
                                            obo:RO_0002350
                                          ) ;
-                  rdfs:label "denoted by family under cubic symmetry" .
+                  rdfs:label "denoted by family under cubic symmetry" ;
+                  skos:definition "denoted by family under cubic symmetry is an object property between a crystallographic entity in cubic system, i.e., plane or direction, and the family of Miller indices."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000170
 cryo:CRYO_0000170 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf cryo:CRYO_0000053 ;
-                  rdfs:label "is cubic" .
+                  rdfs:label "is cubic" ;
+                  skos:definition "is cubic is a object property  for the inference of family of directions/planes Miller indices notation. The class crystallographic entity in cubic  system carries a Self restriction \"is cubic\""@en .
 
 
 #################################################################
@@ -935,10 +955,9 @@ cryo:CRYO_0000041 rdf:type owl:Class ;
                                     owl:onProperty cryo:CRYO_0000170 ;
                                     owl:hasSelf "true"^^xsd:boolean
                                   ] ;
-                  rdfs:comment """'immaterial entity' and ('part of' some 
-('crystal lattice' and ('has quality' some 
-('crystal system' and ('specified by value' value cubic)))))""" ;
-                  rdfs:label "crystallographic entity in cubic system"@en .
+                  rdfs:comment "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences." ;
+                  rdfs:label "crystallographic entity in cubic system"@en ;
+                  skos:definition "Crystallographic entity in cubic system is an immaterial entity that either itself has cubic lattice system or is a part of crystal lattice with cubic lattice system."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000042
@@ -949,7 +968,7 @@ cryo:CRYO_0000042 rdf:type owl:Class ;
                                     owl:someValuesFrom co:PMD_0000663
                                   ] ;
                   rdfs:label "grain orientation"@en ;
-                  skos:definition """Grain orientation is an intensive quality of grains in material's microstructure, which describes the crystallographic orientation in respect to the external (sample's) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grsins with similar crystallographic orientations.
+                  skos:definition """Grain orientation is an intensive quality of grains in material's microstructure, which describes the crystallographic orientation in respect to the external (sample's) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grains with similar crystallographic orientations.
 Grain orientation can be specified by either texture fibers or texture components. When several grains exhibit similar orientations, then the material exhibits a specific crystallographic texture."""@en .
 
 
@@ -993,7 +1012,8 @@ cryo:CRYO_0000047 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice triclinic primitive"@en .
+                  rdfs:label "bravais lattice triclinic primitive"@en ;
+                  skos:definition "Bravais lattice triclinic primitive is a crystal lattice with triclinic lattice system and primitive lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000048
@@ -1036,7 +1056,8 @@ cryo:CRYO_0000048 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice monoclinic primitive"@en .
+                  rdfs:label "bravais lattice monoclinic primitive"@en ;
+                  skos:definition "Bravais lattice monoclinic primitive is a crystal lattice with monoclinic lattice system and primitive lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000049
@@ -1066,8 +1087,9 @@ cryo:CRYO_0000075 rdf:type owl:Class ;
                                     owl:onProperty obo:OBI_0001927 ;
                                     owl:someValuesFrom cryo:CRYO_0000042
                                   ] ;
+                  rdfs:comment "By aligning coordinate system of every crystal in the sample to the sample's coordinate system, anisotropy of material's properties can be investigated." ;
                   rdfs:label "Euler angles"@en ;
-                  skos:definition "In crystallography Euler angles are three angles which describe orientation of a sinlge crystal in respect to the sample's coordinate system. By aligning coordinate system of every crystal in the sample to the sample's coordinate system, anisotropy of material's properties can be investigated."@en .
+                  skos:definition "Euler angles are three angles which describe orientation of a sinlge crystal in respect to the sample's coordinate system"@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000079
@@ -1118,7 +1140,8 @@ cryo:CRYO_0000103 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice monoclinic base-centered"@en .
+                  rdfs:label "bravais lattice monoclinic base-centered"@en ;
+                  skos:definition "Bravais lattice monoclinic base-centered is a crystal lattice with monoclinic lattice system and base-centered lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000118
@@ -1161,7 +1184,8 @@ cryo:CRYO_0000118 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice orthorhombic base-centered"@en .
+                  rdfs:label "bravais lattice orthorhombic base-centered"@en ;
+                  skos:definition "Bravais lattice orthorhombic base-centered is a crystal lattice with orthorhombic lattice system and base-centered lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000119
@@ -1211,7 +1235,9 @@ cryo:CRYO_0000119 rdf:type owl:Class ;
                                     owl:onProperty cryo:CRYO_0000054 ;
                                     owl:hasSelf "true"^^xsd:boolean
                                   ] ;
-                  rdfs:label "crystallographic entity in triclinic system"@de .
+                  rdfs:comment "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences." ;
+                  rdfs:label "crystallographic entity in triclinic system"@de ;
+                  skos:definition "Crystallographic entity in triclinic system is an immaterial entity that either itself has triclinic lattice system or is a part of crystal lattice with triclinic lattice system."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000120
@@ -1261,7 +1287,9 @@ cryo:CRYO_0000120 rdf:type owl:Class ;
                                     owl:onProperty cryo:CRYO_0000055 ;
                                     owl:hasSelf "true"^^xsd:boolean
                                   ] ;
-                  rdfs:label "crystallographic entity in monoclinic system"@de .
+                  rdfs:comment "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences." ;
+                  rdfs:label "crystallographic entity in monoclinic system"@de ;
+                  skos:definition "Crystallographic entity in monoclinic system is an immaterial entity that either itself has monoclinic lattice system or is a part of crystal lattice with monoclinic lattice system."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000121
@@ -1311,7 +1339,9 @@ cryo:CRYO_0000121 rdf:type owl:Class ;
                                     owl:onProperty cryo:CRYO_0000056 ;
                                     owl:hasSelf "true"^^xsd:boolean
                                   ] ;
-                  rdfs:label "crystallographic entity in orthorhombic system"@de .
+                  rdfs:comment "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences." ;
+                  rdfs:label "crystallographic entity in orthorhombic system"@de ;
+                  skos:definition "Crystallographic entity in orthorhombic system is an immaterial entity that either itself has orthorhombic lattice system or is a part of crystal lattice with orthorhombic lattice system."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000122
@@ -1361,7 +1391,9 @@ cryo:CRYO_0000122 rdf:type owl:Class ;
                                     owl:onProperty cryo:CRYO_0000050 ;
                                     owl:hasSelf "true"^^xsd:boolean
                                   ] ;
-                  rdfs:label "crystallographic entity in tetragonal system"@de .
+                  rdfs:comment "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences." ;
+                  rdfs:label "crystallographic entity in tetragonal system"@de ;
+                  skos:definition "Crystallographic entity in tetragonal system is an immaterial entity that either itself has tetragonal lattice system or is a part of crystal lattice with tetragonal lattice system."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000123
@@ -1411,7 +1443,9 @@ cryo:CRYO_0000123 rdf:type owl:Class ;
                                     owl:onProperty cryo:CRYO_0000057 ;
                                     owl:hasSelf "true"^^xsd:boolean
                                   ] ;
-                  rdfs:label "crystallographic entity in rhombohedral system"@de .
+                  rdfs:comment "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences." ;
+                  rdfs:label "crystallographic entity in rhombohedral system"@de ;
+                  skos:definition "Crystallographic entity in rhombohedral system is an immaterial entity that either itself has rhombohedral lattice system or is a part of crystal lattice with rhombohedral lattice system."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000124
@@ -1508,7 +1542,9 @@ cryo:CRYO_0000129 rdf:type owl:Class ;
                                     owl:onProperty cryo:CRYO_0000058 ;
                                     owl:hasSelf "true"^^xsd:boolean
                                   ] ;
-                  rdfs:label "crystallographic entity in hexagonal system"@de .
+                  rdfs:comment "Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences." ;
+                  rdfs:label "crystallographic entity in hexagonal system"@de ;
+                  skos:definition "Crystallographic entity in hexagonal system is an immaterial entity that either itself has hexagonal lattice system or is a part of crystal lattice with hexagonal lattice system."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000131
@@ -1551,7 +1587,8 @@ cryo:CRYO_0000131 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice orthorhombic primitive"@en .
+                  rdfs:label "bravais lattice orthorhombic primitive"@en ;
+                  skos:definition "Bravais lattice orthorhombic primitive is a crystal lattice with orthorhombic lattice system and primitive lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000132
@@ -1594,7 +1631,8 @@ cryo:CRYO_0000132 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice orthorhombic body-centered"@en .
+                  rdfs:label "bravais lattice orthorhombic body-centered"@en ;
+                  skos:definition "Bravais lattice orthorhombic body-centered is a crystal lattice with orthorhombic lattice system and  body-centered lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000133
@@ -1637,7 +1675,8 @@ cryo:CRYO_0000133 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice orthorhombic face-centered"@en .
+                  rdfs:label "bravais lattice orthorhombic face-centered"@en ;
+                  skos:definition "Bravais lattice orthorhombic face-centered is a crystal lattice with orthorhombic lattice system and face-centered lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000134
@@ -1680,7 +1719,8 @@ cryo:CRYO_0000134 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice cubic face-centered"@en .
+                  rdfs:label "bravais lattice cubic face-centered"@en ;
+                  skos:definition "Bravais lattice cubic face-centered is a crystal lattice with cubic lattice system and face-centered lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000135
@@ -1723,7 +1763,9 @@ cryo:CRYO_0000135 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice cubic body-centered"@en .
+                  rdfs:comment "TODO maybe elaborate on what it means to be cubic and base-centered (using symmetry)" ;
+                  rdfs:label "bravais lattice cubic body-centered"@en ;
+                  skos:definition "Bravais lattice cubic body-centered is a crystal lattice with cubic lattice system and body-centered lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000136
@@ -1766,7 +1808,8 @@ cryo:CRYO_0000136 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice cubic primitive"@en .
+                  rdfs:label "bravais lattice cubic primitive"@en ;
+                  skos:definition "Bravais lattice cubic primitive is a crystal lattice with cubic lattice system and primitive lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000137
@@ -1809,7 +1852,8 @@ cryo:CRYO_0000137 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice hexagonal primitive"@en .
+                  rdfs:label "bravais lattice hexagonal primitive"@en ;
+                  skos:definition "Bravais lattice hexagonal primitive is a crystal lattice with hexagonal lattice system and primitive lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000138
@@ -1852,7 +1896,8 @@ cryo:CRYO_0000138 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice rhombohedral primitive"@en .
+                  rdfs:label "bravais lattice rhombohedral primitive"@en ;
+                  skos:definition "Bravais lattice rhombohedral primitive is a crystal lattice with rhombohedral lattice system and primitive lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000139
@@ -1895,7 +1940,8 @@ cryo:CRYO_0000139 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice tetragonal primitive"@en .
+                  rdfs:label "bravais lattice tetragonal primitive"@en ;
+                  skos:definition "Bravais lattice tetragonal primitive is a crystal lattice with tetragonal lattice system and primitive lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000140
@@ -1938,7 +1984,8 @@ cryo:CRYO_0000140 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "bravais lattice tetragonal body-centered"@en .
+                  rdfs:label "bravais lattice tetragonal body-centered"@en ;
+                  skos:definition "Bravais lattice  tetragonal body-centered is a crystal lattice with tetragonal lattice system and  body-centered lattice centering."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000141
@@ -2025,7 +2072,10 @@ cryo:CRYO_0000379 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "cubic crystal lattice"@en .
+                  rdfs:comment "TODO think if these classes are really needed???" ;
+                  rdfs:label "cubic crystal lattice"@en ;
+                  owl:deprecated "true"^^xsd:boolean ;
+                  skos:definition "Cubic crystal lattice is a crystal lattice with cubic lattice system."@en .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000380
@@ -2058,7 +2108,8 @@ cryo:CRYO_0000380 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "triclinic crystal lattice"@en .
+                  rdfs:label "triclinic crystal lattice"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000381
@@ -2091,7 +2142,8 @@ cryo:CRYO_0000381 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "monoclinic crystal lattice"@en .
+                  rdfs:label "monoclinic crystal lattice"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000382
@@ -2124,7 +2176,8 @@ cryo:CRYO_0000382 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "orthomombic crystal lattice"@en .
+                  rdfs:label "orthomombic crystal lattice"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000383
@@ -2157,7 +2210,8 @@ cryo:CRYO_0000383 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "tetragonal crystal lattice"@en .
+                  rdfs:label "tetragonal crystal lattice"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000384
@@ -2190,7 +2244,8 @@ cryo:CRYO_0000384 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "rhombohedral crystal lattice"@en .
+                  rdfs:label "rhombohedral crystal lattice"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000385
@@ -2223,7 +2278,8 @@ cryo:CRYO_0000385 rdf:type owl:Class ;
                                                          rdf:type owl:Class
                                                        ]
                                   ] ;
-                  rdfs:label "hexagonal crystal lattice"@en .
+                  rdfs:label "hexagonal crystal lattice"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000386

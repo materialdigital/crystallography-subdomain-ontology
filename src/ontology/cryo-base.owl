@@ -213,6 +213,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000050">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
         <rdfs:label xml:lang="en">is tetragonal</rdfs:label>
+        <skos:definition xml:lang="en">is tetragonal is a object property  for the inference of family of directions/planes Miller indices notation under tetragonal symmetry. The class crystallographic entity in tetragonal system carries a Self restriction &quot;is tetragonal&quot;</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -228,8 +229,8 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
             <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000050"/>
         </owl:propertyChainAxiom>
-        <rdfs:comment>&apos;denoted by&apos; o &apos;member of&apos; o &apos;has Miller indices family under tetragonal symmetry&apos;</rdfs:comment>
         <rdfs:label xml:lang="en">denoted by family under tetragonal symmetry</rdfs:label>
+        <skos:definition>denoted by family under tetragonal symmetry is an object property between a crystallographic entity in tetragonal system, i.e., plane or direction, and the family of Miller indices.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -252,7 +253,10 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000053">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>DO NOT USE DIRECTLY
+For taxonomy purpose only</rdfs:comment>
         <rdfs:label xml:lang="de">has symmetry</rdfs:label>
+        <skos:definition xml:lang="en">has symmetry is a top-level object property which gathers other symmetry/lattice system-specific object properties for the inference of family of directions/planes Miller indices notation</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -262,6 +266,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000054">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
         <rdfs:label xml:lang="de">is triclinic</rdfs:label>
+        <skos:definition xml:lang="en">is triclinic is a object property  for the inference of family of directions/planes Miller indices notation under triclinic symmetry. The class crystallographic entity in triclinic system carries a Self restriction &quot;is triclinic&quot;</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -271,6 +276,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000055">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
         <rdfs:label xml:lang="de">is monoclinic</rdfs:label>
+        <skos:definition xml:lang="en">is monoclinic is a object property  for the inference of family of directions/planes Miller indices notation under monoclinic symmetry. The class crystallographic entity in monoclinic system carries a Self restriction &quot;is monoclinic&quot;</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -280,6 +286,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000056">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
         <rdfs:label xml:lang="de">is orthorhombic</rdfs:label>
+        <skos:definition xml:lang="en">is orthorhombic is a object property  for the inference of family of directions/planes Miller indices notation under orthorhombic symmetry. The class crystallographic entity in orthorhombic system carries a Self restriction &quot;is orthorhombic&quot;</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -289,6 +296,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000057">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
         <rdfs:label xml:lang="de">is rhombohedral</rdfs:label>
+        <skos:definition xml:lang="en">is rhombohedral is a object property  for the inference of family of directions/planes Miller indices notation under rhombohedral symmetry. The class crystallographic entity in rhombohedral system carries a Self restriction &quot;is rhombohedral&quot;</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -298,6 +306,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000058">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
         <rdfs:label xml:lang="de">is hexagonal</rdfs:label>
+        <skos:definition xml:lang="en">is hexagonal is a object property  for the inference of family of directions/planes Miller indices notation under hexagonal symmetry. The class crystallographic entity in hexagonal system carries a Self restriction &quot;is hexagonal&quot;</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -314,6 +323,7 @@
             <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000054"/>
         </owl:propertyChainAxiom>
         <rdfs:label xml:lang="en">denoted by family under triclinic symmetry</rdfs:label>
+        <skos:definition xml:lang="en">denoted by family under triclinic symmetry is an object property between a crystallographic entity in triclinic system, i.e., plane or direction, and the family of Miller indices.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -330,6 +340,7 @@
             <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000055"/>
         </owl:propertyChainAxiom>
         <rdfs:label xml:lang="de">denoted by family under monoclinic symmetry</rdfs:label>
+        <skos:definition xml:lang="en">denoted by family under monoclinic symmetry is an object property between a crystallographic entity in monoclinic system, i.e., plane or direction, and the family of Miller indices.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -346,6 +357,7 @@
             <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000056"/>
         </owl:propertyChainAxiom>
         <rdfs:label xml:lang="de">denoted by family under orthorhombic symmetry</rdfs:label>
+        <skos:definition xml:lang="en">denoted by family under orthorhombic symmetry is an object property between a crystallographic entity in orthorhombic system, i.e., plane or direction, and the family of Miller indices.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -362,6 +374,7 @@
             <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000057"/>
         </owl:propertyChainAxiom>
         <rdfs:label xml:lang="de">denoted by family under rhombohedral symmetry</rdfs:label>
+        <skos:definition xml:lang="en">denoted by family under rhombohedral symmetry is an object property between a crystallographic entity in rhombohedral system, i.e., plane or direction, and the family of Miller indices.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -378,6 +391,7 @@
             <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000058"/>
         </owl:propertyChainAxiom>
         <rdfs:label xml:lang="de">denoted by family under hexagonal symmetry</rdfs:label>
+        <skos:definition xml:lang="en">denoted by family under hexagonal symmetry is an object property between a crystallographic entity in hexagonal system, i.e., plane or direction, and the family of Miller indices.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -461,7 +475,11 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:comment>Intentially not a sub-property of &quot;denoted by&quot; as this rescticts using &quot;denoted by&quot; in property chains of its sub-properties</rdfs:comment>
+        <rdfs:comment>The sub-properties are inferrable through corresponding property chains</rdfs:comment>
         <rdfs:label xml:lang="en">denoted by family</rdfs:label>
+        <skos:definition xml:lang="en">denoted by family is a top-level object property between a crystallographic entity, i.e., plane or direction, and the family of Miller indices</skos:definition>
+        <skos:example xml:lang="en">Consider a (011) crystallographic plane in cubic lattice, i.e., the instance of the plane is denoted by (011) instance. The instance of the plane is be inferred to be of type &quot;crystallographic entity in cubic system&quot; and carries &quot;is cubic&quot; reftexive triple. The (011) is a member of {110} family of Miller indices. The property chain &quot;is cubic + denoted by + member of&quot; will infer that the plane is denoted by {110} in a cubic lattice.</skos:example>
     </owl:ObjectProperty>
     
 
@@ -477,6 +495,7 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350"/>
         </owl:propertyChainAxiom>
         <rdfs:label>denoted by family under cubic symmetry</rdfs:label>
+        <skos:definition xml:lang="en">denoted by family under cubic symmetry is an object property between a crystallographic entity in cubic system, i.e., plane or direction, and the family of Miller indices.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -486,6 +505,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000170">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000053"/>
         <rdfs:label>is cubic</rdfs:label>
+        <skos:definition xml:lang="en">is cubic is a object property  for the inference of family of directions/planes Miller indices notation. The class crystallographic entity in cubic  system carries a Self restriction &quot;is cubic&quot;</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -1342,10 +1362,9 @@ crystal system  based on the rotational and mirror symmetries of their actual at
                 <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>&apos;immaterial entity&apos; and (&apos;part of&apos; some 
-(&apos;crystal lattice&apos; and (&apos;has quality&apos; some 
-(&apos;crystal system&apos; and (&apos;specified by value&apos; value cubic)))))</rdfs:comment>
+        <rdfs:comment>Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.</rdfs:comment>
         <rdfs:label xml:lang="en">crystallographic entity in cubic system</rdfs:label>
+        <skos:definition xml:lang="en">Crystallographic entity in cubic system is an immaterial entity that either itself has cubic lattice system or is a part of crystal lattice with cubic lattice system.</skos:definition>
     </owl:Class>
     
 
@@ -1361,7 +1380,7 @@ crystal system  based on the rotational and mirror symmetries of their actual at
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">grain orientation</rdfs:label>
-        <skos:definition xml:lang="en">Grain orientation is an intensive quality of grains in material&apos;s microstructure, which describes the crystallographic orientation in respect to the external (sample&apos;s) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grsins with similar crystallographic orientations.
+        <skos:definition xml:lang="en">Grain orientation is an intensive quality of grains in material&apos;s microstructure, which describes the crystallographic orientation in respect to the external (sample&apos;s) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grains with similar crystallographic orientations.
 Grain orientation can be specified by either texture fibers or texture components. When several grains exhibit similar orientations, then the material exhibits a specific crystallographic texture.</skos:definition>
     </owl:Class>
     
@@ -1423,6 +1442,7 @@ Grain orientation can be specified by either texture fibers or texture component
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice triclinic primitive</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice triclinic primitive is a crystal lattice with triclinic lattice system and primitive lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -1483,6 +1503,7 @@ Grain orientation can be specified by either texture fibers or texture component
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice monoclinic primitive</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice monoclinic primitive is a crystal lattice with monoclinic lattice system and primitive lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -1525,8 +1546,9 @@ Grain orientation can be specified by either texture fibers or texture component
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>By aligning coordinate system of every crystal in the sample to the sample&apos;s coordinate system, anisotropy of material&apos;s properties can be investigated.</rdfs:comment>
         <rdfs:label xml:lang="en">Euler angles</rdfs:label>
-        <skos:definition xml:lang="en">In crystallography Euler angles are three angles which describe orientation of a sinlge crystal in respect to the sample&apos;s coordinate system. By aligning coordinate system of every crystal in the sample to the sample&apos;s coordinate system, anisotropy of material&apos;s properties can be investigated.</skos:definition>
+        <skos:definition xml:lang="en">Euler angles are three angles which describe orientation of a sinlge crystal in respect to the sample&apos;s coordinate system</skos:definition>
     </owl:Class>
     
 
@@ -1598,6 +1620,7 @@ Grain orientation can be specified by either texture fibers or texture component
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice monoclinic base-centered</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice monoclinic base-centered is a crystal lattice with monoclinic lattice system and base-centered lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -1658,6 +1681,7 @@ Grain orientation can be specified by either texture fibers or texture component
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice orthorhombic base-centered</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice orthorhombic base-centered is a crystal lattice with orthorhombic lattice system and base-centered lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -1726,7 +1750,9 @@ Grain orientation can be specified by either texture fibers or texture component
                 <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.</rdfs:comment>
         <rdfs:label xml:lang="de">crystallographic entity in triclinic system</rdfs:label>
+        <skos:definition xml:lang="en">Crystallographic entity in triclinic system is an immaterial entity that either itself has triclinic lattice system or is a part of crystal lattice with triclinic lattice system.</skos:definition>
     </owl:Class>
     
 
@@ -1795,7 +1821,9 @@ Grain orientation can be specified by either texture fibers or texture component
                 <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.</rdfs:comment>
         <rdfs:label xml:lang="de">crystallographic entity in monoclinic system</rdfs:label>
+        <skos:definition xml:lang="en">Crystallographic entity in monoclinic system is an immaterial entity that either itself has monoclinic lattice system or is a part of crystal lattice with monoclinic lattice system.</skos:definition>
     </owl:Class>
     
 
@@ -1864,7 +1892,9 @@ Grain orientation can be specified by either texture fibers or texture component
                 <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.</rdfs:comment>
         <rdfs:label xml:lang="de">crystallographic entity in orthorhombic system</rdfs:label>
+        <skos:definition xml:lang="en">Crystallographic entity in orthorhombic system is an immaterial entity that either itself has orthorhombic lattice system or is a part of crystal lattice with orthorhombic lattice system.</skos:definition>
     </owl:Class>
     
 
@@ -1933,7 +1963,9 @@ Grain orientation can be specified by either texture fibers or texture component
                 <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.</rdfs:comment>
         <rdfs:label xml:lang="de">crystallographic entity in tetragonal system</rdfs:label>
+        <skos:definition xml:lang="en">Crystallographic entity in tetragonal system is an immaterial entity that either itself has tetragonal lattice system or is a part of crystal lattice with tetragonal lattice system.</skos:definition>
     </owl:Class>
     
 
@@ -2002,7 +2034,9 @@ Grain orientation can be specified by either texture fibers or texture component
                 <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.</rdfs:comment>
         <rdfs:label xml:lang="de">crystallographic entity in rhombohedral system</rdfs:label>
+        <skos:definition xml:lang="en">Crystallographic entity in rhombohedral system is an immaterial entity that either itself has rhombohedral lattice system or is a part of crystal lattice with rhombohedral lattice system.</skos:definition>
     </owl:Class>
     
 
@@ -2128,7 +2162,9 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
                 <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Note that this class is not meant for instantiation but is needed for formulation of other logical axioms and inferences.</rdfs:comment>
         <rdfs:label xml:lang="de">crystallographic entity in hexagonal system</rdfs:label>
+        <skos:definition xml:lang="en">Crystallographic entity in hexagonal system is an immaterial entity that either itself has hexagonal lattice system or is a part of crystal lattice with hexagonal lattice system.</skos:definition>
     </owl:Class>
     
 
@@ -2189,6 +2225,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice orthorhombic primitive</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice orthorhombic primitive is a crystal lattice with orthorhombic lattice system and primitive lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -2249,6 +2286,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice orthorhombic body-centered</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice orthorhombic body-centered is a crystal lattice with orthorhombic lattice system and  body-centered lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -2309,6 +2347,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice orthorhombic face-centered</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice orthorhombic face-centered is a crystal lattice with orthorhombic lattice system and face-centered lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -2369,6 +2408,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice cubic face-centered</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice cubic face-centered is a crystal lattice with cubic lattice system and face-centered lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -2428,7 +2468,9 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>TODO maybe elaborate on what it means to be cubic and base-centered (using symmetry)</rdfs:comment>
         <rdfs:label xml:lang="en">bravais lattice cubic body-centered</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice cubic body-centered is a crystal lattice with cubic lattice system and body-centered lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -2489,6 +2531,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice cubic primitive</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice cubic primitive is a crystal lattice with cubic lattice system and primitive lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -2549,6 +2592,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice hexagonal primitive</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice hexagonal primitive is a crystal lattice with hexagonal lattice system and primitive lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -2609,6 +2653,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice rhombohedral primitive</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice rhombohedral primitive is a crystal lattice with rhombohedral lattice system and primitive lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -2669,6 +2714,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice tetragonal primitive</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice tetragonal primitive is a crystal lattice with tetragonal lattice system and primitive lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -2729,6 +2775,7 @@ The symmetry equivalency assertion class is meant to enable assertions of  cryst
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">bravais lattice tetragonal body-centered</rdfs:label>
+        <skos:definition xml:lang="en">Bravais lattice  tetragonal body-centered is a crystal lattice with tetragonal lattice system and  body-centered lattice centering.</skos:definition>
     </owl:Class>
     
 
@@ -2848,7 +2895,10 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>TODO think if these classes are really needed???</rdfs:comment>
         <rdfs:label xml:lang="en">cubic crystal lattice</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:definition xml:lang="en">Cubic crystal lattice is a crystal lattice with cubic lattice system.</skos:definition>
     </owl:Class>
     
 
@@ -2896,6 +2946,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">triclinic crystal lattice</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2943,6 +2994,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">monoclinic crystal lattice</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2990,6 +3042,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">orthomombic crystal lattice</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3037,6 +3090,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">tetragonal crystal lattice</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3084,6 +3138,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">rhombohedral crystal lattice</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3131,6 +3186,7 @@ In particular, it considers &lt;100&gt;, &lt;110&gt;, and &lt;111&gt; families o
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">hexagonal crystal lattice</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
