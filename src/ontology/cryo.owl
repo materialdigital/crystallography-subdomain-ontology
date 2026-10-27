@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/pmd/cryo.owl#"
      xml:base="https://w3id.org/pmd/cryo.owl"
-     xmlns:co="https://w3id.org/pmd/co/"
      xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -289,12 +288,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.w3.org/2004/02/skos/core#example -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
-    
-
-
-    <!-- https://w3id.org/pmd/co/PMD_0000060 -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/pmd/co/PMD_0000060"/>
     
 
 
@@ -1484,26 +1477,9 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
-    <!-- https://w3id.org/pmd/co/PMD_0000004 -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000004">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">is subject of</rdfs:label>
-        <skos:definition xml:lang="en">Inverse of &apos;is about&apos;.</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/pmd/co/PMD_0000077 -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000077">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0000004"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000117>PERSON: Joerg Waitelonis</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">specified by value</rdfs:label>
-        <skos:definition xml:lang="en">A relation between an entity and a value specification which is about this entity.</skos:definition>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000077"/>
     
 
 
@@ -2051,6 +2027,12 @@ For taxonomy purpose only</rdfs:comment>
     <!-- http://org.semanticweb.owlapi/error#Error1 -->
 
     <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error2 -->
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
     
 
 
@@ -3561,28 +3543,13 @@ for now.</obo:IAO_0000116>
 
     <!-- https://w3id.org/pmd/co/PMD_0000663 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000663">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
-        <rdfs:label xml:lang="en">crystallite</rdfs:label>
-        <rdfs:label xml:lang="de">kristallit</rdfs:label>
-        <skos:altLabel xml:lang="de">Korn</skos:altLabel>
-        <skos:altLabel xml:lang="en">grain</skos:altLabel>
-        <skos:definition xml:lang="en">A crystal grain is a crystal that is part of a polycrystal.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0000663"/>
     
 
 
     <!-- https://w3id.org/pmd/co/PMD_0020003 -->
 
-    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000117>PERSON: Philipp von Hartrott</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">crystal</rdfs:label>
-        <skos:definition xml:lang="en">A crystal is an object that has a quality &quot;crystal structure&quot;.</skos:definition>
-        <co:PMD_0000060 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</co:PMD_0000060>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/pmd/co/PMD_0020003"/>
     
 
 
@@ -3968,24 +3935,12 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
     <!-- https://w3id.org/pmd/cryo/CRYO_0000026 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026">
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">crystal system</rdfs:label>
@@ -4001,29 +3956,13 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
                         <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000036"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pmd/co/PMD_0000077"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000036"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">lattice centering</rdfs:label>
         <skos:definition xml:lang="en">Lattice centering is an intensive quality ofa crystal lattice which the geometric arrangement of lattice points in a unit cell. It is specified by one of the 4 lattice centering value.</skos:definition>
@@ -10139,6 +10078,12 @@ Additionally, asserting triple &quot;atom located in lattice point&quot; contrad
         <cryo:CRYO_0000016>(0-10)</cryo:CRYO_0000016>
         <rdfs:label xml:lang="en">(0-10)</rdfs:label>
     </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
     
 
 

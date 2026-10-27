@@ -1,5 +1,10 @@
 http://orcid.org/0000-0001-5208-3432
 http://org.semanticweb.owlapi/error#Error1
+http://org.semanticweb.owlapi/error#Error2
+http://org.semanticweb.owlapi/error#Error3
+http://org.semanticweb.owlapi/error#Error4
+http://org.semanticweb.owlapi/error#Error5
+http://org.semanticweb.owlapi/error#Error6
 http://purl.obolibrary.org/obo/BFO_0000001
 http://purl.obolibrary.org/obo/BFO_0000002
 http://purl.obolibrary.org/obo/BFO_0000003
@@ -224,9 +229,7 @@ https://github.com/information-artifact-ontology/IAO/issues/232
 https://github.com/information-artifact-ontology/ontology-metadata/issues/123
 https://orcid.org/0000-0003-0744-8855
 https://orcid.org/0009-0003-1503-4422
-https://w3id.org/pmd/co/PMD_0000004
 https://w3id.org/pmd/co/PMD_0000006
-https://w3id.org/pmd/co/PMD_0000060
 https://w3id.org/pmd/co/PMD_0000077
 https://w3id.org/pmd/co/PMD_0000663
 https://w3id.org/pmd/co/PMD_0020003

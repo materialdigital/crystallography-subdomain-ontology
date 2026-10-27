@@ -16,6 +16,11 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x")
 
 Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error2>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error3>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error4>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error5>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error6>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -263,7 +268,6 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002352>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002353>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0009006>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0009007>))
-Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0000004>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0000077>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/co/PMD_0025999>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000050>))
@@ -666,7 +670,6 @@ Declaration(AnnotationProperty(owl:qualifiedCardinality))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#example>))
-Declaration(AnnotationProperty(<https://w3id.org/pmd/co/PMD_0000060>))
 Declaration(Datatype(<http://qudt.org/schema/qudt/LatexString>))
 Declaration(Datatype(xsd:integer))
 Declaration(Datatype(xsd:string))
@@ -1568,21 +1571,6 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0009006> <http://purl.obo
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0009007> "Inverse of 'assay measures characteristic'"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0009007> "characteristic measured by assay"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0009007> <http://purl.obolibrary.org/obo/BFO_0000020>)
-
-# Object Property: <https://w3id.org/pmd/co/PMD_0000004> (is subject of)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000004> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000004> "PERSON: Joerg Waitelonis")
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000004> "is subject of"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000004> "Inverse of 'is about'."@en)
-
-# Object Property: <https://w3id.org/pmd/co/PMD_0000077> (specified by value)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0000077> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0000077> "PERSON: Joerg Waitelonis")
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000077> "specified by value"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000077> "A relation between an entity and a value specification which is about this entity."@en)
-SubObjectPropertyOf(<https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/co/PMD_0000004>)
 
 # Object Property: <https://w3id.org/pmd/cryo/CRYO_0000050> (is tetragonal)
 
@@ -2674,25 +2662,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UO_1000027> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_1000185> "degree based unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_1000185> <http://purl.obolibrary.org/obo/UO_0000000>)
 
-# Class: <https://w3id.org/pmd/co/PMD_0000663> (kristallit)
-
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000663> "crystallite"@en)
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0000663> "kristallit"@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0000663> "Korn"@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/co/PMD_0000663> "grain"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0000663> "A crystal grain is a crystal that is part of a polycrystal."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0000663> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0000663> <https://w3id.org/pmd/co/PMD_0020003>)
-
-# Class: <https://w3id.org/pmd/co/PMD_0020003> (crystal)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <https://w3id.org/pmd/co/PMD_0020003> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <https://w3id.org/pmd/co/PMD_0020003> "PERSON: Philipp von Hartrott")
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/co/PMD_0020003> "crystal"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/co/PMD_0020003> "A crystal is an object that has a quality \"crystal structure\"."@en)
-AnnotationAssertion(<https://w3id.org/pmd/co/PMD_0000060> <https://w3id.org/pmd/co/PMD_0020003> "true"^^xsd:boolean)
-SubClassOf(<https://w3id.org/pmd/co/PMD_0020003> <http://purl.obolibrary.org/obo/BFO_0000030>)
-
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000000> (unit cell)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000000> "unit cell"@en)
@@ -2874,16 +2843,18 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000025> ObjectSomeValuesFrom(<http:/
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000026> "crystal system"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000026> "Crystal system is a quality of a (real) crystal which defines its symmetry based on the rotational and mirror symmetries of the actual atomic arrangements."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> <http://org.semanticweb.owlapi/error#Error3>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> <http://org.semanticweb.owlapi/error#Error5>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> <http://purl.obolibrary.org/obo/BFO_0000019>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0020003>))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectExactCardinality(1 <https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000028>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000027> (lattice centering)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000027> "lattice centering"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000027> "Lattice centering is an intensive quality ofa crystal lattice which the geometric arrangement of lattice points in a unit cell. It is specified by one of the 4 lattice centering value."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000027> <http://purl.obolibrary.org/obo/BFO_0000019>)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>) ObjectExactCardinality(1 <https://w3id.org/pmd/co/PMD_0000077> <https://w3id.org/pmd/cryo/CRYO_0000036>)))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectIntersectionOf(<http://org.semanticweb.owlapi/error#Error4> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>)))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectIntersectionOf(<http://org.semanticweb.owlapi/error#Error6> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>)))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000028> (crystal system value)
 
@@ -5902,4 +5873,8 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-0744-8855> "Abril Azócar Guzmán")
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-0744-8855> "Akhil Thomas")
 AnnotationAssertion(rdfs:label <https://orcid.org/0009-0003-1503-4422> "Kamilla Zaripova")
+AnnotationAssertion(owl:qualifiedCardinality _:genid2147484763 "1"^^xsd:nonNegativeInteger)
+AnnotationAssertion(owl:qualifiedCardinality _:genid2147484764 "1"^^xsd:nonNegativeInteger)
+AnnotationAssertion(owl:qualifiedCardinality _:genid2147485331 "1"^^xsd:nonNegativeInteger)
+AnnotationAssertion(owl:qualifiedCardinality _:genid2147485332 "1"^^xsd:nonNegativeInteger)
 )

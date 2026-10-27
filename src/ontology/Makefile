@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                27c89b82aca960350d326dfb59434fe0c6df75aa3289901cb570bbb1a1304bec
+CONFIG_HASH=                71a170553150550a987e01be48c33ed53c7e30ee9b7b6760606e767d0c01e3c1
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  pmdco bfo ro iao obi cob qudt uo
+IMPORTS =  bfo ro iao obi cob qudt uo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -530,13 +530,6 @@ endif # COMP=true
 # ----------------------------------------
 
 ifeq ($(MIR),true)
-
-
-## ONTOLOGY: pmdco
-.PHONY: mirror-pmdco
-.PRECIOUS: $(MIRRORDIR)/pmdco.owl
-mirror-pmdco: | $(TMPDIR)
-	$(ROBOT) convert -I https://materialdigital.github.io/core-ontology/ontology.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: bfo
