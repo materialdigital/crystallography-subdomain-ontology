@@ -43,12 +43,12 @@ $(ONTOLOGYTERMS): $(SRCMERGED)
 #	  $(ANNOTATE_CONVERT_FILE); \
 #	fi
 
-$(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl $(IMPORTDIR)/pmdco_terms.txt
-	$(ROBOT) filter --input $(MIRRORDIR)/pmdco.owl \
-		--term-file $(IMPORTDIR)/pmdco_terms.txt \
-		--allow-punning true \
-		--select "annotations self parents" \
-		$(ANNOTATE_CONVERT_FILE)
+# $(IMPORTDIR)/pmdco_import.owl: $(MIRRORDIR)/pmdco.owl $(IMPORTDIR)/pmdco_terms.txt
+#	$(ROBOT) filter --input $(MIRRORDIR)/pmdco.owl \
+#		--term-file $(IMPORTDIR)/pmdco_terms.txt \
+#		--allow-punning true \
+#		--select "annotations self parents" \
+#		$(ANNOTATE_CONVERT_FILE)
 
 #$(IMPORTDIR)/chebi_import.owl: #$(MIRRORDIR)/chebi.owl
 #	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
