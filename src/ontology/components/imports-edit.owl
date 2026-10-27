@@ -19,7 +19,7 @@
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/cob_import.owl"/>
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/iao_import.owl"/>
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/obi_import.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/pmdco_import.owl"/>
+        <!-- <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/pmdco_import.owl"/> -->
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/qudt_import.owl"/>
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/ro_import.owl"/>
         <owl:imports rdf:resource="https://w3id.org/pmd/cryo/imports/uo_import.owl"/>
