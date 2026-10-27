@@ -18,13 +18,13 @@
 @base <https://w3id.org/pmd/cryo/cryo-full.ttl> .
 
 <https://w3id.org/pmd/cryo/cryo-full.ttl> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-08-13/cryo-full.ttl> ;
+                                           owl:versionIRI <https://w3id.org/pmd/cryo/releases/2026-10-27/cryo-full.ttl> ;
                                            dcterms:creator <https://orcid.org/0000-0003-0744-8855> ,
                                                            <https://orcid.org/0009-0003-1503-4422> ;
                                            dcterms:description "CryO is an subdomain-level ontology based on the PMdco 3.x. It's primary goal to formally describe symmetries of crystal lattices and provide a semantic foundation for the annotation of .cif files." ;
                                            dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                            dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x" ;
-                                           owl:versionInfo "2026-08-13" .
+                                           owl:versionInfo "2026-10-27" .
 
 #################################################################
 #    Annotation properties
@@ -1362,6 +1362,23 @@ cryo:CRYO_0000170 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf cryo:CRYO_0000053 ;
                   rdfs:label "is cubic" ;
                   skos:definition "is cubic is a object property  for the inference of family of directions/planes Miller indices notation. The class crystallographic entity in cubic  system carries a Self restriction \"is cubic\""@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000440
+cryo:CRYO_0000440 rdf:type owl:ObjectProperty ;
+                  owl:inverseOf cryo:CRYO_0000444 ;
+                  rdf:type owl:FunctionalProperty ;
+                  rdfs:domain cryo:CRYO_0000439 ;
+                  rdfs:range cryo:CRYO_0000405 ;
+                  rdfs:label "has reference lattice point"@en ;
+                  skos:definition "has reference lattice point is relation between an atom site and a lattice point. It is used to define position of specific atom types in the crystal lattice."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000444
+cryo:CRYO_0000444 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:label "reference lattice point of"@en ;
+                  skos:definition "inverse of has reference lattice point"@en .
 
 
 #################################################################
@@ -2751,7 +2768,18 @@ cryo:CRYO_0000010 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000027 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0001025 ;
-                                    owl:allValuesFrom cryo:CRYO_0000000
+                                    owl:someValuesFrom cryo:CRYO_0000000
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0002351 ;
+                                    owl:someValuesFrom [ owl:intersectionOf ( obo:CHEBI_33250
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty obo:RO_0001025 ;
+                                                                                owl:someValuesFrom cryo:CRYO_0000439
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
                                   ] ;
                   rdfs:label "basis"@en ;
                   skos:definition "Basis is a object aggregate which has one or more atoms or molecules as parts. It defines the minimal number of atoms or molecules to form a unit cell."@en .
@@ -2821,11 +2849,6 @@ cryo:CRYO_0000017 rdf:type owl:Class ;
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
                                     owl:someValuesFrom cryo:CRYO_0000405
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:BFO_0000051 ;
-                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass cryo:CRYO_0000405
                                   ] ;
                   rdfs:label "primitive unit cell"@en ;
                   skos:definition "primitive unit cell is a unit cell that contains only single lattice point and has the smallest possible unit cell volume."@en .
@@ -4470,26 +4493,10 @@ lattice system based on the point group symmetries of their empty translational 
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000405
 cryo:CRYO_0000405 rdf:type owl:Class ;
-                  owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000147
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty obo:BFO_0000050 ;
-                                                               owl:someValuesFrom cryo:CRYO_0000001
-                                                             ]
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty obo:RO_0001015 ;
-                                                               owl:someValuesFrom obo:CHEBI_33250
-                                                             ]
-                                                           ) ;
-                                        rdf:type owl:Class
-                                      ] ;
                   rdfs:subClassOf obo:BFO_0000147 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000050 ;
                                     owl:someValuesFrom cryo:CRYO_0000001
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:RO_0001015 ;
-                                    owl:someValuesFrom obo:CHEBI_33250
                                   ] ;
                   rdfs:comment """Add axioms to PMDco (owl:tOP --> location of /located in)
 1. 'solid solution' and ('has member' some 
@@ -4505,6 +4512,75 @@ cryo:CRYO_0000406 rdf:type owl:Class ;
                   rdfs:subClassOf obo:OBI_0001930 ;
                   rdfs:label "point group type"@en ;
                   skos:definition "Point group type is a categorical value specification of a point group. It includes all the 32 point groups."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000439
+cryo:CRYO_0000439 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000029 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom cryo:CRYO_0000001
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cryo:CRYO_0000440 ;
+                                    owl:someValuesFrom cryo:CRYO_0000405
+                                  ] ;
+                  obo:IAO_0000116 """If the atom site and the lattice point have the same coordinates, i.e., the basis vector is (0, 0, 0), one can say that lattice point is located in atom site. 
+
+The nessesity of this class came from the description of different metallic phases, as most of them are characterized by atoms occupying certain atom sites which not always coinside with lattice points.
+
+Additionally, asserting triple \"atom located in lattice point\" contradicts the RO's definition of \"located in\" which states that r1 is located in r2 iff r1 is fully inside r2 (Kamilla's free interpretation), but here we want to merely express that an atom occupies certain position in a lattice (incl. voids). But the word \"occupies\" is used in BFO to express the relation between spatial region and any other independent continuant."""@en ;
+                  rdfs:comment "TODO: add a class to GDCs to replace value specification with \"fractional coordinate\" or coordinate specification or smth."@en ;
+                  rdfs:label "atom site"@en ;
+                  skos:definition "Atom site is a site that is part of crystal lattice whose position is determined by an offset of a basis vector from a lattice point, and that is the location of a single atom"@en ;
+                  skos:example "Octahedral interstitial site in bcc has a reference lattice point with (1/2, 1/2, 0) basis vector"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000441
+cryo:CRYO_0000441 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000019 ;
+                  rdfs:label "basis vector"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000442
+cryo:CRYO_0000442 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( cryo:CRYO_0000439
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000086 ;
+                                                               owl:someValuesFrom cryo:CRYO_0000441
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf cryo:CRYO_0000439 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0000086 ;
+                                    owl:someValuesFrom cryo:CRYO_0000441
+                                  ] ;
+                  owl:disjointWith cryo:CRYO_0000443 ;
+                  rdfs:label "regular atom site"@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000443
+cryo:CRYO_0000443 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000439 ;
+                  rdfs:label "intersitital site"@en ;
+                  skos:altLabel "void" ;
+                  skos:definition "interstitial site is a site that is located between regular lattice points in a crystal structure."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000445
+cryo:CRYO_0000445 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000443 ;
+                  rdfs:label "octahedral void"@en ;
+                  skos:definition "octahedral void is an interstitial site in a close-packed lattice where one triangular void from the top layer of spheres (atoms or ions) sits over the triangular gap of the bottom layer."@en .
+
+
+###  https://w3id.org/pmd/cryo/CRYO_0000446
+cryo:CRYO_0000446 rdf:type owl:Class ;
+                  rdfs:subClassOf cryo:CRYO_0000443 ;
+                  rdfs:label "tetrahedral void"@en ;
+                  skos:definition "tetrahedral void is an interstitial site in a close-packed lattice where one sphere (atom or ion) from the top layer sits in the triangular gap formed by 3 spheres of the bottom layer."@en .
 
 
 #################################################################

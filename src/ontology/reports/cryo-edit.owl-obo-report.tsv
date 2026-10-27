@@ -1,29 +1,29 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	73630f69-8701-43bb-bdf5-6552284e7695genid276
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid282
 ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid272
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	73630f69-8701-43bb-bdf5-6552284e7695genid426
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	73630f69-8701-43bb-bdf5-6552284e7695genid443
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid278
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid432
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid449
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	information content entity
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	tetragonal equivalency assertion
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	cubic equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	73630f69-8701-43bb-bdf5-6552284e7695genid618
+ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid624
 ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid614
+ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid620
 ERROR	deprecated_class_reference	cubic crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	cubic crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid619
+ERROR	deprecated_class_reference	cubic crystal lattice	owl:equivalentClass	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid625
 ERROR	deprecated_class_reference	triclinic crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	triclinic crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid627
+ERROR	deprecated_class_reference	triclinic crystal lattice	owl:equivalentClass	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid633
 ERROR	deprecated_class_reference	monoclinic crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	monoclinic crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid635
+ERROR	deprecated_class_reference	monoclinic crystal lattice	owl:equivalentClass	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid641
 ERROR	deprecated_class_reference	orthomombic crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	orthomombic crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid643
+ERROR	deprecated_class_reference	orthomombic crystal lattice	owl:equivalentClass	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid649
 ERROR	deprecated_class_reference	tetragonal crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	tetragonal crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid651
+ERROR	deprecated_class_reference	tetragonal crystal lattice	owl:equivalentClass	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid657
 ERROR	deprecated_class_reference	rhombohedral crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	rhombohedral crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid659
+ERROR	deprecated_class_reference	rhombohedral crystal lattice	owl:equivalentClass	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid665
 ERROR	deprecated_class_reference	hexagonal crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	hexagonal crystal lattice	owl:equivalentClass	73630f69-8701-43bb-bdf5-6552284e7695genid667
+ERROR	deprecated_class_reference	hexagonal crystal lattice	owl:equivalentClass	ff1cfbf4-d2c3-4d11-ad9c-f83b7c414fd6genid673
 ERROR	deprecated_property_reference	symmetry equivalency assertion	under symmetry	blank node
 ERROR	deprecated_property_reference	Miller indices family of	owl:inverseOf	has Miller indices family
 WARN	missing_definition	unit cell	definition	
@@ -119,6 +119,14 @@ WARN	missing_definition	has y	definition
 WARN	missing_definition	has z	definition	
 WARN	missing_definition	lattice point	definition	
 WARN	missing_definition	point group type	definition	
+WARN	missing_definition	atom site	definition	
+WARN	missing_definition	has reference lattice point	definition	
+WARN	missing_definition	basis vector	definition	
+WARN	missing_definition	regular atom site	definition	
+WARN	missing_definition	intersitital site	definition	
+WARN	missing_definition	reference lattice point of	definition	
+WARN	missing_definition	octahedral void	definition	
+WARN	missing_definition	tetrahedral void	definition	
 WARN	missing_obsolete_label	tetragonal equivalency assertion	label	tetragonal equivalency assertion@en
 WARN	missing_obsolete_label	has Miller indices family under tetragonal symmetry	label	has Miller indices family under tetragonal symmetry@en
 WARN	missing_obsolete_label	symmetry equivalency assertion	label	symmetry equivalency assertion@en
@@ -148,4 +156,3 @@ INFO	missing_superclass	bravais lattice hexagonal primitive	rdfs:subClassOf
 INFO	missing_superclass	bravais lattice rhombohedral primitive	rdfs:subClassOf	
 INFO	missing_superclass	bravais lattice tetragonal primitive	rdfs:subClassOf	
 INFO	missing_superclass	bravais lattice tetragonal body-centered	rdfs:subClassOf	
-INFO	missing_superclass	lattice point	rdfs:subClassOf	

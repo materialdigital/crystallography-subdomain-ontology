@@ -180,6 +180,12 @@ Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000390>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000392>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000405>))
 Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000406>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000439>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000441>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000442>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000443>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000445>))
+Declaration(Class(<https://w3id.org/pmd/cryo/CRYO_0000446>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
@@ -281,6 +287,8 @@ Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000162>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000164>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000168>))
 Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000170>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000440>))
+Declaration(ObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000444>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0001937>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0002135>))
 Declaration(DataProperty(<https://w3id.org/pmd/co/PMD_0000006>))
@@ -1721,6 +1729,21 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000170> "is cubi
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000170> "is cubic is a object property  for the inference of family of directions/planes Miller indices notation. The class crystallographic entity in cubic  system carries a Self restriction \"is cubic\""@en)
 SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000170> <https://w3id.org/pmd/cryo/CRYO_0000053>)
 
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000440> (has reference lattice point)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000440> "has reference lattice point"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000440> "has reference lattice point is relation between an atom site and a lattice point. It is used to define position of specific atom types in the crystal lattice."@en)
+InverseObjectProperties(<https://w3id.org/pmd/cryo/CRYO_0000440> <https://w3id.org/pmd/cryo/CRYO_0000444>)
+FunctionalObjectProperty(<https://w3id.org/pmd/cryo/CRYO_0000440>)
+ObjectPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000440> <https://w3id.org/pmd/cryo/CRYO_0000439>)
+ObjectPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000440> <https://w3id.org/pmd/cryo/CRYO_0000405>)
+
+# Object Property: <https://w3id.org/pmd/cryo/CRYO_0000444> (reference lattice point of)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000444> "reference lattice point of"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000444> "inverse of has reference lattice point"@en)
+SubObjectPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000444> owl:topObjectProperty)
+
 
 ############################
 #   Data Properties
@@ -2213,7 +2236,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000010> "software"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000027> "Data items include counts of things, analyte concentrations, and statistical summaries."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
@@ -2597,8 +2620,10 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0302911> "validation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0302911> <http://purl.obolibrary.org/obo/COB_0000035>)
 
-# Class: <http://purl.obolibrary.org/obo/UO_0000000> (<http://purl.obolibrary.org/obo/UO_0000000>)
+# Class: <http://purl.obolibrary.org/obo/UO_0000000> (unit)
 
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Wikipedia") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UO_0000000> "A unit of measurement is a standardized quantity of a physical quality.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000000> "unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000000> <http://purl.obolibrary.org/obo/IAO_0000003>)
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000019> (angstrom)
@@ -2741,7 +2766,8 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000009> <https://w3id.org/pmd/cryo/C
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000010> "basis"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000010> "Basis is a object aggregate which has one or more atoms or molecules as parts. It defines the minimal number of atoms or molecules to form a unit cell."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000010> <http://purl.obolibrary.org/obo/BFO_0000027>)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000010> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0001025> <https://w3id.org/pmd/cryo/CRYO_0000000>))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001025> <https://w3id.org/pmd/cryo/CRYO_0000000>))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_33250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001025> <https://w3id.org/pmd/cryo/CRYO_0000439>))))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000011> (crystallographic plane)
 
@@ -2786,7 +2812,7 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000015> ObjectSomeValuesFrom(<http:/
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000017> "primitive unit cell"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000017> "primitive unit cell is a unit cell that contains only single lattice point and has the smallest possible unit cell volume."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000017> <https://w3id.org/pmd/cryo/CRYO_0000000>)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000017> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/pmd/cryo/CRYO_0000405>))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/pmd/cryo/CRYO_0000405>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000018> (conventional unit cell)
 
@@ -3205,13 +3231,60 @@ AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000405> "Add a
 2. owl:topObjectProperty some 'lattice point'")
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000405> "lattice point"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000405> "A lattice point is a fiat point that represents a position in a crystal lattice at which structural entities are regularly arranged."@en)
-EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000405> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000147> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/cryo/CRYO_0000001>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001015> <http://purl.obolibrary.org/obo/CHEBI_33250>)))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000405> <http://purl.obolibrary.org/obo/BFO_0000147>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000405> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/cryo/CRYO_0000001>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000406> (point group type)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000406> "point group type"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000406> "Point group type is a categorical value specification of a point group. It includes all the 32 point groups."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000406> <http://purl.obolibrary.org/obo/OBI_0001930>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000439> (atom site)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <https://w3id.org/pmd/cryo/CRYO_0000439> "If the atom site and the lattice point have the same coordinates, i.e., the basis vector is (0, 0, 0), one can say that lattice point is located in atom site. 
+
+The nessesity of this class came from the description of different metallic phases, as most of them are characterized by atoms occupying certain atom sites which not always coinside with lattice points.
+
+Additionally, asserting triple \"atom located in lattice point\" contradicts the RO's definition of \"located in\" which states that r1 is located in r2 iff r1 is fully inside r2 (Kamilla's free interpretation), but here we want to merely express that an atom occupies certain position in a lattice (incl. voids). But the word \"occupies\" is used in BFO to express the relation between spatial region and any other independent continuant."@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000439> "TODO: add a class to GDCs to replace value specification with \"fractional coordinate\" or coordinate specification or smth."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000439> "atom site"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000439> "Atom site is a site that is part of crystal lattice whose position is determined by an offset of a basis vector from a lattice point, and that is the location of a single atom"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/pmd/cryo/CRYO_0000439> "Octahedral interstitial site in bcc has a reference lattice point with (1/2, 1/2, 0) basis vector"@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000439> <http://purl.obolibrary.org/obo/BFO_0000029>)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000439> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/pmd/cryo/CRYO_0000001>))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000439> ObjectSomeValuesFrom(<https://w3id.org/pmd/cryo/CRYO_0000440> <https://w3id.org/pmd/cryo/CRYO_0000405>))
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000441> (basis vector)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000441> "basis vector"@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000441> <http://purl.obolibrary.org/obo/BFO_0000019>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000442> (regular atom site)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000442> "regular atom site"@en)
+EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000442> ObjectIntersectionOf(<https://w3id.org/pmd/cryo/CRYO_0000439> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <https://w3id.org/pmd/cryo/CRYO_0000441>)))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000442> <https://w3id.org/pmd/cryo/CRYO_0000439>)
+DisjointClasses(<https://w3id.org/pmd/cryo/CRYO_0000442> <https://w3id.org/pmd/cryo/CRYO_0000443>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000443> (intersitital site)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000443> "intersitital site"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/cryo/CRYO_0000443> "void")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000443> "interstitial site is a site that is located between regular lattice points in a crystal structure."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000443> <https://w3id.org/pmd/cryo/CRYO_0000439>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000445> (octahedral void)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000445> "octahedral void"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000445> "octahedral void is an interstitial site in a close-packed lattice where one triangular void from the top layer of spheres (atoms or ions) sits over the triangular gap of the bottom layer."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000445> <https://w3id.org/pmd/cryo/CRYO_0000443>)
+
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000446> (tetrahedral void)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000446> "tetrahedral void"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000446> "tetrahedral void is an interstitial site in a close-packed lattice where one sphere (atom or ion) from the top layer sits in the triangular gap formed by 3 spheres of the bottom layer."@en)
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000446> <https://w3id.org/pmd/cryo/CRYO_0000443>)
 
 
 ############################

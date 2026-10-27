@@ -13,17 +13,17 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/pmd/cryo/">
-        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/2026-08-13"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/cryo/2026-10-27"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <dcterms:bibliographicCitation>cryo: Crystallography Subdomain Ontology. Version 2026-08-13, https://w3id.org/pmd/cryo/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-08-13</dcterms:created>
+        <dcterms:bibliographicCitation>cryo: Crystallography Subdomain Ontology. Version 2026-10-27, https://w3id.org/pmd/cryo/</dcterms:bibliographicCitation>
+        <dcterms:created>2026-10-27</dcterms:created>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0003-0744-8855"/>
         <dcterms:creator rdf:resource="https://orcid.org/0009-0003-1503-4422"/>
         <dcterms:description>CryO is an subdomain-level ontology based on the PMdco 3.x. It&apos;s primary goal to formally describe symmetries of crystal lattices and provide a semantic foundation for the annotation of .cif files.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x</dcterms:title>
         <owl:priorVersion rdf:resource="https://w3id.org/pmd/cryo/"/>
-        <owl:versionInfo>2026-08-13</owl:versionInfo>
+        <owl:versionInfo>2026-10-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -42,6 +42,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     
 
 
@@ -525,6 +531,29 @@ For taxonomy purpose only</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000440 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000440">
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000444"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000439"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000405"/>
+        <rdfs:label xml:lang="en">has reference lattice point</rdfs:label>
+        <skos:definition xml:lang="en">has reference lattice point is relation between an atom site and a lattice point. It is used to define position of specific atom types in the crystal lattice.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000444 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000444">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">reference lattice point of</rdfs:label>
+        <skos:definition xml:lang="en">inverse of has reference lattice point</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -965,7 +994,23 @@ For taxonomy purpose only</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000439"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">basis</rdfs:label>
@@ -1064,8 +1109,7 @@ For taxonomy purpose only</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000405"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000405"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">primitive unit cell</rdfs:label>
@@ -3302,32 +3346,11 @@ lattice system based on the point group symmetries of their empty translational 
     <!-- https://w3id.org/pmd/cryo/CRYO_0000405 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000405">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000147"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000147"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Add axioms to PMDco (owl:tOP --&gt; location of /located in)
@@ -3347,6 +3370,102 @@ lattice system based on the point group symmetries of their empty translational 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
         <rdfs:label xml:lang="en">point group type</rdfs:label>
         <skos:definition xml:lang="en">Point group type is a categorical value specification of a point group. It includes all the 32 point groups.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000439 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000440"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000405"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">If the atom site and the lattice point have the same coordinates, i.e., the basis vector is (0, 0, 0), one can say that lattice point is located in atom site. 
+
+The nessesity of this class came from the description of different metallic phases, as most of them are characterized by atoms occupying certain atom sites which not always coinside with lattice points.
+
+Additionally, asserting triple &quot;atom located in lattice point&quot; contradicts the RO&apos;s definition of &quot;located in&quot; which states that r1 is located in r2 iff r1 is fully inside r2 (Kamilla&apos;s free interpretation), but here we want to merely express that an atom occupies certain position in a lattice (incl. voids). But the word &quot;occupies&quot; is used in BFO to express the relation between spatial region and any other independent continuant.</obo:IAO_0000116>
+        <rdfs:comment xml:lang="en">TODO: add a class to GDCs to replace value specification with &quot;fractional coordinate&quot; or coordinate specification or smth.</rdfs:comment>
+        <rdfs:label xml:lang="en">atom site</rdfs:label>
+        <skos:definition xml:lang="en">Atom site is a site that is part of crystal lattice whose position is determined by an offset of a basis vector from a lattice point, and that is the location of a single atom</skos:definition>
+        <skos:example xml:lang="en">Octahedral interstitial site in bcc has a reference lattice point with (1/2, 1/2, 0) basis vector</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000441 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000441">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label xml:lang="en">basis vector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000442 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000442">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/pmd/cryo/CRYO_0000439"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000441"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000439"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000441"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000443"/>
+        <rdfs:label xml:lang="en">regular atom site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000443 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000443">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000439"/>
+        <rdfs:label xml:lang="en">intersitital site</rdfs:label>
+        <skos:altLabel>void</skos:altLabel>
+        <skos:definition xml:lang="en">interstitial site is a site that is located between regular lattice points in a crystal structure.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000445 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000445">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000443"/>
+        <rdfs:label xml:lang="en">octahedral void</rdfs:label>
+        <skos:definition xml:lang="en">octahedral void is an interstitial site in a close-packed lattice where one triangular void from the top layer of spheres (atoms or ions) sits over the triangular gap of the bottom layer.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/pmd/cryo/CRYO_0000446 -->
+
+    <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000446">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000443"/>
+        <rdfs:label xml:lang="en">tetrahedral void</rdfs:label>
+        <skos:definition xml:lang="en">tetrahedral void is an interstitial site in a close-packed lattice where one sphere (atom or ion) from the top layer sits in the triangular gap formed by 3 spheres of the bottom layer.</skos:definition>
     </owl:Class>
     
 

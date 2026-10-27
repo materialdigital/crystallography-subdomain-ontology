@@ -672,6 +672,14 @@ https://w3id.org/pmd/cryo/CRYO_0000435
 https://w3id.org/pmd/cryo/CRYO_0000436
 https://w3id.org/pmd/cryo/CRYO_0000437
 https://w3id.org/pmd/cryo/CRYO_0000438
+https://w3id.org/pmd/cryo/CRYO_0000439
+https://w3id.org/pmd/cryo/CRYO_0000440
+https://w3id.org/pmd/cryo/CRYO_0000441
+https://w3id.org/pmd/cryo/CRYO_0000442
+https://w3id.org/pmd/cryo/CRYO_0000443
+https://w3id.org/pmd/cryo/CRYO_0000444
+https://w3id.org/pmd/cryo/CRYO_0000445
+https://w3id.org/pmd/cryo/CRYO_0000446
 https://w3id.org/pmd/cryo/components/cryo-individuals.owl/CRYO_0000000
 term
 urn:swrl:var#d
