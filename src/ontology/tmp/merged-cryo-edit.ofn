@@ -15,12 +15,6 @@ Annotation(dcterms:description "CryO is an subdomain-level ontology based on the
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "CRYO PMD: Crystallography Subdomain Ontology based on PMDco 3.x")
 
-Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
-Declaration(Class(<http://org.semanticweb.owlapi/error#Error2>))
-Declaration(Class(<http://org.semanticweb.owlapi/error#Error3>))
-Declaration(Class(<http://org.semanticweb.owlapi/error#Error4>))
-Declaration(Class(<http://org.semanticweb.owlapi/error#Error5>))
-Declaration(Class(<http://org.semanticweb.owlapi/error#Error6>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -1773,7 +1767,7 @@ DataPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000016> xsd:string)
 AnnotationAssertion(rdfs:comment <https://w3id.org/pmd/cryo/CRYO_0000019> "Top-level data property, do not use directly"@en)
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000019> "has Miller index"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000019> "data property to point only to individual integers in the Miller indices notation only for single planes and directions"@en)
-SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000019> <https://w3id.org/pmd/co/PMD_0000006>)
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000019> owl:topDataProperty)
 DataPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000019> ObjectUnionOf(<https://w3id.org/pmd/cryo/CRYO_0000020> <https://w3id.org/pmd/cryo/CRYO_0000022>))
 
 # Data Property: <https://w3id.org/pmd/cryo/CRYO_0000144> (has space group notation)
@@ -1829,7 +1823,7 @@ DataPropertyRange(<https://w3id.org/pmd/cryo/CRYO_0000400> xsd:integer)
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000401> "has coordinate"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000401> "has coordinate is a top-level data property to point to values of x-, y-, and z-coordinates in cortesian coordinate system"@en)
-SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000401> <https://w3id.org/pmd/co/PMD_0000006>)
+SubDataPropertyOf(<https://w3id.org/pmd/cryo/CRYO_0000401> owl:topDataProperty)
 DataPropertyDomain(<https://w3id.org/pmd/cryo/CRYO_0000401> <https://w3id.org/pmd/cryo/CRYO_0000024>)
 
 # Data Property: <https://w3id.org/pmd/cryo/CRYO_0000402> (has x)
@@ -2224,7 +2218,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000010> "software"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000027> "Data items include counts of things, analyte concentrations, and statistical summaries."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
@@ -2677,7 +2671,6 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000001> "crystal
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000001> "Crystal lattice is a site which has unit cell as part and is location of a crystal. It represents a periodic array of points in space, which describe the arrangement of atoms or molecules in a crystal."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000001> <http://purl.obolibrary.org/obo/BFO_0000029>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/pmd/cryo/CRYO_0000000>))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001015> <https://w3id.org/pmd/co/PMD_0020003>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000002> (lattice parameter)
 
@@ -2843,8 +2836,6 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000025> ObjectSomeValuesFrom(<http:/
 
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000026> "crystal system"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000026> "Crystal system is a quality of a (real) crystal which defines its symmetry based on the rotational and mirror symmetries of the actual atomic arrangements."@en)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> <http://org.semanticweb.owlapi/error#Error3>)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> <http://org.semanticweb.owlapi/error#Error5>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> <http://purl.obolibrary.org/obo/BFO_0000019>)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0020003>))
 
@@ -2853,8 +2844,7 @@ SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000026> ObjectSomeValuesFrom(<http:/
 AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000027> "lattice centering"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000027> "Lattice centering is an intensive quality ofa crystal lattice which the geometric arrangement of lattice points in a unit cell. It is specified by one of the 4 lattice centering value."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000027> <http://purl.obolibrary.org/obo/BFO_0000019>)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectIntersectionOf(<http://org.semanticweb.owlapi/error#Error4> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>)))
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectIntersectionOf(<http://org.semanticweb.owlapi/error#Error6> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>)))
+SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/cryo/CRYO_0000001>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000028> (crystal system value)
 
@@ -2907,7 +2897,6 @@ AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000042> "grain o
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000042> "Grain orientation is an intensive quality of grains in material's microstructure, which describes the crystallographic orientation in respect to the external (sample's) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grains with similar crystallographic orientations.
 Grain orientation can be specified by either texture fibers or texture components. When several grains exhibit similar orientations, then the material exhibits a specific crystallographic texture."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000042> <http://purl.obolibrary.org/obo/BFO_0000019>)
-SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <https://w3id.org/pmd/co/PMD_0000663>))
 
 # Class: <https://w3id.org/pmd/cryo/CRYO_0000047> (bravais lattice triclinic primitive)
 
@@ -5873,8 +5862,8 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-0744-8855> "Abril Azócar Guzmán")
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-0744-8855> "Akhil Thomas")
 AnnotationAssertion(rdfs:label <https://orcid.org/0009-0003-1503-4422> "Kamilla Zaripova")
-AnnotationAssertion(owl:qualifiedCardinality _:genid2147484763 "1"^^xsd:nonNegativeInteger)
-AnnotationAssertion(owl:qualifiedCardinality _:genid2147484764 "1"^^xsd:nonNegativeInteger)
-AnnotationAssertion(owl:qualifiedCardinality _:genid2147485331 "1"^^xsd:nonNegativeInteger)
-AnnotationAssertion(owl:qualifiedCardinality _:genid2147485332 "1"^^xsd:nonNegativeInteger)
+AnnotationAssertion(owl:qualifiedCardinality _:genid2147484753 "1"^^xsd:nonNegativeInteger)
+AnnotationAssertion(owl:qualifiedCardinality _:genid2147484754 "1"^^xsd:nonNegativeInteger)
+AnnotationAssertion(owl:qualifiedCardinality _:genid2147485316 "1"^^xsd:nonNegativeInteger)
+AnnotationAssertion(owl:qualifiedCardinality _:genid2147485317 "1"^^xsd:nonNegativeInteger)
 )

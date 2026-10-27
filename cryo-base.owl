@@ -157,12 +157,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0001015 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001015"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025"/>
@@ -551,7 +545,7 @@ For taxonomy purpose only</rdfs:comment>
     <!-- https://w3id.org/pmd/cryo/CRYO_0000019 -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000019">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0000006"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -651,7 +645,7 @@ For taxonomy purpose only</rdfs:comment>
     <!-- https://w3id.org/pmd/cryo/CRYO_0000401 -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000401">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pmd/co/PMD_0000006"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000024"/>
         <rdfs:label xml:lang="en">has coordinate</rdfs:label>
         <skos:definition xml:lang="en">has coordinate is a top-level data property to point to values of x-, y-, and z-coordinates in cortesian coordinate system</skos:definition>
@@ -697,18 +691,6 @@ For taxonomy purpose only</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error1 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error2 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
     
 
 
@@ -832,12 +814,6 @@ For taxonomy purpose only</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">TODO: 
@@ -1190,7 +1166,6 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
     <!-- https://w3id.org/pmd/cryo/CRYO_0000026 -->
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000026">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1209,15 +1184,10 @@ Plane Miller indices must be written in round brackets, e.g., (hkl).</skos:defin
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000001"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">lattice centering</rdfs:label>
         <skos:definition xml:lang="en">Lattice centering is an intensive quality ofa crystal lattice which the geometric arrangement of lattice points in a unit cell. It is specified by one of the 4 lattice centering value.</skos:definition>
@@ -1377,12 +1347,6 @@ crystal system  based on the rotational and mirror symmetries of their actual at
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000042">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000663"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">grain orientation</rdfs:label>
         <skos:definition xml:lang="en">Grain orientation is an intensive quality of grains in material&apos;s microstructure, which describes the crystallographic orientation in respect to the external (sample&apos;s) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grains with similar crystallographic orientations.
 Grain orientation can be specified by either texture fibers or texture components. When several grains exhibit similar orientations, then the material exhibits a specific crystallographic texture.</skos:definition>

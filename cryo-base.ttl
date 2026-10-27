@@ -104,10 +104,6 @@ obo:RO_0000080 rdf:type owl:ObjectProperty .
 obo:RO_0000086 rdf:type owl:ObjectProperty .
 
 
-###  http://purl.obolibrary.org/obo/RO_0001015
-obo:RO_0001015 rdf:type owl:ObjectProperty .
-
-
 ###  http://purl.obolibrary.org/obo/RO_0001025
 obo:RO_0001025 rdf:type owl:ObjectProperty .
 
@@ -385,7 +381,7 @@ cryo:CRYO_0000016 rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000019
 cryo:CRYO_0000019 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf <https://w3id.org/pmd/co/PMD_0000006> ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
                   rdfs:domain [ rdf:type owl:Class ;
                                 owl:unionOf ( cryo:CRYO_0000020
                                               cryo:CRYO_0000022
@@ -455,7 +451,7 @@ cryo:CRYO_0000400 rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000401
 cryo:CRYO_0000401 rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf <https://w3id.org/pmd/co/PMD_0000006> ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
                   rdfs:domain cryo:CRYO_0000024 ;
                   rdfs:label "has coordinate"@en ;
                   skos:definition "has coordinate is a top-level data property to point to values of x-, y-, and z-coordinates in cortesian coordinate system"@en .
@@ -485,14 +481,6 @@ cryo:CRYO_0000404 rdf:type owl:DatatypeProperty ;
 #################################################################
 #    Classes
 #################################################################
-
-###  http://org.semanticweb.owlapi/error#Error1
-<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error2
-<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
-
 
 ###  http://purl.obolibrary.org/obo/BFO_0000019
 obo:BFO_0000019 rdf:type owl:Class .
@@ -575,10 +563,6 @@ cryo:CRYO_0000001 rdf:type owl:Class ;
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
                                     owl:someValuesFrom cryo:CRYO_0000000
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:RO_0001015 ;
-                                    owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0020003>
                                   ] ;
                   rdfs:comment """TODO: 
 1. check if located in is meant to be used this way
@@ -826,8 +810,7 @@ cryo:CRYO_0000025 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000026
 cryo:CRYO_0000026 rdf:type owl:Class ;
-                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
-                                  obo:BFO_0000019 ,
+                  rdfs:subClassOf obo:BFO_0000019 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:RO_0000080 ;
                                     owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0020003>
@@ -839,13 +822,9 @@ cryo:CRYO_0000026 rdf:type owl:Class ;
 ###  https://w3id.org/pmd/cryo/CRYO_0000027
 cryo:CRYO_0000027 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000019 ,
-                                  [ owl:intersectionOf ( <http://org.semanticweb.owlapi/error#Error2>
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty obo:RO_0000080 ;
-                                                           owl:someValuesFrom cryo:CRYO_0000001
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0000080 ;
+                                    owl:someValuesFrom cryo:CRYO_0000001
                                   ] ;
                   rdfs:label "lattice centering"@en ;
                   skos:definition "Lattice centering is an intensive quality ofa crystal lattice which the geometric arrangement of lattice points in a unit cell. It is specified by one of the 4 lattice centering value."@en .
@@ -961,11 +940,7 @@ cryo:CRYO_0000041 rdf:type owl:Class ;
 
 ###  https://w3id.org/pmd/cryo/CRYO_0000042
 cryo:CRYO_0000042 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:BFO_0000019 ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:RO_0000080 ;
-                                    owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0000663>
-                                  ] ;
+                  rdfs:subClassOf obo:BFO_0000019 ;
                   rdfs:label "grain orientation"@en ;
                   skos:definition """Grain orientation is an intensive quality of grains in material's microstructure, which describes the crystallographic orientation in respect to the external (sample's) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grains with similar crystallographic orientations.
 Grain orientation can be specified by either texture fibers or texture components. When several grains exhibit similar orientations, then the material exhibits a specific crystallographic texture."""@en .
