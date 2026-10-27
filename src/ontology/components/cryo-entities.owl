@@ -32,6 +32,12 @@
     
 
 
+    <!-- https://w3id.org/pmd/co/PMD_0000077 -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/co/PMD_0000077"/>
+    
+
+
     <!-- https://w3id.org/pmd/cryo/CRYO_0000050 -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/pmd/cryo/CRYO_0000050">
@@ -428,12 +434,6 @@ For taxonomy purpose only</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0020003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">TODO: 
 1. check if located in is meant to be used this way
 2. Is there a better alternative to has part?</rdfs:comment>
@@ -781,12 +781,6 @@ crystal system  based on the rotational and mirror symmetries of their actual at
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000042">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pmd/co/PMD_0000663"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">grain orientation</rdfs:label>
         <skos:definition xml:lang="en">Grain orientation is an intensive quality of grains in material&apos;s microstructure, which describes the crystallographic orientation in respect to the external (sample&apos;s) reference frame. Grain orientation can be a quality of an individual grain / crystallite or of a polycrystal, i.e., several grains with similar crystallographic orientations.
 Grain orientation can be specified by either texture fibers or texture components. When several grains exhibit similar orientations, then the material exhibits a specific crystallographic texture.</skos:definition>
