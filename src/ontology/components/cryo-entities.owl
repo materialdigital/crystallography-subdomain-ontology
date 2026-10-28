@@ -2309,7 +2309,7 @@ Additionally, asserting triple &quot;atom located in lattice point&quot; contrad
 
     <owl:Class rdf:about="https://w3id.org/pmd/cryo/CRYO_0000443">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pmd/cryo/CRYO_0000439"/>
-        <rdfs:label xml:lang="en">intersitital site</rdfs:label>
+        <rdfs:label xml:lang="en">interstital site</rdfs:label>
         <skos:altLabel>void</skos:altLabel>
         <skos:definition xml:lang="en">interstitial site is a site that is located between regular lattice points in a crystal structure.</skos:definition>
     </owl:Class>
