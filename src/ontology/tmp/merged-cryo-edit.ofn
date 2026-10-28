@@ -3227,9 +3227,9 @@ EquivalentClasses(<https://w3id.org/pmd/cryo/CRYO_0000442> ObjectIntersectionOf(
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000442> <https://w3id.org/pmd/cryo/CRYO_0000439>)
 DisjointClasses(<https://w3id.org/pmd/cryo/CRYO_0000442> <https://w3id.org/pmd/cryo/CRYO_0000443>)
 
-# Class: <https://w3id.org/pmd/cryo/CRYO_0000443> (intersitital site)
+# Class: <https://w3id.org/pmd/cryo/CRYO_0000443> (interstital site)
 
-AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000443> "intersitital site"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/pmd/cryo/CRYO_0000443> "interstital site"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/pmd/cryo/CRYO_0000443> "void")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/pmd/cryo/CRYO_0000443> "interstitial site is a site that is located between regular lattice points in a crystal structure."@en)
 SubClassOf(<https://w3id.org/pmd/cryo/CRYO_0000443> <https://w3id.org/pmd/cryo/CRYO_0000439>)

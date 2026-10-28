@@ -1,29 +1,29 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	76149f61-e152-40e1-a4e5-57a778951795genid275
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid275
 ERROR	deprecated_class_reference	tetragonal equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	76149f61-e152-40e1-a4e5-57a778951795genid271
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	76149f61-e152-40e1-a4e5-57a778951795genid425
-ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	76149f61-e152-40e1-a4e5-57a778951795genid442
+ERROR	deprecated_class_reference	tetragonal equivalency assertion	owl:equivalentClass	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid271
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid425
+ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid442
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	information content entity
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	tetragonal equivalency assertion
 ERROR	deprecated_class_reference	symmetry equivalency assertion	rdfs:subClassOf	cubic equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	76149f61-e152-40e1-a4e5-57a778951795genid617
+ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid617
 ERROR	deprecated_class_reference	cubic equivalency assertion	rdfs:subClassOf	symmetry equivalency assertion
-ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	76149f61-e152-40e1-a4e5-57a778951795genid613
+ERROR	deprecated_class_reference	cubic equivalency assertion	owl:equivalentClass	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid613
 ERROR	deprecated_class_reference	cubic crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	cubic crystal lattice	owl:equivalentClass	76149f61-e152-40e1-a4e5-57a778951795genid618
+ERROR	deprecated_class_reference	cubic crystal lattice	owl:equivalentClass	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid618
 ERROR	deprecated_class_reference	triclinic crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	triclinic crystal lattice	owl:equivalentClass	76149f61-e152-40e1-a4e5-57a778951795genid626
+ERROR	deprecated_class_reference	triclinic crystal lattice	owl:equivalentClass	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid626
 ERROR	deprecated_class_reference	monoclinic crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	monoclinic crystal lattice	owl:equivalentClass	76149f61-e152-40e1-a4e5-57a778951795genid634
+ERROR	deprecated_class_reference	monoclinic crystal lattice	owl:equivalentClass	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid634
 ERROR	deprecated_class_reference	orthomombic crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	orthomombic crystal lattice	owl:equivalentClass	76149f61-e152-40e1-a4e5-57a778951795genid642
+ERROR	deprecated_class_reference	orthomombic crystal lattice	owl:equivalentClass	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid642
 ERROR	deprecated_class_reference	tetragonal crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	tetragonal crystal lattice	owl:equivalentClass	76149f61-e152-40e1-a4e5-57a778951795genid650
+ERROR	deprecated_class_reference	tetragonal crystal lattice	owl:equivalentClass	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid650
 ERROR	deprecated_class_reference	rhombohedral crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	rhombohedral crystal lattice	owl:equivalentClass	76149f61-e152-40e1-a4e5-57a778951795genid658
+ERROR	deprecated_class_reference	rhombohedral crystal lattice	owl:equivalentClass	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid658
 ERROR	deprecated_class_reference	hexagonal crystal lattice	rdfs:subClassOf	crystal lattice
-ERROR	deprecated_class_reference	hexagonal crystal lattice	owl:equivalentClass	76149f61-e152-40e1-a4e5-57a778951795genid666
+ERROR	deprecated_class_reference	hexagonal crystal lattice	owl:equivalentClass	3c3b27ef-bd26-444d-90a1-11c29006bfebgenid666
 ERROR	deprecated_property_reference	symmetry equivalency assertion	under symmetry	blank node
 ERROR	deprecated_property_reference	Miller indices family of	owl:inverseOf	has Miller indices family
 WARN	missing_definition	unit cell	definition	
@@ -123,7 +123,7 @@ WARN	missing_definition	atom site	definition
 WARN	missing_definition	has reference lattice point	definition	
 WARN	missing_definition	basis vector	definition	
 WARN	missing_definition	regular atom site	definition	
-WARN	missing_definition	intersitital site	definition	
+WARN	missing_definition	interstital site	definition	
 WARN	missing_definition	reference lattice point of	definition	
 WARN	missing_definition	octahedral void	definition	
 WARN	missing_definition	tetrahedral void	definition	
